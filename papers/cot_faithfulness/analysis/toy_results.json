@@ -1,0 +1,300 @@
+{
+ "setup": {
+  "N": 20000,
+  "n_steps": 6,
+  "K": 10,
+  "chance": 0.1
+ },
+ "models": {
+  "reader(CoT 필수)": {
+   "EA_p_by_truncation": [
+    0.1,
+    0.1,
+    0.102,
+    0.102,
+    0.098,
+    0.101,
+    1.0
+   ],
+   "AOC_EA": 0.771,
+   "AOC_EA_trapezoid": 0.825,
+   "AM_p_by_mistake_step": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "AOC_AM": 1.0,
+   "acc_filler": 0.102,
+   "acc_CoT": 1.0,
+   "agreement_full_cot_answer_correct_rate": 1.0,
+   "TRACE_AUC_reward_is_correct": 0.174,
+   "TRACE_AUC_reward_is_cue": 0.1
+  },
+  "capable(k=2)": {
+   "EA_p_by_truncation": [
+    0.103,
+    0.101,
+    0.097,
+    0.098,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "AOC_EA": 0.514,
+   "AOC_EA_trapezoid": 0.525,
+   "AM_p_by_mistake_step": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "AOC_AM": 1.0,
+   "acc_filler": 0.098,
+   "acc_CoT": 1.0,
+   "agreement_full_cot_answer_correct_rate": 1.0,
+   "TRACE_AUC_reward_is_correct": 0.475,
+   "TRACE_AUC_reward_is_cue": 0.099
+  },
+  "capable(k=4)": {
+   "EA_p_by_truncation": [
+    0.1,
+    0.099,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "AOC_EA": 0.257,
+   "AOC_EA_trapezoid": 0.225,
+   "AM_p_by_mistake_step": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "AOC_AM": 1.0,
+   "acc_filler": 0.105,
+   "acc_CoT": 1.0,
+   "agreement_full_cot_answer_correct_rate": 1.0,
+   "TRACE_AUC_reward_is_correct": 0.775,
+   "TRACE_AUC_reward_is_cue": 0.097
+  },
+  "capable(k=6)": {
+   "EA_p_by_truncation": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "AOC_EA": 0.0,
+   "AOC_EA_trapezoid": 0.0,
+   "AM_p_by_mistake_step": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "AOC_AM": 0.0,
+   "acc_filler": 1.0,
+   "acc_CoT": 1.0,
+   "agreement_full_cot_answer_correct_rate": 1.0,
+   "TRACE_AUC_reward_is_correct": 1.0,
+   "TRACE_AUC_reward_is_cue": 0.096
+  },
+  "recoverer(CoT 필수, 실수는 복구)": {
+   "EA_p_by_truncation": [
+    0.096,
+    0.098,
+    0.1,
+    0.101,
+    0.101,
+    0.1,
+    1.0
+   ],
+   "AOC_EA": 0.772,
+   "AOC_EA_trapezoid": 0.825,
+   "AM_p_by_mistake_step": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "AOC_AM": 0.0,
+   "acc_filler": 0.098,
+   "acc_CoT": 1.0,
+   "agreement_full_cot_answer_correct_rate": 1.0,
+   "TRACE_AUC_reward_is_correct": 0.176,
+   "TRACE_AUC_reward_is_cue": 0.099
+  },
+  "post-hoc 정당화(답 선결정)": {
+   "EA_p_by_truncation": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "AOC_EA": 0.0,
+   "AOC_EA_trapezoid": 0.0,
+   "AM_p_by_mistake_step": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "AOC_AM": 0.0,
+   "acc_filler": 1.0,
+   "acc_CoT": 1.0,
+   "agreement_full_cot_answer_correct_rate": 1.0,
+   "TRACE_AUC_reward_is_correct": 1.0,
+   "TRACE_AUC_reward_is_cue": 0.096
+  },
+  "단서 추종(CoT는 풀이 흉내)": {
+   "EA_p_by_truncation": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "AOC_EA": 0.0,
+   "AOC_EA_trapezoid": 0.0,
+   "AM_p_by_mistake_step": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "AOC_AM": 0.0,
+   "acc_filler": 0.096,
+   "acc_CoT": 0.096,
+   "agreement_full_cot_answer_correct_rate": 0.096,
+   "TRACE_AUC_reward_is_correct": 0.096,
+   "TRACE_AUC_reward_is_cue": 1.0
+  },
+  "혼합(단서 30% + reader)": {
+   "EA_p_by_truncation": [
+    0.369,
+    0.373,
+    0.371,
+    0.367,
+    0.371,
+    0.366,
+    1.0
+   ],
+   "AOC_EA": 0.54,
+   "AOC_EA_trapezoid": 0.578,
+   "AM_p_by_mistake_step": [
+    0.301,
+    0.301,
+    0.301,
+    0.301,
+    0.301,
+    0.301
+   ],
+   "AOC_AM": 0.699,
+   "acc_filler": 0.1,
+   "acc_CoT": 0.728,
+   "agreement_full_cot_answer_correct_rate": 0.728,
+   "TRACE_AUC_reward_is_correct": 0.151,
+   "TRACE_AUC_reward_is_cue": 0.37
+  }
+ },
+ "capability_sweep": [
+  {
+   "k": 0,
+   "AOC_EA": 0.77,
+   "acc_without_CoT": 0.098
+  },
+  {
+   "k": 1,
+   "AOC_EA": 0.644,
+   "acc_without_CoT": 0.102
+  },
+  {
+   "k": 2,
+   "AOC_EA": 0.514,
+   "acc_without_CoT": 0.099
+  },
+  {
+   "k": 3,
+   "AOC_EA": 0.386,
+   "acc_without_CoT": 0.102
+  },
+  {
+   "k": 4,
+   "AOC_EA": 0.258,
+   "acc_without_CoT": 0.099
+  },
+  {
+   "k": 5,
+   "AOC_EA": 0.128,
+   "acc_without_CoT": 0.099
+  },
+  {
+   "k": 6,
+   "AOC_EA": 0.0,
+   "acc_without_CoT": 1.0
+  }
+ ],
+ "cue_mixture_sweep": [
+  {
+   "rho_follow_cue": 0.0,
+   "AOC_EA": 0.771,
+   "AOC_AM": 1.0
+  },
+  {
+   "rho_follow_cue": 0.1,
+   "AOC_EA": 0.697,
+   "AOC_AM": 0.901
+  },
+  {
+   "rho_follow_cue": 0.2,
+   "AOC_EA": 0.615,
+   "AOC_AM": 0.798
+  },
+  {
+   "rho_follow_cue": 0.3,
+   "AOC_EA": 0.538,
+   "AOC_AM": 0.698
+  },
+  {
+   "rho_follow_cue": 0.5,
+   "AOC_EA": 0.391,
+   "AOC_AM": 0.506
+  },
+  {
+   "rho_follow_cue": 0.7,
+   "AOC_EA": 0.234,
+   "AOC_AM": 0.302
+  },
+  {
+   "rho_follow_cue": 1.0,
+   "AOC_EA": 0.0,
+   "AOC_AM": 0.0
+  }
+ ]
+}

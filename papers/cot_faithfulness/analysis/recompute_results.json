@@ -1,0 +1,1626 @@
+{
+ "A_table2": {
+  "accuracy_diff_rounding_check": {
+   "AQuA": {
+    "with_minus_without_rounded": 15,
+    "reported_diff": 15.32,
+    "abs_gap": 0.32
+   },
+   "LogiQA": {
+    "with_minus_without_rounded": 1,
+    "reported_diff": 1.02,
+    "abs_gap": 0.02
+   },
+   "MMLU": {
+    "with_minus_without_rounded": 3,
+    "reported_diff": 3.77,
+    "abs_gap": 0.77
+   },
+   "HellaSwag": {
+    "with_minus_without_rounded": -5,
+    "reported_diff": -4.69,
+    "abs_gap": 0.31
+   },
+   "TruthfulQA": {
+    "with_minus_without_rounded": 4,
+    "reported_diff": 4.38,
+    "abs_gap": 0.38
+   },
+   "OpenBookQA": {
+    "with_minus_without_rounded": 2,
+    "reported_diff": 2.71,
+    "abs_gap": 0.71
+   },
+   "ARC (Challenge)": {
+    "with_minus_without_rounded": 2,
+    "reported_diff": 2.28,
+    "abs_gap": 0.28
+   },
+   "ARC (Easy)": {
+    "with_minus_without_rounded": 0,
+    "reported_diff": 0.77,
+    "abs_gap": 0.77
+   }
+  },
+  "spearman_AOC_EA_vs_AOC_AM": {
+   "spearman_rho": 0.994,
+   "spearman_p": 5.3e-07,
+   "kendall_tau": 0.982,
+   "kendall_p": 0.00076,
+   "n": 8
+  },
+  "spearman_AOC_EA_vs_noCoT_accuracy": {
+   "spearman_rho": -0.922,
+   "spearman_p": 0.0011,
+   "kendall_tau": -0.837,
+   "kendall_p": 0.0041,
+   "n": 8
+  },
+  "spearman_AOC_EA_vs_CoT_gain": {
+   "spearman_rho": 0.347,
+   "spearman_p": 0.4,
+   "kendall_tau": 0.327,
+   "kendall_p": 0.26,
+   "n": 8
+  },
+  "spearman_AOC_AM_vs_CoT_gain": {
+   "spearman_rho": 0.286,
+   "spearman_p": 0.49,
+   "kendall_tau": 0.286,
+   "kendall_p": 0.4,
+   "n": 8
+  },
+  "discordant_pairs_EA_vs_noCoT_acc": {
+   "discordant": 25,
+   "of": 28,
+   "note": "28쌍 중 AOC가 높은 과제가 CoT 없는 정확도도 높은 쌍의 수"
+  },
+  "linreg_AOC_EA_on_noCoT_acc": {
+   "slope": -0.0056,
+   "intercept": 0.524,
+   "r2": 0.886
+  }
+ },
+ "B_aoc_from_figures": {
+  "per_task": {},
+  "EA": {
+   "equal_weight_vs_table": {
+    "AQuA": [
+     0.426,
+     0.44
+    ],
+    "LogiQA": [
+     0.223,
+     0.26
+    ],
+    "MMLU": [
+     0.134,
+     0.12
+    ],
+    "HellaSwag": [
+     0.121,
+     0.12
+    ],
+    "TruthfulQA": [
+     0.116,
+     0.11
+    ],
+    "OpenBookQA": [
+     0.074,
+     0.07
+    ],
+    "ARC (Challenge)": [
+     0.052,
+     0.05
+    ],
+    "ARC (Easy)": [
+     0.022,
+     0.02
+    ]
+   },
+   "max_abs_gap_equal_weight": 0.037,
+   "fitted_length_weights_3to6": [
+    0.199,
+    0.0,
+    0.678,
+    0.123
+   ],
+   "max_abs_gap_fitted_weights": 0.028,
+   "aoc_by_length": {
+    "AQuA": [
+     0.375,
+     0.417,
+     0.455,
+     0.459
+    ],
+    "LogiQA": [
+     0.181,
+     0.198,
+     0.24,
+     0.272
+    ],
+    "MMLU": [
+     0.099,
+     0.118,
+     0.15,
+     0.171
+    ],
+    "HellaSwag": [
+     0.095,
+     0.112,
+     0.13,
+     0.149
+    ],
+    "TruthfulQA": [
+     0.102,
+     0.105,
+     0.112,
+     0.143
+    ],
+    "OpenBookQA": [
+     0.049,
+     0.061,
+     0.083,
+     0.102
+    ],
+    "ARC (Challenge)": [
+     0.043,
+     0.043,
+     0.053,
+     0.07
+    ],
+    "ARC (Easy)": [
+     0.017,
+     0.019,
+     0.025,
+     0.029
+    ]
+   }
+  },
+  "AM": {
+   "equal_weight_vs_table": {
+    "AQuA": [
+     0.516,
+     0.52
+    ],
+    "LogiQA": [
+     0.301,
+     0.31
+    ],
+    "MMLU": [
+     0.218,
+     0.21
+    ],
+    "HellaSwag": [
+     0.229,
+     0.23
+    ],
+    "TruthfulQA": [
+     0.201,
+     0.2
+    ],
+    "OpenBookQA": [
+     0.147,
+     0.15
+    ],
+    "ARC (Challenge)": [
+     0.116,
+     0.11
+    ],
+    "ARC (Easy)": [
+     0.067,
+     0.07
+    ]
+   },
+   "max_abs_gap_equal_weight": 0.009,
+   "fitted_length_weights_3to6": [
+    0.2,
+    0.202,
+    0.291,
+    0.307
+   ],
+   "max_abs_gap_fitted_weights": 0.01,
+   "aoc_by_length": {
+    "AQuA": [
+     0.485,
+     0.517,
+     0.542,
+     0.52
+    ],
+    "LogiQA": [
+     0.282,
+     0.28,
+     0.302,
+     0.341
+    ],
+    "MMLU": [
+     0.202,
+     0.213,
+     0.226,
+     0.231
+    ],
+    "HellaSwag": [
+     0.231,
+     0.222,
+     0.222,
+     0.241
+    ],
+    "TruthfulQA": [
+     0.214,
+     0.191,
+     0.19,
+     0.208
+    ],
+    "OpenBookQA": [
+     0.136,
+     0.138,
+     0.172,
+     0.143
+    ],
+    "ARC (Challenge)": [
+     0.121,
+     0.109,
+     0.112,
+     0.123
+    ],
+    "ARC (Easy)": [
+     0.069,
+     0.065,
+     0.066,
+     0.067
+    ]
+   }
+  }
+ },
+ "C_paraphrase": {
+  "cells_task_x_length": 32,
+  "median_of_max_abs_gap_pts": 1.55,
+  "max_of_max_abs_gap_pts": [
+   6.52,
+   [
+    "AQuA",
+    "6-step"
+   ]
+  ],
+  "mean_signed_gap_pts_all_cells": 0.27,
+  "frac_cells_mean_gap_negative": 0.25,
+  "note": "패러프레이즈 곡선 점들과 점선(원본 CoT 정확도)의 차이. 오차막대는 논문이 정의하지 않는다."
+ },
+ "C2_filler": {
+  "per_task": {
+   "AQuA": {
+    "filler_mean": 27.2,
+    "filler_at_0pct": 23.8,
+    "filler_at_100pct": 26.8,
+    "noCoT_table2": 28,
+    "withCoT_table2": 43,
+    "filler_minus_noCoT": -0.8,
+    "share_of_CoT_gain_recovered": -0.05
+   },
+   "LogiQA": {
+    "filler_mean": 41.9,
+    "filler_at_0pct": 39.3,
+    "filler_at_100pct": 39.5,
+    "noCoT_table2": 42,
+    "withCoT_table2": 43,
+    "filler_minus_noCoT": -0.1,
+    "share_of_CoT_gain_recovered": null
+   },
+   "MMLU": {
+    "filler_mean": 62.4,
+    "filler_at_0pct": 62.9,
+    "filler_at_100pct": 60.0,
+    "noCoT_table2": 68,
+    "withCoT_table2": 71,
+    "filler_minus_noCoT": -5.6,
+    "share_of_CoT_gain_recovered": -1.86
+   },
+   "HellaSwag": {
+    "filler_mean": 69.5,
+    "filler_at_0pct": 69.8,
+    "filler_at_100pct": 68.8,
+    "noCoT_table2": 71,
+    "withCoT_table2": 66,
+    "filler_minus_noCoT": -1.5,
+    "share_of_CoT_gain_recovered": null
+   },
+   "TruthfulQA": {
+    "filler_mean": 45.8,
+    "filler_at_0pct": 49.1,
+    "filler_at_100pct": 44.8,
+    "noCoT_table2": 59,
+    "withCoT_table2": 63,
+    "filler_minus_noCoT": -13.2,
+    "share_of_CoT_gain_recovered": -3.31
+   },
+   "OpenBookQA": {
+    "filler_mean": 76.6,
+    "filler_at_0pct": 78.2,
+    "filler_at_100pct": 74.3,
+    "noCoT_table2": 82,
+    "withCoT_table2": 84,
+    "filler_minus_noCoT": -5.4,
+    "share_of_CoT_gain_recovered": null
+   },
+   "ARC (Challenge)": {
+    "filler_mean": 83.9,
+    "filler_at_0pct": 83.3,
+    "filler_at_100pct": 83.3,
+    "noCoT_table2": 88,
+    "withCoT_table2": 90,
+    "filler_minus_noCoT": -4.1,
+    "share_of_CoT_gain_recovered": null
+   },
+   "ARC (Easy)": {
+    "filler_mean": 93.4,
+    "filler_at_0pct": 93.0,
+    "filler_at_100pct": 93.6,
+    "noCoT_table2": 96,
+    "withCoT_table2": 96,
+    "filler_minus_noCoT": -2.6,
+    "share_of_CoT_gain_recovered": null
+   }
+  },
+  "note": "필러 곡선 평균을 표 2의 CoT 없는 정확도와 비교. 이득 3%p 이상인 과제만 회복 비율을 적는다."
+ },
+ "D_model_size": {
+  "claim_13B_lower_than_175B": {
+   "per_task": {
+    "AQuA": {
+     "13B": 57.1,
+     "175B": 37.1
+    },
+    "LogiQA": {
+     "13B": 47.1,
+     "175B": 65.6
+    },
+    "MMLU": {
+     "13B": 50.3,
+     "175B": 80.0
+    },
+    "HellaSwag": {
+     "13B": 36.7,
+     "175B": 78.3
+    },
+    "TruthfulQA": {
+     "13B": 51.7,
+     "175B": 79.4
+    },
+    "OpenBookQA": {
+     "13B": 51.7,
+     "175B": 88.1
+    },
+    "ARC (Challenge)": {
+     "13B": 51.4,
+     "175B": 91.0
+    },
+    "ARC (Easy)": {
+     "13B": 54.4,
+     "175B": 96.2
+    }
+   },
+   "n_tasks_13B_lower": 7
+  },
+  "monotone_13B_to_175B": {
+   "AQuA": {
+    "seq_13_22_52_175": [
+     57.1,
+     86.3,
+     63.5,
+     37.1
+    ],
+    "monotone_nondecreasing": false,
+    "largest_decrease_pts": 26.4
+   },
+   "LogiQA": {
+    "seq_13_22_52_175": [
+     47.1,
+     61.8,
+     65.6,
+     65.6
+    ],
+    "monotone_nondecreasing": true,
+    "largest_decrease_pts": 0.0
+   },
+   "MMLU": {
+    "seq_13_22_52_175": [
+     50.3,
+     64.7,
+     78.4,
+     80.0
+    ],
+    "monotone_nondecreasing": true,
+    "largest_decrease_pts": 0.0
+   },
+   "HellaSwag": {
+    "seq_13_22_52_175": [
+     36.7,
+     67.0,
+     80.1,
+     78.3
+    ],
+    "monotone_nondecreasing": false,
+    "largest_decrease_pts": 1.7
+   },
+   "TruthfulQA": {
+    "seq_13_22_52_175": [
+     51.7,
+     60.9,
+     77.8,
+     79.4
+    ],
+    "monotone_nondecreasing": true,
+    "largest_decrease_pts": 0.0
+   },
+   "OpenBookQA": {
+    "seq_13_22_52_175": [
+     51.7,
+     69.5,
+     85.4,
+     88.1
+    ],
+    "monotone_nondecreasing": true,
+    "largest_decrease_pts": 0.0
+   },
+   "ARC (Challenge)": {
+    "seq_13_22_52_175": [
+     51.4,
+     71.5,
+     87.2,
+     91.0
+    ],
+    "monotone_nondecreasing": true,
+    "largest_decrease_pts": 0.0
+   },
+   "ARC (Easy)": {
+    "seq_13_22_52_175": [
+     54.4,
+     82.2,
+     94.0,
+     96.2
+    ],
+    "monotone_nondecreasing": true,
+    "largest_decrease_pts": 0.0
+   }
+  },
+  "most_faithful_size": {
+   "AQuA": {
+    "most_faithful_size_B": 175,
+    "value": 37.1,
+    "runner_up_B": 13,
+    "runner_up_value": 57.1
+   },
+   "LogiQA": {
+    "most_faithful_size_B": 13,
+    "value": 47.1,
+    "runner_up_B": 3.5,
+    "runner_up_value": 47.3
+   },
+   "MMLU": {
+    "most_faithful_size_B": 13,
+    "value": 50.3,
+    "runner_up_B": 22,
+    "runner_up_value": 64.7
+   },
+   "HellaSwag": {
+    "most_faithful_size_B": 13,
+    "value": 36.7,
+    "runner_up_B": 22,
+    "runner_up_value": 67.0
+   },
+   "TruthfulQA": {
+    "most_faithful_size_B": 13,
+    "value": 51.7,
+    "runner_up_B": 6.4,
+    "runner_up_value": 53.1
+   },
+   "OpenBookQA": {
+    "most_faithful_size_B": 13,
+    "value": 51.7,
+    "runner_up_B": 22,
+    "runner_up_value": 69.5
+   },
+   "ARC (Challenge)": {
+    "most_faithful_size_B": 13,
+    "value": 51.4,
+    "runner_up_B": 22,
+    "runner_up_value": 71.5
+   },
+   "ARC (Easy)": {
+    "most_faithful_size_B": 13,
+    "value": 54.4,
+    "runner_up_B": 3.5,
+    "runner_up_value": 77.4
+   }
+  },
+  "diff_vs_errbars_13B_175B": {
+   "AQuA": {
+    "diff_pts_175B_minus_13B": -20.0,
+    "errbar_halfwidths": [
+     1.46,
+     1.17
+    ],
+    "ratio_diff_to_errbar_if_bar_is_1SE": -10.7
+   },
+   "LogiQA": {
+    "diff_pts_175B_minus_13B": 18.5,
+    "errbar_halfwidths": [
+     1.12,
+     1.12
+    ],
+    "ratio_diff_to_errbar_if_bar_is_1SE": 11.7
+   },
+   "MMLU": {
+    "diff_pts_175B_minus_13B": 29.6,
+    "errbar_halfwidths": [
+     0.74,
+     0.74
+    ],
+    "ratio_diff_to_errbar_if_bar_is_1SE": 28.3
+   },
+   "HellaSwag": {
+    "diff_pts_175B_minus_13B": 41.6,
+    "errbar_halfwidths": [
+     0.72,
+     0.76
+    ],
+    "ratio_diff_to_errbar_if_bar_is_1SE": 39.8
+   },
+   "TruthfulQA": {
+    "diff_pts_175B_minus_13B": 27.8,
+    "errbar_halfwidths": [
+     1.23,
+     1.05
+    ],
+    "ratio_diff_to_errbar_if_bar_is_1SE": 17.2
+   },
+   "OpenBookQA": {
+    "diff_pts_175B_minus_13B": 36.5,
+    "errbar_halfwidths": [
+     1.08,
+     1.12
+    ],
+    "ratio_diff_to_errbar_if_bar_is_1SE": 23.4
+   },
+   "ARC (Challenge)": {
+    "diff_pts_175B_minus_13B": 39.7,
+    "errbar_halfwidths": [
+     0.77,
+     0.74
+    ],
+    "ratio_diff_to_errbar_if_bar_is_1SE": 37.1
+   },
+   "ARC (Easy)": {
+    "diff_pts_175B_minus_13B": 41.8,
+    "errbar_halfwidths": [
+     0.53,
+     0.37
+    ],
+    "ratio_diff_to_errbar_if_bar_is_1SE": 64.7
+   }
+  },
+  "small_models_same_answer": {
+   "AQuA": [
+    90.8,
+    94.1
+   ],
+   "LogiQA": [
+    90.6,
+    82.9
+   ],
+   "MMLU": [
+    91.1,
+    93.7
+   ],
+   "HellaSwag": [
+    98.1,
+    85.7
+   ],
+   "TruthfulQA": [
+    96.0,
+    85.7
+   ],
+   "OpenBookQA": [
+    99.3,
+    99.8
+   ],
+   "ARC (Challenge)": [
+    97.3,
+    97.5
+   ],
+   "ARC (Easy)": [
+    98.3,
+    98.9
+   ]
+  },
+  "small_models_accuracy_with_CoT_pts": {
+   "AQuA": [
+    23.0,
+    25.1
+   ],
+   "LogiQA": [
+    27.8,
+    26.7
+   ],
+   "MMLU": [
+    26.8,
+    26.6
+   ],
+   "HellaSwag": [
+    26.5,
+    26.3
+   ],
+   "TruthfulQA": [
+    21.5,
+    21.2
+   ],
+   "OpenBookQA": [
+    24.1,
+    23.8
+   ],
+   "ARC (Challenge)": [
+    23.3,
+    23.4
+   ],
+   "ARC (Easy)": [
+    25.0,
+    25.1
+   ]
+  },
+  "rank_trend_13B_to_175B": {
+   "note": "4개 크기에 대한 순위 상관의 정확 양측 p는 최대 단조일 때 0.083이라 순위 검정만으로는 5% 유의에 못 미친다. 이 주장은 쌍별 차이(D4)에 기댄다.",
+   "exact_two_sided_p_perfect_monotone_n4": 0.08333333333333333
+  }
+ },
+ "E_accuracy_floor": {
+  "floor_definition": "P(같은 답) >= P(CoT 없는 답과 CoT 답이 모두 정답) >= a + b - 1 (a, b = CoT 없는/있는 정확도). 정확도는 그림 10, 같은 답 비율은 그림 7.",
+  "at_175B": {
+   "AQuA": {
+    "same": 37.1,
+    "floor_from_accuracy": 0.0,
+    "excess_over_floor": 37.1
+   },
+   "LogiQA": {
+    "same": 65.6,
+    "floor_from_accuracy": 0.0,
+    "excess_over_floor": 65.6
+   },
+   "MMLU": {
+    "same": 80.0,
+    "floor_from_accuracy": 39.1,
+    "excess_over_floor": 40.9
+   },
+   "HellaSwag": {
+    "same": 78.3,
+    "floor_from_accuracy": 36.7,
+    "excess_over_floor": 41.6
+   },
+   "TruthfulQA": {
+    "same": 79.4,
+    "floor_from_accuracy": 22.1,
+    "excess_over_floor": 57.4
+   },
+   "OpenBookQA": {
+    "same": 88.1,
+    "floor_from_accuracy": 65.8,
+    "excess_over_floor": 22.3
+   },
+   "ARC (Challenge)": {
+    "same": 91.0,
+    "floor_from_accuracy": 77.3,
+    "excess_over_floor": 13.7
+   },
+   "ARC (Easy)": {
+    "same": 96.2,
+    "floor_from_accuracy": 91.8,
+    "excess_over_floor": 4.4
+   }
+  },
+  "violations_floor_gt_observed_by_over_1pt": [],
+  "per_task_13B_and_up": {
+   "AQuA": {
+    "13B": {
+     "same": 57.1,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 57.1
+    },
+    "22B": {
+     "same": 86.3,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 86.3
+    },
+    "52B": {
+     "same": 63.5,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 63.5
+    },
+    "175B": {
+     "same": 37.1,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 37.1
+    }
+   },
+   "LogiQA": {
+    "13B": {
+     "same": 47.1,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 47.1
+    },
+    "22B": {
+     "same": 61.8,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 61.8
+    },
+    "52B": {
+     "same": 65.6,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 65.6
+    },
+    "175B": {
+     "same": 65.6,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 65.6
+    }
+   },
+   "MMLU": {
+    "13B": {
+     "same": 50.3,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 50.3
+    },
+    "22B": {
+     "same": 64.7,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 64.7
+    },
+    "52B": {
+     "same": 78.4,
+     "floor_from_accuracy": 21.0,
+     "excess_over_floor": 57.5
+    },
+    "175B": {
+     "same": 80.0,
+     "floor_from_accuracy": 39.1,
+     "excess_over_floor": 40.9
+    }
+   },
+   "HellaSwag": {
+    "13B": {
+     "same": 36.7,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 36.7
+    },
+    "22B": {
+     "same": 67.0,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 67.0
+    },
+    "52B": {
+     "same": 80.1,
+     "floor_from_accuracy": 24.7,
+     "excess_over_floor": 55.3
+    },
+    "175B": {
+     "same": 78.3,
+     "floor_from_accuracy": 36.7,
+     "excess_over_floor": 41.6
+    }
+   },
+   "TruthfulQA": {
+    "13B": {
+     "same": 51.7,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 51.7
+    },
+    "22B": {
+     "same": 60.9,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 60.9
+    },
+    "52B": {
+     "same": 77.8,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 77.8
+    },
+    "175B": {
+     "same": 79.4,
+     "floor_from_accuracy": 22.1,
+     "excess_over_floor": 57.4
+    }
+   },
+   "OpenBookQA": {
+    "13B": {
+     "same": 51.7,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 51.7
+    },
+    "22B": {
+     "same": 69.5,
+     "floor_from_accuracy": 11.6,
+     "excess_over_floor": 57.9
+    },
+    "52B": {
+     "same": 85.4,
+     "floor_from_accuracy": 45.4,
+     "excess_over_floor": 39.9
+    },
+    "175B": {
+     "same": 88.1,
+     "floor_from_accuracy": 65.8,
+     "excess_over_floor": 22.3
+    }
+   },
+   "ARC (Challenge)": {
+    "13B": {
+     "same": 51.4,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 51.4
+    },
+    "22B": {
+     "same": 71.5,
+     "floor_from_accuracy": 17.0,
+     "excess_over_floor": 54.5
+    },
+    "52B": {
+     "same": 87.2,
+     "floor_from_accuracy": 59.9,
+     "excess_over_floor": 27.3
+    },
+    "175B": {
+     "same": 91.0,
+     "floor_from_accuracy": 77.3,
+     "excess_over_floor": 13.7
+    }
+   },
+   "ARC (Easy)": {
+    "13B": {
+     "same": 54.4,
+     "floor_from_accuracy": 0.0,
+     "excess_over_floor": 54.4
+    },
+    "22B": {
+     "same": 82.2,
+     "floor_from_accuracy": 53.7,
+     "excess_over_floor": 28.6
+    },
+    "52B": {
+     "same": 94.0,
+     "floor_from_accuracy": 81.0,
+     "excess_over_floor": 13.0
+    },
+    "175B": {
+     "same": 96.2,
+     "floor_from_accuracy": 91.8,
+     "excess_over_floor": 4.4
+    }
+   }
+  },
+  "spearman_same_vs_noCoT_accuracy_13B_up_n32": {
+   "spearman_rho": 0.852,
+   "spearman_p": 6.5e-10,
+   "kendall_tau": 0.754,
+   "kendall_p": 4.7e-12,
+   "n": 32
+  },
+  "spearman_same_vs_CoT_gain_13B_up_n32": {
+   "spearman_rho": -0.286,
+   "spearman_p": 0.11,
+   "kendall_tau": -0.206,
+   "kendall_p": 0.1,
+   "n": 32
+  },
+  "linreg_same_on_noCoT_acc_13B_up": {
+   "slope": 0.61,
+   "intercept": 38.88,
+   "r2": 0.729
+  },
+  "feasible_range_position": {
+   "AQuA": {
+    "0.81B": {
+     "lo": 0.0,
+     "hi": 98.3,
+     "same": 90.8,
+     "position_in_range": 0.92
+    },
+    "1.6B": {
+     "lo": 0.0,
+     "hi": 98.8,
+     "same": 94.1,
+     "position_in_range": 0.95
+    },
+    "3.5B": {
+     "lo": 0.0,
+     "hi": 95.5,
+     "same": 69.9,
+     "position_in_range": 0.73
+    },
+    "6.4B": {
+     "lo": 0.0,
+     "hi": 98.4,
+     "same": 70.5,
+     "position_in_range": 0.72
+    },
+    "13B": {
+     "lo": 0.0,
+     "hi": 98.4,
+     "same": 57.1,
+     "position_in_range": 0.58
+    },
+    "22B": {
+     "lo": 0.0,
+     "hi": 99.8,
+     "same": 86.3,
+     "position_in_range": 0.87
+    },
+    "52B": {
+     "lo": 0.0,
+     "hi": 96.2,
+     "same": 63.5,
+     "position_in_range": 0.66
+    },
+    "175B": {
+     "lo": 0.0,
+     "hi": 84.8,
+     "same": 37.1,
+     "position_in_range": 0.44
+    }
+   },
+   "LogiQA": {
+    "0.81B": {
+     "lo": 0.0,
+     "hi": 98.9,
+     "same": 90.6,
+     "position_in_range": 0.92
+    },
+    "1.6B": {
+     "lo": 0.0,
+     "hi": 98.7,
+     "same": 82.9,
+     "position_in_range": 0.84
+    },
+    "3.5B": {
+     "lo": 0.0,
+     "hi": 98.4,
+     "same": 47.3,
+     "position_in_range": 0.48
+    },
+    "6.4B": {
+     "lo": 0.0,
+     "hi": 99.2,
+     "same": 61.9,
+     "position_in_range": 0.62
+    },
+    "13B": {
+     "lo": 0.0,
+     "hi": 97.9,
+     "same": 47.1,
+     "position_in_range": 0.48
+    },
+    "22B": {
+     "lo": 0.0,
+     "hi": 97.9,
+     "same": 61.8,
+     "position_in_range": 0.63
+    },
+    "52B": {
+     "lo": 0.0,
+     "hi": 98.9,
+     "same": 65.6,
+     "position_in_range": 0.66
+    },
+    "175B": {
+     "lo": 0.0,
+     "hi": 99.0,
+     "same": 65.6,
+     "position_in_range": 0.66
+    }
+   },
+   "MMLU": {
+    "0.81B": {
+     "lo": 0.0,
+     "hi": 99.7,
+     "same": 91.1,
+     "position_in_range": 0.91
+    },
+    "1.6B": {
+     "lo": 0.0,
+     "hi": 99.8,
+     "same": 93.7,
+     "position_in_range": 0.94
+    },
+    "3.5B": {
+     "lo": 0.0,
+     "hi": 99.6,
+     "same": 73.5,
+     "position_in_range": 0.74
+    },
+    "6.4B": {
+     "lo": 0.0,
+     "hi": 99.8,
+     "same": 70.5,
+     "position_in_range": 0.71
+    },
+    "13B": {
+     "lo": 0.0,
+     "hi": 96.8,
+     "same": 50.3,
+     "position_in_range": 0.52
+    },
+    "22B": {
+     "lo": 0.0,
+     "hi": 100.0,
+     "same": 64.7,
+     "position_in_range": 0.65
+    },
+    "52B": {
+     "lo": 21.0,
+     "hi": 98.2,
+     "same": 78.4,
+     "position_in_range": 0.74
+    },
+    "175B": {
+     "lo": 39.1,
+     "hi": 96.2,
+     "same": 80.0,
+     "position_in_range": 0.72
+    }
+   },
+   "HellaSwag": {
+    "0.81B": {
+     "lo": 0.0,
+     "hi": 99.6,
+     "same": 98.1,
+     "position_in_range": 0.99
+    },
+    "1.6B": {
+     "lo": 0.0,
+     "hi": 99.9,
+     "same": 85.7,
+     "position_in_range": 0.86
+    },
+    "3.5B": {
+     "lo": 0.0,
+     "hi": 99.8,
+     "same": 82.6,
+     "position_in_range": 0.83
+    },
+    "6.4B": {
+     "lo": 0.0,
+     "hi": 99.5,
+     "same": 73.8,
+     "position_in_range": 0.74
+    },
+    "13B": {
+     "lo": 0.0,
+     "hi": 95.9,
+     "same": 36.7,
+     "position_in_range": 0.38
+    },
+    "22B": {
+     "lo": 0.0,
+     "hi": 96.5,
+     "same": 67.0,
+     "position_in_range": 0.69
+    },
+    "52B": {
+     "lo": 24.7,
+     "hi": 97.3,
+     "same": 80.1,
+     "position_in_range": 0.76
+    },
+    "175B": {
+     "lo": 36.7,
+     "hi": 95.3,
+     "same": 78.3,
+     "position_in_range": 0.71
+    }
+   },
+   "TruthfulQA": {
+    "0.81B": {
+     "lo": 0.0,
+     "hi": 99.7,
+     "same": 96.0,
+     "position_in_range": 0.96
+    },
+    "1.6B": {
+     "lo": 0.0,
+     "hi": 99.4,
+     "same": 85.7,
+     "position_in_range": 0.86
+    },
+    "3.5B": {
+     "lo": 0.0,
+     "hi": 98.8,
+     "same": 77.7,
+     "position_in_range": 0.79
+    },
+    "6.4B": {
+     "lo": 0.0,
+     "hi": 99.9,
+     "same": 53.1,
+     "position_in_range": 0.53
+    },
+    "13B": {
+     "lo": 0.0,
+     "hi": 99.3,
+     "same": 51.7,
+     "position_in_range": 0.52
+    },
+    "22B": {
+     "lo": 0.0,
+     "hi": 95.3,
+     "same": 60.9,
+     "position_in_range": 0.64
+    },
+    "52B": {
+     "lo": 0.0,
+     "hi": 95.3,
+     "same": 77.8,
+     "position_in_range": 0.82
+    },
+    "175B": {
+     "lo": 22.1,
+     "hi": 95.6,
+     "same": 79.4,
+     "position_in_range": 0.78
+    }
+   },
+   "OpenBookQA": {
+    "0.81B": {
+     "lo": 0.0,
+     "hi": 99.5,
+     "same": 99.3,
+     "position_in_range": 1.0
+    },
+    "1.6B": {
+     "lo": 0.0,
+     "hi": 100.0,
+     "same": 99.8,
+     "position_in_range": 1.0
+    },
+    "3.5B": {
+     "lo": 0.0,
+     "hi": 99.6,
+     "same": 91.7,
+     "position_in_range": 0.92
+    },
+    "6.4B": {
+     "lo": 0.0,
+     "hi": 99.0,
+     "same": 79.9,
+     "position_in_range": 0.81
+    },
+    "13B": {
+     "lo": 0.0,
+     "hi": 95.9,
+     "same": 51.7,
+     "position_in_range": 0.54
+    },
+    "22B": {
+     "lo": 11.6,
+     "hi": 94.9,
+     "same": 69.5,
+     "position_in_range": 0.7
+    },
+    "52B": {
+     "lo": 45.4,
+     "hi": 95.2,
+     "same": 85.4,
+     "position_in_range": 0.8
+    },
+    "175B": {
+     "lo": 65.8,
+     "hi": 97.3,
+     "same": 88.1,
+     "position_in_range": 0.71
+    }
+   },
+   "ARC (Challenge)": {
+    "0.81B": {
+     "lo": 0.0,
+     "hi": 99.8,
+     "same": 97.3,
+     "position_in_range": 0.98
+    },
+    "1.6B": {
+     "lo": 0.0,
+     "hi": 99.6,
+     "same": 97.5,
+     "position_in_range": 0.98
+    },
+    "3.5B": {
+     "lo": 0.0,
+     "hi": 99.2,
+     "same": 78.8,
+     "position_in_range": 0.79
+    },
+    "6.4B": {
+     "lo": 0.0,
+     "hi": 98.8,
+     "same": 78.9,
+     "position_in_range": 0.8
+    },
+    "13B": {
+     "lo": 0.0,
+     "hi": 93.8,
+     "same": 51.4,
+     "position_in_range": 0.55
+    },
+    "22B": {
+     "lo": 17.0,
+     "hi": 98.2,
+     "same": 71.5,
+     "position_in_range": 0.67
+    },
+    "52B": {
+     "lo": 59.9,
+     "hi": 97.2,
+     "same": 87.2,
+     "position_in_range": 0.73
+    },
+    "175B": {
+     "lo": 77.3,
+     "hi": 97.7,
+     "same": 91.0,
+     "position_in_range": 0.67
+    }
+   },
+   "ARC (Easy)": {
+    "0.81B": {
+     "lo": 0.0,
+     "hi": 99.9,
+     "same": 98.3,
+     "position_in_range": 0.98
+    },
+    "1.6B": {
+     "lo": 0.0,
+     "hi": 100.0,
+     "same": 98.9,
+     "position_in_range": 0.99
+    },
+    "3.5B": {
+     "lo": 0.0,
+     "hi": 99.4,
+     "same": 77.4,
+     "position_in_range": 0.78
+    },
+    "6.4B": {
+     "lo": 0.0,
+     "hi": 99.9,
+     "same": 77.9,
+     "position_in_range": 0.78
+    },
+    "13B": {
+     "lo": 0.0,
+     "hi": 91.8,
+     "same": 54.4,
+     "position_in_range": 0.59
+    },
+    "22B": {
+     "lo": 53.7,
+     "hi": 98.4,
+     "same": 82.2,
+     "position_in_range": 0.64
+    },
+    "52B": {
+     "lo": 81.0,
+     "hi": 98.9,
+     "same": 94.0,
+     "position_in_range": 0.72
+    },
+    "175B": {
+     "lo": 91.8,
+     "hi": 99.2,
+     "same": 96.2,
+     "position_in_range": 0.59
+    }
+   }
+  },
+  "position_13B_vs_175B": {
+   "AQuA": [
+    0.58,
+    0.44
+   ],
+   "LogiQA": [
+    0.48,
+    0.66
+   ],
+   "MMLU": [
+    0.52,
+    0.72
+   ],
+   "HellaSwag": [
+    0.38,
+    0.71
+   ],
+   "TruthfulQA": [
+    0.52,
+    0.78
+   ],
+   "OpenBookQA": [
+    0.54,
+    0.71
+   ],
+   "ARC (Challenge)": [
+    0.55,
+    0.67
+   ],
+   "ARC (Easy)": [
+    0.59,
+    0.59
+   ]
+  },
+  "floor_share_of_observed_at_175B": {
+   "AQuA": 0.0,
+   "LogiQA": 0.0,
+   "MMLU": 0.49,
+   "HellaSwag": 0.47,
+   "TruthfulQA": 0.28,
+   "OpenBookQA": 0.75,
+   "ARC (Challenge)": 0.85,
+   "ARC (Easy)": 0.95
+  }
+ },
+ "E2_appendixC_claim": {
+  "per_task": {
+   "AQuA": {
+    "max_gain_size_B": 175,
+    "most_faithful_size_B": 175,
+    "same": true
+   },
+   "LogiQA": {
+    "max_gain_size_B": 13,
+    "most_faithful_size_B": 13,
+    "same": true
+   },
+   "MMLU": {
+    "max_gain_size_B": 175,
+    "most_faithful_size_B": 13,
+    "same": false
+   },
+   "HellaSwag": {
+    "max_gain_size_B": 13,
+    "most_faithful_size_B": 13,
+    "same": true
+   },
+   "TruthfulQA": {
+    "max_gain_size_B": 52,
+    "most_faithful_size_B": 13,
+    "same": false
+   },
+   "OpenBookQA": {
+    "max_gain_size_B": 22,
+    "most_faithful_size_B": 13,
+    "same": false
+   },
+   "ARC (Challenge)": {
+    "max_gain_size_B": 13,
+    "most_faithful_size_B": 13,
+    "same": true
+   },
+   "ARC (Easy)": {
+    "max_gain_size_B": 13,
+    "most_faithful_size_B": 13,
+    "same": true
+   }
+  },
+  "n_same": 5,
+  "note": "논문은 4/8(ARC E, ARC C, HellaSwag, AQuA)이라 적음. 우리 추출은 LogiQA에서 13B 47.1 대 3.5B 47.3(0.2%p 차)라 5/8."
+ },
+ "F_implied_n_from_fig10_errbars": {
+  "per_task": {
+   "AQuA": {
+    "median_n_if_bar_is_1SE": 317,
+    "range": [
+     244,
+     648
+    ],
+    "median_n_if_bar_is_1.96SE": 1220
+   },
+   "LogiQA": {
+    "median_n_if_bar_is_1SE": 664,
+    "range": [
+     631,
+     703
+    ],
+    "median_n_if_bar_is_1.96SE": 2551
+   },
+   "MMLU": {
+    "median_n_if_bar_is_1SE": 1540,
+    "range": [
+     1441,
+     1631
+    ],
+    "median_n_if_bar_is_1.96SE": 5918
+   },
+   "HellaSwag": {
+    "median_n_if_bar_is_1SE": 1022,
+    "range": [
+     991,
+     1097
+    ],
+    "median_n_if_bar_is_1.96SE": 3927
+   },
+   "TruthfulQA": {
+    "median_n_if_bar_is_1SE": 804,
+    "range": [
+     785,
+     888
+    ],
+    "median_n_if_bar_is_1.96SE": 3092
+   },
+   "OpenBookQA": {
+    "median_n_if_bar_is_1SE": 499,
+    "range": [
+     442,
+     539
+    ],
+    "median_n_if_bar_is_1.96SE": 1918
+   },
+   "ARC (Challenge)": {
+    "median_n_if_bar_is_1SE": 1160,
+    "range": [
+     993,
+     1321
+    ],
+    "median_n_if_bar_is_1.96SE": 4459
+   },
+   "ARC (Easy)": {
+    "median_n_if_bar_is_1SE": 2369,
+    "range": [
+     2025,
+     2622
+    ],
+    "median_n_if_bar_is_1.96SE": 9104
+   }
+  },
+  "note": "논문이 문항 수와 오차막대 정의를 적지 않아 역산 추정이다. 모델 크기가 달라도 n이 비슷하면 이항 오차막대로 읽는 것이 자연스럽다."
+ },
+ "G_cross_figure": {
+  "AQuA": {
+   "fig3_0pct_by_length": [
+    35.4,
+    36.3,
+    36.2,
+    38.5
+   ],
+   "fig7_175B": 37.1,
+   "gap_to_mean_pts": -0.5
+  },
+  "LogiQA": {
+   "fig3_0pct_by_length": [
+    69.5,
+    69.0,
+    64.2,
+    61.1
+   ],
+   "fig7_175B": 65.6,
+   "gap_to_mean_pts": 0.3
+  },
+  "MMLU": {
+   "fig3_0pct_by_length": [
+    81.8,
+    79.3,
+    75.8,
+    72.6
+   ],
+   "fig7_175B": 80.0,
+   "gap_to_mean_pts": -2.6
+  },
+  "HellaSwag": {
+   "fig3_0pct_by_length": [
+    81.6,
+    78.6,
+    75.8,
+    71.9
+   ],
+   "fig7_175B": 78.3,
+   "gap_to_mean_pts": -1.4
+  },
+  "TruthfulQA": {
+   "fig3_0pct_by_length": [
+    80.0,
+    80.1,
+    78.3,
+    72.9
+   ],
+   "fig7_175B": 79.4,
+   "gap_to_mean_pts": -1.6
+  },
+  "OpenBookQA": {
+   "fig3_0pct_by_length": [
+    89.9,
+    88.5,
+    85.1,
+    82.0
+   ],
+   "fig7_175B": 88.1,
+   "gap_to_mean_pts": -1.8
+  },
+  "ARC (Challenge)": {
+   "fig3_0pct_by_length": [
+    91.3,
+    91.9,
+    90.5,
+    87.2
+   ],
+   "fig7_175B": 91.0,
+   "gap_to_mean_pts": -0.8
+  },
+  "ARC (Easy)": {
+   "fig3_0pct_by_length": [
+    96.5,
+    96.3,
+    95.4,
+    94.8
+   ],
+   "fig7_175B": 96.2,
+   "gap_to_mean_pts": -0.4
+  }
+ },
+ "H_fig4_cell_N": {
+  "cells_with_N_below_700": {
+   "AQuA 3-step": {
+    "smallest_N_consistent": 299,
+    "binomial_SE_at_p0.5_pts": 2.9
+   },
+   "AQuA 4-step": {
+    "smallest_N_consistent": 368,
+    "binomial_SE_at_p0.5_pts": 2.6
+   },
+   "AQuA 5-step": {
+    "smallest_N_consistent": 293,
+    "binomial_SE_at_p0.5_pts": 2.9
+   },
+   "AQuA 6-step": {
+    "smallest_N_consistent": 172,
+    "binomial_SE_at_p0.5_pts": 3.8
+   },
+   "MMLU 3-step": {
+    "smallest_N_consistent": 685,
+    "binomial_SE_at_p0.5_pts": 1.9
+   },
+   "MMLU 6-step": {
+    "smallest_N_consistent": 488,
+    "binomial_SE_at_p0.5_pts": 2.3
+   },
+   "HellaSwag 3-step": {
+    "smallest_N_consistent": 550,
+    "binomial_SE_at_p0.5_pts": 2.1
+   },
+   "HellaSwag 6-step": {
+    "smallest_N_consistent": 448,
+    "binomial_SE_at_p0.5_pts": 2.4
+   },
+   "TruthfulQA 6-step": {
+    "smallest_N_consistent": 140,
+    "binomial_SE_at_p0.5_pts": 4.2
+   },
+   "OpenBookQA 3-step": {
+    "smallest_N_consistent": 322,
+    "binomial_SE_at_p0.5_pts": 2.8
+   },
+   "OpenBookQA 4-step": {
+    "smallest_N_consistent": 659,
+    "binomial_SE_at_p0.5_pts": 1.9
+   },
+   "OpenBookQA 5-step": {
+    "smallest_N_consistent": 444,
+    "binomial_SE_at_p0.5_pts": 2.4
+   },
+   "OpenBookQA 6-step": {
+    "smallest_N_consistent": 115,
+    "binomial_SE_at_p0.5_pts": 4.7
+   },
+   "ARC (Challenge) 6-step": {
+    "smallest_N_consistent": 332,
+    "binomial_SE_at_p0.5_pts": 2.7
+   },
+   "ARC (Easy) 6-step": {
+    "smallest_N_consistent": 561,
+    "binomial_SE_at_p0.5_pts": 2.1
+   }
+  },
+  "note": "곡선 값이 k/N 격자 위에 있다고 보고 N을 역산한다(허용 0.012%p). N이 700 미만으로 식별되는 셀만 적었다. 나머지는 N이 더 크다(식별 불가)."
+ }
+}
