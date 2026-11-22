@@ -1,0 +1,50 @@
+{
+  "overall": {
+    "n_programs": 40,
+    "gpt4_passes": 666,
+    "human_passes": 1052,
+    "total_repairs_each": 2000,
+    "gpt4_rate": 0.333,
+    "human_rate": 0.526,
+    "ratio": 1.5795795795795795
+  },
+  "introductory": {
+    "n_programs": 28,
+    "gpt4_passes": 597,
+    "human_passes": 871,
+    "total_repairs_each": 1400,
+    "gpt4_rate": 0.42642857142857143,
+    "human_rate": 0.6221428571428571,
+    "ratio": 1.4589614740368508
+  },
+  "interview": {
+    "n_programs": 6,
+    "gpt4_passes": 58,
+    "human_passes": 137,
+    "total_repairs_each": 300,
+    "gpt4_rate": 0.19333333333333333,
+    "human_rate": 0.45666666666666667,
+    "ratio": 2.3620689655172415
+  },
+  "competition": {
+    "n_programs": 6,
+    "gpt4_passes": 11,
+    "human_passes": 44,
+    "total_repairs_each": 300,
+    "gpt4_rate": 0.03666666666666667,
+    "human_rate": 0.14666666666666667,
+    "ratio": 4.0
+  },
+  "program_level": {
+    "human_better": 20,
+    "gpt4_better": 5,
+    "tie": 15,
+    "sign_test_two_sided_p": 0.004077315330505371
+  },
+  "task_bootstrap_ratio_95ci": [
+    1.2413108242303874,
+    2.3263707571801566
+  ],
+  "program_level_sign_flip_perm_p": 0.00024998750062496874,
+  "mean_paired_diff_human_minus_gpt4": 0.193
+}
