@@ -1,0 +1,421 @@
+{
+ "ece_noise_floor_perfect_calibration": {
+  "n=200,bins=5": 0.0534,
+  "n=200,bins=10": 0.0691,
+  "n=200,bins=20": 0.099,
+  "n=1000,bins=5": 0.0242,
+  "n=1000,bins=10": 0.0333,
+  "n=1000,bins=20": 0.0453,
+  "n=5000,bins=5": 0.011,
+  "n=5000,bins=10": 0.0137,
+  "n=5000,bins=20": 0.0199,
+  "n=20000,bins=5": 0.005,
+  "n=20000,bins=10": 0.0066,
+  "n=20000,bins=20": 0.0098,
+  "n=100000,bins=5": 0.0026,
+  "n=100000,bins=10": 0.0035,
+  "n=100000,bins=20": 0.0042
+ },
+ "bin_sensitivity_overconfident": {
+  "bins=3": {
+   "equal_mass": 0.0428,
+   "equal_width": 0.0423
+  },
+  "bins=5": {
+   "equal_mass": 0.0443,
+   "equal_width": 0.0434
+  },
+  "bins=10": {
+   "equal_mass": 0.0443,
+   "equal_width": 0.0434
+  },
+  "bins=20": {
+   "equal_mass": 0.0488,
+   "equal_width": 0.0465
+  },
+  "bins=50": {
+   "equal_mass": 0.0553,
+   "equal_width": 0.0597
+  },
+  "bins=100": {
+   "equal_mass": 0.0611,
+   "equal_width": 0.0639
+  },
+  "rms_equal_mass_10": 0.0536,
+  "true_expected_gap": 0.05
+ },
+ "brier_constant_base_rate": {
+  "pi=0.05": 0.0475,
+  "pi=0.07": 0.0651,
+  "pi=0.14": 0.1204,
+  "pi=0.2": 0.16,
+  "pi=0.46": 0.2484,
+  "pi=0.5": 0.25,
+  "pi=0.715": 0.2038
+ },
+ "table1_brier_vs_constant": {
+  "TriviaQA": {
+   "trivia_only": {
+    "brier": 0.151,
+    "pi_range_where_beats_constant": [
+     0.185,
+     0.815
+    ]
+   },
+   "all4": {
+    "brier": 0.145,
+    "pi_range_where_beats_constant": [
+     0.176,
+     0.824
+    ]
+   }
+  },
+  "Mixed-Arithmetic": {
+   "trivia_only": {
+    "brier": 0.194,
+    "pi_range_where_beats_constant": [
+     0.263,
+     0.737
+    ]
+   },
+   "all4": {
+    "brier": 0.042,
+    "pi_range_where_beats_constant": [
+     0.044,
+     0.956
+    ]
+   }
+  },
+  "LAMBADA": {
+   "trivia_only": {
+    "brier": 0.431,
+    "pi_range_where_beats_constant": "none (최대 pi(1-pi)=0.25 < Brier)"
+   },
+   "all4": {
+    "brier": 0.108,
+    "pi_range_where_beats_constant": [
+     0.123,
+     0.877
+    ]
+   }
+  },
+  "PyFuncSynth": {
+   "trivia_only": {
+    "brier": 0.164,
+    "pi_range_where_beats_constant": [
+     0.207,
+     0.793
+    ]
+   },
+   "all4": {
+    "brier": 0.109,
+    "pi_range_where_beats_constant": [
+     0.125,
+     0.875
+    ]
+   }
+  },
+  "GSM8K": {
+   "trivia_only": {
+    "brier": 0.2,
+    "pi_range_where_beats_constant": [
+     0.276,
+     0.724
+    ]
+   },
+   "all4": {
+    "brier": 0.121,
+    "pi_range_where_beats_constant": [
+     0.141,
+     0.859
+    ]
+   }
+  }
+ },
+ "hanley_mcneil_se_scenarios": {
+  "LAMBADA(trivia-only, 0.606)": {
+   "n=1000,pos=0.5": 0.0178,
+   "n=5000,pos=0.5": 0.0079,
+   "n=5000,pos=0.3": 0.0089
+  },
+  "GSM8K(trivia-only, 0.624)": {
+   "n=1319,pos=0.1": 0.0273,
+   "n=1319,pos=0.2": 0.0201
+  },
+  "GSM8K(all-4, 0.752)": {
+   "n=1319,pos=0.1": 0.0254,
+   "n=1319,pos=0.2": 0.0184
+  },
+  "Table3 B-test(0.8460 vs 0.8717)": {
+   "n=2000,pos=0.5": 0.0088,
+   "n=5000,pos=0.5": 0.0056,
+   "n=10000,pos=0.5": 0.0039
+  }
+ },
+ "table3_B_test_z_independent_conservative": {
+  "n=500": 1.08,
+  "n=1000": 1.52,
+  "n=2000": 2.16,
+  "n=5000": 3.41
+ },
+ "table3_A_test_diff": 0.0002,
+ "table2_cross_diag_vs_offdiag_z_independent": {
+  "sd=0.15": {
+   "A_diff": 0.055,
+   "z_A": 6.99,
+   "B_diff": 0.068,
+   "z_B": 8.65
+  },
+  "sd=0.2": {
+   "A_diff": 0.055,
+   "z_A": 5.24,
+   "B_diff": 0.068,
+   "z_B": 6.48
+  },
+  "sd=0.3": {
+   "A_diff": 0.055,
+   "z_A": 3.5,
+   "B_diff": 0.068,
+   "z_B": 4.32
+  }
+ },
+ "table2_interaction": 0.123,
+ "table2_note": "A 행 0.463/0.408, B 행 0.409/0.477. 650=A만 정답, 826=B만 정답(본문 5.5 순서). 부분집합 단위 표준편차는 논문에 없어 시나리오",
+ "fig14_auroc_by_size_read": {
+  "TriviaQA": [
+   0.813,
+   0.884,
+   0.877,
+   0.864
+  ],
+  "Mixed-Arithmetic": [
+   0.372,
+   0.611,
+   0.773,
+   0.928
+  ],
+  "LAMBADA": [
+   0.536,
+   0.46,
+   0.59,
+   0.611
+  ],
+  "PyFuncSynth": [
+   0.598,
+   0.502,
+   0.677,
+   0.69
+  ]
+ },
+ "fig14_monotone_nondecreasing": {
+  "TriviaQA": false,
+  "Mixed-Arithmetic": true,
+  "LAMBADA": false,
+  "PyFuncSynth": false
+ },
+ "fig14_52B_matches_table1": {
+  "TriviaQA": [
+   0.864,
+   0.864
+  ],
+  "Mixed-Arithmetic": [
+   0.928,
+   0.928
+  ],
+  "LAMBADA": [
+   0.611,
+   0.606
+  ],
+  "PyFuncSynth": [
+   0.69,
+   0.687
+  ]
+ },
+ "fig11_derived": {
+  "Lambada": [
+   {
+    "size": "3B",
+    "base_acc": 0.46,
+    "cond_acc": 0.46,
+    "abs_gain": 0.0,
+    "error_ratio_cond_over_base": 1.0,
+    "coverage_upper_bound": 1.0,
+    "brier_model": 0.262,
+    "brier_constant_base_rate": 0.248,
+    "model_beats_constant": false
+   },
+   {
+    "size": "12B",
+    "base_acc": 0.58,
+    "cond_acc": 0.685,
+    "abs_gain": 0.105,
+    "error_ratio_cond_over_base": 0.75,
+    "coverage_upper_bound": 0.847,
+    "brier_model": 0.185,
+    "brier_constant_base_rate": 0.244,
+    "model_beats_constant": true
+   },
+   {
+    "size": "52B",
+    "base_acc": 0.715,
+    "cond_acc": 0.82,
+    "abs_gain": 0.105,
+    "error_ratio_cond_over_base": 0.632,
+    "coverage_upper_bound": 0.872,
+    "brier_model": 0.126,
+    "brier_constant_base_rate": 0.204,
+    "model_beats_constant": true
+   }
+  ],
+  "Codex": [
+   {
+    "size": "3B",
+    "base_acc": 0.065,
+    "cond_acc": 0.07,
+    "abs_gain": 0.005,
+    "error_ratio_cond_over_base": 0.995,
+    "coverage_upper_bound": 0.929,
+    "brier_model": 0.209,
+    "brier_constant_base_rate": 0.061,
+    "model_beats_constant": false
+   },
+   {
+    "size": "12B",
+    "base_acc": 0.094,
+    "cond_acc": 0.207,
+    "abs_gain": 0.113,
+    "error_ratio_cond_over_base": 0.875,
+    "coverage_upper_bound": 0.454,
+    "brier_model": 0.155,
+    "brier_constant_base_rate": 0.085,
+    "model_beats_constant": false
+   },
+   {
+    "size": "52B",
+    "base_acc": 0.138,
+    "cond_acc": 0.292,
+    "abs_gain": 0.154,
+    "error_ratio_cond_over_base": 0.821,
+    "coverage_upper_bound": 0.473,
+    "brier_model": 0.19,
+    "brier_constant_base_rate": 0.119,
+    "model_beats_constant": false
+   }
+  ]
+ },
+ "fig1_52B_coverage_upper_bound": {
+  "GSM8k": 0.474,
+  "Arithmetic": 0.783,
+  "TriviaQA": 0.652,
+  "Lambada": 0.872,
+  "Codex": 0.483
+ },
+ "fig1_52B_mean_base_cond": [
+  0.409,
+  0.579
+ ],
+ "fig4_ece_read": {
+  "lettered_5shot": [
+   0.13,
+   0.078,
+   0.028,
+   0.019
+  ],
+  "lettered_0shot": [
+   0.28,
+   0.115,
+   0.048,
+   0.055
+  ],
+  "true_false_5shot": [
+   0.11,
+   0.09,
+   0.09,
+   0.011
+  ],
+  "bb_default_5shot": [
+   0.29,
+   0.29,
+   0.23,
+   0.2
+  ]
+ },
+ "fig4_noise_floor_by_N": {
+  "N=5000": 0.0137,
+  "N=20000": 0.0066,
+  "N=100000": 0.0035
+ },
+ "fig15_all4_gsm8k": {
+  "ece_mad": 0.165,
+  "mean_pred": 0.327,
+  "mean_gt": 0.162,
+  "top_bin_pred_minus_gt": 0.492,
+  "fig1_gsm8k_base_acc_52B": 0.18
+ },
+ "toy_k_samples": {
+  "diverse_correct=False,k=1": {
+   "auroc": 0.595,
+   "brier_recalibrated_heldout": 0.242,
+   "ece_recalibrated_heldout": 0.036,
+   "ece_raw": 0.023,
+   "brier_raw": 0.241,
+   "brier_const": 0.25
+  },
+  "diverse_correct=False,k=2": {
+   "auroc": 0.861,
+   "brier_recalibrated_heldout": 0.125,
+   "ece_recalibrated_heldout": 0.024,
+   "ece_raw": 0.089,
+   "brier_raw": 0.144,
+   "brier_const": 0.25
+  },
+  "diverse_correct=False,k=5": {
+   "auroc": 0.961,
+   "brier_recalibrated_heldout": 0.07,
+   "ece_recalibrated_heldout": 0.011,
+   "ece_raw": 0.137,
+   "brier_raw": 0.102,
+   "brier_const": 0.25
+  },
+  "diverse_correct=False,k=20": {
+   "auroc": 0.992,
+   "brier_recalibrated_heldout": 0.021,
+   "ece_recalibrated_heldout": 0.007,
+   "ece_raw": 0.156,
+   "brier_raw": 0.084,
+   "brier_const": 0.25
+  },
+  "diverse_correct=True,k=1": {
+   "auroc": 0.595,
+   "brier_recalibrated_heldout": 0.243,
+   "ece_recalibrated_heldout": 0.025,
+   "ece_raw": 0.021,
+   "brier_raw": 0.242,
+   "brier_const": 0.25
+  },
+  "diverse_correct=True,k=2": {
+   "auroc": 0.654,
+   "brier_recalibrated_heldout": 0.23,
+   "ece_recalibrated_heldout": 0.026,
+   "ece_raw": 0.199,
+   "brier_raw": 0.271,
+   "brier_const": 0.25
+  },
+  "diverse_correct=True,k=5": {
+   "auroc": 0.74,
+   "brier_recalibrated_heldout": 0.2,
+   "ece_recalibrated_heldout": 0.028,
+   "ece_raw": 0.316,
+   "brier_raw": 0.31,
+   "brier_const": 0.25
+  },
+  "diverse_correct=True,k=20": {
+   "auroc": 0.901,
+   "brier_recalibrated_heldout": 0.123,
+   "ece_recalibrated_heldout": 0.03,
+   "ece_raw": 0.371,
+   "brier_raw": 0.331,
+   "brier_const": 0.25
+  }
+ }
+}
