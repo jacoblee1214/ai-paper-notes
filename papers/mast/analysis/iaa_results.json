@@ -1,0 +1,310 @@
+{
+ "Round 1": {
+  "traces": 5,
+  "modes_per_trace": [
+   18
+  ],
+  "cohen_pairwise_mean": 1.0,
+  "cohen_pairs": {
+   "1-2": 1.0,
+   "1-3": 1.0,
+   "2-3": 1.0
+  },
+  "fleiss": 1.0,
+  "raw_agreement": 1.0,
+  "pabak": 1.0,
+  "boot95_trace_resample": [
+   1.0,
+   1.0
+  ],
+  "per_trace_cohen_mean": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "cells": 90,
+  "pos_rate": 0.26666666666666666,
+  "cells_any_flag": 24,
+  "cells_all3_flag": 24,
+  "all3_over_any": 1.0
+ },
+ "Round 2": {
+  "traces": 5,
+  "modes_per_trace": [
+   17
+  ],
+  "cohen_pairwise_mean": 1.0,
+  "cohen_pairs": {
+   "1-2": 1.0,
+   "1-3": 1.0,
+   "2-3": 1.0
+  },
+  "fleiss": 1.0,
+  "raw_agreement": 1.0,
+  "pabak": 1.0,
+  "boot95_trace_resample": [
+   1.0,
+   1.0
+  ],
+  "per_trace_cohen_mean": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "cells": 85,
+  "pos_rate": 0.08235294117647059,
+  "cells_any_flag": 7,
+  "cells_all3_flag": 7,
+  "all3_over_any": 1.0
+ },
+ "Round 3": {
+  "traces": 5,
+  "modes_per_trace": [
+   17
+  ],
+  "cohen_pairwise_mean": 0.8126721763085399,
+  "cohen_pairs": {
+   "1-2": 0.71900826446281,
+   "1-3": 0.71900826446281,
+   "2-3": 1.0
+  },
+  "fleiss": 0.8067449791587719,
+  "raw_agreement": 0.9372549019607842,
+  "pabak": 0.8745098039215684,
+  "boot95_trace_resample": [
+   0.7914110429447853,
+   0.8148820326678767
+  ],
+  "per_trace_cohen_mean": [
+   0.814207650273224,
+   0.814207650273224,
+   0.814207650273224,
+   0.7588652482269503,
+   0.7588652482269503
+  ],
+  "cells": 85,
+  "pos_rate": 0.20392156862745098,
+  "cells_any_flag": 22,
+  "cells_all3_flag": 14,
+  "all3_over_any": 0.6363636363636364
+ },
+ "Generlazability": {
+  "traces": 4,
+  "modes_per_trace": [
+   14
+  ],
+  "cohen_pairwise_mean": 0.6369520447190348,
+  "cohen_pairs": {
+   "1-2": 0.45631067961165056,
+   "1-3": 1.0,
+   "2-3": 0.45454545454545403
+  },
+  "fleiss": 0.6717325227963525,
+  "raw_agreement": 0.9259259259259259,
+  "pabak": 0.8518518518518519,
+  "boot95_trace_resample": [
+   0.6266666666666666,
+   0.6569248715281065
+  ],
+  "per_trace_cohen_mean": [
+   0.6266666666666666,
+   0.6266666666666666,
+   0.6266666666666666,
+   NaN
+  ],
+  "cells": 54,
+  "pos_rate": 0.12962962962962962,
+  "cells_any_flag": 9,
+  "cells_all3_flag": 3,
+  "all3_over_any": 0.3333333333333333
+ },
+ "Rounds 2+3 (17-mode)": {
+  "traces": 10,
+  "modes_per_trace": [
+   17
+  ],
+  "cohen_pairwise_mean": 0.8750803710847798,
+  "cohen_pairs": {
+   "1-2": 0.8126205566271697,
+   "1-3": 0.8126205566271697,
+   "2-3": 1.0
+  },
+  "fleiss": 0.8721043227485026,
+  "raw_agreement": 0.9686274509803922,
+  "pabak": 0.9372549019607843,
+  "boot95_trace_resample": [
+   0.8329824561403508,
+   0.9393506956831964
+  ],
+  "per_trace_cohen_mean": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.814207650273224,
+   0.814207650273224,
+   0.814207650273224,
+   0.7588652482269503,
+   0.7588652482269503
+  ],
+  "cells": 170,
+  "pos_rate": 0.14313725490196078,
+  "cells_any_flag": 29,
+  "cells_all3_flag": 21,
+  "all3_over_any": 0.7241379310344828
+ },
+ "Rounds 1+2+3": {
+  "traces": 15,
+  "modes_per_trace": [
+   17,
+   18
+  ],
+  "cohen_pairwise_mean": 0.9329659350929775,
+  "cohen_pairs": {
+   "1-2": 0.8994489026394663,
+   "1-3": 0.8994489026394663,
+   "2-3": 1.0
+  },
+  "fleiss": 0.932229161010046,
+  "raw_agreement": 0.9794871794871796,
+  "pabak": 0.9589743589743591,
+  "boot95_trace_resample": [
+   0.8771696203050999,
+   0.9798917246713071
+  ],
+  "per_trace_cohen_mean": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.814207650273224,
+   0.814207650273224,
+   0.814207650273224,
+   0.7588652482269503,
+   0.7588652482269503
+  ],
+  "cells": 260,
+  "pos_rate": 0.1858974358974359,
+  "cells_any_flag": 53,
+  "cells_all3_flag": 45,
+  "all3_over_any": 0.8490566037735849
+ },
+ "Generalizability, 새 MAS 2개만(Magentic, OpenManus)": {
+  "traces": 2,
+  "modes_per_trace": [
+   14
+  ],
+  "cohen_pairwise_mean": 0.6470286227698628,
+  "cohen_pairs": {
+   "1-2": 0.471698113207547,
+   "1-3": 1.0,
+   "2-3": 0.46938775510204145
+  },
+  "fleiss": 0.686116700201207,
+  "raw_agreement": 0.9487179487179488,
+  "pabak": 0.8974358974358976,
+  "boot95_trace_resample": [
+   0.6266666666666666,
+   0.6470286227698628
+  ],
+  "per_trace_cohen_mean": [
+   0.6266666666666666,
+   NaN
+  ],
+  "cells": 26,
+  "pos_rate": 0.08974358974358974,
+  "cells_any_flag": 3,
+  "cells_all3_flag": 1,
+  "all3_over_any": 0.3333333333333333
+ },
+ "전체 19 trace": {
+  "traces": 19,
+  "modes_per_trace": [
+   14,
+   17,
+   18
+  ],
+  "cohen_pairwise_mean": 0.8978512529834148,
+  "cohen_pairs": {
+   "1-2": 0.8461752433936022,
+   "1-3": 0.9154322650148128,
+   "2-3": 0.9319462505418292
+  },
+  "fleiss": 0.8976214134890073,
+  "raw_agreement": 0.970276008492569,
+  "pabak": 0.940552016985138,
+  "boot95_trace_resample": [
+   0.8240303506534834,
+   0.952004398729957
+  ],
+  "per_trace_cohen_mean": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.814207650273224,
+   0.814207650273224,
+   0.814207650273224,
+   0.7588652482269503,
+   0.7588652482269503,
+   0.6266666666666666,
+   0.6266666666666666,
+   0.6266666666666666,
+   NaN
+  ],
+  "cells": 314,
+  "pos_rate": 0.1762208067940552,
+  "cells_any_flag": 62,
+  "cells_all3_flag": 48,
+  "all3_over_any": 0.7741935483870968
+ },
+ "mean_of_round_kappas_R2_R3": 0.9063360881542699,
+ "mean_of_round_kappas_R1_R2_R3": 0.9375573921028466,
+ "mean_of_round_kappas_R2_R3_Gen": 0.8165414070091915,
+ "duplicate_traces": [
+  [
+   [
+    3,
+    "Round 1",
+    "ChatDev"
+   ],
+   [
+    8,
+    "Round 2",
+    "ChatDev"
+   ]
+  ]
+ ],
+ "unique_traces": 18,
+ "nan_cells": [
+  [
+   "Generlazability",
+   "GAIA",
+   "3.2 No or Incomplete Verification",
+   "annotator_3"
+  ],
+  [
+   "Generlazability",
+   "GAIA",
+   "3.3 Incorrect Verification",
+   "annotator_3"
+  ]
+ ]
+}
