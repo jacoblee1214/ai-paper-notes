@@ -1,8 +1,8 @@
 ---
 title: "TRACE: CoT를 잘라 보상을 얼마나 일찍 받는지로 숨은 보상 해킹을 잡는다, 숫자를 다시 계산해 보니"
 date: 2026-11-22
-venue: "ICLR 2026 (구두)"
-venue_note: "ICLR 2026 공식 virtual 페이지에서 확인(2026-11-22): 구두 목록 iclr.cc/virtual/2026/events/oral의 항목 iclr.cc/virtual/2026/oral/10010464, 포스터 페이지 iclr.cc/virtual/2026/poster/10010463"
+venue: "ICLR 2026"
+venue_note: "구두 발표. ICLR 2026 공식 virtual 페이지에서 확인(2026-11-22): 구두 목록 iclr.cc/virtual/2026/events/oral의 항목 iclr.cc/virtual/2026/oral/10010464, 포스터 페이지 iclr.cc/virtual/2026/poster/10010463"
 tags: [보상 해킹, 사고의 연쇄, 모니터링, 평가, 검증]
 paper: "Is It Thinking or Cheating? Detecting Implicit Reward Hacking by Measuring Reasoning Effort (arXiv:2510.01367)"
 project: "https://arxiv.org/abs/2510.01367"

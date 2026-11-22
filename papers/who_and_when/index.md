@@ -1,7 +1,7 @@
 ---
 title: "Who&When: 실패 귀인 정확도 55%와 5%는 단순 규칙과 얼마나 다른가"
 date: 2026-11-22
-venue: "ICML 2025 스포트라이트"
+venue: "ICML 2025"
 venue_note: "ICML 2025 공식 virtual 페이지 icml.cc/virtual/2025/poster/45823(제목, 저자, Spotlight Poster 표기)와 PMLR v267 zhang25cq에서 확인 (2026-11-22)"
 tags: [에이전트, 실패 귀인, 다중 에이전트, 평가, 검증]
 paper: "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems (arXiv:2505.00212)"

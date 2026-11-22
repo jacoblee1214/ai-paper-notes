@@ -1,7 +1,7 @@
 ---
 title: "ImpossibleBench: 프롬프트 한 줄이 부정행위율을 1%에서 92%로 바꾼다"
 date: 2026-11-22
-venue: "ICLR 2026 (포스터)"
+venue: "ICLR 2026"
 venue_note: "ICLR 2026 공식 virtual 페이지 iclr.cc/virtual/2026/poster/10009390에서 제목과 포스터 형식 확인 (2026-11-22, 목록 확인 기록 기준)"
 tags: [코딩 에이전트, 보상 해킹, 평가, 벤치마크, 검증]
 paper: "ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases (arXiv:2510.20270)"

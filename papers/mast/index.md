@@ -1,8 +1,8 @@
 ---
 title: "MAST 다중 에이전트 실패 분류: κ 0.88은 최종 분류의 값이 아니다"
 date: 2026-11-22
-venue: "NeurIPS 2025 (Datasets & Benchmarks 트랙, 스포트라이트)"
-venue_note: "neurips.cc 공식 virtual 페이지 neurips.cc/virtual/2025/poster/121528에서 확인했고, 같은 번호가 같은 사이트의 스포트라이트 목록과 Datasets & Benchmarks 목록에 모두 올라 있습니다. 논문 v3 첫 쪽 각주에도 Datasets and Benchmarks 트랙이 적혀 있습니다 (2026-11-22). papers.nips.cc 논문집 색인에서는 제목을 찾지 못했습니다."
+venue: "NeurIPS 2025"
+venue_note: "Datasets & Benchmarks 트랙, 스포트라이트. neurips.cc 공식 virtual 페이지 neurips.cc/virtual/2025/poster/121528에서 확인했고, 같은 번호가 같은 사이트의 스포트라이트 목록과 Datasets & Benchmarks 목록에 모두 올라 있습니다. 논문 v3 첫 쪽 각주에도 Datasets and Benchmarks 트랙이 적혀 있습니다 (2026-11-22). papers.nips.cc 논문집 색인에서는 제목을 찾지 못했습니다."
 tags: [에이전트, 다중 에이전트, 실패 분류, 평가, 주석자 일치도, 검증]
 paper: "Why Do Multi-Agent LLM Systems Fail? (arXiv:2503.13657)"
 code: "https://github.com/multi-agent-systems-failure-taxonomy/MAST"

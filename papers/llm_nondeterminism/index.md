@@ -1,7 +1,7 @@
 ---
 title: "temperature 0은 결정적이지 않다: 공개 원출력으로 다시 계산한 LLM 비결정성"
 date: 2026-11-22
-venue: "IJCNLP-AACL 2025 워크숍 (Eval4NLP 2025)"
+venue: "IJCNLP-AACL 2025 워크숍"
 venue_note: "ACL Anthology 2025.eval4nlp-1.12에서 확인했습니다. 볼륨은 Proceedings of the 5th Workshop on Evaluation and Comparison of NLP Systems(Eval4NLP, 2025-12, Mumbai, pp. 135-148, DOI 10.18653/v1/2025.eval4nlp-1.12)이고, Anthology 이벤트 페이지에서 IJCNLP-AACL 2025의 워크숍으로 올라 있습니다 (2026-11-22). 워크숍 논문입니다. 게재본은 arXiv v5와 표 수치가 같고 제목이 ...LLM System Settings in Hosted Environments로 바뀌었습니다."
 tags: [LLM, 비결정성, 재현성, 평가, 통계 검정, 검증]
 paper: "Non-Determinism of \"Deterministic\" LLM Settings (arXiv:2408.04667)"

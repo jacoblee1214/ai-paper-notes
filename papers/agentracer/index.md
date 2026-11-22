@@ -1,7 +1,7 @@
 ---
 title: "실패 귀인 추적기 AgenTracer: 초록의 18.18%는 표에서 나오지 않는다"
 date: 2026-11-22
-venue: "ICLR 2026 (포스터)"
+venue: "ICLR 2026"
 venue_note: "ICLR 2026 공식 virtual 페이지 iclr.cc/virtual/2026/poster/10007726에서 제목, 저자, 포스터 형식을 확인 (2026-11-22)"
 tags: [에이전트, 실패 귀인, 다중 에이전트, 평가, 검증]
 paper: "AgenTracer: Who Is Inducing Failure in the LLM Agentic Systems? (arXiv:2509.03312)"
