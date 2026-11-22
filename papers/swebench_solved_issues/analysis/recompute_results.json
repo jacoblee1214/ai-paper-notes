@@ -1,0 +1,440 @@
+{
+ "table1": {
+  "CodeStory": {
+   "resolved": 311,
+   "resolved_pct": 62.2,
+   "rq1_files": 30,
+   "rq1_difference_counts": {
+    "functionality": 26,
+    "coding_conventions": 4
+   },
+   "incorrect": 26,
+   "incorrect_pct": 8.4,
+   "incorrect_ci95": [
+    5.8,
+    12.0
+   ],
+   "inc_subset_of_resolved": true,
+   "updated_pct": 57.0,
+   "drop_pp": 5.2
+  },
+  "LearnByInteract": {
+   "resolved": 301,
+   "resolved_pct": 60.2,
+   "rq1_files": 51,
+   "rq1_difference_counts": {
+    "functionality": 23,
+    "coding_conventions": 28
+   },
+   "incorrect": 23,
+   "incorrect_pct": 7.6,
+   "incorrect_ci95": [
+    5.1,
+    11.2
+   ],
+   "inc_subset_of_resolved": true,
+   "updated_pct": 55.6,
+   "drop_pp": 4.6
+  },
+  "OpenHands": {
+   "resolved": 265,
+   "resolved_pct": 53.0,
+   "rq1_files": 23,
+   "rq1_difference_counts": {
+    "functionality": 19,
+    "coding_conventions": 4
+   },
+   "incorrect": 19,
+   "incorrect_pct": 7.2,
+   "incorrect_ci95": [
+    4.6,
+    10.9
+   ],
+   "inc_subset_of_resolved": true,
+   "updated_pct": 49.2,
+   "drop_pp": 3.8
+  }
+ },
+ "table1_pooled": {
+  "incorrect": 68,
+  "plausible": 877,
+  "pct": 7.75,
+  "ci95": [
+   6.2,
+   9.7
+  ],
+  "mean_drop_pp": 4.53
+ },
+ "table2": {
+  "CodeStory": {
+   "susp": 91,
+   "susp_pct": 29.3,
+   "susp_ci95": [
+    24.5,
+    34.5
+   ],
+   "susp_subset_of_resolved": true,
+   "uniq": 74,
+   "overlap_with_rq1": 17,
+   "wo_susp_pct": 44.0,
+   "drop_pp": 18.2,
+   "wo_susp_and_rq1_pct": 42.2
+  },
+  "LearnByInteract": {
+   "susp": 97,
+   "susp_pct": 32.2,
+   "susp_ci95": [
+    27.2,
+    37.7
+   ],
+   "susp_subset_of_resolved": true,
+   "uniq": 81,
+   "overlap_with_rq1": 16,
+   "wo_susp_pct": 40.8,
+   "drop_pp": 19.4,
+   "wo_susp_and_rq1_pct": 39.4
+  },
+  "OpenHands": {
+   "susp": 72,
+   "susp_pct": 27.2,
+   "susp_ci95": [
+    22.2,
+    32.8
+   ],
+   "susp_subset_of_resolved": true,
+   "uniq": 60,
+   "overlap_with_rq1": 12,
+   "wo_susp_pct": 38.6,
+   "drop_pp": 14.4,
+   "wo_susp_and_rq1_pct": 37.2
+  }
+ },
+ "table2_pooled": {
+  "susp": 260,
+  "plausible": 877,
+  "pct": 29.65,
+  "ci95": [
+   26.7,
+   32.8
+  ],
+  "mean_drop_pp": 17.33,
+  "mean_uniq_share": 82.7,
+  "rq1_nonsusp": 23
+ },
+ "susp_rate_across_tools": {
+  "chi2": 1.76,
+  "dof": 2,
+  "p": 0.414,
+  "fisher_pairs": {
+   "CodeStory_vs_LearnByInteract": 0.432,
+   "CodeStory_vs_OpenHands": 0.643,
+   "LearnByInteract_vs_OpenHands": 0.199
+  }
+ },
+ "paired_resolution": {
+  "LBI_vs_OH_before": {
+   "pct": [
+    60.2,
+    53.0
+   ],
+   "only_first": 86,
+   "only_second": 50,
+   "mcnemar_p": 0.003
+  },
+  "LBI_vs_OH_wo_susp": {
+   "pct": [
+    40.8,
+    38.6
+   ],
+   "only_first": 68,
+   "only_second": 57,
+   "mcnemar_p": 0.371
+  },
+  "LBI_vs_OH_wo_susp_rq1": {
+   "pct": [
+    39.4,
+    37.2
+   ],
+   "only_first": 68,
+   "only_second": 57,
+   "mcnemar_p": 0.371
+  },
+  "CS_vs_LBI_before": {
+   "only_first": 60,
+   "only_second": 50,
+   "mcnemar_p": 0.391
+  },
+  "CS_vs_OH_before": {
+   "only_first": 68,
+   "only_second": 22,
+   "mcnemar_p": 0.0
+  },
+  "CS_vs_LBI_wo_susp": {
+   "only_first": 70,
+   "only_second": 54,
+   "mcnemar_p": 0.178
+  },
+  "CS_vs_OH_wo_susp": {
+   "only_first": 62,
+   "only_second": 35,
+   "mcnemar_p": 0.008
+  }
+ },
+ "cross_tool": {
+  "resolved_by_all3": 203,
+  "susp_by_any_of_3_among_all3": 85,
+  "susp_by_all_of_3_among_all3": 33
+ },
+ "table4": {
+  "CodeStory": {
+   "gpt4omini": 26,
+   "deepseek": 34,
+   "qwen": 45,
+   "sample_subset_of_resolved": true
+  },
+  "LearnByInteract": {
+   "gpt4omini": 32,
+   "deepseek": 43,
+   "qwen": 49,
+   "sample_subset_of_resolved": true
+  },
+  "OpenHands": {
+   "gpt4omini": 26,
+   "deepseek": 40,
+   "qwen": 49,
+   "sample_subset_of_resolved": true
+  }
+ },
+ "table4_overall": {
+  "n": 300,
+  "gpt4omini": 84,
+  "deepseek": 117,
+  "qwen": 143,
+  "pct": {
+   "gpt4omini": 28.0,
+   "deepseek": 39.0,
+   "qwen": 47.7
+  },
+  "mcnemar_gpt_vs_deepseek": {
+   "only_first": 8,
+   "only_second": 41,
+   "mcnemar_p": 0.0
+  },
+  "mcnemar_gpt_vs_qwen": {
+   "only_first": 9,
+   "only_second": 68,
+   "mcnemar_p": 0.0
+  },
+  "mcnemar_deepseek_vs_qwen": {
+   "only_first": 17,
+   "only_second": 43,
+   "mcnemar_p": 0.001
+  },
+  "gpt_found_but_not_qwen": 9,
+  "union_all3": 162
+ },
+ "rq34_counts": {
+  "n": 77,
+  "pattern": {
+   "divergent": 36,
+   "supplementary_more": 13,
+   "noalignment": 16,
+   "supplementary_change": 8,
+   "absent": 4
+  },
+  "correctness": {
+   "uncertain": 51,
+   "incorrect_partial": 6,
+   "incorrect_regression": 11,
+   "incorrect_irrelevant": 3,
+   "correct_irrelevant": 2,
+   "correct_invaliddt": 2,
+   "incorrect_erroneous": 2
+  },
+  "by_tool": {
+   "OpenHands": 21,
+   "LearnByInteract": 29,
+   "CodeStory": 27
+  },
+  "expected_by_tool_if_30pct": {
+   "CodeStory": 27.3,
+   "LearnByInteract": 29.1,
+   "OpenHands": 21.6
+  }
+ },
+ "table7_check": {
+  "absent": 4,
+  "supplementary": 21,
+  "sup_more": 13,
+  "sup_change": 8,
+  "divergent": 36,
+  "noalign": 16,
+  "pct": {
+   "divergent": 46.8,
+   "supp": 27.3
+  }
+ },
+ "table8_check": {
+  "incorrect": 22,
+  "incorrect_by_type": {
+   "incorrect_partial": 6,
+   "incorrect_regression": 11,
+   "incorrect_irrelevant": 3,
+   "incorrect_erroneous": 2
+  },
+  "correct": 4,
+  "uncertain": 51,
+  "incorrect_pct": 28.6,
+  "incorrect_wilson95": [
+   19.7,
+   39.5
+  ],
+  "uncertain_pct": 66.2,
+  "sample_in_rq1_incorrect": 11,
+  "sample_rq1_share_pct": 14.3,
+  "population_rq1_share_pct": 17.3,
+  "fisher_rq1_share_p": 0.475
+ },
+ "margin_check": {
+  "paper_claim": 9.39,
+  "computed_with_fpc": 9.39,
+  "computed_without_fpc": 11.17
+ },
+ "extrapolation": {
+  "point_22_of_77": {
+   "est_incorrect": 97.3,
+   "rate_pct": 11.09,
+   "inflation_pp_by_tool": {
+    "CodeStory": 7.0,
+    "LearnByInteract": 6.94,
+    "OpenHands": 5.51
+   },
+   "inflation_mean_pp": 6.48
+  },
+  "wilson_low": {
+   "est_incorrect": 74.2,
+   "rate_pct": 8.46,
+   "inflation_pp_by_tool": {
+    "CodeStory": 5.38,
+    "LearnByInteract": 5.22,
+    "OpenHands": 4.24
+   },
+   "inflation_mean_pp": 4.95
+  },
+  "wilson_high": {
+   "est_incorrect": 125.7,
+   "rate_pct": 14.33,
+   "inflation_pp_by_tool": {
+    "CodeStory": 8.99,
+    "LearnByInteract": 9.06,
+    "OpenHands": 7.09
+   },
+   "inflation_mean_pp": 8.38
+  },
+  "lower_bound_only_RQ1": {
+   "est_incorrect": 23.0,
+   "rate_pct": 2.62,
+   "inflation_pp_by_tool": {
+    "CodeStory": 1.8,
+    "LearnByInteract": 1.4,
+    "OpenHands": 1.4
+   },
+   "inflation_mean_pp": 1.53
+  },
+  "upper_if_all_uncertain_incorrect": {
+   "est_incorrect": 269.5,
+   "rate_pct": 30.73,
+   "inflation_pp_by_tool": {
+    "CodeStory": 19.05,
+    "LearnByInteract": 19.79,
+    "OpenHands": 15.05
+   },
+   "inflation_mean_pp": 17.96
+  },
+  "note": "upper 는 '불확실' 51건을 모두 오답으로 본 극단값. 하한 0.0 은 PatchDiff 의심분을 전부 정답으로 본 값(RQ1만)."
+ },
+ "confirmed_only": {
+  "by_tool": {
+   "CodeStory": 29,
+   "LearnByInteract": 28,
+   "OpenHands": 22
+  },
+  "total": 79,
+  "rate_pct": 9.01,
+  "inflation_mean_pp": 5.27
+ },
+ "stratified_extrapolation": {
+  "by_tool": {
+   "CodeStory": {
+    "sample": 27,
+    "incorrect": 8,
+    "rate": 0.296,
+    "wilson95": [
+     15.9,
+     48.5
+    ]
+   },
+   "LearnByInteract": {
+    "sample": 29,
+    "incorrect": 8,
+    "rate": 0.276,
+    "wilson95": [
+     14.7,
+     45.7
+    ]
+   },
+   "OpenHands": {
+    "sample": 21,
+    "incorrect": 6,
+    "rate": 0.286,
+    "wilson95": [
+     13.8,
+     50.0
+    ]
+   }
+  },
+  "rate_pct": 11.09,
+  "inflation_mean_pp": 6.49
+ },
+ "inflation_identity": {
+  "avg_resolved_pct": 58.47,
+  "rate11_times_avg": 6.43
+ },
+ "supplementary_claim": {
+  "supp_incorrect": "8/21",
+  "other_incorrect": "14/56",
+  "share_of_incorrect_pct": 36.4,
+  "share_of_sample_pct": 27.3,
+  "fisher_p": 0.271,
+  "by_pattern": {
+   "divergent": {
+    "n": 36,
+    "incorrect": 6,
+    "uncertain": 29
+   },
+   "supplementary_more": {
+    "n": 13,
+    "incorrect": 3,
+    "uncertain": 9
+   },
+   "supplementary_change": {
+    "n": 8,
+    "incorrect": 5,
+    "uncertain": 3
+   },
+   "noalignment": {
+    "n": 16,
+    "incorrect": 6,
+    "uncertain": 10
+   },
+   "absent": {
+    "n": 4,
+    "incorrect": 2,
+    "uncertain": 0
+   }
+  },
+  "determinable_only": {
+   "supp": "8/9"
+  }
+ }
+}

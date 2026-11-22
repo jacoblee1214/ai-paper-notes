@@ -1,0 +1,53 @@
+{
+ "CodeStory": {
+  "suspicious": 91,
+  "supporting_files_median": 11.0,
+  "supporting_files_min": 1,
+  "single_file_support": 11,
+  "single_file_pct": 12.1
+ },
+ "LearnByInteract": {
+  "suspicious": 97,
+  "supporting_files_median": 10.0,
+  "supporting_files_min": 1,
+  "single_file_support": 15,
+  "single_file_pct": 15.5
+ },
+ "OpenHands": {
+  "suspicious": 72,
+  "supporting_files_median": 9.0,
+  "supporting_files_min": 1,
+  "single_file_support": 6,
+  "single_file_pct": 8.3
+ },
+ "pooled": {
+  "suspicious": 260,
+  "single_file_support": 32,
+  "single_file_pct": 12.3,
+  "median": 10.0,
+  "p25": 3.0,
+  "p75": 22.25,
+  "total_generated_files_median": 222.0
+ },
+ "support_vs_label": {
+  "incorrect_n": 22,
+  "uncertain_n": 51,
+  "correct_n": 4,
+  "incorrect_median": 11.0,
+  "uncertain_median": 11.0,
+  "correct_values": [
+   5,
+   1,
+   13,
+   43
+  ],
+  "mannwhitney_p": 0.923,
+  "single_file_among_incorrect": "1/22",
+  "single_file_among_uncertain": "2/51"
+ },
+ "duplicate_instances_in_sample": {
+  "unique_instances": 66,
+  "rows": 77,
+  "instances_in_2plus_tools": 9
+ }
+}

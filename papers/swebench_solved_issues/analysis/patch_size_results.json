@@ -1,0 +1,117 @@
+{
+ "per_tool": {
+  "CodeStory": {
+   "plausible": 311,
+   "identical_to_gold_normalized": 1,
+   "tested_by_patchdiff": 258,
+   "plausible_not_tested": 53,
+   "not_tested_and_not_identical": 52,
+   "identical_and_susp": 0,
+   "susp_among_non_identical": "91/310"
+  },
+  "LearnByInteract": {
+   "plausible": 301,
+   "identical_to_gold_normalized": 6,
+   "tested_by_patchdiff": 249,
+   "plausible_not_tested": 52,
+   "not_tested_and_not_identical": 46,
+   "identical_and_susp": 0,
+   "susp_among_non_identical": "97/295"
+  },
+  "OpenHands": {
+   "plausible": 265,
+   "identical_to_gold_normalized": 20,
+   "tested_by_patchdiff": 217,
+   "plausible_not_tested": 48,
+   "not_tested_and_not_identical": 29,
+   "identical_and_susp": 0,
+   "susp_among_non_identical": "72/245"
+  }
+ },
+ "suspicious_among_non_identical": {
+  "k": 260,
+  "n": 850,
+  "pct": 30.6,
+  "wilson95": [
+   27.6,
+   33.8
+  ]
+ },
+ "size_tests": [
+  {
+   "metric": "생성 패치 변경 줄 수",
+   "susp_median": 10.0,
+   "nonsusp_median": 6.0,
+   "susp_mean": 16.52,
+   "nonsusp_mean": 9.93,
+   "mannwhitney_p": 1.46e-11
+  },
+  {
+   "metric": "정답 패치 변경 줄 수",
+   "susp_median": 6.0,
+   "nonsusp_median": 5.0,
+   "susp_mean": 11.53,
+   "nonsusp_mean": 7.75,
+   "mannwhitney_p": 0.00135
+  },
+  {
+   "metric": "생성/정답 변경 줄 비",
+   "susp_median": 1.4316770186335404,
+   "nonsusp_median": 1.0,
+   "susp_mean": 2.97,
+   "nonsusp_mean": 2.27,
+   "mannwhitney_p": 0.00229
+  },
+  {
+   "metric": "생성 패치 파일 수",
+   "susp_median": 1.0,
+   "nonsusp_median": 1.0,
+   "susp_mean": 1.12,
+   "nonsusp_mean": 1.05,
+   "mannwhitney_p": 0.0048
+  },
+  {
+   "metric": "생성-정답 파일 수 차",
+   "susp_median": 0.0,
+   "nonsusp_median": 0.0,
+   "susp_mean": -0.02,
+   "nonsusp_mean": -0.01,
+   "mannwhitney_p": 0.301
+  }
+ ],
+ "raw_patch_includes_extra_files": {
+  "median_changed_lines_all_files": 39.0,
+  "median_changed_lines_source_only": 7.0,
+  "share_patches_with_extra_nonsource_files_pct": 80.3
+ },
+ "susp_among_tested_by_patchdiff": {
+  "k": 260,
+  "n": 723,
+  "pct": 36.0,
+  "untested_non_identical": 127
+ },
+ "rate_by_group": {
+  "생성 파일 수 > 정답": {
+   "n": 35,
+   "susp": 18,
+   "pct": 51.4
+  },
+  "생성 파일 수 <= 정답": {
+   "n": 815,
+   "susp": 242,
+   "pct": 29.7
+  },
+  "생성 줄 수 > 2배 정답": {
+   "n": 220,
+   "susp": 97,
+   "pct": 44.1
+  },
+  "생성 줄 수 <= 2배 정답": {
+   "n": 630,
+   "susp": 163,
+   "pct": 25.9
+  }
+ },
+ "fisher_files": 0.0085,
+ "fisher_lines2x": 0.0
+}
