@@ -1,0 +1,4061 @@
+{
+ "internal": [
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "navigate",
+   "best": 96.8,
+   "median": 95.6,
+   "worst": 93.2,
+   "TARa": 96.4,
+   "TARr": 46.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "geometric_shapes",
+   "best": 72.4,
+   "median": 59.6,
+   "worst": 46.8,
+   "TARa": 62.8,
+   "TARr": 25.2,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "logical_deduction",
+   "best": 88.8,
+   "median": 81.6,
+   "worst": 75.2,
+   "TARa": 84.4,
+   "TARr": 34.8,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "ruin_names",
+   "best": 72.0,
+   "median": 58.0,
+   "worst": 44.8,
+   "TARa": 66.0,
+   "TARr": 5.6,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "high_school_european_history",
+   "best": 83.6,
+   "median": 81.2,
+   "worst": 78.2,
+   "TARa": 94.5,
+   "TARr": 70.9,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "college_mathematics",
+   "best": 39.0,
+   "median": 38.0,
+   "worst": 34.0,
+   "TARa": 89.0,
+   "TARr": 76.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "professional_accounting",
+   "best": 52.5,
+   "median": 50.9,
+   "worst": 48.9,
+   "TARa": 91.1,
+   "TARr": 76.6,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "public_relations",
+   "best": 75.5,
+   "median": 69.1,
+   "worst": 65.5,
+   "TARa": 87.3,
+   "TARr": 82.7,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "navigate",
+   "best": 98.8,
+   "median": 98.8,
+   "worst": 98.4,
+   "TARa": 99.6,
+   "TARr": 46.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "geometric_shapes",
+   "best": 82.4,
+   "median": 68.4,
+   "worst": 53.6,
+   "TARa": 63.2,
+   "TARr": 0.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "logical_deduction",
+   "best": 100.0,
+   "median": 100.0,
+   "worst": 99.6,
+   "TARa": 99.6,
+   "TARr": 36.8,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "ruin_names",
+   "best": 93.2,
+   "median": 90.8,
+   "worst": 88.4,
+   "TARa": 95.2,
+   "TARr": 0.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "high_school_european_history",
+   "best": 89.1,
+   "median": 81.5,
+   "worst": 72.1,
+   "TARa": 81.2,
+   "TARr": 9.1,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "college_mathematics",
+   "best": 88.0,
+   "median": 69.0,
+   "worst": 44.0,
+   "TARa": 50.0,
+   "TARr": 0.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "professional_accounting",
+   "best": 89.0,
+   "median": 74.5,
+   "worst": 57.8,
+   "TARa": 66.7,
+   "TARr": 4.6,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "public_relations",
+   "best": 80.0,
+   "median": 76.4,
+   "worst": 73.6,
+   "TARa": 92.7,
+   "TARr": 37.3,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "navigate",
+   "best": 82.0,
+   "median": 80.2,
+   "worst": 78.0,
+   "TARa": 96.0,
+   "TARr": 86.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "geometric_shapes",
+   "best": 49.2,
+   "median": 40.6,
+   "worst": 32.8,
+   "TARa": 58.8,
+   "TARr": 27.6,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "logical_deduction",
+   "best": 95.6,
+   "median": 90.2,
+   "worst": 81.2,
+   "TARa": 85.2,
+   "TARr": 50.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "ruin_names",
+   "best": 68.4,
+   "median": 66.8,
+   "worst": 64.4,
+   "TARa": 88.4,
+   "TARr": 47.6,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "high_school_european_history",
+   "best": 74.5,
+   "median": 67.0,
+   "worst": 59.4,
+   "TARa": 82.4,
+   "TARr": 7.3,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "college_mathematics",
+   "best": 50.0,
+   "median": 22.5,
+   "worst": 4.0,
+   "TARa": 22.0,
+   "TARr": 0.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "professional_accounting",
+   "best": 48.2,
+   "median": 45.4,
+   "worst": 44.0,
+   "TARa": 89.0,
+   "TARr": 52.1,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "public_relations",
+   "best": 63.6,
+   "median": 61.8,
+   "worst": 61.8,
+   "TARa": 96.4,
+   "TARr": 73.6,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "navigate",
+   "best": 95.2,
+   "median": 94.6,
+   "worst": 93.6,
+   "TARa": 98.4,
+   "TARr": 64.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "geometric_shapes",
+   "best": 67.2,
+   "median": 57.0,
+   "worst": 47.2,
+   "TARa": 66.4,
+   "TARr": 18.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "logical_deduction",
+   "best": 98.0,
+   "median": 96.4,
+   "worst": 95.2,
+   "TARa": 97.2,
+   "TARr": 49.6,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "ruin_names",
+   "best": 89.2,
+   "median": 87.2,
+   "worst": 84.4,
+   "TARa": 94.4,
+   "TARr": 10.8,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "high_school_european_history",
+   "best": 61.8,
+   "median": 50.3,
+   "worst": 41.2,
+   "TARa": 73.3,
+   "TARr": 22.4,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "college_mathematics",
+   "best": 85.0,
+   "median": 54.5,
+   "worst": 22.0,
+   "TARa": 25.0,
+   "TARr": 0.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "professional_accounting",
+   "best": 78.0,
+   "median": 67.2,
+   "worst": 55.3,
+   "TARa": 69.5,
+   "TARr": 0.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "public_relations",
+   "best": 67.3,
+   "median": 60.5,
+   "worst": 53.6,
+   "TARa": 81.8,
+   "TARr": 17.3,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "navigate",
+   "best": 84.4,
+   "median": 79.0,
+   "worst": 71.6,
+   "TARa": 84.8,
+   "TARr": 50.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "geometric_shapes",
+   "best": 54.4,
+   "median": 27.8,
+   "worst": 8.8,
+   "TARa": 12.0,
+   "TARr": 2.4,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "logical_deduction",
+   "best": 87.6,
+   "median": 75.0,
+   "worst": 64.0,
+   "TARa": 74.8,
+   "TARr": 16.4,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "ruin_names",
+   "best": 78.8,
+   "median": 67.6,
+   "worst": 55.6,
+   "TARa": 70.4,
+   "TARr": 24.8,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "high_school_european_history",
+   "best": 65.5,
+   "median": 51.5,
+   "worst": 35.8,
+   "TARa": 55.2,
+   "TARr": 23.6,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "college_mathematics",
+   "best": 75.0,
+   "median": 31.5,
+   "worst": 3.0,
+   "TARa": 7.0,
+   "TARr": 0.0,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "professional_accounting",
+   "best": 67.0,
+   "median": 39.0,
+   "worst": 13.1,
+   "TARa": 23.4,
+   "TARr": 0.7,
+   "problems": []
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "public_relations",
+   "best": 58.2,
+   "median": 48.2,
+   "worst": 36.4,
+   "TARa": 62.7,
+   "TARr": 10.9,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "navigate",
+   "best": 67.2,
+   "median": 64.8,
+   "worst": 61.6,
+   "TARa": 94.4,
+   "TARr": 94.4,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "geometric_shapes",
+   "best": 16.8,
+   "median": 15.2,
+   "worst": 13.6,
+   "TARa": 91.6,
+   "TARr": 91.6,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "logical_deduction",
+   "best": 52.8,
+   "median": 50.8,
+   "worst": 48.8,
+   "TARa": 92.8,
+   "TARr": 90.4,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "ruin_names",
+   "best": 67.2,
+   "median": 65.6,
+   "worst": 65.2,
+   "TARa": 95.6,
+   "TARr": 97.2,
+   "problems": [
+    "TARr>TARa"
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "high_school_european_history",
+   "best": 75.2,
+   "median": 74.5,
+   "worst": 72.7,
+   "TARa": 94.5,
+   "TARr": 94.5,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "college_mathematics",
+   "best": 54.0,
+   "median": 32.0,
+   "worst": 15.0,
+   "TARa": 46.0,
+   "TARr": 10.0,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "professional_accounting",
+   "best": 60.3,
+   "median": 53.2,
+   "worst": 47.5,
+   "TARa": 81.9,
+   "TARr": 49.3,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "public_relations",
+   "best": 66.4,
+   "median": 65.0,
+   "worst": 61.8,
+   "TARa": 92.7,
+   "TARr": 86.4,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "navigate",
+   "best": 94.8,
+   "median": 92.0,
+   "worst": 88.8,
+   "TARa": 91.6,
+   "TARr": 15.2,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "geometric_shapes",
+   "best": 76.0,
+   "median": 56.8,
+   "worst": 30.4,
+   "TARa": 45.6,
+   "TARr": 0.8,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "logical_deduction",
+   "best": 100.0,
+   "median": 98.6,
+   "worst": 96.0,
+   "TARa": 96.8,
+   "TARr": 7.6,
+   "problems": [
+    "Best-Worst>100-TARa"
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "ruin_names",
+   "best": 85.2,
+   "median": 83.2,
+   "worst": 80.0,
+   "TARa": 93.6,
+   "TARr": 27.6,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "high_school_european_history",
+   "best": 76.4,
+   "median": 65.2,
+   "worst": 55.2,
+   "TARa": 74.5,
+   "TARr": 17.0,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "college_mathematics",
+   "best": 85.0,
+   "median": 59.0,
+   "worst": 41.0,
+   "TARa": 50.0,
+   "TARr": 0.0,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "professional_accounting",
+   "best": 84.0,
+   "median": 72.0,
+   "worst": 58.5,
+   "TARa": 71.3,
+   "TARr": 4.3,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "public_relations",
+   "best": 81.8,
+   "median": 75.5,
+   "worst": 66.4,
+   "TARa": 83.6,
+   "TARr": 38.2,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "navigate",
+   "best": 88.4,
+   "median": 73.0,
+   "worst": 54.0,
+   "TARa": 65.2,
+   "TARr": 9.2,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "geometric_shapes",
+   "best": 24.4,
+   "median": 18.8,
+   "worst": 12.0,
+   "TARa": 60.4,
+   "TARr": 31.2,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "logical_deduction",
+   "best": 72.4,
+   "median": 62.8,
+   "worst": 55.6,
+   "TARa": 80.4,
+   "TARr": 37.6,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "ruin_names",
+   "best": 54.8,
+   "median": 50.6,
+   "worst": 45.6,
+   "TARa": 86.8,
+   "TARr": 26.8,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "high_school_european_history",
+   "best": 38.8,
+   "median": 34.2,
+   "worst": 30.3,
+   "TARa": 77.6,
+   "TARr": 41.2,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "college_mathematics",
+   "best": 55.0,
+   "median": 34.0,
+   "worst": 17.0,
+   "TARa": 45.0,
+   "TARr": 3.0,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "professional_accounting",
+   "best": 36.2,
+   "median": 29.1,
+   "worst": 25.5,
+   "TARa": 77.0,
+   "TARr": 44.0,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "public_relations",
+   "best": 28.2,
+   "median": 25.0,
+   "worst": 19.1,
+   "TARa": 82.7,
+   "TARr": 46.4,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "navigate",
+   "best": 94.0,
+   "median": 88.0,
+   "worst": 78.4,
+   "TARa": 83.2,
+   "TARr": 4.8,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "geometric_shapes",
+   "best": 44.4,
+   "median": 21.6,
+   "worst": 6.4,
+   "TARa": 39.2,
+   "TARr": 5.6,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "logical_deduction",
+   "best": 95.6,
+   "median": 92.2,
+   "worst": 87.6,
+   "TARa": 92.0,
+   "TARr": 16.4,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "ruin_names",
+   "best": 67.6,
+   "median": 60.0,
+   "worst": 51.2,
+   "TARa": 79.2,
+   "TARr": 11.6,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "high_school_european_history",
+   "best": 41.2,
+   "median": 27.9,
+   "worst": 19.4,
+   "TARa": 53.9,
+   "TARr": 6.1,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "college_mathematics",
+   "best": 77.0,
+   "median": 58.0,
+   "worst": 40.0,
+   "TARa": 54.0,
+   "TARr": 0.0,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "professional_accounting",
+   "best": 54.6,
+   "median": 38.7,
+   "worst": 24.8,
+   "TARa": 57.8,
+   "TARr": 2.1,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "public_relations",
+   "best": 39.1,
+   "median": 26.4,
+   "worst": 13.6,
+   "TARa": 56.4,
+   "TARr": 0.9,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "navigate",
+   "best": 66.0,
+   "median": 57.6,
+   "worst": 48.0,
+   "TARa": 77.6,
+   "TARr": 3.2,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "geometric_shapes",
+   "best": 29.6,
+   "median": 27.0,
+   "worst": 24.8,
+   "TARa": 90.4,
+   "TARr": 83.6,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "logical_deduction",
+   "best": 70.0,
+   "median": 59.6,
+   "worst": 49.6,
+   "TARa": 74.4,
+   "TARr": 14.0,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "ruin_names",
+   "best": 38.0,
+   "median": 34.4,
+   "worst": 30.4,
+   "TARa": 82.4,
+   "TARr": 20.8,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "high_school_european_history",
+   "best": 66.1,
+   "median": 56.1,
+   "worst": 45.5,
+   "TARa": 63.6,
+   "TARr": 19.4,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "college_mathematics",
+   "best": 57.0,
+   "median": 31.5,
+   "worst": 13.0,
+   "TARa": 29.0,
+   "TARr": 2.0,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "professional_accounting",
+   "best": 42.9,
+   "median": 28.9,
+   "worst": 20.2,
+   "TARa": 48.2,
+   "TARr": 4.3,
+   "problems": []
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "public_relations",
+   "best": 57.3,
+   "median": 46.8,
+   "worst": 35.5,
+   "TARa": 61.8,
+   "TARr": 10.0,
+   "problems": []
+  }
+ ],
+ "vs_batches": [
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "navigate",
+   "paper": {
+    "best": 96.8,
+    "median": 95.6,
+    "worst": 93.2,
+    "TARa": 96.4,
+    "TARr": 46.0
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-12_20-32-49",
+    "matches": 5,
+    "best": 96.8,
+    "median": 95.6,
+    "worst": 93.2,
+    "TARa": 96.4,
+    "TARr": 46.0,
+    "maxmin": 1.2
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-12_20-32-49",
+     "matches": 5,
+     "best": 96.8,
+     "median": 95.6,
+     "worst": 93.2,
+     "TARa": 96.4,
+     "TARr": 46.0,
+     "maxmin": 1.2
+    },
+    {
+     "date": "2024-12-15_21-25-41",
+     "matches": 0,
+     "best": 96.0,
+     "median": 96.0,
+     "worst": 96.0,
+     "TARa": 100.0,
+     "TARr": 86.8,
+     "maxmin": 0.0
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "geometric_shapes",
+   "paper": {
+    "best": 72.4,
+    "median": 59.6,
+    "worst": 46.8,
+    "TARa": 62.8,
+    "TARr": 25.2
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_12-47-04",
+    "matches": 5,
+    "best": 72.4,
+    "median": 59.6,
+    "worst": 46.8,
+    "TARa": 62.8,
+    "TARr": 25.2,
+    "maxmin": 6.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_12-47-04",
+     "matches": 5,
+     "best": 72.4,
+     "median": 59.6,
+     "worst": 46.8,
+     "TARa": 62.8,
+     "TARr": 25.2,
+     "maxmin": 6.8
+    },
+    {
+     "date": "2024-12-29_12-39-09",
+     "matches": 0,
+     "best": 66.0,
+     "median": 60.8,
+     "worst": 54.8,
+     "TARa": 82.0,
+     "TARr": 56.0,
+     "maxmin": 3.6
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "logical_deduction",
+   "paper": {
+    "best": 88.8,
+    "median": 81.6,
+    "worst": 75.2,
+    "TARa": 84.4,
+    "TARr": 34.8
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-12_21-39-45",
+    "matches": 5,
+    "best": 88.8,
+    "median": 81.6,
+    "worst": 75.2,
+    "TARa": 84.4,
+    "TARr": 34.8,
+    "maxmin": 2.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-12_21-39-45",
+     "matches": 5,
+     "best": 88.8,
+     "median": 81.6,
+     "worst": 75.2,
+     "TARa": 84.4,
+     "TARr": 34.8,
+     "maxmin": 2.0
+    },
+    {
+     "date": "2024-12-20_19-52-06",
+     "matches": 0,
+     "best": 90.0,
+     "median": 89.6,
+     "worst": 89.2,
+     "TARa": 99.2,
+     "TARr": 79.6,
+     "maxmin": 0.8
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "ruin_names",
+   "paper": {
+    "best": 72.0,
+    "median": 58.0,
+    "worst": 44.8,
+    "TARa": 66.0,
+    "TARr": 5.6
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_09-22-49",
+    "matches": 5,
+    "best": 72.0,
+    "median": 58.0,
+    "worst": 44.8,
+    "TARa": 66.0,
+    "TARr": 5.6,
+    "maxmin": 2.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_09-22-49",
+     "matches": 5,
+     "best": 72.0,
+     "median": 58.0,
+     "worst": 44.8,
+     "TARa": 66.0,
+     "TARr": 5.6,
+     "maxmin": 2.8
+    },
+    {
+     "date": "2024-12-21_12-25-11",
+     "matches": 0,
+     "best": 67.2,
+     "median": 64.4,
+     "worst": 61.6,
+     "TARa": 79.6,
+     "TARr": 65.2,
+     "maxmin": 2.4
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "high_school_european_history",
+   "paper": {
+    "best": 83.6,
+    "median": 81.2,
+    "worst": 78.2,
+    "TARa": 94.5,
+    "TARr": 70.9
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_11-37-11",
+    "matches": 5,
+    "best": 83.6,
+    "median": 81.2,
+    "worst": 78.2,
+    "TARa": 94.5,
+    "TARr": 70.9,
+    "maxmin": 1.2
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_11-37-11",
+     "matches": 5,
+     "best": 83.6,
+     "median": 81.2,
+     "worst": 78.2,
+     "TARa": 94.5,
+     "TARr": 70.9,
+     "maxmin": 1.2
+    },
+    {
+     "date": "2024-12-28_22-36-16",
+     "matches": 1,
+     "best": 81.2,
+     "median": 81.2,
+     "worst": 81.2,
+     "TARa": 98.8,
+     "TARr": 97.0,
+     "maxmin": 0.0
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "college_mathematics",
+   "paper": {
+    "best": 39.0,
+    "median": 38.0,
+    "worst": 34.0,
+    "TARa": 89.0,
+    "TARr": 76.0
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_10-50-07",
+    "matches": 5,
+    "best": 39.0,
+    "median": 38.0,
+    "worst": 34.0,
+    "TARa": 89.0,
+    "TARr": 76.0,
+    "maxmin": 3.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_10-50-07",
+     "matches": 5,
+     "best": 39.0,
+     "median": 38.0,
+     "worst": 34.0,
+     "TARa": 89.0,
+     "TARr": 76.0,
+     "maxmin": 3.0
+    },
+    {
+     "date": "2024-12-28_16-42-30",
+     "matches": 1,
+     "best": 36.0,
+     "median": 36.0,
+     "worst": 35.0,
+     "TARa": 89.0,
+     "TARr": 80.0,
+     "maxmin": 1.0
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "professional_accounting",
+   "paper": {
+    "best": 52.5,
+    "median": 50.9,
+    "worst": 48.9,
+    "TARa": 91.1,
+    "TARr": 76.6
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_08-12-38",
+    "matches": 5,
+    "best": 52.5,
+    "median": 50.9,
+    "worst": 48.9,
+    "TARa": 91.1,
+    "TARr": 76.6,
+    "maxmin": 1.1
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_08-12-38",
+     "matches": 5,
+     "best": 52.5,
+     "median": 50.9,
+     "worst": 48.9,
+     "TARa": 91.1,
+     "TARr": 76.6,
+     "maxmin": 1.1
+    },
+    {
+     "date": "2024-12-20_21-05-24",
+     "matches": 0,
+     "best": 54.6,
+     "median": 53.5,
+     "worst": 51.8,
+     "TARa": 96.1,
+     "TARr": 91.8,
+     "maxmin": 1.4
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-35-turbo",
+   "task": "public_relations",
+   "paper": {
+    "best": 75.5,
+    "median": 69.1,
+    "worst": 65.5,
+    "TARa": 87.3,
+    "TARr": 82.7
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_12-33-16",
+    "matches": 5,
+    "best": 75.5,
+    "median": 69.1,
+    "worst": 65.5,
+    "TARa": 87.3,
+    "TARr": 82.7,
+    "maxmin": 1.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_12-33-16",
+     "matches": 5,
+     "best": 75.5,
+     "median": 69.1,
+     "worst": 65.5,
+     "TARa": 87.3,
+     "TARr": 82.7,
+     "maxmin": 1.8
+    },
+    {
+     "date": "2024-12-29_12-25-53",
+     "matches": 0,
+     "best": 76.4,
+     "median": 75.5,
+     "worst": 73.6,
+     "TARa": 95.5,
+     "TARr": 90.0,
+     "maxmin": 1.8
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "navigate",
+   "paper": {
+    "best": 98.8,
+    "median": 98.8,
+    "worst": 98.4,
+    "TARa": 99.6,
+    "TARr": 46.0
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-12_19-35-04",
+    "matches": 5,
+    "best": 98.8,
+    "median": 98.8,
+    "worst": 98.4,
+    "TARa": 99.6,
+    "TARr": 46.0,
+    "maxmin": 0.4
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-12_19-35-04",
+     "matches": 5,
+     "best": 98.8,
+     "median": 98.8,
+     "worst": 98.4,
+     "TARa": 99.6,
+     "TARr": 46.0,
+     "maxmin": 0.4
+    },
+    {
+     "date": "2024-12-15_17-54-33",
+     "matches": 1,
+     "best": 99.2,
+     "median": 98.8,
+     "worst": 98.0,
+     "TARa": 98.8,
+     "TARr": 36.0,
+     "maxmin": 1.2
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "geometric_shapes",
+   "paper": {
+    "best": 82.4,
+    "median": 68.4,
+    "worst": 53.6,
+    "TARa": 63.2,
+    "TARr": 0.0
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_19-15-50",
+    "matches": 5,
+    "best": 82.4,
+    "median": 68.4,
+    "worst": 53.6,
+    "TARa": 63.2,
+    "TARr": 0.0,
+    "maxmin": 6.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_19-15-50",
+     "matches": 5,
+     "best": 82.4,
+     "median": 68.4,
+     "worst": 53.6,
+     "TARa": 63.2,
+     "TARr": 0.0,
+     "maxmin": 6.8
+    },
+    {
+     "date": "2024-12-29_12-20-19",
+     "matches": 2,
+     "best": 83.2,
+     "median": 68.8,
+     "worst": 53.6,
+     "TARa": 63.2,
+     "TARr": 0.4,
+     "maxmin": 3.6
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "logical_deduction",
+   "paper": {
+    "best": 100.0,
+    "median": 100.0,
+    "worst": 99.6,
+    "TARa": 99.6,
+    "TARr": 36.8
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-12_21-41-24",
+    "matches": 5,
+    "best": 100.0,
+    "median": 100.0,
+    "worst": 99.6,
+    "TARa": 99.6,
+    "TARr": 36.8,
+    "maxmin": 0.4
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-12_21-41-24",
+     "matches": 5,
+     "best": 100.0,
+     "median": 100.0,
+     "worst": 99.6,
+     "TARa": 99.6,
+     "TARr": 36.8,
+     "maxmin": 0.4
+    },
+    {
+     "date": "2024-12-20_17-04-49",
+     "matches": 4,
+     "best": 100.0,
+     "median": 100.0,
+     "worst": 99.6,
+     "TARa": 99.6,
+     "TARr": 35.2,
+     "maxmin": 0.4
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "ruin_names",
+   "paper": {
+    "best": 93.2,
+    "median": 90.8,
+    "worst": 88.4,
+    "TARa": 95.2,
+    "TARr": 0.0
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_11-29-31",
+    "matches": 5,
+    "best": 93.2,
+    "median": 90.8,
+    "worst": 88.4,
+    "TARa": 95.2,
+    "TARr": 0.0,
+    "maxmin": 0.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_11-29-31",
+     "matches": 5,
+     "best": 93.2,
+     "median": 90.8,
+     "worst": 88.4,
+     "TARa": 95.2,
+     "TARr": 0.0,
+     "maxmin": 0.8
+    },
+    {
+     "date": "2024-12-21_12-28-11",
+     "matches": 0,
+     "best": 92.4,
+     "median": 90.0,
+     "worst": 87.2,
+     "TARa": 94.4,
+     "TARr": 0.4,
+     "maxmin": 1.6
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "high_school_european_history",
+   "paper": {
+    "best": 89.1,
+    "median": 81.5,
+    "worst": 72.1,
+    "TARa": 81.2,
+    "TARr": 9.1
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_15-40-12",
+    "matches": 5,
+    "best": 89.1,
+    "median": 81.5,
+    "worst": 72.1,
+    "TARa": 81.2,
+    "TARr": 9.1,
+    "maxmin": 4.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_15-40-12",
+     "matches": 5,
+     "best": 89.1,
+     "median": 81.5,
+     "worst": 72.1,
+     "TARa": 81.2,
+     "TARr": 9.1,
+     "maxmin": 4.8
+    },
+    {
+     "date": "2024-12-28_17-31-12",
+     "matches": 0,
+     "best": 89.7,
+     "median": 81.8,
+     "worst": 70.9,
+     "TARa": 80.0,
+     "TARr": 7.9,
+     "maxmin": 3.0
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "college_mathematics",
+   "paper": {
+    "best": 88.0,
+    "median": 69.0,
+    "worst": 44.0,
+    "TARa": 50.0,
+    "TARr": 0.0
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_13-25-50",
+    "matches": 5,
+    "best": 88.0,
+    "median": 69.0,
+    "worst": 44.0,
+    "TARa": 50.0,
+    "TARr": 0.0,
+    "maxmin": 8.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_13-25-50",
+     "matches": 5,
+     "best": 88.0,
+     "median": 69.0,
+     "worst": 44.0,
+     "TARa": 50.0,
+     "TARr": 0.0,
+     "maxmin": 8.0
+    },
+    {
+     "date": "2024-12-28_15-00-31",
+     "matches": 1,
+     "best": 87.0,
+     "median": 67.5,
+     "worst": 47.0,
+     "TARa": 53.0,
+     "TARr": 0.0,
+     "maxmin": 10.0
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "professional_accounting",
+   "paper": {
+    "best": 89.0,
+    "median": 74.5,
+    "worst": 57.8,
+    "TARa": 66.7,
+    "TARr": 4.6
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_08-50-21",
+    "matches": 5,
+    "best": 89.0,
+    "median": 74.5,
+    "worst": 57.8,
+    "TARa": 66.7,
+    "TARr": 4.6,
+    "maxmin": 3.5
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_08-50-21",
+     "matches": 5,
+     "best": 89.0,
+     "median": 74.5,
+     "worst": 57.8,
+     "TARa": 66.7,
+     "TARr": 4.6,
+     "maxmin": 3.5
+    },
+    {
+     "date": "2024-12-20_20-59-10",
+     "matches": 0,
+     "best": 85.5,
+     "median": 74.3,
+     "worst": 58.5,
+     "TARa": 70.9,
+     "TARr": 6.0,
+     "maxmin": 2.8
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "gpt-4o",
+   "task": "public_relations",
+   "paper": {
+    "best": 80.0,
+    "median": 76.4,
+    "worst": 73.6,
+    "TARa": 92.7,
+    "TARr": 37.3
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_16-56-57",
+    "matches": 5,
+    "best": 80.0,
+    "median": 76.4,
+    "worst": 73.6,
+    "TARa": 92.7,
+    "TARr": 37.3,
+    "maxmin": 1.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_16-56-57",
+     "matches": 5,
+     "best": 80.0,
+     "median": 76.4,
+     "worst": 73.6,
+     "TARa": 92.7,
+     "TARr": 37.3,
+     "maxmin": 1.8
+    },
+    {
+     "date": "2024-12-29_12-09-31",
+     "matches": 3,
+     "best": 80.0,
+     "median": 76.4,
+     "worst": 73.6,
+     "TARa": 90.0,
+     "TARr": 36.4,
+     "maxmin": 3.6
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "navigate",
+   "paper": {
+    "best": 82.0,
+    "median": 80.2,
+    "worst": 78.0,
+    "TARa": 96.0,
+    "TARr": 86.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-20_10-53-54",
+    "matches": 5,
+    "best": 82.0,
+    "median": 80.2,
+    "worst": 78.0,
+    "TARa": 96.0,
+    "TARr": 86.0,
+    "maxmin": 1.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-20_10-53-54",
+     "matches": 5,
+     "best": 82.0,
+     "median": 80.2,
+     "worst": 78.0,
+     "TARa": 96.0,
+     "TARr": 86.0,
+     "maxmin": 1.6
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "geometric_shapes",
+   "paper": {
+    "best": 49.2,
+    "median": 40.6,
+    "worst": 32.8,
+    "TARa": 58.8,
+    "TARr": 27.6
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-22_08-42-19",
+    "matches": 5,
+    "best": 49.2,
+    "median": 40.6,
+    "worst": 32.8,
+    "TARa": 58.8,
+    "TARr": 27.6,
+    "maxmin": 4.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-22_08-42-19",
+     "matches": 5,
+     "best": 49.2,
+     "median": 40.6,
+     "worst": 32.8,
+     "TARa": 58.8,
+     "TARr": 27.6,
+     "maxmin": 4.0
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "logical_deduction",
+   "paper": {
+    "best": 95.6,
+    "median": 90.2,
+    "worst": 81.2,
+    "TARa": 85.2,
+    "TARr": 50.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-20_12-38-35",
+    "matches": 5,
+    "best": 95.6,
+    "median": 90.2,
+    "worst": 81.2,
+    "TARa": 85.2,
+    "TARr": 50.0,
+    "maxmin": 2.4
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-20_12-38-35",
+     "matches": 5,
+     "best": 95.6,
+     "median": 90.2,
+     "worst": 81.2,
+     "TARa": 85.2,
+     "TARr": 50.0,
+     "maxmin": 2.4
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "ruin_names",
+   "paper": {
+    "best": 68.4,
+    "median": 66.8,
+    "worst": 64.4,
+    "TARa": 88.4,
+    "TARr": 47.6
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-20_18-47-19",
+    "matches": 5,
+    "best": 68.4,
+    "median": 66.8,
+    "worst": 64.4,
+    "TARa": 88.4,
+    "TARr": 47.6,
+    "maxmin": 1.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-20_18-47-19",
+     "matches": 5,
+     "best": 68.4,
+     "median": 66.8,
+     "worst": 64.4,
+     "TARa": 88.4,
+     "TARr": 47.6,
+     "maxmin": 1.6
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "high_school_european_history",
+   "paper": {
+    "best": 74.5,
+    "median": 67.0,
+    "worst": 59.4,
+    "TARa": 82.4,
+    "TARr": 7.3
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-21_10-40-39",
+    "matches": 5,
+    "best": 74.5,
+    "median": 67.0,
+    "worst": 59.4,
+    "TARa": 82.4,
+    "TARr": 7.3,
+    "maxmin": 4.2
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-21_10-40-39",
+     "matches": 5,
+     "best": 74.5,
+     "median": 67.0,
+     "worst": 59.4,
+     "TARa": 82.4,
+     "TARr": 7.3,
+     "maxmin": 4.2
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "college_mathematics",
+   "paper": {
+    "best": 50.0,
+    "median": 22.5,
+    "worst": 4.0,
+    "TARa": 22.0,
+    "TARr": 0.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-20_20-13-34",
+    "matches": 5,
+    "best": 50.0,
+    "median": 22.5,
+    "worst": 4.0,
+    "TARa": 22.0,
+    "TARr": 0.0,
+    "maxmin": 7.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-20_20-13-34",
+     "matches": 5,
+     "best": 50.0,
+     "median": 22.5,
+     "worst": 4.0,
+     "TARa": 22.0,
+     "TARr": 0.0,
+     "maxmin": 7.0
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "professional_accounting",
+   "paper": {
+    "best": 48.2,
+    "median": 45.4,
+    "worst": 44.0,
+    "TARa": 89.0,
+    "TARr": 52.1
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-20_14-00-58",
+    "matches": 5,
+    "best": 48.2,
+    "median": 45.4,
+    "worst": 44.0,
+    "TARa": 89.0,
+    "TARr": 52.1,
+    "maxmin": 1.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-20_14-00-58",
+     "matches": 5,
+     "best": 48.2,
+     "median": 45.4,
+     "worst": 44.0,
+     "TARa": 89.0,
+     "TARr": 52.1,
+     "maxmin": 1.8
+    },
+    {
+     "date": "2025-02-20_07-58-57",
+     "matches": 1,
+     "best": 47.5,
+     "median": 45.0,
+     "worst": 41.5,
+     "TARa": 89.0,
+     "TARr": 51.4,
+     "maxmin": 2.1
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-8b",
+   "task": "public_relations",
+   "paper": {
+    "best": 63.6,
+    "median": 61.8,
+    "worst": 61.8,
+    "TARa": 96.4,
+    "TARr": 73.6
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-21_18-25-34",
+    "matches": 5,
+    "best": 63.6,
+    "median": 61.8,
+    "worst": 61.8,
+    "TARa": 96.4,
+    "TARr": 73.6,
+    "maxmin": 1.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-21_18-25-34",
+     "matches": 5,
+     "best": 63.6,
+     "median": 61.8,
+     "worst": 61.8,
+     "TARa": 96.4,
+     "TARr": 73.6,
+     "maxmin": 1.8
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "navigate",
+   "paper": {
+    "best": 95.2,
+    "median": 94.6,
+    "worst": 93.6,
+    "TARa": 98.4,
+    "TARr": 64.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-22_16-14-09",
+    "matches": 5,
+    "best": 95.2,
+    "median": 94.6,
+    "worst": 93.6,
+    "TARa": 98.4,
+    "TARr": 64.0,
+    "maxmin": 1.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-22_16-14-09",
+     "matches": 5,
+     "best": 95.2,
+     "median": 94.6,
+     "worst": 93.6,
+     "TARa": 98.4,
+     "TARr": 64.0,
+     "maxmin": 1.6
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "geometric_shapes",
+   "paper": {
+    "best": 67.2,
+    "median": 57.0,
+    "worst": 47.2,
+    "TARa": 66.4,
+    "TARr": 18.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-16_11-24-24",
+    "matches": 5,
+    "best": 67.2,
+    "median": 57.0,
+    "worst": 47.2,
+    "TARa": 66.4,
+    "TARr": 18.0,
+    "maxmin": 5.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-16_11-24-24",
+     "matches": 5,
+     "best": 67.2,
+     "median": 57.0,
+     "worst": 47.2,
+     "TARa": 66.4,
+     "TARr": 18.0,
+     "maxmin": 5.6
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "logical_deduction",
+   "paper": {
+    "best": 98.0,
+    "median": 96.4,
+    "worst": 95.2,
+    "TARa": 97.2,
+    "TARr": 49.6
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-23_17-22-50",
+    "matches": 5,
+    "best": 98.0,
+    "median": 96.4,
+    "worst": 95.2,
+    "TARa": 97.2,
+    "TARr": 49.6,
+    "maxmin": 1.2
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-23_17-22-50",
+     "matches": 5,
+     "best": 98.0,
+     "median": 96.4,
+     "worst": 95.2,
+     "TARa": 97.2,
+     "TARr": 49.6,
+     "maxmin": 1.2
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "ruin_names",
+   "paper": {
+    "best": 89.2,
+    "median": 87.2,
+    "worst": 84.4,
+    "TARa": 94.4,
+    "TARr": 10.8
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-14_17-58-25",
+    "matches": 5,
+    "best": 89.2,
+    "median": 87.2,
+    "worst": 84.4,
+    "TARa": 94.4,
+    "TARr": 10.8,
+    "maxmin": 1.2
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-14_17-58-25",
+     "matches": 5,
+     "best": 89.2,
+     "median": 87.2,
+     "worst": 84.4,
+     "TARa": 94.4,
+     "TARr": 10.8,
+     "maxmin": 1.2
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "high_school_european_history",
+   "paper": {
+    "best": 61.8,
+    "median": 50.3,
+    "worst": 41.2,
+    "TARa": 73.3,
+    "TARr": 22.4
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-03_19-17-08",
+    "matches": 5,
+    "best": 61.8,
+    "median": 50.3,
+    "worst": 41.2,
+    "TARa": 73.3,
+    "TARr": 22.4,
+    "maxmin": 6.7
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-03_19-17-08",
+     "matches": 5,
+     "best": 61.8,
+     "median": 50.3,
+     "worst": 41.2,
+     "TARa": 73.3,
+     "TARr": 22.4,
+     "maxmin": 6.7
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "college_mathematics",
+   "paper": {
+    "best": 85.0,
+    "median": 54.5,
+    "worst": 22.0,
+    "TARa": 25.0,
+    "TARr": 0.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-01_17-12-31",
+    "matches": 5,
+    "best": 85.0,
+    "median": 54.5,
+    "worst": 22.0,
+    "TARa": 25.0,
+    "TARr": 0.0,
+    "maxmin": 15.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-01_17-12-31",
+     "matches": 5,
+     "best": 85.0,
+     "median": 54.5,
+     "worst": 22.0,
+     "TARa": 25.0,
+     "TARr": 0.0,
+     "maxmin": 15.0
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "professional_accounting",
+   "paper": {
+    "best": 78.0,
+    "median": 67.2,
+    "worst": 55.3,
+    "TARa": 69.5,
+    "TARr": 0.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-24_18-10-41",
+    "matches": 5,
+    "best": 78.0,
+    "median": 67.2,
+    "worst": 55.3,
+    "TARa": 69.5,
+    "TARr": 0.0,
+    "maxmin": 5.3
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-24_18-10-41",
+     "matches": 5,
+     "best": 78.0,
+     "median": 67.2,
+     "worst": 55.3,
+     "TARa": 69.5,
+     "TARr": 0.0,
+     "maxmin": 5.3
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "llama3-70b",
+   "task": "public_relations",
+   "paper": {
+    "best": 67.3,
+    "median": 60.5,
+    "worst": 53.6,
+    "TARa": 81.8,
+    "TARr": 17.3
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-04_12-45-37",
+    "matches": 5,
+    "best": 67.3,
+    "median": 60.5,
+    "worst": 53.6,
+    "TARa": 81.8,
+    "TARr": 17.3,
+    "maxmin": 3.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-04_12-45-37",
+     "matches": 5,
+     "best": 67.3,
+     "median": 60.5,
+     "worst": 53.6,
+     "TARa": 81.8,
+     "TARr": 17.3,
+     "maxmin": 3.6
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "navigate",
+   "paper": {
+    "best": 84.4,
+    "median": 79.0,
+    "worst": 71.6,
+    "TARa": 84.8,
+    "TARr": 50.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-11_10-16-17",
+    "matches": 5,
+    "best": 84.4,
+    "median": 79.0,
+    "worst": 71.6,
+    "TARa": 84.8,
+    "TARr": 50.0,
+    "maxmin": 4.4
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-11_10-16-17",
+     "matches": 5,
+     "best": 84.4,
+     "median": 79.0,
+     "worst": 71.6,
+     "TARa": 84.8,
+     "TARr": 50.0,
+     "maxmin": 4.4
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "geometric_shapes",
+   "paper": {
+    "best": 54.4,
+    "median": 27.8,
+    "worst": 8.8,
+    "TARa": 12.0,
+    "TARr": 2.4
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-12_15-55-30",
+    "matches": 5,
+    "best": 54.4,
+    "median": 27.8,
+    "worst": 8.8,
+    "TARa": 12.0,
+    "TARr": 2.4,
+    "maxmin": 9.2
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-12_15-55-30",
+     "matches": 5,
+     "best": 54.4,
+     "median": 27.8,
+     "worst": 8.8,
+     "TARa": 12.0,
+     "TARr": 2.4,
+     "maxmin": 9.2
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "logical_deduction",
+   "paper": {
+    "best": 87.6,
+    "median": 75.0,
+    "worst": 64.0,
+    "TARa": 74.8,
+    "TARr": 16.4
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-11_12-46-09",
+    "matches": 5,
+    "best": 87.6,
+    "median": 75.0,
+    "worst": 64.0,
+    "TARa": 74.8,
+    "TARr": 16.4,
+    "maxmin": 7.2
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-11_12-46-09",
+     "matches": 5,
+     "best": 87.6,
+     "median": 75.0,
+     "worst": 64.0,
+     "TARa": 74.8,
+     "TARr": 16.4,
+     "maxmin": 7.2
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "ruin_names",
+   "paper": {
+    "best": 78.8,
+    "median": 67.6,
+    "worst": 55.6,
+    "TARa": 70.4,
+    "TARr": 24.8
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-11_20-48-20",
+    "matches": 5,
+    "best": 78.8,
+    "median": 67.6,
+    "worst": 55.6,
+    "TARa": 70.4,
+    "TARr": 24.8,
+    "maxmin": 2.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-11_20-48-20",
+     "matches": 5,
+     "best": 78.8,
+     "median": 67.6,
+     "worst": 55.6,
+     "TARa": 70.4,
+     "TARr": 24.8,
+     "maxmin": 2.8
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "high_school_european_history",
+   "paper": {
+    "best": 65.5,
+    "median": 51.5,
+    "worst": 35.8,
+    "TARa": 55.2,
+    "TARr": 23.6
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-12_12-12-39",
+    "matches": 5,
+    "best": 65.5,
+    "median": 51.5,
+    "worst": 35.8,
+    "TARa": 55.2,
+    "TARr": 23.6,
+    "maxmin": 8.5
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-12_12-12-39",
+     "matches": 5,
+     "best": 65.5,
+     "median": 51.5,
+     "worst": 35.8,
+     "TARa": 55.2,
+     "TARr": 23.6,
+     "maxmin": 8.5
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "college_mathematics",
+   "paper": {
+    "best": 75.0,
+    "median": 31.5,
+    "worst": 3.0,
+    "TARa": 7.0,
+    "TARr": 0.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-12_00-18-48",
+    "matches": 5,
+    "best": 75.0,
+    "median": 31.5,
+    "worst": 3.0,
+    "TARa": 7.0,
+    "TARr": 0.0,
+    "maxmin": 14.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-12_00-18-48",
+     "matches": 5,
+     "best": 75.0,
+     "median": 31.5,
+     "worst": 3.0,
+     "TARa": 7.0,
+     "TARr": 0.0,
+     "maxmin": 14.0
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "professional_accounting",
+   "paper": {
+    "best": 67.0,
+    "median": 39.0,
+    "worst": 13.1,
+    "TARa": 23.4,
+    "TARr": 0.7
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-11_15-58-28",
+    "matches": 5,
+    "best": 67.0,
+    "median": 39.0,
+    "worst": 13.1,
+    "TARa": 23.4,
+    "TARr": 0.7,
+    "maxmin": 6.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-11_15-58-28",
+     "matches": 5,
+     "best": 67.0,
+     "median": 39.0,
+     "worst": 13.1,
+     "TARa": 23.4,
+     "TARr": 0.7,
+     "maxmin": 6.0
+    }
+   ]
+  },
+  {
+   "table": "표 2 few-shot",
+   "model": "mixtral-8x7b",
+   "task": "public_relations",
+   "paper": {
+    "best": 58.2,
+    "median": 48.2,
+    "worst": 36.4,
+    "TARa": 62.7,
+    "TARr": 10.9
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-12_14-52-05",
+    "matches": 5,
+    "best": 58.2,
+    "median": 48.2,
+    "worst": 36.4,
+    "TARa": 62.7,
+    "TARr": 10.9,
+    "maxmin": 5.5
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-12_14-52-05",
+     "matches": 5,
+     "best": 58.2,
+     "median": 48.2,
+     "worst": 36.4,
+     "TARa": 62.7,
+     "TARr": 10.9,
+     "maxmin": 5.5
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "navigate",
+   "paper": {
+    "best": 67.2,
+    "median": 64.8,
+    "worst": 61.6,
+    "TARa": 94.4,
+    "TARr": 94.4
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_15-35-15",
+    "matches": 5,
+    "best": 67.2,
+    "median": 64.8,
+    "worst": 61.6,
+    "TARa": 94.4,
+    "TARr": 94.4,
+    "maxmin": 1.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_15-35-15",
+     "matches": 5,
+     "best": 67.2,
+     "median": 64.8,
+     "worst": 61.6,
+     "TARa": 94.4,
+     "TARr": 94.4,
+     "maxmin": 1.6
+    },
+    {
+     "date": "2024-12-14_18-33-44",
+     "matches": 0,
+     "best": 63.6,
+     "median": 63.6,
+     "worst": 63.2,
+     "TARa": 99.6,
+     "TARr": 99.6,
+     "maxmin": 0.4
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "geometric_shapes",
+   "paper": {
+    "best": 16.8,
+    "median": 15.2,
+    "worst": 13.6,
+    "TARa": 91.6,
+    "TARr": 91.6
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_15-17-24",
+    "matches": 5,
+    "best": 16.8,
+    "median": 15.2,
+    "worst": 13.6,
+    "TARa": 91.6,
+    "TARr": 91.6,
+    "maxmin": 1.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_15-17-24",
+     "matches": 5,
+     "best": 16.8,
+     "median": 15.2,
+     "worst": 13.6,
+     "TARa": 91.6,
+     "TARr": 91.6,
+     "maxmin": 1.6
+    },
+    {
+     "date": "2024-12-22_15-49-51",
+     "matches": 0,
+     "best": 13.2,
+     "median": 12.4,
+     "worst": 12.0,
+     "TARa": 97.2,
+     "TARr": 97.2,
+     "maxmin": 0.4
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "logical_deduction",
+   "paper": {
+    "best": 52.8,
+    "median": 50.8,
+    "worst": 48.8,
+    "TARa": 92.8,
+    "TARr": 90.4
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_07-59-58",
+    "matches": 5,
+    "best": 52.8,
+    "median": 50.8,
+    "worst": 48.8,
+    "TARa": 92.8,
+    "TARr": 90.4,
+    "maxmin": 1.2
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_07-59-58",
+     "matches": 5,
+     "best": 52.8,
+     "median": 50.8,
+     "worst": 48.8,
+     "TARa": 92.8,
+     "TARr": 90.4,
+     "maxmin": 1.2
+    },
+    {
+     "date": "2024-12-20_12-03-04",
+     "matches": 1,
+     "best": 54.8,
+     "median": 50.8,
+     "worst": 47.6,
+     "TARa": 87.6,
+     "TARr": 74.4,
+     "maxmin": 2.0
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "ruin_names",
+   "paper": {
+    "best": 67.2,
+    "median": 65.6,
+    "worst": 65.2,
+    "TARa": 95.6,
+    "TARr": 97.2
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_10-38-34",
+    "matches": 5,
+    "best": 67.2,
+    "median": 65.6,
+    "worst": 65.2,
+    "TARa": 95.6,
+    "TARr": 97.2,
+    "maxmin": 0.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_10-38-34",
+     "matches": 5,
+     "best": 67.2,
+     "median": 65.6,
+     "worst": 65.2,
+     "TARa": 95.6,
+     "TARr": 97.2,
+     "maxmin": 0.8
+    },
+    {
+     "date": "2024-12-21_14-19-43",
+     "matches": 0,
+     "best": 62.8,
+     "median": 62.4,
+     "worst": 61.6,
+     "TARa": 96.8,
+     "TARr": 98.0,
+     "maxmin": 0.4
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "high_school_european_history",
+   "paper": {
+    "best": 75.2,
+    "median": 74.5,
+    "worst": 72.7,
+    "TARa": 94.5,
+    "TARr": 94.5
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_12-20-59",
+    "matches": 5,
+    "best": 75.2,
+    "median": 74.5,
+    "worst": 72.7,
+    "TARa": 94.5,
+    "TARr": 94.5,
+    "maxmin": 1.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_12-20-59",
+     "matches": 5,
+     "best": 75.2,
+     "median": 74.5,
+     "worst": 72.7,
+     "TARa": 94.5,
+     "TARr": 94.5,
+     "maxmin": 1.8
+    },
+    {
+     "date": "2024-12-29_11-46-23",
+     "matches": 0,
+     "best": 67.3,
+     "median": 66.7,
+     "worst": 65.5,
+     "TARa": 95.8,
+     "TARr": 90.9,
+     "maxmin": 1.8
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "college_mathematics",
+   "paper": {
+    "best": 54.0,
+    "median": 32.0,
+    "worst": 15.0,
+    "TARa": 46.0,
+    "TARr": 10.0
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_10-57-30",
+    "matches": 5,
+    "best": 54.0,
+    "median": 32.0,
+    "worst": 15.0,
+    "TARa": 46.0,
+    "TARr": 10.0,
+    "maxmin": 7.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_10-57-30",
+     "matches": 5,
+     "best": 54.0,
+     "median": 32.0,
+     "worst": 15.0,
+     "TARa": 46.0,
+     "TARr": 10.0,
+     "maxmin": 7.0
+    },
+    {
+     "date": "2024-12-28_17-04-16",
+     "matches": 0,
+     "best": 41.0,
+     "median": 34.0,
+     "worst": 29.0,
+     "TARa": 72.0,
+     "TARr": 51.0,
+     "maxmin": 4.0
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "professional_accounting",
+   "paper": {
+    "best": 60.3,
+    "median": 53.2,
+    "worst": 47.5,
+    "TARa": 81.9,
+    "TARr": 49.3
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_08-38-04",
+    "matches": 5,
+    "best": 60.3,
+    "median": 53.2,
+    "worst": 47.5,
+    "TARa": 81.9,
+    "TARr": 49.3,
+    "maxmin": 2.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_08-38-04",
+     "matches": 5,
+     "best": 60.3,
+     "median": 53.2,
+     "worst": 47.5,
+     "TARa": 81.9,
+     "TARr": 49.3,
+     "maxmin": 2.8
+    },
+    {
+     "date": "2024-12-15_14-26-24",
+     "matches": 0,
+     "best": 49.6,
+     "median": 48.9,
+     "worst": 48.2,
+     "TARa": 95.4,
+     "TARr": 84.0,
+     "maxmin": 0.7
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-35-turbo",
+   "task": "public_relations",
+   "paper": {
+    "best": 66.4,
+    "median": 65.0,
+    "worst": 61.8,
+    "TARa": 92.7,
+    "TARr": 86.4
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_12-41-26",
+    "matches": 5,
+    "best": 66.4,
+    "median": 65.0,
+    "worst": 61.8,
+    "TARa": 92.7,
+    "TARr": 86.4,
+    "maxmin": 1.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_12-41-26",
+     "matches": 5,
+     "best": 66.4,
+     "median": 65.0,
+     "worst": 61.8,
+     "TARa": 92.7,
+     "TARr": 86.4,
+     "maxmin": 1.8
+    },
+    {
+     "date": "2024-12-29_12-32-41",
+     "matches": 0,
+     "best": 67.3,
+     "median": 67.3,
+     "worst": 67.3,
+     "TARa": 97.3,
+     "TARr": 98.2,
+     "maxmin": 0.0
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "navigate",
+   "paper": {
+    "best": 94.8,
+    "median": 92.0,
+    "worst": 88.8,
+    "TARa": 91.6,
+    "TARr": 15.2
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-12_19-37-22",
+    "matches": 5,
+    "best": 94.8,
+    "median": 92.0,
+    "worst": 88.8,
+    "TARa": 91.6,
+    "TARr": 15.2,
+    "maxmin": 2.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-12_19-37-22",
+     "matches": 5,
+     "best": 94.8,
+     "median": 92.0,
+     "worst": 88.8,
+     "TARa": 91.6,
+     "TARr": 15.2,
+     "maxmin": 2.0
+    },
+    {
+     "date": "2024-12-20_11-03-48",
+     "matches": 0,
+     "best": 96.8,
+     "median": 92.6,
+     "worst": 86.0,
+     "TARa": 88.8,
+     "TARr": 7.6,
+     "maxmin": 3.6
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "geometric_shapes",
+   "paper": {
+    "best": 76.0,
+    "median": 56.8,
+    "worst": 30.4,
+    "TARa": 45.6,
+    "TARr": 0.8
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-14_07-38-25",
+    "matches": 5,
+    "best": 76.0,
+    "median": 56.8,
+    "worst": 30.4,
+    "TARa": 45.6,
+    "TARr": 0.8,
+    "maxmin": 6.4
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-14_07-38-25",
+     "matches": 5,
+     "best": 76.0,
+     "median": 56.8,
+     "worst": 30.4,
+     "TARa": 45.6,
+     "TARr": 0.8,
+     "maxmin": 6.4
+    },
+    {
+     "date": "2024-12-22_15-48-27",
+     "matches": 0,
+     "best": 75.2,
+     "median": 55.4,
+     "worst": 32.8,
+     "TARa": 49.2,
+     "TARr": 0.0,
+     "maxmin": 6.8
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "logical_deduction",
+   "paper": {
+    "best": 100.0,
+    "median": 98.6,
+    "worst": 96.0,
+    "TARa": 96.8,
+    "TARr": 7.6
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_07-53-50",
+    "matches": 5,
+    "best": 100.0,
+    "median": 98.6,
+    "worst": 96.0,
+    "TARa": 96.8,
+    "TARr": 7.6,
+    "maxmin": 1.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_07-53-50",
+     "matches": 5,
+     "best": 100.0,
+     "median": 98.6,
+     "worst": 96.0,
+     "TARa": 96.8,
+     "TARr": 7.6,
+     "maxmin": 1.6
+    },
+    {
+     "date": "2024-12-20_12-04-48",
+     "matches": 1,
+     "best": 100.0,
+     "median": 99.0,
+     "worst": 97.2,
+     "TARa": 97.2,
+     "TARr": 5.6,
+     "maxmin": 1.2
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "ruin_names",
+   "paper": {
+    "best": 85.2,
+    "median": 83.2,
+    "worst": 80.0,
+    "TARa": 93.6,
+    "TARr": 27.6
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_12-52-53",
+    "matches": 5,
+    "best": 85.2,
+    "median": 83.2,
+    "worst": 80.0,
+    "TARa": 93.6,
+    "TARr": 27.6,
+    "maxmin": 2.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_12-52-53",
+     "matches": 5,
+     "best": 85.2,
+     "median": 83.2,
+     "worst": 80.0,
+     "TARa": 93.6,
+     "TARr": 27.6,
+     "maxmin": 2.0
+    },
+    {
+     "date": "2024-12-21_18-47-04",
+     "matches": 2,
+     "best": 86.0,
+     "median": 83.2,
+     "worst": 80.4,
+     "TARa": 93.6,
+     "TARr": 21.2,
+     "maxmin": 2.0
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "high_school_european_history",
+   "paper": {
+    "best": 76.4,
+    "median": 65.2,
+    "worst": 55.2,
+    "TARa": 74.5,
+    "TARr": 17.0
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_16-18-32",
+    "matches": 5,
+    "best": 76.4,
+    "median": 65.2,
+    "worst": 55.2,
+    "TARa": 74.5,
+    "TARr": 17.0,
+    "maxmin": 3.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_16-18-32",
+     "matches": 5,
+     "best": 76.4,
+     "median": 65.2,
+     "worst": 55.2,
+     "TARa": 74.5,
+     "TARr": 17.0,
+     "maxmin": 3.6
+    },
+    {
+     "date": "2024-12-30_16-58-07",
+     "matches": 1,
+     "best": 75.2,
+     "median": 64.8,
+     "worst": 54.5,
+     "TARa": 74.5,
+     "TARr": 18.8,
+     "maxmin": 3.6
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "college_mathematics",
+   "paper": {
+    "best": 85.0,
+    "median": 59.0,
+    "worst": 41.0,
+    "TARa": 50.0,
+    "TARr": 0.0
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_14-33-32",
+    "matches": 5,
+    "best": 85.0,
+    "median": 59.0,
+    "worst": 41.0,
+    "TARa": 50.0,
+    "TARr": 0.0,
+    "maxmin": 12.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_14-33-32",
+     "matches": 5,
+     "best": 85.0,
+     "median": 59.0,
+     "worst": 41.0,
+     "TARa": 50.0,
+     "TARr": 0.0,
+     "maxmin": 12.0
+    },
+    {
+     "date": "2024-12-28_15-01-21",
+     "matches": 1,
+     "best": 79.0,
+     "median": 57.5,
+     "worst": 38.0,
+     "TARa": 50.0,
+     "TARr": 1.0,
+     "maxmin": 7.0
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "professional_accounting",
+   "paper": {
+    "best": 84.0,
+    "median": 72.0,
+    "worst": 58.5,
+    "TARa": 71.3,
+    "TARr": 4.3
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_09-14-19",
+    "matches": 5,
+    "best": 84.0,
+    "median": 72.0,
+    "worst": 58.5,
+    "TARa": 71.3,
+    "TARr": 4.3,
+    "maxmin": 2.1
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_09-14-19",
+     "matches": 5,
+     "best": 84.0,
+     "median": 72.0,
+     "worst": 58.5,
+     "TARa": 71.3,
+     "TARr": 4.3,
+     "maxmin": 2.1
+    },
+    {
+     "date": "2024-12-14_14-31-08",
+     "matches": 1,
+     "best": 83.0,
+     "median": 71.1,
+     "worst": 58.5,
+     "TARa": 74.5,
+     "TARr": 3.5,
+     "maxmin": 6.4
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "gpt-4o",
+   "task": "public_relations",
+   "paper": {
+    "best": 81.8,
+    "median": 75.5,
+    "worst": 66.4,
+    "TARa": 83.6,
+    "TARr": 38.2
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-13_17-06-01",
+    "matches": 5,
+    "best": 81.8,
+    "median": 75.5,
+    "worst": 66.4,
+    "TARa": 83.6,
+    "TARr": 38.2,
+    "maxmin": 5.5
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-13_17-06-01",
+     "matches": 5,
+     "best": 81.8,
+     "median": 75.5,
+     "worst": 66.4,
+     "TARa": 83.6,
+     "TARr": 38.2,
+     "maxmin": 5.5
+    },
+    {
+     "date": "2024-12-29_12-10-37",
+     "matches": 2,
+     "best": 80.9,
+     "median": 74.1,
+     "worst": 66.4,
+     "TARa": 83.6,
+     "TARr": 39.1,
+     "maxmin": 4.5
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "navigate",
+   "paper": {
+    "best": 88.4,
+    "median": 73.0,
+    "worst": 54.0,
+    "TARa": 65.2,
+    "TARr": 9.2
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-20_11-44-10",
+    "matches": 5,
+    "best": 88.4,
+    "median": 73.0,
+    "worst": 54.0,
+    "TARa": 65.2,
+    "TARr": 9.2,
+    "maxmin": 5.2
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-20_11-44-10",
+     "matches": 5,
+     "best": 88.4,
+     "median": 73.0,
+     "worst": 54.0,
+     "TARa": 65.2,
+     "TARr": 9.2,
+     "maxmin": 5.2
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "geometric_shapes",
+   "paper": {
+    "best": 24.4,
+    "median": 18.8,
+    "worst": 12.0,
+    "TARa": 60.4,
+    "TARr": 31.2
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-22_11-13-48",
+    "matches": 5,
+    "best": 24.4,
+    "median": 18.8,
+    "worst": 12.0,
+    "TARa": 60.4,
+    "TARr": 31.2,
+    "maxmin": 2.4
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-22_11-13-48",
+     "matches": 5,
+     "best": 24.4,
+     "median": 18.8,
+     "worst": 12.0,
+     "TARa": 60.4,
+     "TARr": 31.2,
+     "maxmin": 2.4
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "logical_deduction",
+   "paper": {
+    "best": 72.4,
+    "median": 62.8,
+    "worst": 55.6,
+    "TARa": 80.4,
+    "TARr": 37.6
+   },
+   "n_batches": 2,
+   "best_batch": {
+    "date": "2025-02-20_13-21-05",
+    "matches": 5,
+    "best": 72.4,
+    "median": 62.8,
+    "worst": 55.6,
+    "TARa": 80.4,
+    "TARr": 37.6,
+    "maxmin": 3.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-20_13-21-05",
+     "matches": 5,
+     "best": 72.4,
+     "median": 62.8,
+     "worst": 55.6,
+     "TARa": 80.4,
+     "TARr": 37.6,
+     "maxmin": 3.6
+    },
+    {
+     "date": "2025-02-20_07-20-09",
+     "matches": 0,
+     "best": 64.4,
+     "median": 62.4,
+     "worst": 60.8,
+     "TARa": 96.0,
+     "TARr": 84.0,
+     "maxmin": 1.6
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "ruin_names",
+   "paper": {
+    "best": 54.8,
+    "median": 50.6,
+    "worst": 45.6,
+    "TARa": 86.8,
+    "TARr": 26.8
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-20_19-42-53",
+    "matches": 5,
+    "best": 54.8,
+    "median": 50.6,
+    "worst": 45.6,
+    "TARa": 86.8,
+    "TARr": 26.8,
+    "maxmin": 2.4
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-20_19-42-53",
+     "matches": 5,
+     "best": 54.8,
+     "median": 50.6,
+     "worst": 45.6,
+     "TARa": 86.8,
+     "TARr": 26.8,
+     "maxmin": 2.4
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "high_school_european_history",
+   "paper": {
+    "best": 38.8,
+    "median": 34.2,
+    "worst": 30.3,
+    "TARa": 77.6,
+    "TARr": 41.2
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-21_15-26-16",
+    "matches": 5,
+    "best": 38.8,
+    "median": 34.2,
+    "worst": 30.3,
+    "TARa": 77.6,
+    "TARr": 41.2,
+    "maxmin": 3.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-21_15-26-16",
+     "matches": 5,
+     "best": 38.8,
+     "median": 34.2,
+     "worst": 30.3,
+     "TARa": 77.6,
+     "TARr": 41.2,
+     "maxmin": 3.0
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "college_mathematics",
+   "paper": {
+    "best": 55.0,
+    "median": 34.0,
+    "worst": 17.0,
+    "TARa": 45.0,
+    "TARr": 3.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-21_08-10-45",
+    "matches": 5,
+    "best": 55.0,
+    "median": 34.0,
+    "worst": 17.0,
+    "TARa": 45.0,
+    "TARr": 3.0,
+    "maxmin": 8.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-21_08-10-45",
+     "matches": 5,
+     "best": 55.0,
+     "median": 34.0,
+     "worst": 17.0,
+     "TARa": 45.0,
+     "TARr": 3.0,
+     "maxmin": 8.0
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "professional_accounting",
+   "paper": {
+    "best": 36.2,
+    "median": 29.1,
+    "worst": 25.5,
+    "TARa": 77.0,
+    "TARr": 44.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-20_17-35-36",
+    "matches": 5,
+    "best": 36.2,
+    "median": 29.1,
+    "worst": 25.5,
+    "TARa": 77.0,
+    "TARr": 44.0,
+    "maxmin": 2.5
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-20_17-35-36",
+     "matches": 5,
+     "best": 36.2,
+     "median": 29.1,
+     "worst": 25.5,
+     "TARa": 77.0,
+     "TARr": 44.0,
+     "maxmin": 2.5
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-8b",
+   "task": "public_relations",
+   "paper": {
+    "best": 28.2,
+    "median": 25.0,
+    "worst": 19.1,
+    "TARa": 82.7,
+    "TARr": 46.4
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-21_18-59-08",
+    "matches": 5,
+    "best": 28.2,
+    "median": 25.0,
+    "worst": 19.1,
+    "TARa": 82.7,
+    "TARr": 46.4,
+    "maxmin": 3.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-21_18-59-08",
+     "matches": 5,
+     "best": 28.2,
+     "median": 25.0,
+     "worst": 19.1,
+     "TARa": 82.7,
+     "TARr": 46.4,
+     "maxmin": 3.6
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "navigate",
+   "paper": {
+    "best": 94.0,
+    "median": 88.0,
+    "worst": 78.4,
+    "TARa": 83.2,
+    "TARr": 4.8
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-23_12-16-27",
+    "matches": 5,
+    "best": 94.0,
+    "median": 88.0,
+    "worst": 78.4,
+    "TARa": 83.2,
+    "TARr": 4.8,
+    "maxmin": 3.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-23_12-16-27",
+     "matches": 5,
+     "best": 94.0,
+     "median": 88.0,
+     "worst": 78.4,
+     "TARa": 83.2,
+     "TARr": 4.8,
+     "maxmin": 3.6
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "geometric_shapes",
+   "paper": {
+    "best": 44.4,
+    "median": 21.6,
+    "worst": 6.4,
+    "TARa": 39.2,
+    "TARr": 5.6
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-10_11-29-41",
+    "matches": 5,
+    "best": 44.4,
+    "median": 21.6,
+    "worst": 6.4,
+    "TARa": 39.2,
+    "TARr": 5.6,
+    "maxmin": 3.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-10_11-29-41",
+     "matches": 5,
+     "best": 44.4,
+     "median": 21.6,
+     "worst": 6.4,
+     "TARa": 39.2,
+     "TARr": 5.6,
+     "maxmin": 3.6
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "logical_deduction",
+   "paper": {
+    "best": 95.6,
+    "median": 92.2,
+    "worst": 87.6,
+    "TARa": 92.0,
+    "TARr": 16.4
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-24_00-09-45",
+    "matches": 5,
+    "best": 95.6,
+    "median": 92.2,
+    "worst": 87.6,
+    "TARa": 92.0,
+    "TARr": 16.4,
+    "maxmin": 2.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-24_00-09-45",
+     "matches": 5,
+     "best": 95.6,
+     "median": 92.2,
+     "worst": 87.6,
+     "TARa": 92.0,
+     "TARr": 16.4,
+     "maxmin": 2.8
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "ruin_names",
+   "paper": {
+    "best": 67.6,
+    "median": 60.0,
+    "worst": 51.2,
+    "TARa": 79.2,
+    "TARr": 11.6
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-01_09-43-48",
+    "matches": 5,
+    "best": 67.6,
+    "median": 60.0,
+    "worst": 51.2,
+    "TARa": 79.2,
+    "TARr": 11.6,
+    "maxmin": 5.2
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-01_09-43-48",
+     "matches": 5,
+     "best": 67.6,
+     "median": 60.0,
+     "worst": 51.2,
+     "TARa": 79.2,
+     "TARr": 11.6,
+     "maxmin": 5.2
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "high_school_european_history",
+   "paper": {
+    "best": 41.2,
+    "median": 27.9,
+    "worst": 19.4,
+    "TARa": 53.9,
+    "TARr": 6.1
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-04_09-06-40",
+    "matches": 5,
+    "best": 41.2,
+    "median": 27.9,
+    "worst": 19.4,
+    "TARa": 53.9,
+    "TARr": 6.1,
+    "maxmin": 3.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-04_09-06-40",
+     "matches": 5,
+     "best": 41.2,
+     "median": 27.9,
+     "worst": 19.4,
+     "TARa": 53.9,
+     "TARr": 6.1,
+     "maxmin": 3.6
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "college_mathematics",
+   "paper": {
+    "best": 77.0,
+    "median": 58.0,
+    "worst": 40.0,
+    "TARa": 54.0,
+    "TARr": 0.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-03_05-55-09",
+    "matches": 5,
+    "best": 77.0,
+    "median": 58.0,
+    "worst": 40.0,
+    "TARa": 54.0,
+    "TARr": 0.0,
+    "maxmin": 6.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-03_05-55-09",
+     "matches": 5,
+     "best": 77.0,
+     "median": 58.0,
+     "worst": 40.0,
+     "TARa": 54.0,
+     "TARr": 0.0,
+     "maxmin": 6.0
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "professional_accounting",
+   "paper": {
+    "best": 54.6,
+    "median": 38.7,
+    "worst": 24.8,
+    "TARa": 57.8,
+    "TARr": 2.1
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-02-25_22-20-18",
+    "matches": 5,
+    "best": 54.6,
+    "median": 38.7,
+    "worst": 24.8,
+    "TARa": 57.8,
+    "TARr": 2.1,
+    "maxmin": 4.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-02-25_22-20-18",
+     "matches": 5,
+     "best": 54.6,
+     "median": 38.7,
+     "worst": 24.8,
+     "TARa": 57.8,
+     "TARr": 2.1,
+     "maxmin": 4.6
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "llama3-70b",
+   "task": "public_relations",
+   "paper": {
+    "best": 39.1,
+    "median": 26.4,
+    "worst": 13.6,
+    "TARa": 56.4,
+    "TARr": 0.9
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-04_16-54-28",
+    "matches": 5,
+    "best": 39.1,
+    "median": 26.4,
+    "worst": 13.6,
+    "TARa": 56.4,
+    "TARr": 0.9,
+    "maxmin": 3.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-04_16-54-28",
+     "matches": 5,
+     "best": 39.1,
+     "median": 26.4,
+     "worst": 13.6,
+     "TARa": 56.4,
+     "TARr": 0.9,
+     "maxmin": 3.6
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "navigate",
+   "paper": {
+    "best": 66.0,
+    "median": 57.6,
+    "worst": 48.0,
+    "TARa": 77.6,
+    "TARr": 3.2
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-11_11-29-57",
+    "matches": 5,
+    "best": 66.0,
+    "median": 57.6,
+    "worst": 48.0,
+    "TARa": 77.6,
+    "TARr": 3.2,
+    "maxmin": 4.4
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-11_11-29-57",
+     "matches": 5,
+     "best": 66.0,
+     "median": 57.6,
+     "worst": 48.0,
+     "TARa": 77.6,
+     "TARr": 3.2,
+     "maxmin": 4.4
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "geometric_shapes",
+   "paper": {
+    "best": 29.6,
+    "median": 27.0,
+    "worst": 24.8,
+    "TARa": 90.4,
+    "TARr": 83.6
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-12_19-18-16",
+    "matches": 5,
+    "best": 29.6,
+    "median": 27.0,
+    "worst": 24.8,
+    "TARa": 90.4,
+    "TARr": 83.6,
+    "maxmin": 1.6
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-12_19-18-16",
+     "matches": 5,
+     "best": 29.6,
+     "median": 27.0,
+     "worst": 24.8,
+     "TARa": 90.4,
+     "TARr": 83.6,
+     "maxmin": 1.6
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "logical_deduction",
+   "paper": {
+    "best": 70.0,
+    "median": 59.6,
+    "worst": 49.6,
+    "TARa": 74.4,
+    "TARr": 14.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-11_15-01-55",
+    "matches": 5,
+    "best": 70.0,
+    "median": 59.6,
+    "worst": 49.6,
+    "TARa": 74.4,
+    "TARr": 14.0,
+    "maxmin": 4.4
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-11_15-01-55",
+     "matches": 5,
+     "best": 70.0,
+     "median": 59.6,
+     "worst": 49.6,
+     "TARa": 74.4,
+     "TARr": 14.0,
+     "maxmin": 4.4
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "ruin_names",
+   "paper": {
+    "best": 38.0,
+    "median": 34.4,
+    "worst": 30.4,
+    "TARa": 82.4,
+    "TARr": 20.8
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-11_23-37-04",
+    "matches": 5,
+    "best": 38.0,
+    "median": 34.4,
+    "worst": 30.4,
+    "TARa": 82.4,
+    "TARr": 20.8,
+    "maxmin": 2.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-11_23-37-04",
+     "matches": 5,
+     "best": 38.0,
+     "median": 34.4,
+     "worst": 30.4,
+     "TARa": 82.4,
+     "TARr": 20.8,
+     "maxmin": 2.8
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "high_school_european_history",
+   "paper": {
+    "best": 66.1,
+    "median": 56.1,
+    "worst": 45.5,
+    "TARa": 63.6,
+    "TARr": 19.4
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-12_13-50-17",
+    "matches": 5,
+    "best": 66.1,
+    "median": 56.1,
+    "worst": 45.5,
+    "TARa": 63.6,
+    "TARr": 19.4,
+    "maxmin": 7.3
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-12_13-50-17",
+     "matches": 5,
+     "best": 66.1,
+     "median": 56.1,
+     "worst": 45.5,
+     "TARa": 63.6,
+     "TARr": 19.4,
+     "maxmin": 7.3
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "college_mathematics",
+   "paper": {
+    "best": 57.0,
+    "median": 31.5,
+    "worst": 13.0,
+    "TARa": 29.0,
+    "TARr": 2.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-12_11-04-00",
+    "matches": 5,
+    "best": 57.0,
+    "median": 31.5,
+    "worst": 13.0,
+    "TARa": 29.0,
+    "TARr": 2.0,
+    "maxmin": 11.0
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-12_11-04-00",
+     "matches": 5,
+     "best": 57.0,
+     "median": 31.5,
+     "worst": 13.0,
+     "TARa": 29.0,
+     "TARr": 2.0,
+     "maxmin": 11.0
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "professional_accounting",
+   "paper": {
+    "best": 42.9,
+    "median": 28.9,
+    "worst": 20.2,
+    "TARa": 48.2,
+    "TARr": 4.3
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-11_19-05-21",
+    "matches": 5,
+    "best": 42.9,
+    "median": 28.9,
+    "worst": 20.2,
+    "TARa": 48.2,
+    "TARr": 4.3,
+    "maxmin": 2.8
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-11_19-05-21",
+     "matches": 5,
+     "best": 42.9,
+     "median": 28.9,
+     "worst": 20.2,
+     "TARa": 48.2,
+     "TARr": 4.3,
+     "maxmin": 2.8
+    }
+   ]
+  },
+  {
+   "table": "표 3 zero-shot",
+   "model": "mixtral-8x7b",
+   "task": "public_relations",
+   "paper": {
+    "best": 57.3,
+    "median": 46.8,
+    "worst": 35.5,
+    "TARa": 61.8,
+    "TARr": 10.0
+   },
+   "n_batches": 1,
+   "best_batch": {
+    "date": "2025-03-12_15-27-38",
+    "matches": 5,
+    "best": 57.3,
+    "median": 46.8,
+    "worst": 35.5,
+    "TARa": 61.8,
+    "TARr": 10.0,
+    "maxmin": 4.5
+   },
+   "all_batches": [
+    {
+     "date": "2025-03-12_15-27-38",
+     "matches": 5,
+     "best": 57.3,
+     "median": 46.8,
+     "worst": 35.5,
+     "TARa": 61.8,
+     "TARr": 10.0,
+     "maxmin": 4.5
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "표 2 few-shot": {
+   "conditions": 40,
+   "five_of_five_match": 40,
+   "ge_four_match": 40,
+   "TARr_gt_TARa": [],
+   "other_problems": []
+  },
+  "표 3 zero-shot": {
+   "conditions": 40,
+   "five_of_five_match": 40,
+   "ge_four_match": 40,
+   "TARr_gt_TARa": [
+    [
+     "gpt-35-turbo",
+     "ruin_names",
+     95.6,
+     97.2
+    ]
+   ],
+   "other_problems": [
+    [
+     "gpt-4o",
+     "logical_deduction",
+     [
+      "Best-Worst>100-TARa"
+     ]
+    ]
+   ]
+  }
+ }
+}
