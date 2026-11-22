@@ -1,0 +1,642 @@
+{
+ "fit_scan": {
+  "WW-hand-agent": {
+   "cells": 18,
+   "N_all_cells_fit_20_1000": [],
+   "top_N_by_cells_fit": [
+    [
+     58,
+     10
+    ],
+    [
+     116,
+     10
+    ],
+    [
+     174,
+     10
+    ]
+   ]
+  },
+  "WW-hand-step": {
+   "cells": 18,
+   "N_all_cells_fit_20_1000": [],
+   "top_N_by_cells_fit": [
+    [
+     58,
+     12
+    ],
+    [
+     116,
+     12
+    ],
+    [
+     174,
+     12
+    ]
+   ]
+  },
+  "WW-auto-agent": {
+   "cells": 18,
+   "N_all_cells_fit_20_1000": [],
+   "top_N_by_cells_fit": [
+    [
+     126,
+     10
+    ],
+    [
+     252,
+     10
+    ],
+    [
+     378,
+     10
+    ]
+   ]
+  },
+  "WW-auto-step": {
+   "cells": 18,
+   "N_all_cells_fit_20_1000": [],
+   "top_N_by_cells_fit": [
+    [
+     126,
+     10
+    ],
+    [
+     252,
+     10
+    ],
+    [
+     378,
+     10
+    ]
+   ]
+  },
+  "Code-agent": {
+   "cells": 18,
+   "N_all_cells_fit_20_1000": [],
+   "top_N_by_cells_fit": [
+    [
+     127,
+     9
+    ],
+    [
+     254,
+     9
+    ],
+    [
+     381,
+     9
+    ]
+   ]
+  },
+  "Code-step": {
+   "cells": 18,
+   "N_all_cells_fit_20_1000": [],
+   "top_N_by_cells_fit": [
+    [
+     127,
+     8
+    ],
+    [
+     254,
+     8
+    ],
+    [
+     381,
+     8
+    ]
+   ]
+  },
+  "MATH-agent": {
+   "cells": 18,
+   "N_all_cells_fit_20_1000": [],
+   "top_N_by_cells_fit": [
+    [
+     63,
+     6
+    ],
+    [
+     126,
+     6
+    ],
+    [
+     189,
+     6
+    ]
+   ]
+  },
+  "MATH-step": {
+   "cells": 18,
+   "N_all_cells_fit_20_1000": [],
+   "top_N_by_cells_fit": [
+    [
+     315,
+     9
+    ],
+    [
+     378,
+     9
+    ],
+    [
+     63,
+     8
+    ]
+   ]
+  },
+  "Agentic-agent": {
+   "cells": 18,
+   "N_all_cells_fit_20_1000": [],
+   "top_N_by_cells_fit": [
+    [
+     327,
+     4
+    ],
+    [
+     289,
+     3
+    ],
+    [
+     111,
+     2
+    ]
+   ]
+  },
+  "Agentic-step": {
+   "cells": 18,
+   "N_all_cells_fit_20_1000": [],
+   "top_N_by_cells_fit": [
+    [
+     129,
+     3
+    ],
+    [
+     211,
+     3
+    ],
+    [
+     215,
+     3
+    ]
+   ]
+  }
+ },
+ "gap_at_stated_N": {
+  "WW-hand-agent@58": {
+   "N": 58,
+   "max_gap_pp": 0.72,
+   "cells_exact": 11,
+   "cells": 18
+  },
+  "WW-hand-step@58": {
+   "N": 58,
+   "max_gap_pp": 0.62,
+   "cells_exact": 12,
+   "cells": 18
+  },
+  "WW-auto-agent@126": {
+   "N": 126,
+   "max_gap_pp": 0.32,
+   "cells_exact": 11,
+   "cells": 18
+  },
+  "Code-agent@147(paper Table3)": {
+   "N": 147,
+   "max_gap_pp": 0.34,
+   "cells_exact": 1,
+   "cells": 18
+  },
+  "Code-agent@127(release)": {
+   "N": 127,
+   "max_gap_pp": 0.32,
+   "cells_exact": 10,
+   "cells": 18
+  },
+  "Agentic-agent@56(paper Table3)": {
+   "N": 56,
+   "max_gap_pp": 0.87,
+   "cells_exact": 0,
+   "cells": 18
+  },
+  "Agentic-agent@600(release)": {
+   "N": 600,
+   "max_gap_pp": 0.07,
+   "cells_exact": 2,
+   "cells": 18
+  }
+ },
+ "claims": {
+  "matching_cell_differences": [
+   {
+    "cell": "WW-hand-agent",
+    "setting": "w/G",
+    "A": "AgenTracer-8B",
+    "B": "GPT-4.1",
+    "metric": "pp",
+    "value": 26.0,
+    "claim": "26.0"
+   },
+   {
+    "cell": "WW-hand-agent",
+    "setting": "w/G",
+    "A": "AgenTracer-8B",
+    "B": "DeepSeek-R1",
+    "metric": "pp",
+    "value": 12.2,
+    "claim": "12.2"
+   },
+   {
+    "cell": "WW-hand-agent",
+    "setting": "w/G",
+    "A": "AgenTracer-8B",
+    "B": "Claude-Sonnet-4",
+    "metric": "pp",
+    "value": 12.2,
+    "claim": "12.2"
+   },
+   {
+    "cell": "WW-auto-agent",
+    "setting": "w/oG",
+    "A": "Qwen3-8B",
+    "B": "Claude-Sonnet-4",
+    "metric": "pp",
+    "value": 9.21,
+    "claim": "9.21"
+   },
+   {
+    "cell": "Code-step",
+    "setting": "w/G",
+    "A": "AgenTracer-8B",
+    "B": "Qwen3-Coder",
+    "metric": "rel%",
+    "value": 26.003,
+    "claim": "26.0"
+   },
+   {
+    "cell": "MATH-agent",
+    "setting": "w/oG",
+    "A": "Claude-Sonnet-4",
+    "B": "DeepSeek-R1",
+    "metric": "pp",
+    "value": 12.21,
+    "claim": "12.21"
+   },
+   {
+    "cell": "Agentic-step",
+    "setting": "w/G",
+    "A": "AgenTracer-8B",
+    "B": "Qwen3-8B",
+    "metric": "pp",
+    "value": 22.68,
+    "claim": "22.68"
+   },
+   {
+    "cell": "Agentic-step",
+    "setting": "w/G",
+    "A": "AgenTracer-8B",
+    "B": "Qwen3-32B",
+    "metric": "pp",
+    "value": 17.57,
+    "claim": "17.57"
+   },
+   {
+    "cell": "Agentic-step",
+    "setting": "w/G",
+    "A": "AgenTracer-8B",
+    "B": "DeepSeek-R1",
+    "metric": "pp",
+    "value": 9.04,
+    "claim": "9.04"
+   },
+   {
+    "cell": "Agentic-step",
+    "setting": "w/G",
+    "A": "AgenTracer-8B",
+    "B": "Gemini-2.5-Pro",
+    "metric": "pp",
+    "value": 17.57,
+    "claim": "17.57"
+   }
+  ],
+  "max_AgenTracer_minus_Gemini_pp_WhoWhen": 17.38,
+  "max_AgenTracer_minus_Gemini_pp_all_cells": 30.23,
+  "R1_drop_wo_G_MATH_agent_step": [
+   -4.1,
+   -11.01
+  ]
+ },
+ "fisher": [
+  {
+   "cell": "WW-hand-agent",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 58,
+   "A_pct": 69.1,
+   "B_pct": 56.9,
+   "diff_pp": 12.2,
+   "p_fisher": 0.249,
+   "n_multiplier": 1
+  },
+  {
+   "cell": "WW-hand-agent",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Gemini-2.5-Pro",
+   "N_assumed": 58,
+   "A_pct": 69.1,
+   "B_pct": 51.72,
+   "diff_pp": 17.38,
+   "p_fisher": 0.087,
+   "n_multiplier": 1
+  },
+  {
+   "cell": "WW-hand-agent",
+   "setting": "w/oG",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 58,
+   "A_pct": 63.82,
+   "B_pct": 50.0,
+   "diff_pp": 13.82,
+   "p_fisher": 0.189,
+   "n_multiplier": 1
+  },
+  {
+   "cell": "WW-hand-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 58,
+   "A_pct": 20.68,
+   "B_pct": 17.24,
+   "diff_pp": 3.44,
+   "p_fisher": 0.813,
+   "n_multiplier": 1
+  },
+  {
+   "cell": "WW-auto-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 63,
+   "A_pct": 42.86,
+   "B_pct": 40.65,
+   "diff_pp": 2.21,
+   "p_fisher": 1.0,
+   "n_multiplier": 1
+  },
+  {
+   "cell": "WW-auto-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "DeepSeek-R1",
+   "N_assumed": 63,
+   "A_pct": 42.86,
+   "B_pct": 31.32,
+   "diff_pp": 11.54,
+   "p_fisher": 0.269,
+   "n_multiplier": 1
+  },
+  {
+   "cell": "WW-auto-agent",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "DeepSeek-R1",
+   "N_assumed": 63,
+   "A_pct": 69.62,
+   "B_pct": 66.67,
+   "diff_pp": 2.95,
+   "p_fisher": 0.848,
+   "n_multiplier": 1
+  },
+  {
+   "cell": "MATH-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Gemini-2.5-Pro",
+   "N_assumed": 63,
+   "A_pct": 57.63,
+   "B_pct": 32.22,
+   "diff_pp": 25.41,
+   "p_fisher": 0.007,
+   "n_multiplier": 1
+  },
+  {
+   "cell": "MATH-step",
+   "setting": "w/oG",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 63,
+   "A_pct": 57.63,
+   "B_pct": 46.03,
+   "diff_pp": 11.6,
+   "p_fisher": 0.285,
+   "n_multiplier": 1
+  },
+  {
+   "cell": "Agentic-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 56,
+   "A_pct": 36.17,
+   "B_pct": 30.33,
+   "diff_pp": 5.84,
+   "p_fisher": 0.688,
+   "n_multiplier": 1
+  },
+  {
+   "cell": "Agentic-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Qwen3-8B",
+   "N_assumed": 56,
+   "A_pct": 36.17,
+   "B_pct": 13.49,
+   "diff_pp": 22.68,
+   "p_fisher": 0.015,
+   "n_multiplier": 1
+  },
+  {
+   "cell": "Code-agent",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Qwen3-Coder",
+   "N_assumed": 127,
+   "A_pct": 72.95,
+   "B_pct": 69.29,
+   "diff_pp": 3.66,
+   "p_fisher": 0.579,
+   "n_multiplier": 1
+  },
+  {
+   "cell": "Code-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 127,
+   "A_pct": 18.85,
+   "B_pct": 15.51,
+   "diff_pp": 3.34,
+   "p_fisher": 0.619,
+   "n_multiplier": 1
+  },
+  {
+   "cell": "WW-hand-agent",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 116,
+   "A_pct": 69.1,
+   "B_pct": 56.9,
+   "diff_pp": 12.2,
+   "p_fisher": 0.077,
+   "n_multiplier": 2
+  },
+  {
+   "cell": "WW-hand-agent",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Gemini-2.5-Pro",
+   "N_assumed": 116,
+   "A_pct": 69.1,
+   "B_pct": 51.72,
+   "diff_pp": 17.38,
+   "p_fisher": 0.011,
+   "n_multiplier": 2
+  },
+  {
+   "cell": "WW-hand-agent",
+   "setting": "w/oG",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 116,
+   "A_pct": 63.82,
+   "B_pct": 50.0,
+   "diff_pp": 13.82,
+   "p_fisher": 0.046,
+   "n_multiplier": 2
+  },
+  {
+   "cell": "WW-hand-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 116,
+   "A_pct": 20.68,
+   "B_pct": 17.24,
+   "diff_pp": 3.44,
+   "p_fisher": 0.616,
+   "n_multiplier": 2
+  },
+  {
+   "cell": "WW-auto-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 126,
+   "A_pct": 42.86,
+   "B_pct": 40.65,
+   "diff_pp": 2.21,
+   "p_fisher": 0.798,
+   "n_multiplier": 2
+  },
+  {
+   "cell": "WW-auto-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "DeepSeek-R1",
+   "N_assumed": 126,
+   "A_pct": 42.86,
+   "B_pct": 31.32,
+   "diff_pp": 11.54,
+   "p_fisher": 0.067,
+   "n_multiplier": 2
+  },
+  {
+   "cell": "WW-auto-agent",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "DeepSeek-R1",
+   "N_assumed": 126,
+   "A_pct": 69.62,
+   "B_pct": 66.67,
+   "diff_pp": 2.95,
+   "p_fisher": 0.685,
+   "n_multiplier": 2
+  },
+  {
+   "cell": "MATH-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Gemini-2.5-Pro",
+   "N_assumed": 126,
+   "A_pct": 57.63,
+   "B_pct": 32.22,
+   "diff_pp": 25.41,
+   "p_fisher": 0.0,
+   "n_multiplier": 2
+  },
+  {
+   "cell": "MATH-step",
+   "setting": "w/oG",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 126,
+   "A_pct": 57.63,
+   "B_pct": 46.03,
+   "diff_pp": 11.6,
+   "p_fisher": 0.077,
+   "n_multiplier": 2
+  },
+  {
+   "cell": "Agentic-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 112,
+   "A_pct": 36.17,
+   "B_pct": 30.33,
+   "diff_pp": 5.84,
+   "p_fisher": 0.396,
+   "n_multiplier": 2
+  },
+  {
+   "cell": "Agentic-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Qwen3-8B",
+   "N_assumed": 112,
+   "A_pct": 36.17,
+   "B_pct": 13.49,
+   "diff_pp": 22.68,
+   "p_fisher": 0.0,
+   "n_multiplier": 2
+  },
+  {
+   "cell": "Code-agent",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Qwen3-Coder",
+   "N_assumed": 254,
+   "A_pct": 72.95,
+   "B_pct": 69.29,
+   "diff_pp": 3.66,
+   "p_fisher": 0.434,
+   "n_multiplier": 2
+  },
+  {
+   "cell": "Code-step",
+   "setting": "w/G",
+   "A": "AgenTracer-8B",
+   "B": "Claude-Sonnet-4",
+   "N_assumed": 254,
+   "A_pct": 18.85,
+   "B_pct": 15.51,
+   "diff_pp": 3.34,
+   "p_fisher": 0.346,
+   "n_multiplier": 2
+  }
+ ]
+}

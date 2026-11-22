@@ -1,0 +1,26 @@
+{
+ "math": {
+  "test_rows": 63,
+  "test_rows_sharing_question_text_with_train": 21,
+  "of_those_some_train_copy_has_same_mistake_step": 5,
+  "of_those_some_train_copy_has_same_mistake_agent": 3,
+  "train_rows_per_question_max": 2
+ },
+ "coding": {
+  "test_rows": 127,
+  "test_rows_sharing_question_text_with_train": 0,
+  "of_those_some_train_copy_has_same_mistake_step": 0,
+  "of_those_some_train_copy_has_same_mistake_agent": 0,
+  "train_rows_per_question_max": 1
+ },
+ "repo_parquet_rows": 127,
+ "repo_parquet_columns": [
+  "question_ID",
+  "question",
+  "ground_truth",
+  "history",
+  "mistake_agent",
+  "mistake_step",
+  "mistake_reason"
+ ]
+}

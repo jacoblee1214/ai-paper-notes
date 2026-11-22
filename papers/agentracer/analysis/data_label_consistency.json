@@ -1,0 +1,44 @@
+{
+ "agentic/train": {
+  "rows": 1500,
+  "step_value_found_in_history_step_field": 1500,
+  "agent_name_checkable": 0,
+  "agent_label_equals_step_actor": 0,
+  "mismatch_examples": []
+ },
+ "agentic/test": {
+  "rows": 600,
+  "step_value_found_in_history_step_field": 600,
+  "agent_name_checkable": 0,
+  "agent_label_equals_step_actor": 0,
+  "mismatch_examples": []
+ },
+ "coding/train": {
+  "rows": 1141,
+  "step_value_found_in_history_step_field": 1141,
+  "agent_name_checkable": 1141,
+  "agent_label_equals_step_actor": 1141,
+  "mismatch_examples": []
+ },
+ "coding/test": {
+  "rows": 127,
+  "step_value_found_in_history_step_field": 127,
+  "agent_name_checkable": 127,
+  "agent_label_equals_step_actor": 127,
+  "mismatch_examples": []
+ },
+ "math/train": {
+  "rows": 567,
+  "step_value_found_in_history_step_field": 567,
+  "agent_name_checkable": 567,
+  "agent_label_equals_step_actor": 567,
+  "mismatch_examples": []
+ },
+ "math/test": {
+  "rows": 63,
+  "step_value_found_in_history_step_field": 63,
+  "agent_name_checkable": 63,
+  "agent_label_equals_step_actor": 63,
+  "mismatch_examples": []
+ }
+}

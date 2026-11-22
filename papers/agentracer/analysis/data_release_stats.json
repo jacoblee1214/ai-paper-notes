@@ -1,0 +1,184 @@
+{
+ "agentic": {
+  "train": {
+   "rows": 1500,
+   "unique_question_ID": 1500,
+   "unique_question_text": 1499,
+   "top_mistake_agent": [
+    [
+     "assistant",
+     1500
+    ]
+   ],
+   "n_distinct_agent_labels": 1,
+   "mistake_step_int_like": 1500,
+   "mistake_step_min_max": [
+    null,
+    null
+   ],
+   "history_len_median": 7
+  },
+  "test": {
+   "rows": 600,
+   "unique_question_ID": 600,
+   "unique_question_text": 600,
+   "top_mistake_agent": [
+    [
+     "assistant",
+     600
+    ]
+   ],
+   "n_distinct_agent_labels": 1,
+   "mistake_step_int_like": 600,
+   "mistake_step_min_max": [
+    null,
+    null
+   ],
+   "history_len_median": 7
+  },
+  "overlap": {
+   "test_rows_with_question_text_in_train": 1,
+   "test_rows_with_question_ID_in_train": 0
+  }
+ },
+ "coding": {
+  "train": {
+   "rows": 1141,
+   "unique_question_ID": 1141,
+   "unique_question_text": 1141,
+   "top_mistake_agent": [
+    [
+     "Engineer",
+     843
+    ],
+    [
+     "Product Manager",
+     136
+    ],
+    [
+     "Team Leader",
+     114
+    ],
+    [
+     "Architect",
+     41
+    ],
+    [
+     "Data Analyst",
+     7
+    ]
+   ],
+   "n_distinct_agent_labels": 5,
+   "mistake_step_int_like": 1141,
+   "mistake_step_min_max": [
+    null,
+    null
+   ],
+   "history_len_median": 14
+  },
+  "test": {
+   "rows": 127,
+   "unique_question_ID": 127,
+   "unique_question_text": 127,
+   "top_mistake_agent": [
+    [
+     "Engineer",
+     92
+    ],
+    [
+     "Product Manager",
+     19
+    ],
+    [
+     "Team Leader",
+     11
+    ],
+    [
+     "Architect",
+     5
+    ]
+   ],
+   "n_distinct_agent_labels": 4,
+   "mistake_step_int_like": 127,
+   "mistake_step_min_max": [
+    null,
+    null
+   ],
+   "history_len_median": 13
+  },
+  "overlap": {
+   "test_rows_with_question_text_in_train": 0,
+   "test_rows_with_question_ID_in_train": 0
+  }
+ },
+ "math": {
+  "train": {
+   "rows": 567,
+   "unique_question_ID": 470,
+   "unique_question_text": 470,
+   "top_mistake_agent": [
+    [
+     "Custom",
+     361
+    ],
+    [
+     "reasoning expert",
+     152
+    ],
+    [
+     "BestMAS_GSM8K",
+     50
+    ],
+    [
+     "AnswerGenerate",
+     2
+    ],
+    [
+     "QualityDiversity",
+     1
+    ],
+    [
+     "IterativeGeometrySolver",
+     1
+    ]
+   ],
+   "n_distinct_agent_labels": 6,
+   "mistake_step_int_like": 567,
+   "mistake_step_min_max": [
+    null,
+    null
+   ],
+   "history_len_median": 7
+  },
+  "test": {
+   "rows": 63,
+   "unique_question_ID": 63,
+   "unique_question_text": 63,
+   "top_mistake_agent": [
+    [
+     "Custom",
+     39
+    ],
+    [
+     "reasoning expert",
+     19
+    ],
+    [
+     "BestMAS_GSM8K",
+     5
+    ]
+   ],
+   "n_distinct_agent_labels": 3,
+   "mistake_step_int_like": 63,
+   "mistake_step_min_max": [
+    null,
+    null
+   ],
+   "history_len_median": 7
+  },
+  "overlap": {
+   "test_rows_with_question_text_in_train": 21,
+   "test_rows_with_question_ID_in_train": 21
+  }
+ }
+}

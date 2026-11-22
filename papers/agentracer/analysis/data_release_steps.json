@@ -1,0 +1,102 @@
+{
+ "agentic/train": {
+  "mistake_step_types": {
+   "str": 1500
+  },
+  "step_min": 1,
+  "step_max": 41,
+  "history_len_min": 4,
+  "history_len_max": 42,
+  "step_within_history_bounds": 1251,
+  "step0_share": 0.0,
+  "history_entry_keys": [
+   "content",
+   "role",
+   "step"
+  ]
+ },
+ "agentic/test": {
+  "mistake_step_types": {
+   "str": 600
+  },
+  "step_min": 1,
+  "step_max": 24,
+  "history_len_min": 4,
+  "history_len_max": 39,
+  "step_within_history_bounds": 482,
+  "step0_share": 0.0,
+  "history_entry_keys": [
+   "content",
+   "role",
+   "step"
+  ]
+ },
+ "coding/train": {
+  "mistake_step_types": {
+   "str": 1141
+  },
+  "step_min": 0,
+  "step_max": 48,
+  "history_len_min": 1,
+  "history_len_max": 304,
+  "step_within_history_bounds": 1141,
+  "step0_share": 0.0096,
+  "history_entry_keys": [
+   "content",
+   "name",
+   "role",
+   "step"
+  ]
+ },
+ "coding/test": {
+  "mistake_step_types": {
+   "str": 127
+  },
+  "step_min": 0,
+  "step_max": 34,
+  "history_len_min": 2,
+  "history_len_max": 151,
+  "step_within_history_bounds": 127,
+  "step0_share": 0.0079,
+  "history_entry_keys": [
+   "content",
+   "name",
+   "role",
+   "step"
+  ]
+ },
+ "math/train": {
+  "mistake_step_types": {
+   "str": 567
+  },
+  "step_min": 1,
+  "step_max": 10,
+  "history_len_min": 3,
+  "history_len_max": 11,
+  "step_within_history_bounds": 567,
+  "step0_share": 0.0,
+  "history_entry_keys": [
+   "content",
+   "name",
+   "role",
+   "step"
+  ]
+ },
+ "math/test": {
+  "mistake_step_types": {
+   "str": 63
+  },
+  "step_min": 1,
+  "step_max": 6,
+  "history_len_min": 3,
+  "history_len_max": 11,
+  "step_within_history_bounds": 63,
+  "step0_share": 0.0,
+  "history_entry_keys": [
+   "content",
+   "name",
+   "role",
+   "step"
+  ]
+ }
+}
