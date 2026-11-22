@@ -1,0 +1,108 @@
+{
+  "lcb": {
+    "n": {
+      "original": 103,
+      "oneoff": 103,
+      "conflicting": 103
+    },
+    "same_task_ids_across_splits": true,
+    "original_test_equals_original_split_test": {
+      "oneoff": 103,
+      "conflicting": 103
+    },
+    "unparsable_mutated_tests": {
+      "oneoff": 1,
+      "conflicting": 1
+    },
+    "structurally_broken_mutated_tests": {
+      "oneoff": [
+        "lcbhard_77"
+      ],
+      "conflicting": [
+        "lcbhard_35",
+        "lcbhard_77",
+        "lcbhard_87"
+      ]
+    },
+    "oneoff_diff_shape": {
+      "1줄 교체": 101,
+      "여러 줄 교체": 2
+    },
+    "oneoff_unchanged": 0,
+    "oneoff_single_line_rhs_only": 98,
+    "oneoff_single_line_other": 3,
+    "conflicting_added_only": 100,
+    "conflicting_ast_contradiction_detected": 98,
+    "conflicting_ast_not_detected": 5,
+    "conflicting_ast_not_detected_ids": [
+      "lcbhard_5",
+      "lcbhard_26",
+      "lcbhard_35",
+      "lcbhard_77",
+      "lcbhard_87"
+    ]
+  },
+  "swe": {
+    "n": {
+      "original": 349,
+      "oneoff": 349,
+      "conflicting": 349
+    },
+    "same_ids_across_splits": true,
+    "repo_counts": {
+      "django/django": 174,
+      "sympy/sympy": 56,
+      "sphinx-doc/sphinx": 28,
+      "scikit-learn/scikit-learn": 24,
+      "pydata/xarray": 17,
+      "pytest-dev/pytest": 15,
+      "astropy/astropy": 14,
+      "matplotlib/matplotlib": 14,
+      "pylint-dev/pylint": 6,
+      "mwaskom/seaborn": 1
+    },
+    "difficulty_counts": {
+      "15 min - 1 hour": 178,
+      "1-4 hours": 27,
+      "<15 min fix": 142,
+      ">4 hours": 2
+    },
+    "original_test_patch_equals_original_split_test_patch": {
+      "oneoff": 349,
+      "conflicting": 349
+    },
+    "mutated_equals_original": {
+      "oneoff": 0,
+      "conflicting": 0
+    },
+    "oneoff_shape": {
+      "기존 줄 1개 교체": 113,
+      "patch가 추가한 줄 1개 교체": 217,
+      "그 밖(여러 줄 변경)": 18,
+      "줄 추가만": 1
+    },
+    "oneoff_mean_Padd_Prem_Madd_Mrem": [
+      1.0744985673352436,
+      1.1174785100286533,
+      0.8424068767908309,
+      0.0
+    ],
+    "conflicting_shape": {
+      "줄 추가만": 332,
+      "그 밖(여러 줄 변경)": 16,
+      "기존 줄 1개 교체": 1
+    },
+    "conflicting_mean_Padd_Prem_Madd_Mrem": [
+      2.3896848137535818,
+      0.4269340974212034,
+      0.5272206303724928,
+      0.05157593123209169
+    ],
+    "fail_to_pass_count_summary": {
+      "mean": 1.848137535816619,
+      "max": 26,
+      "share_with_exactly_1": 0.6762177650429799
+    },
+    "share_with_other_untouched_f2p_tests": 0.3237822349570201
+  }
+}

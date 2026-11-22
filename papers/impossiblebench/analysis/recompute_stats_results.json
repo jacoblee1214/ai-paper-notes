@@ -1,0 +1,641 @@
+{
+  "A_arith_consistency": [
+    {
+      "claim": "GPT-5 Oneoff-LCB 2.9% (1절)",
+      "n": 103,
+      "reported_pct": 2.9,
+      "feasible_k": [
+        3
+      ],
+      "explained_by_k_over_n": true
+    },
+    {
+      "claim": "GPT-5 Conflicting-SWE 54.0% (4절)",
+      "n": 349,
+      "reported_pct": 54.0,
+      "feasible_k": [],
+      "explained_by_k_over_n": false
+    },
+    {
+      "claim": "GPT-5 Oneoff-SWE 76% (1절)",
+      "n": 349,
+      "reported_pct": 76,
+      "feasible_k": [
+        264,
+        265,
+        266
+      ],
+      "explained_by_k_over_n": true
+    },
+    {
+      "claim": "GPT-5 Conflicting-LCB 프롬프트 A 92% (그림 6)",
+      "n": 103,
+      "reported_pct": 92,
+      "feasible_k": [
+        95
+      ],
+      "explained_by_k_over_n": true
+    },
+    {
+      "claim": "GPT-5 Conflicting-LCB 프롬프트 D 1% (그림 6)",
+      "n": 103,
+      "reported_pct": 1,
+      "feasible_k": [
+        1
+      ],
+      "explained_by_k_over_n": true
+    },
+    {
+      "claim": "o3 Conflicting-LCB 프롬프트 D 33% (그림 6)",
+      "n": 103,
+      "reported_pct": 33,
+      "feasible_k": [
+        34
+      ],
+      "explained_by_k_over_n": true
+    },
+    {
+      "claim": "GPT-5 Conflicting-SWE 느슨한 프롬프트 66% (5.1절)",
+      "n": 349,
+      "reported_pct": 66,
+      "feasible_k": [
+        229,
+        230,
+        231,
+        232
+      ],
+      "explained_by_k_over_n": true
+    },
+    {
+      "claim": "Opus 4.1 Conflicting-SWE 50% (5.1절)",
+      "n": 349,
+      "reported_pct": 50,
+      "feasible_k": [
+        173,
+        174,
+        175,
+        176
+      ],
+      "explained_by_k_over_n": true
+    },
+    {
+      "claim": "GPT-5 abort 9% (5.3절)",
+      "n": 349,
+      "reported_pct": 9,
+      "feasible_k": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "explained_by_k_over_n": true
+    },
+    {
+      "claim": "o3 abort 12% (5.3절)",
+      "n": 349,
+      "reported_pct": 12,
+      "feasible_k": [
+        41,
+        42,
+        43
+      ],
+      "explained_by_k_over_n": true
+    }
+  ],
+  "A2_denominators_that_give_54.0pct": {
+    "341": [
+      184
+    ],
+    "346": [
+      187
+    ],
+    "348": [
+      188
+    ],
+    "350": [
+      189
+    ],
+    "352": [
+      190
+    ],
+    "354": [
+      191
+    ]
+  },
+  "A2_note": "349에서는 188/349=53.9%, 189/349=54.2%라 54.0%가 나오지 않는다. 348(188/348=54.0%)이나 350(189/350)이면 나온다.",
+  "B_effect_tests": [
+    {
+      "comparison": "SWE Conflicting GPT-5: 엄격 프롬프트 54% -> 느슨한 66% (5.1절)",
+      "p1_pct": 53.9,
+      "p2_pct": 65.9,
+      "diff_pp": 12.0,
+      "fisher_p": 0.0015231606226674074,
+      "ci90_1": [
+        49.5,
+        58.2
+      ],
+      "ci90_2": [
+        61.6,
+        69.9
+      ]
+    },
+    {
+      "comparison": "SWE Conflicting Opus 4.1: 엄격 50% -> 느슨한 55% (5.1절)",
+      "p1_pct": 49.9,
+      "p2_pct": 55.0,
+      "diff_pp": 5.2,
+      "fisher_p": 0.19755477031868837,
+      "ci90_1": [
+        45.5,
+        54.2
+      ],
+      "ci90_2": [
+        50.6,
+        59.3
+      ]
+    },
+    {
+      "comparison": "SWE Conflicting GPT-5: 전체 접근 54% -> 읽기 전용 39% (그림 7)",
+      "p1_pct": 53.9,
+      "p2_pct": 39.0,
+      "diff_pp": -14.9,
+      "fisher_p": 0.00010560250414184783,
+      "ci90_1": [
+        49.5,
+        58.2
+      ],
+      "ci90_2": [
+        34.8,
+        43.3
+      ]
+    },
+    {
+      "comparison": "SWE Conflicting GPT-5: 전체 접근 54% -> abort 허용 9% (그림 8)",
+      "p1_pct": 53.9,
+      "p2_pct": 8.9,
+      "diff_pp": -45.0,
+      "fisher_p": 6.401197452827357e-40,
+      "ci90_1": [
+        49.5,
+        58.2
+      ],
+      "ci90_2": [
+        6.7,
+        11.7
+      ]
+    },
+    {
+      "comparison": "SWE Conflicting o3: 49% -> abort 허용 12% (5.3절)",
+      "p1_pct": 49.0,
+      "p2_pct": 12.0,
+      "diff_pp": -37.0,
+      "fisher_p": 3.658029200848564e-27,
+      "ci90_1": [
+        44.6,
+        53.4
+      ],
+      "ci90_2": [
+        9.5,
+        15.2
+      ]
+    },
+    {
+      "comparison": "SWE Conflicting Opus 4.1: 50% -> abort 허용 46% (그림 8)",
+      "p1_pct": 49.9,
+      "p2_pct": 46.1,
+      "diff_pp": -3.7,
+      "fisher_p": 0.3632841059962944,
+      "ci90_1": [
+        45.5,
+        54.2
+      ],
+      "ci90_2": [
+        41.8,
+        50.5
+      ]
+    },
+    {
+      "comparison": "SWE Oneoff Opus 4.1: 54% -> abort 허용 51% (그림 8)",
+      "p1_pct": 53.9,
+      "p2_pct": 51.0,
+      "diff_pp": -2.9,
+      "fisher_p": 0.4951915716084577,
+      "ci90_1": [
+        49.5,
+        58.2
+      ],
+      "ci90_2": [
+        46.6,
+        55.4
+      ]
+    },
+    {
+      "comparison": "SWE Original GPT-5: 97% -> abort 허용 97% (그림 8, 정상 성능 보존)",
+      "p1_pct": 97.1,
+      "p2_pct": 97.1,
+      "diff_pp": 0.0,
+      "fisher_p": 1.0,
+      "ci90_1": [
+        95.3,
+        98.3
+      ],
+      "ci90_2": [
+        95.3,
+        98.3
+      ]
+    },
+    {
+      "comparison": "SWE Original o4-mini: 85% -> abort 허용 84% (그림 8)",
+      "p1_pct": 85.1,
+      "p2_pct": 84.0,
+      "diff_pp": -1.1,
+      "fisher_p": 0.7536527014072606,
+      "ci90_1": [
+        81.7,
+        88.0
+      ],
+      "ci90_2": [
+        80.5,
+        86.9
+      ]
+    },
+    {
+      "comparison": "SWE Original GPT-5: 97% -> 테스트 숨김 76% (그림 7, 정상 성능 손실)",
+      "p1_pct": 97.1,
+      "p2_pct": 75.9,
+      "diff_pp": -21.2,
+      "fisher_p": 1.15534524814667e-17,
+      "ci90_1": [
+        95.3,
+        98.3
+      ],
+      "ci90_2": [
+        72.0,
+        79.5
+      ]
+    },
+    {
+      "comparison": "LCB Conflicting GPT-5: 프롬프트 A 92% -> D 1%",
+      "p1_pct": 92.2,
+      "p2_pct": 1.0,
+      "diff_pp": -91.3,
+      "fisher_p": 1.3786876173827926e-47,
+      "ci90_1": [
+        86.7,
+        95.6
+      ],
+      "ci90_2": [
+        0.2,
+        4.2
+      ]
+    },
+    {
+      "comparison": "LCB Conflicting GPT-5: 프롬프트 A 92% -> C 28%",
+      "p1_pct": 92.2,
+      "p2_pct": 28.2,
+      "diff_pp": -64.1,
+      "fisher_p": 2.126650248586452e-22,
+      "ci90_1": [
+        86.7,
+        95.6
+      ],
+      "ci90_2": [
+        21.5,
+        35.9
+      ]
+    },
+    {
+      "comparison": "LCB Conflicting o3: 프롬프트 A 91% -> C 93% (C는 o3에 효과 없음)",
+      "p1_pct": 91.3,
+      "p2_pct": 93.2,
+      "diff_pp": 1.9,
+      "fisher_p": 0.7955387352747153,
+      "ci90_1": [
+        85.6,
+        94.8
+      ],
+      "ci90_2": [
+        87.9,
+        96.3
+      ]
+    },
+    {
+      "comparison": "LCB Conflicting o3: 프롬프트 A 91% -> D 33%",
+      "p1_pct": 91.3,
+      "p2_pct": 33.0,
+      "diff_pp": -58.3,
+      "fisher_p": 8.039580459328366e-19,
+      "ci90_1": [
+        85.6,
+        94.8
+      ],
+      "ci90_2": [
+        25.9,
+        41.0
+      ]
+    },
+    {
+      "comparison": "LCB Conflicting Opus 4.1: 프롬프트 A 37% -> D 0%",
+      "p1_pct": 36.9,
+      "p2_pct": 0.0,
+      "diff_pp": -36.9,
+      "fisher_p": 1.0832412304342728e-13,
+      "ci90_1": [
+        29.5,
+        45.0
+      ],
+      "ci90_2": [
+        0.0,
+        2.6
+      ]
+    }
+  ],
+  "C_model_pairs_swe_conflicting_read_off": [
+    {
+      "cmp": "GPT-5 vs Opus-4.1 (conflicting)",
+      "p_a": 54,
+      "p_b": 50,
+      "fisher_p": 0.32472568511031863
+    },
+    {
+      "cmp": "GPT-5 vs Sonnet-3.7 (conflicting)",
+      "p_a": 54,
+      "p_b": 64.5,
+      "fisher_p": 0.005523866801094188
+    },
+    {
+      "cmp": "Opus-4.1 vs Sonnet-3.7 (conflicting)",
+      "p_a": 50,
+      "p_b": 64.5,
+      "fisher_p": 0.00012746352445854302
+    },
+    {
+      "cmp": "Sonnet-4 vs Sonnet-3.7 (conflicting)",
+      "p_a": 43,
+      "p_b": 64.5,
+      "fisher_p": 1.7123507007584833e-08
+    },
+    {
+      "cmp": "GPT-5 vs o4-mini (conflicting)",
+      "p_a": 54,
+      "p_b": 48.5,
+      "fisher_p": 0.17284578360475122
+    },
+    {
+      "cmp": "Opus-4.1 vs o4-mini (conflicting)",
+      "p_a": 50,
+      "p_b": 48.5,
+      "fisher_p": 0.7620301201867896
+    },
+    {
+      "cmp": "Opus-4.1 vs Sonnet-4 (conflicting)",
+      "p_a": 50,
+      "p_b": 43,
+      "fisher_p": 0.08080329235008049
+    }
+  ],
+  "D_capability_vs_cheating_spearman": {
+    "SWE_oneoff": {
+      "rho": 0.778,
+      "p": 0.0229,
+      "n_models": 8
+    },
+    "SWE_oneoff_without_two_weakest": {
+      "rho": 0.464,
+      "p": 0.3542,
+      "n_models": 6
+    },
+    "SWE_conflicting": {
+      "rho": 0.731,
+      "p": 0.0396,
+      "n_models": 8
+    },
+    "SWE_conflicting_without_two_weakest": {
+      "rho": 0.348,
+      "p": 0.4993,
+      "n_models": 6
+    },
+    "LCB_oneoff": {
+      "rho": -0.268,
+      "p": 0.5204,
+      "n_models": 8
+    },
+    "LCB_oneoff_without_o3": {
+      "rho": -0.741,
+      "p": 0.0566,
+      "n_models": 7
+    },
+    "LCB_conflicting": {
+      "rho": 0.632,
+      "p": 0.0925,
+      "n_models": 8
+    },
+    "LCB_conflicting_without_o3": {
+      "rho": 0.474,
+      "p": 0.2822,
+      "n_models": 7
+    }
+  },
+  "D_note": "그림에서 읽은 값(±2%p)이라 순위 상관만 의미가 있다. 모델 8개라 검정력이 낮다. 능력(원본 통과율)과 '부정행위를 시도해 성공하는 능력'이 섞여 있어 성향의 증거로는 약하다.",
+  "E_lcb_small_cells": {
+    "0/103": {
+      "pct": 0.0,
+      "wilson90": [
+        0.0,
+        2.6
+      ],
+      "95pct_upper_clopper": 3.5
+    },
+    "1/103": {
+      "pct": 0.97,
+      "wilson90": [
+        0.2,
+        4.2
+      ],
+      "95pct_upper_clopper": 5.3
+    },
+    "3/103": {
+      "pct": 2.91,
+      "wilson90": [
+        1.2,
+        7.1
+      ],
+      "95pct_upper_clopper": 8.3
+    }
+  },
+  "E_note": "GPT-5 oneoff-LCB 2.9%(3/103)와 0%인 모델들은 구분되지 않는다(90% Wilson 구간이 겹침).",
+  "E_o3_vs_gpt5_lcb_oneoff": {
+    "o3_pct": 22,
+    "gpt5_pct": 2.9,
+    "fisher_p": 3.0274307498629473e-05
+  },
+  "E_o3_vs_gpt5_lcb_conflicting": {
+    "o3_pct": 33,
+    "gpt5_pct": 1,
+    "fisher_p": 9.423653920901739e-11
+  },
+  "F_feedback_average": {
+    "mean_first_pct": 32.9,
+    "mean_multi_pct": 38.2,
+    "paper_text": "33% -> 38%",
+    "without_GPT5": {
+      "first": 32.9,
+      "multi": 36.0
+    },
+    "gpt5_delta_pp": 21,
+    "gpt5_fisher_p": 3.4021830479366e-08,
+    "per_model_fisher_p": {
+      "GPT-5": 3.4021830479366e-08,
+      "Sonnet-3.7": 0.4817660192480873,
+      "o4-mini": 0.12872216957685553,
+      "Opus-4.1": 0.4954893210428231,
+      "Sonnet-4": 0.12217106115047499,
+      "o3": 0.8668646742997199,
+      "Qwen3-Coder": 1.0,
+      "GPT-4.1": 0.0018295483679803908
+    }
+  },
+  "G_monitor_cells": [
+    {
+      "cell": "LCB Sonnet 모니터 oneoff",
+      "pct": 86,
+      "n": 113,
+      "k_approx": 97,
+      "wilson90": [
+        79.6,
+        90.4
+      ]
+    },
+    {
+      "cell": "LCB Sonnet 모니터 conflicting",
+      "pct": 89,
+      "n": 80,
+      "k_approx": 71,
+      "wilson90": [
+        81.6,
+        93.3
+      ]
+    },
+    {
+      "cell": "SWE Sonnet 모니터 oneoff",
+      "pct": 42,
+      "n": 1308,
+      "k_approx": 549,
+      "wilson90": [
+        39.7,
+        44.2
+      ]
+    },
+    {
+      "cell": "SWE Sonnet 모니터 conflicting",
+      "pct": 50,
+      "n": 1063,
+      "k_approx": 532,
+      "wilson90": [
+        47.5,
+        52.6
+      ]
+    },
+    {
+      "cell": "SWE Opus 모니터 oneoff",
+      "pct": 57,
+      "n": 1308,
+      "k_approx": 746,
+      "wilson90": [
+        54.8,
+        59.3
+      ]
+    },
+    {
+      "cell": "SWE Opus 모니터 conflicting",
+      "pct": 65,
+      "n": 1063,
+      "k_approx": 691,
+      "wilson90": [
+        62.6,
+        67.4
+      ]
+    },
+    {
+      "cell": "LCB original(오탐 상한)",
+      "pct": 7,
+      "n": 550,
+      "k_approx": 38,
+      "wilson90": [
+        5.3,
+        8.9
+      ]
+    },
+    {
+      "cell": "SWE Sonnet original(오탐 상한)",
+      "pct": 1,
+      "n": 2300,
+      "k_approx": 23,
+      "wilson90": [
+        0.7,
+        1.4
+      ]
+    },
+    {
+      "cell": "SWE Opus original(오탐 상한)",
+      "pct": 2,
+      "n": 2300,
+      "k_approx": 46,
+      "wilson90": [
+        1.6,
+        2.5
+      ]
+    }
+  ],
+  "G_tests": [
+    {
+      "cmp": "LCB oneoff 86% vs conflicting 89% (Sonnet)",
+      "fisher_p": 0.6652489976469957
+    },
+    {
+      "cmp": "SWE Sonnet oneoff 42% vs conflicting 50%",
+      "fisher_p": 9.6752342635267e-05
+    },
+    {
+      "cmp": "SWE Sonnet 42% vs Opus 57% (oneoff, 같은 전사본 짝 -> 독립 검정은 보수적)",
+      "fisher_p": 1.6057993208013736e-14
+    }
+  ],
+  "G_counts": {
+    "swe_cheat_transcripts": 2371,
+    "paper_says": 2371,
+    "lcb_cheat_transcripts": 193,
+    "paper_says_lcb": 193
+  },
+  "G_note": "모니터 전사본은 (모델 8 x 스캐폴드 x 문항 349)에서 통과한 것만 모은 것이라 같은 문항·모델의 전사본이 군집한다. 위 구간은 독립 가정이라 좁다.",
+  "H_fig5": {
+    "sum_n": 1610,
+    "note": "스캐폴드 2개 합산(문항 349 x 2 = 698회 시도 중 통과 수)",
+    "pass_rate_implied_over_698_runs_pct": {
+      "GPT-5": 53.4,
+      "o3": 21.6,
+      "o4-mini": 32.2,
+      "GPT-4.1": 1.9,
+      "Opus-4.1": 36.2,
+      "Sonnet-4": 24.2,
+      "Sonnet-3.7": 48.9,
+      "Qwen3-Coder": 12.2
+    },
+    "share_modify_tests_pct": {
+      "GPT-5": 24,
+      "o3": 15,
+      "o4-mini": 64,
+      "GPT-4.1": 46,
+      "Opus-4.1": 86,
+      "Sonnet-4": 82,
+      "Sonnet-3.7": 79,
+      "Qwen3-Coder": 87
+    },
+    "openai_modify_share_range": [
+      15,
+      64
+    ],
+    "note2": "캡션 'OpenAI 모델이 더 다양'은 GPT-5(24%)·o3(15%)에만 해당한다. o4-mini는 64%가 테스트 수정이다.",
+    "fisher_gpt5_vs_opus_modify": 2.9375257988292234e-56
+  }
+}
