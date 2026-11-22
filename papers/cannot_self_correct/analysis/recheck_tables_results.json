@@ -1,0 +1,563 @@
+{
+ "grid_check": {
+  "n_values_checked": 42,
+  "inconsistent": []
+ },
+ "figure1_paired": {
+  "GSM8K GPT-3.5": {
+   "n": 1319,
+   "pct_sum": 100.0,
+   "C2I_n": 116,
+   "I2C_n": 100,
+   "net_fig1_pts": -1.2,
+   "net_table_pts": -1.2,
+   "match": true,
+   "mcnemar_exact_p": 0.3074,
+   "paired_diff_pts": -1.21,
+   "paired_diff_ci95": [
+    -3.4,
+    0.97
+   ],
+   "harm_to_gain_ratio": 1.16,
+   "I2C_share_of_initially_wrong_pct": 31.5,
+   "C2I_share_of_initially_right_pct": 11.6
+  },
+  "CSQA GPT-3.5": {
+   "n": 1221,
+   "pct_sum": 100.0,
+   "C2I_n": 486,
+   "I2C_n": 71,
+   "net_fig1_pts": -34.0,
+   "net_table_pts": -34.0,
+   "match": true,
+   "mcnemar_exact_p": 0.0,
+   "paired_diff_pts": -33.99,
+   "paired_diff_ci95": [
+    -37.26,
+    -30.71
+   ],
+   "harm_to_gain_ratio": 6.85,
+   "I2C_share_of_initially_wrong_pct": 24.0,
+   "C2I_share_of_initially_right_pct": 52.5
+  },
+  "GSM8K GPT-4": {
+   "n": 200,
+   "pct_sum": 100.0,
+   "C2I_n": 16,
+   "I2C_n": 3,
+   "net_fig1_pts": -6.5,
+   "net_table_pts": -6.5,
+   "match": true,
+   "mcnemar_exact_p": 0.0044,
+   "paired_diff_pts": -6.5,
+   "paired_diff_ci95": [
+    -10.68,
+    -2.32
+   ],
+   "harm_to_gain_ratio": 5.33,
+   "I2C_share_of_initially_wrong_pct": 33.3,
+   "C2I_share_of_initially_right_pct": 8.4
+  },
+  "CSQA GPT-4": {
+   "n": 200,
+   "pct_sum": 100.0,
+   "C2I_n": 10,
+   "I2C_n": 6,
+   "net_fig1_pts": -2.0,
+   "net_table_pts": -2.0,
+   "match": true,
+   "mcnemar_exact_p": 0.4545,
+   "paired_diff_pts": -2.0,
+   "paired_diff_ci95": [
+    -5.91,
+    1.91
+   ],
+   "harm_to_gain_ratio": 1.67,
+   "I2C_share_of_initially_wrong_pct": 16.7,
+   "C2I_share_of_initially_right_pct": 6.1
+  },
+  "GSM8K GPT-4-Turbo": {
+   "n": 200,
+   "pct_sum": 100.0,
+   "C2I_n": 5,
+   "I2C_n": 2,
+   "net_fig1_pts": -1.5,
+   "net_table_pts": -1.5,
+   "match": true,
+   "mcnemar_exact_p": 0.4531,
+   "paired_diff_pts": -1.5,
+   "paired_diff_ci95": [
+    -4.08,
+    1.08
+   ],
+   "harm_to_gain_ratio": 2.5,
+   "I2C_share_of_initially_wrong_pct": 11.8,
+   "C2I_share_of_initially_right_pct": 2.7
+  },
+  "CSQA GPT-4-Turbo": {
+   "n": 200,
+   "pct_sum": 100.0,
+   "C2I_n": 12,
+   "I2C_n": 10,
+   "net_fig1_pts": -1.0,
+   "net_table_pts": -1.0,
+   "match": true,
+   "mcnemar_exact_p": 0.8318,
+   "paired_diff_pts": -1.0,
+   "paired_diff_ci95": [
+    -5.59,
+    3.59
+   ],
+   "harm_to_gain_ratio": 1.2,
+   "I2C_share_of_initially_wrong_pct": 31.2,
+   "C2I_share_of_initially_right_pct": 7.1
+  },
+  "GSM8K Llama-2": {
+   "n": 200,
+   "pct_sum": 100.0,
+   "C2I_n": 62,
+   "I2C_n": 11,
+   "net_fig1_pts": -25.5,
+   "net_table_pts": -25.5,
+   "match": true,
+   "mcnemar_exact_p": 0.0,
+   "paired_diff_pts": -25.5,
+   "paired_diff_ci95": [
+    -33.09,
+    -17.91
+   ],
+   "harm_to_gain_ratio": 5.64,
+   "I2C_share_of_initially_wrong_pct": 14.5,
+   "C2I_share_of_initially_right_pct": 50.0
+  },
+  "CSQA Llama-2": {
+   "n": 200,
+   "pct_sum": 100.0,
+   "C2I_n": 71,
+   "I2C_n": 16,
+   "net_fig1_pts": -27.5,
+   "net_table_pts": -27.5,
+   "match": true,
+   "mcnemar_exact_p": 0.0,
+   "paired_diff_pts": -27.5,
+   "paired_diff_ci95": [
+    -35.81,
+    -19.19
+   ],
+   "harm_to_gain_ratio": 4.44,
+   "I2C_share_of_initially_wrong_pct": 22.2,
+   "C2I_share_of_initially_right_pct": 55.5
+  }
+ },
+ "unpaired_vs_standard": {
+  "T3 GSM8K GPT-3.5": {
+   "std_wilson95": [
+    73.5,
+    78.1
+   ],
+   "r1": {
+    "value": 75.1,
+    "delta": -0.8,
+    "z": -0.48,
+    "p": 0.6329,
+    "sig_unpaired_05": false
+   },
+   "r2": {
+    "value": 74.7,
+    "delta": -1.2,
+    "z": -0.71,
+    "p": 0.4749,
+    "sig_unpaired_05": false
+   }
+  },
+  "T3 CSQA GPT-3.5": {
+   "std_wilson95": [
+    73.4,
+    78.2
+   ],
+   "r1": {
+    "value": 38.1,
+    "delta": -37.7,
+    "z": -18.81,
+    "p": 0.0,
+    "sig_unpaired_05": true
+   },
+   "r2": {
+    "value": 41.8,
+    "delta": -34.0,
+    "z": -17.07,
+    "p": 0.0,
+    "sig_unpaired_05": true
+   }
+  },
+  "T3 HotpotQA GPT-3.5": {
+   "std_wilson95": [
+    18.4,
+    35.4
+   ],
+   "r1": {
+    "value": 25.0,
+    "delta": -1.0,
+    "z": -0.16,
+    "p": 0.8711,
+    "sig_unpaired_05": false
+   },
+   "r2": {
+    "value": 25.0,
+    "delta": -1.0,
+    "z": -0.16,
+    "p": 0.8711,
+    "sig_unpaired_05": false
+   }
+  },
+  "T3 GSM8K GPT-4": {
+   "std_wilson95": [
+    91.7,
+    97.6
+   ],
+   "r1": {
+    "value": 91.5,
+    "delta": -4.0,
+    "z": -1.62,
+    "p": 0.1047,
+    "sig_unpaired_05": false
+   },
+   "r2": {
+    "value": 89.0,
+    "delta": -6.5,
+    "z": -2.43,
+    "p": 0.0151,
+    "sig_unpaired_05": true
+   }
+  },
+  "T3 CSQA GPT-4": {
+   "std_wilson95": [
+    76.1,
+    86.7
+   ],
+   "r1": {
+    "value": 79.5,
+    "delta": -2.5,
+    "z": -0.63,
+    "p": 0.526,
+    "sig_unpaired_05": false
+   },
+   "r2": {
+    "value": 80.0,
+    "delta": -2.0,
+    "z": -0.51,
+    "p": 0.6102,
+    "sig_unpaired_05": false
+   }
+  },
+  "T3 HotpotQA GPT-4": {
+   "std_wilson95": [
+    39.4,
+    58.7
+   ],
+   "r1": {
+    "value": 49.0,
+    "delta": 0.0,
+    "z": 0.0,
+    "p": 1.0,
+    "sig_unpaired_05": false
+   },
+   "r2": {
+    "value": 43.0,
+    "delta": -6.0,
+    "z": -0.85,
+    "p": 0.3946,
+    "sig_unpaired_05": false
+   }
+  },
+  "T4/T5 GSM8K GPT-4-Turbo": {
+   "std_wilson95": [
+    86.8,
+    94.6
+   ],
+   "r1": {
+    "value": 88.0,
+    "delta": -3.5,
+    "z": -1.15,
+    "p": 0.2485,
+    "sig_unpaired_05": false
+   },
+   "r2": {
+    "value": 90.0,
+    "delta": -1.5,
+    "z": -0.52,
+    "p": 0.6047,
+    "sig_unpaired_05": false
+   },
+   "p2 r1": {
+    "value": 90.0,
+    "delta": -1.5,
+    "z": -0.52,
+    "p": 0.6047,
+    "sig_unpaired_05": false
+   },
+   "p2 r2": {
+    "value": 90.0,
+    "delta": -1.5,
+    "z": -0.52,
+    "p": 0.6047,
+    "sig_unpaired_05": false
+   },
+   "p3 r1": {
+    "value": 91.0,
+    "delta": -0.5,
+    "z": -0.18,
+    "p": 0.8595,
+    "sig_unpaired_05": false
+   },
+   "p3 r2": {
+    "value": 91.0,
+    "delta": -0.5,
+    "z": -0.18,
+    "p": 0.8595,
+    "sig_unpaired_05": false
+   }
+  },
+  "T4/T5 CSQA GPT-4-Turbo": {
+   "std_wilson95": [
+    78.3,
+    88.4
+   ],
+   "r1": {
+    "value": 81.5,
+    "delta": -2.5,
+    "z": -0.66,
+    "p": 0.5082,
+    "sig_unpaired_05": false
+   },
+   "r2": {
+    "value": 83.0,
+    "delta": -1.0,
+    "z": -0.27,
+    "p": 0.7876,
+    "sig_unpaired_05": false
+   },
+   "p2 r1": {
+    "value": 74.5,
+    "delta": -9.5,
+    "z": -2.34,
+    "p": 0.0191,
+    "sig_unpaired_05": true
+   },
+   "p2 r2": {
+    "value": 81.0,
+    "delta": -3.0,
+    "z": -0.79,
+    "p": 0.4298,
+    "sig_unpaired_05": false
+   },
+   "p3 r1": {
+    "value": 81.5,
+    "delta": -2.5,
+    "z": -0.66,
+    "p": 0.5082,
+    "sig_unpaired_05": false
+   },
+   "p3 r2": {
+    "value": 83.5,
+    "delta": -0.5,
+    "z": -0.14,
+    "p": 0.8922,
+    "sig_unpaired_05": false
+   }
+  },
+  "T4/T6 GSM8K Llama-2": {
+   "std_wilson95": [
+    55.1,
+    68.4
+   ],
+   "r1": {
+    "value": 43.5,
+    "delta": -18.5,
+    "z": -3.71,
+    "p": 0.0002,
+    "sig_unpaired_05": true
+   },
+   "r2": {
+    "value": 36.5,
+    "delta": -25.5,
+    "z": -5.1,
+    "p": 0.0,
+    "sig_unpaired_05": true
+   },
+   "p2 r1": {
+    "value": 46.5,
+    "delta": -15.5,
+    "z": -3.11,
+    "p": 0.0019,
+    "sig_unpaired_05": true
+   },
+   "p2 r2": {
+    "value": 30.5,
+    "delta": -31.5,
+    "z": -6.32,
+    "p": 0.0,
+    "sig_unpaired_05": true
+   },
+   "p3 r1": {
+    "value": 58.0,
+    "delta": -4.0,
+    "z": -0.82,
+    "p": 0.4142,
+    "sig_unpaired_05": false
+   },
+   "p3 r2": {
+    "value": 41.5,
+    "delta": -20.5,
+    "z": -4.1,
+    "p": 0.0,
+    "sig_unpaired_05": true
+   }
+  },
+  "T4/T6 CSQA Llama-2": {
+   "std_wilson95": [
+    57.1,
+    70.3
+   ],
+   "r1": {
+    "value": 37.5,
+    "delta": -26.5,
+    "z": -5.3,
+    "p": 0.0,
+    "sig_unpaired_05": true
+   },
+   "r2": {
+    "value": 36.5,
+    "delta": -27.5,
+    "z": -5.5,
+    "p": 0.0,
+    "sig_unpaired_05": true
+   },
+   "p2 r1": {
+    "value": 26.0,
+    "delta": -38.0,
+    "z": -7.64,
+    "p": 0.0,
+    "sig_unpaired_05": true
+   },
+   "p2 r2": {
+    "value": 37.0,
+    "delta": -27.0,
+    "z": -5.4,
+    "p": 0.0,
+    "sig_unpaired_05": true
+   },
+   "p3 r1": {
+    "value": 24.0,
+    "delta": -40.0,
+    "z": -8.06,
+    "p": 0.0,
+    "sig_unpaired_05": true
+   },
+   "p3 r2": {
+    "value": 43.0,
+    "delta": -21.0,
+    "z": -4.21,
+    "p": 0.0,
+    "sig_unpaired_05": true
+   }
+  }
+ },
+ "table7": {
+  "SC3 vs MAD r1 (3 agents 기준, 82.5 vs 83.2)": {
+   "delta": 0.7,
+   "z": 0.48,
+   "p": 0.6334
+  },
+  "MAD r1(6) vs SC6 (83.2 vs 85.3)": {
+   "delta": 2.1,
+   "z": 1.48,
+   "p": 0.1387
+  },
+  "MAD r2(9) vs SC9 (83.0 vs 88.2)": {
+   "delta": 5.2,
+   "z": 3.8,
+   "p": 0.0001
+  },
+  "MAD r2(9) vs SC3 (82.5 vs 83.0)": {
+   "delta": 0.5,
+   "z": 0.34,
+   "p": 0.734
+  },
+  "Std vs SC3 (76.7 vs 82.5)": {
+   "delta": 5.8,
+   "z": 3.7,
+   "p": 0.0002
+  }
+ },
+ "table7_noise": {
+  "binomial_se_pts": 1.16,
+  "v1_reported_sd_over_9_runs_pts": 0.91
+ },
+ "mde_pts_unpaired": {
+  "n=1319, p0=0.76": 4.7,
+  "n=1221, p0=0.76": 4.8,
+  "n=200, p0=0.9": 8.4,
+  "n=200, p0=0.6": 13.7,
+  "n=100, p0=0.26": 17.4,
+  "n=100, p0=0.49": 19.8
+ },
+ "oracle_decomposition": {
+  "GSM8K GPT-3.5": {
+   "acc0": 75.9,
+   "oracle_acc": 84.3,
+   "oracle_gain": 8.4,
+   "intrinsic_I2C": 7.6,
+   "intrinsic_C2I": 8.8,
+   "intrinsic_net": -1.2,
+   "oracle_fix_share_of_wrong_pct": 34.9,
+   "intrinsic_fix_share_of_wrong_pct": 31.5,
+   "intrinsic_break_share_of_right_pct": 11.6
+  },
+  "CSQA GPT-3.5": {
+   "acc0": 75.8,
+   "oracle_acc": 89.7,
+   "oracle_gain": 13.9,
+   "intrinsic_I2C": 5.8,
+   "intrinsic_C2I": 39.8,
+   "intrinsic_net": -34.0,
+   "oracle_fix_share_of_wrong_pct": 57.4,
+   "intrinsic_fix_share_of_wrong_pct": 24.0,
+   "intrinsic_break_share_of_right_pct": 52.5
+  }
+ },
+ "v1_random_baseline": {
+  "paper_formula_5_minus_k": {
+   "GPT-3.5": [
+    80.6,
+    85.5,
+    90.3,
+    95.2
+   ],
+   "GPT-4": [
+    85.6,
+    89.2,
+    92.8,
+    96.4
+   ]
+  },
+  "formula_4_minus_k": {
+   "GPT-3.5": [
+    81.8,
+    87.9,
+    94.0,
+    100.0
+   ],
+   "GPT-4": [
+    86.5,
+    91.0,
+    95.5,
+    100.0
+   ]
+  },
+  "v1_reported_round2": {
+   "GPT-3.5": 87.9,
+   "GPT-4": 91.0
+  }
+ }
+}
