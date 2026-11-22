@@ -1,0 +1,425 @@
+{
+  "table2_counts": {
+    "word_sorting": {
+      "total": 300,
+      "correct_ans": 45,
+      "incorrect_ans": 255,
+      "incorrect_mis": 266,
+      "correct_ans_with_mistake": 15,
+      "incorrect_ans_with_mistake": 251
+    },
+    "tracking_shuffled_objects": {
+      "total": 300,
+      "correct_ans": 45,
+      "incorrect_ans": 255,
+      "incorrect_mis": 260,
+      "correct_ans_with_mistake": 12,
+      "incorrect_ans_with_mistake": 248
+    },
+    "logical_deduction": {
+      "total": 300,
+      "correct_ans": 45,
+      "incorrect_ans": 255,
+      "incorrect_mis": 294,
+      "correct_ans_with_mistake": 39,
+      "incorrect_ans_with_mistake": 255
+    },
+    "multistep_arithmetic": {
+      "total": 300,
+      "correct_ans": 45,
+      "incorrect_ans": 255,
+      "incorrect_mis": 238,
+      "correct_ans_with_mistake": 1,
+      "incorrect_ans_with_mistake": 237
+    },
+    "dyck_languages": {
+      "total": 986,
+      "correct_ans": 482,
+      "incorrect_ans": 504,
+      "incorrect_mis": 650,
+      "correct_ans_with_mistake": 147,
+      "incorrect_ans_with_mistake": 503
+    }
+  },
+  "table6_denominators": {
+    "word_sorting": {
+      "oracle_correct": {
+        "reported_pct": -11.11,
+        "n_all_group": 45,
+        "k_fits_all_group": [
+          5
+        ],
+        "n_group_with_mistake": 15,
+        "k_fits_with_mistake": []
+      },
+      "oracle_incorrect": {
+        "reported_pct": 23.53,
+        "n_all_group": 255,
+        "k_fits_all_group": [
+          60
+        ],
+        "n_group_with_mistake": 251,
+        "k_fits_with_mistake": []
+      },
+      "random_correct": {
+        "reported_pct": -15.56,
+        "n_all_group": 45,
+        "k_fits_all_group": [
+          7
+        ],
+        "n_group_with_mistake": 15,
+        "k_fits_with_mistake": []
+      },
+      "random_incorrect": {
+        "reported_pct": 11.76,
+        "n_all_group": 255,
+        "k_fits_all_group": [
+          30
+        ],
+        "n_group_with_mistake": 251,
+        "k_fits_with_mistake": []
+      }
+    },
+    "tracking_shuffled_objects": {
+      "oracle_correct": {
+        "reported_pct": -6.67,
+        "n_all_group": 45,
+        "k_fits_all_group": [
+          3
+        ],
+        "n_group_with_mistake": 12,
+        "k_fits_with_mistake": []
+      },
+      "oracle_incorrect": {
+        "reported_pct": 43.92,
+        "n_all_group": 255,
+        "k_fits_all_group": [
+          112
+        ],
+        "n_group_with_mistake": 248,
+        "k_fits_with_mistake": []
+      },
+      "random_correct": {
+        "reported_pct": -6.67,
+        "n_all_group": 45,
+        "k_fits_all_group": [
+          3
+        ],
+        "n_group_with_mistake": 12,
+        "k_fits_with_mistake": []
+      },
+      "random_incorrect": {
+        "reported_pct": 20.39,
+        "n_all_group": 255,
+        "k_fits_all_group": [
+          52
+        ],
+        "n_group_with_mistake": 248,
+        "k_fits_with_mistake": []
+      }
+    },
+    "logical_deduction": {
+      "oracle_correct": {
+        "reported_pct": -11.43,
+        "n_all_group": 45,
+        "k_fits_all_group": [],
+        "n_group_with_mistake": 39,
+        "k_fits_with_mistake": []
+      },
+      "oracle_incorrect": {
+        "reported_pct": 36.86,
+        "n_all_group": 255,
+        "k_fits_all_group": [
+          94
+        ],
+        "n_group_with_mistake": 255,
+        "k_fits_with_mistake": [
+          94
+        ]
+      },
+      "random_correct": {
+        "reported_pct": -13.33,
+        "n_all_group": 45,
+        "k_fits_all_group": [
+          6
+        ],
+        "n_group_with_mistake": 39,
+        "k_fits_with_mistake": []
+      },
+      "random_incorrect": {
+        "reported_pct": 21.57,
+        "n_all_group": 255,
+        "k_fits_all_group": [
+          55
+        ],
+        "n_group_with_mistake": 255,
+        "k_fits_with_mistake": [
+          55
+        ]
+      }
+    },
+    "multistep_arithmetic": {
+      "oracle_correct": {
+        "reported_pct": -0.0,
+        "n_all_group": 45,
+        "k_fits_all_group": [
+          0
+        ],
+        "n_group_with_mistake": 1,
+        "k_fits_with_mistake": [
+          0
+        ]
+      },
+      "oracle_incorrect": {
+        "reported_pct": 18.04,
+        "n_all_group": 255,
+        "k_fits_all_group": [
+          46
+        ],
+        "n_group_with_mistake": 237,
+        "k_fits_with_mistake": []
+      },
+      "random_correct": {
+        "reported_pct": -8.89,
+        "n_all_group": 45,
+        "k_fits_all_group": [
+          4
+        ],
+        "n_group_with_mistake": 1,
+        "k_fits_with_mistake": []
+      },
+      "random_incorrect": {
+        "reported_pct": 10.59,
+        "n_all_group": 255,
+        "k_fits_all_group": [
+          27
+        ],
+        "n_group_with_mistake": 237,
+        "k_fits_with_mistake": []
+      }
+    },
+    "dyck_languages": {
+      "oracle_correct": {
+        "reported_pct": -6.82,
+        "n_all_group": 88,
+        "k_fits_all_group": [
+          6
+        ],
+        "n_group_with_mistake": 147,
+        "k_fits_with_mistake": []
+      },
+      "oracle_incorrect": {
+        "reported_pct": 18.06,
+        "n_all_group": 504,
+        "k_fits_all_group": [
+          91
+        ],
+        "n_group_with_mistake": 503,
+        "k_fits_with_mistake": []
+      },
+      "random_correct": {
+        "reported_pct": -15.91,
+        "n_all_group": 88,
+        "k_fits_all_group": [
+          14
+        ],
+        "n_group_with_mistake": 147,
+        "k_fits_with_mistake": []
+      },
+      "random_incorrect": {
+        "reported_pct": 5.16,
+        "n_all_group": 504,
+        "k_fits_all_group": [
+          26
+        ],
+        "n_group_with_mistake": 503,
+        "k_fits_with_mistake": []
+      }
+    }
+  },
+  "table4_overall_macro": {
+    "GPT-4-Turbo col0": {
+      "macro_mean": 30.13,
+      "reported_overall": 30.13
+    },
+    "GPT-4-Turbo col1": {
+      "macro_mean": 48.33,
+      "reported_overall": 48.33
+    },
+    "GPT-4 col0": {
+      "macro_mean": 39.8,
+      "reported_overall": 39.8
+    },
+    "GPT-4 col1": {
+      "macro_mean": 52.87,
+      "reported_overall": 52.87
+    },
+    "GPT-4 col2": {
+      "macro_mean": 43.4,
+      "reported_overall": 43.4
+    },
+    "GPT-3.5-Turbo col0": {
+      "macro_mean": 10.44,
+      "reported_overall": 10.44
+    },
+    "GPT-3.5-Turbo col1": {
+      "macro_mean": 14.78,
+      "reported_overall": 14.78
+    },
+    "GPT-3.5-Turbo col2": {
+      "macro_mean": 14.31,
+      "reported_overall": 14.31
+    },
+    "PaLM 2 Unicorn col0": {
+      "macro_mean": 13.86,
+      "reported_overall": 17.09
+    },
+    "PaLM 2 Unicorn col1": {
+      "macro_mean": 23.67,
+      "reported_overall": 23.67
+    },
+    "PaLM 2 Unicorn col2": {
+      "macro_mean": 24.65,
+      "reported_overall": 24.65
+    }
+  },
+  "table5_baseline_f1": {
+    "pooled_4_tasks_300each": 78.11,
+    "dyck_sampled_504_88": 78.3,
+    "reported": 78
+  },
+  "table7_diff_check": {
+    "word_sorting": {
+      "computed": 10.66,
+      "reported": 11.66,
+      "mismatch": true
+    },
+    "tracking_shuffled_objects": {
+      "computed": 19.67,
+      "reported": 19.67,
+      "mismatch": false
+    },
+    "logical_deduction": {
+      "computed": -0.67,
+      "reported": -0.67,
+      "mismatch": false
+    },
+    "multistep_arithmetic": {
+      "computed": 4.0,
+      "reported": 4.0,
+      "mismatch": false
+    },
+    "dyck_languages": {
+      "computed": 22.59,
+      "reported": 22.59,
+      "mismatch": false
+    },
+    "dyck_denominator_check": {
+      "592": {
+        "33.57_is_k_over_n": [],
+        "10.98_is_k_over_n": [
+          65
+        ]
+      },
+      "986": {
+        "33.57_is_k_over_n": [
+          331
+        ],
+        "10.98_is_k_over_n": []
+      }
+    }
+  },
+  "table6_tests": {
+    "word_sorting_incorrect_oracle_vs_random_fisher_p": 0.0007,
+    "note": "Single random-location draw, no seeds reported: the random arm has one realization, so this p-value is indicative only."
+  },
+  "table7_tests": {
+    "word_sorting": {
+      "n_assumed": 300,
+      "fisher_p_two_sided_for_reported_diff": 0.0007
+    },
+    "tracking_shuffled_objects": {
+      "n_assumed": 300,
+      "fisher_p_two_sided_for_reported_diff": 0.0
+    },
+    "logical_deduction": {
+      "n_assumed": 300,
+      "fisher_p_two_sided_for_reported_diff": 0.8671
+    },
+    "multistep_arithmetic": {
+      "n_assumed": 300,
+      "fisher_p_two_sided_for_reported_diff": 0.293
+    },
+    "dyck_languages": {
+      "n_assumed": 592,
+      "fisher_p_two_sided_for_reported_diff": 0.0
+    }
+  },
+  "table6_incorrect_ci": {
+    "word_sorting": {
+      "oracle_k": 60,
+      "oracle_wilson95": [
+        18.7,
+        29.1
+      ],
+      "random_k": 30,
+      "random_wilson95": [
+        8.4,
+        16.3
+      ],
+      "fisher_p_oracle_vs_random": 0.0007
+    },
+    "tracking_shuffled_objects": {
+      "oracle_k": 112,
+      "oracle_wilson95": [
+        38.0,
+        50.1
+      ],
+      "random_k": 52,
+      "random_wilson95": [
+        15.9,
+        25.8
+      ],
+      "fisher_p_oracle_vs_random": 0.0
+    },
+    "logical_deduction": {
+      "oracle_k": 94,
+      "oracle_wilson95": [
+        31.2,
+        42.9
+      ],
+      "random_k": 55,
+      "random_wilson95": [
+        17.0,
+        27.0
+      ],
+      "fisher_p_oracle_vs_random": 0.0002
+    },
+    "multistep_arithmetic": {
+      "oracle_k": 46,
+      "oracle_wilson95": [
+        13.8,
+        23.2
+      ],
+      "random_k": 27,
+      "random_wilson95": [
+        7.4,
+        15.0
+      ],
+      "fisher_p_oracle_vs_random": 0.0224
+    },
+    "dyck_languages": {
+      "oracle_k": 91,
+      "oracle_wilson95": [
+        14.9,
+        21.7
+      ],
+      "random_k": 26,
+      "random_wilson95": [
+        3.5,
+        7.5
+      ],
+      "fisher_p_oracle_vs_random": 0.0
+    }
+  }
+}
