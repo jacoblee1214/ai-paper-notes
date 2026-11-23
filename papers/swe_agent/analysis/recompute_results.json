@@ -1,0 +1,755 @@
+{
+  "table1": {
+    "full/RAG GPT-4 Turbo": {
+      "reported_pct": 1.31,
+      "n": 2294,
+      "k": 30,
+      "k_over_n_pct": 1.308,
+      "rounding_err": 0.002,
+      "wilson95_pct": [
+        0.92,
+        1.86
+      ]
+    },
+    "full/RAG Claude 3 Opus": {
+      "reported_pct": 3.79,
+      "n": 2294,
+      "k": 87,
+      "k_over_n_pct": 3.793,
+      "rounding_err": -0.003,
+      "wilson95_pct": [
+        3.08,
+        4.65
+      ]
+    },
+    "full/SWE-agent GPT-4 Turbo": {
+      "reported_pct": 12.47,
+      "n": 2294,
+      "k": 286,
+      "k_over_n_pct": 12.467,
+      "rounding_err": 0.003,
+      "wilson95_pct": [
+        11.18,
+        13.88
+      ]
+    },
+    "full/SWE-agent Claude 3 Opus": {
+      "reported_pct": 10.46,
+      "n": 2294,
+      "k": 240,
+      "k_over_n_pct": 10.462,
+      "rounding_err": -0.002,
+      "wilson95_pct": [
+        9.28,
+        11.78
+      ]
+    },
+    "lite/RAG GPT-4 Turbo": {
+      "reported_pct": 2.67,
+      "n": 300,
+      "k": 8,
+      "k_over_n_pct": 2.667,
+      "rounding_err": 0.003,
+      "wilson95_pct": [
+        1.36,
+        5.17
+      ]
+    },
+    "lite/RAG Claude 3 Opus": {
+      "reported_pct": 4.33,
+      "n": 300,
+      "k": 13,
+      "k_over_n_pct": 4.333,
+      "rounding_err": -0.003,
+      "wilson95_pct": [
+        2.55,
+        7.27
+      ]
+    },
+    "lite/Shell-only GPT-4 Turbo": {
+      "reported_pct": 11.0,
+      "n": 300,
+      "k": 33,
+      "k_over_n_pct": 11.0,
+      "rounding_err": 0.0,
+      "wilson95_pct": [
+        7.94,
+        15.05
+      ]
+    },
+    "lite/Shell-only GPT-4 Turbo w/o demo": {
+      "reported_pct": 7.33,
+      "n": 300,
+      "k": 22,
+      "k_over_n_pct": 7.333,
+      "rounding_err": -0.003,
+      "wilson95_pct": [
+        4.89,
+        10.85
+      ]
+    },
+    "lite/SWE-agent GPT-4 Turbo": {
+      "reported_pct": 18.0,
+      "n": 300,
+      "k": 54,
+      "k_over_n_pct": 18.0,
+      "rounding_err": 0.0,
+      "wilson95_pct": [
+        14.07,
+        22.74
+      ]
+    },
+    "lite/SWE-agent Claude 3 Opus": {
+      "reported_pct": 13.0,
+      "n": 300,
+      "k": 39,
+      "k_over_n_pct": 13.0,
+      "rounding_err": 0.0,
+      "wilson95_pct": [
+        9.66,
+        17.28
+      ]
+    }
+  },
+  "table1_claims": {
+    "rel_increase_vs_shell_with_demo": 0.6364,
+    "fold_vs_RAG_gpt4_lite": 6.74,
+    "cost_ratio_vs_RAG": {
+      "gpt4": 12.8,
+      "opus": 8.7
+    },
+    "intro_10.7pp": {
+      "as_stated": 10.67,
+      "note": "SWE-agent(데모 있음) 대 Shell-only(데모 없음)"
+    },
+    "matched_with_demo_pp": 7.0,
+    "matched_without_demo_pp": 8.97,
+    "shell_vs_sweagent_with_demo": {
+      "diff": 21,
+      "p_if_min_discordance": 9.5367431640625e-07,
+      "p_if_max_discordance": 0.03141811023384611,
+      "b10_max": 54,
+      "b01_max": 33
+    },
+    "shell_vs_sweagent_without_demo": {
+      "diff": 27,
+      "p_if_min_discordance": 1.4901161193847656e-08,
+      "p_if_max_discordance": 0.0018204049356112858,
+      "b10_max": 49,
+      "b01_max": 22
+    },
+    "sweagent_vs_RAG_lite": {
+      "diff": 46,
+      "p_if_min_discordance": 2.842170943040401e-14,
+      "p_if_max_discordance": 1.709326186236787e-09,
+      "b10_max": 54,
+      "b01_max": 8
+    }
+  },
+  "table2": {
+    "Python": {
+      "reported_pct": 87.7,
+      "nearest_k_of_164": 144,
+      "k_over_164_pct": 87.805,
+      "gap_pp": -0.105,
+      "wilson95_pct": [
+        81.91,
+        91.97
+      ]
+    },
+    "JS": {
+      "reported_pct": 89.7,
+      "nearest_k_of_164": 147,
+      "k_over_164_pct": 89.634,
+      "gap_pp": 0.066,
+      "wilson95_pct": [
+        84.03,
+        93.43
+      ]
+    },
+    "Java": {
+      "reported_pct": 87.9,
+      "nearest_k_of_164": 144,
+      "k_over_164_pct": 87.805,
+      "gap_pp": 0.095,
+      "wilson95_pct": [
+        81.91,
+        91.97
+      ]
+    }
+  },
+  "table2_text_claim": {
+    "text_pass_at_1": 88.3,
+    "mean_of_three_languages": 88.43,
+    "python_only": 87.7,
+    "note": "5.절 본문은 88.3%, 표 2 Python은 87.7%, 세 언어 평균 88.43%"
+  },
+  "table2_possible_denominators_all_three_fit_within_0.05pp": [
+    389,
+    390,
+    397,
+    398
+  ],
+  "table10": {
+    "runs_pct": [
+      17.33,
+      18.0,
+      18.0,
+      18.67,
+      17.33,
+      18.33
+    ],
+    "mean": 17.943,
+    "sd_population": 0.489,
+    "sd_sample": 0.536,
+    "reported_pm": 0.49,
+    "runs_as_counts": [
+      52,
+      54,
+      54,
+      56,
+      52,
+      55
+    ],
+    "pass_at_k_reported": {
+      "1": 17.94,
+      "2": 23.89,
+      "3": 27.35,
+      "4": 29.67,
+      "5": 31.33,
+      "6": 32.67
+    },
+    "histogram_n_solved_c_of_6_runs": {
+      "c=0": 201.99,
+      "c=1": 24.12,
+      "c=2": 14.4,
+      "c=3": 20.4,
+      "c=4": 6.3,
+      "c=5": 13.14,
+      "c=6": 19.65
+    },
+    "histogram_sensitivity_min": [
+      201.98,
+      23.95,
+      13.57,
+      18.16,
+      3.28,
+      10.75,
+      18.91
+    ],
+    "histogram_sensitivity_max": [
+      202.0,
+      24.29,
+      15.22,
+      22.46,
+      9.41,
+      15.51,
+      20.42
+    ],
+    "n_never_solved": 201.99,
+    "n_always_solved": 19.65,
+    "n_unstable_0<c<6": 78.4,
+    "sum_p_one_minus_p": 17.85,
+    "expected_sd_single_run_pp_if_independent": 1.41,
+    "expected_discordant_pairs_between_two_runs": 35.7,
+    "chi2_stat_obs_vs_indep": 0.724,
+    "p_lower_tail_chi2_df5": 0.0184
+  },
+  "table3_baseline": {
+    "k": 54,
+    "pct": 18.0,
+    "wilson95_pct": [
+      14.07,
+      22.74
+    ],
+    "mean_of_6_runs_pct": 17.94,
+    "note": "표 3의 기준(18.0%)은 표 1 주 실행과 같고 6회 평균(17.94)과 거의 같다(고른 결과가 아님)."
+  },
+  "table3": {
+    "Editor: edit action (no linting)": {
+      "reported_pct": 15.0,
+      "k": 45,
+      "k_over_300_pct": 15.0,
+      "wilson95_pct": [
+        11.4,
+        19.48
+      ],
+      "baseline_minus_variant_instances": 9,
+      "diff_pp": 3.0,
+      "mcnemar_p_if_min_discordance": 0.00390625,
+      "mcnemar_p_if_max_discordance": 0.4215233436157702,
+      "z_if_discordance_like_between_runs": 1.51,
+      "p_if_discordance_like_between_runs_normal_approx": 0.132,
+      "z_if_run_noise_is_observed_sd": 3.96
+    },
+    "Editor: No edit": {
+      "reported_pct": 10.3,
+      "k": 31,
+      "k_over_300_pct": 10.333,
+      "wilson95_pct": [
+        7.38,
+        14.29
+      ],
+      "baseline_minus_variant_instances": 23,
+      "diff_pp": 7.67,
+      "mcnemar_p_if_min_discordance": 2.384185791015625e-07,
+      "mcnemar_p_if_max_discordance": 0.016508822028535212,
+      "z_if_discordance_like_between_runs": 3.85,
+      "p_if_discordance_like_between_runs_normal_approx": 0.0001,
+      "z_if_run_noise_is_observed_sd": 10.11
+    },
+    "Search: Iterative": {
+      "reported_pct": 12.0,
+      "k": 36,
+      "k_over_300_pct": 12.0,
+      "wilson95_pct": [
+        8.8,
+        16.17
+      ],
+      "baseline_minus_variant_instances": 18,
+      "diff_pp": 6.0,
+      "mcnemar_p_if_min_discordance": 7.62939453125e-06,
+      "mcnemar_p_if_max_discordance": 0.07254953219246177,
+      "z_if_discordance_like_between_runs": 3.01,
+      "p_if_discordance_like_between_runs_normal_approx": 0.0026,
+      "z_if_run_noise_is_observed_sd": 7.92
+    },
+    "Search: No search": {
+      "reported_pct": 15.7,
+      "k": 47,
+      "k_over_300_pct": 15.667,
+      "wilson95_pct": [
+        11.99,
+        20.21
+      ],
+      "baseline_minus_variant_instances": 7,
+      "diff_pp": 2.33,
+      "mcnemar_p_if_min_discordance": 0.015625,
+      "mcnemar_p_if_max_discordance": 0.5507089135982717,
+      "z_if_discordance_like_between_runs": 1.17,
+      "p_if_discordance_like_between_runs_normal_approx": 0.2414,
+      "z_if_run_noise_is_observed_sd": 3.08
+    },
+    "File viewer: 30 lines": {
+      "reported_pct": 14.3,
+      "k": 43,
+      "k_over_300_pct": 14.333,
+      "wilson95_pct": [
+        10.82,
+        18.75
+      ],
+      "baseline_minus_variant_instances": 11,
+      "diff_pp": 3.67,
+      "mcnemar_p_if_min_discordance": 0.0009765625,
+      "mcnemar_p_if_max_discordance": 0.30993353423900727,
+      "z_if_discordance_like_between_runs": 1.84,
+      "p_if_discordance_like_between_runs_normal_approx": 0.0656,
+      "z_if_run_noise_is_observed_sd": 4.84
+    },
+    "File viewer: Full file": {
+      "reported_pct": 12.7,
+      "k": 38,
+      "k_over_300_pct": 12.667,
+      "wilson95_pct": [
+        9.37,
+        16.91
+      ],
+      "baseline_minus_variant_instances": 16,
+      "diff_pp": 5.33,
+      "mcnemar_p_if_min_discordance": 3.0517578125e-05,
+      "mcnemar_p_if_max_discordance": 0.11737015883134433,
+      "z_if_discordance_like_between_runs": 2.68,
+      "p_if_discordance_like_between_runs_normal_approx": 0.0074,
+      "z_if_run_noise_is_observed_sd": 7.04
+    },
+    "Context: Full history": {
+      "reported_pct": 15.0,
+      "k": 45,
+      "k_over_300_pct": 15.0,
+      "wilson95_pct": [
+        11.4,
+        19.48
+      ],
+      "baseline_minus_variant_instances": 9,
+      "diff_pp": 3.0,
+      "mcnemar_p_if_min_discordance": 0.00390625,
+      "mcnemar_p_if_max_discordance": 0.4215233436157702,
+      "z_if_discordance_like_between_runs": 1.51,
+      "p_if_discordance_like_between_runs_normal_approx": 0.132,
+      "z_if_run_noise_is_observed_sd": 3.96
+    },
+    "Context: w/o demo": {
+      "reported_pct": 16.3,
+      "k": 49,
+      "k_over_300_pct": 16.333,
+      "wilson95_pct": [
+        12.58,
+        20.94
+      ],
+      "baseline_minus_variant_instances": 5,
+      "diff_pp": 1.67,
+      "mcnemar_p_if_min_discordance": 0.0625,
+      "mcnemar_p_if_max_discordance": 0.6936859650244841,
+      "z_if_discordance_like_between_runs": 0.84,
+      "p_if_discordance_like_between_runs_normal_approx": 0.4027,
+      "z_if_run_noise_is_observed_sd": 2.2
+    }
+  },
+  "table5": {
+    "n_dev_instances": 37,
+    "samples_per_config": 5,
+    "n_configs_per_model": 8,
+    "one_instance_pp": 2.7,
+    "gpt4_best_minus_second_pp": 1.0,
+    "gpt4_best_minus_second_in_instances": 0.37,
+    "wilson95_one_run_at_15pct_n37": [
+      7.65,
+      31.14
+    ]
+  },
+  "table13": {
+    "full_gpt4": {
+      "n_trajectories_in_table13": 2268,
+      "n_nominal": 2294,
+      "missing": 26,
+      "resolved_in_table13": 286,
+      "resolved_pct_of_nominal": 12.47,
+      "resolved_rate_submit_pct": 16.74,
+      "resolved_rate_exit_cost_submit_pct": 3.17,
+      "share_resolved_before_budget_pct": 93.01,
+      "share_all_submitted_pct_of_total": 70.06,
+      "share_all_submitted_pct_of_nominal": 69.27
+    },
+    "full_opus": {
+      "n_trajectories_in_table13": 2004,
+      "n_nominal": 2294,
+      "missing": 290,
+      "resolved_in_table13": 241,
+      "resolved_pct_of_nominal": 10.51,
+      "resolved_rate_submit_pct": 23.36,
+      "resolved_rate_exit_cost_submit_pct": 3.34,
+      "share_resolved_before_budget_pct": 85.48,
+      "share_all_submitted_pct_of_total": 44.01,
+      "share_all_submitted_pct_of_nominal": 38.45
+    },
+    "lite_gpt4": {
+      "n_trajectories_in_table13": 300,
+      "n_nominal": 300,
+      "missing": 0,
+      "resolved_in_table13": 54,
+      "resolved_pct_of_nominal": 18.0,
+      "resolved_rate_submit_pct": 24.63,
+      "resolved_rate_exit_cost_submit_pct": 4.21,
+      "share_resolved_before_budget_pct": 92.59,
+      "share_all_submitted_pct_of_total": 67.67,
+      "share_all_submitted_pct_of_nominal": 67.67
+    },
+    "lite_opus": {
+      "n_trajectories_in_table13": 300,
+      "n_nominal": 300,
+      "missing": 0,
+      "resolved_in_table13": 35,
+      "resolved_pct_of_nominal": 11.67,
+      "resolved_rate_submit_pct": 24.06,
+      "resolved_rate_exit_cost_submit_pct": 1.92,
+      "share_resolved_before_budget_pct": 91.43,
+      "share_all_submitted_pct_of_total": 44.33,
+      "share_all_submitted_pct_of_nominal": 44.33
+    }
+  },
+  "table13_paper_claims": {
+    "resolved_submit_rate_text_pct": 14.3,
+    "exit_cost_rate_text_pct": 3.1,
+    "share_resolved_before_budget_text_pct": 93.0,
+    "share_all_submitted_text_pct": 69.0,
+    "our_resolved_submit_rate_pct": 16.74,
+    "our_exit_cost_rate_pct": 3.17,
+    "our_share_resolved_before_budget_pct": 93.01,
+    "our_share_all_submitted_pct": 70.06
+  },
+  "budget_exhaustion_full_gpt4": {
+    "n_exhausted": 678,
+    "share_of_trajectories_pct": 29.9,
+    "resolved_among_exhausted": 20,
+    "resolved_rate_pct": 2.95,
+    "wilson95_pct": [
+      1.92,
+      4.51
+    ],
+    "note": "소진 실행은 이미 막힌 문항일 가능성이 커서(선택 편향) '예산을 늘려도 소용없다'는 증거로는 약하다. 예산을 바꾼 대조 실행이 없다."
+  },
+  "figure8": {
+    "percent": {
+      "Incorrect Implementation": 39.9,
+      "Overly Specific": 12.1,
+      "Failed to Recover from Edit": 23.4,
+      "Failed to Find Edit Location": 12.9,
+      "Failed to Find Relevant File": 2.0,
+      "Gave Up Prematurely": 2.4,
+      "Can't Reproduce": 4.8,
+      "Ran Out of Time": 2.4
+    },
+    "sum_pct": 99.9,
+    "counts_if_n248": {
+      "Incorrect Implementation": 99,
+      "Overly Specific": 30,
+      "Failed to Recover from Edit": 58,
+      "Failed to Find Edit Location": 32,
+      "Failed to Find Relevant File": 5,
+      "Gave Up Prematurely": 6,
+      "Can't Reproduce": 12,
+      "Ran Out of Time": 6
+    },
+    "sum_counts": 248,
+    "lite_unresolved_by_table1": 246,
+    "note": "본문은 n=248로 쓰지만 표 1 기준 Lite 미해결은 246개",
+    "llm_judge_agreement": {
+      "agree": 13,
+      "n": 15,
+      "pct": 86.7,
+      "wilson95_pct": [
+        62.12,
+        96.26
+      ],
+      "paper_says_pct": 87
+    }
+  },
+  "edit_failure_text": {
+    "trajectories_with_failed_edit": 1185,
+    "n": 2294,
+    "pct": 51.66,
+    "paper_pct": 51.7,
+    "wilson95_pct": [
+      49.61,
+      53.7
+    ]
+  },
+  "table6_sums": {
+    "n_total": 300,
+    "gpt4_resolved": 54,
+    "opus_resolved": 35
+  },
+  "table7_sums": {
+    "n_total": 300,
+    "gpt4_resolved": 54,
+    "opus_resolved": 35
+  },
+  "public_results_integrity": {
+    "lite/gpt4": {
+      "resolved_list_len": 54,
+      "resolved_unique": 54,
+      "duplicated_ids_in_resolved": 0,
+      "extra_entries_from_duplicates": 0,
+      "ids_seen_in_generated_or_no_generation": 299,
+      "generated_len": 284,
+      "generated_unique": 284,
+      "no_generation_len": 18,
+      "no_generation_unique": 17,
+      "generated_and_no_generation_overlap": 2
+    },
+    "lite/claude3opus": {
+      "resolved_list_len": 35,
+      "resolved_unique": 35,
+      "duplicated_ids_in_resolved": 0,
+      "extra_entries_from_duplicates": 0,
+      "ids_seen_in_generated_or_no_generation": 300,
+      "generated_len": 271,
+      "generated_unique": 271,
+      "no_generation_len": 29,
+      "no_generation_unique": 29,
+      "generated_and_no_generation_overlap": 0
+    },
+    "test/gpt4": {
+      "resolved_list_len": 286,
+      "resolved_unique": 286,
+      "duplicated_ids_in_resolved": 0,
+      "extra_entries_from_duplicates": 0,
+      "ids_seen_in_generated_or_no_generation": 2266,
+      "generated_len": 2129,
+      "generated_unique": 2129,
+      "no_generation_len": 154,
+      "no_generation_unique": 146,
+      "generated_and_no_generation_overlap": 9
+    },
+    "test/claude3opus": {
+      "resolved_list_len": 241,
+      "resolved_unique": 213,
+      "duplicated_ids_in_resolved": 7,
+      "extra_entries_from_duplicates": 28,
+      "ids_seen_in_generated_or_no_generation": 2266,
+      "generated_len": 2343,
+      "generated_unique": 2063,
+      "no_generation_len": 233,
+      "no_generation_unique": 204,
+      "generated_and_no_generation_overlap": 1
+    }
+  },
+  "public_vs_paper_table1": {
+    "lite/gpt4": {
+      "public_unique_resolved": 54,
+      "public_pct": 18.0,
+      "paper_table1_pct": 18.0,
+      "paper_k": 54,
+      "wilson95_pct": [
+        14.07,
+        22.74
+      ],
+      "raw_list_len": 54,
+      "raw_list_pct": 18.0
+    },
+    "lite/claude3opus": {
+      "public_unique_resolved": 35,
+      "public_pct": 11.67,
+      "paper_table1_pct": 13.0,
+      "paper_k": 39,
+      "wilson95_pct": [
+        8.51,
+        15.79
+      ],
+      "raw_list_len": 35,
+      "raw_list_pct": 11.67
+    },
+    "test/gpt4": {
+      "public_unique_resolved": 286,
+      "public_pct": 12.47,
+      "paper_table1_pct": 12.47,
+      "paper_k": 286,
+      "wilson95_pct": [
+        11.18,
+        13.88
+      ],
+      "raw_list_len": 286,
+      "raw_list_pct": 12.47
+    },
+    "test/claude3opus": {
+      "public_unique_resolved": 213,
+      "public_pct": 9.29,
+      "paper_table1_pct": 10.46,
+      "paper_k": 240,
+      "wilson95_pct": [
+        8.16,
+        10.54
+      ],
+      "raw_list_len": 241,
+      "raw_list_pct": 10.51
+    }
+  },
+  "paired": {
+    "lite_gpt4_vs_opus": {
+      "label": "Lite: GPT-4 대 Opus",
+      "A_only": 29,
+      "B_only": 10,
+      "both": 25,
+      "neither": 236,
+      "A_total": 54,
+      "B_total": 35,
+      "diff_pp": 6.33,
+      "mcnemar_exact_p": 0.0033778479119064286,
+      "A_share_of_discordant_wilson95": [
+        0.5892,
+        0.8543
+      ],
+      "cohen_kappa_like_overlap_jaccard": 0.391
+    },
+    "full_gpt4_vs_opus_dedup": {
+      "label": "Full: GPT-4 대 Opus(중복 제거)",
+      "A_only": 147,
+      "B_only": 74,
+      "both": 139,
+      "neither": 1934,
+      "A_total": 286,
+      "B_total": 213,
+      "diff_pp": 3.18,
+      "mcnemar_exact_p": 1.0294695177781845e-06,
+      "A_share_of_discordant_wilson95": [
+        0.6006,
+        0.7241
+      ],
+      "cohen_kappa_like_overlap_jaccard": 0.386
+    }
+  },
+  "paper_marginals_gpt4_vs_opus": {
+    "lite_54_vs_39": {
+      "diff": 15,
+      "p_if_min_discordance": 6.103515625e-05,
+      "p_if_max_discordance": 0.14617702864715262,
+      "b10_max": 54,
+      "b01_max": 39
+    },
+    "full_286_vs_240": {
+      "diff": 46,
+      "p_if_min_discordance": 2.842170943040401e-14,
+      "p_if_max_discordance": 0.04964839605877839,
+      "b10_max": 286,
+      "b01_max": 240
+    }
+  },
+  "lite_id_universe_seen": 300,
+  "opus_lite_run_vs_full_run_on_lite_ids": {
+    "label": "Opus: Lite 실행 대 Full 실행(Lite 문항)",
+    "A_only": 11,
+    "B_only": 12,
+    "both": 24,
+    "neither": 253,
+    "A_total": 35,
+    "B_total": 36,
+    "diff_pp": -0.33,
+    "mcnemar_exact_p": 1.0,
+    "A_share_of_discordant_wilson95": [
+      0.2924,
+      0.6704
+    ],
+    "cohen_kappa_like_overlap_jaccard": 0.511
+  },
+  "gpt4_lite_run_vs_full_run_on_lite_ids": {
+    "label": "GPT-4: Lite 실행 대 Full 실행(Lite 문항)",
+    "A_only": 0,
+    "B_only": 0,
+    "both": 54,
+    "neither": 246,
+    "A_total": 54,
+    "B_total": 54,
+    "diff_pp": 0.0,
+    "mcnemar_exact_p": 1.0,
+    "A_share_of_discordant_wilson95": null,
+    "cohen_kappa_like_overlap_jaccard": 1.0
+  },
+  "table10_expected_discordance_for_comparison": 35.7,
+  "lite_resolved_by_repo_sums_public": {
+    "gpt4": {
+      "resolved": 54,
+      "total": 292
+    },
+    "claude3opus": {
+      "resolved": 35,
+      "total": 282
+    }
+  },
+  "full_opus_resolved_by_repo_public": {
+    "resolved_sum": 241,
+    "total_sum": 2085
+  },
+  "full_opus_resolved_by_time_public": {
+    "resolved_sum": 213,
+    "total_sum": 2294
+  },
+  "file_f1_public": {
+    "lite/gpt4": {
+      "n_entries": 302,
+      "mean_pct": 59.05,
+      "share_f1_zero_pct": 39.4
+    },
+    "test/gpt4": {
+      "n_entries": 2281,
+      "mean_pct": 50.94,
+      "share_f1_zero_pct": 42.1
+    },
+    "lite/claude3opus": {
+      "n_entries": 300,
+      "mean_pct": 46.89,
+      "share_f1_zero_pct": 52.0
+    },
+    "paper_says_pct": 59.05,
+    "note": "59.05%는 Lite GPT-4(302개 항목, 중복 2개 포함)에서 재현된다. 본문 B.9는 분할을 적지 않았고 전체 2,294 기준은 50.94%."
+  }
+}

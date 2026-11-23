@@ -1,0 +1,2225 @@
+{
+ "grid": {
+  "n_values": 124,
+  "n_ok": 124,
+  "failed": []
+ },
+ "fig6b": {
+  "counts": {
+   "without": {
+    "per_level_k": {
+     "easy": [
+      225
+     ],
+     "medium": [
+      377
+     ],
+     "hard": [
+      133
+     ],
+     "extra": [
+      106
+     ]
+    },
+    "sum": 841,
+    "uniquely_determined": true
+   },
+   "with": {
+    "per_level_k": {
+     "easy": [
+      229
+     ],
+     "medium": [
+      380
+     ],
+     "hard": [
+      140
+     ],
+     "extra": [
+      121
+     ]
+    },
+    "sum": 870,
+    "uniquely_determined": true
+   }
+  },
+  "overall_without_pct": 81.33462282398453,
+  "overall_with_pct": 84.13926499032883,
+  "matches_table2a_codex": [
+   true,
+   true
+  ],
+  "gain_by_level_questions": {
+   "easy": 4,
+   "medium": 3,
+   "hard": 7,
+   "extra": 15
+  },
+  "level_n_total": 1034,
+  "extra_hard_mcnemar": {
+   "net": 15,
+   "p_min_case": {
+    "n10": 0,
+    "n01": 15,
+    "p": 6.103515625e-05
+   },
+   "p_max_case": {
+    "n10": 45,
+    "n01": 60,
+    "p": 0.17156469715424238
+   }
+  },
+  "extra_hard_wilson": {
+   "without": [
+    0.5631010062235686,
+    0.7077398138152529
+   ],
+   "with": [
+    0.6566854572296585,
+    0.7907906802257856
+   ]
+  }
+ },
+ "decomposition": {
+  "transcoder": {
+   "Codex": {
+    "total_best_minus_base": 12.1,
+    "simple_minus_base": 8.9,
+    "UT_minus_simple": 2.3,
+    "Expl_minus_UT": 0.9,
+    "Trace_minus_UT": -3.7,
+    "share_of_UT_Expl_gain_from_simple": 0.736
+   },
+   "GPT-3.5": {
+    "total_best_minus_base": 3.6,
+    "simple_minus_base": 2.5,
+    "UT_minus_simple": 1.1,
+    "Expl_minus_UT": 0.0,
+    "Trace_minus_UT": -0.4,
+    "share_of_UT_Expl_gain_from_simple": 0.694
+   },
+   "GPT-4": {
+    "total_best_minus_base": 13.1,
+    "simple_minus_base": 3.6,
+    "UT_minus_simple": 7.9,
+    "Expl_minus_UT": 1.6,
+    "Trace_minus_UT": 0.7,
+    "share_of_UT_Expl_gain_from_simple": 0.275
+   },
+   "StarCoder": {
+    "total_best_minus_base": 6.6,
+    "simple_minus_base": 2.9,
+    "UT_minus_simple": 3.5,
+    "Expl_minus_UT": 0.2,
+    "Trace_minus_UT": -2.8,
+    "share_of_UT_Expl_gain_from_simple": 0.439
+   }
+  },
+  "mbpp": {
+   "Codex": {
+    "total_best_minus_base": 9.4,
+    "simple_minus_base": 6.8,
+    "UT_minus_simple": 1.2,
+    "Expl_minus_UT": 0.4,
+    "Trace_minus_UT": 1.4,
+    "share_of_UT_Expl_gain_from_simple": 0.81
+   },
+   "GPT-3.5": {
+    "total_best_minus_base": 6.6,
+    "simple_minus_base": 3.2,
+    "UT_minus_simple": 1.4,
+    "Expl_minus_UT": 2.0,
+    "Trace_minus_UT": 0.6,
+    "share_of_UT_Expl_gain_from_simple": 0.485
+   },
+   "GPT-4": {
+    "total_best_minus_base": 7.8,
+    "simple_minus_base": 6.0,
+    "UT_minus_simple": 1.8,
+    "Expl_minus_UT": -0.2,
+    "Trace_minus_UT": -0.4,
+    "share_of_UT_Expl_gain_from_simple": 0.789
+   },
+   "StarCoder": {
+    "total_best_minus_base": 6.0,
+    "simple_minus_base": 3.4,
+    "UT_minus_simple": 1.6,
+    "Expl_minus_UT": 0.0,
+    "Trace_minus_UT": 1.0,
+    "share_of_UT_Expl_gain_from_simple": 0.68
+   }
+  },
+  "spider": {
+   "Codex": {
+    "total_best_minus_base": 2.8,
+    "simple_minus_base": 0.0,
+    "Expl_minus_base": 2.8
+   },
+   "GPT-3.5": {
+    "total_best_minus_base": 1.1,
+    "simple_minus_base": 1.1,
+    "Expl_minus_base": 1.1
+   },
+   "GPT-4": {
+    "total_best_minus_base": 0.4,
+    "simple_minus_base": 0.2,
+    "Expl_minus_base": 0.4
+   },
+   "StarCoder": {
+    "total_best_minus_base": 0.2,
+    "simple_minus_base": 0.2,
+    "Expl_minus_base": 0.2
+   }
+  }
+ },
+ "stats": [
+  {
+   "tag": "T2 기준선->최고 변형",
+   "bench": "spider",
+   "model": "Codex",
+   "from": "Baseline",
+   "to": "Expl",
+   "a": 841,
+   "c": 870,
+   "n": 1034,
+   "diff_pp": 2.8,
+   "newcombe95_pp": [
+    -0.5,
+    6.1
+   ],
+   "wilson_a": [
+    78.8,
+    83.6
+   ],
+   "wilson_c": [
+    81.8,
+    86.2
+   ],
+   "mcnemar": {
+    "net": 29,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 29,
+     "p": 3.725290298461914e-09
+    },
+    "p_max_case": {
+     "n10": 164,
+     "n01": 193,
+     "p": 0.13825232691898415
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->설명",
+   "bench": "spider",
+   "model": "Codex",
+   "from": "Baseline",
+   "to": "Expl",
+   "a": 841,
+   "c": 870,
+   "n": 1034,
+   "diff_pp": 2.8,
+   "newcombe95_pp": [
+    -0.5,
+    6.1
+   ],
+   "wilson_a": [
+    78.8,
+    83.6
+   ],
+   "wilson_c": [
+    81.8,
+    86.2
+   ],
+   "mcnemar": {
+    "net": 29,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 29,
+     "p": 3.725290298461914e-09
+    },
+    "p_max_case": {
+     "n10": 164,
+     "n01": 193,
+     "p": 0.13825232691898415
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->최고 변형",
+   "bench": "spider",
+   "model": "GPT-3.5",
+   "from": "Baseline",
+   "to": "Simple",
+   "a": 735,
+   "c": 747,
+   "n": 1034,
+   "diff_pp": 1.16,
+   "newcombe95_pp": [
+    -2.7,
+    5.0
+   ],
+   "wilson_a": [
+    68.2,
+    73.8
+   ],
+   "wilson_c": [
+    69.4,
+    74.9
+   ],
+   "mcnemar": {
+    "net": 12,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 12,
+     "p": 0.00048828125
+    },
+    "p_max_case": {
+     "n10": 287,
+     "n01": 299,
+     "p": 0.6495737859826282
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->설명",
+   "bench": "spider",
+   "model": "GPT-3.5",
+   "from": "Baseline",
+   "to": "Expl",
+   "a": 735,
+   "c": 747,
+   "n": 1034,
+   "diff_pp": 1.16,
+   "newcombe95_pp": [
+    -2.7,
+    5.0
+   ],
+   "wilson_a": [
+    68.2,
+    73.8
+   ],
+   "wilson_c": [
+    69.4,
+    74.9
+   ],
+   "mcnemar": {
+    "net": 12,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 12,
+     "p": 0.00048828125
+    },
+    "p_max_case": {
+     "n10": 287,
+     "n01": 299,
+     "p": 0.6495737859826282
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->최고 변형",
+   "bench": "spider",
+   "model": "GPT-4",
+   "from": "Baseline",
+   "to": "Expl",
+   "a": 757,
+   "c": 761,
+   "n": 1034,
+   "diff_pp": 0.39,
+   "newcombe95_pp": [
+    -3.4,
+    4.2
+   ],
+   "wilson_a": [
+    70.4,
+    75.8
+   ],
+   "wilson_c": [
+    70.8,
+    76.2
+   ],
+   "mcnemar": {
+    "net": 4,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 4,
+     "p": 0.125
+    },
+    "p_max_case": {
+     "n10": 273,
+     "n01": 277,
+     "p": 0.8982270705470567
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->설명",
+   "bench": "spider",
+   "model": "GPT-4",
+   "from": "Baseline",
+   "to": "Expl",
+   "a": 757,
+   "c": 761,
+   "n": 1034,
+   "diff_pp": 0.39,
+   "newcombe95_pp": [
+    -3.4,
+    4.2
+   ],
+   "wilson_a": [
+    70.4,
+    75.8
+   ],
+   "wilson_c": [
+    70.8,
+    76.2
+   ],
+   "mcnemar": {
+    "net": 4,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 4,
+     "p": 0.125
+    },
+    "p_max_case": {
+     "n10": 273,
+     "n01": 277,
+     "p": 0.8982270705470567
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->최고 변형",
+   "bench": "spider",
+   "model": "StarCoder",
+   "from": "Baseline",
+   "to": "Simple",
+   "a": 669,
+   "c": 671,
+   "n": 1034,
+   "diff_pp": 0.19,
+   "newcombe95_pp": [
+    -3.9,
+    4.3
+   ],
+   "wilson_a": [
+    61.7,
+    67.6
+   ],
+   "wilson_c": [
+    61.9,
+    67.7
+   ],
+   "mcnemar": {
+    "net": 2,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 2,
+     "p": 0.5
+    },
+    "p_max_case": {
+     "n10": 363,
+     "n01": 365,
+     "p": 0.9704385840517352
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->설명",
+   "bench": "spider",
+   "model": "StarCoder",
+   "from": "Baseline",
+   "to": "Expl",
+   "a": 669,
+   "c": 671,
+   "n": 1034,
+   "diff_pp": 0.19,
+   "newcombe95_pp": [
+    -3.9,
+    4.3
+   ],
+   "wilson_a": [
+    61.7,
+    67.6
+   ],
+   "wilson_c": [
+    61.9,
+    67.7
+   ],
+   "mcnemar": {
+    "net": 2,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 2,
+     "p": 0.5
+    },
+    "p_max_case": {
+     "n10": 363,
+     "n01": 365,
+     "p": 0.9704385840517352
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->최고 변형",
+   "bench": "transcoder",
+   "model": "Codex",
+   "from": "Baseline",
+   "to": "UT+Expl",
+   "a": 450,
+   "c": 518,
+   "n": 560,
+   "diff_pp": 12.14,
+   "newcombe95_pp": [
+    8.2,
+    16.1
+   ],
+   "wilson_a": [
+    76.9,
+    83.4
+   ],
+   "wilson_c": [
+    90.0,
+    94.4
+   ],
+   "mcnemar": {
+    "net": 68,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 68,
+     "p": 6.776263578034403e-21
+    },
+    "p_max_case": {
+     "n10": 42,
+     "n01": 110,
+     "p": 3.274898504639186e-08
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 단순->UT+Expl(설명의 몫)",
+   "bench": "transcoder",
+   "model": "Codex",
+   "from": "Simple",
+   "to": "UT+Expl",
+   "a": 500,
+   "c": 518,
+   "n": 560,
+   "diff_pp": 3.21,
+   "newcombe95_pp": [
+    -0.2,
+    6.6
+   ],
+   "wilson_a": [
+    86.5,
+    91.6
+   ],
+   "wilson_c": [
+    90.0,
+    94.4
+   ],
+   "mcnemar": {
+    "net": 18,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 18,
+     "p": 7.62939453125e-06
+    },
+    "p_max_case": {
+     "n10": 42,
+     "n01": 60,
+     "p": 0.09183767826908269
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 UT->UT+Expl(설명의 몫)",
+   "bench": "transcoder",
+   "model": "Codex",
+   "from": "UT",
+   "to": "UT+Expl",
+   "a": 513,
+   "c": 518,
+   "n": 560,
+   "diff_pp": 0.89,
+   "newcombe95_pp": [
+    -2.3,
+    4.1
+   ],
+   "wilson_a": [
+    89.0,
+    93.6
+   ],
+   "wilson_c": [
+    90.0,
+    94.4
+   ],
+   "mcnemar": {
+    "net": 5,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 5,
+     "p": 0.0625
+    },
+    "p_max_case": {
+     "n10": 42,
+     "n01": 47,
+     "p": 0.6718086491746104
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->최고 변형",
+   "bench": "transcoder",
+   "model": "GPT-3.5",
+   "from": "Baseline",
+   "to": "UT",
+   "a": 499,
+   "c": 519,
+   "n": 560,
+   "diff_pp": 3.57,
+   "newcombe95_pp": [
+    0.2,
+    7.0
+   ],
+   "wilson_a": [
+    86.3,
+    91.4
+   ],
+   "wilson_c": [
+    90.2,
+    94.6
+   ],
+   "mcnemar": {
+    "net": 20,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 20,
+     "p": 1.9073486328125e-06
+    },
+    "p_max_case": {
+     "n10": 41,
+     "n01": 61,
+     "p": 0.05940053690343337
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 단순->UT+Expl(설명의 몫)",
+   "bench": "transcoder",
+   "model": "GPT-3.5",
+   "from": "Simple",
+   "to": "UT+Expl",
+   "a": 513,
+   "c": 519,
+   "n": 560,
+   "diff_pp": 1.07,
+   "newcombe95_pp": [
+    -2.1,
+    4.3
+   ],
+   "wilson_a": [
+    89.0,
+    93.6
+   ],
+   "wilson_c": [
+    90.2,
+    94.6
+   ],
+   "mcnemar": {
+    "net": 6,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 6,
+     "p": 0.03125
+    },
+    "p_max_case": {
+     "n10": 41,
+     "n01": 47,
+     "p": 0.5942882951469404
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 UT->UT+Expl(설명의 몫)",
+   "bench": "transcoder",
+   "model": "GPT-3.5",
+   "from": "UT",
+   "to": "UT+Expl",
+   "a": 519,
+   "c": 519,
+   "n": 560,
+   "diff_pp": 0.0,
+   "newcombe95_pp": [
+    -3.1,
+    3.1
+   ],
+   "wilson_a": [
+    90.2,
+    94.6
+   ],
+   "wilson_c": [
+    90.2,
+    94.6
+   ],
+   "mcnemar": {
+    "net": 0,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 0,
+     "p": 1.0
+    },
+    "p_max_case": {
+     "n10": 41,
+     "n01": 41,
+     "p": 1.0
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->최고 변형",
+   "bench": "transcoder",
+   "model": "GPT-4",
+   "from": "Baseline",
+   "to": "UT+Expl",
+   "a": 433,
+   "c": 506,
+   "n": 560,
+   "diff_pp": 13.04,
+   "newcombe95_pp": [
+    8.8,
+    17.3
+   ],
+   "wilson_a": [
+    73.7,
+    80.6
+   ],
+   "wilson_c": [
+    87.6,
+    92.5
+   ],
+   "mcnemar": {
+    "net": 73,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 73,
+     "p": 2.117582368135751e-22
+    },
+    "p_max_case": {
+     "n10": 54,
+     "n01": 127,
+     "p": 5.8258797547913986e-08
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 단순->UT+Expl(설명의 몫)",
+   "bench": "transcoder",
+   "model": "GPT-4",
+   "from": "Simple",
+   "to": "UT+Expl",
+   "a": 453,
+   "c": 506,
+   "n": 560,
+   "diff_pp": 9.46,
+   "newcombe95_pp": [
+    5.4,
+    13.6
+   ],
+   "wilson_a": [
+    77.4,
+    83.9
+   ],
+   "wilson_c": [
+    87.6,
+    92.5
+   ],
+   "mcnemar": {
+    "net": 53,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 53,
+     "p": 2.220446049250313e-16
+    },
+    "p_max_case": {
+     "n10": 54,
+     "n01": 107,
+     "p": 3.580411441223369e-05
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 UT->UT+Expl(설명의 몫)",
+   "bench": "transcoder",
+   "model": "GPT-4",
+   "from": "UT",
+   "to": "UT+Expl",
+   "a": 497,
+   "c": 506,
+   "n": 560,
+   "diff_pp": 1.61,
+   "newcombe95_pp": [
+    -2.0,
+    5.2
+   ],
+   "wilson_a": [
+    85.9,
+    91.1
+   ],
+   "wilson_c": [
+    87.6,
+    92.5
+   ],
+   "mcnemar": {
+    "net": 9,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 9,
+     "p": 0.00390625
+    },
+    "p_max_case": {
+     "n10": 54,
+     "n01": 63,
+     "p": 0.4596913873255531
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->최고 변형",
+   "bench": "transcoder",
+   "model": "StarCoder",
+   "from": "Baseline",
+   "to": "UT+Expl",
+   "a": 392,
+   "c": 429,
+   "n": 560,
+   "diff_pp": 6.61,
+   "newcombe95_pp": [
+    1.4,
+    11.7
+   ],
+   "wilson_a": [
+    66.1,
+    73.6
+   ],
+   "wilson_c": [
+    72.9,
+    79.9
+   ],
+   "mcnemar": {
+    "net": 37,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 37,
+     "p": 1.4551915228366852e-11
+    },
+    "p_max_case": {
+     "n10": 131,
+     "n01": 168,
+     "p": 0.0371713619007212
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 단순->UT+Expl(설명의 몫)",
+   "bench": "transcoder",
+   "model": "StarCoder",
+   "from": "Simple",
+   "to": "UT+Expl",
+   "a": 408,
+   "c": 429,
+   "n": 560,
+   "diff_pp": 3.75,
+   "newcombe95_pp": [
+    -1.3,
+    8.8
+   ],
+   "wilson_a": [
+    69.0,
+    76.4
+   ],
+   "wilson_c": [
+    72.9,
+    79.9
+   ],
+   "mcnemar": {
+    "net": 21,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 21,
+     "p": 9.5367431640625e-07
+    },
+    "p_max_case": {
+     "n10": 131,
+     "n01": 152,
+     "p": 0.23443178148621807
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 UT->UT+Expl(설명의 몫)",
+   "bench": "transcoder",
+   "model": "StarCoder",
+   "from": "UT",
+   "to": "UT+Expl",
+   "a": 428,
+   "c": 429,
+   "n": 560,
+   "diff_pp": 0.18,
+   "newcombe95_pp": [
+    -4.8,
+    5.1
+   ],
+   "wilson_a": [
+    72.7,
+    79.8
+   ],
+   "wilson_c": [
+    72.9,
+    79.9
+   ],
+   "mcnemar": {
+    "net": 1,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 1,
+     "p": 1.0
+    },
+    "p_max_case": {
+     "n10": 131,
+     "n01": 132,
+     "p": 1.0
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->최고 변형",
+   "bench": "mbpp",
+   "model": "Codex",
+   "from": "Baseline",
+   "to": "UT+Trace",
+   "a": 307,
+   "c": 354,
+   "n": 500,
+   "diff_pp": 9.4,
+   "newcombe95_pp": [
+    3.5,
+    15.2
+   ],
+   "wilson_a": [
+    57.1,
+    65.6
+   ],
+   "wilson_c": [
+    66.7,
+    74.6
+   ],
+   "mcnemar": {
+    "net": 47,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 47,
+     "p": 1.4210854715202004e-14
+    },
+    "p_max_case": {
+     "n10": 146,
+     "n01": 193,
+     "p": 0.012362771841095285
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 단순->UT+Expl(설명의 몫)",
+   "bench": "mbpp",
+   "model": "Codex",
+   "from": "Simple",
+   "to": "UT+Expl",
+   "a": 341,
+   "c": 349,
+   "n": 500,
+   "diff_pp": 1.6,
+   "newcombe95_pp": [
+    -4.1,
+    7.3
+   ],
+   "wilson_a": [
+    64.0,
+    72.1
+   ],
+   "wilson_c": [
+    65.6,
+    73.7
+   ],
+   "mcnemar": {
+    "net": 8,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 8,
+     "p": 0.0078125
+    },
+    "p_max_case": {
+     "n10": 151,
+     "n01": 159,
+     "p": 0.6910114661756163
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 UT->UT+Expl(설명의 몫)",
+   "bench": "mbpp",
+   "model": "Codex",
+   "from": "UT",
+   "to": "UT+Expl",
+   "a": 347,
+   "c": 349,
+   "n": 500,
+   "diff_pp": 0.4,
+   "newcombe95_pp": [
+    -5.3,
+    6.1
+   ],
+   "wilson_a": [
+    65.2,
+    73.3
+   ],
+   "wilson_c": [
+    65.6,
+    73.7
+   ],
+   "mcnemar": {
+    "net": 2,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 2,
+     "p": 0.5
+    },
+    "p_max_case": {
+     "n10": 151,
+     "n01": 153,
+     "p": 0.9542757995211831
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->최고 변형",
+   "bench": "mbpp",
+   "model": "GPT-3.5",
+   "from": "Baseline",
+   "to": "UT+Expl",
+   "a": 338,
+   "c": 371,
+   "n": 500,
+   "diff_pp": 6.6,
+   "newcombe95_pp": [
+    1.0,
+    12.2
+   ],
+   "wilson_a": [
+    63.4,
+    71.6
+   ],
+   "wilson_c": [
+    70.2,
+    77.8
+   ],
+   "mcnemar": {
+    "net": 33,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 33,
+     "p": 2.3283064365386963e-10
+    },
+    "p_max_case": {
+     "n10": 129,
+     "n01": 162,
+     "p": 0.06048652140085145
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 단순->UT+Expl(설명의 몫)",
+   "bench": "mbpp",
+   "model": "GPT-3.5",
+   "from": "Simple",
+   "to": "UT+Expl",
+   "a": 354,
+   "c": 371,
+   "n": 500,
+   "diff_pp": 3.4,
+   "newcombe95_pp": [
+    -2.1,
+    8.9
+   ],
+   "wilson_a": [
+    66.7,
+    74.6
+   ],
+   "wilson_c": [
+    70.2,
+    77.8
+   ],
+   "mcnemar": {
+    "net": 17,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 17,
+     "p": 1.52587890625e-05
+    },
+    "p_max_case": {
+     "n10": 129,
+     "n01": 146,
+     "p": 0.334637640018027
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 UT->UT+Expl(설명의 몫)",
+   "bench": "mbpp",
+   "model": "GPT-3.5",
+   "from": "UT",
+   "to": "UT+Expl",
+   "a": 361,
+   "c": 371,
+   "n": 500,
+   "diff_pp": 2.0,
+   "newcombe95_pp": [
+    -3.5,
+    7.5
+   ],
+   "wilson_a": [
+    68.1,
+    75.9
+   ],
+   "wilson_c": [
+    70.2,
+    77.8
+   ],
+   "mcnemar": {
+    "net": 10,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 10,
+     "p": 0.001953125
+    },
+    "p_max_case": {
+     "n10": 129,
+     "n01": 139,
+     "p": 0.5825647483051832
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->최고 변형",
+   "bench": "mbpp",
+   "model": "GPT-4",
+   "from": "Baseline",
+   "to": "UT",
+   "a": 364,
+   "c": 403,
+   "n": 500,
+   "diff_pp": 7.8,
+   "newcombe95_pp": [
+    2.6,
+    13.0
+   ],
+   "wilson_a": [
+    68.7,
+    76.5
+   ],
+   "wilson_c": [
+    76.9,
+    83.8
+   ],
+   "mcnemar": {
+    "net": 39,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 39,
+     "p": 3.637978807091713e-12
+    },
+    "p_max_case": {
+     "n10": 97,
+     "n01": 136,
+     "p": 0.012626539820249548
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 단순->UT+Expl(설명의 몫)",
+   "bench": "mbpp",
+   "model": "GPT-4",
+   "from": "Simple",
+   "to": "UT+Expl",
+   "a": 394,
+   "c": 402,
+   "n": 500,
+   "diff_pp": 1.6,
+   "newcombe95_pp": [
+    -3.4,
+    6.6
+   ],
+   "wilson_a": [
+    75.0,
+    82.2
+   ],
+   "wilson_c": [
+    76.7,
+    83.6
+   ],
+   "mcnemar": {
+    "net": 8,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 8,
+     "p": 0.0078125
+    },
+    "p_max_case": {
+     "n10": 98,
+     "n01": 106,
+     "p": 0.6241731850444087
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 UT->UT+Expl(설명의 몫)",
+   "bench": "mbpp",
+   "model": "GPT-4",
+   "from": "UT",
+   "to": "UT+Expl",
+   "a": 403,
+   "c": 402,
+   "n": 500,
+   "diff_pp": -0.2,
+   "newcombe95_pp": [
+    -5.1,
+    4.7
+   ],
+   "wilson_a": [
+    76.9,
+    83.8
+   ],
+   "wilson_c": [
+    76.7,
+    83.6
+   ],
+   "mcnemar": {
+    "net": -1,
+    "p_min_case": {
+     "n10": 1,
+     "n01": 0,
+     "p": 1.0
+    },
+    "p_max_case": {
+     "n10": 98,
+     "n01": 97,
+     "p": 1.0
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 기준선->최고 변형",
+   "bench": "mbpp",
+   "model": "StarCoder",
+   "from": "Baseline",
+   "to": "UT+Trace",
+   "a": 236,
+   "c": 266,
+   "n": 500,
+   "diff_pp": 6.0,
+   "newcombe95_pp": [
+    -0.2,
+    12.1
+   ],
+   "wilson_a": [
+    42.9,
+    51.6
+   ],
+   "wilson_c": [
+    48.8,
+    57.5
+   ],
+   "mcnemar": {
+    "net": 30,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 30,
+     "p": 1.862645149230957e-09
+    },
+    "p_max_case": {
+     "n10": 234,
+     "n01": 264,
+     "p": 0.19371392581916458
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 단순->UT+Expl(설명의 몫)",
+   "bench": "mbpp",
+   "model": "StarCoder",
+   "from": "Simple",
+   "to": "UT+Expl",
+   "a": 253,
+   "c": 261,
+   "n": 500,
+   "diff_pp": 1.6,
+   "newcombe95_pp": [
+    -4.6,
+    7.8
+   ],
+   "wilson_a": [
+    46.2,
+    55.0
+   ],
+   "wilson_c": [
+    47.8,
+    56.5
+   ],
+   "mcnemar": {
+    "net": 8,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 8,
+     "p": 0.0078125
+    },
+    "p_max_case": {
+     "n10": 239,
+     "n01": 247,
+     "p": 0.7508814383187506
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T2 UT->UT+Expl(설명의 몫)",
+   "bench": "mbpp",
+   "model": "StarCoder",
+   "from": "UT",
+   "to": "UT+Expl",
+   "a": 261,
+   "c": 261,
+   "n": 500,
+   "diff_pp": 0.0,
+   "newcombe95_pp": [
+    -6.2,
+    6.2
+   ],
+   "wilson_a": [
+    47.8,
+    56.5
+   ],
+   "wilson_c": [
+    47.8,
+    56.5
+   ],
+   "mcnemar": {
+    "net": 0,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 0,
+     "p": 1.0
+    },
+    "p_max_case": {
+     "n10": 239,
+     "n01": 239,
+     "p": 1.0
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T3 실행 없음 기준선->Trace",
+   "bench": "transcoder",
+   "model": "Codex",
+   "from": "Baseline",
+   "to": "Trace",
+   "a": 450,
+   "c": 470,
+   "n": 560,
+   "diff_pp": 3.57,
+   "newcombe95_pp": [
+    -0.9,
+    8.1
+   ],
+   "wilson_a": [
+    76.9,
+    83.4
+   ],
+   "wilson_c": [
+    80.7,
+    86.7
+   ],
+   "mcnemar": {
+    "net": 20,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 20,
+     "p": 1.9073486328125e-06
+    },
+    "p_max_case": {
+     "n10": 90,
+     "n01": 110,
+     "p": 0.17896403953325118
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T3 실행 없음 기준선->Simple",
+   "bench": "transcoder",
+   "model": "Codex",
+   "from": "Baseline",
+   "to": "Simple",
+   "a": 450,
+   "c": 467,
+   "n": 560,
+   "diff_pp": 3.04,
+   "newcombe95_pp": [
+    -1.5,
+    7.5
+   ],
+   "wilson_a": [
+    76.9,
+    83.4
+   ],
+   "wilson_c": [
+    80.1,
+    86.2
+   ],
+   "mcnemar": {
+    "net": 17,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 17,
+     "p": 1.52587890625e-05
+    },
+    "p_max_case": {
+     "n10": 93,
+     "n01": 110,
+     "p": 0.26139605168264946
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T3 실행 없음 기준선->Trace",
+   "bench": "transcoder",
+   "model": "GPT-3.5",
+   "from": "Baseline",
+   "to": "Trace",
+   "a": 499,
+   "c": 499,
+   "n": 560,
+   "diff_pp": 0.0,
+   "newcombe95_pp": [
+    -3.7,
+    3.7
+   ],
+   "wilson_a": [
+    86.3,
+    91.4
+   ],
+   "wilson_c": [
+    86.3,
+    91.4
+   ],
+   "mcnemar": {
+    "net": 0,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 0,
+     "p": 1.0
+    },
+    "p_max_case": {
+     "n10": 61,
+     "n01": 61,
+     "p": 1.0
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T3 실행 없음 기준선->Simple",
+   "bench": "transcoder",
+   "model": "GPT-3.5",
+   "from": "Baseline",
+   "to": "Simple",
+   "a": 499,
+   "c": 499,
+   "n": 560,
+   "diff_pp": 0.0,
+   "newcombe95_pp": [
+    -3.7,
+    3.7
+   ],
+   "wilson_a": [
+    86.3,
+    91.4
+   ],
+   "wilson_c": [
+    86.3,
+    91.4
+   ],
+   "mcnemar": {
+    "net": 0,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 0,
+     "p": 1.0
+    },
+    "p_max_case": {
+     "n10": 61,
+     "n01": 61,
+     "p": 1.0
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T3 실행 없음 기준선->Trace",
+   "bench": "transcoder",
+   "model": "GPT-4",
+   "from": "Baseline",
+   "to": "Trace",
+   "a": 433,
+   "c": 439,
+   "n": 560,
+   "diff_pp": 1.07,
+   "newcombe95_pp": [
+    -3.8,
+    5.9
+   ],
+   "wilson_a": [
+    73.7,
+    80.6
+   ],
+   "wilson_c": [
+    74.8,
+    81.6
+   ],
+   "mcnemar": {
+    "net": 6,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 6,
+     "p": 0.03125
+    },
+    "p_max_case": {
+     "n10": 121,
+     "n01": 127,
+     "p": 0.7509372510140379
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T3 실행 없음 기준선->Simple",
+   "bench": "transcoder",
+   "model": "GPT-4",
+   "from": "Baseline",
+   "to": "Simple",
+   "a": 433,
+   "c": 438,
+   "n": 560,
+   "diff_pp": 0.89,
+   "newcombe95_pp": [
+    -4.0,
+    5.8
+   ],
+   "wilson_a": [
+    73.7,
+    80.6
+   ],
+   "wilson_c": [
+    74.6,
+    81.4
+   ],
+   "mcnemar": {
+    "net": 5,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 5,
+     "p": 0.0625
+    },
+    "p_max_case": {
+     "n10": 122,
+     "n01": 127,
+     "p": 0.7999515351297228
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T3 실행 없음 기준선->Trace",
+   "bench": "mbpp",
+   "model": "Codex",
+   "from": "Baseline",
+   "to": "Trace",
+   "a": 307,
+   "c": 331,
+   "n": 500,
+   "diff_pp": 4.8,
+   "newcombe95_pp": [
+    -1.2,
+    10.7
+   ],
+   "wilson_a": [
+    57.1,
+    65.6
+   ],
+   "wilson_c": [
+    61.9,
+    70.2
+   ],
+   "mcnemar": {
+    "net": 24,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 24,
+     "p": 1.1920928955078125e-07
+    },
+    "p_max_case": {
+     "n10": 169,
+     "n01": 193,
+     "p": 0.22667023410886245
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T3 실행 없음 기준선->Simple",
+   "bench": "mbpp",
+   "model": "Codex",
+   "from": "Baseline",
+   "to": "Simple",
+   "a": 307,
+   "c": 288,
+   "n": 500,
+   "diff_pp": -3.8,
+   "newcombe95_pp": [
+    -9.8,
+    2.3
+   ],
+   "wilson_a": [
+    57.1,
+    65.6
+   ],
+   "wilson_c": [
+    53.2,
+    61.9
+   ],
+   "mcnemar": {
+    "net": -19,
+    "p_min_case": {
+     "n10": 19,
+     "n01": 0,
+     "p": 3.814697265625e-06
+    },
+    "p_max_case": {
+     "n10": 212,
+     "n01": 193,
+     "p": 0.37111339232245066
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T3 실행 없음 기준선->Trace",
+   "bench": "mbpp",
+   "model": "GPT-3.5",
+   "from": "Baseline",
+   "to": "Trace",
+   "a": 338,
+   "c": 346,
+   "n": 500,
+   "diff_pp": 1.6,
+   "newcombe95_pp": [
+    -4.2,
+    7.3
+   ],
+   "wilson_a": [
+    63.4,
+    71.6
+   ],
+   "wilson_c": [
+    65.0,
+    73.1
+   ],
+   "mcnemar": {
+    "net": 8,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 8,
+     "p": 0.0078125
+    },
+    "p_max_case": {
+     "n10": 154,
+     "n01": 162,
+     "p": 0.6938080453852362
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T3 실행 없음 기준선->Simple",
+   "bench": "mbpp",
+   "model": "GPT-3.5",
+   "from": "Baseline",
+   "to": "Simple",
+   "a": 338,
+   "c": 341,
+   "n": 500,
+   "diff_pp": 0.6,
+   "newcombe95_pp": [
+    -5.2,
+    6.4
+   ],
+   "wilson_a": [
+    63.4,
+    71.6
+   ],
+   "wilson_c": [
+    64.0,
+    72.1
+   ],
+   "mcnemar": {
+    "net": 3,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 3,
+     "p": 0.25
+    },
+    "p_max_case": {
+     "n10": 159,
+     "n01": 162,
+     "p": 0.9111402807660665
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T3 실행 없음 기준선->Trace",
+   "bench": "mbpp",
+   "model": "GPT-4",
+   "from": "Baseline",
+   "to": "Trace",
+   "a": 364,
+   "c": 382,
+   "n": 500,
+   "diff_pp": 3.6,
+   "newcombe95_pp": [
+    -1.8,
+    9.0
+   ],
+   "wilson_a": [
+    68.7,
+    76.5
+   ],
+   "wilson_c": [
+    72.5,
+    79.9
+   ],
+   "mcnemar": {
+    "net": 18,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 18,
+     "p": 7.62939453125e-06
+    },
+    "p_max_case": {
+     "n10": 118,
+     "n01": 136,
+     "p": 0.28609766250243146
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "T3 실행 없음 기준선->Simple",
+   "bench": "mbpp",
+   "model": "GPT-4",
+   "from": "Baseline",
+   "to": "Simple",
+   "a": 364,
+   "c": 380,
+   "n": 500,
+   "diff_pp": 3.2,
+   "newcombe95_pp": [
+    -2.2,
+    8.6
+   ],
+   "wilson_a": [
+    68.7,
+    76.5
+   ],
+   "wilson_c": [
+    72.1,
+    79.5
+   ],
+   "mcnemar": {
+    "net": 16,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 16,
+     "p": 3.0517578125e-05
+    },
+    "p_max_case": {
+     "n10": 120,
+     "n01": 136,
+     "p": 0.348521255466871
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "그림6a n=1 기준선 -> SD(n=1)",
+   "bench": "spider",
+   "model": "Codex",
+   "from": "n=1",
+   "to": "SD n=1",
+   "a": 801,
+   "c": 835,
+   "n": 1034,
+   "diff_pp": 3.29,
+   "newcombe95_pp": [
+    -0.2,
+    6.8
+   ],
+   "wilson_a": [
+    74.8,
+    79.9
+   ],
+   "wilson_c": [
+    78.2,
+    83.0
+   ],
+   "mcnemar": {
+    "net": 34,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 34,
+     "p": 1.1641532182693481e-10
+    },
+    "p_max_case": {
+     "n10": 199,
+     "n01": 233,
+     "p": 0.11224581997783381
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "그림6a n=16 기준선 -> SD(n=1)",
+   "bench": "spider",
+   "model": "Codex",
+   "from": "n=16",
+   "to": "SD n=1",
+   "a": 834,
+   "c": 835,
+   "n": 1034,
+   "diff_pp": 0.1,
+   "newcombe95_pp": [
+    -3.3,
+    3.5
+   ],
+   "wilson_a": [
+    78.1,
+    82.9
+   ],
+   "wilson_c": [
+    78.2,
+    83.0
+   ],
+   "mcnemar": {
+    "net": 1,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 1,
+     "p": 1.0
+    },
+    "p_max_case": {
+     "n10": 199,
+     "n01": 200,
+     "p": 1.0
+    }
+   },
+   "note": "10배 표본 효율 주장의 근거(차이 1문항)"
+  },
+  {
+   "tag": "그림6a n=32 기준선 -> SD(n=8)",
+   "bench": "spider",
+   "model": "Codex",
+   "from": "n=32",
+   "to": "SD n=8",
+   "a": 841,
+   "c": 853,
+   "n": 1034,
+   "diff_pp": 1.16,
+   "newcombe95_pp": [
+    -2.2,
+    4.5
+   ],
+   "wilson_a": [
+    78.8,
+    83.6
+   ],
+   "wilson_c": [
+    80.1,
+    84.7
+   ],
+   "mcnemar": {
+    "net": 12,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 12,
+     "p": 0.00048828125
+    },
+    "p_max_case": {
+     "n10": 181,
+     "n01": 193,
+     "p": 0.5695528046159948
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "그림6a n=32 기준선 -> SD(n=32)",
+   "bench": "spider",
+   "model": "Codex",
+   "from": "n=32",
+   "to": "SD n=32",
+   "a": 841,
+   "c": 870,
+   "n": 1034,
+   "diff_pp": 2.8,
+   "newcombe95_pp": [
+    -0.5,
+    6.1
+   ],
+   "wilson_a": [
+    78.8,
+    83.6
+   ],
+   "wilson_c": [
+    81.8,
+    86.2
+   ],
+   "mcnemar": {
+    "net": 29,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 29,
+     "p": 3.725290298461914e-09
+    },
+    "p_max_case": {
+     "n10": 164,
+     "n01": 193,
+     "p": 0.13825232691898415
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "표1b MBPP n=10 -> SD UT+Expl(n=10)",
+   "bench": "mbpp",
+   "model": "Codex",
+   "from": "n=10",
+   "to": "SD n=10",
+   "a": 361,
+   "c": 378,
+   "n": 500,
+   "diff_pp": 3.4,
+   "newcombe95_pp": [
+    -2.0,
+    8.8
+   ],
+   "wilson_a": [
+    68.1,
+    75.9
+   ],
+   "wilson_c": [
+    71.6,
+    79.2
+   ],
+   "mcnemar": {
+    "net": 17,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 17,
+     "p": 1.52587890625e-05
+    },
+    "p_max_case": {
+     "n10": 122,
+     "n01": 139,
+     "p": 0.3219945299821041
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "표1b MBPP greedy SD(UT+Trace) vs n=10 기준선",
+   "bench": "mbpp",
+   "model": "Codex",
+   "from": "SD greedy",
+   "to": "n=10 기준선",
+   "a": 354,
+   "c": 361,
+   "n": 500,
+   "diff_pp": 1.4,
+   "newcombe95_pp": [
+    -4.2,
+    7.0
+   ],
+   "wilson_a": [
+    66.7,
+    74.6
+   ],
+   "wilson_c": [
+    68.1,
+    75.9
+   ],
+   "mcnemar": {
+    "net": 7,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 7,
+     "p": 0.015625
+    },
+    "p_max_case": {
+     "n10": 139,
+     "n01": 146,
+     "p": 0.7223513683272708
+    }
+   },
+   "note": "SD가 n=10 표본 기준선에 못 미침"
+  },
+  {
+   "tag": "그림8 TransCoder n=5 기준선 -> SD greedy(UT+Expl,3턴)",
+   "bench": "transcoder",
+   "model": "Codex",
+   "from": "n=5",
+   "to": "SD greedy",
+   "a": 509,
+   "c": 518,
+   "n": 560,
+   "diff_pp": 1.61,
+   "newcombe95_pp": [
+    -1.7,
+    4.9
+   ],
+   "wilson_a": [
+    88.2,
+    93.0
+   ],
+   "wilson_c": [
+    90.0,
+    94.4
+   ],
+   "mcnemar": {
+    "net": 9,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 9,
+     "p": 0.00390625
+    },
+    "p_max_case": {
+     "n10": 42,
+     "n01": 51,
+     "p": 0.40692436804613435
+    }
+   },
+   "note": ""
+  },
+  {
+   "tag": "그림8 TransCoder SD greedy -> n=25 기준선",
+   "bench": "transcoder",
+   "model": "Codex",
+   "from": "SD greedy",
+   "to": "n=25",
+   "a": 518,
+   "c": 539,
+   "n": 560,
+   "diff_pp": 3.75,
+   "newcombe95_pp": [
+    1.1,
+    6.5
+   ],
+   "wilson_a": [
+    90.0,
+    94.4
+   ],
+   "wilson_c": [
+    94.3,
+    97.5
+   ],
+   "mcnemar": {
+    "net": 21,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 21,
+     "p": 9.5367431640625e-07
+    },
+    "p_max_case": {
+     "n10": 21,
+     "n01": 42,
+     "p": 0.011141407415305074
+    }
+   },
+   "note": "n=25 표본(단위 테스트 필터)이 SD greedy를 앞섬"
+  },
+  {
+   "tag": "표5 Spider Codex 초기 -> GPT-3.5가 설명 디버깅",
+   "bench": "spider",
+   "model": "GPT-3.5",
+   "from": "Codex 초기",
+   "to": "GPT-3.5 Expl",
+   "a": 841,
+   "c": 858,
+   "n": 1034,
+   "diff_pp": 1.64,
+   "newcombe95_pp": [
+    -1.7,
+    4.9
+   ],
+   "wilson_a": [
+    78.8,
+    83.6
+   ],
+   "wilson_c": [
+    80.6,
+    85.1
+   ],
+   "mcnemar": {
+    "net": 17,
+    "p_min_case": {
+     "n10": 0,
+     "n01": 17,
+     "p": 1.52587890625e-05
+    },
+    "p_max_case": {
+     "n10": 176,
+     "n01": 193,
+     "p": 0.4049189505354991
+    }
+   },
+   "note": "다른 모델이 초기 코드를 디버깅"
+  }
+ ],
+ "claims": {
+  "spider_gain_by_n_pp": [
+   3.3,
+   3.8,
+   2.2,
+   2.8
+  ],
+  "spider_2_3pp_claim_holds_all_n": false,
+  "spider_gain_in_questions_by_n": [
+   34,
+   39,
+   23,
+   29
+  ],
+  "extra_hard_gain_pp": 9.0,
+  "transcoder_best_gain_pp": {
+   "Codex": 12.1,
+   "GPT-3.5": 3.6,
+   "GPT-4": 13.1,
+   "StarCoder": 6.6
+  },
+  "mbpp_best_gain_pp": {
+   "Codex": 9.4,
+   "GPT-3.5": 6.6,
+   "GPT-4": 7.8,
+   "StarCoder": 6.0
+  },
+  "transcoder_final_questions_unsolved": {
+   "Codex": 42,
+   "GPT-3.5": 41,
+   "GPT-4": 54,
+   "StarCoder": 131
+  },
+  "table4_denominators": {
+   "spider": {
+    "smallest_denominators": []
+   },
+   "transcoder": {
+    "smallest_denominators": [
+     21,
+     42,
+     63,
+     84,
+     97
+    ]
+   },
+   "mbpp": {
+    "smallest_denominators": [
+     13,
+     26,
+     39,
+     52,
+     65,
+     78
+    ]
+   },
+   "spider_5.8_as_5.7_denominators": [
+    35,
+    70
+   ],
+   "spider_sum_of_reported": 100.0,
+   "spider_5.8_vs_5.7": "35개 분모에서 2/35=5.71이라 5.7이어야 하는 항목이 5.8로 적힘(합 100.0을 맞추려는 반올림 조정으로 보임)"
+  }
+ },
+ "mdd": {
+  "spider": {
+   "unpaired_pp": 4.9,
+   "paired_disc3pct_pp": 1.5,
+   "paired_disc6pct_pp": 2.1,
+   "paired_disc12pct_pp": 3.0,
+   "paired_disc20pct_pp": 3.9
+  },
+  "transcoder": {
+   "unpaired_pp": 6.0,
+   "paired_disc3pct_pp": 2.0,
+   "paired_disc6pct_pp": 2.9,
+   "paired_disc12pct_pp": 4.1,
+   "paired_disc20pct_pp": 5.3
+  },
+  "mbpp": {
+   "unpaired_pp": 8.4,
+   "paired_disc3pct_pp": 2.2,
+   "paired_disc6pct_pp": 3.1,
+   "paired_disc12pct_pp": 4.3,
+   "paired_disc20pct_pp": 5.6
+  }
+ }
+}
