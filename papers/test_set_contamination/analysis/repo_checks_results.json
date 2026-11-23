@@ -1,0 +1,48 @@
+{
+ "boolq/dev.jsonl": {
+  "n_lines": 3270,
+  "n_unique": 3270,
+  "n_used_first5000": 3270,
+  "n_unique_in_first5000": 3270,
+  "all_end_with_newline": true
+ },
+ "arc/ARC-Easy-Test.jsonl": {
+  "n_lines": 2376,
+  "n_unique": 2376,
+  "n_used_first5000": 2376,
+  "n_unique_in_first5000": 2376,
+  "all_end_with_newline": true
+ },
+ "piqa/tests.jsonl": {
+  "n_lines": 3084,
+  "n_unique": 3084,
+  "n_used_first5000": 3084,
+  "n_unique_in_first5000": 3084,
+  "all_end_with_newline": true
+ },
+ "gsm8k/test.jsonl": {
+  "n_lines": 1319,
+  "n_unique": 1319,
+  "n_used_first5000": 1319,
+  "n_unique_in_first5000": 1319,
+  "all_end_with_newline": true
+ },
+ "lambada/lambada_test_plain_text.txt": {
+  "n_lines": 5153,
+  "n_unique": 5151,
+  "n_used_first5000": 5000,
+  "n_unique_in_first5000": 4998,
+  "all_end_with_newline": true
+ },
+ "arc_id_order_spearman": {
+  "rho": 0.02726599312283688,
+  "p": 0.1839775072986914
+ },
+ "mmlu": {
+  "n_files": 57,
+  "total_examples": 14042,
+  "professional_law_in_zip": true,
+  "professional_law_n": 1534,
+  "element_ends_with_newline": true
+ }
+}

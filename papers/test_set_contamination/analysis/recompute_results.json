@@ -1,0 +1,169 @@
+{
+ "table1": {
+  "perm_floor_if_100_perms": 0.009900990099009901,
+  "perm_floor_if_110_perms": 0.009009009009009009,
+  "perms_needed_for_1.96e-11": 51020408163.26531,
+  "perm_floor_for_25_perms": 0.038461538461538464,
+  "detected_sharded_005": [
+   "MNLI",
+   "TruthfulQA",
+   "NaturalQuestions",
+   "PIQA",
+   "MMLU_ProPsych",
+   "MMLU_ProLaw",
+   "MMLU_HSPsych"
+  ],
+  "detected_perm_005": [
+   "MNLI",
+   "TruthfulQA",
+   "NaturalQuestions",
+   "PIQA",
+   "MMLU_ProPsych",
+   "MMLU_ProLaw",
+   "MMLU_HSPsych"
+  ],
+  "dup1_all_missed_both": true,
+  "dup_ge10_all_detected_both": true
+ },
+ "table3": {
+  "injected_tokens_with_dup": 19235000.0,
+  "frac_of_20.2B": 0.0009522277227722772,
+  "steps_46000_tokens": 24117248000,
+  "steps_needed_for_20.2B_once": 38528.4423828125,
+  "ratio_trained_over_dataset": 1.1939231683168317,
+  "law_words_x_examples": 2000000
+ },
+ "table2": {
+  "n_pvalues": 35,
+  "n_below_005": 1,
+  "expected_below_005_under_null": 1.75,
+  "n_below_001": 1,
+  "n_above_09": 12,
+  "expected_above_09_under_null": 3.5,
+  "frac_above_05": 0.7428571428571429,
+  "mean_p": 0.6635428571428571,
+  "ks_vs_uniform_stat_p": [
+   0.261,
+   0.013623578117914148
+  ],
+  "ks_excluding_mistral_arc": [
+   0.27394117647058824,
+   0.00956121197014792
+  ],
+  "col_means_llama_mistral_pythia_gpt2_biomed": [
+   0.5598571428571428,
+   0.6141428571428572,
+   0.7718571428571429,
+   0.7157142857142856,
+   0.6561428571428571
+  ],
+  "bonferroni_threshold_28_tests_4models_x7": 0.0017857142857142859,
+  "bonferroni_threshold_35_tests_5models_x7": 0.0014285714285714286,
+  "bonferroni_adjusted_mistral_arc_28": 0.028,
+  "bonferroni_adjusted_mistral_arc_35": 0.035,
+  "bonferroni_adjusted_mistral_arc_65_files": 0.065,
+  "min_p_of_28_null_uniform_leq_0.001_prob": 0.02762525562290441,
+  "binom_tail_P(X>=12 | n=35, p=0.1)": 9.14913354253568e-05
+ },
+ "table4": {
+  "n_files_parsed": 56,
+  "sum_sizes": 12508,
+  "threshold_scan": {
+   "0.05": {
+    "n_excluded": 13,
+    "fisher_llama2": 0.014610987880063448,
+    "fisher_mistral": 0.0112979618701574,
+    "fisher_pythia": 0.36215836097507703,
+    "n_kept": 43
+   },
+   "0.01": {
+    "n_excluded": 9,
+    "fisher_llama2": 0.0029793640628754973,
+    "fisher_mistral": 0.0056972593330267204,
+    "fisher_pythia": 0.03105355449631242,
+    "n_kept": 47
+   },
+   "0.005": {
+    "n_excluded": 7,
+    "fisher_llama2": 0.00015262691210665745,
+    "fisher_mistral": 0.0003405958198257086,
+    "fisher_pythia": 0.00490892529687466,
+    "n_kept": 49
+   },
+   "0.003": {
+    "n_excluded": 6,
+    "fisher_llama2": 0.00013208223376790008,
+    "fisher_mistral": 0.00023175629105464052,
+    "fisher_pythia": 0.003150277607821818,
+    "n_kept": 50
+   },
+   "0.002": {
+    "n_excluded": 4,
+    "fisher_llama2": 0.000173479297348442,
+    "fisher_mistral": 0.0001797975719565618,
+    "fisher_pythia": 0.000695320620227684,
+    "n_kept": 52
+   },
+   "0.001": {
+    "n_excluded": 4,
+    "fisher_llama2": 0.000173479297348442,
+    "fisher_mistral": 0.0001797975719565618,
+    "fisher_pythia": 0.000695320620227684,
+    "n_kept": 52
+   }
+  },
+  "paper_reported_fisher": {
+   "llama2": 0.014,
+   "mistral": 0.011,
+   "pythia": 0.362
+  },
+  "fisher_all_57_files": {
+   "llama2": 1.0221550566584018e-56,
+   "mistral": 3.3276614017824627e-85,
+   "pythia": 6.095089852081964e-85,
+   "gpt2xl": 2.8297406331503765e-80,
+   "biomedlm": 7.396976490358586e-82
+  },
+  "negative_control_below_005": {
+   "gpt2xl": 10,
+   "biomedlm": 9,
+   "expected": 2.8000000000000003
+  },
+  "after_filter_005": {
+   "n_kept": 43,
+   "n_below_005_per_model": {
+    "llama2": 2,
+    "mistral": 5,
+    "pythia": 0
+   },
+   "expected_below_005": 2.15,
+   "ks_p_vs_uniform": {
+    "llama2": 0.05708248739646371,
+    "mistral": 0.03678900949098296,
+    "pythia": 0.4528463921891155
+   },
+   "excluded_files": [
+    "Astronomy",
+    "Clinical-Knowledge",
+    "Econometrics",
+    "High-School-Computer-Science",
+    "High-School-European-History",
+    "High-School-Government-And-Politics",
+    "High-School-Mathematics",
+    "High-School-Psychology",
+    "High-School-Us-History",
+    "High-School-World-History",
+    "Philosophy",
+    "Professional-Medicine",
+    "Professional-Psychology"
+   ],
+   "note": "표 4는 56행(professional_law 없음). 13개 제외 + professional_law(공식 zip에 1534문항으로 존재)를 14번째로 보면 본문의 '14개 제외, 43개 남음'과 일치"
+  },
+  "negative_control_1e-38_files": [
+   "High-School-European-History",
+   "High-School-Us-History",
+   "High-School-World-History",
+   "Professional-Medicine"
+  ]
+ }
+}
