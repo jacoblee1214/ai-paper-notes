@@ -1,0 +1,1045 @@
+{
+ "table2_9": {
+  "claude-v1 / default": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 23.8,
+    "k": 19,
+    "wilson95": [
+     0.158,
+     0.341
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 75.0,
+    "k": 60,
+    "wilson95": [
+     0.645,
+     0.832
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "error": {
+    "paper_pct": 1.2,
+    "k": 1,
+    "wilson95": [
+     0.002,
+     0.067
+    ]
+   },
+   "pct_sum": 100.0,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "claude-v1 / rename": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 56.2,
+    "k": 45,
+    "wilson95": [
+     0.453,
+     0.666
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 11.2,
+    "k": 9,
+    "wilson95": [
+     0.06,
+     0.2
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 28.7,
+    "k": 23,
+    "wilson95": [
+     0.2,
+     0.395
+    ]
+   },
+   "error": {
+    "paper_pct": 3.8,
+    "k": 3,
+    "wilson95": [
+     0.013,
+     0.105
+    ]
+   },
+   "pct_sum": 99.9,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "gpt-3.5-turbo / default": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 46.2,
+    "k": 37,
+    "wilson95": [
+     0.357,
+     0.571
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 50.0,
+    "k": 40,
+    "wilson95": [
+     0.393,
+     0.607
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 1.2,
+    "k": 1,
+    "wilson95": [
+     0.002,
+     0.067
+    ]
+   },
+   "error": {
+    "paper_pct": 2.5,
+    "k": 2,
+    "wilson95": [
+     0.007,
+     0.087
+    ]
+   },
+   "pct_sum": 99.9,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "gpt-3.5-turbo / rename": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 51.2,
+    "k": 41,
+    "wilson95": [
+     0.405,
+     0.619
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 38.8,
+    "k": 31,
+    "wilson95": [
+     0.288,
+     0.497
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 6.2,
+    "k": 5,
+    "wilson95": [
+     0.027,
+     0.138
+    ]
+   },
+   "error": {
+    "paper_pct": 3.8,
+    "k": 3,
+    "wilson95": [
+     0.013,
+     0.105
+    ]
+   },
+   "pct_sum": 100.0,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "gpt-4 / default": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 65.0,
+    "k": 52,
+    "wilson95": [
+     0.541,
+     0.745
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 30.0,
+    "k": 24,
+    "wilson95": [
+     0.211,
+     0.408
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 5.0,
+    "k": 4,
+    "wilson95": [
+     0.02,
+     0.122
+    ]
+   },
+   "error": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "pct_sum": 100.0,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "gpt-4 / rename": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 66.2,
+    "k": 53,
+    "wilson95": [
+     0.554,
+     0.757
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 28.7,
+    "k": 23,
+    "wilson95": [
+     0.2,
+     0.395
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 5.0,
+    "k": 4,
+    "wilson95": [
+     0.02,
+     0.122
+    ]
+   },
+   "error": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "pct_sum": 99.9,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "claude-v1 / score": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 20.0,
+    "k": 16,
+    "wilson95": [
+     0.127,
+     0.3
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 80.0,
+    "k": 64,
+    "wilson95": [
+     0.7,
+     0.873
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "error": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "pct_sum": 100.0,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "claude-v1 / short": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 22.5,
+    "k": 18,
+    "wilson95": [
+     0.147,
+     0.328
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 75.0,
+    "k": 60,
+    "wilson95": [
+     0.645,
+     0.832
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 2.5,
+    "k": 2,
+    "wilson95": [
+     0.007,
+     0.087
+    ]
+   },
+   "error": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "pct_sum": 100.0,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "gpt-3.5-turbo / score": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 55.0,
+    "k": 44,
+    "wilson95": [
+     0.441,
+     0.654
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 33.8,
+    "k": 27,
+    "wilson95": [
+     0.243,
+     0.446
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 11.2,
+    "k": 9,
+    "wilson95": [
+     0.06,
+     0.2
+    ]
+   },
+   "error": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "pct_sum": 100.0,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "gpt-3.5-turbo / short": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 38.8,
+    "k": 31,
+    "wilson95": [
+     0.288,
+     0.497
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 57.5,
+    "k": 46,
+    "wilson95": [
+     0.466,
+     0.677
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 3.8,
+    "k": 3,
+    "wilson95": [
+     0.013,
+     0.105
+    ]
+   },
+   "error": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "pct_sum": 100.1,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "gpt-4 / score": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 51.2,
+    "k": 41,
+    "wilson95": [
+     0.405,
+     0.619
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 46.2,
+    "k": 37,
+    "wilson95": [
+     0.357,
+     0.571
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 2.5,
+    "k": 2,
+    "wilson95": [
+     0.007,
+     0.087
+    ]
+   },
+   "error": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "pct_sum": 99.9,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "gpt-4 / short": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 62.5,
+    "k": 50,
+    "wilson95": [
+     0.515,
+     0.723
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 35.0,
+    "k": 28,
+    "wilson95": [
+     0.255,
+     0.459
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 2.5,
+    "k": 2,
+    "wilson95": [
+     0.007,
+     0.087
+    ]
+   },
+   "error": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "pct_sum": 100.0,
+   "k_sum": 80,
+   "all_k_recovered": true
+  }
+ },
+ "table12": {
+  "claude-v1 zero": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 23.8,
+    "k": 19,
+    "wilson95": [
+     0.158,
+     0.341
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 75.0,
+    "k": 60,
+    "wilson95": [
+     0.645,
+     0.832
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "error": {
+    "paper_pct": 1.2,
+    "k": 1,
+    "wilson95": [
+     0.002,
+     0.067
+    ]
+   },
+   "pct_sum": 100.0,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "claude-v1 few": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 63.7,
+    "k": 51,
+    "wilson95": [
+     0.528,
+     0.734
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 21.2,
+    "k": 17,
+    "wilson95": [
+     0.137,
+     0.314
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 11.2,
+    "k": 9,
+    "wilson95": [
+     0.06,
+     0.2
+    ]
+   },
+   "error": {
+    "paper_pct": 3.8,
+    "k": 3,
+    "wilson95": [
+     0.013,
+     0.105
+    ]
+   },
+   "pct_sum": 99.9,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "gpt-3.5-turbo zero": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 46.2,
+    "k": 37,
+    "wilson95": [
+     0.357,
+     0.571
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 50.0,
+    "k": 40,
+    "wilson95": [
+     0.393,
+     0.607
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 1.2,
+    "k": 1,
+    "wilson95": [
+     0.002,
+     0.067
+    ]
+   },
+   "error": {
+    "paper_pct": 2.5,
+    "k": 2,
+    "wilson95": [
+     0.007,
+     0.087
+    ]
+   },
+   "pct_sum": 99.9,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "gpt-3.5-turbo few": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 55.0,
+    "k": 44,
+    "wilson95": [
+     0.441,
+     0.654
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 16.2,
+    "k": 13,
+    "wilson95": [
+     0.097,
+     0.258
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 28.7,
+    "k": 23,
+    "wilson95": [
+     0.2,
+     0.395
+    ]
+   },
+   "error": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "pct_sum": 99.9,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "gpt-4 zero": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 65.0,
+    "k": 52,
+    "wilson95": [
+     0.541,
+     0.745
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 30.0,
+    "k": 24,
+    "wilson95": [
+     0.211,
+     0.408
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 5.0,
+    "k": 4,
+    "wilson95": [
+     0.02,
+     0.122
+    ]
+   },
+   "error": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "pct_sum": 100.0,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "gpt-4 few": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 77.5,
+    "k": 62,
+    "wilson95": [
+     0.672,
+     0.853
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 10.0,
+    "k": 8,
+    "wilson95": [
+     0.052,
+     0.185
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 12.5,
+    "k": 10,
+    "wilson95": [
+     0.069,
+     0.215
+    ]
+   },
+   "error": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "pct_sum": 100.0,
+   "k_sum": 80,
+   "all_k_recovered": true
+  }
+ },
+ "table11": {
+  "GPT-3.5 vs Claude-V1": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 67.5,
+    "k": 54,
+    "wilson95": [
+     0.566,
+     0.768
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 23.8,
+    "k": 19,
+    "wilson95": [
+     0.158,
+     0.341
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 8.8,
+    "k": 7,
+    "wilson95": [
+     0.043,
+     0.17
+    ]
+   },
+   "pct_sum": 100.1,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "GPT-3.5 vs Vicuna-13B": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 73.8,
+    "k": 59,
+    "wilson95": [
+     0.632,
+     0.821
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 23.8,
+    "k": 19,
+    "wilson95": [
+     0.158,
+     0.341
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 2.5,
+    "k": 2,
+    "wilson95": [
+     0.007,
+     0.087
+    ]
+   },
+   "pct_sum": 100.1,
+   "k_sum": 80,
+   "all_k_recovered": true
+  },
+  "GPT-3.5 vs LLaMA-13B": {
+   "n": 80,
+   "consistent": {
+    "paper_pct": 98.8,
+    "k": 79,
+    "wilson95": [
+     0.933,
+     0.998
+    ]
+   },
+   "biased_first": {
+    "paper_pct": 1.2,
+    "k": 1,
+    "wilson95": [
+     0.002,
+     0.067
+    ]
+   },
+   "biased_second": {
+    "paper_pct": 0.0,
+    "k": 0,
+    "wilson95": [
+     -0.0,
+     0.046
+    ]
+   },
+   "pct_sum": 100.0,
+   "k_sum": 80,
+   "all_k_recovered": true
+  }
+ },
+ "table10": {
+  "n_per_category=10_consistent_with_percentages": false,
+  "n_per_category=20_consistent_with_percentages": false,
+  "n_per_category=25_consistent_with_percentages": false,
+  "n_per_category=50_consistent_with_percentages": true,
+  "n_per_category=100_consistent_with_percentages": true,
+  "mean_consistency_over_categories": 64.5,
+  "note": "범주당 10문항이면 10%p 단위여야 한다. 표 10의 값은 2%p 단위라 범주당 n=50이 필요하고, 합계 400은 표 2의 n=80과 맞지 않는다.",
+  "wilson_at_n50": {
+   "writing": [
+    0.294,
+    0.558
+   ],
+   "roleplay": [
+    0.542,
+    0.792
+   ],
+   "reasoning": [
+    0.626,
+    0.857
+   ],
+   "math": [
+    0.738,
+    0.93
+   ],
+   "coding": [
+    0.738,
+    0.93
+   ],
+   "extraction": [
+    0.648,
+    0.872
+   ],
+   "stem": [
+    0.312,
+    0.577
+   ],
+   "humanities": [
+    0.241,
+    0.499
+   ]
+  },
+  "wilson_at_n10_if_questions": {
+   "writing": [
+    0.168,
+    0.687
+   ],
+   "roleplay": [
+    0.397,
+    0.892
+   ],
+   "reasoning": [
+    0.49,
+    0.943
+   ],
+   "math": [
+    0.596,
+    0.982
+   ],
+   "coding": [
+    0.596,
+    0.982
+   ],
+   "extraction": [
+    0.49,
+    0.943
+   ],
+   "stem": [
+    0.168,
+    0.687
+   ],
+   "humanities": [
+    0.168,
+    0.687
+   ]
+  }
+ },
+ "table2_fisher_unpaired_p": {
+  "claude default vs rename 일관성": 0.0,
+  "gpt-4 default vs rename 일관성": 1.0,
+  "gpt-4 vs gpt-3.5 default 일관성": 0.0256,
+  "gpt-4 default vs few-shot 일관성(표 12)": 0.1154,
+  "gpt-4 default vs score 프롬프트 일관성": 0.1087
+ },
+ "table3_repetitive_list": {
+  "Claude-v1": {
+   "fail_k": 21,
+   "n": 23,
+   "pct": 91.3,
+   "wilson95": [
+    0.732,
+    0.976
+   ]
+  },
+  "GPT-3.5": {
+   "fail_k": 21,
+   "n": 23,
+   "pct": 91.3,
+   "wilson95": [
+    0.732,
+    0.976
+   ]
+  },
+  "GPT-4": {
+   "fail_k": 2,
+   "n": 23,
+   "pct": 8.7,
+   "wilson95": [
+    0.024,
+    0.268
+   ]
+  },
+  "gpt4_vs_gpt35_fisher_p": 1.57e-08
+ },
+ "table4_math_failure": {
+  "default": {
+   "k": 14,
+   "n": 20,
+   "pct": 70.0,
+   "wilson95_n20": [
+    0.481,
+    0.855
+   ],
+   "wilson95_if_only_10_independent": [
+    0.397,
+    0.892
+   ]
+  },
+  "cot": {
+   "k": 6,
+   "n": 20,
+   "pct": 30.0,
+   "wilson95_n20": [
+    0.145,
+    0.519
+   ],
+   "wilson95_if_only_10_independent": [
+    0.108,
+    0.603
+   ]
+  },
+  "reference": {
+   "k": 3,
+   "n": 20,
+   "pct": 15.0,
+   "wilson95_n20": [
+    0.052,
+    0.36
+   ],
+   "wilson95_if_only_10_independent": [
+    0.057,
+    0.51
+   ]
+  },
+  "default_vs_reference_fisher_p_n20": 0.00106,
+  "default_vs_cot_fisher_p_n20": 0.0256,
+  "cot_vs_reference_fisher_p_n20": 0.4506
+ },
+ "table6_arena": {
+  "G4": {
+   "rate": 0.87,
+   "n": 1944,
+   "wilson95": [
+    0.854,
+    0.884
+   ]
+  },
+  "G4-S": {
+   "rate": 0.85,
+   "n": 1761,
+   "wilson95": [
+    0.833,
+    0.866
+   ]
+  },
+  "G3.5": {
+   "rate": 0.83,
+   "n": 1567,
+   "wilson95": [
+    0.811,
+    0.848
+   ]
+  },
+  "Claude": {
+   "rate": 0.84,
+   "n": 1475,
+   "wilson95": [
+    0.82,
+    0.858
+   ]
+  },
+  "G4_vs_G35_diff_fisher_p": 0.00113,
+  "S1_G4_vs_human": {
+   "rate": 0.64,
+   "n": 3066,
+   "wilson95": [
+    0.623,
+    0.657
+   ]
+  },
+  "note": "부록 F의 '(GPT-4) 66%와 87%'에서 66%는 표 6의 G4-사람 S1(64%)과 다르다. 표 6의 66%는 G4-G3.5·G4-Claude 칸이다.",
+  "finetuned_vicuna_S2_vs_G4": {
+   "vicuna_ft": 0.855,
+   "G4": 0.87
+  }
+ },
+ "table11_vs_released_gpt4_pair": {
+  "GPT-3.5 vs Claude-V1 turn1": {
+   "n": 80,
+   "consistent_rate": 0.637,
+   "paper_table11": 67.5,
+   "wilson95": [
+    0.528,
+    0.734
+   ]
+  },
+  "GPT-3.5 vs Claude-V1 turn2": {
+   "n": 80,
+   "consistent_rate": 0.675,
+   "paper_table11": 67.5,
+   "wilson95": [
+    0.566,
+    0.768
+   ]
+  },
+  "GPT-3.5 vs Vicuna-13B turn1": {
+   "n": 80,
+   "consistent_rate": 0.675,
+   "paper_table11": 73.8,
+   "wilson95": [
+    0.566,
+    0.768
+   ]
+  },
+  "GPT-3.5 vs Vicuna-13B turn2": {
+   "n": 80,
+   "consistent_rate": 0.7,
+   "paper_table11": 73.8,
+   "wilson95": [
+    0.592,
+    0.789
+   ]
+  },
+  "GPT-3.5 vs LLaMA-13B turn1": {
+   "n": 80,
+   "consistent_rate": 0.938,
+   "paper_table11": 98.8,
+   "wilson95": [
+    0.862,
+    0.973
+   ]
+  },
+  "GPT-3.5 vs LLaMA-13B turn2": {
+   "n": 80,
+   "consistent_rate": 0.9,
+   "paper_table11": 98.8,
+   "wilson95": [
+    0.815,
+    0.948
+   ]
+  },
+  "note": "논문 표 11은 첫 질문 80개이며 모델 답은 같지만 판정 실행·모델 버전(vicuna-13b-v1.2)이 다를 수 있다. 이 파일의 '일관'은 두 순서 결과가 같은 경우(동점 포함)로 가정한 값."
+ }
+}

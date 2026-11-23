@@ -1,0 +1,2339 @@
+{
+ "n_rows": 455,
+ "n_unique_bibkeys": 445,
+ "items": {
+  "defined": {
+   "where": "§4 Phenomenon",
+   "paper_pct": 78.2,
+   "all455": {
+    "k": 348,
+    "n": 455,
+    "pct": 76.48,
+    "wilson95": [
+     72.4,
+     80.1
+    ]
+   },
+   "first445": {
+    "k": 340,
+    "n": 445,
+    "pct": 76.4,
+    "wilson95": [
+     72.2,
+     80.1
+    ]
+   },
+   "last445": {
+    "k": 340,
+    "n": 445,
+    "pct": 76.4,
+    "wilson95": [
+     72.2,
+     80.1
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    445
+   ],
+   "implied_denominators_for_k445": []
+  },
+  "not_defined(No)": {
+   "where": "Fig3 Undefined",
+   "paper_pct": 21.7,
+   "all455": {
+    "k": 99,
+    "n": 455,
+    "pct": 21.76,
+    "wilson95": [
+     18.2,
+     25.8
+    ]
+   },
+   "first445": {
+    "k": 97,
+    "n": 445,
+    "pct": 21.8,
+    "wilson95": [
+     18.2,
+     25.9
+    ]
+   },
+   "last445": {
+    "k": 97,
+    "n": 445,
+    "pct": 21.8,
+    "wilson95": [
+     18.2,
+     25.9
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    456,
+    457
+   ],
+   "implied_denominators_for_k445": [
+    446,
+    447,
+    448
+   ]
+  },
+  "defined&widely": {
+   "where": "Fig3 Widely-agreed",
+   "paper_pct": 40.9,
+   "all455": {
+    "k": 182,
+    "n": 455,
+    "pct": 40.0,
+    "wilson95": [
+     35.6,
+     44.6
+    ]
+   },
+   "first445": {
+    "k": 181,
+    "n": 445,
+    "pct": 40.67,
+    "wilson95": [
+     36.2,
+     45.3
+    ]
+   },
+   "last445": {
+    "k": 178,
+    "n": 445,
+    "pct": 40.0,
+    "wilson95": [
+     35.6,
+     44.6
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    445
+   ],
+   "implied_denominators_for_k445": [
+    443
+   ]
+  },
+  "defined&contested": {
+   "where": "Fig3 Contested",
+   "paper_pct": 37.4,
+   "all455": {
+    "k": 166,
+    "n": 455,
+    "pct": 36.48,
+    "wilson95": [
+     32.2,
+     41.0
+    ]
+   },
+   "first445": {
+    "k": 159,
+    "n": 445,
+    "pct": 35.73,
+    "wilson95": [
+     31.4,
+     40.3
+    ]
+   },
+   "last445": {
+    "k": 162,
+    "n": 445,
+    "pct": 36.4,
+    "wilson95": [
+     32.1,
+     41.0
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    444
+   ],
+   "implied_denominators_for_k445": []
+  },
+  "composite": {
+   "where": "§4 composite",
+   "paper_pct": 61.2,
+   "all455": {
+    "k": 278,
+    "n": 455,
+    "pct": 61.1,
+    "wilson95": [
+     56.5,
+     65.5
+    ]
+   },
+   "first445": {
+    "k": 275,
+    "n": 445,
+    "pct": 61.8,
+    "wilson95": [
+     57.2,
+     66.2
+    ]
+   },
+   "last445": {
+    "k": 271,
+    "n": 445,
+    "pct": 60.9,
+    "wilson95": [
+     56.3,
+     65.3
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    454
+   ],
+   "implied_denominators_for_k445": [
+    449
+   ]
+  },
+  "single_whole": {
+   "where": "§4 single whole",
+   "paper_pct": 36.5,
+   "all455": {
+    "k": 166,
+    "n": 455,
+    "pct": 36.48,
+    "wilson95": [
+     32.2,
+     41.0
+    ]
+   },
+   "first445": {
+    "k": 159,
+    "n": 445,
+    "pct": 35.73,
+    "wilson95": [
+     31.4,
+     40.3
+    ]
+   },
+   "last445": {
+    "k": 163,
+    "n": 445,
+    "pct": 36.63,
+    "wilson95": [
+     32.3,
+     41.2
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": []
+  },
+  "eco_constructed_any": {
+   "where": "§4 constructed",
+   "paper_pct": 40.7,
+   "all455": {
+    "k": 185,
+    "n": 455,
+    "pct": 40.66,
+    "wilson95": [
+     36.2,
+     45.2
+    ]
+   },
+   "first445": {
+    "k": 179,
+    "n": 445,
+    "pct": 40.22,
+    "wilson95": [
+     35.8,
+     44.8
+    ]
+   },
+   "last445": {
+    "k": 182,
+    "n": 445,
+    "pct": 40.9,
+    "wilson95": [
+     36.4,
+     45.5
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    454,
+    455
+   ],
+   "implied_denominators_for_k445": [
+    440
+   ]
+  },
+  "eco_constructed_only": {
+   "where": "§4 only constructed",
+   "paper_pct": 28.5,
+   "all455": {
+    "k": 130,
+    "n": 455,
+    "pct": 28.57,
+    "wilson95": [
+     24.6,
+     32.9
+    ]
+   },
+   "first445": {
+    "k": 126,
+    "n": 445,
+    "pct": 28.31,
+    "wilson95": [
+     24.3,
+     32.7
+    ]
+   },
+   "last445": {
+    "k": 128,
+    "n": 445,
+    "pct": 28.76,
+    "wilson95": [
+     24.8,
+     33.1
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    456
+   ],
+   "implied_denominators_for_k445": [
+    442
+   ]
+  },
+  "eco_partial_any": {
+   "where": "§4 partial real",
+   "paper_pct": 32.3,
+   "all455": {
+    "k": 147,
+    "n": 455,
+    "pct": 32.31,
+    "wilson95": [
+     28.2,
+     36.7
+    ]
+   },
+   "first445": {
+    "k": 146,
+    "n": 445,
+    "pct": 32.81,
+    "wilson95": [
+     28.6,
+     37.3
+    ]
+   },
+   "last445": {
+    "k": 144,
+    "n": 445,
+    "pct": 32.36,
+    "wilson95": [
+     28.2,
+     36.8
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": [
+    452
+   ]
+  },
+  "eco_representative_any": {
+   "where": "§4 representative",
+   "paper_pct": 36.9,
+   "all455": {
+    "k": 168,
+    "n": 455,
+    "pct": 36.92,
+    "wilson95": [
+     32.6,
+     41.4
+    ]
+   },
+   "first445": {
+    "k": 163,
+    "n": 445,
+    "pct": 36.63,
+    "wilson95": [
+     32.3,
+     41.2
+    ]
+   },
+   "last445": {
+    "k": 167,
+    "n": 445,
+    "pct": 37.53,
+    "wilson95": [
+     33.2,
+     42.1
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": [
+    442
+   ]
+  },
+  "eco_complete_any": {
+   "where": "§4 complete real (<10%)",
+   "paper_pct": 10.0,
+   "all455": {
+    "k": 42,
+    "n": 455,
+    "pct": 9.23,
+    "wilson95": [
+     6.9,
+     12.2
+    ]
+   },
+   "first445": {
+    "k": 40,
+    "n": 445,
+    "pct": 8.99,
+    "wilson95": [
+     6.7,
+     12.0
+    ]
+   },
+   "last445": {
+    "k": 37,
+    "n": 445,
+    "pct": 8.31,
+    "wilson95": [
+     6.1,
+     11.3
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [],
+   "implied_denominators_for_k445": []
+  },
+  "src_single": {
+   "where": "§4 single source",
+   "paper_pct": 33.6,
+   "all455": {
+    "k": 152,
+    "n": 455,
+    "pct": 33.41,
+    "wilson95": [
+     29.2,
+     37.9
+    ]
+   },
+   "first445": {
+    "k": 145,
+    "n": 445,
+    "pct": 32.58,
+    "wilson95": [
+     28.4,
+     37.1
+    ]
+   },
+   "last445": {
+    "k": 149,
+    "n": 445,
+    "pct": 33.48,
+    "wilson95": [
+     29.3,
+     38.0
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    452,
+    453
+   ],
+   "implied_denominators_for_k445": []
+  },
+  "src_author_crafted": {
+   "where": "§4 handcrafted",
+   "paper_pct": 43.3,
+   "all455": {
+    "k": 197,
+    "n": 455,
+    "pct": 43.3,
+    "wilson95": [
+     38.8,
+     47.9
+    ]
+   },
+   "first445": {
+    "k": 189,
+    "n": 445,
+    "pct": 42.47,
+    "wilson95": [
+     38.0,
+     47.1
+    ]
+   },
+   "last445": {
+    "k": 192,
+    "n": 445,
+    "pct": 43.15,
+    "wilson95": [
+     38.6,
+     47.8
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": []
+  },
+  "src_another_benchmark": {
+   "where": "§4 reuse benchmark",
+   "paper_pct": 42.6,
+   "all455": {
+    "k": 194,
+    "n": 455,
+    "pct": 42.64,
+    "wilson95": [
+     38.2,
+     47.2
+    ]
+   },
+   "first445": {
+    "k": 193,
+    "n": 445,
+    "pct": 43.37,
+    "wilson95": [
+     38.8,
+     48.0
+    ]
+   },
+   "last445": {
+    "k": 189,
+    "n": 445,
+    "pct": 42.47,
+    "wilson95": [
+     38.0,
+     47.1
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": [
+    453
+   ]
+  },
+  "src_llm_generated": {
+   "where": "§4 LLM-generated",
+   "paper_pct": 31.2,
+   "all455": {
+    "k": 142,
+    "n": 455,
+    "pct": 31.21,
+    "wilson95": [
+     27.1,
+     35.6
+    ]
+   },
+   "first445": {
+    "k": 141,
+    "n": 445,
+    "pct": 31.69,
+    "wilson95": [
+     27.5,
+     36.1
+    ]
+   },
+   "last445": {
+    "k": 138,
+    "n": 445,
+    "pct": 31.01,
+    "wilson95": [
+     26.9,
+     35.5
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": [
+    452
+   ]
+  },
+  "src_human_exams": {
+   "where": "§4 human exams",
+   "paper_pct": 38.2,
+   "all455": {
+    "k": 43,
+    "n": 455,
+    "pct": 9.45,
+    "wilson95": [
+     7.1,
+     12.5
+    ]
+   },
+   "first445": {
+    "k": 43,
+    "n": 445,
+    "pct": 9.66,
+    "wilson95": [
+     7.3,
+     12.8
+    ]
+   },
+   "last445": {
+    "k": 43,
+    "n": 445,
+    "pct": 9.66,
+    "wilson95": [
+     7.3,
+     12.8
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [],
+   "implied_denominators_for_k445": []
+  },
+  "src_only_another_benchmark": {
+   "where": "§4 only another benchmark",
+   "paper_pct": 7.7,
+   "all455": {
+    "k": 34,
+    "n": 455,
+    "pct": 7.47,
+    "wilson95": [
+     5.4,
+     10.3
+    ]
+   },
+   "first445": {
+    "k": 34,
+    "n": 445,
+    "pct": 7.64,
+    "wilson95": [
+     5.5,
+     10.5
+    ]
+   },
+   "last445": {
+    "k": 34,
+    "n": 445,
+    "pct": 7.64,
+    "wilson95": [
+     5.5,
+     10.5
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    440,
+    441,
+    442,
+    443,
+    444
+   ],
+   "implied_denominators_for_k445": [
+    440,
+    441,
+    442,
+    443,
+    444
+   ]
+  },
+  "src_reuse_any(bench|exam)": {
+   "where": "Fig3 Partial+Only reused",
+   "paper_pct": 48.1,
+   "all455": {
+    "k": 219,
+    "n": 455,
+    "pct": 48.13,
+    "wilson95": [
+     43.6,
+     52.7
+    ]
+   },
+   "first445": {
+    "k": 218,
+    "n": 445,
+    "pct": 48.99,
+    "wilson95": [
+     44.4,
+     53.6
+    ]
+   },
+   "last445": {
+    "k": 214,
+    "n": 445,
+    "pct": 48.09,
+    "wilson95": [
+     43.5,
+     52.7
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": [
+    453
+   ]
+  },
+  "src_reuse_only": {
+   "where": "Fig3 Only reused",
+   "paper_pct": 9.9,
+   "all455": {
+    "k": 45,
+    "n": 455,
+    "pct": 9.89,
+    "wilson95": [
+     7.5,
+     13.0
+    ]
+   },
+   "first445": {
+    "k": 45,
+    "n": 445,
+    "pct": 10.11,
+    "wilson95": [
+     7.6,
+     13.3
+    ]
+   },
+   "last445": {
+    "k": 45,
+    "n": 445,
+    "pct": 10.11,
+    "wilson95": [
+     7.6,
+     13.3
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    453,
+    454,
+    455,
+    456
+   ],
+   "implied_denominators_for_k445": [
+    453,
+    454,
+    455,
+    456
+   ]
+  },
+  "src_reuse_partial": {
+   "where": "Fig3 Partially reused",
+   "paper_pct": 38.2,
+   "all455": {
+    "k": 174,
+    "n": 455,
+    "pct": 38.24,
+    "wilson95": [
+     33.9,
+     42.8
+    ]
+   },
+   "first445": {
+    "k": 173,
+    "n": 445,
+    "pct": 38.88,
+    "wilson95": [
+     34.5,
+     43.5
+    ]
+   },
+   "last445": {
+    "k": 169,
+    "n": 445,
+    "pct": 37.98,
+    "wilson95": [
+     33.6,
+     42.6
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455,
+    456
+   ],
+   "implied_denominators_for_k445": [
+    453
+   ]
+  },
+  "src_not_reused": {
+   "where": "Fig3 Not reused",
+   "paper_pct": 51.9,
+   "all455": {
+    "k": 236,
+    "n": 455,
+    "pct": 51.87,
+    "wilson95": [
+     47.3,
+     56.4
+    ]
+   },
+   "first445": {
+    "k": 227,
+    "n": 445,
+    "pct": 51.01,
+    "wilson95": [
+     46.4,
+     55.6
+    ]
+   },
+   "last445": {
+    "k": 231,
+    "n": 445,
+    "pct": 51.91,
+    "wilson95": [
+     47.3,
+     56.5
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": []
+  },
+  "src_synthetic(LLM|proc)": {
+   "where": "§5.3 synthetic",
+   "paper_pct": 47.5,
+   "all455": {
+    "k": 216,
+    "n": 455,
+    "pct": 47.47,
+    "wilson95": [
+     42.9,
+     52.1
+    ]
+   },
+   "first445": {
+    "k": 214,
+    "n": 445,
+    "pct": 48.09,
+    "wilson95": [
+     43.5,
+     52.7
+    ]
+   },
+   "last445": {
+    "k": 212,
+    "n": 445,
+    "pct": 47.64,
+    "wilson95": [
+     43.0,
+     52.3
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": [
+    451
+   ]
+  },
+  "conv_only": {
+   "where": "Fig3 Only convenience",
+   "paper_pct": 12.3,
+   "all455": {
+    "k": 56,
+    "n": 455,
+    "pct": 12.31,
+    "wilson95": [
+     9.6,
+     15.6
+    ]
+   },
+   "first445": {
+    "k": 53,
+    "n": 445,
+    "pct": 11.91,
+    "wilson95": [
+     9.2,
+     15.3
+    ]
+   },
+   "last445": {
+    "k": 52,
+    "n": 445,
+    "pct": 11.69,
+    "wilson95": [
+     9.0,
+     15.0
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    454,
+    455,
+    456,
+    457
+   ],
+   "implied_denominators_for_k445": []
+  },
+  "conv_any": {
+   "where": "§4/§5.3 convenience (27.0 vs 39.3)",
+   "paper_pct": 27.0,
+   "all455": {
+    "k": 179,
+    "n": 455,
+    "pct": 39.34,
+    "wilson95": [
+     35.0,
+     43.9
+    ]
+   },
+   "first445": {
+    "k": 173,
+    "n": 445,
+    "pct": 38.88,
+    "wilson95": [
+     34.5,
+     43.5
+    ]
+   },
+   "last445": {
+    "k": 172,
+    "n": 445,
+    "pct": 38.65,
+    "wilson95": [
+     34.2,
+     43.3
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [],
+   "implied_denominators_for_k445": []
+  },
+  "conv_partial": {
+   "where": "Fig3 Partial convenience",
+   "paper_pct": 27.0,
+   "all455": {
+    "k": 123,
+    "n": 455,
+    "pct": 27.03,
+    "wilson95": [
+     23.2,
+     31.3
+    ]
+   },
+   "first445": {
+    "k": 120,
+    "n": 445,
+    "pct": 26.97,
+    "wilson95": [
+     23.1,
+     31.3
+    ]
+   },
+   "last445": {
+    "k": 120,
+    "n": 445,
+    "pct": 26.97,
+    "wilson95": [
+     23.1,
+     31.3
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": true,
+   "implied_denominators_for_k455": [
+    455,
+    456
+   ],
+   "implied_denominators_for_k445": [
+    444,
+    445
+   ]
+  },
+  "conv_none": {
+   "where": "Fig3 No convenience",
+   "paper_pct": 60.7,
+   "all455": {
+    "k": 276,
+    "n": 455,
+    "pct": 60.66,
+    "wilson95": [
+     56.1,
+     65.0
+    ]
+   },
+   "first445": {
+    "k": 272,
+    "n": 445,
+    "pct": 61.12,
+    "wilson95": [
+     56.5,
+     65.5
+    ]
+   },
+   "last445": {
+    "k": 273,
+    "n": 445,
+    "pct": 61.35,
+    "wilson95": [
+     56.7,
+     65.8
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": [
+    448
+   ]
+  },
+  "samp_targeted_any": {
+   "where": "§4 targeted",
+   "paper_pct": 55.2,
+   "all455": {
+    "k": 251,
+    "n": 455,
+    "pct": 55.16,
+    "wilson95": [
+     50.6,
+     59.7
+    ]
+   },
+   "first445": {
+    "k": 246,
+    "n": 445,
+    "pct": 55.28,
+    "wilson95": [
+     50.6,
+     59.8
+    ]
+   },
+   "last445": {
+    "k": 247,
+    "n": 445,
+    "pct": 55.51,
+    "wilson95": [
+     50.9,
+     60.1
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": [
+    446
+   ]
+  },
+  "samp_criterion_any": {
+   "where": "§4 criterion",
+   "paper_pct": 46.2,
+   "all455": {
+    "k": 210,
+    "n": 455,
+    "pct": 46.15,
+    "wilson95": [
+     41.6,
+     50.7
+    ]
+   },
+   "first445": {
+    "k": 209,
+    "n": 445,
+    "pct": 46.97,
+    "wilson95": [
+     42.4,
+     51.6
+    ]
+   },
+   "last445": {
+    "k": 208,
+    "n": 445,
+    "pct": 46.74,
+    "wilson95": [
+     42.2,
+     51.4
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": [
+    452
+   ]
+  },
+  "samp_random_any": {
+   "where": "§4/§5.3 random",
+   "paper_pct": 17.1,
+   "all455": {
+    "k": 78,
+    "n": 455,
+    "pct": 17.14,
+    "wilson95": [
+     14.0,
+     20.9
+    ]
+   },
+   "first445": {
+    "k": 77,
+    "n": 445,
+    "pct": 17.3,
+    "wilson95": [
+     14.1,
+     21.1
+    ]
+   },
+   "last445": {
+    "k": 78,
+    "n": 445,
+    "pct": 17.53,
+    "wilson95": [
+     14.3,
+     21.3
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455,
+    456,
+    457
+   ],
+   "implied_denominators_for_k445": [
+    449,
+    450,
+    451
+   ]
+  },
+  "samp_targeted_only": {
+   "where": "§4 only targeted",
+   "paper_pct": 17.5,
+   "all455": {
+    "k": 80,
+    "n": 455,
+    "pct": 17.58,
+    "wilson95": [
+     14.4,
+     21.3
+    ]
+   },
+   "first445": {
+    "k": 77,
+    "n": 445,
+    "pct": 17.3,
+    "wilson95": [
+     14.1,
+     21.1
+    ]
+   },
+   "last445": {
+    "k": 78,
+    "n": 445,
+    "pct": 17.53,
+    "wilson95": [
+     14.3,
+     21.3
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    456,
+    457,
+    458
+   ],
+   "implied_denominators_for_k445": [
+    440,
+    441
+   ]
+  },
+  "samp_criterion_only": {
+   "where": "§4 only criterion",
+   "paper_pct": 10.8,
+   "all455": {
+    "k": 49,
+    "n": 455,
+    "pct": 10.77,
+    "wilson95": [
+     8.2,
+     14.0
+    ]
+   },
+   "first445": {
+    "k": 49,
+    "n": 445,
+    "pct": 11.01,
+    "wilson95": [
+     8.4,
+     14.3
+    ]
+   },
+   "last445": {
+    "k": 49,
+    "n": 445,
+    "pct": 11.01,
+    "wilson95": [
+     8.4,
+     14.3
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    452,
+    453,
+    454,
+    455
+   ],
+   "implied_denominators_for_k445": [
+    452,
+    453,
+    454,
+    455
+   ]
+  },
+  "samp_random_only": {
+   "where": "§4 only random",
+   "paper_pct": 7.0,
+   "all455": {
+    "k": 32,
+    "n": 455,
+    "pct": 7.03,
+    "wilson95": [
+     5.0,
+     9.8
+    ]
+   },
+   "first445": {
+    "k": 31,
+    "n": 445,
+    "pct": 6.97,
+    "wilson95": [
+     5.0,
+     9.7
+    ]
+   },
+   "last445": {
+    "k": 32,
+    "n": 445,
+    "pct": 7.19,
+    "wilson95": [
+     5.1,
+     10.0
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": true,
+   "implied_denominators_for_k455": [
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460
+   ],
+   "implied_denominators_for_k445": [
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446
+   ]
+  },
+  "fmt_free_any": {
+   "where": "§4 free response",
+   "paper_pct": 46.4,
+   "all455": {
+    "k": 211,
+    "n": 455,
+    "pct": 46.37,
+    "wilson95": [
+     41.8,
+     51.0
+    ]
+   },
+   "first445": {
+    "k": 208,
+    "n": 445,
+    "pct": 46.74,
+    "wilson95": [
+     42.2,
+     51.4
+    ]
+   },
+   "last445": {
+    "k": 209,
+    "n": 445,
+    "pct": 46.97,
+    "wilson95": [
+     42.4,
+     51.6
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": [
+    448
+   ]
+  },
+  "fmt_mc_any": {
+   "where": "§4 multiple choice",
+   "paper_pct": 40.0,
+   "all455": {
+    "k": 182,
+    "n": 455,
+    "pct": 40.0,
+    "wilson95": [
+     35.6,
+     44.6
+    ]
+   },
+   "first445": {
+    "k": 179,
+    "n": 445,
+    "pct": 40.22,
+    "wilson95": [
+     35.8,
+     44.8
+    ]
+   },
+   "last445": {
+    "k": 177,
+    "n": 445,
+    "pct": 39.78,
+    "wilson95": [
+     35.3,
+     44.4
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": [
+    447,
+    448
+   ]
+  },
+  "fmt_short_any": {
+   "where": "§4 short free",
+   "paper_pct": 38.5,
+   "all455": {
+    "k": 175,
+    "n": 455,
+    "pct": 38.46,
+    "wilson95": [
+     34.1,
+     43.0
+    ]
+   },
+   "first445": {
+    "k": 171,
+    "n": 445,
+    "pct": 38.43,
+    "wilson95": [
+     34.0,
+     43.0
+    ]
+   },
+   "last445": {
+    "k": 172,
+    "n": 445,
+    "pct": 38.65,
+    "wilson95": [
+     34.2,
+     43.3
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    454,
+    455
+   ],
+   "implied_denominators_for_k445": [
+    444
+   ]
+  },
+  "fmt_structured_any": {
+   "where": "§4/§5.2 structured",
+   "paper_pct": 21.1,
+   "all455": {
+    "k": 96,
+    "n": 455,
+    "pct": 21.1,
+    "wilson95": [
+     17.6,
+     25.1
+    ]
+   },
+   "first445": {
+    "k": 94,
+    "n": 445,
+    "pct": 21.12,
+    "wilson95": [
+     17.6,
+     25.2
+    ]
+   },
+   "last445": {
+    "k": 95,
+    "n": 445,
+    "pct": 21.35,
+    "wilson95": [
+     17.8,
+     25.4
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": true,
+   "implied_denominators_for_k455": [
+    454,
+    455,
+    456
+   ],
+   "implied_denominators_for_k445": [
+    445,
+    446
+   ]
+  },
+  "fmt_free_only": {
+   "where": "§4 only free",
+   "paper_pct": 17.8,
+   "all455": {
+    "k": 81,
+    "n": 455,
+    "pct": 17.8,
+    "wilson95": [
+     14.6,
+     21.6
+    ]
+   },
+   "first445": {
+    "k": 79,
+    "n": 445,
+    "pct": 17.75,
+    "wilson95": [
+     14.5,
+     21.6
+    ]
+   },
+   "last445": {
+    "k": 80,
+    "n": 445,
+    "pct": 17.98,
+    "wilson95": [
+     14.7,
+     21.8
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": true,
+   "implied_denominators_for_k455": [
+    454,
+    455,
+    456
+   ],
+   "implied_denominators_for_k445": [
+    443,
+    444,
+    445
+   ]
+  },
+  "fmt_mc_only": {
+   "where": "§4 only MC",
+   "paper_pct": 18.5,
+   "all455": {
+    "k": 85,
+    "n": 455,
+    "pct": 18.68,
+    "wilson95": [
+     15.4,
+     22.5
+    ]
+   },
+   "first445": {
+    "k": 82,
+    "n": 445,
+    "pct": 18.43,
+    "wilson95": [
+     15.1,
+     22.3
+    ]
+   },
+   "last445": {
+    "k": 81,
+    "n": 445,
+    "pct": 18.2,
+    "wilson95": [
+     14.9,
+     22.1
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    459,
+    460
+   ],
+   "implied_denominators_for_k445": [
+    443,
+    444
+   ]
+  },
+  "met_exact_any": {
+   "where": "§4 exact match",
+   "paper_pct": 81.3,
+   "all455": {
+    "k": 370,
+    "n": 455,
+    "pct": 81.32,
+    "wilson95": [
+     77.5,
+     84.6
+    ]
+   },
+   "first445": {
+    "k": 360,
+    "n": 445,
+    "pct": 80.9,
+    "wilson95": [
+     77.0,
+     84.3
+    ]
+   },
+   "last445": {
+    "k": 362,
+    "n": 445,
+    "pct": 81.35,
+    "wilson95": [
+     77.5,
+     84.7
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": [
+    443
+   ]
+  },
+  "met_exact_only": {
+   "where": "§4 only exact match",
+   "paper_pct": 40.7,
+   "all455": {
+    "k": 180,
+    "n": 455,
+    "pct": 39.56,
+    "wilson95": [
+     35.2,
+     44.1
+    ]
+   },
+   "first445": {
+    "k": 173,
+    "n": 445,
+    "pct": 38.88,
+    "wilson95": [
+     34.5,
+     43.5
+    ]
+   },
+   "last445": {
+    "k": 176,
+    "n": 445,
+    "pct": 39.55,
+    "wilson95": [
+     35.1,
+     44.2
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    442
+   ],
+   "implied_denominators_for_k445": []
+  },
+  "met_soft_any": {
+   "where": "§4 soft match",
+   "paper_pct": 20.9,
+   "all455": {
+    "k": 95,
+    "n": 455,
+    "pct": 20.88,
+    "wilson95": [
+     17.4,
+     24.8
+    ]
+   },
+   "first445": {
+    "k": 94,
+    "n": 445,
+    "pct": 21.12,
+    "wilson95": [
+     17.6,
+     25.2
+    ]
+   },
+   "last445": {
+    "k": 93,
+    "n": 445,
+    "pct": 20.9,
+    "wilson95": [
+     17.4,
+     24.9
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    454,
+    455
+   ],
+   "implied_denominators_for_k445": [
+    449,
+    450
+   ]
+  },
+  "met_judge_any": {
+   "where": "§4 LLM-as-a-judge",
+   "paper_pct": 17.1,
+   "all455": {
+    "k": 78,
+    "n": 455,
+    "pct": 17.14,
+    "wilson95": [
+     14.0,
+     20.9
+    ]
+   },
+   "first445": {
+    "k": 78,
+    "n": 445,
+    "pct": 17.53,
+    "wilson95": [
+     14.3,
+     21.3
+    ]
+   },
+   "last445": {
+    "k": 77,
+    "n": 445,
+    "pct": 17.3,
+    "wilson95": [
+     14.1,
+     21.1
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455,
+    456,
+    457
+   ],
+   "implied_denominators_for_k445": [
+    455,
+    456,
+    457
+   ]
+  },
+  "met_human_any": {
+   "where": "§4 human ratings",
+   "paper_pct": 13.0,
+   "all455": {
+    "k": 59,
+    "n": 455,
+    "pct": 12.97,
+    "wilson95": [
+     10.2,
+     16.4
+    ]
+   },
+   "first445": {
+    "k": 59,
+    "n": 445,
+    "pct": 13.26,
+    "wilson95": [
+     10.4,
+     16.7
+    ]
+   },
+   "last445": {
+    "k": 59,
+    "n": 445,
+    "pct": 13.26,
+    "wilson95": [
+     10.4,
+     16.7
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    453,
+    454,
+    455
+   ],
+   "implied_denominators_for_k445": [
+    453,
+    454,
+    455
+   ]
+  },
+  "stats(Std|Tests)": {
+   "where": "§4/Fig3 statistics",
+   "paper_pct": 16.0,
+   "all455": {
+    "k": 73,
+    "n": 455,
+    "pct": 16.04,
+    "wilson95": [
+     13.0,
+     19.7
+    ]
+   },
+   "first445": {
+    "k": 72,
+    "n": 445,
+    "pct": 16.18,
+    "wilson95": [
+     13.1,
+     19.9
+    ]
+   },
+   "last445": {
+    "k": 72,
+    "n": 445,
+    "pct": 16.18,
+    "wilson95": [
+     13.1,
+     19.9
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455,
+    456,
+    457
+   ],
+   "implied_denominators_for_k445": [
+    449,
+    450,
+    451
+   ]
+  },
+  "stats(Tests only)": {
+   "where": "(참고) 검정만",
+   "paper_pct": null,
+   "all455": {
+    "k": 13,
+    "n": 455,
+    "pct": 2.86,
+    "wilson95": [
+     1.7,
+     4.8
+    ]
+   },
+   "first445": {
+    "k": 13,
+    "n": 445,
+    "pct": 2.92,
+    "wilson95": [
+     1.7,
+     4.9
+    ]
+   },
+   "last445": {
+    "k": 13,
+    "n": 445,
+    "pct": 2.92,
+    "wilson95": [
+     1.7,
+     4.9
+    ]
+   }
+  },
+  "validity_discussed": {
+   "where": "§4/Fig3 validity",
+   "paper_pct": 53.4,
+   "all455": {
+    "k": 243,
+    "n": 455,
+    "pct": 53.41,
+    "wilson95": [
+     48.8,
+     57.9
+    ]
+   },
+   "first445": {
+    "k": 238,
+    "n": 445,
+    "pct": 53.48,
+    "wilson95": [
+     48.8,
+     58.1
+    ]
+   },
+   "last445": {
+    "k": 236,
+    "n": 445,
+    "pct": 53.03,
+    "wilson95": [
+     48.4,
+     57.6
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    455
+   ],
+   "implied_denominators_for_k445": [
+    446
+   ]
+  },
+  "cmp_other_benchmarks": {
+   "where": "§4 comparison",
+   "paper_pct": 35.2,
+   "all455": {
+    "k": 160,
+    "n": 455,
+    "pct": 35.16,
+    "wilson95": [
+     30.9,
+     39.7
+    ]
+   },
+   "first445": {
+    "k": 157,
+    "n": 445,
+    "pct": 35.28,
+    "wilson95": [
+     31.0,
+     39.8
+    ]
+   },
+   "last445": {
+    "k": 156,
+    "n": 445,
+    "pct": 35.06,
+    "wilson95": [
+     30.8,
+     39.6
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    454,
+    455
+   ],
+   "implied_denominators_for_k445": [
+    446
+   ]
+  },
+  "human_baseline": {
+   "where": "§4 human baseline",
+   "paper_pct": 32.4,
+   "all455": {
+    "k": 146,
+    "n": 455,
+    "pct": 32.09,
+    "wilson95": [
+     28.0,
+     36.5
+    ]
+   },
+   "first445": {
+    "k": 145,
+    "n": 445,
+    "pct": 32.58,
+    "wilson95": [
+     28.4,
+     37.1
+    ]
+   },
+   "last445": {
+    "k": 142,
+    "n": 445,
+    "pct": 31.91,
+    "wilson95": [
+     27.7,
+     36.4
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    450,
+    451
+   ],
+   "implied_denominators_for_k445": [
+    447,
+    448
+   ]
+  },
+  "realism_yes_or_itself": {
+   "where": "§4 realistic setting",
+   "paper_pct": 31.2,
+   "all455": {
+    "k": 144,
+    "n": 455,
+    "pct": 31.65,
+    "wilson95": [
+     27.5,
+     36.1
+    ]
+   },
+   "first445": {
+    "k": 141,
+    "n": 445,
+    "pct": 31.69,
+    "wilson95": [
+     27.5,
+     36.1
+    ]
+   },
+   "last445": {
+    "k": 139,
+    "n": 445,
+    "pct": 31.24,
+    "wilson95": [
+     27.1,
+     35.7
+    ]
+   },
+   "matches_all455": false,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [],
+   "implied_denominators_for_k445": [
+    452
+   ]
+  },
+  "realism_comparison_made_only": {
+   "where": "(참고) 실제 비교를 한 것만",
+   "paper_pct": null,
+   "all455": {
+    "k": 24,
+    "n": 455,
+    "pct": 5.27,
+    "wilson95": [
+     3.6,
+     7.7
+    ]
+   },
+   "first445": {
+    "k": 24,
+    "n": 445,
+    "pct": 5.39,
+    "wilson95": [
+     3.7,
+     7.9
+    ]
+   },
+   "last445": {
+    "k": 24,
+    "n": 445,
+    "pct": 5.39,
+    "wilson95": [
+     3.7,
+     7.9
+    ]
+   }
+  },
+  "realism_benchmark_itself": {
+   "where": "(참고) 벤치마크가 이미 현실적",
+   "paper_pct": null,
+   "all455": {
+    "k": 120,
+    "n": 455,
+    "pct": 26.37,
+    "wilson95": [
+     22.5,
+     30.6
+    ]
+   },
+   "first445": {
+    "k": 117,
+    "n": 445,
+    "pct": 26.29,
+    "wilson95": [
+     22.4,
+     30.6
+    ]
+   },
+   "last445": {
+    "k": 115,
+    "n": 445,
+    "pct": 25.84,
+    "wilson95": [
+     22.0,
+     30.1
+    ]
+   }
+  },
+  "tax_reasoning": {
+   "where": "§4 reasoning",
+   "paper_pct": 18.5,
+   "all455": {
+    "k": 84,
+    "n": 455,
+    "pct": 18.46,
+    "wilson95": [
+     15.2,
+     22.3
+    ]
+   },
+   "first445": {
+    "k": 81,
+    "n": 445,
+    "pct": 18.2,
+    "wilson95": [
+     14.9,
+     22.1
+    ]
+   },
+   "last445": {
+    "k": 81,
+    "n": 445,
+    "pct": 18.2,
+    "wilson95": [
+     14.9,
+     22.1
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    453,
+    454,
+    455
+   ],
+   "implied_denominators_for_k445": []
+  },
+  "tax_alignment": {
+   "where": "§4 alignment",
+   "paper_pct": 8.1,
+   "all455": {
+    "k": 37,
+    "n": 455,
+    "pct": 8.13,
+    "wilson95": [
+     6.0,
+     11.0
+    ]
+   },
+   "first445": {
+    "k": 37,
+    "n": 445,
+    "pct": 8.31,
+    "wilson95": [
+     6.1,
+     11.3
+    ]
+   },
+   "last445": {
+    "k": 37,
+    "n": 445,
+    "pct": 8.31,
+    "wilson95": [
+     6.1,
+     11.3
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    454,
+    455,
+    456,
+    457,
+    458,
+    459
+   ],
+   "implied_denominators_for_k445": [
+    454,
+    455,
+    456,
+    457,
+    458,
+    459
+   ]
+  },
+  "tax_code": {
+   "where": "§4 code generation",
+   "paper_pct": 5.7,
+   "all455": {
+    "k": 26,
+    "n": 455,
+    "pct": 5.71,
+    "wilson95": [
+     3.9,
+     8.2
+    ]
+   },
+   "first445": {
+    "k": 25,
+    "n": 445,
+    "pct": 5.62,
+    "wilson95": [
+     3.8,
+     8.2
+    ]
+   },
+   "last445": {
+    "k": 25,
+    "n": 445,
+    "pct": 5.62,
+    "wilson95": [
+     3.8,
+     8.2
+    ]
+   },
+   "matches_all455": true,
+   "matches_first445": false,
+   "implied_denominators_for_k455": [
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460
+   ],
+   "implied_denominators_for_k445": [
+    440,
+    441,
+    442
+   ]
+  }
+ },
+ "raw_strict": {
+  "results_realism=='Yes'(실제 비교)": {
+   "k": 23,
+   "n": 455,
+   "pct": 5.05,
+   "wilson95": [
+    3.4,
+    7.5
+   ]
+  },
+  "results_realism=='The benchmark is itself realistic'": {
+   "k": 119,
+   "n": 455,
+   "pct": 26.15,
+   "wilson95": [
+    22.3,
+    30.4
+   ]
+  },
+  "results_author_validity=='Yes'(엄격)": {
+   "k": 223,
+   "n": 455,
+   "pct": 49.01,
+   "wilson95": [
+    44.4,
+    53.6
+   ]
+  },
+  "phenomenon_defined=='Yes'": {
+   "k": 348,
+   "n": 455,
+   "pct": 76.48,
+   "wilson95": [
+    72.4,
+    80.1
+   ]
+  }
+ },
+ "defined_x_contested_all455": {
+  "(blank) | Contested": 4,
+  "(blank) | Widely-agreed": 4,
+  "No | Contested": 55,
+  "No | No definition": 27,
+  "No | Widely-agreed": 17,
+  "Yes | Contested": 166,
+  "Yes | Widely-agreed": 182
+ },
+ "best5": {
+  "all455": {
+   "k": 6,
+   "n": 455,
+   "pct": 1.32,
+   "wilson95": [
+    0.6,
+    2.8
+   ]
+  },
+  "first445": {
+   "k": 6,
+   "n": 445,
+   "pct": 1.35,
+   "wilson95": [
+    0.6,
+    2.9
+   ]
+  },
+  "last445": {
+   "k": 6,
+   "n": 445,
+   "pct": 1.35,
+   "wilson95": [
+    0.6,
+    2.9
+   ]
+  }
+ },
+ "n_best_practices_met_first445": {
+  "0": 25,
+  "1": 81,
+  "2": 160,
+  "3": 133,
+  "4": 40,
+  "5": 6
+ },
+ "by_year_first445": {
+  "2020": {
+   "n": 5,
+   "validity_discussed": 3,
+   "pct": 60.0
+  },
+  "2021": {
+   "n": 5,
+   "validity_discussed": 5,
+   "pct": 100.0
+  },
+  "2022": {
+   "n": 34,
+   "validity_discussed": 19,
+   "pct": 55.9
+  },
+  "2023": {
+   "n": 96,
+   "validity_discussed": 56,
+   "pct": 58.3
+  },
+  "2024": {
+   "n": 305,
+   "validity_discussed": 155,
+   "pct": 50.8
+  }
+ },
+ "duplicates": {
+  "bibkeys": 9,
+  "extra_rows": 10,
+  "disagree_by_column": {
+   "phenomenon_defined": 3,
+   "results_author_validity_clean": 7,
+   "metric_statistics_clean": 7,
+   "dataset_sampling_method_clean": 7,
+   "task_source_clean": 9,
+   "phenomenon_contested_clean": 3
+  }
+ },
+ "reviewer_load_clean_codebook": {
+  "n_reviewers": 29,
+  "sorted_loads": [
+   24,
+   20,
+   20,
+   20,
+   20,
+   20,
+   19,
+   19,
+   19,
+   19,
+   18,
+   18,
+   18,
+   18,
+   17,
+   17,
+   17,
+   17,
+   16,
+   14,
+   14,
+   14,
+   13,
+   11,
+   11,
+   8,
+   8,
+   3,
+   2
+  ],
+  "total": 454
+ },
+ "freetext_keyword_hits_first445": {
+  "contamination": {
+   "k": 16,
+   "pct": 3.6,
+   "wilson95": [
+    2.2,
+    5.8
+   ]
+  },
+  "error analysis": {
+   "k": 25,
+   "pct": 5.6,
+   "wilson95": [
+    3.8,
+    8.2
+   ]
+  },
+  "held-out": {
+   "k": 3,
+   "pct": 0.7,
+   "wilson95": [
+    0.2,
+    2.0
+   ]
+  }
+ }
+}

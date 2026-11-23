@@ -1,0 +1,322 @@
+{
+ "table7_arithmetic": [
+  {
+   "step": "not a benchmark",
+   "excluded": 1251,
+   "remaining_paper": 938,
+   "remaining_ours": 938,
+   "ok": true
+  },
+  {
+   "step": "modality",
+   "excluded": 92,
+   "remaining_paper": 846,
+   "remaining_ours": 846,
+   "ok": true
+  },
+  {
+   "step": "not primarily benchmark",
+   "excluded": 324,
+   "remaining_paper": 522,
+   "remaining_ours": 522,
+   "ok": true
+  }
+ ],
+ "r2_label_counts": {
+  "||": 1,
+  "No||": 1248,
+  "Not found||": 2,
+  "Yes|Audio|": 12,
+  "Yes|Image|": 57,
+  "Yes|Language|Benchmark": 450,
+  "Yes|Language|Methodological": 227,
+  "Yes|Language|Technical": 32,
+  "Yes|Multimodal|": 137,
+  "Yes|Other|": 6,
+  "Yes|Video|": 17
+ },
+ "rebuild": {
+  "step1_excluded_ours": 1251,
+  "step2_excluded_if_Video_Audio_Other_Image": 92,
+  "after_step2_Language_Multimodal": 846,
+  "Image_only_excluded": 57,
+  "Language_by_contribution": {
+   "Methodological": 227,
+   "Benchmark": 450,
+   "Technical": 32
+  },
+  "Multimodal": 137,
+  "Language_Benchmark_in_r2": 450,
+  "Language_Benchmark_in_final522": 430,
+  "Multimodal_in_final522": 92,
+  "step3_excluded_Language": 279,
+  "step3_excluded_Multimodal": 45,
+  "step3_excluded_total_ours": 324
+ },
+ "final522_composition": {
+  "Language|Benchmark": 430,
+  "Multimodal|": 92
+ },
+ "final522_by_venue": {
+  "ICML": 28,
+  "ICLR": 38,
+  "NeurIPS": 171,
+  "emnlp-main": 138,
+  "acl-long": 107,
+  "naacl-main": 6,
+  "acl-short": 8,
+  "naacl-long": 23,
+  "naacl-short": 3
+ },
+ "final522_by_year": {
+  "2020": 5,
+  "2021": 7,
+  "2022": 43,
+  "2023": 114,
+  "2024": 353
+ },
+ "r2_by_year": {
+  "2018": 6,
+  "2019": 8,
+  "2020": 60,
+  "2021": 132,
+  "2022": 219,
+  "2023": 464,
+  "2024": 1300
+ },
+ "r2_2018_2019": 14,
+ "r2_by_venue": {
+  "ICML": 171,
+  "ICLR": 263,
+  "NeurIPS": 572,
+  "ACL": 1183
+ },
+ "table8_step1_from_data": {
+  "TI": 14,
+  "FI": 9,
+  "TE": 22,
+  "FE": 5,
+  "paper": {
+   "TI": 14,
+   "FI": 9,
+   "TE": 22,
+   "FE": 5
+  }
+ },
+ "table8_overall": {
+  "TI": 8,
+  "FI": 2,
+  "TE": 39,
+  "FE": 1,
+  "n": 50,
+  "precision": 0.8,
+  "precision_wilson95": [
+   49.0,
+   94.3
+  ],
+  "recall": 0.889,
+  "recall_wilson95": [
+   56.5,
+   98.0
+  ],
+  "f1": 0.842,
+  "paper_precision": 0.8,
+  "paper_recall": 0.89,
+  "paper_f1": 0.84
+ },
+ "extrapolation": {
+  "human_eligible_in_sample": 9,
+  "sample": 50,
+  "eligible_rate_pct": 18.0,
+  "eligible_rate_wilson95": [
+   9.8,
+   30.8
+  ],
+  "expected_eligible_in_2189": 394,
+  "expected_eligible_wilson95": [
+   215,
+   674
+  ],
+  "llm_selected": 522,
+  "final_included": 445,
+  "expected_missed_if_recall_0.889": 56,
+  "missed_range_recall_wilson95": [
+   9,
+   343
+  ],
+  "note": "표본이 50편이고 사람 기준 적격이 9편이라 재현율 8/9의 구간이 매우 넓다. 최종 445 대비 놓친 편수는 외삽일 뿐이다."
+ },
+ "table8_steps_note": {
+  "step2_compared": 14,
+  "step3_compared": 9,
+  "LLM_kept_after_step1": 23,
+  "human_kept_after_step1": 19,
+  "note": "2단계 비교 14편은 1단계에서 사람과 LLM이 모두 통과시킨 편수(TI=14)와 같고, 3단계 9편은 2단계 통과(13+0)와도 14-5 등 어떤 조합과도 맞지 않는다. 논문이 비교 대상을 정의하지 않았다."
+ },
+ "manual_stage": {
+  "in": 522,
+  "included": 445,
+  "rate_pct": 85.2,
+  "wilson95": [
+   81.9,
+   88.0
+  ],
+  "paper_claim": "정밀도 약 85%"
+ },
+ "keyword_recount_by_venue_year": [
+  {
+   "venue": "ACL",
+   "year": "2020",
+   "records_in_repo_files": 1658,
+   "keyword_hits_ours": 46,
+   "in_2189_list": 46
+  },
+  {
+   "venue": "ACL",
+   "year": "2021",
+   "records_in_repo_files": 2250,
+   "keyword_hits_ours": 102,
+   "in_2189_list": 102
+  },
+  {
+   "venue": "ACL",
+   "year": "2022",
+   "records_in_repo_files": 2253,
+   "keyword_hits_ours": 154,
+   "in_2189_list": 154
+  },
+  {
+   "venue": "ACL",
+   "year": "2023",
+   "records_in_repo_files": 2431,
+   "keyword_hits_ours": 266,
+   "in_2189_list": 267
+  },
+  {
+   "venue": "ACL",
+   "year": "2024",
+   "records_in_repo_files": 3131,
+   "keyword_hits_ours": 614,
+   "in_2189_list": 614
+  },
+  {
+   "venue": "ICLR",
+   "year": "2018",
+   "records_in_repo_files": 336,
+   "keyword_hits_ours": 3,
+   "in_2189_list": 3
+  },
+  {
+   "venue": "ICLR",
+   "year": "2019",
+   "records_in_repo_files": 501,
+   "keyword_hits_ours": 4,
+   "in_2189_list": 4
+  },
+  {
+   "venue": "ICLR",
+   "year": "2020",
+   "records_in_repo_files": 687,
+   "keyword_hits_ours": 6,
+   "in_2189_list": 6
+  },
+  {
+   "venue": "ICLR",
+   "year": "2021",
+   "records_in_repo_files": 860,
+   "keyword_hits_ours": 15,
+   "in_2189_list": 15
+  },
+  {
+   "venue": "ICLR",
+   "year": "2022",
+   "records_in_repo_files": 1095,
+   "keyword_hits_ours": 22,
+   "in_2189_list": 22
+  },
+  {
+   "venue": "ICLR",
+   "year": "2023",
+   "records_in_repo_files": 1584,
+   "keyword_hits_ours": 49,
+   "in_2189_list": 49
+  },
+  {
+   "venue": "ICLR",
+   "year": "2024",
+   "records_in_repo_files": 2296,
+   "keyword_hits_ours": 164,
+   "in_2189_list": 164
+  },
+  {
+   "venue": "NeurIPS",
+   "year": "2017",
+   "records_in_repo_files": 679,
+   "keyword_hits_ours": 1,
+   "in_2189_list": 0
+  },
+  {
+   "venue": "NeurIPS",
+   "year": "2018",
+   "records_in_repo_files": 1009,
+   "keyword_hits_ours": 2,
+   "in_2189_list": 2
+  },
+  {
+   "venue": "NeurIPS",
+   "year": "2019",
+   "records_in_repo_files": 1428,
+   "keyword_hits_ours": 4,
+   "in_2189_list": 4
+  },
+  {
+   "venue": "NeurIPS",
+   "year": "2020",
+   "records_in_repo_files": 1902,
+   "keyword_hits_ours": 4,
+   "in_2189_list": 4
+  },
+  {
+   "venue": "NeurIPS",
+   "year": "2021",
+   "records_in_repo_files": 2334,
+   "keyword_hits_ours": 12,
+   "in_2189_list": 12
+  },
+  {
+   "venue": "NeurIPS",
+   "year": "2022",
+   "records_in_repo_files": 2904,
+   "keyword_hits_ours": 36,
+   "in_2189_list": 36
+  },
+  {
+   "venue": "NeurIPS",
+   "year": "2023",
+   "records_in_repo_files": 3585,
+   "keyword_hits_ours": 122,
+   "in_2189_list": 122
+  },
+  {
+   "venue": "NeurIPS",
+   "year": "2024",
+   "records_in_repo_files": 4538,
+   "keyword_hits_ours": 392,
+   "in_2189_list": 392
+  }
+ ],
+ "keyword_recount_totals": {
+  "ours": {
+   "ACL": 1182,
+   "ICLR": 263,
+   "NeurIPS": 573
+  },
+  "paper_list_2189": {
+   "ACL": 1183,
+   "ICLR": 263,
+   "NeurIPS": 572,
+   "ICML": 171
+  },
+  "records_total_repo_files_without_ICML": 37461
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "test_size": {
+  "n_parsed": 278,
+  "n_total": 445,
+  "n_blank": 35,
+  "median": 2381.5,
+  "q25": 767.0,
+  "q75": 11687.75,
+  "share_le_200": 0.072,
+  "share_le_500": 0.187,
+  "share_le_1000": 0.349,
+  "halfwidth_pp_at_half_for_n": {
+   "100": 9.8,
+   "200": 6.9,
+   "500": 4.4,
+   "1000": 3.1,
+   "2000": 2.2
+  },
+  "note": "숫자만 적힌 응답만 파싱(서술형·하위 과제별 크기 제외). 표본 오차는 정확도 0.5 근처의 단일 점수의 95% 반폭(%p)."
+ },
+ "validity_by_year": {
+  "2020": {
+   "n": 5,
+   "yes": 3,
+   "pct": 60.0
+  },
+  "2021": {
+   "n": 5,
+   "yes": 5,
+   "pct": 100.0
+  },
+  "2022": {
+   "n": 34,
+   "yes": 19,
+   "pct": 55.9
+  },
+  "2023": {
+   "n": 96,
+   "yes": 56,
+   "pct": 58.3
+  },
+  "2024": {
+   "n": 305,
+   "yes": 155,
+   "pct": 50.8
+  }
+ },
+ "validity_trend_2022_2024": {
+  "table_yes_no": [
+   [
+    19,
+    15
+   ],
+   [
+    56,
+    40
+   ],
+   [
+    155,
+    150
+   ]
+  ],
+  "chi2": 1.788,
+  "dof": 2,
+  "p": 0.409,
+  "cochran_armitage_z": -1.119,
+  "p_trend": 0.263
+ },
+ "composite_measured_separately": {
+  "n_composite": 275,
+  "counts": {
+   "Yes": 252,
+   "No": 22,
+   "(blank)": 1
+  },
+  "yes_pct": 91.6
+ },
+ "codebook_duplicates": {
+  "n_bibkeys": 9,
+  "overlap_with_merged_annotations": 0,
+  "agree_count_of_9": {
+   "phenomenon_defined": 6,
+   "phenomenon_contested_clean": 6,
+   "definition_integrity": 5,
+   "results_author_validity_clean": 2,
+   "task_source_clean": 0,
+   "dataset_sampling_method_clean": 2,
+   "metric_statistics_clean": 2,
+   "task_ecology_clean": 2
+  }
+ }
+}
