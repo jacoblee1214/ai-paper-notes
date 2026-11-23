@@ -1,0 +1,641 @@
+{
+ "world": {
+  "M": 26,
+  "a_sorted": [
+   0.0147,
+   0.0581,
+   0.0596,
+   0.1163,
+   0.1207,
+   0.1268,
+   0.134,
+   0.1484,
+   0.1501,
+   0.1996,
+   0.2266,
+   0.2537,
+   0.2548,
+   0.3178,
+   0.3403,
+   0.3452,
+   0.3547,
+   0.4757,
+   0.4819,
+   0.5143,
+   0.6925,
+   0.9748,
+   1.0317,
+   1.168,
+   1.6408,
+   1.7796
+  ],
+  "note": "X = a_m (1+lift) exp(s_m Z - s_m^2/2), 로그정규"
+ },
+ "E0": {
+  "tau": 0.3,
+  "N": 5,
+  "F_true": 0.3899,
+  "run_score_profile": {
+   "mean_est": 0.3897,
+   "var_emp": 0.000934,
+   "var_formula": 0.00094
+  },
+  "avg_score_profile": {
+   "mean_est": 0.4445,
+   "bias": 0.0546,
+   "var_emp": 0.002594,
+   "var_ratio_vs_run_score": 2.778
+  },
+  "note": "실행 점수 분포는 불편(식 (1)), 분산은 (1/(M^2 N)) sum F_m(1-F_m); 평균 점수 분포는 편향"
+ },
+ "E1": {
+  "truth": {
+   "mean": 0.4608,
+   "median": 0.2863,
+   "iqm": 0.2383,
+   "optgap": 0.6554
+  },
+  "by_N": {
+   "3": {
+    "mean": {
+     "mean": 0.46,
+     "bias": -0.0008,
+     "sd": 0.0635,
+     "rel_sd": 0.1377
+    },
+    "median": {
+     "mean": 0.2505,
+     "bias": -0.0358,
+     "sd": 0.0368,
+     "rel_sd": 0.1285
+    },
+    "iqm": {
+     "mean": 0.2416,
+     "bias": 0.0034,
+     "sd": 0.0236,
+     "rel_sd": 0.099
+    },
+    "optgap": {
+     "mean": 0.6559,
+     "bias": 0.0005,
+     "sd": 0.0217,
+     "rel_sd": 0.0332
+    }
+   },
+   "5": {
+    "mean": {
+     "mean": 0.459,
+     "bias": -0.0018,
+     "sd": 0.05,
+     "rel_sd": 0.1085
+    },
+    "median": {
+     "mean": 0.259,
+     "bias": -0.0273,
+     "sd": 0.034,
+     "rel_sd": 0.1186
+    },
+    "iqm": {
+     "mean": 0.2402,
+     "bias": 0.002,
+     "sd": 0.0182,
+     "rel_sd": 0.0763
+    },
+    "optgap": {
+     "mean": 0.6561,
+     "bias": 0.0007,
+     "sd": 0.017,
+     "rel_sd": 0.0259
+    }
+   },
+   "10": {
+    "mean": {
+     "mean": 0.4606,
+     "bias": -0.0002,
+     "sd": 0.0345,
+     "rel_sd": 0.0748
+    },
+    "median": {
+     "mean": 0.2689,
+     "bias": -0.0174,
+     "sd": 0.0297,
+     "rel_sd": 0.1038
+    },
+    "iqm": {
+     "mean": 0.2391,
+     "bias": 0.0009,
+     "sd": 0.0134,
+     "rel_sd": 0.0561
+    },
+    "optgap": {
+     "mean": 0.6554,
+     "bias": -0.0,
+     "sd": 0.0123,
+     "rel_sd": 0.0188
+    }
+   },
+   "25": {
+    "mean": {
+     "mean": 0.4613,
+     "bias": 0.0005,
+     "sd": 0.0221,
+     "rel_sd": 0.0479
+    },
+    "median": {
+     "mean": 0.2768,
+     "bias": -0.0095,
+     "sd": 0.0235,
+     "rel_sd": 0.0821
+    },
+    "iqm": {
+     "mean": 0.2394,
+     "bias": 0.0011,
+     "sd": 0.0082,
+     "rel_sd": 0.0346
+    },
+    "optgap": {
+     "mean": 0.6551,
+     "bias": -0.0003,
+     "sd": 0.0078,
+     "rel_sd": 0.0119
+    }
+   },
+   "100": {
+    "mean": {
+     "mean": 0.461,
+     "bias": 0.0002,
+     "sd": 0.0108,
+     "rel_sd": 0.0233
+    },
+    "median": {
+     "mean": 0.285,
+     "bias": -0.0013,
+     "sd": 0.0155,
+     "rel_sd": 0.054
+    },
+    "iqm": {
+     "mean": 0.2387,
+     "bias": 0.0004,
+     "sd": 0.004,
+     "rel_sd": 0.0167
+    },
+    "optgap": {
+     "mean": 0.6553,
+     "bias": -0.0001,
+     "sd": 0.0038,
+     "rel_sd": 0.0057
+    }
+   }
+  }
+ },
+ "E2": {
+  "3": {
+   "median": {
+    "lift0_ci95": [
+     -0.3357,
+     0.5121
+    ],
+    "P(|lift|>10%|same algo)": 0.6268,
+    "P(point est ranks 10%-better algo first)": 0.6717,
+    "lift10_ci95": [
+     -0.269,
+     0.678
+    ]
+   },
+   "iqm": {
+    "lift0_ci95": [
+     -0.2368,
+     0.3165
+    ],
+    "P(|lift|>10%|same algo)": 0.4698,
+    "P(point est ranks 10%-better algo first)": 0.748,
+    "lift10_ci95": [
+     -0.1638,
+     0.4272
+    ]
+   },
+   "mean": {
+    "lift0_ci95": [
+     -0.3004,
+     0.4318
+    ],
+    "P(|lift|>10%|same algo)": 0.5777,
+    "P(point est ranks 10%-better algo first)": 0.696,
+    "lift10_ci95": [
+     -0.2335,
+     0.5502
+    ]
+   }
+  },
+  "5": {
+   "median": {
+    "lift0_ci95": [
+     -0.3022,
+     0.4476
+    ],
+    "P(|lift|>10%|same algo)": 0.5825,
+    "P(point est ranks 10%-better algo first)": 0.7065,
+    "lift10_ci95": [
+     -0.2372,
+     0.5893
+    ]
+   },
+   "iqm": {
+    "lift0_ci95": [
+     -0.1887,
+     0.2461
+    ],
+    "P(|lift|>10%|same algo)": 0.376,
+    "P(point est ranks 10%-better algo first)": 0.8077,
+    "lift10_ci95": [
+     -0.1116,
+     0.3643
+    ]
+   },
+   "mean": {
+    "lift0_ci95": [
+     -0.2505,
+     0.3303
+    ],
+    "P(|lift|>10%|same algo)": 0.4998,
+    "P(point est ranks 10%-better algo first)": 0.7565,
+    "lift10_ci95": [
+     -0.1655,
+     0.4698
+    ]
+   }
+  },
+  "10": {
+   "median": {
+    "lift0_ci95": [
+     -0.2613,
+     0.3441
+    ],
+    "P(|lift|>10%|same algo)": 0.5292,
+    "P(point est ranks 10%-better algo first)": 0.73,
+    "lift10_ci95": [
+     -0.1868,
+     0.4836
+    ]
+   },
+   "iqm": {
+    "lift0_ci95": [
+     -0.1406,
+     0.1653
+    ],
+    "P(|lift|>10%|same algo)": 0.1918,
+    "P(point est ranks 10%-better algo first)": 0.888,
+    "lift10_ci95": [
+     -0.05,
+     0.275
+    ]
+   },
+   "mean": {
+    "lift0_ci95": [
+     -0.1887,
+     0.2381
+    ],
+    "P(|lift|>10%|same algo)": 0.3478,
+    "P(point est ranks 10%-better algo first)": 0.8177,
+    "lift10_ci95": [
+     -0.1044,
+     0.3593
+    ]
+   }
+  },
+  "25": {
+   "median": {
+    "lift0_ci95": [
+     -0.2071,
+     0.2754
+    ],
+    "P(|lift|>10%|same algo)": 0.4012,
+    "P(point est ranks 10%-better algo first)": 0.787,
+    "lift10_ci95": [
+     -0.133,
+     0.3768
+    ]
+   },
+   "iqm": {
+    "lift0_ci95": [
+     -0.0896,
+     0.1012
+    ],
+    "P(|lift|>10%|same algo)": 0.04,
+    "P(point est ranks 10%-better algo first)": 0.9748,
+    "lift10_ci95": [
+     -0.0001,
+     0.2101
+    ]
+   },
+   "mean": {
+    "lift0_ci95": [
+     -0.1234,
+     0.1363
+    ],
+    "P(|lift|>10%|same algo)": 0.134,
+    "P(point est ranks 10%-better algo first)": 0.9245,
+    "lift10_ci95": [
+     -0.0359,
+     0.2557
+    ]
+   }
+  },
+  "100": {
+   "median": {
+    "lift0_ci95": [
+     -0.1413,
+     0.1603
+    ],
+    "P(|lift|>10%|same algo)": 0.1895,
+    "P(point est ranks 10%-better algo first)": 0.886,
+    "lift10_ci95": [
+     -0.0575,
+     0.2772
+    ]
+   },
+   "iqm": {
+    "lift0_ci95": [
+     -0.0474,
+     0.0475
+    ],
+    "P(|lift|>10%|same algo)": 0.0,
+    "P(point est ranks 10%-better algo first)": 0.9998,
+    "lift10_ci95": [
+     0.0487,
+     0.1535
+    ]
+   },
+   "mean": {
+    "lift0_ci95": [
+     -0.0609,
+     0.0672
+    ],
+    "P(|lift|>10%|same algo)": 0.0027,
+    "P(point est ranks 10%-better algo first)": 0.9972,
+    "lift10_ci95": [
+     0.03,
+     0.1741
+    ]
+   }
+  }
+ },
+ "E3": {
+  "experiments": 300,
+  "bootstrap_reps": 1000,
+  "se_of_coverage_at_0.95": 0.0126,
+  "by_N": {
+   "3": {
+    "mean": {
+     "coverage": 0.8233,
+     "mean_width": 0.1812,
+     "rel_width": 0.3932
+    },
+    "median": {
+     "coverage": 0.6067,
+     "mean_width": 0.1113,
+     "rel_width": 0.3888
+    },
+    "iqm": {
+     "coverage": 0.89,
+     "mean_width": 0.0763,
+     "rel_width": 0.3201
+    },
+    "optgap": {
+     "coverage": 0.9233,
+     "mean_width": 0.0696,
+     "rel_width": 0.1061
+    }
+   },
+   "5": {
+    "mean": {
+     "coverage": 0.8933,
+     "mean_width": 0.1643,
+     "rel_width": 0.3566
+    },
+    "median": {
+     "coverage": 0.7167,
+     "mean_width": 0.1098,
+     "rel_width": 0.3834
+    },
+    "iqm": {
+     "coverage": 0.9333,
+     "mean_width": 0.0649,
+     "rel_width": 0.2722
+    },
+    "optgap": {
+     "coverage": 0.9267,
+     "mean_width": 0.0602,
+     "rel_width": 0.0918
+    }
+   },
+   "10": {
+    "mean": {
+     "coverage": 0.9167,
+     "mean_width": 0.1198,
+     "rel_width": 0.2599
+    },
+    "median": {
+     "coverage": 0.85,
+     "mean_width": 0.0978,
+     "rel_width": 0.3414
+    },
+    "iqm": {
+     "coverage": 0.9133,
+     "mean_width": 0.0483,
+     "rel_width": 0.2025
+    },
+    "optgap": {
+     "coverage": 0.93,
+     "mean_width": 0.0452,
+     "rel_width": 0.069
+    }
+   },
+   "25": {
+    "mean": {
+     "coverage": 0.9167,
+     "mean_width": 0.0829,
+     "rel_width": 0.1798
+    },
+    "median": {
+     "coverage": 0.8733,
+     "mean_width": 0.0812,
+     "rel_width": 0.2837
+    },
+    "iqm": {
+     "coverage": 0.9133,
+     "mean_width": 0.0312,
+     "rel_width": 0.131
+    },
+    "optgap": {
+     "coverage": 0.91,
+     "mean_width": 0.0294,
+     "rel_width": 0.0449
+    }
+   }
+  }
+ },
+ "E4": {
+  "coverage_mean_success": {
+   "M=3,N=3": {
+    "coverage": 0.777,
+    "mean_width": 0.4406,
+    "true": 0.5568
+   },
+   "M=3,N=5": {
+    "coverage": 0.894,
+    "mean_width": 0.3938,
+    "true": 0.5568
+   },
+   "M=3,N=10": {
+    "coverage": 0.918,
+    "mean_width": 0.3051,
+    "true": 0.5568
+   },
+   "M=3,N=20": {
+    "coverage": 0.942,
+    "mean_width": 0.2231,
+    "true": 0.5568
+   },
+   "M=5,N=3": {
+    "coverage": 0.827,
+    "mean_width": 0.3466,
+    "true": 0.5628
+   },
+   "M=5,N=5": {
+    "coverage": 0.891,
+    "mean_width": 0.3034,
+    "true": 0.5628
+   },
+   "M=5,N=10": {
+    "coverage": 0.939,
+    "mean_width": 0.2305,
+    "true": 0.5628
+   },
+   "M=5,N=20": {
+    "coverage": 0.949,
+    "mean_width": 0.1688,
+    "true": 0.5628
+   },
+   "M=8,N=3": {
+    "coverage": 0.86,
+    "mean_width": 0.2974,
+    "true": 0.5441
+   },
+   "M=8,N=5": {
+    "coverage": 0.909,
+    "mean_width": 0.2543,
+    "true": 0.5441
+   },
+   "M=8,N=10": {
+    "coverage": 0.938,
+    "mean_width": 0.1927,
+    "true": 0.5441
+   },
+   "M=8,N=20": {
+    "coverage": 0.95,
+    "mean_width": 0.1401,
+    "true": 0.5441
+   },
+   "M=10,N=3": {
+    "coverage": 0.851,
+    "mean_width": 0.2308,
+    "true": 0.4047
+   },
+   "M=10,N=5": {
+    "coverage": 0.897,
+    "mean_width": 0.1981,
+    "true": 0.4047
+   },
+   "M=10,N=10": {
+    "coverage": 0.927,
+    "mean_width": 0.1504,
+    "true": 0.4047
+   },
+   "M=10,N=20": {
+    "coverage": 0.95,
+    "mean_width": 0.1095,
+    "true": 0.4047
+   },
+   "M=20,N=3": {
+    "coverage": 0.863,
+    "mean_width": 0.1808,
+    "true": 0.4834
+   },
+   "M=20,N=5": {
+    "coverage": 0.919,
+    "mean_width": 0.1548,
+    "true": 0.4834
+   },
+   "M=20,N=10": {
+    "coverage": 0.939,
+    "mean_width": 0.1163,
+    "true": 0.4834
+   },
+   "M=20,N=20": {
+    "coverage": 0.956,
+    "mean_width": 0.0846,
+    "true": 0.4834
+   }
+  },
+  "iqm_of_binary_by_success_rate": {
+   "0.1": 0.0,
+   "0.2": 0.0,
+   "0.25": 0.0,
+   "0.3": 0.1,
+   "0.5": 0.5,
+   "0.7": 0.9,
+   "0.75": 1.0,
+   "0.8": 1.0,
+   "0.9": 1.0
+  },
+  "note": "이진 점수의 IQM은 성공률 r에서 clip((r-0.25)/0.5, 0, 1)"
+ },
+ "E5": {
+  "by_N": {
+   "3": {
+    "same_algo_mean": 0.5018,
+    "same_algo_sd": 0.0507,
+    "lift10_mean": 0.5415,
+    "lift10_sd": 0.0495,
+    "lift10_P(CI lower > 0.5)": 0.1667
+   },
+   "5": {
+    "same_algo_mean": 0.5007,
+    "same_algo_sd": 0.0385,
+    "lift10_mean": 0.5422,
+    "lift10_sd": 0.0374,
+    "lift10_P(CI lower > 0.5)": 0.2233
+   },
+   "10": {
+    "same_algo_mean": 0.4988,
+    "same_algo_sd": 0.0263,
+    "lift10_mean": 0.5421,
+    "lift10_sd": 0.0259,
+    "lift10_P(CI lower > 0.5)": 0.37
+   },
+   "25": {
+    "same_algo_mean": 0.4996,
+    "same_algo_sd": 0.016,
+    "lift10_mean": 0.5417,
+    "lift10_sd": 0.0159,
+    "lift10_P(CI lower > 0.5)": 0.7667
+   }
+  },
+  "lift10_large_N": 0.5427,
+  "lift10_analytic": 0.5418
+ },
+ "narrowness": {
+  "normal_approx_coverage": {
+   "3": 0.8905,
+   "5": 0.9204,
+   "10": 0.937,
+   "20": 0.9439,
+   "25": 0.9452
+  },
+  "pooled_median_vs_median_of_task_means": {
+   "pooled_median_of_all_scores": 0.2131,
+   "median_of_E[X_m]": 0.2863
+  }
+ }
+}
