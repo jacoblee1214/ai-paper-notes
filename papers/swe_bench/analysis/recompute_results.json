@@ -1,0 +1,1378 @@
+{
+ "dataset_stats": {
+  "n": 2294,
+  "n_repos": 12,
+  "words": {
+   "ours_mean": 194.89,
+   "ours_max": 4477,
+   "paper_mean": 195.1,
+   "paper_max": 4477
+  },
+  "lines": {
+   "ours_mean": 37.71,
+   "ours_max": 6400,
+   "paper_mean": 32.8,
+   "paper_max": 5888
+  },
+  "files": {
+   "ours_mean": 1.66,
+   "ours_max": 31,
+   "paper_mean": 1.7,
+   "paper_max": 31
+  },
+  "funcs": {
+   "ours_mean": 2.78,
+   "ours_max": 76,
+   "paper_mean": 3.0,
+   "paper_max": 36
+  },
+  "f2p": {
+   "ours_mean": 9.03,
+   "ours_max": 1630,
+   "paper_mean": 9.1,
+   "paper_max": 1633
+  },
+  "tests_total": {
+   "ours_mean": 132.5,
+   "ours_max": 9459,
+   "paper_mean": 120.8,
+   "paper_max": 9459
+  },
+  "p2p_median": {
+   "ours": 52.0,
+   "paper": 51
+  },
+  "f2p_ge2_share": {
+   "ours": 0.43,
+   "paper": 0.4
+  },
+  "p2p_zero_instances": 67,
+  "image_share": {
+   "ours": 0.051,
+   "paper": 0.02,
+   "matplotlib": 0.255,
+   "paper_matplotlib": 0.32,
+   "seaborn": 0.455,
+   "paper_seaborn": 0.1
+  },
+  "table10_repo_counts_match": true,
+  "table11_ours_vs_paper": [
+   {
+    "repo": "astropy/astropy",
+    "files": [
+     1.49,
+     1.5
+    ],
+    "lines": [
+     38.5,
+     36.0
+    ],
+    "f2p": [
+     21.7,
+     21.7
+    ],
+    "p2p": [
+     191.0,
+     191.0
+    ]
+   },
+   {
+    "repo": "django/django",
+    "files": [
+     1.54,
+     1.5
+    ],
+    "lines": [
+     19.0,
+     18.5
+    ],
+    "f2p": [
+     8.6,
+     8.8
+    ],
+    "p2p": [
+     85.8,
+     85.9
+    ]
+   },
+   {
+    "repo": "pallets/flask",
+    "files": [
+     1.64,
+     1.6
+    ],
+    "lines": [
+     39.3,
+     35.4
+    ],
+    "f2p": [
+     1.4,
+     1.4
+    ],
+    "p2p": [
+     32.5,
+     32.5
+    ]
+   },
+   {
+    "repo": "matplotlib/matplotlib",
+    "files": [
+     1.53,
+     1.5
+    ],
+    "lines": [
+     65.2,
+     58.9
+    ],
+    "f2p": [
+     2.3,
+     2.4
+    ],
+    "p2p": [
+     242.3,
+     242.4
+    ]
+   },
+   {
+    "repo": "pylint-dev/pylint",
+    "files": [
+     1.82,
+     1.8
+    ],
+    "lines": [
+     39.2,
+     36.0
+    ],
+    "f2p": [
+     6.8,
+     6.8
+    ],
+    "p2p": [
+     46.0,
+     47.0
+    ]
+   },
+   {
+    "repo": "pytest-dev/pytest",
+    "files": [
+     1.41,
+     1.4
+    ],
+    "lines": [
+     26.6,
+     24.5
+    ],
+    "f2p": [
+     4.1,
+     4.1
+    ],
+    "p2p": [
+     60.6,
+     60.7
+    ]
+   },
+   {
+    "repo": "psf/requests",
+    "files": [
+     1.64,
+     1.64
+    ],
+    "lines": [
+     28.2,
+     25.5
+    ],
+    "f2p": [
+     7.0,
+     7.6
+    ],
+    "p2p": [
+     90.8,
+     87.1
+    ]
+   },
+   {
+    "repo": "scikit-learn/scikit-learn",
+    "files": [
+     1.68,
+     1.68
+    ],
+    "lines": [
+     48.0,
+     44.0
+    ],
+    "f2p": [
+     7.5,
+     7.5
+    ],
+    "p2p": [
+     150.7,
+     150.7
+    ]
+   },
+   {
+    "repo": "mwaskom/seaborn",
+    "files": [
+     1.77,
+     1.77
+    ],
+    "lines": [
+     35.1,
+     30.1
+    ],
+    "f2p": [
+     13.0,
+     12.9
+    ],
+    "p2p": [
+     89.2,
+     86.8
+    ]
+   },
+   {
+    "repo": "sphinx-doc/sphinx",
+    "files": [
+     1.51,
+     1.51
+    ],
+    "lines": [
+     32.3,
+     30.6
+    ],
+    "f2p": [
+     2.3,
+     2.3
+    ],
+    "p2p": [
+     45.2,
+     45.1
+    ]
+   },
+   {
+    "repo": "sympy/sympy",
+    "files": [
+     1.9,
+     1.9
+    ],
+    "lines": [
+     38.6,
+     36.3
+    ],
+    "f2p": [
+     2.2,
+     2.2
+    ],
+    "p2p": [
+     74.5,
+     74.5
+    ]
+   },
+   {
+    "repo": "pydata/xarray",
+    "files": [
+     2.45,
+     2.45
+    ],
+    "lines": [
+     135.7,
+     124.8
+    ],
+    "f2p": [
+     58.5,
+     58.5
+    ],
+    "p2p": [
+     543.1,
+     297.5
+    ]
+   }
+  ],
+  "table21_totals": {
+   "ours": {
+    "2023": 260,
+    "2022": 418,
+    "2021": 395,
+    "2020": 438,
+    "2019": 456,
+    "2018": 171,
+    "<2018": 156
+   },
+   "paper": {
+    "2023": 244,
+    "2022": 395,
+    "2021": 383,
+    "2020": 427,
+    "2019": 437,
+    "2018": 165,
+    "<2018": 89
+   },
+   "paper_sum": 2140,
+   "ours_sum": 2294
+  },
+  "lite": {
+   "n": 300,
+   "subset_of_full": true,
+   "repos": 12,
+   "per_repo": {
+    "django/django": 114,
+    "sympy/sympy": 77,
+    "matplotlib/matplotlib": 23,
+    "scikit-learn/scikit-learn": 23,
+    "pytest-dev/pytest": 17,
+    "sphinx-doc/sphinx": 16,
+    "astropy/astropy": 6,
+    "psf/requests": 6,
+    "pylint-dev/pylint": 6,
+    "pydata/xarray": 5,
+    "mwaskom/seaborn": 4,
+    "pallets/flask": 3
+   },
+   "gold_files_max": 1,
+   "gold_hunks_max": 3,
+   "words_min": 41,
+   "image_in_issue": 1
+  },
+  "verified": {
+   "n": 500,
+   "subset_of_full": true,
+   "repos": 12,
+   "per_repo": {
+    "django/django": 231,
+    "sympy/sympy": 75,
+    "sphinx-doc/sphinx": 44,
+    "matplotlib/matplotlib": 34,
+    "scikit-learn/scikit-learn": 32,
+    "astropy/astropy": 22,
+    "pydata/xarray": 22,
+    "pytest-dev/pytest": 19,
+    "pylint-dev/pylint": 10,
+    "psf/requests": 8,
+    "mwaskom/seaborn": 2,
+    "pallets/flask": 1
+   },
+   "in_lite": 93
+  }
+ },
+ "table5": [
+  {
+   "model": "Claude 2",
+   "test": {
+    "resolved": 45,
+    "n": 2294,
+    "pct": 1.96,
+    "wilson95": [
+     1.47,
+     2.61
+    ],
+    "applied_file": 686,
+    "applied_pct_file": 29.9
+   },
+   "lite": {
+    "resolved": 9,
+    "n": 300,
+    "pct": 3.0,
+    "wilson95": [
+     1.59,
+     5.6
+    ],
+    "applied_file": 99,
+    "applied_pct_file": 33.0
+   },
+   "verified": {
+    "resolved": 22,
+    "n": 500,
+    "pct": 4.4,
+    "wilson95": [
+     2.92,
+     6.57
+    ],
+    "applied_file": 153,
+    "applied_pct_file": 30.6
+   },
+   "paper_table5": {
+    "full_resolved": 1.97,
+    "full_apply": 43.07,
+    "lite_resolved": 3.0,
+    "lite_apply": 33.0
+   },
+   "match_full_resolved": false,
+   "match_lite_resolved": true,
+   "table14_applies_minus_fixed": 686,
+   "table14_identity": true
+  },
+  {
+   "model": "ChatGPT-3.5",
+   "test": {
+    "resolved": 4,
+    "n": 2294,
+    "pct": 0.17,
+    "wilson95": [
+     0.07,
+     0.45
+    ],
+    "applied_file": 241,
+    "applied_pct_file": 10.51
+   },
+   "lite": {
+    "resolved": 1,
+    "n": 300,
+    "pct": 0.33,
+    "wilson95": [
+     0.06,
+     1.86
+    ],
+    "applied_file": 30,
+    "applied_pct_file": 10.0
+   },
+   "verified": {
+    "resolved": 2,
+    "n": 500,
+    "pct": 0.4,
+    "wilson95": [
+     0.11,
+     1.45
+    ],
+    "applied_file": 60,
+    "applied_pct_file": 12.0
+   },
+   "paper_table5": {
+    "full_resolved": 0.17,
+    "full_apply": 26.33,
+    "lite_resolved": 0.33,
+    "lite_apply": 10.0
+   },
+   "match_full_resolved": true,
+   "match_lite_resolved": true,
+   "table14_applies_minus_fixed": 241,
+   "table14_identity": true
+  },
+  {
+   "model": "SWE-Llama 7b",
+   "test": {
+    "resolved": 16,
+    "n": 2294,
+    "pct": 0.7,
+    "wilson95": [
+     0.43,
+     1.13
+    ],
+    "applied_file": 847,
+    "applied_pct_file": 36.92
+   },
+   "lite": {
+    "resolved": 4,
+    "n": 300,
+    "pct": 1.33,
+    "wilson95": [
+     0.52,
+     3.38
+    ],
+    "applied_file": 114,
+    "applied_pct_file": 38.0
+   },
+   "verified": {
+    "resolved": 7,
+    "n": 500,
+    "pct": 1.4,
+    "wilson95": [
+     0.68,
+     2.86
+    ],
+    "applied_file": 204,
+    "applied_pct_file": 40.8
+   },
+   "paper_table5": {
+    "full_resolved": 0.7,
+    "full_apply": 51.74,
+    "lite_resolved": 1.33,
+    "lite_apply": 38.0
+   },
+   "match_full_resolved": true,
+   "match_lite_resolved": true,
+   "table14_applies_minus_fixed": 847,
+   "table14_identity": true
+  },
+  {
+   "model": "SWE-Llama 13b",
+   "test": {
+    "resolved": 16,
+    "n": 2294,
+    "pct": 0.7,
+    "wilson95": [
+     0.43,
+     1.13
+    ],
+    "applied_file": 861,
+    "applied_pct_file": 37.53
+   },
+   "lite": {
+    "resolved": 3,
+    "n": 300,
+    "pct": 1.0,
+    "wilson95": [
+     0.34,
+     2.9
+    ],
+    "applied_file": 114,
+    "applied_pct_file": 38.0
+   },
+   "verified": {
+    "resolved": 6,
+    "n": 500,
+    "pct": 1.2,
+    "wilson95": [
+     0.55,
+     2.59
+    ],
+    "applied_file": 190,
+    "applied_pct_file": 38.0
+   },
+   "paper_table5": {
+    "full_resolved": 0.7,
+    "full_apply": 53.62,
+    "lite_resolved": 1.0,
+    "lite_apply": 38.0
+   },
+   "match_full_resolved": true,
+   "match_lite_resolved": true,
+   "table14_applies_minus_fixed": 861,
+   "table14_identity": true
+  },
+  {
+   "model": "Claude 3 Opus",
+   "test": {
+    "resolved": 87,
+    "n": 2294,
+    "pct": 3.79,
+    "wilson95": [
+     3.08,
+     4.65
+    ],
+    "applied_file": 1068,
+    "applied_pct_file": 46.56
+   },
+   "lite": {
+    "resolved": 13,
+    "n": 300,
+    "pct": 4.33,
+    "wilson95": [
+     2.55,
+     7.27
+    ],
+    "applied_file": 155,
+    "applied_pct_file": 51.67
+   },
+   "verified": {
+    "resolved": 35,
+    "n": 500,
+    "pct": 7.0,
+    "wilson95": [
+     5.08,
+     9.58
+    ],
+    "applied_file": 239,
+    "applied_pct_file": 47.8
+   },
+   "paper_table5": {
+    "full_resolved": 3.79,
+    "full_apply": 46.56,
+    "lite_resolved": 4.33,
+    "lite_apply": 51.67
+   },
+   "match_full_resolved": true,
+   "match_lite_resolved": true
+  },
+  {
+   "model": "GPT-4 (1106)",
+   "test": {
+    "resolved": 30,
+    "n": 2294,
+    "pct": 1.31,
+    "wilson95": [
+     0.92,
+     1.86
+    ],
+    "applied_file": 617,
+    "applied_pct_file": 26.9
+   },
+   "lite": {
+    "resolved": 8,
+    "n": 300,
+    "pct": 2.67,
+    "wilson95": [
+     1.36,
+     5.17
+    ],
+    "applied_file": 89,
+    "applied_pct_file": 29.67
+   },
+   "verified": {
+    "resolved": 14,
+    "n": 500,
+    "pct": 2.8,
+    "wilson95": [
+     1.68,
+     4.64
+    ],
+    "applied_file": 160,
+    "applied_pct_file": 32.0
+   },
+   "paper_table5": {
+    "full_resolved": 1.31,
+    "full_apply": 26.9,
+    "lite_resolved": 2.67,
+    "lite_apply": 29.67
+   },
+   "match_full_resolved": true,
+   "match_lite_resolved": true
+  }
+ ],
+ "resolved_subset_of_applied": {
+  "Claude 2": true,
+  "ChatGPT-3.5": true,
+  "SWE-Llama 7b": true,
+  "SWE-Llama 13b": true,
+  "Claude 3 Opus": true,
+  "GPT-4 (1106)": true
+ },
+ "mcnemar_full": [
+  {
+   "a": "Claude 2",
+   "b": "ChatGPT-3.5",
+   "only_a": 42,
+   "only_b": 1,
+   "both": 3,
+   "p": 0.0,
+   "p_holm": 0.0
+  },
+  {
+   "a": "Claude 2",
+   "b": "SWE-Llama 7b",
+   "only_a": 42,
+   "only_b": 13,
+   "both": 3,
+   "p": 0.00011,
+   "p_holm": 0.00091
+  },
+  {
+   "a": "Claude 2",
+   "b": "SWE-Llama 13b",
+   "only_a": 42,
+   "only_b": 13,
+   "both": 3,
+   "p": 0.00011,
+   "p_holm": 0.00091
+  },
+  {
+   "a": "Claude 2",
+   "b": "Claude 3 Opus",
+   "only_a": 25,
+   "only_b": 67,
+   "both": 20,
+   "p": 1e-05,
+   "p_holm": 0.00012
+  },
+  {
+   "a": "Claude 2",
+   "b": "GPT-4 (1106)",
+   "only_a": 37,
+   "only_b": 22,
+   "both": 8,
+   "p": 0.06744,
+   "p_holm": 0.17423
+  },
+  {
+   "a": "ChatGPT-3.5",
+   "b": "SWE-Llama 7b",
+   "only_a": 4,
+   "only_b": 16,
+   "both": 0,
+   "p": 0.01182,
+   "p_holm": 0.05909
+  },
+  {
+   "a": "ChatGPT-3.5",
+   "b": "SWE-Llama 13b",
+   "only_a": 3,
+   "only_b": 15,
+   "both": 1,
+   "p": 0.00754,
+   "p_holm": 0.04523
+  },
+  {
+   "a": "ChatGPT-3.5",
+   "b": "Claude 3 Opus",
+   "only_a": 2,
+   "only_b": 85,
+   "both": 2,
+   "p": 0.0,
+   "p_holm": 0.0
+  },
+  {
+   "a": "ChatGPT-3.5",
+   "b": "GPT-4 (1106)",
+   "only_a": 3,
+   "only_b": 29,
+   "both": 1,
+   "p": 0.0,
+   "p_holm": 3e-05
+  },
+  {
+   "a": "SWE-Llama 7b",
+   "b": "SWE-Llama 13b",
+   "only_a": 10,
+   "only_b": 10,
+   "both": 6,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "a": "SWE-Llama 7b",
+   "b": "Claude 3 Opus",
+   "only_a": 14,
+   "only_b": 85,
+   "both": 2,
+   "p": 0.0,
+   "p_holm": 0.0
+  },
+  {
+   "a": "SWE-Llama 7b",
+   "b": "GPT-4 (1106)",
+   "only_a": 15,
+   "only_b": 29,
+   "both": 1,
+   "p": 0.04877,
+   "p_holm": 0.17423
+  },
+  {
+   "a": "SWE-Llama 13b",
+   "b": "Claude 3 Opus",
+   "only_a": 8,
+   "only_b": 79,
+   "both": 8,
+   "p": 0.0,
+   "p_holm": 0.0
+  },
+  {
+   "a": "SWE-Llama 13b",
+   "b": "GPT-4 (1106)",
+   "only_a": 14,
+   "only_b": 28,
+   "both": 2,
+   "p": 0.04356,
+   "p_holm": 0.17423
+  },
+  {
+   "a": "Claude 3 Opus",
+   "b": "GPT-4 (1106)",
+   "only_a": 71,
+   "only_b": 14,
+   "both": 16,
+   "p": 0.0,
+   "p_holm": 0.0
+  }
+ ],
+ "mcnemar_lite": [
+  {
+   "a": "Claude 2",
+   "b": "ChatGPT-3.5",
+   "only_a": 8,
+   "only_b": 0,
+   "both": 1,
+   "p": 0.00781,
+   "p_holm": 0.10938
+  },
+  {
+   "a": "Claude 2",
+   "b": "SWE-Llama 7b",
+   "only_a": 9,
+   "only_b": 4,
+   "both": 0,
+   "p": 0.26685,
+   "p_holm": 1.0
+  },
+  {
+   "a": "Claude 2",
+   "b": "SWE-Llama 13b",
+   "only_a": 9,
+   "only_b": 3,
+   "both": 0,
+   "p": 0.146,
+   "p_holm": 1.0
+  },
+  {
+   "a": "Claude 2",
+   "b": "Claude 3 Opus",
+   "only_a": 4,
+   "only_b": 8,
+   "both": 5,
+   "p": 0.3877,
+   "p_holm": 1.0
+  },
+  {
+   "a": "Claude 2",
+   "b": "GPT-4 (1106)",
+   "only_a": 8,
+   "only_b": 7,
+   "both": 1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "a": "ChatGPT-3.5",
+   "b": "SWE-Llama 7b",
+   "only_a": 1,
+   "only_b": 4,
+   "both": 0,
+   "p": 0.375,
+   "p_holm": 1.0
+  },
+  {
+   "a": "ChatGPT-3.5",
+   "b": "SWE-Llama 13b",
+   "only_a": 1,
+   "only_b": 3,
+   "both": 0,
+   "p": 0.625,
+   "p_holm": 1.0
+  },
+  {
+   "a": "ChatGPT-3.5",
+   "b": "Claude 3 Opus",
+   "only_a": 1,
+   "only_b": 13,
+   "both": 0,
+   "p": 0.00183,
+   "p_holm": 0.02747
+  },
+  {
+   "a": "ChatGPT-3.5",
+   "b": "GPT-4 (1106)",
+   "only_a": 1,
+   "only_b": 8,
+   "both": 0,
+   "p": 0.03906,
+   "p_holm": 0.46875
+  },
+  {
+   "a": "SWE-Llama 7b",
+   "b": "SWE-Llama 13b",
+   "only_a": 3,
+   "only_b": 2,
+   "both": 1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "a": "SWE-Llama 7b",
+   "b": "Claude 3 Opus",
+   "only_a": 4,
+   "only_b": 13,
+   "both": 0,
+   "p": 0.04904,
+   "p_holm": 0.53946
+  },
+  {
+   "a": "SWE-Llama 7b",
+   "b": "GPT-4 (1106)",
+   "only_a": 4,
+   "only_b": 8,
+   "both": 0,
+   "p": 0.3877,
+   "p_holm": 1.0
+  },
+  {
+   "a": "SWE-Llama 13b",
+   "b": "Claude 3 Opus",
+   "only_a": 2,
+   "only_b": 12,
+   "both": 1,
+   "p": 0.01294,
+   "p_holm": 0.16821
+  },
+  {
+   "a": "SWE-Llama 13b",
+   "b": "GPT-4 (1106)",
+   "only_a": 3,
+   "only_b": 8,
+   "both": 0,
+   "p": 0.22656,
+   "p_holm": 1.0
+  },
+  {
+   "a": "Claude 3 Opus",
+   "b": "GPT-4 (1106)",
+   "only_a": 10,
+   "only_b": 5,
+   "both": 3,
+   "p": 0.30176,
+   "p_holm": 1.0
+  }
+ ],
+ "oracle_vs_bm25_margin_bounds": {
+  "Claude 2": {
+   "oracle": 110,
+   "bm25": 45,
+   "n": 2294,
+   "p_min": 5.421010862427522e-20,
+   "p_max": 1.8320015577730716e-07
+  },
+  "SWE-Llama 13b": {
+   "oracle": 91,
+   "bm25": 16,
+   "n": 2294,
+   "p_min": 5.293955920339377e-23,
+   "p_max": 6.449578410896073e-14
+  },
+  "SWE-Llama 7b": {
+   "oracle": 69,
+   "bm25": 16,
+   "n": 2294,
+   "p_min": 2.220446049250313e-16,
+   "p_max": 5.240266679443081e-09
+  },
+  "ChatGPT-3.5": {
+   "oracle": 12,
+   "bm25": 4,
+   "n": 2294,
+   "p_min": 0.0078125,
+   "p_max": 0.076812744140625
+  }
+ },
+ "oracle_counts_check": {
+  "Claude 2": {
+   "count": 110,
+   "pct_from_count": 4.8
+  },
+  "SWE-Llama 13b": {
+   "count": 91,
+   "pct_from_count": 3.97
+  },
+  "SWE-Llama 7b": {
+   "count": 69,
+   "pct_from_count": 3.01
+  },
+  "ChatGPT-3.5": {
+   "count": 12,
+   "pct_from_count": 0.52
+  }
+ },
+ "oracle_paper_pct": {
+  "Claude 2": 4.8,
+  "ChatGPT-3.5": 0.52,
+  "SWE-Llama 7b": 3.01,
+  "SWE-Llama 13b": 3.97
+ },
+ "gpt4_subset": {
+  "n": 574,
+  "share_of_2294": 0.25,
+  "oracle_k": 10,
+  "oracle_pct": 1.74,
+  "oracle_wilson": [
+   0.95,
+   3.18
+  ],
+  "bm25_k": 0,
+  "bm25_wilson": [
+   0.0,
+   0.66
+  ],
+  "claude2_on_subset_oracle_pct": 4.01,
+  "claude2_k_approx": 23,
+  "claude2_wilson": [
+   2.68,
+   5.94
+  ],
+  "gpt4_vs_claude2_margin": {
+   "oracle": 23,
+   "bm25": 10,
+   "n": 574,
+   "p_min": 0.000244140625,
+   "p_max": 0.03508203336969018
+  },
+  "year_split_2023_k_of_n": {
+   "note": "Table 7 GPT-4 After 2023 = 0.0 (표본 약 61, 25% 부분집합)",
+   "wilson_0_of_61": [
+    0.0,
+    5.92
+   ]
+  }
+ },
+ "table7_checks": {
+  "before_2023_n": 2034,
+  "after_2023_n": 260
+ },
+ "solved_by_any_model": 139,
+ "solved_vs_unsolved_instance_features": {
+  "lines": {
+   "median_solved": 4.0,
+   "median_unsolved": 13.0,
+   "p": 3.1591420172132105e-24
+  },
+  "files": {
+   "median_solved": 1.0,
+   "median_unsolved": 1.0,
+   "p": 9.53954560230601e-07
+  },
+  "hunks": {
+   "median_solved": 1.0,
+   "median_unsolved": 2.0,
+   "p": 6.809820467424684e-14
+  },
+  "f2p": {
+   "median_solved": 1.0,
+   "median_unsolved": 1.0,
+   "p": 7.579006611135289e-05
+  },
+  "p2p": {
+   "median_solved": 43.0,
+   "median_unsolved": 52.0,
+   "p": 0.024192606367186405
+  },
+  "words": {
+   "median_solved": 126.0,
+   "median_unsolved": 141.0,
+   "p": 0.27793212384363897
+  }
+ },
+ "claude3opus_by_year_trend": {
+  "table": {
+   "2016": [
+    1,
+    62
+   ],
+   "2017": [
+    1,
+    94
+   ],
+   "2018": [
+    8,
+    171
+   ],
+   "2019": [
+    27,
+    456
+   ],
+   "2020": [
+    12,
+    438
+   ],
+   "2021": [
+    16,
+    395
+   ],
+   "2022": [
+    11,
+    418
+   ],
+   "2023": [
+    11,
+    260
+   ]
+  },
+  "spearman_rho": -0.014446171374086372,
+  "p": 0.4892081929425717
+ },
+ "claude3opus_repo_heterogeneity": {
+  "chi2": 20.24154981234546,
+  "p": 0.04213599748000517,
+  "note": "기대 빈도 작은 칸 많음. 근사치"
+ },
+ "verified_vs_rest": {
+  "Claude 2": {
+   "verified": "22/500",
+   "rest": "23/1794",
+   "pct_verified": 4.4,
+   "pct_rest": 1.28,
+   "odds_ratio": 3.54,
+   "fisher_p": 5.944058620922027e-05,
+   "verified_file_k": 22,
+   "intersection_k": 22,
+   "same_set": false,
+   "only_in_verified_run": [
+    "pylint-dev__pylint-7277"
+   ],
+   "only_in_full_run": [
+    "matplotlib__matplotlib-25287"
+   ]
+  },
+  "ChatGPT-3.5": {
+   "verified": "2/500",
+   "rest": "2/1794",
+   "pct_verified": 0.4,
+   "pct_rest": 0.11,
+   "odds_ratio": 3.6,
+   "fisher_p": 0.20885270552514043,
+   "verified_file_k": 2,
+   "intersection_k": 2,
+   "same_set": true,
+   "only_in_verified_run": [],
+   "only_in_full_run": []
+  },
+  "SWE-Llama 7b": {
+   "verified": "7/500",
+   "rest": "9/1794",
+   "pct_verified": 1.4,
+   "pct_rest": 0.5,
+   "odds_ratio": 2.82,
+   "fisher_p": 0.05994112331628158,
+   "verified_file_k": 7,
+   "intersection_k": 7,
+   "same_set": true,
+   "only_in_verified_run": [],
+   "only_in_full_run": []
+  },
+  "SWE-Llama 13b": {
+   "verified": "6/500",
+   "rest": "10/1794",
+   "pct_verified": 1.2,
+   "pct_rest": 0.56,
+   "odds_ratio": 2.17,
+   "fisher_p": 0.133198857945015,
+   "verified_file_k": 6,
+   "intersection_k": 6,
+   "same_set": true,
+   "only_in_verified_run": [],
+   "only_in_full_run": []
+  },
+  "Claude 3 Opus": {
+   "verified": "35/500",
+   "rest": "52/1794",
+   "pct_verified": 7.0,
+   "pct_rest": 2.9,
+   "odds_ratio": 2.52,
+   "fisher_p": 8.888725875999114e-05,
+   "verified_file_k": 35,
+   "intersection_k": 35,
+   "same_set": true,
+   "only_in_verified_run": [],
+   "only_in_full_run": []
+  },
+  "GPT-4 (1106)": {
+   "verified": "14/500",
+   "rest": "16/1794",
+   "pct_verified": 2.8,
+   "pct_rest": 0.89,
+   "odds_ratio": 3.2,
+   "fisher_p": 0.0026228200326667,
+   "verified_file_k": 14,
+   "intersection_k": 14,
+   "same_set": true,
+   "only_in_verified_run": [],
+   "only_in_full_run": []
+  }
+ },
+ "verified_annotation_openai2024": {
+  "n_annotated": 1699,
+  "under_pct": 38.3,
+  "tests_pct": 61.1,
+  "filtered_pct": 68.3,
+  "verified_n": 500,
+  "under_n": 651,
+  "tests_n": 1038,
+  "filtered_n": 1160,
+  "filtered_wilson95": [
+   66.02,
+   70.45
+  ],
+  "tests_wilson95": [
+   58.75,
+   63.39
+  ],
+  "under_wilson95": [
+   36.03,
+   40.65
+  ],
+  "min_overlap_under_and_tests_pct": -0.6,
+  "overlap_if_only_these_two_cause_filter_pct": 31.1,
+  "kept_pct": 31.7,
+  "kept_n": 539,
+  "verified_gap_note": "Verified 부분집합에서의 해결률이 나머지보다 높은 것은 부적격 문항을 걸러낸 효과와 일치하지만 인과 확정은 아님"
+ },
+ "empty_p2p": {
+  "n": 67,
+  "share": 0.0292,
+  "in_lite": 6,
+  "in_verified": 11,
+  "resolved_by_model": {
+   "Claude 2": 0,
+   "ChatGPT-3.5": 0,
+   "SWE-Llama 7b": 0,
+   "SWE-Llama 13b": 0,
+   "Claude 3 Opus": 0,
+   "GPT-4 (1106)": 0
+  },
+  "resolved_rate_empty_vs_rest_claude3opus": [
+   0,
+   67,
+   87,
+   2227
+  ],
+  "fisher_p_claude3opus": 0.1795725645852292
+ },
+ "f2p_single_share": 0.57,
+ "table2_context_margin_bounds": {
+  "Claude 2": {
+   "counts_13k_27k_50k": [
+    45,
+    43,
+    28
+   ],
+   "p_range_13k_vs_27k": {
+    "oracle": 45,
+    "bm25": 43,
+    "n": 2294,
+    "p_min": 0.5,
+    "p_max": 0.915186504842877
+   },
+   "p_range_13k_vs_50k": {
+    "oracle": 45,
+    "bm25": 28,
+    "n": 2294,
+    "p_min": 1.52587890625e-05,
+    "p_max": 0.060370037339928545
+   },
+   "wilson_13k": [
+    1.47,
+    2.61
+   ],
+   "wilson_50k": [
+    0.85,
+    1.76
+   ]
+  },
+  "SWE-Llama 7b": {
+   "counts_13k_27k_50k": [
+    16,
+    7,
+    0
+   ],
+   "p_range_13k_vs_27k": {
+    "oracle": 16,
+    "bm25": 7,
+    "n": 2294,
+    "p_min": 0.00390625,
+    "p_max": 0.0931396484375
+   },
+   "p_range_13k_vs_50k": {
+    "oracle": 16,
+    "bm25": 0,
+    "n": 2294,
+    "p_min": 3.0517578125e-05,
+    "p_max": 3.0517578125e-05
+   },
+   "wilson_13k": [
+    0.43,
+    1.13
+   ],
+   "wilson_50k": [
+    0.0,
+    0.17
+   ]
+  },
+  "SWE-Llama 13b": {
+   "counts_13k_27k_50k": [
+    16,
+    11,
+    0
+   ],
+   "p_range_13k_vs_27k": {
+    "oracle": 16,
+    "bm25": 11,
+    "n": 2294,
+    "p_min": 0.0625,
+    "p_max": 0.44206833839416504
+   },
+   "p_range_13k_vs_50k": {
+    "oracle": 16,
+    "bm25": 0,
+    "n": 2294,
+    "p_min": 3.0517578125e-05,
+    "p_max": 3.0517578125e-05
+   },
+   "wilson_13k": [
+    0.43,
+    1.13
+   ],
+   "wilson_50k": [
+    0.0,
+    0.17
+   ]
+  }
+ },
+ "claude2_1_97_candidates": {
+  "45": 1.962,
+  "46": 2.005
+ },
+ "implied_filtered_resolve_rate": {
+  "Claude 2": {
+   "r_all_pct": 1.96,
+   "r_kept_pct": 4.4,
+   "r_filtered_implied_pct": {
+    "point": 0.83,
+    "wilson_lo": 1.52,
+    "wilson_hi": -0.18
+   }
+  },
+  "ChatGPT-3.5": {
+   "r_all_pct": 0.17,
+   "r_kept_pct": 0.4,
+   "r_filtered_implied_pct": {
+    "point": 0.07,
+    "wilson_lo": 0.2,
+    "wilson_hi": -0.42
+   }
+  },
+  "SWE-Llama 7b": {
+   "r_all_pct": 0.7,
+   "r_kept_pct": 1.4,
+   "r_filtered_implied_pct": {
+    "point": 0.37,
+    "wilson_lo": 0.71,
+    "wilson_hi": -0.31
+   }
+  },
+  "SWE-Llama 13b": {
+   "r_all_pct": 0.7,
+   "r_kept_pct": 1.2,
+   "r_filtered_implied_pct": {
+    "point": 0.46,
+    "wilson_lo": 0.77,
+    "wilson_hi": -0.18
+   }
+  },
+  "Claude 3 Opus": {
+   "r_all_pct": 3.79,
+   "r_kept_pct": 7.0,
+   "r_filtered_implied_pct": {
+    "point": 2.3,
+    "wilson_lo": 3.19,
+    "wilson_hi": 1.11
+   }
+  },
+  "GPT-4 (1106)": {
+   "r_all_pct": 1.31,
+   "r_kept_pct": 2.8,
+   "r_filtered_implied_pct": {
+    "point": 0.62,
+    "wilson_lo": 1.13,
+    "wilson_hi": -0.24
+   }
+  }
+ },
+ "hf_vs_v2_0_0_bundle": {
+  "n": 2294,
+  "identical": 2291,
+  "differing": [
+   "astropy__astropy-7606",
+   "pylint-dev__pylint-7080",
+   "pylint-dev__pylint-7114"
+  ]
+ },
+ "test_patch_structure": {
+  "instances_with_new_test_file": 113,
+  "share": 0.049,
+  "instances_only_new_files": 17,
+  "mean_files_in_test_patch": 1.54,
+  "instances_touching_nontest_ext": 38
+ }
+}
