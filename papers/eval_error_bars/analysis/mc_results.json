@@ -1,0 +1,136 @@
+{
+ "E1_coverage_by_clusters": [
+  {
+   "clusters": 5,
+   "naive": 0.55775,
+   "cluster_eq4": 0.8495,
+   "cluster_cr1": 0.88025,
+   "cluster_cr1_t": 0.951
+  },
+  {
+   "clusters": 10,
+   "naive": 0.58975,
+   "cluster_eq4": 0.9085,
+   "cluster_cr1": 0.9215,
+   "cluster_cr1_t": 0.95375
+  },
+  {
+   "clusters": 20,
+   "naive": 0.5795,
+   "cluster_eq4": 0.9255,
+   "cluster_cr1": 0.93275,
+   "cluster_cr1_t": 0.9505
+  },
+  {
+   "clusters": 50,
+   "naive": 0.5905,
+   "cluster_eq4": 0.945,
+   "cluster_cr1": 0.9465,
+   "cluster_cr1_t": 0.952
+  },
+  {
+   "clusters": 100,
+   "naive": 0.58175,
+   "cluster_eq4": 0.94825,
+   "cluster_cr1": 0.94875,
+   "cluster_cr1_t": 0.951
+  },
+  {
+   "clusters": 400,
+   "naive": 0.59325,
+   "cluster_eq4": 0.956,
+   "cluster_cr1": 0.95625,
+   "cluster_cr1_t": 0.9575
+  }
+ ],
+ "E2_paired_reduction_uniform": [
+  {
+   "rho": 0.0,
+   "var_unpaired": 0.16629962313340663,
+   "var_paired": 0.16647892139255832,
+   "reduction": -0.0010781639535517584
+  },
+  {
+   "rho": 0.25,
+   "var_unpaired": 0.1670164615239244,
+   "var_paired": 0.12530815603751397,
+   "reduction": 0.24972571629076157
+  },
+  {
+   "rho": 0.5,
+   "var_unpaired": 0.16654643375127193,
+   "var_paired": 0.08315556443334374,
+   "reduction": 0.5007064242664477
+  },
+  {
+   "rho": 0.75,
+   "var_unpaired": 0.16651566614451715,
+   "var_paired": 0.04164440270138446,
+   "reduction": 0.7499069987490442
+  },
+  {
+   "rho": 0.9,
+   "var_unpaired": 0.16730718518723878,
+   "var_paired": 0.016584866552811845,
+   "reduction": 0.9008717615190812
+  }
+ ],
+ "E3_power_binary_sim": [
+  {
+   "K": 1,
+   "n_eq9": 3634,
+   "true_delta": 0.029483622460207422,
+   "sim_power": 0.7916666666666666,
+   "omega2_actual": 0.08316190681907121,
+   "power_from_formula_actual_params": 0.7864220032800247
+  },
+  {
+   "K": 4,
+   "n_eq9": 1454,
+   "true_delta": 0.029452556922093438,
+   "sim_power": 0.7936666666666666,
+   "omega2_actual": 0.08321640826846183,
+   "power_from_formula_actual_params": 0.785803301272614
+  },
+  {
+   "K": 16,
+   "n_eq9": 909,
+   "true_delta": 0.029574299401282953,
+   "sim_power": 0.7906666666666666,
+   "omega2_actual": 0.08316067807109818,
+   "power_from_formula_actual_params": 0.7895963860240287
+  }
+ ],
+ "E4_iid_coverage_small_n": [
+  {
+   "N": 5,
+   "clt_eq1": 0.6537,
+   "wilson": 0.9552
+  },
+  {
+   "N": 10,
+   "clt_eq1": 0.77745,
+   "wilson": 0.95545
+  },
+  {
+   "N": 30,
+   "clt_eq1": 0.87335,
+   "wilson": 0.95445
+  },
+  {
+   "N": 100,
+   "clt_eq1": 0.92265,
+   "wilson": 0.94925
+  },
+  {
+   "N": 300,
+   "clt_eq1": 0.9393,
+   "wilson": 0.949
+  },
+  {
+   "N": 1000,
+   "clt_eq1": 0.94695,
+   "wilson": 0.94975
+  }
+ ]
+}
