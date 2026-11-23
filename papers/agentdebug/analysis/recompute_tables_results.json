@@ -1,0 +1,829 @@
+{
+ "table1": {
+  "Direct Prompting": {
+   "counts": {
+    "ALFWorld": [
+     28,
+     14,
+     1
+    ],
+    "WebShop": [
+     15,
+     3,
+     0
+    ],
+    "GAIA": [
+     13,
+     5,
+     0
+    ]
+   },
+   "grid_ok": true,
+   "macro_avg": [
+    28.0,
+    10.0,
+    0.3
+   ],
+   "pooled_200": [
+    28.0,
+    11.0,
+    0.5
+   ],
+   "reported_avg": [
+    28.0,
+    10.0,
+    0.3
+   ]
+  },
+  "Brute Force": {
+   "counts": {
+    "ALFWorld": [
+     10,
+     5,
+     0
+    ],
+    "WebShop": [
+     4,
+     0,
+     0
+    ],
+    "GAIA": [
+     9,
+     4,
+     0
+    ]
+   },
+   "grid_ok": true,
+   "macro_avg": [
+    12.0,
+    4.3,
+    0.0
+   ],
+   "pooled_200": [
+    11.5,
+    4.5,
+    0.0
+   ],
+   "reported_avg": [
+    12.0,
+    4.3,
+    0.0
+   ]
+  },
+  "Binary Search": {
+   "counts": {
+    "ALFWorld": [
+     20,
+     6,
+     1
+    ],
+    "WebShop": [
+     7,
+     4,
+     0
+    ],
+    "GAIA": [
+     11,
+     5,
+     0
+    ]
+   },
+   "grid_ok": true,
+   "macro_avg": [
+    18.7,
+    8.0,
+    0.3
+   ],
+   "pooled_200": [
+    19.0,
+    7.5,
+    0.5
+   ],
+   "reported_avg": [
+    18.7,
+    8.0,
+    0.3
+   ]
+  },
+  "AgentDebug": {
+   "counts": {
+    "ALFWorld": [
+     35,
+     28,
+     21
+    ],
+    "WebShop": [
+     21,
+     11,
+     7
+    ],
+    "GAIA": [
+     29,
+     22,
+     19
+    ]
+   },
+   "grid_ok": true,
+   "macro_avg": [
+    45.0,
+    31.3,
+    24.3
+   ],
+   "pooled_200": [
+    42.5,
+    30.5,
+    23.5
+   ],
+   "reported_avg": [
+    45.0,
+    31.3,
+    24.3
+   ]
+  }
+ },
+ "table1_AD_vs_DirectPrompting": {
+  "S": {
+   "ALFWorld": {
+    "AD": "35/100",
+    "AD_wilson": [
+     26.4,
+     44.7
+    ],
+    "DP": "28/100",
+    "DP_wilson": [
+     20.1,
+     37.5
+    ],
+    "mcnemar_bounds": {
+     "p_min": 0.015625,
+     "p_max": 0.44996253629022254
+    }
+   },
+   "WebShop": {
+    "AD": "21/50",
+    "AD_wilson": [
+     29.4,
+     55.8
+    ],
+    "DP": "15/50",
+    "DP_wilson": [
+     19.1,
+     43.8
+    ],
+    "mcnemar_bounds": {
+     "p_min": 0.03125,
+     "p_max": 0.4050322461407632
+    }
+   },
+   "GAIA": {
+    "AD": "29/50",
+    "AD_wilson": [
+     44.2,
+     70.6
+    ],
+    "DP": "13/50",
+    "DP_wilson": [
+     15.9,
+     39.6
+    ],
+    "mcnemar_bounds": {
+     "p_min": 3.0517578125e-05,
+     "p_max": 0.019520472782460274
+    }
+   },
+   "pooled": {
+    "AD": "85/200",
+    "AD_wilson": [
+     35.9,
+     49.4
+    ],
+    "DP": "56/200",
+    "DP_wilson": [
+     22.2,
+     34.6
+    ],
+    "mcnemar_bounds": {
+     "p_min": 3.725290298461914e-09,
+     "p_max": 0.01805614505270095
+    }
+   }
+  },
+  "S+M": {
+   "ALFWorld": {
+    "AD": "28/100",
+    "AD_wilson": [
+     20.1,
+     37.5
+    ],
+    "DP": "14/100",
+    "DP_wilson": [
+     8.5,
+     22.1
+    ],
+    "mcnemar_bounds": {
+     "p_min": 0.0001220703125,
+     "p_max": 0.04355852192384191
+    }
+   },
+   "WebShop": {
+    "AD": "11/50",
+    "AD_wilson": [
+     12.8,
+     35.2
+    ],
+    "DP": "3/50",
+    "DP_wilson": [
+     2.1,
+     16.2
+    ],
+    "mcnemar_bounds": {
+     "p_min": 0.0078125,
+     "p_max": 0.057373046875
+    }
+   },
+   "GAIA": {
+    "AD": "22/50",
+    "AD_wilson": [
+     31.2,
+     57.7
+    ],
+    "DP": "5/50",
+    "DP_wilson": [
+     4.3,
+     21.4
+    ],
+    "mcnemar_bounds": {
+     "p_min": 1.52587890625e-05,
+     "p_max": 0.0015137195587158203
+    }
+   },
+   "pooled": {
+    "AD": "61/200",
+    "AD_wilson": [
+     24.5,
+     37.2
+    ],
+    "DP": "22/200",
+    "DP_wilson": [
+     7.4,
+     16.1
+    ],
+    "mcnemar_bounds": {
+     "p_min": 3.637978807091713e-12,
+     "p_max": 2.1806574627155318e-05
+    }
+   }
+  },
+  "ALL": {
+   "ALFWorld": {
+    "AD": "21/100",
+    "AD_wilson": [
+     14.2,
+     30.0
+    ],
+    "DP": "1/100",
+    "DP_wilson": [
+     0.2,
+     5.4
+    ],
+    "mcnemar_bounds": {
+     "p_min": 1.9073486328125e-06,
+     "p_max": 1.0967254638671875e-05
+    }
+   },
+   "WebShop": {
+    "AD": "7/50",
+    "AD_wilson": [
+     7.0,
+     26.2
+    ],
+    "DP": "0/50",
+    "DP_wilson": [
+     0.0,
+     7.1
+    ],
+    "mcnemar_bounds": {
+     "p_min": 0.015625,
+     "p_max": 0.015625
+    }
+   },
+   "GAIA": {
+    "AD": "19/50",
+    "AD_wilson": [
+     25.9,
+     51.8
+    ],
+    "DP": "0/50",
+    "DP_wilson": [
+     0.0,
+     7.1
+    ],
+    "mcnemar_bounds": {
+     "p_min": 3.814697265625e-06,
+     "p_max": 3.814697265625e-06
+    }
+   },
+   "pooled": {
+    "AD": "47/200",
+    "AD_wilson": [
+     18.2,
+     29.8
+    ],
+    "DP": "1/200",
+    "DP_wilson": [
+     0.1,
+     2.8
+    ],
+    "mcnemar_bounds": {
+     "p_min": 2.842170943040401e-14,
+     "p_max": 3.481659405224491e-13
+    }
+   }
+  }
+ },
+ "text_vs_table1": {
+  "findings_text": "50.0% step, 42.5% all-correct (Sec 4.2 Findings)",
+  "table1_macro": "45.0% step, 24.3% all-correct",
+  "pooled_step_AD": 42.5,
+  "pooled_all_AD": 23.5,
+  "note": "42.5는 풀링 단계 정확도(85/200)와 같고 all-correct가 아니다. 50.0은 어느 값과도 맞지 않는다.",
+  "step_rel_gain_pct": 60.7,
+  "step_abs_gain_pp": 17.0
+ },
+ "fig5_alfworld": {
+  "assumed_n": 100,
+  "models": {
+   "GPT-4o-mini": {
+    "gain_pp": {
+     "ToT": 0,
+     "Vanilla-Debug": 8,
+     "Best-of-N(5)": 10,
+     "Self-Refine": 20,
+     "AgentDebug": 34
+    },
+    "gain_relative_pct_AD": 161.9,
+    "recovery_of_failed_pct": {
+     "ToT": 0.0,
+     "Vanilla-Debug": 10.1,
+     "Best-of-N(5)": 12.7,
+     "Self-Refine": 25.3,
+     "AgentDebug": 43.0
+    },
+    "share_of_AD_gain_by_BestOfN_pct": 29.4,
+    "AD_minus_BestOfN_pp": 24,
+    "AD_minus_SelfRefine_pp": 14,
+    "AD_minus_Vanilla_pp": 26,
+    "wilson_AD": [
+     45.2,
+     64.4
+    ],
+    "wilson_BoN": [
+     22.8,
+     40.6
+    ],
+    "wilson_SR": [
+     31.9,
+     50.8
+    ],
+    "tests_vs_AD": {
+     "BestOfN": {
+      "fisher_unpaired_p": 0.0009675108717549233,
+      "mcnemar_bounds_supersets_of_first": {
+       "p_min": 1.1920928955078125e-07,
+       "p_max": 0.00038813090293388086
+      }
+     },
+     "SelfRefine": {
+      "fisher_unpaired_p": 0.06550810837508565,
+      "mcnemar_bounds_supersets_of_first": {
+       "p_min": 0.0001220703125,
+       "p_max": 0.0759047294891014
+      }
+     },
+     "Vanilla": {
+      "fisher_unpaired_p": 0.0003161424745445037,
+      "mcnemar_bounds_supersets_of_first": {
+       "p_min": 2.9802322387695312e-08,
+       "p_max": 6.87711149112147e-05
+      }
+     }
+    },
+    "fig7a_final_equals_fig5_AD": true,
+    "fig7a_increments_ok": true
+   },
+   "Qwen3-8B": {
+    "gain_pp": {
+     "ToT": 0,
+     "Vanilla-Debug": 17,
+     "Best-of-N(5)": 20,
+     "Self-Refine": 26,
+     "AgentDebug": 26
+    },
+    "gain_relative_pct_AD": 54.2,
+    "recovery_of_failed_pct": {
+     "ToT": 0.0,
+     "Vanilla-Debug": 32.7,
+     "Best-of-N(5)": 38.5,
+     "Self-Refine": 50.0,
+     "AgentDebug": 50.0
+    },
+    "share_of_AD_gain_by_BestOfN_pct": 76.9,
+    "AD_minus_BestOfN_pp": 6,
+    "AD_minus_SelfRefine_pp": 0,
+    "AD_minus_Vanilla_pp": 9,
+    "wilson_AD": [
+     64.6,
+     81.6
+    ],
+    "wilson_BoN": [
+     58.3,
+     76.3
+    ],
+    "wilson_SR": [
+     64.6,
+     81.6
+    ],
+    "tests_vs_AD": {
+     "BestOfN": {
+      "fisher_unpaired_p": 0.43603926421204264,
+      "mcnemar_bounds_supersets_of_first": {
+       "p_min": 0.03125,
+       "p_max": 0.4613911821367651
+      }
+     },
+     "SelfRefine": {
+      "fisher_unpaired_p": 1.0,
+      "mcnemar_bounds_supersets_of_first": {
+       "p_min": 1.0,
+       "p_max": 1.0
+      }
+     },
+     "Vanilla": {
+      "fisher_unpaired_p": 0.21904196289404432,
+      "mcnemar_bounds_supersets_of_first": {
+       "p_min": 0.00390625,
+       "p_max": 0.2220528201560228
+      }
+     }
+    },
+    "fig7a_final_equals_fig5_AD": true,
+    "fig7a_increments_ok": true
+   },
+   "Qwen3-Next-80B": {
+    "gain_pp": {
+     "ToT": 0,
+     "Vanilla-Debug": 16,
+     "Best-of-N(5)": 18,
+     "Self-Refine": 18,
+     "AgentDebug": 24
+    },
+    "gain_relative_pct_AD": 40.0,
+    "recovery_of_failed_pct": {
+     "ToT": 0.0,
+     "Vanilla-Debug": 40.0,
+     "Best-of-N(5)": 45.0,
+     "Self-Refine": 45.0,
+     "AgentDebug": 60.0
+    },
+    "share_of_AD_gain_by_BestOfN_pct": 75.0,
+    "AD_minus_BestOfN_pp": 6,
+    "AD_minus_SelfRefine_pp": 6,
+    "AD_minus_Vanilla_pp": 8,
+    "wilson_AD": [
+     75.6,
+     89.9
+    ],
+    "wilson_BoN": [
+     68.9,
+     85.0
+    ],
+    "wilson_SR": [
+     68.9,
+     85.0
+    ],
+    "tests_vs_AD": {
+     "BestOfN": {
+      "fisher_unpaired_p": 0.3676322588429214,
+      "mcnemar_bounds_supersets_of_first": {
+       "p_min": 0.03125,
+       "p_max": 0.417692190836533
+      }
+     },
+     "SelfRefine": {
+      "fisher_unpaired_p": 0.3676322588429214,
+      "mcnemar_bounds_supersets_of_first": {
+       "p_min": 0.03125,
+       "p_max": 0.417692190836533
+      }
+     },
+     "Vanilla": {
+      "fisher_unpaired_p": 0.2156202224535298,
+      "mcnemar_bounds_supersets_of_first": {
+       "p_min": 0.0078125,
+       "p_max": 0.26818725105476915
+      }
+     }
+    },
+    "fig7a_final_equals_fig5_AD": true,
+    "fig7a_increments_ok": true
+   }
+  }
+ },
+ "fig6_check": {
+  "ALFWorld_matches_Qwen3-8B_fig5_pp": {
+   "AD": 26,
+   "BoN": 20,
+   "SR": 26
+  },
+  "reported": {
+   "AD": 26,
+   "BoN": 20,
+   "SR": 26
+  },
+  "avg_check": {
+   "AD": 18.67,
+   "BoN": 14.67,
+   "SR": 14.0
+  },
+  "qwen3_8b_relative_gain_pct": 54.2,
+  "gpt4o_mini_abs_gain_pp": 34
+ },
+ "fig7c": {
+  "assumed_n": 100,
+  "fisher_Modular_vs_MemoryReAct_p": 0.658681908138853,
+  "fisher_Modular_vs_Reflection_p": 0.45867008398029474,
+  "fisher_Modular_vs_ReAct_p": 0.09504112500885006
+ },
+ "fig7b": {
+  "assumed_n": 50,
+  "all_multiples_of_2": true,
+  "GPT4.1_all_wilson": [
+   20.8,
+   45.8
+  ],
+  "GPT4.1_vs_Llama_all_fisher_p": 7.700050271516282e-05,
+  "GPT4.1_step_wilson": [
+   29.4,
+   55.8
+  ],
+  "Llama_step_wilson": [
+   8.3,
+   28.5
+  ]
+ },
+ "kappa": {
+  "reported": 0.55,
+  "n_double_annotated": null,
+  "ci": null,
+  "landis_koch_band": "0.41-0.60 moderate (substantial은 0.61-0.80)",
+  "chance_agreement_pe_from_module_marginals": 0.253,
+  "implied_raw_agreement_if_module_level": 0.664,
+  "mast_reference": "MAST 최종 14모드 κ 0.73 (4 trace), 중간판 0.88"
+ },
+ "mirror_data": {
+  "n": 200,
+  "by_env": {
+   "alfworld": 100,
+   "gaia": 50,
+   "webshop": 50
+  },
+  "agent_model_by_env": {
+   "alfworld": {
+    "GPT-4o": 50,
+    "Qwen3-8B": 27,
+    "Llama3.3-70B-Turbo": 23
+   },
+   "gaia": {
+    "Llama3.3-70B-Turbo": 17,
+    "Qwen3-8B": 17,
+    "GPT-4o": 16
+   },
+   "webshop": {
+    "Qwen3-8B": 18,
+    "Llama3.3-70B-Turbo": 17,
+    "GPT-4o": 15
+   }
+  },
+  "module_counts": {
+   "alfworld": {
+    "plan": 33,
+    "reflection": 22,
+    "memory": 18,
+    "action": 14,
+    "system": 13
+   },
+   "gaia": {
+    "plan": 26,
+    "reflection": 9,
+    "action": 6,
+    "memory": 5,
+    "system": 4
+   },
+   "webshop": {
+    "plan": 19,
+    "memory": 15,
+    "reflection": 9,
+    "system": 5,
+    "action": 2
+   }
+  },
+  "module_diff_vs_paper": {
+   "alfworld": {
+    "memory": 0,
+    "reflection": 0,
+    "plan": 0,
+    "action": 0,
+    "system": 0
+   },
+   "gaia": {
+    "memory": 0,
+    "reflection": 0,
+    "plan": 0,
+    "action": 0,
+    "system": 0
+   },
+   "webshop": {
+    "memory": 0,
+    "reflection": 1,
+    "plan": 0,
+    "action": 0,
+    "system": 0
+   }
+  },
+  "step_bins": {
+   "alfworld": [
+    4,
+    6,
+    11,
+    15,
+    7,
+    24,
+    9,
+    2,
+    22
+   ],
+   "gaia": [
+    9,
+    13,
+    6,
+    10,
+    5,
+    7,
+    0,
+    0,
+    0
+   ],
+   "webshop": [
+    5,
+    9,
+    0,
+    7,
+    2,
+    17,
+    7,
+    0,
+    3
+   ],
+   "all": [
+    18,
+    28,
+    17,
+    32,
+    14,
+    48,
+    16,
+    2,
+    25
+   ]
+  },
+  "step_bins_diff_vs_paper": {
+   "alfworld": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "gaia": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "webshop": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "share_steps_1_5_pct": 54.5,
+  "share_steps_6_15_pct": 32.0,
+  "share_steps_21plus_pct": 12.5,
+  "plan_share_pct": 39.0,
+  "memory_plus_reflection_share_pct": 39.0,
+  "error_type_blank": 27,
+  "error_type_blank_by_module": {
+   "action": 10,
+   "plan": 9,
+   "memory": 4,
+   "reflection": 2,
+   "system": 2
+  },
+  "error_type_raw_variants": [
+   "Parameter_error",
+   "plan_inefficient",
+   "tool_execution_error "
+  ],
+  "module_label_variants": [
+   "action",
+   "memory",
+   "plan",
+   "planning",
+   "reflection",
+   "system"
+  ],
+  "types_not_in_paper_table2": [
+   "invalid_action"
+  ],
+  "constant_step_baseline_in_sample": {
+   "alfworld": {
+    "best_step": 4,
+    "acc_pct": 15.0,
+    "k": 15,
+    "n": 100
+   },
+   "gaia": {
+    "best_step": 2,
+    "acc_pct": 26.0,
+    "k": 13,
+    "n": 50
+   },
+   "webshop": {
+    "best_step": 2,
+    "acc_pct": 18.0,
+    "k": 9,
+    "n": 50
+   },
+   "pooled": {
+    "best_step": 4,
+    "acc_pct": 16.0,
+    "k": 32,
+    "n": 200
+   }
+  },
+  "constant_module_baseline_pct": {
+   "alfworld": 33.0,
+   "gaia": 52.0,
+   "webshop": 38.0,
+   "pooled": 39.0
+  },
+  "constant_step_module_baseline_pct": {
+   "alfworld": 10.0,
+   "gaia": 14.0,
+   "webshop": 14.0,
+   "pooled": 6.5
+  },
+  "AD_step_vs_constant_fisher_p": {
+   "alfworld": 0.0017477798285438085,
+   "webshop": 0.01561698657320679,
+   "gaia": 0.002191324122273985
+  },
+  "assistant_turns_by_env": {
+   "alfworld": {
+    "min": 30,
+    "max": 30,
+    "share_at_30_pct": 100.0
+   },
+   "gaia": {
+    "min": 1,
+    "max": 30,
+    "share_at_30_pct": 32.0
+   },
+   "webshop": {
+    "min": 4,
+    "max": 30,
+    "share_at_30_pct": 78.0
+   }
+  },
+  "critical_step_gt_turns": 1,
+  "step_annotations_entries_per_traj": [
+   1
+  ],
+  "critical_step_rel_pos_median": 0.236
+ }
+}
