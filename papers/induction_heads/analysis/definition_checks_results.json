@@ -1,0 +1,55 @@
+{
+ "prefix_L25_n4": {
+  "ideal": 1.0,
+  "uniform_causal": 0.030721187591552734,
+  "n_dest": 75,
+  "targets_per_dest": [
+   1.0,
+   2.0,
+   3.0
+  ]
+ },
+ "prefix_L12_n4": {
+  "ideal": 1.0,
+  "uniform_causal": 0.0622204951941967,
+  "n_dest": 36,
+  "targets_per_dest": [
+   1.0,
+   2.0,
+   3.0
+  ]
+ },
+ "prefix_L8_n4": {
+  "ideal": 1.0,
+  "uniform_causal": 0.09091315418481827,
+  "n_dest": 24,
+  "targets_per_dest": [
+   1.0,
+   2.0,
+   3.0
+  ]
+ },
+ "copy_eig_random_d64": {
+  "mean": 4.155561327934265e-06,
+  "std": 0.02341609075665474,
+  "min": -0.05621548742055893,
+  "max": 0.06475482136011124
+ },
+ "copy_eig_random_d128": {
+  "mean": 0.0008111793431453407,
+  "std": 0.011816575191915035,
+  "min": -0.0311990175396204,
+  "max": 0.03467439487576485
+ },
+ "synthetic_baselines": {
+  "first_period_ln(V-1)": 4.143134726391533,
+  "seen_set_uniform_repeat_loss": 2.3850419910418337,
+  "oracle_induction_repeat_loss": 0.0,
+  "uniform_vocab_ln_V": 4.1588830833596715
+ },
+ "n_params": {
+  "syn_1L": 90624,
+  "syn_2L": 156416,
+  "nat_2L_mlp": 952832
+ }
+}
