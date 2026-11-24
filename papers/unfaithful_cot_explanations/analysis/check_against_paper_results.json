@@ -1,0 +1,44 @@
+{
+ "t8": {
+  "n_cells": 36,
+  "max_abs_diff": 0.1,
+  "n_diff_over_0p15": 0,
+  "cells_over_0p15": []
+ },
+ "t8_consistent": {
+  "n_cells": 12,
+  "max_abs_diff": 0.1,
+  "n_diff_over_0p15": 0,
+  "cells_over_0p15": []
+ },
+ "t10": {
+  "n_cells": 24,
+  "max_abs_diff": 0.0,
+  "n_diff_over_0p15": 0,
+  "cells_over_0p15": []
+ },
+ "t13": {
+  "n_cells": 48,
+  "max_abs_diff": 0.0,
+  "n_diff_over_0p15": 0,
+  "cells_over_0p15": []
+ },
+ "t5": {
+  "n_cells": 32,
+  "max_abs_diff": 0.0,
+  "n_diff_over_0p15": 0,
+  "cells_over_0p15": []
+ },
+ "t10_aaa_all_labels": [
+  {
+   "k": "AA|GPT|FS",
+   "nc": 70.7,
+   "cot": 73.3
+  },
+  {
+   "k": "AA|CL|FS",
+   "nc": 53.0,
+   "cot": 48.5
+  }
+ ]
+}
