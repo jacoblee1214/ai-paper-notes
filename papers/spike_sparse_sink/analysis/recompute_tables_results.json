@@ -1,0 +1,590 @@
+{
+ "table2": {
+  "Llama 2 7B": {
+   "recomputed_pct": 99.647,
+   "reported_pct": 99.65,
+   "diff_pp": -0.003
+  },
+  "Llama 2 13B": {
+   "recomputed_pct": 99.653,
+   "reported_pct": 99.65,
+   "diff_pp": 0.003
+  },
+  "Llama 3 8B": {
+   "recomputed_pct": 99.766,
+   "reported_pct": 99.77,
+   "diff_pp": -0.004
+  },
+  "Qwen2.5 7B": {
+   "recomputed_pct": 98.371,
+   "reported_pct": 98.4,
+   "diff_pp": -0.029
+  },
+  "Qwen2.5 14B": {
+   "recomputed_pct": 98.409,
+   "reported_pct": 98.4,
+   "diff_pp": 0.009
+  },
+  "Qwen3 8B": {
+   "recomputed_pct": 99.93,
+   "reported_pct": 99.93,
+   "diff_pp": 0.0
+  },
+  "Qwen3 14B": {
+   "recomputed_pct": 99.926,
+   "reported_pct": 99.93,
+   "diff_pp": -0.004
+  }
+ },
+ "table1": {
+  "Llama 2 7B": {
+   "blocks==2L": true,
+   "stepup_all_even(FFN)": true,
+   "stepdown_odd(attention)_blocks": []
+  },
+  "Llama 2 13B": {
+   "blocks==2L": true,
+   "stepup_all_even(FFN)": true,
+   "stepdown_odd(attention)_blocks": [
+    79
+   ]
+  },
+  "Llama 3 8B": {
+   "blocks==2L": true,
+   "stepup_all_even(FFN)": true,
+   "stepdown_odd(attention)_blocks": []
+  },
+  "Qwen2.5 7B": {
+   "blocks==2L": true,
+   "stepup_all_even(FFN)": true,
+   "stepdown_odd(attention)_blocks": [
+    55
+   ]
+  },
+  "Qwen2.5 14B": {
+   "blocks==2L": true,
+   "stepup_all_even(FFN)": true,
+   "stepdown_odd(attention)_blocks": [
+    95
+   ]
+  },
+  "Qwen3 8B": {
+   "blocks==2L": true,
+   "stepup_all_even(FFN)": true,
+   "stepdown_odd(attention)_blocks": []
+  },
+  "Qwen3 14B": {
+   "blocks==2L": true,
+   "stepup_all_even(FFN)": true,
+   "stepdown_odd(attention)_blocks": [
+    79
+   ]
+  }
+ },
+ "training_budget": {
+  "table9_steps": 5000,
+  "table9_batch_tokens": 2000000,
+  "table9_implied_tokens_B": 10.0,
+  "text_baseline_tokens_B": 100,
+  "repo_train_0_num_steps": 50000,
+  "repo_implied_tokens_B": 100.0,
+  "repo_train_31_num_steps(200B row)": 100000,
+  "repo_train_31_implied_tokens_B": 200.0
+ },
+ "params_table4_B": {
+  "SwiGLU(baseline)": 6.738149376,
+  "GeLU(inter 16512)": 6.738149376,
+  "Linear(d x d)": 2.94649856,
+  "Attention-only(FFN 자리에 attention)": 4.557111296
+ },
+ "params_table6_B": {
+  "dh128_nh32": 6.738149376,
+  "dh64_nh32": 5.664407552,
+  "dh32_nh32": 5.12753664,
+  "dh16_nh32": 4.859101184,
+  "dh8_nh32": 4.724883456,
+  "dh128_nh16": 5.664407552,
+  "dh128_nh8": 5.12753664,
+  "dh8_nh512": 6.738149376,
+  "dh16_nh256": 6.738149376,
+  "dh32_nh128": 6.738149376,
+  "dh64_nh64": 6.738149376,
+  "dh256_nh16": 6.738149376
+ },
+ "compute_estimate": {
+  "params_B": 6.738149376,
+  "flops_per_100B_run_e21": 4.0428896256,
+  "H100_gpu_hours_at_40pct_MFU(989TF peak)": 2838.7889180990896,
+  "note": "6ND 근사, 우리 추정. 논문은 GPU 시간을 적지 않았다."
+ },
+ "sink_ratio_T_dependence": {
+  "64": {
+   "uniform_causal_alpha0": 0.0741,
+   "dump_fraction_needed_for_eps0.3": 0.2889
+  },
+  "256": {
+   "uniform_causal_alpha0": 0.0239,
+   "dump_fraction_needed_for_eps0.3": 0.2973
+  },
+  "1024": {
+   "uniform_causal_alpha0": 0.0073,
+   "dump_fraction_needed_for_eps0.3": 0.2993
+  },
+  "4096": {
+   "uniform_causal_alpha0": 0.0022,
+   "dump_fraction_needed_for_eps0.3": 0.2998
+  }
+ },
+ "sink_ratio_eps_to_dump_fraction_T64": {
+  "0.1": 0.0857,
+  "0.2": 0.1873,
+  "0.3": 0.2889,
+  "0.5": 0.4921,
+  "0.8": 0.7968
+ },
+ "eq20_21_check": [
+  {
+   "cos": 0.0502,
+   "lam(sTh)^2": 928.2349150421187,
+   "lam*d*cos^2": 928.23491504212,
+   "paper_eq21_lam*sqrt(d)*cos": 288.89420611827916,
+   "ratio_eq21/exact": 0.31122962672134624
+  },
+  {
+   "cos": 0.2443,
+   "lam(sTh)^2": 21981.1423431325,
+   "lam*d*cos^2": 21981.142343132557,
+   "paper_eq21_lam*sqrt(d)*cos": 1405.8371358882257,
+   "ratio_eq21/exact": 0.06395650935436697
+  },
+  {
+   "cos": 0.4895,
+   "lam(sTh)^2": 88259.66379444716,
+   "lam*d*cos^2": 88259.66379444716,
+   "paper_eq21_lam*sqrt(d)*cos": 2817.0270439439287,
+   "ratio_eq21/exact": 0.031917491216652036
+  },
+  {
+   "cos": 0.6243,
+   "lam(sTh)^2": 143519.6524383696,
+   "lam*d*cos^2": 143519.65243836952,
+   "paper_eq21_lam*sqrt(d)*cos": 3592.241856399644,
+   "ratio_eq21/exact": 0.02502961646971817
+  }
+ ],
+ "eq25_cos_lower_bound": {
+  "0.01": 0.9998,
+  "0.03": 0.9982,
+  "0.1": 0.9802,
+  "0.3": 0.8349,
+  "1.0": 0.0
+ },
+ "eq25_worst_case_numeric": [
+  {
+   "rho": 0.1,
+   "cos_numeric": 0.9801980198019802
+  },
+  {
+   "rho": 0.3,
+   "cos_numeric": 0.834862385321101
+  }
+ ],
+ "thmB3": {
+  "max_abs_normalized": 63.99999999866688,
+  "sqrt_d": 64.0
+ },
+ "tables_3_8_transcribed": {
+  "T3.lr": {
+   "7.5e-5": [
+    11.8,
+    18.6,
+    1447
+   ],
+   "1.5e-4": [
+    10.7,
+    31.8,
+    2251
+   ],
+   "3e-4(base)": [
+    10.1,
+    46.0,
+    3818
+   ],
+   "6e-4": [
+    10.0,
+    51.5,
+    3773
+   ],
+   "1.2e-3": [
+    10.2,
+    39.2,
+    2723
+   ]
+  },
+  "T3.minlr": {
+   "3e-5(base)": [
+    10.1,
+    46.0,
+    3818
+   ],
+   "3e-4": [
+    10.7,
+    56.8,
+    2870
+   ]
+  },
+  "T3.wd": {
+   "0.0": [
+    10.4,
+    33.8,
+    12275
+   ],
+   "0.1(base)": [
+    10.1,
+    46.0,
+    3818
+   ]
+  },
+  "T3.beta2": {
+   "0.9": [
+    10.1,
+    49.0,
+    2832
+   ],
+   "0.95(base)": [
+    10.1,
+    46.0,
+    3818
+   ],
+   "0.999": [
+    10.7,
+    20.9,
+    1855
+   ]
+  },
+  "T3.tokens": {
+   "100B(base)": [
+    10.1,
+    46.0,
+    3818
+   ],
+   "200B": [
+    9.5,
+    63.3,
+    1848
+   ]
+  },
+  "T4.ffn": {
+   "GeLU": [
+    10.1,
+    69.3,
+    3369
+   ],
+   "Linear": [
+    12.5,
+    58.9,
+    688
+   ],
+   "Attention": [
+    10.8,
+    73.9,
+    637
+   ],
+   "SwiGLU(base)": [
+    10.1,
+    46.0,
+    3818
+   ]
+  },
+  "T5.norm": {
+   "Sandwich": [
+    9.8,
+    44.7,
+    520
+   ],
+   "Sandwich(QK)": [
+    10.0,
+    42.0,
+    92
+   ],
+   "DynamicTanh": [
+    10.0,
+    61.0,
+    153
+   ],
+   "PreNorm(base)": [
+    10.1,
+    46.0,
+    3818
+   ]
+  },
+  "T6.nheads": {
+   "8": [
+    10.4,
+    37.1,
+    1253
+   ],
+   "16": [
+    10.3,
+    41.7,
+    1936
+   ],
+   "32(base)": [
+    10.1,
+    46.0,
+    3818
+   ]
+  },
+  "T6.dhead": {
+   "8": [
+    11.3,
+    4.1,
+    291
+   ],
+   "16": [
+    10.8,
+    9.8,
+    315
+   ],
+   "32": [
+    10.5,
+    27.9,
+    829
+   ],
+   "64": [
+    10.3,
+    37.7,
+    2112
+   ],
+   "128(base)": [
+    10.1,
+    46.0,
+    3818
+   ]
+  },
+  "T6.fixedcap": {
+   "8/512": [
+    10.7,
+    11.0,
+    1205
+   ],
+   "16/256": [
+    10.4,
+    30.8,
+    1750
+   ],
+   "32/128": [
+    10.3,
+    41.1,
+    1916
+   ],
+   "64/64": [
+    10.2,
+    44.1,
+    2523
+   ],
+   "128/32(base)": [
+    10.1,
+    46.0,
+    3818
+   ],
+   "256/16": [
+    10.1,
+    52.1,
+    3429
+   ]
+  },
+  "T7.conditional": {
+   "channel": [
+    10.0,
+    4.5,
+    202
+   ],
+   "head": [
+    10.1,
+    6.4,
+    186
+   ],
+   "single": [
+    10.2,
+    31.2,
+    316
+   ]
+  },
+  "T7.unconditional": {
+   "channel": [
+    10.1,
+    42.2,
+    1922
+   ],
+   "head": [
+    10.1,
+    41.3,
+    1884
+   ],
+   "single": [
+    10.2,
+    44.3,
+    1797
+   ]
+  },
+  "T7.static": {
+   "positional": [
+    10.1,
+    41.1,
+    1755
+   ],
+   "token_embedding": [
+    10.0,
+    31.1,
+    1966
+   ]
+  },
+  "T8.trainlen": {
+   "1/256": [
+    12.4,
+    42.1,
+    5411
+   ],
+   "1/1024": [
+    10.6,
+    46.3,
+    4442
+   ],
+   "1/4096(base)": [
+    10.1,
+    46.0,
+    3818
+   ]
+  },
+  "T8.minctx": {
+   "1024/4096": [
+    10.1,
+    13.0,
+    38470
+   ],
+   "1024/5120": [
+    10.1,
+    8.0,
+    42365
+   ],
+   "2048/4096": [
+    10.6,
+    1.2,
+    7193
+   ],
+   "2048/6144": [
+    10.0,
+    5.8,
+    30634
+   ]
+  }
+ },
+ "n_unique_nonbaseline_rows": 40,
+ "spearman_all_rows": {
+  "ppl_vs_sink": [
+   -0.1632502490464428,
+   0.3141665020977646
+  ],
+  "ppl_vs_spike": [
+   -0.03151291770705216,
+   0.8469330934868137
+  ],
+  "sink_vs_spike": [
+   0.05563112722476341,
+   0.7331416425041908
+  ],
+  "note": "행은 서로 다른 개입이라 독립 표본이 아니고 시드가 하나라 p는 참고용이다."
+ },
+ "spearman_table3_only": {
+  "n": 9,
+  "ppl_vs_sink": [
+   -0.7458698539828915,
+   0.02102630310606956
+  ],
+  "ppl_vs_spike": [
+   -0.2881769890388444,
+   0.45205561454796306
+  ]
+ },
+ "table3_ppl_sink_inversions": [
+  "T3.minlr:3e-4"
+ ],
+ "decoupling_claim_rows": {
+  "spike_suppressed_sink_kept": [
+   "T5.norm:Sandwich",
+   "T5.norm:Sandwich(QK)",
+   "T5.norm:DynamicTanh"
+  ],
+  "sink_suppressed_spike_kept_or_up": [
+   "T8.minctx:1024/4096",
+   "T8.minctx:1024/5120",
+   "T8.minctx:2048/4096",
+   "T8.minctx:2048/6144"
+  ],
+  "both_suppressed": [
+   "T6.dhead:8",
+   "T6.dhead:16",
+   "T7.conditional:channel",
+   "T7.conditional:head"
+  ],
+  "ppl_worse_by_more_than_0.3": [
+   "T3.lr:7.5e-5",
+   "T3.lr:1.5e-4",
+   "T3.minlr:3e-4",
+   "T3.wd:0.0",
+   "T3.beta2:0.999",
+   "T4.ffn:Linear",
+   "T4.ffn:Attention",
+   "T6.nheads:8",
+   "T6.dhead:8",
+   "T6.dhead:16",
+   "T6.dhead:32",
+   "T6.fixedcap:8/512",
+   "T6.fixedcap:16/256",
+   "T8.trainlen:1/256",
+   "T8.trainlen:1/1024",
+   "T8.minctx:2048/4096"
+  ]
+ },
+ "gated_conditional_vs_text": {
+  "channel_sink%": 4.5,
+  "head_sink%": 6.4,
+  "base_sink%": 46.0,
+  "relative_drop_channel": 0.9021739130434783,
+  "relative_drop_head": 0.8608695652173913,
+  "text": "per-channel and per-head gates both eliminate attention sinks entirely"
+ },
+ "table6_dhead_monotone": {
+  "sink": true,
+  "spike": true
+ },
+ "table6_fixedcap_monotone_sink": true,
+ "table6_fixedcap_spike_monotone": false,
+ "table8_minctx_sink_monotone_in_min_len": "1024→13.0/8.0, 2048→1.2/5.8: 같은 min 안에서 max를 늘리면 1024는 하락, 2048은 상승(비단조)",
+ "ppl_resolution": {
+  "rounding_halfwidth": 0.05,
+  "relative_at_10.1_pct": 0.5,
+  "rows_with_abs_ppl_diff<=0.1_vs_base": [
+   "T3.lr:6e-4",
+   "T3.lr:1.2e-3",
+   "T3.beta2:0.9",
+   "T4.ffn:GeLU",
+   "T5.norm:Sandwich(QK)",
+   "T5.norm:DynamicTanh",
+   "T6.fixedcap:64/64",
+   "T6.fixedcap:256/16",
+   "T7.conditional:channel",
+   "T7.conditional:head",
+   "T7.conditional:single",
+   "T7.unconditional:channel",
+   "T7.unconditional:head",
+   "T7.unconditional:single",
+   "T7.static:positional",
+   "T7.static:token_embedding",
+   "T8.minctx:1024/4096",
+   "T8.minctx:1024/5120",
+   "T8.minctx:2048/6144"
+  ]
+ }
+}
