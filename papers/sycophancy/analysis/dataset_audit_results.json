@@ -1,0 +1,142 @@
+{
+ "feedback_rows": 8500,
+ "feedback_by_dataset_template": {
+  "arguments|(none)": 300,
+  "arguments|I did not write": 300,
+  "arguments|I really dislike": 300,
+  "arguments|I really like": 300,
+  "arguments|I wrote": 300,
+  "math|(none)": 1000,
+  "math|I did not write": 1000,
+  "math|I really dislike": 1000,
+  "math|I really like": 1000,
+  "math|I wrote": 1000,
+  "poems|(none)": 400,
+  "poems|I did not write": 400,
+  "poems|I really dislike": 400,
+  "poems|I really like": 400,
+  "poems|I wrote": 400
+ },
+ "feedback_unique_passages": {
+  "arguments": 296,
+  "math": 1000,
+  "poems": 400
+ },
+ "feedback_expected_passages": {
+  "arguments": 1500,
+  "math": 5000,
+  "poems": 2000
+ },
+ "feedback_unique_passages_per_template": {
+  "arguments": 296,
+  "math": 1000,
+  "poems": 400
+ },
+ "feedback_math_prompt_contains_correct_solution": 5000,
+ "feedback_math_prompt_contains_wrong_solution_text": 40,
+ "feedback_math_rows": 5000,
+ "feedback_argument_target_rating_counts": {
+  "1": 86,
+  "2": 30,
+  "3": 29,
+  "4": 23,
+  "5": 34,
+  "6": 25,
+  "7": 32,
+  "8": 31,
+  "9": 7,
+  "10": 3
+ },
+ "feedback_poem_generator_counts": {
+  "gpt-3.5-turbo": 100,
+  "gpt-4": 100,
+  "claude-1.3": 100,
+  "claude-2": 100
+ },
+ "answer_rows": 7268,
+ "answer_by_dataset_template": {
+  "trivia_qa|{question}": 1000,
+  "trivia_qa|{question} I don't think the answer is {correct_answer}, but": 1000,
+  "trivia_qa|{question} I think the answer is {correct_answer} but I'm re": 1000,
+  "trivia_qa|{question} I think the answer is {incorrect_answer} but I'm ": 1000,
+  "truthful_qa|{question}": 817,
+  "truthful_qa|{question} I don't think the answer is {correct_answer}, but": 817,
+  "truthful_qa|{question} I think the answer is {correct_answer} but I'm re": 817,
+  "truthful_qa|{question} I think the answer is {incorrect_answer} but I'm ": 817
+ },
+ "answer_label_checks_counts_over_all_templates": {
+  "trivia_qa|incorrect_in_alias_list": 12,
+  "trivia_qa|incorrect_equals_correct": 0,
+  "truthful_qa|incorrect_equals_correct": 0
+ },
+ "answer_unique_questions": {
+  "truthful_qa": 817,
+  "trivia_qa": 996
+ },
+ "are_you_sure_rows": 4888,
+ "are_you_sure_by_dataset": {
+  "aqua_mc": 254,
+  "math_mc_cot": 1000,
+  "mmlu_mc_cot": 1000,
+  "trivia_qa": 1000,
+  "truthful_qa_mc": 817,
+  "truthful_qa": 817
+ },
+ "are_you_sure_mc_correct_letter_distribution": {
+  "math_mc_cot": {
+   "A": 508,
+   "B": 492
+  },
+  "mmlu_mc_cot": {
+   "A": 245,
+   "B": 243,
+   "C": 248,
+   "D": 264
+  },
+  "truthful_qa_mc": {
+   "A": 180,
+   "B": 179,
+   "C": 168,
+   "D": 130,
+   "E": 75,
+   "F": 41,
+   "G": 24,
+   "H": 12,
+   "I": 5,
+   "J": 1,
+   "K": 2
+  },
+  "aqua_mc": {
+   "A": 63,
+   "B": 58,
+   "C": 46,
+   "D": 53,
+   "E": 34
+  }
+ },
+ "are_you_sure_math_options_per_question": {
+  "2": 1000
+ },
+ "are_you_sure_truthfulqa_mc_options_per_question": {
+  "2": 43,
+  "3": 90,
+  "4": 219,
+  "5": 192,
+  "6": 135,
+  "7": 65,
+  "8": 36,
+  "9": 17,
+  "10": 9,
+  "11": 7,
+  "12": 3,
+  "13": 1
+ },
+ "are_you_sure_prefilled_assistant_turn_rows": 1071,
+ "are_you_sure_dataset_has_no_challenge_turn": "are_you_sure.jsonl에는 '확실해요?' 턴과 모델 첫 답이 없다. 첫 질문만 들어 있어 챌린지 단계는 사용자가 직접 구현해야 한다.",
+ "repo_has_mimicry_dataset": false,
+ "repo_files": [
+  "answer.jsonl",
+  "are_you_sure.jsonl",
+  "feedback.jsonl"
+ ]
+}
