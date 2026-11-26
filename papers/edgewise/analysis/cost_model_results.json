@@ -1,0 +1,501 @@
+{
+ "baseline_effort": {
+  "TB": {
+   "best_gpt_effort": [
+    "high",
+    [
+     168,
+     84.3
+    ]
+   ],
+   "rows": {
+    "low": {
+     "self": [
+      57,
+      73.0
+     ],
+     "same_effort_saving": 38.7,
+     "vs_xhigh_saving": 79.6,
+     "vs_best_acc_effort": [
+      "high",
+      66.1
+     ],
+     "cheapest_gpt_effort_within_1pp": [
+      "low",
+      93,
+      38.7
+     ]
+    },
+    "medium": {
+     "self": [
+      78,
+      78.7
+     ],
+     "same_effort_saving": 38.6,
+     "vs_xhigh_saving": 72.1,
+     "vs_best_acc_effort": [
+      "high",
+      53.6
+     ],
+     "cheapest_gpt_effort_within_1pp": [
+      "medium",
+      127,
+      38.6
+     ]
+    },
+    "high": {
+     "self": [
+      122,
+      84.3
+     ],
+     "same_effort_saving": 27.4,
+     "vs_xhigh_saving": 56.4,
+     "vs_best_acc_effort": [
+      "high",
+      27.4
+     ],
+     "cheapest_gpt_effort_within_1pp": [
+      "high",
+      168,
+      27.4
+     ]
+    },
+    "xhigh": {
+     "self": [
+      182,
+      82.0
+     ],
+     "same_effort_saving": 35.0,
+     "vs_xhigh_saving": 35.0,
+     "vs_best_acc_effort": [
+      "high",
+      -8.3
+     ],
+     "cheapest_gpt_effort_within_1pp": [
+      "high",
+      168,
+      -8.3
+     ]
+    }
+   },
+   "xhigh_dominated_by": [
+    "high"
+   ]
+  },
+  "SWE": {
+   "best_gpt_effort": [
+    "high",
+    [
+     326,
+     64.5
+    ]
+   ],
+   "rows": {
+    "low": {
+     "self": [
+      100,
+      55.4
+     ],
+     "same_effort_saving": 28.6,
+     "vs_xhigh_saving": 83.3,
+     "vs_best_acc_effort": [
+      "high",
+      69.3
+     ],
+     "cheapest_gpt_effort_within_1pp": [
+      "low",
+      140,
+      28.6
+     ]
+    },
+    "medium": {
+     "self": [
+      137,
+      59.1
+     ],
+     "same_effort_saving": 34.8,
+     "vs_xhigh_saving": 77.2,
+     "vs_best_acc_effort": [
+      "high",
+      58.0
+     ],
+     "cheapest_gpt_effort_within_1pp": [
+      "medium",
+      210,
+      34.8
+     ]
+    },
+    "high": {
+     "self": [
+      183,
+      62.7
+     ],
+     "same_effort_saving": 43.9,
+     "vs_xhigh_saving": 69.5,
+     "vs_best_acc_effort": [
+      "high",
+      43.9
+     ],
+     "cheapest_gpt_effort_within_1pp": [
+      "high",
+      326,
+      43.9
+     ]
+    },
+    "xhigh": {
+     "self": [
+      283,
+      66.4
+     ],
+     "same_effort_saving": 52.8,
+     "vs_xhigh_saving": 52.8,
+     "vs_best_acc_effort": [
+      "high",
+      13.2
+     ],
+     "cheapest_gpt_effort_within_1pp": null
+    }
+   },
+   "xhigh_dominated_by": [
+    "high"
+   ]
+  }
+ },
+ "headline_vs_best_effort": {
+  "TB": {
+   "headline_saving": 35.0,
+   "vs_GPT_high_saving": -8.3,
+   "acc_gain_vs_GPT_high_pp": -2.3
+  },
+  "SWE": {
+   "headline_saving": 52.8,
+   "vs_GPT_high_saving": 13.2,
+   "acc_gain_vs_GPT_high_pp": 1.9
+  }
+ },
+ "price_sensitivity": [
+  {
+   "target_ratio": 0.65,
+   "r_out_minus_r_in": -0.3,
+   "r_in": 0.71,
+   "r_out": 0.41,
+   "saving_min": 30.2,
+   "saving_max": 53.2,
+   "saving_at_base": 35.0
+  },
+  {
+   "target_ratio": 0.65,
+   "r_out_minus_r_in": 0.0,
+   "r_in": 0.65,
+   "r_out": 0.65,
+   "saving_min": 35.0,
+   "saving_max": 35.0,
+   "saving_at_base": 35.0
+  },
+  {
+   "target_ratio": 0.65,
+   "r_out_minus_r_in": 0.3,
+   "r_in": 0.59,
+   "r_out": 0.89,
+   "saving_min": 16.8,
+   "saving_max": 39.8,
+   "saving_at_base": 35.0
+  },
+  {
+   "target_ratio": 0.47,
+   "r_out_minus_r_in": -0.3,
+   "r_in": 0.53,
+   "r_out": 0.23,
+   "saving_min": 48.2,
+   "saving_max": 71.2,
+   "saving_at_base": 53.0
+  },
+  {
+   "target_ratio": 0.47,
+   "r_out_minus_r_in": 0.0,
+   "r_in": 0.47,
+   "r_out": 0.47,
+   "saving_min": 53.0,
+   "saving_max": 53.0,
+   "saving_at_base": 53.0
+  },
+  {
+   "target_ratio": 0.47,
+   "r_out_minus_r_in": 0.3,
+   "r_in": 0.41,
+   "r_out": 0.71,
+   "saving_min": 34.8,
+   "saving_max": 57.8,
+   "saving_at_base": 53.0
+  }
+ ],
+ "price_sensitivity_note": "토큰 수(입력·출력·캐시)가 논문에 없어 위임 쪽 입력·출력 토큰 비율(r_in, r_out)을 기준 가정에서 목표 비율에 맞춰 풀고 가격·캐시 가정만 바꾼 구조적 범위. 절감률은 항상 1-r_in과 1-r_out 사이",
+ "per_delegation": {
+  "with_token_adv": 0.1103,
+  "without_token_adv": 0.069,
+  "ratio": 1.6,
+  "vanilla_cost_per_task": 1.015,
+  "self_cost_per_task": 0.64
+ },
+ "random_cost_over_share": {
+  "TB_GPT_P3": 1.87,
+  "SWE_GPT_P3": 1.9
+ },
+ "self_cost_over_share_if_40pct": {
+  "TB_GPT_P3": 1.63,
+  "SWE_GPT_P3": 1.18
+ },
+ "saving_per_task_usd": {
+  "TB_GPT": 0.375,
+  "SWE_GPT": 0.934,
+  "TB_Opus": 0.245,
+  "SWE_Opus": 1.134
+ },
+ "rl_rollouts": 22400,
+ "breakeven": {
+  "cloud$0.1/rollout_24h_$1.5/gpu-h": {
+   "C_train_usd": 5680,
+   "breakeven_tasks_TB_GPT": 15158,
+   "breakeven_tasks_SWE_GPT": 6084
+  },
+  "cloud$0.1/rollout_24h_$3.0/gpu-h": {
+   "C_train_usd": 7120,
+   "breakeven_tasks_TB_GPT": 19001,
+   "breakeven_tasks_SWE_GPT": 7626
+  },
+  "cloud$0.1/rollout_48h_$1.5/gpu-h": {
+   "C_train_usd": 7120,
+   "breakeven_tasks_TB_GPT": 19001,
+   "breakeven_tasks_SWE_GPT": 7626
+  },
+  "cloud$0.1/rollout_48h_$3.0/gpu-h": {
+   "C_train_usd": 10000,
+   "breakeven_tasks_TB_GPT": 26687,
+   "breakeven_tasks_SWE_GPT": 10711
+  },
+  "cloud$0.1/rollout_96h_$1.5/gpu-h": {
+   "C_train_usd": 10000,
+   "breakeven_tasks_TB_GPT": 26687,
+   "breakeven_tasks_SWE_GPT": 10711
+  },
+  "cloud$0.1/rollout_96h_$3.0/gpu-h": {
+   "C_train_usd": 15760,
+   "breakeven_tasks_TB_GPT": 42058,
+   "breakeven_tasks_SWE_GPT": 16880
+  },
+  "cloud$0.3/rollout_24h_$1.5/gpu-h": {
+   "C_train_usd": 10160,
+   "breakeven_tasks_TB_GPT": 27114,
+   "breakeven_tasks_SWE_GPT": 10882
+  },
+  "cloud$0.3/rollout_24h_$3.0/gpu-h": {
+   "C_train_usd": 11600,
+   "breakeven_tasks_TB_GPT": 30957,
+   "breakeven_tasks_SWE_GPT": 12425
+  },
+  "cloud$0.3/rollout_48h_$1.5/gpu-h": {
+   "C_train_usd": 11600,
+   "breakeven_tasks_TB_GPT": 30957,
+   "breakeven_tasks_SWE_GPT": 12425
+  },
+  "cloud$0.3/rollout_48h_$3.0/gpu-h": {
+   "C_train_usd": 14480,
+   "breakeven_tasks_TB_GPT": 38642,
+   "breakeven_tasks_SWE_GPT": 15509
+  },
+  "cloud$0.3/rollout_96h_$1.5/gpu-h": {
+   "C_train_usd": 14480,
+   "breakeven_tasks_TB_GPT": 38642,
+   "breakeven_tasks_SWE_GPT": 15509
+  },
+  "cloud$0.3/rollout_96h_$3.0/gpu-h": {
+   "C_train_usd": 20240,
+   "breakeven_tasks_TB_GPT": 54014,
+   "breakeven_tasks_SWE_GPT": 21679
+  },
+  "cloud$0.6/rollout_24h_$1.5/gpu-h": {
+   "C_train_usd": 16880,
+   "breakeven_tasks_TB_GPT": 45047,
+   "breakeven_tasks_SWE_GPT": 18080
+  },
+  "cloud$0.6/rollout_24h_$3.0/gpu-h": {
+   "C_train_usd": 18320,
+   "breakeven_tasks_TB_GPT": 48890,
+   "breakeven_tasks_SWE_GPT": 19622
+  },
+  "cloud$0.6/rollout_48h_$1.5/gpu-h": {
+   "C_train_usd": 18320,
+   "breakeven_tasks_TB_GPT": 48890,
+   "breakeven_tasks_SWE_GPT": 19622
+  },
+  "cloud$0.6/rollout_48h_$3.0/gpu-h": {
+   "C_train_usd": 21200,
+   "breakeven_tasks_TB_GPT": 56576,
+   "breakeven_tasks_SWE_GPT": 22707
+  },
+  "cloud$0.6/rollout_96h_$1.5/gpu-h": {
+   "C_train_usd": 21200,
+   "breakeven_tasks_TB_GPT": 56576,
+   "breakeven_tasks_SWE_GPT": 22707
+  },
+  "cloud$0.6/rollout_96h_$3.0/gpu-h": {
+   "C_train_usd": 26960,
+   "breakeven_tasks_TB_GPT": 71947,
+   "breakeven_tasks_SWE_GPT": 28876
+  }
+ },
+ "eq1_penalty": {
+  "0.02": {
+   "3": {
+    "bonus": 0.943,
+    "dR_dC": -0.0178,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0092
+   },
+   "5.8": {
+    "bonus": 0.896,
+    "dR_dC": -0.0161,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0085
+   },
+   "9": {
+    "bonus": 0.847,
+    "dR_dC": -0.0144,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0078
+   },
+   "15": {
+    "bonus": 0.769,
+    "dR_dC": -0.0118,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0067
+   }
+  },
+  "0.05": {
+   "3": {
+    "bonus": 0.87,
+    "dR_dC": -0.0378,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0202
+   },
+   "5.8": {
+    "bonus": 0.775,
+    "dR_dC": -0.03,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0169
+   },
+   "9": {
+    "bonus": 0.69,
+    "dR_dC": -0.0238,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0141
+   },
+   "15": {
+    "bonus": 0.571,
+    "dR_dC": -0.0163,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0104
+   }
+  },
+  "0.1": {
+   "3": {
+    "bonus": 0.769,
+    "dR_dC": -0.0592,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0334
+   },
+   "5.8": {
+    "bonus": 0.633,
+    "dR_dC": -0.0401,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0245
+   },
+   "9": {
+    "bonus": 0.526,
+    "dR_dC": -0.0277,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0181
+   },
+   "15": {
+    "bonus": 0.4,
+    "dR_dC": -0.016,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0114
+   }
+  },
+  "0.2": {
+   "3": {
+    "bonus": 0.625,
+    "dR_dC": -0.0781,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0481
+   },
+   "5.8": {
+    "bonus": 0.463,
+    "dR_dC": -0.0429,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0293
+   },
+   "9": {
+    "bonus": 0.357,
+    "dR_dC": -0.0255,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0188
+   },
+   "15": {
+    "bonus": 0.25,
+    "dR_dC": -0.0125,
+    "min_rel_gain_in_P_to_justify_one_call": 0.01
+   }
+  },
+  "0.5": {
+   "3": {
+    "bonus": 0.4,
+    "dR_dC": -0.08,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0571
+   },
+   "5.8": {
+    "bonus": 0.256,
+    "dR_dC": -0.0329,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0262
+   },
+   "9": {
+    "bonus": 0.182,
+    "dR_dC": -0.0165,
+    "min_rel_gain_in_P_to_justify_one_call": 0.014
+   },
+   "15": {
+    "bonus": 0.118,
+    "dR_dC": -0.0069,
+    "min_rel_gain_in_P_to_justify_one_call": 0.0062
+   }
+  }
+ },
+ "eq1_range": {
+  "fail": 0.0,
+  "success_C0": 2.0,
+  "success_C5.8_lam0.1": 1.633,
+  "success_C8.97_lam0.1": 1.527,
+  "success_Cinf": 1.0,
+  "gap_success_vs_fail_min": 1.0,
+  "gap_C5.8_vs_C8.97": 0.106
+ },
+ "eq2_scale": {
+  "N2000_Nroute10": {
+   "scale_N_over_Nroute": 200.0,
+   "per_token_extra_adv_beta1_Adel1": 200.0,
+   "total_mass_beta1_Adel1": 2000
+  },
+  "N2000_Nroute30": {
+   "scale_N_over_Nroute": 66.7,
+   "per_token_extra_adv_beta1_Adel1": 66.7,
+   "total_mass_beta1_Adel1": 2000
+  },
+  "N2000_Nroute100": {
+   "scale_N_over_Nroute": 20.0,
+   "per_token_extra_adv_beta1_Adel1": 20.0,
+   "total_mass_beta1_Adel1": 2000
+  },
+  "N8000_Nroute10": {
+   "scale_N_over_Nroute": 800.0,
+   "per_token_extra_adv_beta1_Adel1": 800.0,
+   "total_mass_beta1_Adel1": 8000
+  },
+  "N8000_Nroute30": {
+   "scale_N_over_Nroute": 266.7,
+   "per_token_extra_adv_beta1_Adel1": 266.7,
+   "total_mass_beta1_Adel1": 8000
+  },
+  "N8000_Nroute100": {
+   "scale_N_over_Nroute": 80.0,
+   "per_token_extra_adv_beta1_Adel1": 80.0,
+   "total_mass_beta1_Adel1": 8000
+  }
+ },
+ "eq2_total_mass_note": "위임 토큰 전체에 더해지는 이점의 합 = beta*N*(토큰 가중 평균 A_del) -> N_route와 무관. beta 값은 논문에 없음"
+}

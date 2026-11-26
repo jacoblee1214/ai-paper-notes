@@ -1,0 +1,473 @@
+{
+ "n_inversion": {
+  "TB": {
+   "cells": 28,
+   "best_n": 89,
+   "match": 28,
+   "n89": 28,
+   "n110": 1
+  },
+  "SWE": {
+   "cells": 28,
+   "best_n": 110,
+   "match": 27,
+   "n89": 0,
+   "n110": 27
+  }
+ },
+ "pass1_single_run_check": {
+  "TB": {
+   "cells": 14,
+   "all_k_over_n": true,
+   "k_divisible_by_3": 6
+  },
+  "SWE": {
+   "cells": 14,
+   "all_k_over_n": false,
+   "k_divisible_by_3": 5
+  }
+ },
+ "p3_ge_p1": true,
+ "p3_cost_vs_3x_mean_fig5": {
+  "TB_GPT_P3_cost": 279.73,
+  "3x93": 279,
+  "SWE_GPT_P3_cost": 598.08,
+  "3x199": 597,
+  "TB_P1_cost": 90.31,
+  "SWE_P1_cost": 200.5,
+  "ratio_P3_over_P1_TB_vanilla": 3.1,
+  "ratio_SWE": 2.98
+ },
+ "delta_rows": [
+  {
+   "setup": "GPT",
+   "bench": "TB",
+   "d_acc_p1": -2.25,
+   "paper": -2.25,
+   "d_cost_p1": -36.93,
+   "paper_cost_p1": -36.93,
+   "d_acc_p3": 0.0,
+   "paper_acc_p3": 0.0,
+   "d_cost_p3": -34.98,
+   "paper_cost_p3": -34.98,
+   "ok": true
+  },
+  {
+   "setup": "Opus",
+   "bench": "TB",
+   "d_acc_p1": -3.38,
+   "paper": -3.38,
+   "d_cost_p1": -33.65,
+   "paper_cost_p1": -33.65,
+   "d_acc_p3": 0.0,
+   "paper_acc_p3": 0.0,
+   "d_cost_p3": -32.6,
+   "paper_cost_p3": -32.6,
+   "ok": true
+  },
+  {
+   "setup": "GPT",
+   "bench": "SWE",
+   "d_acc_p1": 1.82,
+   "paper": 1.82,
+   "d_cost_p1": -51.22,
+   "paper_cost_p1": -51.22,
+   "d_acc_p3": 2.72,
+   "paper_acc_p3": 2.72,
+   "d_cost_p3": -52.68,
+   "paper_cost_p3": -52.68,
+   "ok": true
+  },
+  {
+   "setup": "Opus",
+   "bench": "SWE",
+   "d_acc_p1": -2.73,
+   "paper": -2.73,
+   "d_cost_p1": -62.68,
+   "paper_cost_p1": -62.68,
+   "d_acc_p3": -2.73,
+   "paper_acc_p3": -2.73,
+   "d_cost_p3": -62.14,
+   "paper_cost_p3": -62.14,
+   "ok": true
+  }
+ ],
+ "delta_acc_is_pp_not_relative": true,
+ "headline": {
+  "p1_savings": {
+   "GPT-TB": 36.93,
+   "GPT-SWE": 51.22,
+   "Opus-TB": 33.65,
+   "Opus-SWE": 62.68
+  },
+  "p3_savings": {
+   "GPT-TB": 34.98,
+   "GPT-SWE": 52.68,
+   "Opus-TB": 32.6,
+   "Opus-SWE": 62.14
+  },
+  "mean8": 45.86,
+  "mean_p3_4": 45.6,
+  "mean_p1_4": 46.12,
+  "weighted_p3": 50.75,
+  "weighted_p1": 50.96,
+  "paper_intro_46": 46,
+  "project_page_45.16": 45.16,
+  "TB_mean_p3": 33.79,
+  "SWE_mean_p3": 57.41,
+  "TB_max_all": 36.93,
+  "SWE_max_all": 62.68,
+  "abstract_62_matches": "SWE Opus P3 62.14 (max of P3), P1 62.68 would round to 63",
+  "abstract_34_matches": "TB P3 mean of GPT/Opus = 33.79 (max would be 36.93)"
+ },
+ "self_dominates_p3": {
+  "GPT-TB": [
+   "Vanilla",
+   "Random",
+   "MTRouter",
+   "Binary"
+  ],
+  "GPT-SWE": [
+   "Vanilla",
+   "Random",
+   "RSD",
+   "STEER",
+   "MTRouter",
+   "Binary"
+  ],
+  "Opus-TB": [
+   "Vanilla",
+   "Random",
+   "STEER",
+   "MTRouter"
+  ],
+  "Opus-SWE": [
+   "Random",
+   "RSD",
+   "STEER",
+   "MTRouter",
+   "Binary"
+  ]
+ },
+ "self_vs_binary_p3_cost_pct": {
+  "GPT-TB": -7.0,
+  "GPT-SWE": -24.0,
+  "Opus-TB": -24.8,
+  "Opus-SWE": -38.0
+ },
+ "judge_cost_share_TB_GPT_binary_p1": 9.8,
+ "fig5": {
+  "TB": {
+   "acc_diff_pp": -1.5,
+   "acc_ratio_pct": 97.9,
+   "cost_saving_pct": 34.4,
+   "table1_binary_p1_vs_vanilla_acc_diff": -2.25,
+   "table1_binary_p3_vs_vanilla_acc_diff": 0.0
+  },
+  "SWE": {
+   "acc_diff_pp": -4.0,
+   "acc_ratio_pct": 93.1,
+   "cost_saving_pct": 37.7,
+   "table1_binary_p1_vs_vanilla_acc_diff": -0.91,
+   "table1_binary_p3_vs_vanilla_acc_diff": 2.72
+  }
+ },
+ "fig5_k_over_3n": {
+  "TB": {
+   "binary": 188.0,
+   "vanilla": 192.0
+  },
+  "SWE": {
+   "binary": 177.9,
+   "vanilla": 191.1
+  }
+ },
+ "fig3_only_cloud_k_over_3n": {
+  "TB_terminus2": 192.0,
+  "SWE_terminus2": 191.0,
+  "TB_openhands": 137.0
+ },
+ "fig7d": {
+  "TB": {
+   "A100_saving": 35.0,
+   "DGX_saving": 41.1,
+   "DGX_acc_vs_vanilla_pp": -1.12,
+   "DGX_acc_vs_A100_pp": -1.12,
+   "DGX_tasks_vs_A100": -1.0
+  },
+  "SWE": {
+   "A100_saving": 52.7,
+   "DGX_saving": 54.1,
+   "DGX_acc_vs_vanilla_pp": 0.91,
+   "DGX_acc_vs_A100_pp": -1.81,
+   "DGX_tasks_vs_A100": -2.0
+  }
+ },
+ "fig7d_cost_note": "DGX 비용은 클라우드 API 비용만. 지연: 평균 11.72분, 중앙값 8.30분(TB 과제당, 설정 §G.2). 클라우드 단독의 지연은 보고되지 않음",
+ "fig7_threshold": {
+  "SWE-Smith(val)": {
+   "0.2": {
+    "acc": 59.0,
+    "cost": 67.0,
+    "saving_pct": 2.0,
+    "acc_vs_llm_pp": 0.0
+   },
+   "0.4": {
+    "acc": 60.0,
+    "cost": 63.9,
+    "saving_pct": 6.6,
+    "acc_vs_llm_pp": 1.0
+   },
+   "0.6": {
+    "acc": 55.0,
+    "cost": 60.4,
+    "saving_pct": 11.7,
+    "acc_vs_llm_pp": -4.0
+   },
+   "0.8": {
+    "acc": 57.0,
+    "cost": 55.0,
+    "saving_pct": 19.6,
+    "acc_vs_llm_pp": -2.0
+   }
+  },
+  "TB": {
+   "0.2": {
+    "acc": 76.4,
+    "cost": 66.7,
+    "saving_pct": 26.1,
+    "acc_vs_llm_pp": 2.2
+   },
+   "0.4": {
+    "acc": 75.3,
+    "cost": 63.6,
+    "saving_pct": 29.6,
+    "acc_vs_llm_pp": 1.1
+   },
+   "0.6": {
+    "acc": 67.4,
+    "cost": 64.1,
+    "saving_pct": 29.0,
+    "acc_vs_llm_pp": -6.8
+   },
+   "0.8": {
+    "acc": 64.0,
+    "cost": 52.5,
+    "saving_pct": 41.9,
+    "acc_vs_llm_pp": -10.2
+   }
+  },
+  "SWE": {
+   "0.2": {
+    "acc": 55.5,
+    "cost": 128.6,
+    "saving_pct": 35.9,
+    "acc_vs_llm_pp": 0.0
+   },
+   "0.4": {
+    "acc": 56.4,
+    "cost": 135.2,
+    "saving_pct": 32.6,
+    "acc_vs_llm_pp": 0.9
+   },
+   "0.6": {
+    "acc": 56.4,
+    "cost": 131.8,
+    "saving_pct": 34.3,
+    "acc_vs_llm_pp": 0.9
+   },
+   "0.8": {
+    "acc": 47.3,
+    "cost": 107.4,
+    "saving_pct": 46.4,
+    "acc_vs_llm_pp": -8.2
+   }
+  }
+ },
+ "fig7_val_n_guess": "정확도가 27.0, 59.0, 60.0, 55.0, 57.0으로 모두 정수여서 n=100(또는 50의 배수)로 보임",
+ "table7": [
+  {
+   "harness": "Terminus-2",
+   "slm_acc_k": 25.9,
+   "slm_is_k_over_89": false,
+   "llm_k": [
+    73,
+    true
+   ],
+   "self_k": [
+    73,
+    true
+   ],
+   "d_acc": 0.0,
+   "paper_d_acc": 0.0,
+   "d_cost": -34.98,
+   "paper_d_cost": -34.89,
+   "cost_mismatch": true
+  },
+  {
+   "harness": "OpenHands",
+   "slm_acc_k": 18.0,
+   "slm_is_k_over_89": true,
+   "llm_k": [
+    70,
+    true
+   ],
+   "self_k": [
+    67,
+    true
+   ],
+   "d_acc": -3.37,
+   "paper_d_acc": -3.37,
+   "d_cost": -25.01,
+   "paper_d_cost": -25.09,
+   "cost_mismatch": true
+  },
+  {
+   "harness": "Pi",
+   "slm_acc_k": 19.0,
+   "slm_is_k_over_89": true,
+   "llm_k": [
+    71,
+    true
+   ],
+   "self_k": [
+    68,
+    true
+   ],
+   "d_acc": -3.38,
+   "paper_d_acc": -3.38,
+   "d_cost": -25.94,
+   "paper_d_cost": -25.94,
+   "cost_mismatch": false
+  },
+  {
+   "harness": "mini-SWE-agent",
+   "slm_acc_k": 20.0,
+   "slm_is_k_over_89": true,
+   "llm_k": [
+    74,
+    true
+   ],
+   "self_k": [
+    72,
+    true
+   ],
+   "d_acc": -2.25,
+   "paper_d_acc": -2.25,
+   "d_cost": -46.32,
+   "paper_d_cost": -46.32,
+   "cost_mismatch": false
+  }
+ ],
+ "table7_mean_saving": {
+  "recomputed": 33.06,
+  "paper_projectpage": 33.04
+ },
+ "table2_3_4": {
+  "T2_SFT": [
+   51,
+   true
+  ],
+  "T2_Self": [
+   64,
+   true
+  ],
+  "T3_with": [
+   64,
+   true
+  ],
+  "T3_without": [
+   58,
+   true
+  ],
+  "T4": {
+   "Vanilla Qwen3.5-9B": [
+    17,
+    true
+   ],
+   "Vanilla+GRPO+SFT": [
+    29,
+    true
+   ],
+   "Self-Delegation": [
+    64,
+    true
+   ]
+  },
+  "TMax_saving_pct": 30.6,
+  "TMax_alone": [
+   25,
+   true
+  ],
+  "Judge_binary_total_equals_table1": 59.16,
+  "Judge_k": {
+   "Qwen3.5-9B": [
+    45,
+    true
+   ],
+   "Qwen3.8-27B": [
+    63,
+    true
+   ],
+   "GPT-5.4-mini": [
+    64,
+    true
+   ]
+  },
+  "judge_total_cost": {
+   "Qwen3.5-9B": 62.11,
+   "Qwen3.8-27B": 75.74,
+   "GPT-5.4-mini": 59.16
+  }
+ },
+ "table3_cost_per_delegation_usd": {
+  "with": 0.1103,
+  "without": 0.069
+ },
+ "table3_cost_ratio_per_call": 1.6,
+ "implied_mean_turns_if_rate_40pct": {
+  "with": 14.5,
+  "without": 22.4
+ },
+ "vanilla_cost_per_step_usd_if_L": {
+  "14.5": 0.07,
+  "20": 0.0507,
+  "30": 0.0338,
+  "40": 0.0254,
+  "60": 0.0169
+ },
+ "delegated_step_cost_multiple_if_L": {
+  "14.5": 1.58,
+  "20": 2.17,
+  "30": 3.26,
+  "40": 4.35,
+  "60": 6.52
+ },
+ "random_vs_vanilla": {
+  "GPT-TB": {
+   "cost_p3_pct": -25.2,
+   "acc_p3_pp": -2.24,
+   "acc_p1_pp": -7.87,
+   "cost_p1_pct": -17.7
+  },
+  "GPT-SWE": {
+   "cost_p3_pct": -23.8,
+   "acc_p3_pp": -0.91,
+   "acc_p1_pp": -6.36,
+   "cost_p1_pct": -31.0
+  },
+  "Opus-TB": {
+   "cost_p3_pct": -15.7,
+   "acc_p3_pp": -7.86,
+   "acc_p1_pp": -9.0,
+   "cost_p1_pct": -16.6
+  },
+  "Opus-SWE": {
+   "cost_p3_pct": -31.8,
+   "acc_p3_pp": -9.09,
+   "acc_p1_pp": -9.1,
+   "cost_p1_pct": -33.6
+  }
+ },
+ "random_delegation_ratio_note": "표 1의 무작위 위임이 몇 %인지 본문에 없음. 그림 3은 약 40%를 서술, 표 1 비용 비율은 TB GPT P3 0.75, SWE 0.76"
+}
