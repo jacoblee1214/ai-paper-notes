@@ -1,0 +1,125 @@
+{
+ "params": {
+  "0.16B": {
+   "layers": 16,
+   "d": 768,
+   "ffn": 2048,
+   "total_B": 0.1624,
+   "body_B": 0.1132,
+   "embed_B": 0.0492
+  },
+  "0.37B": {
+   "layers": 24,
+   "d": 1024,
+   "ffn": 2816,
+   "total_B": 0.3738,
+   "body_B": 0.3083,
+   "embed_B": 0.0655
+  },
+  "0.76B": {
+   "layers": 24,
+   "d": 1536,
+   "ffn": 4096,
+   "total_B": 0.7778,
+   "body_B": 0.6795,
+   "embed_B": 0.0983
+  },
+  "1.4B": {
+   "layers": 24,
+   "d": 2048,
+   "ffn": 5632,
+   "total_B": 1.3642,
+   "body_B": 1.2331,
+   "embed_B": 0.1311
+  },
+  "7B": {
+   "layers": 32,
+   "d": 4096,
+   "ffn": 11008,
+   "total_B": 6.7381,
+   "body_B": 6.476,
+   "embed_B": 0.2621
+  }
+ },
+ "fig5_x_vs_6ND_(D=0.1..0.5T)": [
+  {
+   "size": "0.16B",
+   "max_abs_log_err_over_5_checkpoints": 0.008
+  },
+  {
+   "size": "0.37B",
+   "max_abs_log_err_over_5_checkpoints": 0.0055
+  },
+  {
+   "size": "0.76B",
+   "max_abs_log_err_over_5_checkpoints": 0.0049
+  },
+  {
+   "size": "1.4B",
+   "max_abs_log_err_over_5_checkpoints": 0.0045
+  },
+  {
+   "size": "7B",
+   "max_abs_log_err_over_5_checkpoints": 0.0032
+  }
+ ],
+ "fig5_same_x_for_both_methods_(c4,wiki,llama panels)": true,
+ "unet_extra_params_B_implied_by_table7": {
+  "0.16B": 0.17,
+  "0.37B": 0.264,
+  "0.76B": 0.27,
+  "1.4B": 0.27,
+  "7B": 0.266
+ },
+ "unet_extra_params_B_if_0.27_const_pct_of_actual_N": {
+  "0.16B": 166.3,
+  "0.37B": 72.2,
+  "0.76B": 34.7,
+  "1.4B": 19.8,
+  "7B": 4.0
+ },
+ "table9_7.3B_vs_6.74B+0.27B": 0.292,
+ "images_seen_in_0.5T_budget": {
+  "patch1x1": {
+   "patches_per_image": 1024,
+   "images_seen_B": 0.244,
+   "epochs_over_380M": 0.6
+  },
+  "patch2x2": {
+   "patches_per_image": 256,
+   "images_seen_B": 0.977,
+   "epochs_over_380M": 2.6
+  },
+  "patch4x4": {
+   "patches_per_image": 64,
+   "images_seen_B": 3.906,
+   "epochs_over_380M": 10.3
+  },
+  "patch8x8": {
+   "patches_per_image": 16,
+   "images_seen_B": 15.625,
+   "epochs_over_380M": 41.1
+  },
+  "chameleon_VQ_8x8_pixels_per_token": {
+   "tokens_per_image": 1024,
+   "images_seen_B": 0.244,
+   "epochs_over_380M": 0.64
+  }
+ },
+ "images_ratio_transfusion2x2_over_chameleon": 4.004098360655738,
+ "sec4.4_image_side": {
+  "692M_pairs_x5_epochs": 3460000000.0,
+  "x256_patches_T": 0.88576,
+  "paper_says_3.5B_pairs": 3500000000.0,
+  "3.5B_x256_T": 0.896
+ },
+ "generation_flops_per_image_7B": {
+  "transfusion_250steps_256patches": 862476800000000.0,
+  "chameleon_1024tokens": 13799628800000.0,
+  "ratio_transfusion_over_chameleon": 62.5,
+  "note": "CFG\ub294 \uc591\ucabd \ubaa8\ub450 2\ubc30\ub77c \ube44\uc728 \ubd88\ubcc0. \ub17c\ubb38\uc758 6ND \ub3d9\ub4f1 FLOP \ube44\uad50\ub294 \ud559\uc2b5 \uacc4\uc0b0\ub7c9\uc774\uace0 \uc11c\ube44\uc2a4 \ube44\uc6a9\uc774 \uc544\ub2c8\ub2e4(\ub17c\ubb38 \uac01\uc8fc 15\ub294 \uc5b4\ud150\uc158 \uc81c\uacf1\ud56d\ub9cc \ub2e4\ub8f8)."
+ },
+ "attention_term_fraction_7B_T4096": 0.07379698400091693,
+ "train_flops_7B_0.5T_6ND": 2.02143e+22,
+ "train_flops_7B_2T_6ND_4.4": 8.40972e+22
+}

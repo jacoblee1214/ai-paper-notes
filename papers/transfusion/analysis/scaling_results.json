@@ -1,0 +1,527 @@
+{
+ "X7_flops_6ND": 2.0214448128e+22,
+ "N7": 6738149376,
+ "panels": {
+  "c4_ppl": {
+   "n_points": {
+    "Transfusion": 25,
+    "Chameleon": 25
+   },
+   "fit_slope_lnln": {
+    "Transfusion": -0.152,
+    "Chameleon": -0.1644
+   },
+   "paper_drawn_slope": {
+    "Transfusion": -0.152,
+    "Chameleon": -0.1644
+   },
+   "resid_sd_ln": {
+    "Transfusion": 0.0509,
+    "Chameleon": 0.0497
+   },
+   "R2": {
+    "Transfusion": 0.949,
+    "Chameleon": 0.958
+   },
+   "table3_values": {
+    "Transfusion": 7.72,
+    "Chameleon": 8.41
+   },
+   "paper_parity_ratio": 0.489,
+   "ratio_A_actual_C7B": 0.5135,
+   "ratio_A_nominal_X_2.1e22": 0.4943,
+   "ratio_B_fitted_C7B": 0.6494,
+   "ratio_95ci": {
+    "point": {
+     "A": [
+      0.438,
+      0.5139,
+      0.5652
+     ],
+     "B": [
+      0.5199,
+      0.651,
+      0.8501
+     ]
+    },
+    "resid": {
+     "A": [
+      0.4149,
+      0.511,
+      0.666
+     ],
+     "B": [
+      0.456,
+      0.6493,
+      0.9637
+     ]
+    },
+    "cluster": {
+     "A": [
+      0.3805,
+      0.5437,
+      0.84
+     ],
+     "B": [
+      0.3474,
+      0.6367,
+      1.1593
+     ]
+    }
+   },
+   "T_flops_needed_inside_data_range": true,
+   "T_flops_needed": 1.3126917594151597e+22,
+   "T_fit_at_7B_flops": 7.5996017991007525,
+   "C_fit_at_7B_flops": 8.115197576859085,
+   "coef_lnln": {
+    "Transfusion": [
+     9.837218998780758,
+     -0.1520447637196534
+    ],
+    "Chameleon": [
+     10.536833731372997,
+     -0.16438829148521988
+    ]
+   },
+   "lines_cross_at_FLOPs": 4.1231911823288366e+24,
+   "parity_ratio_by_C_flops": {
+    "9.82e+19": 0.4214,
+    "1.41e+21": 0.5232,
+    "2.03e+22": 0.6495
+   }
+  },
+  "wiki_ppl": {
+   "n_points": {
+    "Transfusion": 25,
+    "Chameleon": 25
+   },
+   "fit_slope_lnln": {
+    "Transfusion": -0.1685,
+    "Chameleon": -0.1814
+   },
+   "paper_drawn_slope": {
+    "Transfusion": -0.1685,
+    "Chameleon": -0.1814
+   },
+   "resid_sd_ln": {
+    "Transfusion": 0.0524,
+    "Chameleon": 0.0504
+   },
+   "R2": {
+    "Transfusion": 0.955,
+    "Chameleon": 0.964
+   },
+   "table3_values": {
+    "Transfusion": 4.28,
+    "Chameleon": 4.69
+   },
+   "paper_parity_ratio": 0.526,
+   "ratio_A_actual_C7B": 0.554,
+   "ratio_A_nominal_X_2.1e22": 0.5333,
+   "ratio_B_fitted_C7B": 0.6771,
+   "ratio_95ci": {
+    "point": {
+     "A": [
+      0.4699,
+      0.554,
+      0.6168
+     ],
+     "B": [
+      0.5457,
+      0.6759,
+      0.8692
+     ]
+    },
+    "resid": {
+     "A": [
+      0.4556,
+      0.5548,
+      0.7
+     ],
+     "B": [
+      0.4948,
+      0.6769,
+      0.9609
+     ]
+    },
+    "cluster": {
+     "A": [
+      0.4126,
+      0.5835,
+      0.8567
+     ],
+     "B": [
+      0.3987,
+      0.6681,
+      1.1685
+     ]
+    }
+   },
+   "T_flops_needed_inside_data_range": true,
+   "T_flops_needed": 1.3687400380080784e+22,
+   "T_fit_at_7B_flops": 4.245784829454849,
+   "C_fit_at_7B_flops": 4.534112375770304,
+   "coef_lnln": {
+    "Transfusion": [
+     10.10030942934702,
+     -0.16850209101207886
+    ],
+    "Chameleon": [
+     10.829079813847233,
+     -0.1814121162438533
+    ]
+   },
+   "lines_cross_at_FLOPs": 3.2802379092871376e+24,
+   "parity_ratio_by_C_flops": {
+    "9.82e+19": 0.4502,
+    "1.41e+21": 0.5522,
+    "2.03e+22": 0.6773
+   }
+  },
+  "llama_acc": {
+   "n_points": {
+    "Transfusion": 25,
+    "Chameleon": 25
+   },
+   "fit_slope_lnln": {
+    "Transfusion": 0.0714,
+    "Chameleon": 0.0657
+   },
+   "paper_drawn_slope": {
+    "Transfusion": 0.0714,
+    "Chameleon": 0.0657
+   },
+   "resid_sd_ln": {
+    "Transfusion": 0.0315,
+    "Chameleon": 0.0234
+   },
+   "R2": {
+    "Transfusion": 0.914,
+    "Chameleon": 0.942
+   },
+   "table3_values": {
+    "Transfusion": 61.5,
+    "Chameleon": 59.1
+   },
+   "paper_parity_ratio": 0.6,
+   "ratio_A_actual_C7B": 0.6139,
+   "ratio_A_nominal_X_2.1e22": 0.5909,
+   "ratio_B_fitted_C7B": 0.5008,
+   "ratio_95ci": {
+    "point": {
+     "A": [
+      0.509,
+      0.6086,
+      0.858
+     ],
+     "B": [
+      0.3201,
+      0.503,
+      0.7583
+     ]
+    },
+    "resid": {
+     "A": [
+      0.4616,
+      0.6111,
+      0.8607
+     ],
+     "B": [
+      0.3481,
+      0.4962,
+      0.7755
+     ]
+    },
+    "cluster": {
+     "A": [
+      0.5335,
+      0.6194,
+      5.5125
+     ],
+     "B": [
+      0.1552,
+      0.5137,
+      3.5852
+     ]
+    }
+   },
+   "T_flops_needed_inside_data_range": true,
+   "T_flops_needed": 1.0123538547885048e+22,
+   "T_fit_at_7B_flops": 61.196686618100685,
+   "C_fit_at_7B_flops": 58.24667413285474,
+   "coef_lnln": {
+    "Transfusion": [
+     0.4446748055258773,
+     0.07144410698686372
+    ],
+    "Chameleon": [
+     0.6886715342301312,
+     0.06573151213566324
+    ]
+   },
+   "lines_cross_at_FLOPs": 3.544986650029989e+18,
+   "parity_ratio_by_C_flops": {
+    "9.82e+19": 0.7667,
+    "1.41e+21": 0.6196,
+    "2.03e+22": 0.5007
+   }
+  },
+  "coco_cider": {
+   "n_points": {
+    "Transfusion": 60,
+    "Chameleon": 22
+   },
+   "fit_slope_lnln": {
+    "Transfusion": 0.3489,
+    "Chameleon": 0.3229
+   },
+   "paper_drawn_slope": {
+    "Transfusion": 0.3489,
+    "Chameleon": 0.3229
+   },
+   "resid_sd_ln": {
+    "Transfusion": 0.1187,
+    "Chameleon": 0.2025
+   },
+   "R2": {
+    "Transfusion": 0.95,
+    "Chameleon": 0.751
+   },
+   "table3_values": {
+    "Transfusion": 27.2,
+    "Chameleon": 18.0
+   },
+   "paper_parity_ratio": 0.218,
+   "ratio_A_actual_C7B": 0.2231,
+   "ratio_A_nominal_X_2.1e22": 0.2147,
+   "ratio_B_fitted_C7B": 0.2183,
+   "ratio_95ci": {
+    "point": {
+     "A": [
+      0.2055,
+      0.2222,
+      0.2417
+     ],
+     "B": [
+      0.1785,
+      0.2183,
+      0.2848
+     ]
+    },
+    "resid": {
+     "A": [
+      0.1989,
+      0.2224,
+      0.2541
+     ],
+     "B": [
+      0.1311,
+      0.2216,
+      0.3257
+     ]
+    }
+   },
+   "T_flops_needed_inside_data_range": true,
+   "T_flops_needed": 4.412488910267002e+21,
+   "T_fit_at_7B_flops": 30.38024905133654,
+   "C_fit_at_7B_flops": 17.864740631464997,
+   "coef_lnln": {
+    "Transfusion": [
+     -14.50434157824467,
+     0.34886868094403967
+    ],
+    "Chameleon": [
+     -13.70097528031156,
+     0.32288908134626815
+    ]
+   },
+   "lines_cross_at_FLOPs": 26895144398167.98,
+   "parity_ratio_by_C_flops": {
+    "4.11e+20": 0.2917,
+    "2.89e+21": 0.2523,
+    "2.03e+22": 0.2182
+   }
+  },
+  "coco_fid": {
+   "n_points": {
+    "Transfusion": 25,
+    "Chameleon": 20
+   },
+   "fit_slope_lnln": {
+    "Transfusion": -0.221,
+    "Chameleon": -0.2948
+   },
+   "paper_drawn_slope": {
+    "Transfusion": -0.221,
+    "Chameleon": -0.2949
+   },
+   "resid_sd_ln": {
+    "Transfusion": 0.1431,
+    "Chameleon": 0.1175
+   },
+   "R2": {
+    "Transfusion": 0.832,
+    "Chameleon": 0.91
+   },
+   "table3_values": {
+    "Transfusion": 16.8,
+    "Chameleon": 29.6
+   },
+   "paper_parity_ratio": 0.029,
+   "ratio_A_actual_C7B": 0.0312,
+   "ratio_A_nominal_X_2.1e22": 0.0301,
+   "ratio_B_fitted_C7B": 0.0407,
+   "ratio_95ci": {
+    "point": {
+     "A": [
+      0.02,
+      0.0311,
+      0.0405
+     ],
+     "B": [
+      0.0254,
+      0.0407,
+      0.0619
+     ]
+    },
+    "resid": {
+     "A": [
+      0.023,
+      0.0311,
+      0.0404
+     ],
+     "B": [
+      0.0234,
+      0.0406,
+      0.0688
+     ]
+    },
+    "cluster": {
+     "A": [
+      0.0033,
+      0.0299,
+      0.0498
+     ],
+     "B": [
+      0.0039,
+      0.0357,
+      0.077
+     ]
+    }
+   },
+   "T_flops_needed_inside_data_range": true,
+   "T_flops_needed": 8.229764049681231e+20,
+   "T_fit_at_7B_flops": 13.758688677251381,
+   "C_fit_at_7B_flops": 27.91353021608399,
+   "coef_lnln": {
+    "Transfusion": [
+     13.971903611523409,
+     -0.22099068930670526
+    ],
+    "Chameleon": [
+     18.472626373575594,
+     -0.29484643710236014
+    ]
+   },
+   "lines_cross_at_FLOPs": 2.9216772726288323e+26,
+   "parity_ratio_by_C_flops": {
+    "2.25e+20": 0.0091,
+    "2.14e+21": 0.0192,
+    "2.03e+22": 0.0408
+   }
+  },
+  "coco_clip": {
+   "n_points": {
+    "Transfusion": 25,
+    "Chameleon": 16
+   },
+   "fit_slope_lnln": {
+    "Transfusion": 0.0807,
+    "Chameleon": 0.0946
+   },
+   "paper_drawn_slope": {
+    "Transfusion": 0.0807,
+    "Chameleon": 0.0946
+   },
+   "resid_sd_ln": {
+    "Transfusion": 0.0354,
+    "Chameleon": 0.052
+   },
+   "R2": {
+    "Transfusion": 0.915,
+    "Chameleon": 0.794
+   },
+   "table3_values": {
+    "Transfusion": 25.5,
+    "Chameleon": 24.3
+   },
+   "paper_parity_ratio": 0.319,
+   "ratio_A_actual_C7B": 0.3263,
+   "ratio_A_nominal_X_2.1e22": 0.3141,
+   "ratio_B_fitted_C7B": 0.5007,
+   "ratio_95ci": {
+    "point": {
+     "A": [
+      0.2535,
+      0.3241,
+      0.3877
+     ],
+     "B": [
+      0.3235,
+      0.4963,
+      0.977
+     ]
+    },
+    "resid": {
+     "A": [
+      0.2601,
+      0.3277,
+      0.4334
+     ],
+     "B": [
+      0.2526,
+      0.5022,
+      1.0528
+     ]
+    },
+    "cluster": {
+     "A": [
+      0.2096,
+      0.3383,
+      0.4265
+     ],
+     "B": [
+      0.196,
+      0.5109,
+      3.479
+     ]
+    }
+   },
+   "T_flops_needed_inside_data_range": true,
+   "T_flops_needed": 1.01208801557985e+22,
+   "T_fit_at_7B_flops": 26.599105466178106,
+   "C_fit_at_7B_flops": 25.154372851298493,
+   "coef_lnln": {
+    "Transfusion": [
+     -0.8652525346042512,
+     0.08072575660975503
+    ],
+    "Chameleon": [
+     -1.6315499307958041,
+     0.09455835188118392
+    ]
+   },
+   "lines_cross_at_FLOPs": 1.1455741575766044e+24,
+   "parity_ratio_by_C_flops": {
+    "8.22e+20": 0.2892,
+    "4.08e+21": 0.3806,
+    "2.03e+22": 0.5009
+   }
+  }
+ },
+ "cider_without_two_outliers": {
+  "n_C": 20,
+  "ratio_B": 0.2112,
+  "slope_C": 0.2808
+ }
+}
