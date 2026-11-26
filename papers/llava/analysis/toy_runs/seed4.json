@@ -1,0 +1,191 @@
+{
+ "seed": 4,
+ "hp": {
+  "vision_steps": 400,
+  "lm_steps": 1000,
+  "s1_steps": 1200,
+  "s2_steps": 2000,
+  "batch": 64,
+  "lr_s1": 0.002,
+  "lr_s2": 0.001,
+  "pre_lr_vision": 0.002,
+  "pre_lr_lm": 0.001
+ },
+ "device": "mps",
+ "vision_pretrain_loss": 0.02027651309967041,
+ "lm_pretrain_loss": 0.6361368918418884,
+ "probe": {
+  "m1": {
+   "patch_color_probe_acc": 1.0,
+   "patch_position_probe_acc": 0.9037333130836487,
+   "patch_count_probe_acc": 0.8790666460990906,
+   "mean_token_norm": 28.989225387573242
+  },
+  "m2": {
+   "patch_color_probe_acc": 1.0,
+   "patch_position_probe_acc": 0.9236000180244446,
+   "patch_count_probe_acc": 0.7735999822616577,
+   "mean_token_norm": 26.617942810058594
+  },
+  "m3": {
+   "patch_color_probe_acc": 1.0,
+   "patch_position_probe_acc": 0.932533323764801,
+   "patch_count_probe_acc": 0.6334666609764099,
+   "mean_token_norm": 22.00318145751953
+  },
+  "m4": {
+   "patch_color_probe_acc": 1.0,
+   "patch_position_probe_acc": 0.9552000164985657,
+   "patch_count_probe_acc": 0.5554666519165039,
+   "mean_token_norm": 12.104902267456055
+  }
+ },
+ "arms": {
+  "base": {
+   "cfg": {
+    "projector": "linear",
+    "layer": -2,
+    "s1": 1200,
+    "s2": 2000
+   },
+   "s1_loss": 0.5852207994461059,
+   "s1_caption": {
+    "token_acc": 0.7459558248519897,
+    "content_acc": 0.46836787462234497
+   },
+   "s2_loss": 0.1474708592891693,
+   "eval": {
+    "count": 1.0,
+    "color_at": 0.5220000147819519,
+    "where": 0.8619999885559082,
+    "exist": 1.0,
+    "spatial": 0.7946666677792867,
+    "macro": 0.846000000834465
+   },
+   "seconds": 154.70306587219238
+  },
+  "one_stage": {
+   "cfg": {
+    "projector": "linear",
+    "layer": -2,
+    "s1": 0,
+    "s2": 2000
+   },
+   "s2_loss": 0.36052231132984164,
+   "eval": {
+    "count": 1.0,
+    "color_at": 0.47999998927116394,
+    "where": 0.17599999904632568,
+    "exist": 1.0,
+    "spatial": 0.5519999961058298,
+    "macro": 0.6639999970793724
+   },
+   "seconds": 100.49035096168518
+  },
+  "one_stage_long": {
+   "cfg": {
+    "projector": "linear",
+    "layer": -2,
+    "s1": 0,
+    "s2": 3200
+   },
+   "s2_loss": 0.08477075383067131,
+   "eval": {
+    "count": 1.0,
+    "color_at": 0.6359999775886536,
+    "where": 1.0,
+    "exist": 1.0,
+    "spatial": 0.8786666591962179,
+    "macro": 0.9089999943971634
+   },
+   "seconds": 159.93207335472107
+  },
+  "mlp": {
+   "cfg": {
+    "projector": "mlp2x_gelu",
+    "layer": -2,
+    "s1": 1200,
+    "s2": 2000
+   },
+   "s1_loss": 0.5249905514717103,
+   "s1_caption": {
+    "token_acc": 0.7801321744918823,
+    "content_acc": 0.5297713875770569
+   },
+   "s2_loss": 0.13473460018634797,
+   "eval": {
+    "count": 1.0,
+    "color_at": 0.7960000038146973,
+    "where": 0.656000018119812,
+    "exist": 1.0,
+    "spatial": 0.8173333406448364,
+    "macro": 0.8630000054836273
+   },
+   "seconds": 153.99744391441345
+  },
+  "mlp_one_stage": {
+   "cfg": {
+    "projector": "mlp2x_gelu",
+    "layer": -2,
+    "s1": 0,
+    "s2": 2000
+   },
+   "s2_loss": 0.2959024566411972,
+   "eval": {
+    "count": 1.0,
+    "color_at": 0.4860000014305115,
+    "where": 0.2240000069141388,
+    "exist": 1.0,
+    "spatial": 0.57000000278155,
+    "macro": 0.6775000020861626
+   },
+   "seconds": 104.84024500846863
+  },
+  "last_layer": {
+   "cfg": {
+    "projector": "linear",
+    "layer": -1,
+    "s1": 1200,
+    "s2": 2000
+   },
+   "s1_loss": 0.5730210947990417,
+   "s1_caption": {
+    "token_acc": 0.7502847909927368,
+    "content_acc": 0.4744816720485687
+   },
+   "s2_loss": 0.09077844612300395,
+   "eval": {
+    "count": 1.0,
+    "color_at": 0.5360000133514404,
+    "where": 0.9959999918937683,
+    "exist": 1.0,
+    "spatial": 0.844000001748403,
+    "macro": 0.8830000013113022
+   },
+   "seconds": 153.36403727531433
+  },
+  "layer_m3": {
+   "cfg": {
+    "projector": "linear",
+    "layer": -3,
+    "s1": 1200,
+    "s2": 2000
+   },
+   "s1_loss": 0.5827166616916657,
+   "s1_caption": {
+    "token_acc": 0.7515379190444946,
+    "content_acc": 0.47713983058929443
+   },
+   "s2_loss": 0.1408724257349968,
+   "eval": {
+    "count": 1.0,
+    "color_at": 0.5139999985694885,
+    "where": 0.8840000033378601,
+    "exist": 1.0,
+    "spatial": 0.7993333339691162,
+    "macro": 0.8495000004768372
+   },
+   "seconds": 154.1781280040741
+  }
+ }
+}

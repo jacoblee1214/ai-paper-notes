@@ -1,0 +1,90 @@
+{
+  "visual_tokens": {
+    "224/14": 256,
+    "336/14": 576,
+    "with_cls_224": 257,
+    "anyres_llava_next_max_tiles_5x576": 2880,
+    "toy_32/4": 64
+  },
+  "projector_params": {
+    "vicuna7b_4096": {
+      "linear": 4198400,
+      "mlp2x_gelu": 20979712
+    },
+    "vicuna13b_5120": {
+      "linear": 5248000,
+      "mlp2x_gelu": 31467520
+    }
+  },
+  "llm_params": {
+    "vicuna7b": 6738415616,
+    "vicuna13b": 13015864320
+  },
+  "projector_fraction_of_llm": {
+    "7b_linear": 0.0006230544744125204,
+    "7b_mlp2x": 0.003113448797991151,
+    "13b_linear": 0.0004032002693771166,
+    "13b_mlp2x": 0.0024176281517968375
+  },
+  "vision_tower_params": {
+    "formula": {
+      "L/14@224": 303179776,
+      "L/14@336": 303507456
+    },
+    "module_on_meta_device": {
+      "L/14@224": 303179776,
+      "L/14@336": 303507456
+    }
+  },
+  "vision_tower_fraction_of_7b": 0.044992739135905506,
+  "context_budget_2048": {
+    "576_visual": 1472,
+    "256_visual": 1792,
+    "2880_visual_anyres": -832,
+    "2880_visual_in_4096": 1216
+  },
+  "forward_flops_per_image": {
+    "vit_l14_336": 382975856640,
+    "lm7b_prefill_576_visual_tokens": 7762654789632,
+    "lm7b_prefill_32_query_tokens": 431258599424,
+    "ratio_lm576_over_vit": 20.26930589760114,
+    "ratio_lm576_over_lm32": 18.0,
+    "note": "텍스트 토큰, 어텐션 제곱항(LM), Q-Former 자체 비용은 제외. 이미지 한 장의 시각 토큰 prefill 만"
+  },
+  "kv_cache_mb_per_image_fp16": {
+    "7b_576": 288.0,
+    "13b_576": 450.0,
+    "7b_2880": 1440.0,
+    "7b_32": 16.0
+  },
+  "training_compute_consistency": {
+    "assumptions": "13B 모델, 기울기 체크포인팅(8N), bf16 피크 312 TFLOPs x 8, 캡션 20토큰 가정",
+    "stage1_tokens": 164220000,
+    "stage1_flops_4N": 8549860954521600000,
+    "stage1_implied_mfu_vs_4h": 0.23787674041025642,
+    "stage1_implied_mfu_if_6N_with_ckpt": 0.3568151106153846,
+    "stage2_samples_158k_x3": 474000,
+    "stage2_implied_tokens_per_sample_by_mfu": {
+      "mfu_0.25": {
+        "total_tokens": 215736729.49903646,
+        "tokens_per_sample": 455.1407795338322
+      },
+      "mfu_0.35": {
+        "total_tokens": 302031421.29865104,
+        "tokens_per_sample": 637.197091347365
+      },
+      "mfu_0.45": {
+        "total_tokens": 388326113.0982656,
+        "tokens_per_sample": 819.2534031608978
+      }
+    }
+  },
+  "toy": {
+    "visual_tokens": 25,
+    "vision_tower_params": 204992,
+    "lm_params": 344160,
+    "projector_linear": 6240,
+    "projector_mlp2x": 15552,
+    "vocab": 44
+  }
+}
