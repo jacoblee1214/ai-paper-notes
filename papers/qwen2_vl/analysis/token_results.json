@@ -1,0 +1,457 @@
+{
+ "rules": {
+  "round_is_bankers": {
+   "h=42 -> ": 56,
+   "h=70 -> ": 56,
+   "설명": "42/28=1.5와 70/28=2.5는 Python round가 짝수로 보내 56, 56이 된다 (ceil이 아니다)"
+  },
+  "h14_zero_then_min_rule": [
+   28,
+   672
+  ]
+ },
+ "ceil_formula_mismatch": {
+  "grid": "H,W in 100..999 step 7",
+  "n": 16641,
+  "mismatch": 12416,
+  "rate": 0.7461090078721231
+ },
+ "image_tokens": {
+  "224x224 (논문 예, VLA 흔한 값)": {
+   "code_default(max 1280토큰)": {
+    "resized": [
+     224,
+     224
+    ],
+    "llm_tokens": 64,
+    "vit_patches": 256,
+    "with_vision_start_end": 66
+   },
+   "hub_default(max 16384토큰)": {
+    "resized": [
+     224,
+     224
+    ],
+    "llm_tokens": 64,
+    "vit_patches": 256,
+    "with_vision_start_end": 66
+   }
+  },
+  "256x256 (VLA 흔한 값)": {
+   "code_default(max 1280토큰)": {
+    "resized": [
+     252,
+     252
+    ],
+    "llm_tokens": 81,
+    "vit_patches": 324,
+    "with_vision_start_end": 83
+   },
+   "hub_default(max 16384토큰)": {
+    "resized": [
+     252,
+     252
+    ],
+    "llm_tokens": 81,
+    "vit_patches": 324,
+    "with_vision_start_end": 83
+   }
+  },
+  "336x336": {
+   "code_default(max 1280토큰)": {
+    "resized": [
+     336,
+     336
+    ],
+    "llm_tokens": 144,
+    "vit_patches": 576,
+    "with_vision_start_end": 146
+   },
+   "hub_default(max 16384토큰)": {
+    "resized": [
+     336,
+     336
+    ],
+    "llm_tokens": 144,
+    "vit_patches": 576,
+    "with_vision_start_end": 146
+   }
+  },
+  "448x448": {
+   "code_default(max 1280토큰)": {
+    "resized": [
+     448,
+     448
+    ],
+    "llm_tokens": 256,
+    "vit_patches": 1024,
+    "with_vision_start_end": 258
+   },
+   "hub_default(max 16384토큰)": {
+    "resized": [
+     448,
+     448
+    ],
+    "llm_tokens": 256,
+    "vit_patches": 1024,
+    "with_vision_start_end": 258
+   }
+  },
+  "672x672": {
+   "code_default(max 1280토큰)": {
+    "resized": [
+     672,
+     672
+    ],
+    "llm_tokens": 576,
+    "vit_patches": 2304,
+    "with_vision_start_end": 578
+   },
+   "hub_default(max 16384토큰)": {
+    "resized": [
+     672,
+     672
+    ],
+    "llm_tokens": 576,
+    "vit_patches": 2304,
+    "with_vision_start_end": 578
+   }
+  },
+  "1344x1344": {
+   "code_default(max 1280토큰)": {
+    "resized": [
+     980,
+     980
+    ],
+    "llm_tokens": 1225,
+    "vit_patches": 4900,
+    "with_vision_start_end": 1227
+   },
+   "hub_default(max 16384토큰)": {
+    "resized": [
+     1344,
+     1344
+    ],
+    "llm_tokens": 2304,
+    "vit_patches": 9216,
+    "with_vision_start_end": 2306
+   }
+  },
+  "1920x1080": {
+   "code_default(max 1280토큰)": {
+    "resized": [
+     728,
+     1316
+    ],
+    "llm_tokens": 1222,
+    "vit_patches": 4888,
+    "with_vision_start_end": 1224
+   },
+   "hub_default(max 16384토큰)": {
+    "resized": [
+     1092,
+     1932
+    ],
+    "llm_tokens": 2691,
+    "vit_patches": 10764,
+    "with_vision_start_end": 2693
+   }
+  },
+  "문서 A4 150dpi 1240x1754": {
+   "code_default(max 1280토큰)": {
+    "resized": [
+     1176,
+     840
+    ],
+    "llm_tokens": 1260,
+    "vit_patches": 5040,
+    "with_vision_start_end": 1262
+   },
+   "hub_default(max 16384토큰)": {
+    "resized": [
+     1764,
+     1232
+    ],
+    "llm_tokens": 2772,
+    "vit_patches": 11088,
+    "with_vision_start_end": 2774
+   }
+  },
+  "문서 A4 300dpi 2480x3508": {
+   "code_default(max 1280토큰)": {
+    "resized": [
+     1176,
+     840
+    ],
+    "llm_tokens": 1260,
+    "vit_patches": 5040,
+    "with_vision_start_end": 1262
+   },
+   "hub_default(max 16384토큰)": {
+    "resized": [
+     3500,
+     2492
+    ],
+    "llm_tokens": 11125,
+    "vit_patches": 44500,
+    "with_vision_start_end": 11127
+   }
+  },
+  "4032x3024 (사진)": {
+   "code_default(max 1280토큰)": {
+    "resized": [
+     840,
+     1148
+    ],
+    "llm_tokens": 1230,
+    "vit_patches": 4920,
+    "with_vision_start_end": 1232
+   },
+   "hub_default(max 16384토큰)": {
+    "resized": [
+     3024,
+     4032
+    ],
+    "llm_tokens": 15552,
+    "vit_patches": 62208,
+    "with_vision_start_end": 15554
+   }
+  }
+ },
+ "table7_fixed_tokens_square": {
+  "64": {
+   "side_tokens": 8,
+   "perfect_square": true,
+   "pixels": 224
+  },
+  "576": {
+   "side_tokens": 24,
+   "perfect_square": true,
+   "pixels": 672
+  },
+  "1600": {
+   "side_tokens": 40,
+   "perfect_square": true,
+   "pixels": 1120
+  },
+  "3136": {
+   "side_tokens": 56,
+   "perfect_square": true,
+   "pixels": 1568
+  }
+ },
+ "video_tokens": {
+  "10초 640x360": {
+   "frames": 20,
+   "temporal_groups": 10,
+   "frame_resized": [
+    364,
+    644
+   ],
+   "tokens_per_group": 299,
+   "llm_tokens": 2990,
+   "tokens_per_second": 299.0
+  },
+  "60초 640x360": {
+   "frames": 120,
+   "temporal_groups": 60,
+   "frame_resized": [
+    364,
+    644
+   ],
+   "tokens_per_group": 299,
+   "llm_tokens": 17940,
+   "tokens_per_second": 299.0
+  },
+  "60초 448x448 강제": {
+   "frames": 120,
+   "temporal_groups": 60,
+   "frame_resized": [
+    448,
+    448
+   ],
+   "tokens_per_group": 256,
+   "llm_tokens": 15360,
+   "tokens_per_second": 256.0
+  },
+  "20분 1280x720 (max 768프레임)": {
+   "frames": 768,
+   "temporal_groups": 384,
+   "frame_resized": [
+    336,
+    644
+   ],
+   "tokens_per_group": 276,
+   "llm_tokens": 105984,
+   "tokens_per_second": 88.32
+  }
+ },
+ "video_budget_16384": {
+  "seconds_at_448x448": 64.0,
+  "설명": "448x448(16x16=256 토큰/2프레임)이면 16384토큰 = 64 시간 묶음 = 128프레임 = 64초 (2fps)"
+ },
+ "vla": {
+  "image_224_each": {
+   "resized": [
+    224,
+    224
+   ],
+   "llm_tokens": 64,
+   "vit_patches": 256,
+   "with_vision_start_end": 66
+  },
+  "image_256_each": {
+   "resized": [
+    252,
+    252
+   ],
+   "llm_tokens": 81,
+   "vit_patches": 324,
+   "with_vision_start_end": 83
+  },
+  "4_frames_as_4_images_224": 256,
+  "4_frames_as_video_224": 128,
+  "3_cameras_224": 198,
+  "3_cameras_x_2_timesteps_as_video_224": 198
+ },
+ "params": {
+  "2B": {
+   "vit": {
+    "patch_embed": 1505280,
+    "blocks_total": 629678080,
+    "per_block": 19677440,
+    "merger": 34087936,
+    "vit_no_merger": 631183360,
+    "vit_with_merger": 665271296
+   },
+   "lm": {
+    "embed": 233373696,
+    "lm_head": 0,
+    "layers": 1310339072,
+    "per_layer": 46797824,
+    "final_norm": 1536,
+    "total": 1543714304,
+    "non_embedding": 1310340608
+   },
+   "total_calc": 2208985600,
+   "hub_safetensors_total": 2208985600,
+   "diff_vs_hub": 0,
+   "reported_vit": 675000000.0,
+   "reported_lm": 1500000000.0
+  },
+  "7B": {
+   "vit": {
+    "patch_embed": 1505280,
+    "blocks_total": 629678080,
+    "per_block": 19677440,
+    "merger": 44575744,
+    "vit_no_merger": 631183360,
+    "vit_with_merger": 675759104
+   },
+   "lm": {
+    "embed": 544997376,
+    "lm_head": 544997376,
+    "layers": 6525618176,
+    "per_layer": 233057792,
+    "final_norm": 3584,
+    "total": 7615616512,
+    "non_embedding": 6525621760
+   },
+   "total_calc": 8291375616,
+   "hub_safetensors_total": 8291375616,
+   "diff_vs_hub": 0,
+   "reported_vit": 675000000.0,
+   "reported_lm": 7600000000.0
+  },
+  "72B": {
+   "vit": {
+    "patch_embed": 1505280,
+    "blocks_total": 629678080,
+    "per_block": 19677440,
+    "merger": 68173312,
+    "vit_no_merger": 631183360,
+    "vit_with_merger": 699356672
+   },
+   "lm": {
+    "embed": 1245708288,
+    "lm_head": 1245708288,
+    "layers": 70214778880,
+    "per_layer": 877684736,
+    "final_norm": 8192,
+    "total": 72706203648,
+    "non_embedding": 70214787072
+   },
+   "total_calc": 73405560320,
+   "hub_safetensors_total": 73405560320,
+   "diff_vs_hub": 0,
+   "reported_vit": 675000000.0,
+   "reported_lm": 72000000000.0
+  }
+ },
+ "vit_flops": {
+  "224": {
+   "patches": 256,
+   "linear_flops": 322893250560,
+   "attn_flops": 10737418240,
+   "total": 336986112000,
+   "attn_share": 0.031863088292493194
+  },
+  "256": {
+   "patches": 324,
+   "linear_flops": 408661770240,
+   "attn_flops": 17199267840,
+   "total": 430107770880,
+   "attn_share": 0.03998827504281152
+  },
+  "448": {
+   "patches": 1024,
+   "linear_flops": 1291573002240,
+   "attn_flops": 171798691840,
+   "total": 1476793466880,
+   "attn_share": 0.11633223987844189
+  },
+  "1344(max 16384토큰)": {
+   "patches": 9216,
+   "linear_flops": 11624157020160,
+   "attn_flops": 13915694039040,
+   "total": 25660647014400,
+   "attn_share": 0.5422970835938362
+  },
+  "1344 -> max 1280토큰 제한": {
+   "patches": 4900,
+   "linear_flops": 6180378624000,
+   "attn_flops": 3933798400000,
+   "total": 10178402304000,
+   "attn_share": 0.38648486103305824
+  },
+  "문서 1240x1754": {
+   "patches": 11088,
+   "linear_flops": 13985313914880,
+   "attn_flops": 20143103016960,
+   "total": 34273749565440,
+   "attn_share": 0.5877122658698346
+  }
+ },
+ "lm_flops_per_token": {
+  "2B": 2620681216,
+  "7B": 13051243520,
+  "72B": 140429574144
+ },
+ "vit_per_visual_token_vs_lm": {
+  "2B": {
+   "vit_flops_per_llm_visual_token(448x448)": 5768724480.0,
+   "lm_flops_per_token": 2620681216,
+   "ratio": 2.201230903163767
+  },
+  "7B": {
+   "vit_flops_per_llm_visual_token(448x448)": 5768724480.0,
+   "lm_flops_per_token": 13051243520,
+   "ratio": 0.442005734638227
+  },
+  "72B": {
+   "vit_flops_per_llm_visual_token(448x448)": 5768724480.0,
+   "lm_flops_per_token": 140429574144,
+   "ratio": 0.04107912820475127
+  }
+ }
+}

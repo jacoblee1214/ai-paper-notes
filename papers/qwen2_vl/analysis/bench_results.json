@@ -1,0 +1,995 @@
+{
+ "table2": [
+  {
+   "benchmark": "MMMU val",
+   "n": 900,
+   "n_source": "MMMU 30과목x30 (HF size API)",
+   "kind": "acc",
+   "q72": 64.5,
+   "q72_wilson": [
+    61.31812578814914,
+    67.55861544615563
+   ],
+   "mde": {
+    "d=0.1": 2.9514591494904874,
+    "d=0.2": 4.173993557999608,
+    "d=0.3": 5.11207720338155
+   },
+   "prev_sota": {
+    "other": 66.1,
+    "delta_pts": -1.5999999999999943,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": false
+   },
+   "claude35": {
+    "other": 68.3,
+    "delta_pts": -3.799999999999997,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": true
+   },
+   "gpt4o": {
+    "other": 69.1,
+    "delta_pts": -4.599999999999994,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": true
+   },
+   "q72_minus_q7_pts": 10.399999999999999
+  },
+  {
+   "benchmark": "DocVQA test",
+   "n": 5188,
+   "n_source": "lmms-lab DocVQA test (HF size API)",
+   "kind": "approx(ANLS)",
+   "q72": 96.5,
+   "q72_wilson": [
+    95.96449922216608,
+    96.96668727628179
+   ],
+   "mde": {
+    "d=0.1": 1.2293004699158743,
+    "d=0.2": 1.7384933967866483,
+    "d=0.3": 2.1292108716625906
+   },
+   "prev_sota": {
+    "other": 94.1,
+    "delta_pts": 2.4000000000000057,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "claude35": {
+    "other": 95.2,
+    "delta_pts": 1.2999999999999972,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": true
+   },
+   "gpt4o": {
+    "other": 92.8,
+    "delta_pts": 3.700000000000003,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "q72_minus_q7_pts": 2.0
+  },
+  {
+   "benchmark": "InfoVQA test",
+   "n": 3288,
+   "n_source": "InfographicVQA test (HF size API)",
+   "kind": "approx(ANLS)",
+   "q72": 84.5,
+   "q72_wilson": [
+    83.22276311887222,
+    85.69671344403409
+   ],
+   "mde": {
+    "d=0.1": 1.5441593906861695,
+    "d=0.2": 2.1837711527741557,
+    "d=0.3": 2.6745625196530454
+   },
+   "prev_sota": {
+    "other": 82.0,
+    "delta_pts": 2.5,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": true
+   },
+   "claude35": null,
+   "gpt4o": null,
+   "q72_minus_q7_pts": 8.0
+  },
+  {
+   "benchmark": "AI2D",
+   "n": 3088,
+   "n_source": "lmms-lab ai2d test (HF size API)",
+   "kind": "acc",
+   "q72": 88.1,
+   "q72_wilson": [
+    86.91035574646378,
+    89.19496607856112
+   ],
+   "mde": {
+    "d=0.1": 1.593380087620949,
+    "d=0.2": 2.2533797299287768,
+    "d=0.3": 2.759815267528033
+   },
+   "prev_sota": {
+    "other": 87.6,
+    "delta_pts": 0.5,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": false
+   },
+   "claude35": {
+    "other": 80.2,
+    "delta_pts": 7.8999999999999915,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "gpt4o": {
+    "other": 84.6,
+    "delta_pts": 3.5,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "q72_minus_q7_pts": 5.099999999999994
+  },
+  {
+   "benchmark": "ChartQA test",
+   "n": 2500,
+   "n_source": "lmms-lab ChartQA test (HF size API)",
+   "kind": "approx(relaxed acc)",
+   "q72": 88.3,
+   "q72_wilson": [
+    86.98086579377969,
+    89.50160817741721
+   ],
+   "mde": {
+    "d=0.1": 1.7708754896942924,
+    "d=0.2": 2.5043961347997645,
+    "d=0.3": 3.0672463220289305
+   },
+   "prev_sota": {
+    "other": 88.4,
+    "delta_pts": -0.10000000000000853,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": false
+   },
+   "claude35": {
+    "other": 90.8,
+    "delta_pts": -2.5,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": true
+   },
+   "gpt4o": {
+    "other": 85.7,
+    "delta_pts": 2.5999999999999943,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": true
+   },
+   "q72_minus_q7_pts": 5.299999999999997
+  },
+  {
+   "benchmark": "TextVQA val",
+   "n": 5000,
+   "n_source": "표준 val 5,000 (assumed)",
+   "kind": "approx(VQA acc)",
+   "q72": 85.5,
+   "q72_wilson": [
+    84.49676594842838,
+    86.44872521180339
+   ],
+   "mde": {
+    "d=0.1": 1.2521980673998823,
+    "d=0.2": 1.7708754896942924,
+    "d=0.3": 2.1688706738761536
+   },
+   "prev_sota": {
+    "other": 84.4,
+    "delta_pts": 1.0999999999999943,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": false
+   },
+   "claude35": null,
+   "gpt4o": null,
+   "q72_minus_q7_pts": 1.2000000000000028
+  },
+  {
+   "benchmark": "OCRBench",
+   "n": 1000,
+   "n_source": "echo840/OCRBench 1,000 (HF size API), 점수=맞은 문항 수",
+   "kind": "acc",
+   "q72": 877,
+   "q72_wilson": [
+    85.51883398130525,
+    89.59261786528091
+   ],
+   "mde": {
+    "d=0.1": 2.8000000000000003,
+    "d=0.2": 3.9597979746446663,
+    "d=0.3": 4.849742261192857
+   },
+   "prev_sota": {
+    "other": 852,
+    "delta_pts": 2.5,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": false
+   },
+   "claude35": {
+    "other": 788,
+    "delta_pts": 8.9,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "gpt4o": {
+    "other": 736,
+    "delta_pts": 14.100000000000001,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "q72_minus_q7_pts": 1.1
+  },
+  {
+   "benchmark": "RealWorldQA",
+   "n": 765,
+   "n_source": "lmms-lab RealWorldQA test (HF size API)",
+   "kind": "acc",
+   "q72": 77.8,
+   "q72_wilson": [
+    74.7201359424103,
+    80.60205265924706
+   ],
+   "mde": {
+    "d=0.1": 3.201306922660165,
+    "d=0.2": 4.527331667344883,
+    "d=0.3": 5.5448262406693765
+   },
+   "prev_sota": {
+    "other": 72.2,
+    "delta_pts": 5.599999999999994,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "claude35": {
+    "other": 60.1,
+    "delta_pts": 17.699999999999996,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "gpt4o": {
+    "other": 75.4,
+    "delta_pts": 2.3999999999999915,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": false
+   },
+   "q72_minus_q7_pts": 7.700000000000003
+  },
+  {
+   "benchmark": "MMBench-EN test",
+   "n": 6666,
+   "n_source": "lmms-lab MMBench en test (HF size API)",
+   "kind": "acc",
+   "q72": 86.5,
+   "q72_wilson": [
+    85.65859569152552,
+    87.29935881222161
+   ],
+   "mde": {
+    "d=0.1": 1.0844895627718951,
+    "d=0.2": 1.533699847924082,
+    "d=0.3": 1.8783910229990795
+   },
+   "prev_sota": {
+    "other": 86.5,
+    "delta_pts": 0.0,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": false
+   },
+   "claude35": {
+    "other": 79.7,
+    "delta_pts": 6.799999999999997,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "gpt4o": {
+    "other": 83.4,
+    "delta_pts": 3.0999999999999943,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "q72_minus_q7_pts": 3.5
+  },
+  {
+   "benchmark": "MMBench-CN test",
+   "n": 6666,
+   "n_source": "lmms-lab MMBench cn test (HF size API)",
+   "kind": "acc",
+   "q72": 86.6,
+   "q72_wilson": [
+    85.7611067058641,
+    87.39673260474261
+   ],
+   "mde": {
+    "d=0.1": 1.0844895627718951,
+    "d=0.2": 1.533699847924082,
+    "d=0.3": 1.8783910229990795
+   },
+   "prev_sota": {
+    "other": 86.3,
+    "delta_pts": 0.29999999999999716,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": false
+   },
+   "claude35": {
+    "other": 80.7,
+    "delta_pts": 5.8999999999999915,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "gpt4o": {
+    "other": 82.1,
+    "delta_pts": 4.5,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "q72_minus_q7_pts": 6.099999999999994
+  },
+  {
+   "benchmark": "MMStar",
+   "n": 1500,
+   "n_source": "Lin-Chen/MMStar val 1,500 (HF size API)",
+   "kind": "acc",
+   "q72": 68.3,
+   "q72_wilson": [
+    65.90101675844555,
+    70.60548764999746
+   ],
+   "mde": {
+    "d=0.1": 2.286190426597633,
+    "d=0.2": 3.2331615074619044,
+    "d=0.3": 3.9597979746446663
+   },
+   "prev_sota": {
+    "other": 67.1,
+    "delta_pts": 1.2000000000000028,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": false
+   },
+   "claude35": {
+    "other": 62.2,
+    "delta_pts": 6.099999999999994,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "gpt4o": {
+    "other": 63.9,
+    "delta_pts": 4.399999999999999,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "q72_minus_q7_pts": 7.599999999999994
+  },
+  {
+   "benchmark": "MMVet (GPT-4-Turbo 판정)",
+   "n": 218,
+   "n_source": "lmms-lab MMVet 218 (HF size API)",
+   "kind": "approx(GPT 판정, 연속 점수)",
+   "q72": 74.0,
+   "q72_wilson": [
+    67.79730917055333,
+    79.37148153416571
+   ],
+   "mde": {
+    "d=0.1": 5.996941116293671,
+    "d=0.2": 8.480955459415357,
+    "d=0.3": 10.387006703419456
+   },
+   "prev_sota": {
+    "other": 67.5,
+    "delta_pts": 6.5,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": true
+   },
+   "claude35": {
+    "other": 66.0,
+    "delta_pts": 8.0,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": true
+   },
+   "gpt4o": {
+    "other": 69.1,
+    "delta_pts": 4.900000000000006,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": false
+   },
+   "q72_minus_q7_pts": 12.0
+  },
+  {
+   "benchmark": "MathVista testmini",
+   "n": 1000,
+   "n_source": "AI4Math/MathVista testmini (HF size API)",
+   "kind": "acc",
+   "q72": 70.5,
+   "q72_wilson": [
+    67.59928938455586,
+    73.24380777340211
+   ],
+   "mde": {
+    "d=0.1": 2.8000000000000003,
+    "d=0.2": 3.9597979746446663,
+    "d=0.3": 4.849742261192857
+   },
+   "prev_sota": {
+    "other": 69.0,
+    "delta_pts": 1.5,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": false
+   },
+   "claude35": {
+    "other": 67.7,
+    "delta_pts": 2.799999999999997,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": false
+   },
+   "gpt4o": {
+    "other": 63.8,
+    "delta_pts": 6.700000000000003,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "q72_minus_q7_pts": 12.299999999999997
+  },
+  {
+   "benchmark": "MathVision",
+   "n": 3040,
+   "n_source": "논문 3.2.4가 3,040문항이라 명시",
+   "kind": "acc",
+   "q72": 25.9,
+   "q72_wilson": [
+    24.37378075889206,
+    27.48705194672575
+   ],
+   "mde": {
+    "d=0.1": 1.6059101370939322,
+    "d=0.2": 2.271099895830676,
+    "d=0.3": 2.781517949836592
+   },
+   "prev_sota": {
+    "other": 30.3,
+    "delta_pts": -4.400000000000002,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "claude35": null,
+   "gpt4o": {
+    "other": 30.4,
+    "delta_pts": -4.5,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "q72_minus_q7_pts": 9.599999999999998
+  },
+  {
+   "benchmark": "MMMU-Pro",
+   "n": 1730,
+   "n_source": "MMMU/MMMU_Pro standard 1,730 (HF size API; 논문 설정 미기재)",
+   "kind": "acc",
+   "q72": 46.2,
+   "q72_wilson": [
+    43.86167243910203,
+    48.55516656164638
+   ],
+   "mde": {
+    "d=0.1": 2.1288005795551754,
+    "d=0.2": 3.010578651194634,
+    "d=0.3": 3.687190762971636
+   },
+   "prev_sota": {
+    "other": 46.9,
+    "delta_pts": -0.6999999999999957,
+    "outside_mde_d0.2": false,
+    "outside_mde_d0.3": false,
+    "outside_mde_d0.1": false
+   },
+   "claude35": {
+    "other": 51.5,
+    "delta_pts": -5.299999999999997,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "gpt4o": {
+    "other": 51.9,
+    "delta_pts": -5.699999999999996,
+    "outside_mde_d0.2": true,
+    "outside_mde_d0.3": true,
+    "outside_mde_d0.1": true
+   },
+   "q72_minus_q7_pts": 2.700000000000003
+  }
+ ],
+ "table7": [
+  {
+   "benchmark": "InfoVQA val",
+   "n": 2801,
+   "kind": "approx(ANLS)",
+   "rows": [
+    {
+     "fixed_tokens": 64,
+     "fixed": 28.85,
+     "dynamic_minus_fixed_pts": 47.04,
+     "mde_d0.2": 2.3660094492691073,
+     "outside": true
+    },
+    {
+     "fixed_tokens": 576,
+     "fixed": 65.72,
+     "dynamic_minus_fixed_pts": 10.170000000000002,
+     "mde_d0.2": 2.3660094492691073,
+     "outside": true
+    },
+    {
+     "fixed_tokens": 1600,
+     "fixed": 74.99,
+     "dynamic_minus_fixed_pts": 0.9000000000000057,
+     "mde_d0.2": 2.3660094492691073,
+     "outside": false
+    },
+    {
+     "fixed_tokens": 3136,
+     "fixed": 77.27,
+     "dynamic_minus_fixed_pts": -1.3799999999999955,
+     "mde_d0.2": 2.3660094492691073,
+     "outside": false
+    }
+   ],
+   "range_across_fixed_ge576": 11.549999999999997
+  },
+  {
+   "benchmark": "RealWorldQA",
+   "n": 765,
+   "kind": "acc",
+   "rows": [
+    {
+     "fixed_tokens": 64,
+     "fixed": 56.47,
+     "dynamic_minus_fixed_pts": 13.599999999999994,
+     "mde_d0.2": 4.527331667344883,
+     "outside": true
+    },
+    {
+     "fixed_tokens": 576,
+     "fixed": 65.88,
+     "dynamic_minus_fixed_pts": 4.189999999999998,
+     "mde_d0.2": 4.527331667344883,
+     "outside": false
+    },
+    {
+     "fixed_tokens": 1600,
+     "fixed": 69.54,
+     "dynamic_minus_fixed_pts": 0.5299999999999869,
+     "mde_d0.2": 4.527331667344883,
+     "outside": false
+    },
+    {
+     "fixed_tokens": 3136,
+     "fixed": 70.59,
+     "dynamic_minus_fixed_pts": -0.5200000000000102,
+     "mde_d0.2": 4.527331667344883,
+     "outside": false
+    }
+   ],
+   "range_across_fixed_ge576": 4.710000000000008
+  },
+  {
+   "benchmark": "OCRBench",
+   "n": 1000,
+   "kind": "acc(/1000)",
+   "rows": [
+    {
+     "fixed_tokens": 64,
+     "fixed": 572,
+     "dynamic_minus_fixed_pts": 29.400000000000006,
+     "mde_d0.2": 3.9597979746446663,
+     "outside": true
+    },
+    {
+     "fixed_tokens": 576,
+     "fixed": 828,
+     "dynamic_minus_fixed_pts": 3.799999999999997,
+     "mde_d0.2": 3.9597979746446663,
+     "outside": false
+    },
+    {
+     "fixed_tokens": 1600,
+     "fixed": 824,
+     "dynamic_minus_fixed_pts": 4.200000000000003,
+     "mde_d0.2": 3.9597979746446663,
+     "outside": true
+    },
+    {
+     "fixed_tokens": 3136,
+     "fixed": 786,
+     "dynamic_minus_fixed_pts": 8.0,
+     "mde_d0.2": 3.9597979746446663,
+     "outside": true
+    }
+   ],
+   "range_across_fixed_ge576": 4.200000000000003
+  },
+  {
+   "benchmark": "MMMU",
+   "n": 900,
+   "kind": "acc",
+   "rows": [
+    {
+     "fixed_tokens": 64,
+     "fixed": 53.33,
+     "dynamic_minus_fixed_pts": 0.10999999999999943,
+     "mde_d0.2": 4.173993557999608,
+     "outside": false
+    },
+    {
+     "fixed_tokens": 576,
+     "fixed": 52.78,
+     "dynamic_minus_fixed_pts": 0.6599999999999966,
+     "mde_d0.2": 4.173993557999608,
+     "outside": false
+    },
+    {
+     "fixed_tokens": 1600,
+     "fixed": 52.89,
+     "dynamic_minus_fixed_pts": 0.5499999999999972,
+     "mde_d0.2": 4.173993557999608,
+     "outside": false
+    },
+    {
+     "fixed_tokens": 3136,
+     "fixed": 53.44,
+     "dynamic_minus_fixed_pts": 0.0,
+     "mde_d0.2": 4.173993557999608,
+     "outside": false
+    }
+   ],
+   "range_across_fixed_ge576": 0.6599999999999966
+  }
+ ],
+ "table8": [
+  {
+   "benchmark": "MathVista",
+   "n": 1000,
+   "n_note": "assumed testmini",
+   "1d": 39.2,
+   "mrope": 43.4,
+   "delta_pts": 4.199999999999996,
+   "mde_d0.2": 3.9597979746446663,
+   "outside": true
+  },
+  {
+   "benchmark": "MMB",
+   "n": 4329,
+   "n_note": "assumed en dev",
+   "1d": 58.6,
+   "mrope": 60.6,
+   "delta_pts": 2.0,
+   "mde_d0.2": 1.9031772440010999,
+   "outside": true
+  },
+  {
+   "benchmark": "MMStar",
+   "n": 1500,
+   "n_note": "val",
+   "1d": 36.7,
+   "mrope": 36.7,
+   "delta_pts": 0.0,
+   "mde_d0.2": 3.2331615074619044,
+   "outside": false
+  },
+  {
+   "benchmark": "RWQ",
+   "n": 765,
+   "n_note": "test",
+   "1d": 54.5,
+   "mrope": 53.7,
+   "delta_pts": -0.7999999999999972,
+   "mde_d0.2": 4.527331667344883,
+   "outside": false
+  },
+  {
+   "benchmark": "DocVQA",
+   "n": 5349,
+   "n_note": "assumed val",
+   "1d": 82.5,
+   "mrope": 82.8,
+   "delta_pts": 0.29999999999999716,
+   "mde_d0.2": 1.7121299730689983,
+   "outside": false
+  },
+  {
+   "benchmark": "ChartQA",
+   "n": 2500,
+   "n_note": "test",
+   "1d": 68.0,
+   "mrope": 68.4,
+   "delta_pts": 0.4000000000000057,
+   "mde_d0.2": 2.5043961347997645,
+   "outside": false
+  },
+  {
+   "benchmark": "InfoVQA",
+   "n": 2801,
+   "n_note": "assumed val",
+   "1d": 50.8,
+   "mrope": 50.3,
+   "delta_pts": -0.5,
+   "mde_d0.2": 2.3660094492691073,
+   "outside": false
+  },
+  {
+   "benchmark": "TextVQA",
+   "n": 5000,
+   "n_note": "assumed val",
+   "1d": 71.3,
+   "mrope": 71.8,
+   "delta_pts": 0.5,
+   "mde_d0.2": 1.7708754896942924,
+   "outside": false
+  },
+  {
+   "benchmark": "PerceptionTest",
+   "n": null,
+   "n_note": "n 미확인",
+   "1d": 46.6,
+   "mrope": 47.4,
+   "delta_pts": 0.7999999999999972,
+   "mde_d0.2": null,
+   "outside": null
+  },
+  {
+   "benchmark": "NextQA",
+   "n": null,
+   "n_note": "n 미확인",
+   "1d": 43.9,
+   "mrope": 46.0,
+   "delta_pts": 2.1000000000000014,
+   "mde_d0.2": null,
+   "outside": null
+  },
+  {
+   "benchmark": "STAR",
+   "n": null,
+   "n_note": "n 미확인",
+   "1d": 55.5,
+   "mrope": 57.9,
+   "delta_pts": 2.3999999999999986,
+   "mde_d0.2": null,
+   "outside": null
+  }
+ ],
+ "fig5": {
+  "n_assumed": 900,
+  "values_read_from_figure": {
+   "8K": 68.2,
+   "16K": 70.1,
+   "32K": 70.4,
+   "48K": 71.3,
+   "64K": 70.4,
+   "80K": 71.1
+  },
+  "mde_d0.2": 4.173993557999608,
+  "delta_16K_to_80K": 1.0,
+  "delta_8K_to_16K": 1.8999999999999915,
+  "max_minus_min_16K_to_80K": 1.2000000000000028
+ },
+ "table8_summary": {
+  "image_mean_delta": 0.7625000000000002,
+  "image_positive": 5,
+  "image_zero": 1,
+  "image_negative": 2,
+  "image_outside_mde": 2,
+  "n_image": 8,
+  "video_deltas": [
+   0.7999999999999972,
+   2.1000000000000014,
+   2.3999999999999986
+  ]
+ },
+ "table8_video_conditional": {
+  "note": "영상 벤치마크 n은 확인하지 못했다. n이 4,000~7,000이라고 가정할 때의 MDE(d=0.2)",
+  "mde_n4000": 1.9798989873223332,
+  "mde_n7000": 1.4966629547095767
+ },
+ "table2_summary": {
+  "gpt4o_d0.1": {
+   "rows": 13,
+   "ahead_outside": 8,
+   "behind_outside": 3,
+   "inside": 2,
+   "ahead_names": [
+    "DocVQA test",
+    "AI2D",
+    "ChartQA test",
+    "OCRBench",
+    "MMBench-EN test",
+    "MMBench-CN test",
+    "MMStar",
+    "MathVista testmini"
+   ],
+   "behind_names": [
+    "MMMU val",
+    "MathVision",
+    "MMMU-Pro"
+   ]
+  },
+  "gpt4o_d0.2": {
+   "rows": 13,
+   "ahead_outside": 8,
+   "behind_outside": 3,
+   "inside": 2,
+   "ahead_names": [
+    "DocVQA test",
+    "AI2D",
+    "ChartQA test",
+    "OCRBench",
+    "MMBench-EN test",
+    "MMBench-CN test",
+    "MMStar",
+    "MathVista testmini"
+   ],
+   "behind_names": [
+    "MMMU val",
+    "MathVision",
+    "MMMU-Pro"
+   ]
+  },
+  "gpt4o_d0.3": {
+   "rows": 13,
+   "ahead_outside": 7,
+   "behind_outside": 2,
+   "inside": 4,
+   "ahead_names": [
+    "DocVQA test",
+    "AI2D",
+    "OCRBench",
+    "MMBench-EN test",
+    "MMBench-CN test",
+    "MMStar",
+    "MathVista testmini"
+   ],
+   "behind_names": [
+    "MathVision",
+    "MMMU-Pro"
+   ]
+  },
+  "claude35_d0.1": {
+   "rows": 12,
+   "ahead_outside": 8,
+   "behind_outside": 3,
+   "inside": 1,
+   "ahead_names": [
+    "DocVQA test",
+    "AI2D",
+    "OCRBench",
+    "RealWorldQA",
+    "MMBench-EN test",
+    "MMBench-CN test",
+    "MMStar",
+    "MMVet (GPT-4-Turbo 판정)"
+   ],
+   "behind_names": [
+    "MMMU val",
+    "ChartQA test",
+    "MMMU-Pro"
+   ]
+  },
+  "claude35_d0.2": {
+   "rows": 12,
+   "ahead_outside": 6,
+   "behind_outside": 1,
+   "inside": 5,
+   "ahead_names": [
+    "AI2D",
+    "OCRBench",
+    "RealWorldQA",
+    "MMBench-EN test",
+    "MMBench-CN test",
+    "MMStar"
+   ],
+   "behind_names": [
+    "MMMU-Pro"
+   ]
+  },
+  "claude35_d0.3": {
+   "rows": 12,
+   "ahead_outside": 6,
+   "behind_outside": 1,
+   "inside": 5,
+   "ahead_names": [
+    "AI2D",
+    "OCRBench",
+    "RealWorldQA",
+    "MMBench-EN test",
+    "MMBench-CN test",
+    "MMStar"
+   ],
+   "behind_names": [
+    "MMMU-Pro"
+   ]
+  },
+  "prev_sota_d0.1": {
+   "rows": 15,
+   "ahead_outside": 4,
+   "behind_outside": 1,
+   "inside": 10,
+   "ahead_names": [
+    "DocVQA test",
+    "InfoVQA test",
+    "RealWorldQA",
+    "MMVet (GPT-4-Turbo 판정)"
+   ],
+   "behind_names": [
+    "MathVision"
+   ]
+  },
+  "prev_sota_d0.2": {
+   "rows": 15,
+   "ahead_outside": 3,
+   "behind_outside": 1,
+   "inside": 11,
+   "ahead_names": [
+    "DocVQA test",
+    "InfoVQA test",
+    "RealWorldQA"
+   ],
+   "behind_names": [
+    "MathVision"
+   ]
+  },
+  "prev_sota_d0.3": {
+   "rows": 15,
+   "ahead_outside": 2,
+   "behind_outside": 1,
+   "inside": 12,
+   "ahead_names": [
+    "DocVQA test",
+    "RealWorldQA"
+   ],
+   "behind_names": [
+    "MathVision"
+   ]
+  }
+ }
+}
