@@ -1,0 +1,1275 @@
+{
+ "S1_grid": {
+  "rows": [
+   {
+    "cell": "Fig4 Gemini",
+    "value": 40.7,
+    "nearest_pairs": 61,
+    "k_over_150_rounded": 40.7,
+    "on_grid": true,
+    "pairs_if_exact": 61.05
+   },
+   {
+    "cell": "Fig4 GPT-4V",
+    "value": 38.7,
+    "nearest_pairs": 58,
+    "k_over_150_rounded": 38.7,
+    "on_grid": true,
+    "pairs_if_exact": 58.05
+   },
+   {
+    "cell": "Fig4 LLaVA-1.5",
+    "value": 24.7,
+    "nearest_pairs": 37,
+    "k_over_150_rounded": 24.7,
+    "on_grid": true,
+    "pairs_if_exact": 37.05
+   },
+   {
+    "cell": "Fig4 Bard",
+    "value": 19.0,
+    "nearest_pairs": 28,
+    "k_over_150_rounded": 18.7,
+    "on_grid": false,
+    "pairs_if_exact": 28.5
+   },
+   {
+    "cell": "Fig4 Bing Chat",
+    "value": 17.3,
+    "nearest_pairs": 26,
+    "k_over_150_rounded": 17.3,
+    "on_grid": true,
+    "pairs_if_exact": 25.95
+   },
+   {
+    "cell": "Fig4 InstructBLIP",
+    "value": 16.7,
+    "nearest_pairs": 25,
+    "k_over_150_rounded": 16.7,
+    "on_grid": true,
+    "pairs_if_exact": 25.05
+   },
+   {
+    "cell": "Fig4 mini-GPT4",
+    "value": 12.7,
+    "nearest_pairs": 19,
+    "k_over_150_rounded": 12.7,
+    "on_grid": true,
+    "pairs_if_exact": 19.05
+   },
+   {
+    "cell": "Fig4 LLaVA",
+    "value": 6.0,
+    "nearest_pairs": 9,
+    "k_over_150_rounded": 6.0,
+    "on_grid": true,
+    "pairs_if_exact": 9.0
+   },
+   {
+    "cell": "Table2 ratio=0.0",
+    "value": 5.5,
+    "nearest_pairs": 8,
+    "k_over_150_rounded": 5.3,
+    "on_grid": false,
+    "pairs_if_exact": 8.25
+   },
+   {
+    "cell": "Table2 ratio=0.25",
+    "value": 7.9,
+    "nearest_pairs": 12,
+    "k_over_150_rounded": 8.0,
+    "on_grid": false,
+    "pairs_if_exact": 11.85
+   },
+   {
+    "cell": "Table2 ratio=0.5",
+    "value": 12.0,
+    "nearest_pairs": 18,
+    "k_over_150_rounded": 12.0,
+    "on_grid": true,
+    "pairs_if_exact": 18.0
+   },
+   {
+    "cell": "Table2 ratio=0.625",
+    "value": 15.0,
+    "nearest_pairs": 22,
+    "k_over_150_rounded": 14.7,
+    "on_grid": false,
+    "pairs_if_exact": 22.5
+   },
+   {
+    "cell": "Table2 ratio=0.75",
+    "value": 18.7,
+    "nearest_pairs": 28,
+    "k_over_150_rounded": 18.7,
+    "on_grid": true,
+    "pairs_if_exact": 28.05
+   },
+   {
+    "cell": "Table2 ratio=0.875",
+    "value": 16.5,
+    "nearest_pairs": 25,
+    "k_over_150_rounded": 16.7,
+    "on_grid": false,
+    "pairs_if_exact": 24.75
+   },
+   {
+    "cell": "Table2 ratio=1.0",
+    "value": 13.4,
+    "nearest_pairs": 20,
+    "k_over_150_rounded": 13.3,
+    "on_grid": false,
+    "pairs_if_exact": 20.1
+   },
+   {
+    "cell": "Table3 LLaVA 224px",
+    "value": 5.5,
+    "nearest_pairs": 8,
+    "k_over_150_rounded": 5.3,
+    "on_grid": false,
+    "pairs_if_exact": 8.25
+   },
+   {
+    "cell": "Table3 LLaVA 336px",
+    "value": 6.0,
+    "nearest_pairs": 9,
+    "k_over_150_rounded": 6.0,
+    "on_grid": true,
+    "pairs_if_exact": 9.0
+   },
+   {
+    "cell": "Table3 LLaVA + I-MoF 224px",
+    "value": 16.7,
+    "nearest_pairs": 25,
+    "k_over_150_rounded": 16.7,
+    "on_grid": true,
+    "pairs_if_exact": 25.05
+   },
+   {
+    "cell": "Table3 LLaVA1.5 336px",
+    "value": 24.7,
+    "nearest_pairs": 37,
+    "k_over_150_rounded": 24.7,
+    "on_grid": true,
+    "pairs_if_exact": 37.05
+   },
+   {
+    "cell": "Table3 LLaVA1.5 + I-MoF 224px",
+    "value": 28.0,
+    "nearest_pairs": 42,
+    "k_over_150_rounded": 28.0,
+    "on_grid": true,
+    "pairs_if_exact": 42.0
+   },
+   {
+    "cell": "Table6 None (LLaVA1.5, 336)",
+    "value": 24.7,
+    "nearest_pairs": 37,
+    "k_over_150_rounded": 24.7,
+    "on_grid": true,
+    "pairs_if_exact": 37.05
+   },
+   {
+    "cell": "Table6 MoCov3",
+    "value": 26.7,
+    "nearest_pairs": 40,
+    "k_over_150_rounded": 26.7,
+    "on_grid": true,
+    "pairs_if_exact": 40.05
+   },
+   {
+    "cell": "Table6 MAE",
+    "value": 27.3,
+    "nearest_pairs": 41,
+    "k_over_150_rounded": 27.3,
+    "on_grid": true,
+    "pairs_if_exact": 40.95
+   },
+   {
+    "cell": "Table6 DINOv2",
+    "value": 28.0,
+    "nearest_pairs": 42,
+    "k_over_150_rounded": 28.0,
+    "on_grid": true,
+    "pairs_if_exact": 42.0
+   },
+   {
+    "cell": "Table7 LLaVA1.5 336px",
+    "value": 24.7,
+    "nearest_pairs": 37,
+    "k_over_150_rounded": 24.7,
+    "on_grid": true,
+    "pairs_if_exact": 37.05
+   },
+   {
+    "cell": "Table7 LLaVA1.5 + I-MoF 224px",
+    "value": 28.0,
+    "nearest_pairs": 42,
+    "k_over_150_rounded": 28.0,
+    "on_grid": true,
+    "pairs_if_exact": 42.0
+   },
+   {
+    "cell": "Table7 LLaVA1.5 + I-MoF 336px",
+    "value": 31.3,
+    "nearest_pairs": 47,
+    "k_over_150_rounded": 31.3,
+    "on_grid": true,
+    "pairs_if_exact": 46.95
+   },
+   {
+    "cell": "B3 swap_options",
+    "value": 40.3,
+    "nearest_pairs": 60,
+    "k_over_150_rounded": 40.0,
+    "on_grid": false,
+    "pairs_if_exact": 60.45
+   },
+   {
+    "cell": "B3 notation_1_2",
+    "value": 37.3,
+    "nearest_pairs": 56,
+    "k_over_150_rounded": 37.3,
+    "on_grid": true,
+    "pairs_if_exact": 55.95
+   }
+  ],
+  "off_grid": [
+   "Fig4 Bard 19.0 (k/150: 18.7)",
+   "Table2 ratio=0.0 5.5 (k/150: 5.3)",
+   "Table2 ratio=0.25 7.9 (k/150: 8.0)",
+   "Table2 ratio=0.625 15.0 (k/150: 14.7)",
+   "Table2 ratio=0.875 16.5 (k/150: 16.7)",
+   "Table2 ratio=1.0 13.4 (k/150: 13.3)",
+   "Table3 LLaVA 224px 5.5 (k/150: 5.3)",
+   "B3 swap_options 40.3 (k/150: 40.0)"
+  ]
+ },
+ "S2_fig4_intervals": [
+  {
+   "model": "Gemini",
+   "pairs": 61,
+   "score": 40.7,
+   "wilson95": [
+    33.1,
+    48.7
+   ],
+   "p_vs_25pct_exact": 0.0
+  },
+  {
+   "model": "GPT-4V",
+   "pairs": 58,
+   "score": 38.7,
+   "wilson95": [
+    31.2,
+    46.7
+   ],
+   "p_vs_25pct_exact": 0.0002
+  },
+  {
+   "model": "LLaVA-1.5",
+   "pairs": 37,
+   "score": 24.7,
+   "wilson95": [
+    18.5,
+    32.1
+   ],
+   "p_vs_25pct_exact": 1.0
+  },
+  {
+   "model": "Bard",
+   "pairs": 28,
+   "score": 19.0,
+   "wilson95": [
+    13.2,
+    25.7
+   ],
+   "p_vs_25pct_exact": 0.0738
+  },
+  {
+   "model": "Bing Chat",
+   "pairs": 26,
+   "score": 17.3,
+   "wilson95": [
+    12.1,
+    24.2
+   ],
+   "p_vs_25pct_exact": 0.0299
+  },
+  {
+   "model": "InstructBLIP",
+   "pairs": 25,
+   "score": 16.7,
+   "wilson95": [
+    11.6,
+    23.4
+   ],
+   "p_vs_25pct_exact": 0.0181
+  },
+  {
+   "model": "mini-GPT4",
+   "pairs": 19,
+   "score": 12.7,
+   "wilson95": [
+    8.3,
+    18.9
+   ],
+   "p_vs_25pct_exact": 0.0003
+  },
+  {
+   "model": "LLaVA",
+   "pairs": 9,
+   "score": 6.0,
+   "wilson95": [
+    3.2,
+    11.0
+   ],
+   "p_vs_25pct_exact": 0.0
+  }
+ ],
+ "S2_pairwise_unpaired": [
+  {
+   "a": "Gemini",
+   "b": "GPT-4V",
+   "diff_pts": 2.0,
+   "fisher_p_unpaired": 0.8135
+  },
+  {
+   "a": "GPT-4V",
+   "b": "LLaVA-1.5",
+   "diff_pts": 14.0,
+   "fisher_p_unpaired": 0.0128
+  },
+  {
+   "a": "Gemini",
+   "b": "LLaVA-1.5",
+   "diff_pts": 16.0,
+   "fisher_p_unpaired": 0.0045
+  },
+  {
+   "a": "GPT-4V",
+   "b": "Bard",
+   "diff_pts": 19.7,
+   "fisher_p_unpaired": 0.0002
+  },
+  {
+   "a": "LLaVA-1.5",
+   "b": "InstructBLIP",
+   "diff_pts": 8.0,
+   "fisher_p_unpaired": 0.1163
+  },
+  {
+   "a": "InstructBLIP",
+   "b": "mini-GPT4",
+   "diff_pts": 4.0,
+   "fisher_p_unpaired": 0.4147
+  },
+  {
+   "a": "Bing Chat",
+   "b": "InstructBLIP",
+   "diff_pts": 0.6,
+   "fisher_p_unpaired": 1.0
+  },
+  {
+   "a": "PaliGemma 448",
+   "b": "Gemini",
+   "diff_pts": 6.7,
+   "fisher_p_unpaired": 0.2952
+  },
+  {
+   "a": "PaliGemma 448",
+   "b": "GPT-4V",
+   "diff_pts": 8.7,
+   "fisher_p_unpaired": 0.1616
+  },
+  {
+   "a": "PaliGemma 224",
+   "b": "Gemini",
+   "diff_pts": 4.7,
+   "fisher_p_unpaired": 0.4842
+  },
+  {
+   "a": "PaliGemma 224",
+   "b": "GPT-4V",
+   "diff_pts": 6.7,
+   "fisher_p_unpaired": 0.2924
+  }
+ ],
+ "S2_mde_paired_pts": {
+  "psi=0.1": 7.2,
+  "psi=0.2": 10.2,
+  "psi=0.3": 12.5,
+  "psi=0.5": 16.2
+ },
+ "S2_mde_unpaired_pts_at_p0.4": 15.8,
+ "S2_chance_sd_pts": 3.54,
+ "S3_table1_rows": [
+  {
+   "model": "OpenAI ViT-L-14 224",
+   "avg_table": 19.3,
+   "avg_recomputed": 19.24,
+   "pairs_of_135": 26,
+   "wilson95_135": [
+    13.5,
+    26.7
+   ],
+   "in1k": 75.5,
+   "grid_ok": true
+  },
+  {
+   "model": "OpenAI ViT-L-14 336",
+   "avg_table": 20.0,
+   "avg_recomputed": 20.0,
+   "pairs_of_135": 27,
+   "wilson95_135": [
+    14.1,
+    27.5
+   ],
+   "in1k": 76.6,
+   "grid_ok": true
+  },
+  {
+   "model": "SigLIP ViT-SO-14 224",
+   "avg_table": 37.8,
+   "avg_recomputed": 37.78,
+   "pairs_of_135": 51,
+   "wilson95_135": [
+    30.0,
+    46.2
+   ],
+   "in1k": 82.0,
+   "grid_ok": true
+  },
+  {
+   "model": "SigLIP ViT-SO-14 384",
+   "avg_table": 37.0,
+   "avg_recomputed": 37.03,
+   "pairs_of_135": 50,
+   "wilson95_135": [
+    29.4,
+    45.4
+   ],
+   "in1k": 83.1,
+   "grid_ok": true
+  },
+  {
+   "model": "DFN ViT-H-14 224",
+   "avg_table": 39.3,
+   "avg_recomputed": 39.27,
+   "pairs_of_135": 53,
+   "wilson95_135": [
+    31.4,
+    47.7
+   ],
+   "in1k": 83.4,
+   "grid_ok": true
+  },
+  {
+   "model": "DFN ViT-H-14 378",
+   "avg_table": 34.8,
+   "avg_recomputed": 34.81,
+   "pairs_of_135": 47,
+   "wilson95_135": [
+    27.3,
+    43.2
+   ],
+   "in1k": 84.4,
+   "grid_ok": true
+  },
+  {
+   "model": "MetaCLIP ViT-L-14 224",
+   "avg_table": 23.7,
+   "avg_recomputed": 23.71,
+   "pairs_of_135": 32,
+   "wilson95_135": [
+    17.3,
+    31.5
+   ],
+   "in1k": 79.2,
+   "grid_ok": true
+  },
+  {
+   "model": "MetaCLIP ViT-H-14 224",
+   "avg_table": 25.2,
+   "avg_recomputed": 25.18,
+   "pairs_of_135": 34,
+   "wilson95_135": [
+    18.6,
+    33.1
+   ],
+   "in1k": 80.6,
+   "grid_ok": true
+  },
+  {
+   "model": "EVA01 ViT-g-14 224",
+   "avg_table": 23.0,
+   "avg_recomputed": 22.97,
+   "pairs_of_135": 31,
+   "wilson95_135": [
+    16.7,
+    30.7
+   ],
+   "in1k": 78.5,
+   "grid_ok": true
+  },
+  {
+   "model": "EVA02 ViT-bigE-14+ 224",
+   "avg_table": 33.3,
+   "avg_recomputed": 33.34,
+   "pairs_of_135": 45,
+   "wilson95_135": [
+    25.9,
+    41.6
+   ],
+   "in1k": 82.0,
+   "grid_ok": true
+  }
+ ],
+ "S3_per_cell_wilson_15": {
+  "0/15": [
+   -0.0,
+   20.4
+  ],
+  "1/15": [
+   1.2,
+   29.8
+  ],
+  "2/15": [
+   3.7,
+   37.9
+  ],
+  "3/15": [
+   7.0,
+   45.2
+  ],
+  "4/15": [
+   10.9,
+   52.0
+  ],
+  "5/15": [
+   15.2,
+   58.3
+  ],
+  "8/15": [
+   30.1,
+   75.2
+  ],
+  "10/15": [
+   41.7,
+   84.8
+  ],
+  "12/15": [
+   54.8,
+   93.0
+  ]
+ },
+ "S3_pairwise": [
+  {
+   "a": "OpenAI ViT-L-14 224",
+   "b": "OpenAI ViT-L-14 336",
+   "pairs_a": 26,
+   "pairs_b": 27,
+   "diff_pts": 0.7,
+   "fisher_p_unpaired": 1.0
+  },
+  {
+   "a": "SigLIP ViT-SO-14 224",
+   "b": "SigLIP ViT-SO-14 384",
+   "pairs_a": 51,
+   "pairs_b": 50,
+   "diff_pts": -0.7,
+   "fisher_p_unpaired": 1.0
+  },
+  {
+   "a": "DFN ViT-H-14 224",
+   "b": "DFN ViT-H-14 378",
+   "pairs_a": 53,
+   "pairs_b": 47,
+   "diff_pts": -4.4,
+   "fisher_p_unpaired": 0.5287
+  },
+  {
+   "a": "MetaCLIP ViT-L-14 224",
+   "b": "MetaCLIP ViT-H-14 224",
+   "pairs_a": 32,
+   "pairs_b": 34,
+   "diff_pts": 1.5,
+   "fisher_p_unpaired": 0.8875
+  },
+  {
+   "a": "EVA01 ViT-g-14 224",
+   "b": "EVA02 ViT-bigE-14+ 224",
+   "pairs_a": 31,
+   "pairs_b": 45,
+   "diff_pts": 10.4,
+   "fisher_p_unpaired": 0.0782
+  },
+  {
+   "a": "OpenAI ViT-L-14 224",
+   "b": "SigLIP ViT-SO-14 224",
+   "pairs_a": 26,
+   "pairs_b": 51,
+   "diff_pts": 18.5,
+   "fisher_p_unpaired": 0.0011
+  },
+  {
+   "a": "SigLIP ViT-SO-14 224",
+   "b": "DFN ViT-H-14 224",
+   "pairs_a": 51,
+   "pairs_b": 53,
+   "diff_pts": 1.5,
+   "fisher_p_unpaired": 0.9005
+  }
+ ],
+ "S3_best_per_pattern": [
+  {
+   "pattern": "Orientation",
+   "best_pct": 26.7,
+   "best_model": "SigLIP ViT-SO-14 224",
+   "pairs": 4,
+   "p_single_ge": 0.5387,
+   "p_max_of_10_ge": 1.0,
+   "n_models_ge_50": 0,
+   "median": 13.3
+  },
+  {
+   "pattern": "Presence",
+   "best_pct": 26.7,
+   "best_model": "SigLIP ViT-SO-14 384",
+   "pairs": 4,
+   "p_single_ge": 0.5387,
+   "p_max_of_10_ge": 1.0,
+   "n_models_ge_50": 0,
+   "median": 20.0
+  },
+  {
+   "pattern": "State",
+   "best_pct": 73.3,
+   "best_model": "DFN ViT-H-14 224",
+   "pairs": 11,
+   "p_single_ge": 0.0001,
+   "p_max_of_10_ge": 0.001,
+   "n_models_ge_50": 7,
+   "median": 56.65
+  },
+  {
+   "pattern": "Quantity",
+   "best_pct": 40.0,
+   "best_model": "SigLIP ViT-SO-14 224",
+   "pairs": 6,
+   "p_single_ge": 0.1484,
+   "p_max_of_10_ge": 0.799,
+   "n_models_ge_50": 0,
+   "median": 23.35
+  },
+  {
+   "pattern": "Positional",
+   "best_pct": 33.3,
+   "best_model": "MetaCLIP ViT-L-14 224",
+   "pairs": 5,
+   "p_single_ge": 0.3135,
+   "p_max_of_10_ge": 0.977,
+   "n_models_ge_50": 0,
+   "median": 16.65
+  },
+  {
+   "pattern": "Color",
+   "best_pct": 66.7,
+   "best_model": "SigLIP ViT-SO-14 384",
+   "pairs": 10,
+   "p_single_ge": 0.0008,
+   "p_max_of_10_ge": 0.008,
+   "n_models_ge_50": 8,
+   "median": 66.7
+  },
+  {
+   "pattern": "Structural",
+   "best_pct": 46.7,
+   "best_model": "DFN ViT-H-14 224",
+   "pairs": 7,
+   "p_single_ge": 0.0566,
+   "p_max_of_10_ge": 0.442,
+   "n_models_ge_50": 0,
+   "median": 30.0
+  },
+  {
+   "pattern": "Text",
+   "best_pct": 26.7,
+   "best_model": "SigLIP ViT-SO-14 384",
+   "pairs": 4,
+   "p_single_ge": 0.5387,
+   "p_max_of_10_ge": 1.0,
+   "n_models_ge_50": 0,
+   "median": 13.3
+  },
+  {
+   "pattern": "Viewpoint",
+   "best_pct": 53.3,
+   "best_model": "SigLIP ViT-SO-14 384",
+   "pairs": 8,
+   "p_single_ge": 0.0173,
+   "p_max_of_10_ge": 0.16,
+   "n_models_ge_50": 3,
+   "median": 33.3
+  }
+ ],
+ "S3_in1k_vs_mmvpvlm_avg": {
+  "n_rows": 10,
+  "pearson_all": 0.924,
+  "p_all": 0.00014,
+  "ci95_all": [
+   0.703,
+   0.982
+  ],
+  "spearman_all": 0.9,
+  "n_ge80": 6,
+  "pearson_ge80": 0.683,
+  "p_ge80": 0.134,
+  "n_lt80": 4,
+  "pearson_lt80": 0.992,
+  "p_lt80": 0.008,
+  "note": "10행은 독립이 아니다(같은 체크포인트의 해상도 변형 3쌍). 구간은 행을 독립으로 본 근사."
+ },
+ "S4_clip_definition": {
+  "OpenAI224+OpenAI336+EVA01": {
+   "max_abs_diff_vs_fig6_clip": 0.02
+  },
+  "all 10 rows": {
+   "max_abs_diff_vs_fig6_clip": 20.0
+  },
+  "OpenAI224 only": {
+   "max_abs_diff_vs_fig6_clip": 13.33
+  },
+  "OpenAI224+OpenAI336": {
+   "max_abs_diff_vs_fig6_clip": 10.02
+  }
+ },
+ "S4_clip_vs_mllm": {
+  "InstructBLIP": {
+   "r": 0.605,
+   "ci95_fisher": [
+    -0.1,
+    0.91
+   ],
+   "p_t": 0.0842,
+   "p_perm_exact": 0.0825,
+   "spearman": 0.732,
+   "spearman_p": 0.025,
+   "table5_printed": 0.71
+  },
+  "LLaVA-1.5": {
+   "r": 0.87,
+   "ci95_fisher": [
+    0.49,
+    0.97
+   ],
+   "p_t": 0.0023,
+   "p_perm_exact": 0.0037,
+   "spearman": 0.714,
+   "spearman_p": 0.031,
+   "table5_printed": 0.87
+  },
+  "Gemini": {
+   "r": 0.721,
+   "ci95_fisher": [
+    0.11,
+    0.94
+   ],
+   "p_t": 0.0283,
+   "p_perm_exact": 0.0275,
+   "spearman": 0.542,
+   "spearman_p": 0.132,
+   "table5_printed": 0.72
+  },
+  "GPT-4": {
+   "r": 0.309,
+   "ci95_fisher": [
+    -0.45,
+    0.81
+   ],
+   "p_t": 0.4191,
+   "p_perm_exact": 0.4232,
+   "spearman": 0.142,
+   "spearman_p": 0.715,
+   "table5_printed": 0.31
+  }
+ },
+ "S4_leave_one_pattern_out_r_range": {
+  "InstructBLIP": [
+   0.52,
+   0.75
+  ],
+  "LLaVA-1.5": [
+   0.65,
+   0.92
+  ],
+  "Gemini": [
+   0.42,
+   0.88
+  ],
+  "GPT-4": [
+   -0.11,
+   0.67
+  ]
+ },
+ "S4_without_text_orientation_r": {
+  "InstructBLIP": 0.38,
+  "LLaVA-1.5": 0.8,
+  "Gemini": 0.84,
+  "GPT-4": 0.54
+ },
+ "S4_mllm_vs_mllm_r": {
+  "InstructBLIP ~ LLaVA-1.5": 0.52,
+  "InstructBLIP ~ Gemini": 0.42,
+  "InstructBLIP ~ GPT-4": 0.14,
+  "LLaVA-1.5 ~ Gemini": 0.71,
+  "LLaVA-1.5 ~ GPT-4": 0.43,
+  "Gemini ~ GPT-4": 0.82
+ },
+ "S4_single_clip_row_r": {
+  "InstructBLIP ~ EVA01 ViT-g-14 224": 0.43,
+  "LLaVA-1.5 ~ OpenAI ViT-L-14 336": 0.32,
+  "LLaVA-1.5 ~ OpenAI ViT-L-14 224": 0.88,
+  "Gemini ~ SigLIP ViT-SO-14 224": 0.37,
+  "GPT-4 ~ SigLIP ViT-SO-14 224": -0.05,
+  "Gemini ~ EVA02 ViT-bigE-14+ 224": 0.72
+ },
+ "S4_cell_size_inference": {
+  "Color": {
+   "values": [
+    23.08,
+    69.23,
+    69.23,
+    69.23
+   ],
+   "smallest_common_n_le40": 13
+  },
+  "State": {
+   "values": [
+    40.0,
+    26.67,
+    53.34,
+    33.34
+   ],
+   "smallest_common_n_le40": 15
+  },
+  "Structural": {
+   "values": [
+    35.3,
+    23.53,
+    33.34,
+    41.18
+   ],
+   "smallest_common_n_le40": null
+  },
+  "Viewpoint": {
+   "values": [
+    0.0,
+    16.67,
+    27.28,
+    16.67
+   ],
+   "smallest_common_n_le40": null
+  },
+  "Presence": {
+   "values": [
+    19.05,
+    33.34,
+    44.19,
+    50.0
+   ],
+   "smallest_common_n_le40": null
+  },
+  "Quantity": {
+   "values": [
+    18.19,
+    18.19,
+    27.28,
+    27.28
+   ],
+   "smallest_common_n_le40": 11
+  },
+  "Positional": {
+   "values": [
+    13.05,
+    26.09,
+    39.13,
+    43.48
+   ],
+   "smallest_common_n_le40": 23
+  },
+  "Text": {
+   "values": [
+    0.0,
+    0.0,
+    50.0,
+    75.0
+   ],
+   "smallest_common_n_le40": 4
+  },
+  "Orientation": {
+   "values": [
+    0.0,
+    0.0,
+    16.67,
+    8.34
+   ],
+   "smallest_common_n_le40": 12
+  }
+ },
+ "S5_table2": [
+  {
+   "ratio": 0.0,
+   "mmvp": 5.5,
+   "d_mmvp": 0.0,
+   "llava": 81.8,
+   "d_llava": 0.0,
+   "printed": null
+  },
+  {
+   "ratio": 0.25,
+   "mmvp": 7.9,
+   "d_mmvp": 2.4,
+   "llava": 79.4,
+   "d_llava": -2.4,
+   "printed": [
+    2.4,
+    -2.4
+   ],
+   "delta_matches_print": true,
+   "p_best_case": 0.125,
+   "p_psi0.2": 0.5847,
+   "p_psi0.3": 0.6587,
+   "p_psi0.5": 0.731
+  },
+  {
+   "ratio": 0.5,
+   "mmvp": 12.0,
+   "d_mmvp": 6.5,
+   "llava": 78.6,
+   "d_llava": -3.2,
+   "printed": [
+    6.5,
+    -3.2
+   ],
+   "delta_matches_print": true,
+   "p_best_case": 0.002,
+   "p_psi0.2": 0.0987,
+   "p_psi0.3": 0.1839,
+   "p_psi0.5": 0.3019
+  },
+  {
+   "ratio": 0.625,
+   "mmvp": 15.0,
+   "d_mmvp": 9.5,
+   "llava": 76.4,
+   "d_llava": -5.4,
+   "printed": [
+    9.5,
+    -5.4
+   ],
+   "delta_matches_print": true,
+   "p_best_case": 0.0001,
+   "p_psi0.2": 0.0161,
+   "p_psi0.3": 0.0541,
+   "p_psi0.5": 0.1354
+  },
+  {
+   "ratio": 0.75,
+   "mmvp": 18.7,
+   "d_mmvp": 13.2,
+   "llava": 75.8,
+   "d_llava": -6.0,
+   "printed": [
+    13.2,
+    -6.0
+   ],
+   "delta_matches_print": true,
+   "p_best_case": 0.0,
+   "p_psi0.2": 0.0003,
+   "p_psi0.3": 0.0045,
+   "p_psi0.5": 0.0286
+  },
+  {
+   "ratio": 0.875,
+   "mmvp": 16.5,
+   "d_mmvp": 11.0,
+   "llava": 69.3,
+   "d_llava": -12.5,
+   "printed": [
+    11.0,
+    -12.5
+   ],
+   "delta_matches_print": true,
+   "p_best_case": 0.0,
+   "p_psi0.2": 0.0052,
+   "p_psi0.3": 0.0259,
+   "p_psi0.5": 0.0846
+  },
+  {
+   "ratio": 1.0,
+   "mmvp": 13.4,
+   "d_mmvp": 7.9,
+   "llava": 68.5,
+   "d_llava": -13.3,
+   "printed": [
+    7.9,
+    -13.3
+   ],
+   "delta_matches_print": true,
+   "p_best_case": 0.0005,
+   "p_psi0.2": 0.0428,
+   "p_psi0.3": 0.1038,
+   "p_psi0.5": 0.2067
+  }
+ ],
+ "S5_table2_adjacent": [
+  {
+   "from_ratio": 0.75,
+   "to_ratio": 0.875,
+   "d_mmvp": -2.2,
+   "p_psi0.3": 0.766
+  },
+  {
+   "from_ratio": 0.75,
+   "to_ratio": 1.0,
+   "d_mmvp": -5.3,
+   "p_psi0.3": 0.302
+  },
+  {
+   "from_ratio": 0.625,
+   "to_ratio": 0.75,
+   "d_mmvp": 3.7,
+   "p_psi0.3": 0.461
+  },
+  {
+   "from_ratio": 0.5,
+   "to_ratio": 0.75,
+   "d_mmvp": 6.7,
+   "p_psi0.3": 0.184
+  }
+ ],
+ "S5_table2_monotonic": {
+  "spearman_ratio_vs_llava": -1.0,
+  "exact_p_monotone_7pts": 0.0003968253968253968,
+  "spearman_ratio_vs_mmvp": 0.75,
+  "spearman_p_mmvp": 0.052,
+  "mmvp_peak_ratio": 0.75,
+  "pearson_mmvp_vs_llava_across_ratios": -0.64
+ },
+ "S5_llava_bench_assumption": {
+  "n_assumed": 90,
+  "note": "LLaVA-Bench(COCO) 통상 90문항(미확인, 논문에 없음). GPT-4 판정 상대 점수라 이항이 아니다. SD·상관은 가정.",
+  "grid": {
+   "s=15,rho=0.3": {
+    "se_diff": 1.87,
+    "mde_80pct": 5.2
+   },
+   "s=15,rho=0.6": {
+    "se_diff": 1.41,
+    "mde_80pct": 4.0
+   },
+   "s=25,rho=0.3": {
+    "se_diff": 3.12,
+    "mde_80pct": 8.7
+   },
+   "s=25,rho=0.6": {
+    "se_diff": 2.36,
+    "mde_80pct": 6.6
+   },
+   "s=35,rho=0.3": {
+    "se_diff": 4.37,
+    "mde_80pct": 12.2
+   },
+   "s=35,rho=0.6": {
+    "se_diff": 3.3,
+    "mde_80pct": 9.2
+   }
+  },
+  "drops": {
+   "0.25": -2.4,
+   "0.5": -3.2,
+   "0.625": -5.4,
+   "0.75": -6.0,
+   "0.875": -12.5,
+   "1.0": -13.3
+  }
+ },
+ "S5_table3_delta_base": {
+  "LLaVA+I-MoF 224 printed +10.7": {
+   "vs_LLaVA_336 (6.0)": 10.7,
+   "vs_LLaVA_224 (5.5)": 11.2
+  },
+  "LLaVA1.5+I-MoF 224 printed +3.3": {
+   "vs_LLaVA1.5_336 (24.7)": 3.3,
+   "note": "224 해상도 CLIP 단독 LLaVA-1.5 기준선은 없음"
+  }
+ },
+ "S5_table3_6_7_mmvp_tests": {
+  "LLaVA 224 -> +I-MoF (+11.2)": {
+   "psi=0.1": 0.0,
+   "psi=0.2": 0.003,
+   "psi=0.3": 0.016,
+   "psi=0.5": 0.064,
+   "p_best_case": 0.0
+  },
+  "LLaVA 336 -> +I-MoF 224 (+10.7)": {
+   "psi=0.1": 0.0,
+   "psi=0.2": 0.005,
+   "psi=0.3": 0.026,
+   "psi=0.5": 0.085,
+   "p_best_case": 0.0
+  },
+  "LLaVA1.5 336 -> +I-MoF 224 (+3.3)": {
+   "psi=0.1": 0.302,
+   "psi=0.2": 0.473,
+   "psi=0.3": 0.551,
+   "psi=0.5": 0.644,
+   "p_best_case": 0.062
+  },
+  "LLaVA1.5 336 -> +I-MoF 336 (+6.6)": {
+   "psi=0.1": 0.021,
+   "psi=0.2": 0.099,
+   "psi=0.3": 0.184,
+   "psi=0.5": 0.302,
+   "p_best_case": 0.002
+  },
+  "I-MoF 224 -> 336 (+3.3)": {
+   "psi=0.1": 0.302,
+   "psi=0.2": 0.473,
+   "psi=0.3": 0.551,
+   "psi=0.5": 0.644,
+   "p_best_case": 0.062
+  },
+  "MoCov3 vs None (+2.0)": {
+   "psi=0.1": 0.607,
+   "psi=0.2": 0.72,
+   "psi=0.3": 0.766,
+   "psi=0.5": 0.818,
+   "p_best_case": 0.25
+  },
+  "MAE vs None (+2.6)": {
+   "psi=0.1": 0.454,
+   "psi=0.2": 0.585,
+   "psi=0.3": 0.659,
+   "psi=0.5": 0.731,
+   "p_best_case": 0.125
+  },
+  "DINOv2 vs MAE (+0.7)": {
+   "psi=0.1": 1.0,
+   "psi=0.2": 1.0,
+   "psi=0.3": 1.0,
+   "psi=0.5": 1.0,
+   "p_best_case": 1.0
+  }
+ },
+ "S5_table7_secondary": {
+  "sizes_note": "통상 크기(미확인): MMBench dev 4,377, TextVQA val 5,000, POPE 9,000, VQAv2 test-dev 107,394, MM-Vet 218, LLaVA-Bench 90/60. 논문에는 없음",
+  "rows": [
+   {
+    "model": "LLaVA1.5 + I-MoF 224",
+    "LLVB": {
+     "delta": -2.0,
+     "n_assumed": 90,
+     "note": "GPT-4 판정 상대 점수, 이항 아님"
+    },
+    "LLVW": {
+     "delta": 2.6,
+     "n_assumed": 60,
+     "note": "GPT-4 판정 상대 점수, 이항 아님"
+    },
+    "MMB": {
+     "delta": -6.1,
+     "n_assumed": 4377,
+     "se_paired_approx": 0.7,
+     "z": -8.7
+    },
+    "VQAT": {
+     "delta": -6.0,
+     "n_assumed": 5000,
+     "se_paired_approx": 0.68,
+     "z": -8.8
+    },
+    "POPE": {
+     "delta": 0.4,
+     "n_assumed": 9000,
+     "se_paired_approx": 0.36,
+     "z": 1.1
+    },
+    "VQAV2": {
+     "delta": -2.7,
+     "n_assumed": 107394,
+     "se_paired_approx": 0.12,
+     "z": -22.3
+    },
+    "MM-V": {
+     "delta": -1.9,
+     "n_assumed": 218,
+     "note": "GPT-4 판정 상대 점수, 이항 아님"
+    }
+   },
+   {
+    "model": "LLaVA1.5 + I-MoF 336",
+    "LLVB": {
+     "delta": -2.9,
+     "n_assumed": 90,
+     "note": "GPT-4 판정 상대 점수, 이항 아님"
+    },
+    "LLVW": {
+     "delta": 2.6,
+     "n_assumed": 60,
+     "note": "GPT-4 판정 상대 점수, 이항 아님"
+    },
+    "MMB": {
+     "delta": -2.3,
+     "n_assumed": 4377,
+     "se_paired_approx": 0.7,
+     "z": -3.3
+    },
+    "VQAT": {
+     "delta": -2.6,
+     "n_assumed": 5000,
+     "se_paired_approx": 0.68,
+     "z": -3.8
+    },
+    "POPE": {
+     "delta": 0.8,
+     "n_assumed": 9000,
+     "se_paired_approx": 0.36,
+     "z": 2.2
+    },
+    "VQAV2": {
+     "delta": -0.7,
+     "n_assumed": 107394,
+     "se_paired_approx": 0.12,
+     "z": -5.8
+    },
+    "MM-V": {
+     "delta": -0.8,
+     "n_assumed": 218,
+     "note": "GPT-4 판정 상대 점수, 이항 아님"
+    }
+   }
+  ]
+ },
+ "S6_human": {
+  "participants": 4,
+  "answers_if_4x300": 1200,
+  "implied_correct_answers": 1148.4,
+  "if_question_level_pair_level_under_independence_pct": 91.6,
+  "if_pair_level_question_level_at_least_pct": 97.8,
+  "note": "논문은 사람 점수를 '질문의 평균'(§2.3)이라 쓰면서 쌍 단위 정의도 같은 문단에 쓴다. 두 해석의 값이 다르고 4명(자원자)의 표본이다.",
+  "wilson_if_1200_answers_iid": [
+   94.4,
+   96.7
+  ]
+ },
+ "S6_b3_ablation": {
+  "swap_options_diff_pts": 1.6,
+  "pairs_swap": 60,
+  "pairs_orig": 58,
+  "notation_diff_pts": -1.4,
+  "mde_paired_psi0.2_pts": 10.2,
+  "swap_p_psi0.2": 0.86
+ }
+}

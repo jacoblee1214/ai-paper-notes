@@ -1,0 +1,138 @@
+{
+ "C1_structure": {
+  "n_rows": 300,
+  "n_pairs": 150,
+  "pair_same_question_and_options": 150,
+  "pair_answers_differ": 150,
+  "odd_row_answer_a": 150,
+  "even_row_answer_b": 150,
+  "n_options_per_question": [
+   2
+  ],
+  "n_yes_no_questions": 122,
+  "n_yes_no_pairs": 61,
+  "n_distinct_option_strings": 76
+ },
+ "C2_image_blind_deterministic": {
+  "always (a)": {
+   "pair_score_pct": 0.0,
+   "question_score_pct": 50.0
+  },
+  "always (b)": {
+   "pair_score_pct": 0.0,
+   "question_score_pct": 50.0
+  },
+  "always Yes on yes/no, (a) otherwise": {
+   "pair_score_pct": 0.0,
+   "question_score_pct": 50.0
+  },
+  "always No on yes/no, (b) otherwise": {
+   "pair_score_pct": 0.0,
+   "question_score_pct": 50.0
+  }
+ },
+ "C3_image_blind_stochastic": {
+  "p=0.5": {
+   "expected_pct": 25.0,
+   "mc_mean": 25.0,
+   "mc_sd_over_150_pairs": 3.53,
+   "P(score>=25)": 0.4936
+  },
+  "p=0.4": {
+   "expected_pct": 24.0,
+   "mc_mean": 24.0,
+   "mc_sd_over_150_pairs": 3.49,
+   "P(score>=25)": 0.3818
+  },
+  "p=0.3": {
+   "expected_pct": 21.0,
+   "mc_mean": 21.0,
+   "mc_sd_over_150_pairs": 3.33,
+   "P(score>=25)": 0.1165
+  },
+  "p=0.2": {
+   "expected_pct": 16.0,
+   "mc_mean": 16.01,
+   "mc_sd_over_150_pairs": 3.0,
+   "P(score>=25)": 0.0022
+  },
+  "p=0.1": {
+   "expected_pct": 9.0,
+   "mc_mean": 9.0,
+   "mc_sd_over_150_pairs": 2.33,
+   "P(score>=25)": 0.0
+  },
+  "p=0.063": {
+   "expected_pct": 5.9,
+   "mc_mean": 5.9,
+   "mc_sd_over_150_pairs": 1.92,
+   "P(score>=25)": 0.0
+  }
+ },
+ "C3b_discrimination_lower_bound": {
+  "Gemini 40.7": {
+   "score": 40.7,
+   "d_lower": 20.9
+  },
+  "GPT-4V 38.7": {
+   "score": 38.7,
+   "d_lower": 18.3
+  },
+  "PaliGemma-448 47.3 (paligemma/ 03)": {
+   "score": 47.3,
+   "d_lower": 29.7
+  },
+  "LLaVA-1.5 24.7": {
+   "score": 24.7,
+   "d_lower": 0.0
+  },
+  "Human 95.7": {
+   "score": 95.7,
+   "d_lower": 94.3
+  }
+ },
+ "C4_correlated_answers": {
+  "rho=0.0": {
+   "p_a=0.5": 25.0,
+   "p_a=0.3": 21.0
+  },
+  "rho=0.5": {
+   "p_a=0.5": 12.5,
+   "p_a=0.3": 10.5
+  },
+  "rho=0.8": {
+   "p_a=0.5": 5.0,
+   "p_a=0.3": 4.2
+  },
+  "rho=0.95": {
+   "p_a=0.5": 1.25,
+   "p_a=0.3": 1.05
+  },
+  "rho=1.0": {
+   "p_a=0.5": 0.0,
+   "p_a=0.3": 0.0
+  }
+ },
+ "C5_vlm_structure": {
+  "n_rows": 270,
+  "n_pairs": 135,
+  "types_in_order": [
+   "Orientation",
+   "Presence",
+   "State",
+   "Quantity",
+   "Spatial",
+   "Color",
+   "Structural Character",
+   "Text",
+   "Camera Perspective"
+  ],
+  "pairs_per_type": 15,
+  "ground_truth_by_parity": "gt = img1 if question_id odd else img2 (evaluate_vlm.py L76-77)",
+  "always_img1_pair_score": 0.0,
+  "independent_random_pair_score": 25.0,
+  "text_prefix_in_code": "'a photo of ' + statement (evaluate_vlm.py L52-53; 논문 본문에 없음)",
+  "mc_independent_pair_score_15_pairs_mean_pct": 25.01,
+  "mc_independent_sd_per_pattern_pct": 11.16
+ }
+}

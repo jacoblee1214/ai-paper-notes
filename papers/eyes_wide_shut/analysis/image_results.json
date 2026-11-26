@@ -1,0 +1,31 @@
+{
+ "n_images": 300,
+ "n_square": 300,
+ "n_nonsquare": 0,
+ "median_area_lost_by_center_crop_pct": 0.0,
+ "mean_area_lost_pct": 0.0,
+ "p90_area_lost_pct": 0.0,
+ "n_lost_gt_20pct": 0,
+ "n_lost_gt_40pct": 0,
+ "pairs_with_same_size": 150,
+ "width_range": [
+  224,
+  224
+ ],
+ "height_range": [
+  224,
+  224
+ ],
+ "min_side_range": [
+  224,
+  224
+ ],
+ "n_min_side_lt_224": 0,
+ "n_min_side_lt_336": 300,
+ "mmvp_vlm": {
+  "n_images": 270,
+  "distinct_sizes": [
+   "(224, 224)"
+  ]
+ }
+}
