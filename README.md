@@ -2,9 +2,9 @@
 
 AI·ML 논문(모델 구조, 학습, 추론 효율, 멀티모달, 비전, 생성 모델, 에이전트, 평가, 해석 가능성)을 깊게 읽고, 공개된 수치를 재계산하거나 코드와 대조하며 정리한 노트입니다. 로봇 학습 논문은 [paper-notes](https://github.com/jacoblee1214/paper-notes)에 있습니다.
 
-학회별로 묶었습니다(46편). 학회는 arXiv Comments·Journal ref, 원문, 프로젝트 페이지의 표기를 따랐고 각 글 머리말의 `venue`(묶음)와 `venue_note`(근거)에 적었습니다. 묶음 안에서는 날짜 역순입니다.
+학회별로 묶었습니다(47편). 학회는 arXiv Comments·Journal ref, 원문, 프로젝트 페이지의 표기를 따랐고 각 글 머리말의 `venue`(묶음)와 `venue_note`(근거)에 적었습니다. 묶음 안에서는 날짜 역순입니다.
 
-ICLR 2026 (3) · ICLR 2026 워크숍 (1) · ICML 2026 (1) · ICML 2026 워크숍 (1) · ICSE 2026 (1) · NeurIPS 2025 (3) · ICLR 2025 (2) · ICML 2025 (1) · TMLR 2025 (1) · IJCNLP-AACL 2025 워크숍 (1) · ICLR 2024 (7) · NeurIPS 2024 (2) · ACL 2024 Findings (1) · CVPR 2024 (1) · ICML 2024 (1) · TACL 2024 (1) · NeurIPS 2023 (2) · ICCV 2023 (1) · NeurIPS 2022 (1) · ICLR 2021 (1) · ICML 2021 (1) · NeurIPS 2021 (1) · EMNLP 2020 (1) · 학회 표기 없음 (arXiv) (5) · 기술 보고서·블로그 (5)
+ICLR 2026 (3) · ICLR 2026 워크숍 (1) · ICML 2026 (1) · ICML 2026 워크숍 (1) · ICSE 2026 (1) · NeurIPS 2025 (3) · ICLR 2025 (2) · ICML 2025 (1) · TMLR 2025 (1) · IJCNLP-AACL 2025 워크숍 (1) · ICLR 2024 (7) · NeurIPS 2024 (2) · ACL 2024 Findings (1) · CVPR 2024 (1) · ICML 2024 (1) · TACL 2024 (1) · TMLR 2024 (1) · NeurIPS 2023 (2) · ICCV 2023 (1) · NeurIPS 2022 (1) · ICLR 2021 (1) · ICML 2021 (1) · NeurIPS 2021 (1) · EMNLP 2020 (1) · 학회 표기 없음 (arXiv) (5) · 기술 보고서·블로그 (5)
 
 ## ICLR 2026 (3)
 
@@ -113,6 +113,12 @@ ICLR 2026 (3) · ICLR 2026 워크숍 (1) · ICML 2026 (1) · ICML 2026 워크숍
 | 날짜 | 글 | 요약 |
 |---|---|---|
 | 2026-11-22 | [자기 수정 서베이를 원 논문 표로 다시 확인해 보니](papers/self_correction_survey/) | 자기 수정 연구가 오라클 신호와 약한 초기 프롬프트로 부풀었다는 비판 서베이의 판정을, 서베이가 든 원 논문의 표와 공개 코드로 다시 확인했다. 방향은 맞고, 서베이가 구분하지 못한 사례와 원 논문 내부 불일치도 찾았다. |
+
+## TMLR 2024 (1)
+
+| 날짜 | 글 | 요약 |
+|---|---|---|
+| 2026-11-26 | [DINOv2의 붕괴 방지 장치를 직접 짜 보기: 중심화, 날카롭게 하기, Sinkhorn-Knopp, KoLeo](papers/dinov2/) | DINOv2의 목적 함수(DINO 이미지 손실, iBOT 가린 패치 손실, Sinkhorn-Knopp 중심화, KoLeo, EMA 교사, 멀티 크롭)를 작은 ViT로 직접 짜 테스트 29개로 확인했습니다. 합성 도형 토이(시드 5개)에서 중심화 없이 날카롭게만 하면 5/5 시드가 한 프로토타입으로, 날카롭게 없이 중심화만 하면 5/5 시드가 균등 분포로 붕괴했습니다. 둘 다 써도 특징 유효 차원은 무작위 초기화보다 낮았고 KoLeo가 있는 조건만 특징이 좋아졌습니다. 논문 표 1의 Sinkhorn-Knopp 행은 변화가 없고, OpenCLIP-G 대비 승수는 인스턴스·밀집 23/23, 이미지 수준 18/26입니다. 후속 문헌(register, DINOv3, Web-SSL)과 이 저장소의 VLM 분석으로 주장이 어떻게 수정되었는지 정리했습니다. |
 
 ## NeurIPS 2023 (2)
 

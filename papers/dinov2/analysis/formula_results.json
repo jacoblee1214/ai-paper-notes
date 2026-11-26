@@ -1,0 +1,377 @@
+{
+ "table1": {
+  "rows": [
+   {
+    "step": "+our reproduction",
+    "knn_delta": 1.6,
+    "lin_delta": 0.9,
+    "printed_knn": 1.6,
+    "printed_lin": 0.9
+   },
+   {
+    "step": "+LayerScale, Stochastic Depth",
+    "knn_delta": 0.9,
+    "lin_delta": -1.2,
+    "printed_knn": 0.9,
+    "printed_lin": -1.2
+   },
+   {
+    "step": "+128k prototypes",
+    "knn_delta": 1.2,
+    "lin_delta": -0.1,
+    "printed_knn": 1.2,
+    "printed_lin": -0.1
+   },
+   {
+    "step": "+KoLeo",
+    "knn_delta": 2.3,
+    "lin_delta": 0.6,
+    "printed_knn": 2.3,
+    "printed_lin": 0.6
+   },
+   {
+    "step": "+SwiGLU FFN",
+    "knn_delta": -0.2,
+    "lin_delta": 0.6,
+    "printed_knn": -0.2,
+    "printed_lin": 0.6
+   },
+   {
+    "step": "+Patch size 14",
+    "knn_delta": 0.2,
+    "lin_delta": 0.4,
+    "printed_knn": 0.2,
+    "printed_lin": 0.4
+   },
+   {
+    "step": "+Teacher momentum 0.994",
+    "knn_delta": 0.5,
+    "lin_delta": 0.1,
+    "printed_knn": 0.5,
+    "printed_lin": 0.1
+   },
+   {
+    "step": "+Tweak warmup schedules",
+    "knn_delta": 1.1,
+    "lin_delta": 0.2,
+    "printed_knn": 1.1,
+    "printed_lin": 0.2
+   },
+   {
+    "step": "+Batch size 3k",
+    "knn_delta": 1.2,
+    "lin_delta": 0.9,
+    "printed_knn": 1.2,
+    "printed_lin": 0.9
+   },
+   {
+    "step": "+Sinkhorn-Knopp",
+    "knn_delta": 0.0,
+    "lin_delta": 0.0,
+    "printed_knn": 0.0,
+    "printed_lin": 0.0
+   },
+   {
+    "step": "+Untying heads = DINOv2",
+    "knn_delta": 0.3,
+    "lin_delta": -0.2,
+    "printed_knn": 0.3,
+    "printed_lin": -0.2
+   }
+  ],
+  "mismatches": [],
+  "total_knn": 9.1,
+  "total_lin": 2.2,
+  "n_steps_with_lin_drop": 3,
+  "knn_resolution": 0.1,
+  "note": "한 번 실행, 시드·구간 없음. k-NN 기준 항목이 12개 중 1개(SwiGLU)만 하락"
+ },
+ "params": {
+  "ViT-S/14": {
+   "params_M": 22.1,
+   "readme_M": 21.0
+  },
+  "ViT-B/14": {
+   "params_M": 86.6,
+   "readme_M": 86.0
+  },
+  "ViT-B/14 (표 17의 18블록)": {
+   "params_M": 129.1,
+   "readme_M": null
+  },
+  "ViT-L/14": {
+   "params_M": 304.4,
+   "readme_M": 300.0
+  },
+  "ViT-g/14 (SwiGLU)": {
+   "params_M": 1136.5,
+   "readme_M": 1100.0
+  }
+ },
+ "carbon": {
+  "mwh": 9.69,
+  "tco2": 3.73,
+  "paper_mwh": 9.7,
+  "paper_tco2": 3.7,
+  "openclip_L_ratio": 2.31,
+  "openclip_G_ratio": 12.27,
+  "note": "본문 '10x more'는 OpenCLIP-G(12.3배)에만 맞고 -L(2.3배)에는 아님"
+ },
+ "vs_openclip_G": {
+  "image_g": {
+   "n": 26,
+   "wins": 18,
+   "losses": 8,
+   "lose_items": [
+    "Im-R",
+    "Sketch",
+    "Places205",
+    "SUN",
+    "Cars",
+    "VOC",
+    "DTD",
+    "Caltech101"
+   ]
+  },
+  "image_L_distilled": {
+   "n": 26,
+   "wins": 14,
+   "losses": 12,
+   "lose_items": [
+    "Im-R",
+    "Sketch",
+    "Places205",
+    "K400",
+    "UCF101",
+    "SSv2",
+    "Food",
+    "SUN",
+    "Cars",
+    "VOC",
+    "DTD",
+    "Caltech101"
+   ]
+  },
+  "instance_pixel_g": {
+   "n": 23,
+   "wins": 23,
+   "losses": 0,
+   "lose_items": []
+  },
+  "instance_pixel_L_distilled": {
+   "n": 23,
+   "wins": 23,
+   "losses": 0,
+   "lose_items": []
+  }
+ },
+ "table2": {
+  "INet-22k": {
+   "wins": [
+    "Im-A",
+    "ADE-20k",
+    "Oxford-M",
+    "iNat18",
+    "iNat21",
+    "Places205"
+   ],
+   "losses": [
+    "INet-1k"
+   ]
+  },
+  "Uncurated": {
+   "wins": [
+    "INet-1k",
+    "Im-A",
+    "Oxford-M",
+    "iNat18",
+    "iNat21",
+    "Places205"
+   ],
+   "losses": [
+    "ADE-20k"
+   ]
+  }
+ },
+ "table3": {
+  "koleo_oxfordM": 8.3,
+  "koleo_others": {
+   "INet1k": 0.5,
+   "ImA": 2.2,
+   "ADE": -0.1
+  },
+  "mim_ade": 2.9,
+  "mim_oxfordM": -0.4,
+  "mim_imA": 0.8,
+  "mim_inet": 0.5
+ },
+ "fig5": {
+  "names": [
+   "INet-1k",
+   "Segm",
+   "Depth RMSE (lower)",
+   "Classif",
+   "Finegr",
+   "Retriev",
+   "ARSketch",
+   "Video"
+  ],
+  "distill_minus_scratch": [
+   1.8,
+   1.1,
+   -0.02,
+   1.0,
+   1.8,
+   5.0,
+   5.0,
+   0.2
+  ],
+  "distill_minus_g": [
+   -0.2,
+   -0.1,
+   0.08,
+   -0.9,
+   -0.7,
+   1.1,
+   -2.5,
+   -1.8
+  ]
+ },
+ "imagenet_sampling": {
+  "n": 50000,
+  "acc": 0.865,
+  "se_single_pp": 0.153,
+  "halfwidth95_single_pp": 0.3,
+  "paired_halfwidth95_pp": {
+   "disagree 5%": 0.196,
+   "disagree 10%": 0.277,
+   "disagree 15%": 0.339
+  },
+  "observed_diff_pp": 0.3,
+  "note": "쌍 비교 구간은 두 모델이 서로 다르게 맞히는 비율(불일치율)을 가정한 값. 논문은 불일치율을 주지 않음"
+ },
+ "resolution_cost": {
+  "tokens_224": 197,
+  "tokens_416": 677,
+  "forward_ratio": 3.7,
+  "note": "전역 크롭 한 장의 순전파 비. 지역 크롭(변화 없음)이 섞이면 학습 전체 비는 이보다 작아 '약 3배'와 모순되지 않음"
+ },
+ "multicrop_cost": {
+  "tokens_global": 257,
+  "tokens_local": 50,
+  "local_over_global": 0.19,
+  "two_global_plus_8_local_over_2_global": 1.761,
+  "vs_10_global": 0.352,
+  "note": "학생 순전파 기준(교사는 전역 2개만 순전파). 지역 크롭 8개를 더해도 전역 2개 대비 약 1.4배"
+ },
+ "sinkhorn_col_err": {
+  "logit_std_0.05": {
+   "1": 0.057,
+   "3": 0.0002,
+   "10": 0.0,
+   "50": 0.0,
+   "200": 0.0
+  },
+  "logit_std_0.1": {
+   "1": 0.2554,
+   "3": 0.0198,
+   "10": 0.0,
+   "50": 0.0,
+   "200": 0.0
+  },
+  "logit_std_0.3": {
+   "1": 1.8905,
+   "3": 0.5956,
+   "10": 0.0486,
+   "50": 0.0,
+   "200": 0.0
+  },
+  "logit_std_1.0": {
+   "1": 1.4026,
+   "3": 1.1952,
+   "10": 0.4559,
+   "50": 0.0354,
+   "200": 0.0001
+  }
+ },
+ "kl_entropy_error_vs_gaussian": {
+  "d2_n500": {
+   "bias": 0.0442,
+   "sd": 0.0917
+  },
+  "d2_n2000": {
+   "bias": -0.0037,
+   "sd": 0.0571
+  },
+  "d2_n8000": {
+   "bias": 0.006,
+   "sd": 0.0157
+  },
+  "d8_n500": {
+   "bias": 0.0437,
+   "sd": 0.0726
+  },
+  "d8_n2000": {
+   "bias": -0.024,
+   "sd": 0.0413
+  },
+  "d8_n8000": {
+   "bias": -0.0375,
+   "sd": 0.0377
+  }
+ },
+ "entropy_vs_spread_over_T": {
+  "log_K": 4.159,
+  "table": {
+   "spread_0.005": {
+    "T_0.02": 4.128,
+    "T_0.04": 4.151,
+    "T_0.07": 4.156,
+    "T_0.1": 4.158
+   },
+   "spread_0.01": {
+    "T_0.02": 4.037,
+    "T_0.04": 4.128,
+    "T_0.07": 4.149,
+    "T_0.1": 4.154
+   },
+   "spread_0.02": {
+    "T_0.02": 3.679,
+    "T_0.04": 4.036,
+    "T_0.07": 4.119,
+    "T_0.1": 4.139
+   },
+   "spread_0.05": {
+    "T_0.02": 2.181,
+    "T_0.04": 3.437,
+    "T_0.07": 3.912,
+    "T_0.1": 4.037
+   },
+   "spread_0.1": {
+    "T_0.02": 1.016,
+    "T_0.04": 2.181,
+    "T_0.07": 3.251,
+    "T_0.1": 3.689
+   },
+   "spread_0.3": {
+    "T_0.02": 0.281,
+    "T_0.04": 0.62,
+    "T_0.07": 1.195,
+    "T_0.1": 1.811
+   }
+  }
+ },
+ "ce_decomposition_max_err": 9.5367431640625e-07,
+ "ema": {
+  "m": 0.994,
+  "effective_window": 166.7,
+  "weight_on_last_k": {
+   "k=10": 0.058,
+   "k=100": 0.452,
+   "k=167": 0.634,
+   "k=500": 0.951,
+   "k=1000": 0.998
+  },
+  "note": "논문 m 은 0.994 에서 1 로 코사인(표 16, 625k 스텝). 초기 유효 창 약 167 스텝, 끝에서는 무한대"
+ }
+}
