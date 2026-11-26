@@ -1,0 +1,1719 @@
+{
+ "n_inference": {
+  "DS": {
+   "values": 103,
+   "best": [
+    [
+     113,
+     "102/103"
+    ],
+    [
+     197,
+     "31/103"
+    ],
+    [
+     196,
+     "30/103"
+    ],
+    [
+     168,
+     "28/103"
+    ]
+   ],
+   "paper_n_assumed": 113,
+   "fit_at_113": [
+    102,
+    103
+   ]
+  },
+  "TB": {
+   "values": 50,
+   "best": [
+    [
+     89,
+     "44/50"
+    ],
+    [
+     111,
+     "18/50"
+    ],
+    [
+     104,
+     "14/50"
+    ],
+    [
+     119,
+     "14/50"
+    ]
+   ],
+   "paper_n_assumed": 89,
+   "fit_at_89": [
+    44,
+    50
+   ]
+  }
+ },
+ "table3_subscripts": [
+  {
+   "pair": "Sol->Qwen",
+   "bench": "DS",
+   "rel_acc": -11.6,
+   "paper_rel_acc": -11.6,
+   "rel_cost": -80.8,
+   "paper_rel_cost": -80.8,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -7.9
+  },
+  {
+   "pair": "Sol->Qwen",
+   "bench": "TB",
+   "rel_acc": -6.4,
+   "paper_rel_acc": -6.4,
+   "rel_cost": -55.7,
+   "paper_rel_cost": -55.7,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -5.6
+  },
+  {
+   "pair": "Sol->Luna",
+   "bench": "DS",
+   "rel_acc": -1.2,
+   "paper_rel_acc": -1.2,
+   "rel_cost": -73.9,
+   "paper_rel_cost": -73.9,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -0.8
+  },
+  {
+   "pair": "Sol->Luna",
+   "bench": "TB",
+   "rel_acc": -6.4,
+   "paper_rel_acc": -6.4,
+   "rel_cost": -51.5,
+   "paper_rel_cost": -51.5,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -5.6
+  },
+  {
+   "pair": "Opus->Qwen",
+   "bench": "DS",
+   "rel_acc": -8.0,
+   "paper_rel_acc": -8.0,
+   "rel_cost": -73.7,
+   "paper_rel_cost": -73.7,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -5.4
+  },
+  {
+   "pair": "Opus->Qwen",
+   "bench": "TB",
+   "rel_acc": 3.9,
+   "paper_rel_acc": 3.9,
+   "rel_cost": -60.1,
+   "paper_rel_cost": -60.1,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": 3.3
+  },
+  {
+   "pair": "Opus->Luna",
+   "bench": "DS",
+   "rel_acc": 13.1,
+   "paper_rel_acc": 13.1,
+   "rel_cost": -70.5,
+   "paper_rel_cost": -70.5,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": 8.8
+  },
+  {
+   "pair": "Opus->Luna",
+   "bench": "TB",
+   "rel_acc": 2.6,
+   "paper_rel_acc": 2.6,
+   "rel_cost": -58.7,
+   "paper_rel_cost": -58.7,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": 2.2
+  },
+  {
+   "pair": "GLM->Qwen",
+   "bench": "DS",
+   "rel_acc": -4.4,
+   "paper_rel_acc": -4.4,
+   "rel_cost": -84.5,
+   "paper_rel_cost": -84.5,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -2.7
+  },
+  {
+   "pair": "GLM->Qwen",
+   "bench": "TB",
+   "rel_acc": -6.5,
+   "paper_rel_acc": -6.5,
+   "rel_cost": -73.5,
+   "paper_rel_cost": -73.5,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -5.6
+  },
+  {
+   "pair": "GLM->Luna",
+   "bench": "DS",
+   "rel_acc": 8.7,
+   "paper_rel_acc": 8.7,
+   "rel_cost": -73.7,
+   "paper_rel_cost": -73.7,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": 5.3
+  },
+  {
+   "pair": "GLM->Luna",
+   "bench": "TB",
+   "rel_acc": -7.7,
+   "paper_rel_acc": -7.7,
+   "rel_cost": -67.6,
+   "paper_rel_cost": -67.6,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -6.7
+  },
+  {
+   "pair": "Kimi->Qwen",
+   "bench": "DS",
+   "rel_acc": -1.2,
+   "paper_rel_acc": -1.2,
+   "rel_cost": -72.9,
+   "paper_rel_cost": -72.9,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -0.9
+  },
+  {
+   "pair": "Kimi->Qwen",
+   "bench": "TB",
+   "rel_acc": 0.0,
+   "paper_rel_acc": 0.0,
+   "rel_cost": -62.0,
+   "paper_rel_cost": -62.0,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": 0.0
+  },
+  {
+   "pair": "Kimi->Luna",
+   "bench": "DS",
+   "rel_acc": 4.8,
+   "paper_rel_acc": 4.8,
+   "rel_cost": -66.6,
+   "paper_rel_cost": -66.6,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": 3.5
+  },
+  {
+   "pair": "Kimi->Luna",
+   "bench": "TB",
+   "rel_acc": -6.5,
+   "paper_rel_acc": -6.5,
+   "rel_cost": -58.7,
+   "paper_rel_cost": -58.7,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -5.6
+  },
+  {
+   "pair": "Gem->Qwen",
+   "bench": "DS",
+   "rel_acc": -5.5,
+   "paper_rel_acc": -5.5,
+   "rel_cost": -80.3,
+   "paper_rel_cost": -80.3,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -3.6
+  },
+  {
+   "pair": "Gem->Qwen",
+   "bench": "TB",
+   "rel_acc": 0.0,
+   "paper_rel_acc": 0.0,
+   "rel_cost": -50.0,
+   "paper_rel_cost": -50.0,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": 0.0
+  },
+  {
+   "pair": "Gem->Luna",
+   "bench": "DS",
+   "rel_acc": 12.2,
+   "paper_rel_acc": 12.2,
+   "rel_cost": -72.2,
+   "paper_rel_cost": -72.2,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": 8.0
+  },
+  {
+   "pair": "Gem->Luna",
+   "bench": "TB",
+   "rel_acc": -1.3,
+   "paper_rel_acc": -1.3,
+   "rel_cost": -45.1,
+   "paper_rel_cost": -45.1,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -1.1
+  },
+  {
+   "pair": "Luna->Qwen",
+   "bench": "DS",
+   "rel_acc": -7.3,
+   "paper_rel_acc": -7.3,
+   "rel_cost": -75.0,
+   "paper_rel_cost": -75.0,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -4.4
+  },
+  {
+   "pair": "Luna->Qwen",
+   "bench": "TB",
+   "rel_acc": -5.7,
+   "paper_rel_acc": -5.7,
+   "rel_cost": -42.9,
+   "paper_rel_cost": -42.9,
+   "acc_mismatch": false,
+   "cost_mismatch": false,
+   "pp": -4.7
+  }
+ ],
+ "table3_subscript_mismatch": [],
+ "avg_cost_reduction_22": 65.9,
+ "avg_cost_reduction_by_bench": {
+  "DS": 74.9,
+  "TB": 56.9
+ },
+ "avg_cost_reduction_by_receiver": {
+  "Qwen": 67.6,
+  "Luna": 63.9
+ },
+ "avg_cost_reduction_capable_sources_only_20": 66.6,
+ "cost_weighted_reduction": 71.2,
+ "max_gain_pp": [
+  8.8,
+  "Opus->Luna",
+  "DS"
+ ],
+ "settings_improve_or_lose_lt5pct_relative": {
+  "count": 12,
+  "of": 22,
+  "paper": "12 of 22",
+  "note": "논문 본문은 이를 22개 (모델 쌍, 벤치마크) 중 12개로 적었는데 Luna 소스 포함 여부는 명시 안 함",
+  "excluding_Luna_source": 12
+ },
+ "settings_with_acc_gain_pp_positive": 6,
+ "settings_with_pp_loss_ge_5": 7,
+ "pp_diffs_all": [
+  -7.9,
+  -6.7,
+  -5.6,
+  -5.6,
+  -5.6,
+  -5.6,
+  -5.4,
+  -4.7,
+  -4.4,
+  -3.6,
+  -2.7,
+  -1.1,
+  -0.9,
+  -0.8,
+  0.0,
+  0.0,
+  2.2,
+  3.3,
+  3.5,
+  5.3,
+  8.0,
+  8.8
+ ],
+ "table3_vs_table6_deepswe_same_config": [
+  {
+   "item": "Sol 단독 max",
+   "table3": [
+    68.1,
+    5.32
+   ],
+   "table6": [
+    71.7,
+    4.84
+   ],
+   "diff_pp": 3.6,
+   "diff_tasks": 4
+  },
+  {
+   "item": "Sol->Qwen (AgentBaton)",
+   "table3": [
+    60.2,
+    1.02
+   ],
+   "table6": [
+    61.9,
+    1.0
+   ],
+   "diff_pp": 1.7,
+   "diff_tasks": 2
+  },
+  {
+   "item": "Sol->Luna (AgentBaton)",
+   "table3": [
+    67.3,
+    1.39
+   ],
+   "table6": [
+    70.8,
+    1.4
+   ],
+   "diff_pp": 3.5,
+   "diff_tasks": 4
+  },
+  {
+   "item": "Opus 단독 max",
+   "table3": [
+    67.3,
+    9.91
+   ],
+   "table6": [
+    67.3,
+    9.91
+   ],
+   "diff_pp": 0.0,
+   "diff_tasks": 0
+  },
+  {
+   "item": "Opus->Qwen (AgentBaton)",
+   "table3": [
+    61.9,
+    2.61
+   ],
+   "table6": [
+    61.9,
+    2.61
+   ],
+   "diff_pp": 0.0,
+   "diff_tasks": 0
+  },
+  {
+   "item": "Opus->Luna (AgentBaton)",
+   "table3": [
+    76.1,
+    2.92
+   ],
+   "table6": [
+    76.1,
+    2.92
+   ],
+   "diff_pp": 0.0,
+   "diff_tasks": 0
+  },
+  {
+   "item": "GLM 단독 max",
+   "table3": [
+    61.1,
+    3.16
+   ],
+   "table6": [
+    69.0,
+    3.06
+   ],
+   "diff_pp": 7.9,
+   "diff_tasks": 9
+  },
+  {
+   "item": "GLM->Qwen (AgentBaton)",
+   "table3": [
+    58.4,
+    0.49
+   ],
+   "table6": [
+    66.4,
+    0.48
+   ],
+   "diff_pp": 8.0,
+   "diff_tasks": 9
+  },
+  {
+   "item": "GLM->Luna (AgentBaton)",
+   "table3": [
+    66.4,
+    0.83
+   ],
+   "table6": [
+    72.6,
+    0.8
+   ],
+   "diff_pp": 6.2,
+   "diff_tasks": 7
+  },
+  {
+   "item": "Kimi 단독 max",
+   "table3": [
+    73.5,
+    4.73
+   ],
+   "table6": [
+    73.5,
+    4.73
+   ],
+   "diff_pp": 0.0,
+   "diff_tasks": 0
+  },
+  {
+   "item": "Kimi->Qwen (AgentBaton)",
+   "table3": [
+    72.6,
+    1.28
+   ],
+   "table6": [
+    72.6,
+    1.28
+   ],
+   "diff_pp": 0.0,
+   "diff_tasks": 0
+  },
+  {
+   "item": "Kimi->Luna (AgentBaton)",
+   "table3": [
+    77.0,
+    1.58
+   ],
+   "table6": [
+    77.0,
+    1.58
+   ],
+   "diff_pp": 0.0,
+   "diff_tasks": 0
+  },
+  {
+   "item": "Luna 단독 max",
+   "table3": [
+    60.2,
+    0.4
+   ],
+   "table6": [
+    60.2,
+    0.4
+   ],
+   "diff_pp": 0.0,
+   "diff_tasks": 0
+  },
+  {
+   "item": "Luna->Qwen (AgentBaton)",
+   "table3": [
+    55.8,
+    0.1
+   ],
+   "table6": [
+    55.8,
+    0.1
+   ],
+   "diff_pp": 0.0,
+   "diff_tasks": 0
+  }
+ ],
+ "effort_sweep_nonmonotone": [
+  {
+   "model": "Sol",
+   "efforts": [
+    [
+     "low",
+     35.4
+    ],
+    [
+     "medium",
+     51.3
+    ],
+    [
+     "high",
+     62.8
+    ],
+    [
+     "xhigh",
+     71.7
+    ],
+    [
+     "max",
+     71.7
+    ]
+   ],
+   "decreases": []
+  },
+  {
+   "model": "Opus",
+   "efforts": [
+    [
+     "low",
+     54.0
+    ],
+    [
+     "medium",
+     68.1
+    ],
+    [
+     "high",
+     64.6
+    ],
+    [
+     "xhigh",
+     75.2
+    ],
+    [
+     "max",
+     67.3
+    ]
+   ],
+   "decreases": [
+    [
+     "medium",
+     "high",
+     -3.5
+    ],
+    [
+     "xhigh",
+     "max",
+     -7.9
+    ]
+   ]
+  },
+  {
+   "model": "Kimi",
+   "efforts": [
+    [
+     "low",
+     54.9
+    ],
+    [
+     "high",
+     69.9
+    ],
+    [
+     "max",
+     73.5
+    ]
+   ],
+   "decreases": []
+  }
+ ],
+ "ab_rows_dominated_by_single_model_table3": [
+  {
+   "pair": "Sol->Qwen",
+   "bench": "DS",
+   "acc": 60.2,
+   "cost": 1.02,
+   "dominated_by_single": [
+    "Luna"
+   ]
+  },
+  {
+   "pair": "Sol->Qwen",
+   "bench": "TB",
+   "acc": 82.0,
+   "cost": 0.43,
+   "dominated_by_single": [
+    "Luna"
+   ]
+  },
+  {
+   "pair": "Sol->Luna",
+   "bench": "TB",
+   "acc": 82.0,
+   "cost": 0.47,
+   "dominated_by_single": [
+    "Luna"
+   ]
+  },
+  {
+   "pair": "Opus->Qwen",
+   "bench": "TB",
+   "acc": 87.6,
+   "cost": 1.13,
+   "dominated_by_single": [
+    "Sol"
+   ]
+  },
+  {
+   "pair": "Opus->Luna",
+   "bench": "TB",
+   "acc": 86.5,
+   "cost": 1.17,
+   "dominated_by_single": [
+    "Sol",
+    "GLM",
+    "Gem"
+   ]
+  },
+  {
+   "pair": "GLM->Qwen",
+   "bench": "DS",
+   "acc": 58.4,
+   "cost": 0.49,
+   "dominated_by_single": [
+    "Luna"
+   ]
+  },
+  {
+   "pair": "GLM->Qwen",
+   "bench": "TB",
+   "acc": 80.9,
+   "cost": 0.27,
+   "dominated_by_single": [
+    "Luna"
+   ]
+  },
+  {
+   "pair": "GLM->Luna",
+   "bench": "TB",
+   "acc": 79.8,
+   "cost": 0.33,
+   "dominated_by_single": [
+    "Luna"
+   ]
+  },
+  {
+   "pair": "Kimi->Luna",
+   "bench": "TB",
+   "acc": 80.9,
+   "cost": 0.62,
+   "dominated_by_single": [
+    "Luna"
+   ]
+  }
+ ],
+ "ab_rows_dominated_count": "9/22",
+ "ab_to_luna_vs_luna_alone": [
+  {
+   "pair": "Sol->Luna",
+   "bench": "DS",
+   "vs_luna_alone_pp": 7.1,
+   "cost_ratio_vs_luna_alone": 3.5
+  },
+  {
+   "pair": "Sol->Luna",
+   "bench": "TB",
+   "vs_luna_alone_pp": -0.2,
+   "cost_ratio_vs_luna_alone": 6.7
+  },
+  {
+   "pair": "Opus->Luna",
+   "bench": "DS",
+   "vs_luna_alone_pp": 15.9,
+   "cost_ratio_vs_luna_alone": 7.3
+  },
+  {
+   "pair": "Opus->Luna",
+   "bench": "TB",
+   "vs_luna_alone_pp": 4.3,
+   "cost_ratio_vs_luna_alone": 16.7
+  },
+  {
+   "pair": "GLM->Luna",
+   "bench": "DS",
+   "vs_luna_alone_pp": 6.2,
+   "cost_ratio_vs_luna_alone": 2.1
+  },
+  {
+   "pair": "GLM->Luna",
+   "bench": "TB",
+   "vs_luna_alone_pp": -2.4,
+   "cost_ratio_vs_luna_alone": 4.7
+  },
+  {
+   "pair": "Kimi->Luna",
+   "bench": "DS",
+   "vs_luna_alone_pp": 16.8,
+   "cost_ratio_vs_luna_alone": 4.0
+  },
+  {
+   "pair": "Kimi->Luna",
+   "bench": "TB",
+   "vs_luna_alone_pp": -1.3,
+   "cost_ratio_vs_luna_alone": 8.9
+  },
+  {
+   "pair": "Gem->Luna",
+   "bench": "DS",
+   "vs_luna_alone_pp": 13.3,
+   "cost_ratio_vs_luna_alone": 4.3
+  },
+  {
+   "pair": "Gem->Luna",
+   "bench": "TB",
+   "vs_luna_alone_pp": 3.2,
+   "cost_ratio_vs_luna_alone": 8.0
+  }
+ ],
+ "capable_minus_luna_alone_pp": {
+  "DS": {
+   "Sol": 7.9,
+   "Opus": 7.1,
+   "GLM": 0.9,
+   "Kimi": 13.3,
+   "Gem": 5.3
+  },
+  "TB": {
+   "Sol": 5.4,
+   "Opus": 2.1,
+   "GLM": 4.3,
+   "Kimi": 4.3,
+   "Gem": 4.3
+  }
+ },
+ "pareto_single_only": [
+  [
+   "Qwen",
+   "xhigh",
+   29.2,
+   0.0
+  ],
+  [
+   "Luna",
+   "high",
+   38.1,
+   0.11
+  ],
+  [
+   "Luna",
+   "xhigh",
+   56.6,
+   0.21
+  ],
+  [
+   "Luna",
+   "max",
+   60.2,
+   0.4
+  ],
+  [
+   "Sol",
+   "high",
+   62.8,
+   1.88
+  ],
+  [
+   "Sol",
+   "xhigh",
+   71.7,
+   2.79
+  ],
+  [
+   "Kimi",
+   "max",
+   73.5,
+   4.73
+  ],
+  [
+   "Opus",
+   "xhigh",
+   75.2,
+   8.9
+  ]
+ ],
+ "pareto_with_agentbaton": [
+  [
+   "single",
+   "Qwen",
+   "xhigh",
+   29.2,
+   0.0
+  ],
+  [
+   "AB->Qwen",
+   "Luna",
+   "high",
+   50.4,
+   0.04
+  ],
+  [
+   "AB->Qwen",
+   "Luna",
+   "xhigh",
+   56.6,
+   0.06
+  ],
+  [
+   "AB->Qwen",
+   "GLM",
+   "low",
+   61.9,
+   0.29
+  ],
+  [
+   "AB->Qwen",
+   "GLM",
+   "max",
+   66.4,
+   0.48
+  ],
+  [
+   "AB->Luna",
+   "GLM",
+   "low",
+   67.3,
+   0.6
+  ],
+  [
+   "AB->Luna",
+   "GLM",
+   "max",
+   72.6,
+   0.8
+  ],
+  [
+   "AB->Luna",
+   "Opus",
+   "medium",
+   75.2,
+   1.4
+  ],
+  [
+   "AB->Luna",
+   "Kimi",
+   "max",
+   77.0,
+   1.58
+  ],
+  [
+   "AB->Luna",
+   "Kimi",
+   "high",
+   79.6,
+   1.6
+  ]
+ ],
+ "table1_vs_capable_only": [
+  {
+   "dir": "E->C",
+   "cap": "GLM",
+   "bench": "TB",
+   "pct": 30,
+   "transfer": "in",
+   "acc": 83.2,
+   "cost": 1.32,
+   "d_pp": -3.3,
+   "cost_change_pct": 29.4
+  },
+  {
+   "dir": "E->C",
+   "cap": "GLM",
+   "bench": "TB",
+   "pct": 30,
+   "transfer": "log",
+   "acc": 83.2,
+   "cost": 1.22,
+   "d_pp": -3.3,
+   "cost_change_pct": 19.6
+  },
+  {
+   "dir": "E->C",
+   "cap": "GLM",
+   "bench": "TB",
+   "pct": 75,
+   "transfer": "in",
+   "acc": 68.5,
+   "cost": 1.19,
+   "d_pp": -18.0,
+   "cost_change_pct": 16.7
+  },
+  {
+   "dir": "E->C",
+   "cap": "GLM",
+   "bench": "TB",
+   "pct": 75,
+   "transfer": "log",
+   "acc": 79.8,
+   "cost": 1.26,
+   "d_pp": -6.7,
+   "cost_change_pct": 23.5
+  },
+  {
+   "dir": "E->C",
+   "cap": "GLM",
+   "bench": "DS",
+   "pct": 30,
+   "transfer": "in",
+   "acc": 51.3,
+   "cost": 4.04,
+   "d_pp": -9.8,
+   "cost_change_pct": 27.8
+  },
+  {
+   "dir": "E->C",
+   "cap": "GLM",
+   "bench": "DS",
+   "pct": 30,
+   "transfer": "log",
+   "acc": 62.8,
+   "cost": 2.93,
+   "d_pp": 1.7,
+   "cost_change_pct": -7.3
+  },
+  {
+   "dir": "E->C",
+   "cap": "GLM",
+   "bench": "DS",
+   "pct": 75,
+   "transfer": "in",
+   "acc": 38.9,
+   "cost": 2.61,
+   "d_pp": -22.2,
+   "cost_change_pct": -17.4
+  },
+  {
+   "dir": "E->C",
+   "cap": "GLM",
+   "bench": "DS",
+   "pct": 75,
+   "transfer": "log",
+   "acc": 53.1,
+   "cost": 1.87,
+   "d_pp": -8.0,
+   "cost_change_pct": -40.8
+  },
+  {
+   "dir": "E->C",
+   "cap": "Kimi",
+   "bench": "TB",
+   "pct": 30,
+   "transfer": "in",
+   "acc": 79.8,
+   "cost": 2.91,
+   "d_pp": -6.7,
+   "cost_change_pct": 94.0
+  },
+  {
+   "dir": "E->C",
+   "cap": "Kimi",
+   "bench": "TB",
+   "pct": 30,
+   "transfer": "log",
+   "acc": 84.3,
+   "cost": 1.58,
+   "d_pp": -2.2,
+   "cost_change_pct": 5.3
+  },
+  {
+   "dir": "E->C",
+   "cap": "Kimi",
+   "bench": "TB",
+   "pct": 75,
+   "transfer": "in",
+   "acc": 70.8,
+   "cost": 3.31,
+   "d_pp": -15.7,
+   "cost_change_pct": 120.7
+  },
+  {
+   "dir": "E->C",
+   "cap": "Kimi",
+   "bench": "TB",
+   "pct": 75,
+   "transfer": "log",
+   "acc": 79.8,
+   "cost": 1.3,
+   "d_pp": -6.7,
+   "cost_change_pct": -13.3
+  },
+  {
+   "dir": "E->C",
+   "cap": "Kimi",
+   "bench": "DS",
+   "pct": 30,
+   "transfer": "in",
+   "acc": 47.8,
+   "cost": 7.77,
+   "d_pp": -25.7,
+   "cost_change_pct": 64.3
+  },
+  {
+   "dir": "E->C",
+   "cap": "Kimi",
+   "bench": "DS",
+   "pct": 30,
+   "transfer": "log",
+   "acc": 62.0,
+   "cost": 4.45,
+   "d_pp": -11.5,
+   "cost_change_pct": -5.9
+  },
+  {
+   "dir": "E->C",
+   "cap": "Kimi",
+   "bench": "DS",
+   "pct": 75,
+   "transfer": "in",
+   "acc": 37.2,
+   "cost": 5.76,
+   "d_pp": -36.3,
+   "cost_change_pct": 21.8
+  },
+  {
+   "dir": "E->C",
+   "cap": "Kimi",
+   "bench": "DS",
+   "pct": 75,
+   "transfer": "log",
+   "acc": 50.4,
+   "cost": 2.52,
+   "d_pp": -23.1,
+   "cost_change_pct": -46.7
+  },
+  {
+   "dir": "E->C",
+   "cap": "Sol",
+   "bench": "TB",
+   "pct": 30,
+   "transfer": "in",
+   "acc": 83.2,
+   "cost": 1.19,
+   "d_pp": -4.4,
+   "cost_change_pct": 22.7
+  },
+  {
+   "dir": "E->C",
+   "cap": "Sol",
+   "bench": "TB",
+   "pct": 30,
+   "transfer": "log",
+   "acc": 89.9,
+   "cost": 0.87,
+   "d_pp": 2.3,
+   "cost_change_pct": -10.3
+  },
+  {
+   "dir": "E->C",
+   "cap": "Sol",
+   "bench": "TB",
+   "pct": 75,
+   "transfer": "in",
+   "acc": 82.0,
+   "cost": 2.15,
+   "d_pp": -5.6,
+   "cost_change_pct": 121.6
+  },
+  {
+   "dir": "E->C",
+   "cap": "Sol",
+   "bench": "TB",
+   "pct": 75,
+   "transfer": "log",
+   "acc": 85.4,
+   "cost": 0.85,
+   "d_pp": -2.2,
+   "cost_change_pct": -12.4
+  },
+  {
+   "dir": "E->C",
+   "cap": "Sol",
+   "bench": "DS",
+   "pct": 30,
+   "transfer": "in",
+   "acc": 73.5,
+   "cost": 6.2,
+   "d_pp": 5.4,
+   "cost_change_pct": 16.5
+  },
+  {
+   "dir": "E->C",
+   "cap": "Sol",
+   "bench": "DS",
+   "pct": 30,
+   "transfer": "log",
+   "acc": 70.8,
+   "cost": 5.0,
+   "d_pp": 2.7,
+   "cost_change_pct": -6.0
+  },
+  {
+   "dir": "E->C",
+   "cap": "Sol",
+   "bench": "DS",
+   "pct": 75,
+   "transfer": "in",
+   "acc": 58.4,
+   "cost": 8.84,
+   "d_pp": -9.7,
+   "cost_change_pct": 66.2
+  },
+  {
+   "dir": "E->C",
+   "cap": "Sol",
+   "bench": "DS",
+   "pct": 75,
+   "transfer": "log",
+   "acc": 67.3,
+   "cost": 5.74,
+   "d_pp": -0.8,
+   "cost_change_pct": 7.9
+  },
+  {
+   "dir": "C->E",
+   "cap": "GLM",
+   "bench": "TB",
+   "pct": 30,
+   "transfer": "in",
+   "acc": 77.5,
+   "cost": 0.15,
+   "d_pp": -9.0,
+   "cost_change_pct": -85.3
+  },
+  {
+   "dir": "C->E",
+   "cap": "GLM",
+   "bench": "TB",
+   "pct": 30,
+   "transfer": "log",
+   "acc": 76.4,
+   "cost": 0.15,
+   "d_pp": -10.1,
+   "cost_change_pct": -85.3
+  },
+  {
+   "dir": "C->E",
+   "cap": "GLM",
+   "bench": "TB",
+   "pct": 75,
+   "transfer": "in",
+   "acc": 83.2,
+   "cost": 0.64,
+   "d_pp": -3.3,
+   "cost_change_pct": -37.3
+  },
+  {
+   "dir": "C->E",
+   "cap": "GLM",
+   "bench": "TB",
+   "pct": 75,
+   "transfer": "log",
+   "acc": 79.8,
+   "cost": 0.64,
+   "d_pp": -6.7,
+   "cost_change_pct": -37.3
+  },
+  {
+   "dir": "C->E",
+   "cap": "GLM",
+   "bench": "DS",
+   "pct": 30,
+   "transfer": "in",
+   "acc": 61.1,
+   "cost": 0.56,
+   "d_pp": 0.0,
+   "cost_change_pct": -82.3
+  },
+  {
+   "dir": "C->E",
+   "cap": "GLM",
+   "bench": "DS",
+   "pct": 30,
+   "transfer": "log",
+   "acc": 54.9,
+   "cost": 0.56,
+   "d_pp": -6.2,
+   "cost_change_pct": -82.3
+  },
+  {
+   "dir": "C->E",
+   "cap": "GLM",
+   "bench": "DS",
+   "pct": 75,
+   "transfer": "in",
+   "acc": 62.8,
+   "cost": 2.07,
+   "d_pp": 1.7,
+   "cost_change_pct": -34.5
+  },
+  {
+   "dir": "C->E",
+   "cap": "GLM",
+   "bench": "DS",
+   "pct": 75,
+   "transfer": "log",
+   "acc": 59.3,
+   "cost": 2.07,
+   "d_pp": -1.8,
+   "cost_change_pct": -34.5
+  },
+  {
+   "dir": "C->E",
+   "cap": "Kimi",
+   "bench": "TB",
+   "pct": 30,
+   "transfer": "in",
+   "acc": 79.8,
+   "cost": 0.33,
+   "d_pp": -6.7,
+   "cost_change_pct": -78.0
+  },
+  {
+   "dir": "C->E",
+   "cap": "Kimi",
+   "bench": "TB",
+   "pct": 30,
+   "transfer": "log",
+   "acc": 75.3,
+   "cost": 0.33,
+   "d_pp": -11.2,
+   "cost_change_pct": -78.0
+  },
+  {
+   "dir": "C->E",
+   "cap": "Kimi",
+   "bench": "TB",
+   "pct": 75,
+   "transfer": "in",
+   "acc": 87.6,
+   "cost": 1.06,
+   "d_pp": 1.1,
+   "cost_change_pct": -29.3
+  },
+  {
+   "dir": "C->E",
+   "cap": "Kimi",
+   "bench": "TB",
+   "pct": 75,
+   "transfer": "log",
+   "acc": 82.0,
+   "cost": 1.06,
+   "d_pp": -4.5,
+   "cost_change_pct": -29.3
+  },
+  {
+   "dir": "C->E",
+   "cap": "Kimi",
+   "bench": "DS",
+   "pct": 30,
+   "transfer": "in",
+   "acc": 69.9,
+   "cost": 1.11,
+   "d_pp": -3.6,
+   "cost_change_pct": -76.5
+  },
+  {
+   "dir": "C->E",
+   "cap": "Kimi",
+   "bench": "DS",
+   "pct": 30,
+   "transfer": "log",
+   "acc": 56.6,
+   "cost": 1.11,
+   "d_pp": -16.9,
+   "cost_change_pct": -76.5
+  },
+  {
+   "dir": "C->E",
+   "cap": "Kimi",
+   "bench": "DS",
+   "pct": 75,
+   "transfer": "in",
+   "acc": 76.1,
+   "cost": 3.34,
+   "d_pp": 2.6,
+   "cost_change_pct": -29.4
+  },
+  {
+   "dir": "C->E",
+   "cap": "Kimi",
+   "bench": "DS",
+   "pct": 75,
+   "transfer": "log",
+   "acc": 76.1,
+   "cost": 3.34,
+   "d_pp": 2.6,
+   "cost_change_pct": -29.4
+  },
+  {
+   "dir": "C->E",
+   "cap": "Sol",
+   "bench": "TB",
+   "pct": 30,
+   "transfer": "in",
+   "acc": 64.0,
+   "cost": 0.24,
+   "d_pp": -23.6,
+   "cost_change_pct": -75.3
+  },
+  {
+   "dir": "C->E",
+   "cap": "Sol",
+   "bench": "TB",
+   "pct": 30,
+   "transfer": "log",
+   "acc": 69.7,
+   "cost": 0.24,
+   "d_pp": -17.9,
+   "cost_change_pct": -75.3
+  },
+  {
+   "dir": "C->E",
+   "cap": "Sol",
+   "bench": "TB",
+   "pct": 75,
+   "transfer": "in",
+   "acc": 83.2,
+   "cost": 0.7,
+   "d_pp": -4.4,
+   "cost_change_pct": -27.8
+  },
+  {
+   "dir": "C->E",
+   "cap": "Sol",
+   "bench": "TB",
+   "pct": 75,
+   "transfer": "log",
+   "acc": 77.5,
+   "cost": 0.7,
+   "d_pp": -10.1,
+   "cost_change_pct": -27.8
+  },
+  {
+   "dir": "C->E",
+   "cap": "Sol",
+   "bench": "DS",
+   "pct": 30,
+   "transfer": "in",
+   "acc": 54.9,
+   "cost": 1.25,
+   "d_pp": -13.2,
+   "cost_change_pct": -76.5
+  },
+  {
+   "dir": "C->E",
+   "cap": "Sol",
+   "bench": "DS",
+   "pct": 30,
+   "transfer": "log",
+   "acc": 56.6,
+   "cost": 1.25,
+   "d_pp": -11.5,
+   "cost_change_pct": -76.5
+  },
+  {
+   "dir": "C->E",
+   "cap": "Sol",
+   "bench": "DS",
+   "pct": 75,
+   "transfer": "in",
+   "acc": 66.4,
+   "cost": 3.65,
+   "d_pp": -1.7,
+   "cost_change_pct": -31.4
+  },
+  {
+   "dir": "C->E",
+   "cap": "Sol",
+   "bench": "DS",
+   "pct": 75,
+   "transfer": "log",
+   "acc": 67.3,
+   "cost": 3.65,
+   "d_pp": -0.8,
+   "cost_change_pct": -31.4
+  }
+ ],
+ "table1_E->C_summary": {
+  "cells": 24,
+  "acc_ge_capable": 4,
+  "acc_loss_ge_5pp": 14,
+  "mean_d_pp": -8.7,
+  "mean_cost_change_pct": 20.7,
+  "cost_higher_than_capable_only": 15
+ },
+ "table1_C->E_summary": {
+  "cells": 24,
+  "acc_ge_capable": 5,
+  "acc_loss_ge_5pp": 12,
+  "mean_d_pp": -6.5,
+  "mean_cost_change_pct": -55.3,
+  "cost_higher_than_capable_only": 0
+ },
+ "table1_logfile_minus_incontext": [
+  {
+   "dir": "E->C",
+   "pair": "Qwen->GLM",
+   "bench": "TB",
+   "pct": 30,
+   "log_minus_in_pp": 0.0,
+   "log_cost_ratio": 0.92
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->GLM",
+   "bench": "TB",
+   "pct": 75,
+   "log_minus_in_pp": 11.3,
+   "log_cost_ratio": 1.06
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->GLM",
+   "bench": "DS",
+   "pct": 30,
+   "log_minus_in_pp": 11.5,
+   "log_cost_ratio": 0.73
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->GLM",
+   "bench": "DS",
+   "pct": 75,
+   "log_minus_in_pp": 14.2,
+   "log_cost_ratio": 0.72
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Kimi",
+   "bench": "TB",
+   "pct": 30,
+   "log_minus_in_pp": 4.5,
+   "log_cost_ratio": 0.54
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Kimi",
+   "bench": "TB",
+   "pct": 75,
+   "log_minus_in_pp": 9.0,
+   "log_cost_ratio": 0.39
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Kimi",
+   "bench": "DS",
+   "pct": 30,
+   "log_minus_in_pp": 14.2,
+   "log_cost_ratio": 0.57
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Kimi",
+   "bench": "DS",
+   "pct": 75,
+   "log_minus_in_pp": 13.2,
+   "log_cost_ratio": 0.44
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Sol",
+   "bench": "TB",
+   "pct": 30,
+   "log_minus_in_pp": 6.7,
+   "log_cost_ratio": 0.73
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Sol",
+   "bench": "TB",
+   "pct": 75,
+   "log_minus_in_pp": 3.4,
+   "log_cost_ratio": 0.4
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Sol",
+   "bench": "DS",
+   "pct": 30,
+   "log_minus_in_pp": -2.7,
+   "log_cost_ratio": 0.81
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Sol",
+   "bench": "DS",
+   "pct": 75,
+   "log_minus_in_pp": 8.9,
+   "log_cost_ratio": 0.65
+  },
+  {
+   "dir": "C->E",
+   "pair": "GLM->Qwen",
+   "bench": "TB",
+   "pct": 30,
+   "log_minus_in_pp": -1.1,
+   "log_cost_ratio": 1.0
+  },
+  {
+   "dir": "C->E",
+   "pair": "GLM->Qwen",
+   "bench": "TB",
+   "pct": 75,
+   "log_minus_in_pp": -3.4,
+   "log_cost_ratio": 1.0
+  },
+  {
+   "dir": "C->E",
+   "pair": "GLM->Qwen",
+   "bench": "DS",
+   "pct": 30,
+   "log_minus_in_pp": -6.2,
+   "log_cost_ratio": 1.0
+  },
+  {
+   "dir": "C->E",
+   "pair": "GLM->Qwen",
+   "bench": "DS",
+   "pct": 75,
+   "log_minus_in_pp": -3.5,
+   "log_cost_ratio": 1.0
+  },
+  {
+   "dir": "C->E",
+   "pair": "Kimi->Qwen",
+   "bench": "TB",
+   "pct": 30,
+   "log_minus_in_pp": -4.5,
+   "log_cost_ratio": 1.0
+  },
+  {
+   "dir": "C->E",
+   "pair": "Kimi->Qwen",
+   "bench": "TB",
+   "pct": 75,
+   "log_minus_in_pp": -5.6,
+   "log_cost_ratio": 1.0
+  },
+  {
+   "dir": "C->E",
+   "pair": "Kimi->Qwen",
+   "bench": "DS",
+   "pct": 30,
+   "log_minus_in_pp": -13.3,
+   "log_cost_ratio": 1.0
+  },
+  {
+   "dir": "C->E",
+   "pair": "Kimi->Qwen",
+   "bench": "DS",
+   "pct": 75,
+   "log_minus_in_pp": 0.0,
+   "log_cost_ratio": 1.0
+  },
+  {
+   "dir": "C->E",
+   "pair": "Sol->Qwen",
+   "bench": "TB",
+   "pct": 30,
+   "log_minus_in_pp": 5.7,
+   "log_cost_ratio": 1.0
+  },
+  {
+   "dir": "C->E",
+   "pair": "Sol->Qwen",
+   "bench": "TB",
+   "pct": 75,
+   "log_minus_in_pp": -5.7,
+   "log_cost_ratio": 1.0
+  },
+  {
+   "dir": "C->E",
+   "pair": "Sol->Qwen",
+   "bench": "DS",
+   "pct": 30,
+   "log_minus_in_pp": 1.7,
+   "log_cost_ratio": 1.0
+  },
+  {
+   "dir": "C->E",
+   "pair": "Sol->Qwen",
+   "bench": "DS",
+   "pct": 75,
+   "log_minus_in_pp": 0.9,
+   "log_cost_ratio": 1.0
+  }
+ ],
+ "transfer_E->C": {
+  "cells": 12,
+  "log_better": 10,
+  "log_worse": 1,
+  "tie": 1,
+  "mean_pp": 7.9,
+  "max_abs_pp": 14.2
+ },
+ "transfer_C->E": {
+  "cells": 12,
+  "log_better": 3,
+  "log_worse": 8,
+  "tie": 1,
+  "mean_pp": -2.9,
+  "max_abs_pp": 13.3
+ },
+ "table4_vs_mtrouter": {
+  "GLM": {
+   "DS_cost_reduction": 86.6,
+   "TB_cost_reduction": 80.0,
+   "DS_acc_diff_pp": 0.0,
+   "TB_acc_diff_pp": 0.0
+  },
+  "Kimi": {
+   "DS_cost_reduction": 70.7,
+   "TB_cost_reduction": 46.7,
+   "DS_acc_diff_pp": 6.2,
+   "TB_acc_diff_pp": 1.1
+  }
+ },
+ "table4_vs_fixed": {
+  "GLM": {
+   "AB_minus_fixedprogress_pp": [
+    -0.9,
+    2.2
+   ],
+   "AB_minus_fixedturn_pp": [
+    3.5,
+    4.5
+   ],
+   "AB_cost_vs_fixedprogress": [
+    0.49,
+    0.52,
+    0.27,
+    0.38
+   ],
+   "AB_cost_vs_fixedturn": [
+    0.49,
+    0.48,
+    0.27,
+    0.18
+   ]
+  },
+  "Kimi": {
+   "AB_minus_fixedprogress_pp": [
+    -1.7,
+    0.0
+   ],
+   "AB_minus_fixedturn_pp": [
+    2.7,
+    4.5
+   ],
+   "AB_cost_vs_fixedprogress": [
+    1.28,
+    1.28,
+    0.57,
+    0.83
+   ],
+   "AB_cost_vs_fixedturn": [
+    1.28,
+    1.15,
+    0.57,
+    0.37
+   ]
+  }
+ }
+}

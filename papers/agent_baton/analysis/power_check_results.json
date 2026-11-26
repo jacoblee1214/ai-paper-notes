@@ -1,0 +1,1700 @@
+{
+ "wilson_cells": [
+  {
+   "name": "Sol 단독",
+   "bench": "DS",
+   "k": 77,
+   "n": 113,
+   "acc": 68.1,
+   "wilson95": [
+    59.1,
+    76.0
+   ]
+  },
+  {
+   "name": "Sol 단독",
+   "bench": "TB",
+   "k": 78,
+   "n": 89,
+   "acc": 87.6,
+   "wilson95": [
+    79.2,
+    93.0
+   ]
+  },
+  {
+   "name": "Opus 단독",
+   "bench": "DS",
+   "k": 76,
+   "n": 113,
+   "acc": 67.3,
+   "wilson95": [
+    58.2,
+    75.2
+   ]
+  },
+  {
+   "name": "Opus 단독",
+   "bench": "TB",
+   "k": 75,
+   "n": 89,
+   "acc": 84.3,
+   "wilson95": [
+    75.3,
+    90.4
+   ]
+  },
+  {
+   "name": "GLM 단독",
+   "bench": "DS",
+   "k": 69,
+   "n": 113,
+   "acc": 61.1,
+   "wilson95": [
+    51.8,
+    69.5
+   ]
+  },
+  {
+   "name": "GLM 단독",
+   "bench": "TB",
+   "k": 77,
+   "n": 89,
+   "acc": 86.5,
+   "wilson95": [
+    77.9,
+    92.1
+   ]
+  },
+  {
+   "name": "Kimi 단독",
+   "bench": "DS",
+   "k": 83,
+   "n": 113,
+   "acc": 73.5,
+   "wilson95": [
+    64.6,
+    80.7
+   ]
+  },
+  {
+   "name": "Kimi 단독",
+   "bench": "TB",
+   "k": 77,
+   "n": 89,
+   "acc": 86.5,
+   "wilson95": [
+    77.9,
+    92.1
+   ]
+  },
+  {
+   "name": "Gem 단독",
+   "bench": "DS",
+   "k": 74,
+   "n": 113,
+   "acc": 65.5,
+   "wilson95": [
+    56.3,
+    73.6
+   ]
+  },
+  {
+   "name": "Gem 단독",
+   "bench": "TB",
+   "k": 77,
+   "n": 89,
+   "acc": 86.5,
+   "wilson95": [
+    77.9,
+    92.1
+   ]
+  },
+  {
+   "name": "Luna 단독",
+   "bench": "DS",
+   "k": 68,
+   "n": 113,
+   "acc": 60.2,
+   "wilson95": [
+    51.0,
+    68.7
+   ]
+  },
+  {
+   "name": "Luna 단독",
+   "bench": "TB",
+   "k": 73,
+   "n": 89,
+   "acc": 82.2,
+   "wilson95": [
+    72.8,
+    88.6
+   ]
+  },
+  {
+   "name": "Qwen 단독",
+   "bench": "DS",
+   "k": 33,
+   "n": 113,
+   "acc": 29.2,
+   "wilson95": [
+    21.6,
+    38.2
+   ]
+  },
+  {
+   "name": "Qwen 단독",
+   "bench": "TB",
+   "k": 62,
+   "n": 89,
+   "acc": 69.7,
+   "wilson95": [
+    59.5,
+    78.2
+   ]
+  },
+  {
+   "name": "Sol->Qwen",
+   "bench": "DS",
+   "k": 68,
+   "n": 113,
+   "acc": 60.2,
+   "wilson95": [
+    51.0,
+    68.7
+   ]
+  },
+  {
+   "name": "Sol->Qwen",
+   "bench": "TB",
+   "k": 73,
+   "n": 89,
+   "acc": 82.0,
+   "wilson95": [
+    72.8,
+    88.6
+   ]
+  },
+  {
+   "name": "Sol->Luna",
+   "bench": "DS",
+   "k": 76,
+   "n": 113,
+   "acc": 67.3,
+   "wilson95": [
+    58.2,
+    75.2
+   ]
+  },
+  {
+   "name": "Sol->Luna",
+   "bench": "TB",
+   "k": 73,
+   "n": 89,
+   "acc": 82.0,
+   "wilson95": [
+    72.8,
+    88.6
+   ]
+  },
+  {
+   "name": "Opus->Qwen",
+   "bench": "DS",
+   "k": 70,
+   "n": 113,
+   "acc": 61.9,
+   "wilson95": [
+    52.7,
+    70.4
+   ]
+  },
+  {
+   "name": "Opus->Qwen",
+   "bench": "TB",
+   "k": 78,
+   "n": 89,
+   "acc": 87.6,
+   "wilson95": [
+    79.2,
+    93.0
+   ]
+  },
+  {
+   "name": "Opus->Luna",
+   "bench": "DS",
+   "k": 86,
+   "n": 113,
+   "acc": 76.1,
+   "wilson95": [
+    67.5,
+    83.0
+   ]
+  },
+  {
+   "name": "Opus->Luna",
+   "bench": "TB",
+   "k": 77,
+   "n": 89,
+   "acc": 86.5,
+   "wilson95": [
+    77.9,
+    92.1
+   ]
+  },
+  {
+   "name": "GLM->Qwen",
+   "bench": "DS",
+   "k": 66,
+   "n": 113,
+   "acc": 58.4,
+   "wilson95": [
+    49.2,
+    67.1
+   ]
+  },
+  {
+   "name": "GLM->Qwen",
+   "bench": "TB",
+   "k": 72,
+   "n": 89,
+   "acc": 80.9,
+   "wilson95": [
+    71.5,
+    87.7
+   ]
+  },
+  {
+   "name": "GLM->Luna",
+   "bench": "DS",
+   "k": 75,
+   "n": 113,
+   "acc": 66.4,
+   "wilson95": [
+    57.3,
+    74.4
+   ]
+  },
+  {
+   "name": "GLM->Luna",
+   "bench": "TB",
+   "k": 71,
+   "n": 89,
+   "acc": 79.8,
+   "wilson95": [
+    70.3,
+    86.8
+   ]
+  },
+  {
+   "name": "Kimi->Qwen",
+   "bench": "DS",
+   "k": 82,
+   "n": 113,
+   "acc": 72.6,
+   "wilson95": [
+    63.7,
+    79.9
+   ]
+  },
+  {
+   "name": "Kimi->Qwen",
+   "bench": "TB",
+   "k": 77,
+   "n": 89,
+   "acc": 86.5,
+   "wilson95": [
+    77.9,
+    92.1
+   ]
+  },
+  {
+   "name": "Kimi->Luna",
+   "bench": "DS",
+   "k": 87,
+   "n": 113,
+   "acc": 77.0,
+   "wilson95": [
+    68.4,
+    83.8
+   ]
+  },
+  {
+   "name": "Kimi->Luna",
+   "bench": "TB",
+   "k": 72,
+   "n": 89,
+   "acc": 80.9,
+   "wilson95": [
+    71.5,
+    87.7
+   ]
+  },
+  {
+   "name": "Gem->Qwen",
+   "bench": "DS",
+   "k": 70,
+   "n": 113,
+   "acc": 61.9,
+   "wilson95": [
+    52.7,
+    70.4
+   ]
+  },
+  {
+   "name": "Gem->Qwen",
+   "bench": "TB",
+   "k": 77,
+   "n": 89,
+   "acc": 86.5,
+   "wilson95": [
+    77.9,
+    92.1
+   ]
+  },
+  {
+   "name": "Gem->Luna",
+   "bench": "DS",
+   "k": 83,
+   "n": 113,
+   "acc": 73.5,
+   "wilson95": [
+    64.6,
+    80.7
+   ]
+  },
+  {
+   "name": "Gem->Luna",
+   "bench": "TB",
+   "k": 76,
+   "n": 89,
+   "acc": 85.4,
+   "wilson95": [
+    76.6,
+    91.3
+   ]
+  },
+  {
+   "name": "Luna->Qwen",
+   "bench": "DS",
+   "k": 63,
+   "n": 113,
+   "acc": 55.8,
+   "wilson95": [
+    46.6,
+    64.6
+   ]
+  },
+  {
+   "name": "Luna->Qwen",
+   "bench": "TB",
+   "k": 69,
+   "n": 89,
+   "acc": 77.5,
+   "wilson95": [
+    67.8,
+    85.0
+   ]
+  }
+ ],
+ "wilson_halfwidth_pp": {
+  "DS": 9.1,
+  "TB": 10.2
+ },
+ "mde_pp": {
+  "DS": {
+   "disc0.05": 5.9,
+   "disc0.1": 8.3,
+   "disc0.2": 11.8,
+   "disc0.3": 14.4
+  },
+  "TB": {
+   "disc0.05": 6.6,
+   "disc0.1": 9.4,
+   "disc0.2": 13.3,
+   "disc0.3": 16.3
+  }
+ },
+ "mde_unpaired_pp": {
+  "DS": 17.8,
+  "TB": 20.0
+ },
+ "rows22": [
+  {
+   "pair": "Sol->Qwen",
+   "bench": "DS",
+   "k_handoff": 68,
+   "k_capable": 77,
+   "D_tasks": -9,
+   "D_pp": -8.0,
+   "fisher_p": 0.267,
+   "disc0.1": {
+    "m": 11,
+    "p": 0.0117,
+    "ci95": [
+     -13.5,
+     -2.4
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.2": {
+    "m": 23,
+    "p": 0.0931,
+    "ci95": [
+     -16.2,
+     0.2
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.3": {
+    "m": 35,
+    "p": 0.1755,
+    "ci95": [
+     -18.1,
+     2.2
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   }
+  },
+  {
+   "pair": "Sol->Qwen",
+   "bench": "TB",
+   "k_handoff": 73,
+   "k_capable": 78,
+   "D_tasks": -5,
+   "D_pp": -5.6,
+   "fisher_p": 0.404,
+   "disc0.1": {
+    "m": 9,
+    "p": 0.1797,
+    "ci95": [
+     -12.1,
+     0.9
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.2": {
+    "m": 19,
+    "p": 0.3593,
+    "ci95": [
+     -15.1,
+     3.9
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.3": {
+    "m": 27,
+    "p": 0.4421,
+    "ci95": [
+     -17.0,
+     5.8
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   }
+  },
+  {
+   "pair": "Sol->Luna",
+   "bench": "DS",
+   "k_handoff": 76,
+   "k_capable": 77,
+   "D_tasks": -1,
+   "D_pp": -0.9,
+   "fisher_p": 1.0,
+   "disc0.1": {
+    "m": 11,
+    "p": 1.0,
+    "ci95": [
+     -6.6,
+     4.9
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 23,
+    "p": 1.0,
+    "ci95": [
+     -9.2,
+     7.4
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.3": {
+    "m": 35,
+    "p": 1.0,
+    "ci95": [
+     -11.1,
+     9.4
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   }
+  },
+  {
+   "pair": "Sol->Luna",
+   "bench": "TB",
+   "k_handoff": 73,
+   "k_capable": 78,
+   "D_tasks": -5,
+   "D_pp": -5.6,
+   "fisher_p": 0.404,
+   "disc0.1": {
+    "m": 9,
+    "p": 0.1797,
+    "ci95": [
+     -12.1,
+     0.9
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.2": {
+    "m": 19,
+    "p": 0.3593,
+    "ci95": [
+     -15.1,
+     3.9
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.3": {
+    "m": 27,
+    "p": 0.4421,
+    "ci95": [
+     -17.0,
+     5.8
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   }
+  },
+  {
+   "pair": "Opus->Qwen",
+   "bench": "DS",
+   "k_handoff": 70,
+   "k_capable": 76,
+   "D_tasks": -6,
+   "D_pp": -5.3,
+   "fisher_p": 0.487,
+   "disc0.1": {
+    "m": 12,
+    "p": 0.146,
+    "ci95": [
+     -11.2,
+     0.6
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.2": {
+    "m": 24,
+    "p": 0.3075,
+    "ci95": [
+     -13.8,
+     3.1
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.3": {
+    "m": 34,
+    "p": 0.3915,
+    "ci95": [
+     -15.4,
+     4.8
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   }
+  },
+  {
+   "pair": "Opus->Qwen",
+   "bench": "TB",
+   "k_handoff": 78,
+   "k_capable": 75,
+   "D_tasks": 3,
+   "D_pp": 3.4,
+   "fisher_p": 0.667,
+   "disc0.1": {
+    "m": 9,
+    "p": 0.5078,
+    "ci95": [
+     -3.2,
+     9.9
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 19,
+    "p": 0.6476,
+    "ci95": [
+     -6.2,
+     12.9
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   },
+   "disc0.3": {
+    "m": 27,
+    "p": 0.7011,
+    "ci95": [
+     -8.1,
+     14.8
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   }
+  },
+  {
+   "pair": "Opus->Luna",
+   "bench": "DS",
+   "k_handoff": 86,
+   "k_capable": 76,
+   "D_tasks": 10,
+   "D_pp": 8.8,
+   "fisher_p": 0.184,
+   "disc0.1": {
+    "m": 12,
+    "p": 0.0063,
+    "ci95": [
+     3.1,
+     14.6
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 24,
+    "p": 0.0639,
+    "ci95": [
+     0.5,
+     17.2
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   },
+   "disc0.3": {
+    "m": 34,
+    "p": 0.1214,
+    "ci95": [
+     -1.1,
+     18.8
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   }
+  },
+  {
+   "pair": "Opus->Luna",
+   "bench": "TB",
+   "k_handoff": 77,
+   "k_capable": 75,
+   "D_tasks": 2,
+   "D_pp": 2.2,
+   "fisher_p": 0.832,
+   "disc0.1": {
+    "m": 10,
+    "p": 0.7539,
+    "ci95": [
+     -4.7,
+     9.2
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 18,
+    "p": 0.8145,
+    "ci95": [
+     -7.1,
+     11.6
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.3": {
+    "m": 28,
+    "p": 0.8506,
+    "ci95": [
+     -9.4,
+     13.9
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   }
+  },
+  {
+   "pair": "GLM->Qwen",
+   "bench": "DS",
+   "k_handoff": 66,
+   "k_capable": 69,
+   "D_tasks": -3,
+   "D_pp": -2.7,
+   "fisher_p": 0.786,
+   "disc0.1": {
+    "m": 11,
+    "p": 0.5488,
+    "ci95": [
+     -8.4,
+     3.1
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 23,
+    "p": 0.6776,
+    "ci95": [
+     -11.0,
+     5.6
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.3": {
+    "m": 35,
+    "p": 0.7359,
+    "ci95": [
+     -12.9,
+     7.6
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   }
+  },
+  {
+   "pair": "GLM->Qwen",
+   "bench": "TB",
+   "k_handoff": 72,
+   "k_capable": 77,
+   "D_tasks": -5,
+   "D_pp": -5.6,
+   "fisher_p": 0.417,
+   "disc0.1": {
+    "m": 9,
+    "p": 0.1797,
+    "ci95": [
+     -12.1,
+     0.9
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.2": {
+    "m": 19,
+    "p": 0.3593,
+    "ci95": [
+     -15.1,
+     3.9
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.3": {
+    "m": 27,
+    "p": 0.4421,
+    "ci95": [
+     -17.0,
+     5.8
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   }
+  },
+  {
+   "pair": "GLM->Luna",
+   "bench": "DS",
+   "k_handoff": 75,
+   "k_capable": 69,
+   "D_tasks": 6,
+   "D_pp": 5.3,
+   "fisher_p": 0.489,
+   "disc0.1": {
+    "m": 12,
+    "p": 0.146,
+    "ci95": [
+     -0.6,
+     11.2
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 24,
+    "p": 0.3075,
+    "ci95": [
+     -3.1,
+     13.8
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   },
+   "disc0.3": {
+    "m": 34,
+    "p": 0.3915,
+    "ci95": [
+     -4.8,
+     15.4
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   }
+  },
+  {
+   "pair": "GLM->Luna",
+   "bench": "TB",
+   "k_handoff": 71,
+   "k_capable": 77,
+   "D_tasks": -6,
+   "D_pp": -6.7,
+   "fisher_p": 0.317,
+   "disc0.1": {
+    "m": 10,
+    "p": 0.1094,
+    "ci95": [
+     -13.6,
+     0.1
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.2": {
+    "m": 18,
+    "p": 0.2379,
+    "ci95": [
+     -16.0,
+     2.5
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.3": {
+    "m": 28,
+    "p": 0.3449,
+    "ci95": [
+     -18.3,
+     4.8
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   }
+  },
+  {
+   "pair": "Kimi->Qwen",
+   "bench": "DS",
+   "k_handoff": 82,
+   "k_capable": 83,
+   "D_tasks": -1,
+   "D_pp": -0.9,
+   "fisher_p": 1.0,
+   "disc0.1": {
+    "m": 11,
+    "p": 1.0,
+    "ci95": [
+     -6.6,
+     4.9
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 23,
+    "p": 1.0,
+    "ci95": [
+     -9.2,
+     7.4
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.3": {
+    "m": 35,
+    "p": 1.0,
+    "ci95": [
+     -11.1,
+     9.4
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   }
+  },
+  {
+   "pair": "Kimi->Qwen",
+   "bench": "TB",
+   "k_handoff": 77,
+   "k_capable": 77,
+   "D_tasks": 0,
+   "D_pp": 0.0,
+   "fisher_p": 1.0,
+   "disc0.1": {
+    "m": 10,
+    "p": 1.0,
+    "ci95": [
+     -7.0,
+     7.0
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 18,
+    "p": 1.0,
+    "ci95": [
+     -9.3,
+     9.3
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.3": {
+    "m": 28,
+    "p": 1.0,
+    "ci95": [
+     -11.7,
+     11.7
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   }
+  },
+  {
+   "pair": "Kimi->Luna",
+   "bench": "DS",
+   "k_handoff": 87,
+   "k_capable": 83,
+   "D_tasks": 4,
+   "D_pp": 3.5,
+   "fisher_p": 0.644,
+   "disc0.1": {
+    "m": 12,
+    "p": 0.3877,
+    "ci95": [
+     -2.4,
+     9.5
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 24,
+    "p": 0.5413,
+    "ci95": [
+     -4.9,
+     12.0
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   },
+   "disc0.3": {
+    "m": 34,
+    "p": 0.6076,
+    "ci95": [
+     -6.6,
+     13.6
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   }
+  },
+  {
+   "pair": "Kimi->Luna",
+   "bench": "TB",
+   "k_handoff": 72,
+   "k_capable": 77,
+   "D_tasks": -5,
+   "D_pp": -5.6,
+   "fisher_p": 0.417,
+   "disc0.1": {
+    "m": 9,
+    "p": 0.1797,
+    "ci95": [
+     -12.1,
+     0.9
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.2": {
+    "m": 19,
+    "p": 0.3593,
+    "ci95": [
+     -15.1,
+     3.9
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.3": {
+    "m": 27,
+    "p": 0.4421,
+    "ci95": [
+     -17.0,
+     5.8
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   }
+  },
+  {
+   "pair": "Gem->Qwen",
+   "bench": "DS",
+   "k_handoff": 70,
+   "k_capable": 74,
+   "D_tasks": -4,
+   "D_pp": -3.5,
+   "fisher_p": 0.678,
+   "disc0.1": {
+    "m": 12,
+    "p": 0.3877,
+    "ci95": [
+     -9.5,
+     2.4
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 24,
+    "p": 0.5413,
+    "ci95": [
+     -12.0,
+     4.9
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.3": {
+    "m": 34,
+    "p": 0.6076,
+    "ci95": [
+     -13.6,
+     6.6
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   }
+  },
+  {
+   "pair": "Gem->Qwen",
+   "bench": "TB",
+   "k_handoff": 77,
+   "k_capable": 77,
+   "D_tasks": 0,
+   "D_pp": 0.0,
+   "fisher_p": 1.0,
+   "disc0.1": {
+    "m": 10,
+    "p": 1.0,
+    "ci95": [
+     -7.0,
+     7.0
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 18,
+    "p": 1.0,
+    "ci95": [
+     -9.3,
+     9.3
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.3": {
+    "m": 28,
+    "p": 1.0,
+    "ci95": [
+     -11.7,
+     11.7
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   }
+  },
+  {
+   "pair": "Gem->Luna",
+   "bench": "DS",
+   "k_handoff": 83,
+   "k_capable": 74,
+   "D_tasks": 9,
+   "D_pp": 8.0,
+   "fisher_p": 0.248,
+   "disc0.1": {
+    "m": 11,
+    "p": 0.0117,
+    "ci95": [
+     2.4,
+     13.5
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 23,
+    "p": 0.0931,
+    "ci95": [
+     -0.2,
+     16.2
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   },
+   "disc0.3": {
+    "m": 35,
+    "p": 0.1755,
+    "ci95": [
+     -2.2,
+     18.1
+    ],
+    "noninferior_5pp": true,
+    "noninferior_10pp": true
+   }
+  },
+  {
+   "pair": "Gem->Luna",
+   "bench": "TB",
+   "k_handoff": 76,
+   "k_capable": 77,
+   "D_tasks": -1,
+   "D_pp": -1.1,
+   "fisher_p": 1.0,
+   "disc0.1": {
+    "m": 9,
+    "p": 1.0,
+    "ci95": [
+     -7.7,
+     5.5
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 19,
+    "p": 1.0,
+    "ci95": [
+     -10.7,
+     8.5
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.3": {
+    "m": 27,
+    "p": 1.0,
+    "ci95": [
+     -12.6,
+     10.3
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   }
+  },
+  {
+   "pair": "Luna->Qwen",
+   "bench": "DS",
+   "k_handoff": 63,
+   "k_capable": 68,
+   "D_tasks": -5,
+   "D_pp": -4.4,
+   "fisher_p": 0.59,
+   "disc0.1": {
+    "m": 11,
+    "p": 0.2266,
+    "ci95": [
+     -10.1,
+     1.3
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": true
+   },
+   "disc0.2": {
+    "m": 23,
+    "p": 0.4049,
+    "ci95": [
+     -12.7,
+     3.9
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.3": {
+    "m": 35,
+    "p": 0.4996,
+    "ci95": [
+     -14.7,
+     5.8
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   }
+  },
+  {
+   "pair": "Luna->Qwen",
+   "bench": "TB",
+   "k_handoff": 69,
+   "k_capable": 73,
+   "D_tasks": -4,
+   "D_pp": -4.5,
+   "fisher_p": 0.576,
+   "disc0.1": {
+    "m": 10,
+    "p": 0.3438,
+    "ci95": [
+     -11.4,
+     2.4
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.2": {
+    "m": 18,
+    "p": 0.4807,
+    "ci95": [
+     -13.8,
+     4.8
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   },
+   "disc0.3": {
+    "m": 28,
+    "p": 0.5716,
+    "ci95": [
+     -16.1,
+     7.1
+    ],
+    "noninferior_5pp": false,
+    "noninferior_10pp": false
+   }
+  }
+ ],
+ "summary_disc0.1": {
+  "raw_p_lt_0.05": 3,
+  "holm_lt_0.05": 0,
+  "holm_list": [],
+  "raw_list": [
+   [
+    "Sol->Qwen",
+    "DS",
+    -8.0
+   ],
+   [
+    "Opus->Luna",
+    "DS",
+    8.8
+   ],
+   [
+    "Gem->Luna",
+    "DS",
+    8.0
+   ]
+  ],
+  "gains_raw_sig": [
+   [
+    "Opus->Luna",
+    "DS",
+    8.8,
+    0.0063
+   ],
+   [
+    "Gem->Luna",
+    "DS",
+    8.0,
+    0.0117
+   ]
+  ],
+  "noninferior_5pp": 6,
+  "noninferior_10pp": 14
+ },
+ "summary_disc0.2": {
+  "raw_p_lt_0.05": 0,
+  "holm_lt_0.05": 0,
+  "holm_list": [],
+  "raw_list": [],
+  "gains_raw_sig": [],
+  "noninferior_5pp": 5,
+  "noninferior_10pp": 12
+ },
+ "summary_disc0.3": {
+  "raw_p_lt_0.05": 0,
+  "holm_lt_0.05": 0,
+  "holm_list": [],
+  "raw_list": [],
+  "gains_raw_sig": [],
+  "noninferior_5pp": 4,
+  "noninferior_10pp": 10
+ },
+ "fisher_unpaired_sig_raw": [],
+ "headline_8.8pp": {
+  "pair": "Opus->Luna",
+  "bench": "DS",
+  "k_handoff": 86,
+  "k_capable": 76,
+  "D_tasks": 10,
+  "D_pp": 8.8,
+  "fisher_p": 0.184,
+  "disc0.1": {
+   "m": 12,
+   "p": 0.0063,
+   "ci95": [
+    3.1,
+    14.6
+   ],
+   "noninferior_5pp": true,
+   "noninferior_10pp": true
+  },
+  "disc0.2": {
+   "m": 24,
+   "p": 0.0639,
+   "ci95": [
+    0.5,
+    17.2
+   ],
+   "noninferior_5pp": true,
+   "noninferior_10pp": true
+  },
+  "disc0.3": {
+   "m": 34,
+   "p": 0.1214,
+   "ci95": [
+    -1.1,
+    18.8
+   ],
+   "noninferior_5pp": true,
+   "noninferior_10pp": true
+  }
+ },
+ "selection_effect_null": {
+  "disc0.1": {
+   "DS_E_max_pp": 4.4,
+   "DS_P(max>=8.8)": 0.015,
+   "DS_95pct_of_max": 7.6,
+   "both_E_max_pp": 5.8,
+   "both_P(max>=8.8)": 0.057
+  },
+  "disc0.2": {
+   "DS_E_max_pp": 6.2,
+   "DS_P(max>=8.8)": 0.156,
+   "DS_95pct_of_max": 10.7,
+   "both_E_max_pp": 8.2,
+   "both_P(max>=8.8)": 0.37
+  },
+  "disc0.3": {
+   "DS_E_max_pp": 7.6,
+   "DS_P(max>=8.8)": 0.338,
+   "DS_95pct_of_max": 13.1,
+   "both_E_max_pp": 10.0,
+   "both_P(max>=8.8)": 0.63
+  }
+ },
+ "rerun_gap_tasks": {
+  "GLM_single_max": [
+   69,
+   78
+  ],
+  "Sol_single_max": [
+   77,
+   81
+  ],
+  "GLM->Luna": [
+   75,
+   82
+  ]
+ },
+ "tasks_for_8.8pp": 9.94,
+ "max_discordant_for_sig_D10_n113": 20,
+ "table1_transfer_tests": [
+  {
+   "dir": "E->C",
+   "pair": "Qwen->GLM",
+   "bench": "TB",
+   "pct": 30,
+   "log_minus_in_tasks": 0,
+   "fisher_p": 1.0,
+   "mcnemar_disc0.2_p": 1.0
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->GLM",
+   "bench": "TB",
+   "pct": 75,
+   "log_minus_in_tasks": 10,
+   "fisher_p": 0.123,
+   "mcnemar_disc0.2_p": 0.031
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->GLM",
+   "bench": "DS",
+   "pct": 30,
+   "log_minus_in_tasks": 13,
+   "fisher_p": 0.107,
+   "mcnemar_disc0.2_p": 0.011
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->GLM",
+   "bench": "DS",
+   "pct": 75,
+   "log_minus_in_tasks": 16,
+   "fisher_p": 0.045,
+   "mcnemar_disc0.2_p": 0.002
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Kimi",
+   "bench": "TB",
+   "pct": 30,
+   "log_minus_in_tasks": 4,
+   "fisher_p": 0.559,
+   "mcnemar_disc0.2_p": 0.481
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Kimi",
+   "bench": "TB",
+   "pct": 75,
+   "log_minus_in_tasks": 8,
+   "fisher_p": 0.224,
+   "mcnemar_disc0.2_p": 0.096
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Kimi",
+   "bench": "DS",
+   "pct": 30,
+   "log_minus_in_tasks": 16,
+   "fisher_p": 0.045,
+   "mcnemar_disc0.2_p": 0.002
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Kimi",
+   "bench": "DS",
+   "pct": 75,
+   "log_minus_in_tasks": 15,
+   "fisher_p": 0.06,
+   "mcnemar_disc0.2_p": 0.003
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Sol",
+   "bench": "TB",
+   "pct": 30,
+   "log_minus_in_tasks": 6,
+   "fisher_p": 0.272,
+   "mcnemar_disc0.2_p": 0.238
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Sol",
+   "bench": "TB",
+   "pct": 75,
+   "log_minus_in_tasks": 3,
+   "fisher_p": 0.685,
+   "mcnemar_disc0.2_p": 0.648
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Sol",
+   "bench": "DS",
+   "pct": 30,
+   "log_minus_in_tasks": -3,
+   "fisher_p": 0.767,
+   "mcnemar_disc0.2_p": 0.678
+  },
+  {
+   "dir": "E->C",
+   "pair": "Qwen->Sol",
+   "bench": "DS",
+   "pct": 75,
+   "log_minus_in_tasks": 10,
+   "fisher_p": 0.215,
+   "mcnemar_disc0.2_p": 0.064
+  },
+  {
+   "dir": "C->E",
+   "pair": "GLM->Qwen",
+   "bench": "TB",
+   "pct": 30,
+   "log_minus_in_tasks": -1,
+   "fisher_p": 1.0,
+   "mcnemar_disc0.2_p": 1.0
+  },
+  {
+   "dir": "C->E",
+   "pair": "GLM->Qwen",
+   "bench": "TB",
+   "pct": 75,
+   "log_minus_in_tasks": -3,
+   "fisher_p": 0.7,
+   "mcnemar_disc0.2_p": 0.648
+  },
+  {
+   "dir": "C->E",
+   "pair": "GLM->Qwen",
+   "bench": "DS",
+   "pct": 30,
+   "log_minus_in_tasks": -7,
+   "fisher_p": 0.419,
+   "mcnemar_disc0.2_p": 0.21
+  },
+  {
+   "dir": "C->E",
+   "pair": "GLM->Qwen",
+   "bench": "DS",
+   "pct": 75,
+   "log_minus_in_tasks": -4,
+   "fisher_p": 0.682,
+   "mcnemar_disc0.2_p": 0.541
+  },
+  {
+   "dir": "C->E",
+   "pair": "Kimi->Qwen",
+   "bench": "TB",
+   "pct": 30,
+   "log_minus_in_tasks": -4,
+   "fisher_p": 0.59,
+   "mcnemar_disc0.2_p": 0.481
+  },
+  {
+   "dir": "C->E",
+   "pair": "Kimi->Qwen",
+   "bench": "TB",
+   "pct": 75,
+   "log_minus_in_tasks": -5,
+   "fisher_p": 0.404,
+   "mcnemar_disc0.2_p": 0.359
+  },
+  {
+   "dir": "C->E",
+   "pair": "Kimi->Qwen",
+   "bench": "DS",
+   "pct": 30,
+   "log_minus_in_tasks": -15,
+   "fisher_p": 0.053,
+   "mcnemar_disc0.2_p": 0.003
+  },
+  {
+   "dir": "C->E",
+   "pair": "Kimi->Qwen",
+   "bench": "DS",
+   "pct": 75,
+   "log_minus_in_tasks": 0,
+   "fisher_p": 1.0,
+   "mcnemar_disc0.2_p": 1.0
+  },
+  {
+   "dir": "C->E",
+   "pair": "Sol->Qwen",
+   "bench": "TB",
+   "pct": 30,
+   "log_minus_in_tasks": 5,
+   "fisher_p": 0.524,
+   "mcnemar_disc0.2_p": 0.359
+  },
+  {
+   "dir": "C->E",
+   "pair": "Sol->Qwen",
+   "bench": "TB",
+   "pct": 75,
+   "log_minus_in_tasks": -5,
+   "fisher_p": 0.451,
+   "mcnemar_disc0.2_p": 0.359
+  },
+  {
+   "dir": "C->E",
+   "pair": "Sol->Qwen",
+   "bench": "DS",
+   "pct": 30,
+   "log_minus_in_tasks": 2,
+   "fisher_p": 0.894,
+   "mcnemar_disc0.2_p": 0.839
+  },
+  {
+   "dir": "C->E",
+   "pair": "Sol->Qwen",
+   "bench": "DS",
+   "pct": 75,
+   "log_minus_in_tasks": 1,
+   "fisher_p": 1.0,
+   "mcnemar_disc0.2_p": 1.0
+  }
+ ],
+ "table1_transfer_sig": {
+  "E->C": 5,
+  "C->E": 1
+ },
+ "table1_transfer_sig_fisher": {
+  "E->C": 2,
+  "C->E": 0
+ },
+ "pareto_pairs": [
+  {
+   "A": "Kimi->Luna high 79.6/1.60",
+   "B": "Opus xhigh 75.2/8.90",
+   "D_tasks": 5,
+   "fisher_p": 0.525,
+   "mcnemar_disc0.2_p": 0.405,
+   "ci95_paired_disc0.2": [
+    -3.9,
+    12.7
+   ]
+  },
+  {
+   "A": "GLM->Luna max 72.6/0.80",
+   "B": "Sol xhigh 71.7/2.79",
+   "D_tasks": 1,
+   "fisher_p": 1.0,
+   "mcnemar_disc0.2_p": 1.0,
+   "ci95_paired_disc0.2": [
+    -7.4,
+    9.2
+   ]
+  },
+  {
+   "A": "GLM->Luna max 72.6/0.80",
+   "B": "GLM max 69.0/3.06",
+   "D_tasks": 4,
+   "fisher_p": 0.661,
+   "mcnemar_disc0.2_p": 0.541,
+   "ci95_paired_disc0.2": [
+    -4.9,
+    12.0
+   ]
+  },
+  {
+   "A": "GLM->Luna max(Table3) 66.4/0.83",
+   "B": "GLM max(Table3) 61.1/3.16",
+   "D_tasks": 6,
+   "fisher_p": 0.489,
+   "mcnemar_disc0.2_p": 0.307,
+   "ci95_paired_disc0.2": [
+    -3.1,
+    13.8
+   ]
+  },
+  {
+   "A": "Luna->Qwen xhigh 56.6/0.06",
+   "B": "Luna xhigh 56.6/0.21",
+   "D_tasks": 0,
+   "fisher_p": 1.0,
+   "mcnemar_disc0.2_p": 1.0,
+   "ci95_paired_disc0.2": [
+    -8.5,
+    8.5
+   ]
+  }
+ ]
+}
