@@ -1,0 +1,1193 @@
+{
+ "S1_table1_res_delta": {
+  "rows": [
+   {
+    "task": "COCOcap",
+    "zero_shot": false,
+    "v224": 141.9,
+    "sd224": 0.3,
+    "v448": 144.6,
+    "sd448": 0.5,
+    "delta_448_224": 2.7,
+    "sd_diff_single_run": 0.583,
+    "z_rerun": 4.6,
+    "sensitive": false
+   },
+   {
+    "task": "NoCaps",
+    "zero_shot": true,
+    "v224": 121.7,
+    "sd224": 0.3,
+    "v448": 123.6,
+    "sd448": 0.7,
+    "delta_448_224": 1.9,
+    "sd_diff_single_run": 0.762,
+    "z_rerun": 2.5,
+    "sensitive": false
+   },
+   {
+    "task": "COCO-35L (en)",
+    "zero_shot": false,
+    "v224": 139.2,
+    "sd224": 0.4,
+    "v448": 141.2,
+    "sd448": 0.6,
+    "delta_448_224": 2.0,
+    "sd_diff_single_run": 0.721,
+    "z_rerun": 2.8,
+    "sensitive": false
+   },
+   {
+    "task": "COCO-35L (avg34)",
+    "zero_shot": false,
+    "v224": 113.7,
+    "sd224": 0.3,
+    "v448": 115.8,
+    "sd448": 0.1,
+    "delta_448_224": 2.1,
+    "sd_diff_single_run": 0.316,
+    "z_rerun": 6.6,
+    "sensitive": false
+   },
+   {
+    "task": "XM3600 (en)",
+    "zero_shot": true,
+    "v224": 78.0,
+    "sd224": 0.8,
+    "v448": 80.0,
+    "sd448": 0.3,
+    "delta_448_224": 2.0,
+    "sd_diff_single_run": 0.854,
+    "z_rerun": 2.3,
+    "sensitive": false
+   },
+   {
+    "task": "XM3600 (avg35)",
+    "zero_shot": true,
+    "v224": 41.9,
+    "sd224": 0.0,
+    "v448": 42.4,
+    "sd448": 0.1,
+    "delta_448_224": 0.5,
+    "sd_diff_single_run": 0.112,
+    "z_rerun": 4.5,
+    "sensitive": false
+   },
+   {
+    "task": "Screen2Words",
+    "zero_shot": false,
+    "v224": 117.6,
+    "sd224": 0.7,
+    "v448": 119.6,
+    "sd448": 0.7,
+    "delta_448_224": 2.0,
+    "sd_diff_single_run": 0.99,
+    "z_rerun": 2.0,
+    "sensitive": false
+   },
+   {
+    "task": "TextCaps",
+    "zero_shot": false,
+    "v224": 127.5,
+    "sd224": 1.0,
+    "v448": 153.9,
+    "sd448": 0.5,
+    "delta_448_224": 26.4,
+    "sd_diff_single_run": 1.118,
+    "z_rerun": 23.6,
+    "sensitive": true
+   },
+   {
+    "task": "SciCap",
+    "zero_shot": false,
+    "v224": 162.3,
+    "sd224": 0.7,
+    "v448": 181.5,
+    "sd448": 0.6,
+    "delta_448_224": 19.2,
+    "sd_diff_single_run": 0.922,
+    "z_rerun": 20.8,
+    "sensitive": true
+   },
+   {
+    "task": "WidgetCap",
+    "zero_shot": false,
+    "v224": 136.1,
+    "sd224": 1.4,
+    "v448": 148.4,
+    "sd448": 0.3,
+    "delta_448_224": 12.3,
+    "sd_diff_single_run": 1.432,
+    "z_rerun": 8.6,
+    "sensitive": false
+   },
+   {
+    "task": "VQAv2",
+    "zero_shot": false,
+    "v224": 83.2,
+    "sd224": 0.4,
+    "v448": 85.6,
+    "sd448": 0.2,
+    "delta_448_224": 2.4,
+    "sd_diff_single_run": 0.447,
+    "z_rerun": 5.4,
+    "sensitive": false
+   },
+   {
+    "task": "MMVP",
+    "delta_448_224": -2.0,
+    "z_rerun": null,
+    "note": "표준편차 없음(MMVP/POPE/Objaverse)"
+   },
+   {
+    "task": "POPE",
+    "delta_448_224": 1.0,
+    "z_rerun": null,
+    "note": "표준편차 없음(MMVP/POPE/Objaverse)"
+   },
+   {
+    "task": "Objaverse Multiview",
+    "delta_448_224": 0.1,
+    "z_rerun": null,
+    "note": "표준편차 없음(MMVP/POPE/Objaverse)"
+   },
+   {
+    "task": "OKVQA",
+    "zero_shot": false,
+    "v224": 63.5,
+    "sd224": 0.3,
+    "v448": 63.2,
+    "sd448": 0.2,
+    "delta_448_224": -0.3,
+    "sd_diff_single_run": 0.361,
+    "z_rerun": -0.8,
+    "sensitive": false
+   },
+   {
+    "task": "AOKVQA-MC",
+    "zero_shot": false,
+    "v224": 76.4,
+    "sd224": 0.4,
+    "v448": 76.9,
+    "sd448": 0.3,
+    "delta_448_224": 0.5,
+    "sd_diff_single_run": 0.5,
+    "z_rerun": 1.0,
+    "sensitive": false
+   },
+   {
+    "task": "AOKVQA-DA",
+    "zero_shot": false,
+    "v224": 61.9,
+    "sd224": 0.6,
+    "v448": 63.2,
+    "sd448": 0.5,
+    "delta_448_224": 1.3,
+    "sd_diff_single_run": 0.781,
+    "z_rerun": 1.7,
+    "sensitive": false
+   },
+   {
+    "task": "GQA",
+    "zero_shot": false,
+    "v224": 65.6,
+    "sd224": 0.4,
+    "v448": 67.0,
+    "sd448": 0.3,
+    "delta_448_224": 1.4,
+    "sd_diff_single_run": 0.5,
+    "z_rerun": 2.8,
+    "sensitive": false
+   },
+   {
+    "task": "xGQA (avg7)",
+    "zero_shot": true,
+    "v224": 57.3,
+    "sd224": 0.2,
+    "v448": 57.9,
+    "sd448": 0.5,
+    "delta_448_224": 0.6,
+    "sd_diff_single_run": 0.539,
+    "z_rerun": 1.1,
+    "sensitive": false
+   },
+   {
+    "task": "NLVR2",
+    "zero_shot": false,
+    "v224": 90.0,
+    "sd224": 0.2,
+    "v448": 88.9,
+    "sd448": 0.3,
+    "delta_448_224": -1.1,
+    "sd_diff_single_run": 0.361,
+    "z_rerun": -3.1,
+    "sensitive": false
+   },
+   {
+    "task": "MARVL (avg5)",
+    "zero_shot": true,
+    "v224": 80.6,
+    "sd224": 0.3,
+    "v448": 76.8,
+    "sd448": 0.3,
+    "delta_448_224": -3.8,
+    "sd_diff_single_run": 0.424,
+    "z_rerun": -9.0,
+    "sensitive": false
+   },
+   {
+    "task": "AI2D",
+    "zero_shot": false,
+    "v224": 72.1,
+    "sd224": 0.7,
+    "v448": 73.3,
+    "sd448": 0.7,
+    "delta_448_224": 1.2,
+    "sd_diff_single_run": 0.99,
+    "z_rerun": 1.2,
+    "sensitive": false
+   },
+   {
+    "task": "ScienceQA",
+    "zero_shot": false,
+    "v224": 95.4,
+    "sd224": 0.3,
+    "v448": 95.9,
+    "sd448": 0.2,
+    "delta_448_224": 0.5,
+    "sd_diff_single_run": 0.361,
+    "z_rerun": 1.4,
+    "sensitive": false
+   },
+   {
+    "task": "RSVQA-lr",
+    "zero_shot": false,
+    "v224": 92.6,
+    "sd224": 0.3,
+    "v448": 93.1,
+    "sd448": 0.7,
+    "delta_448_224": 0.5,
+    "sd_diff_single_run": 0.762,
+    "z_rerun": 0.7,
+    "sensitive": false
+   },
+   {
+    "task": "RSVQA-hr (test)",
+    "zero_shot": false,
+    "v224": 92.6,
+    "sd224": 0.1,
+    "v448": 92.8,
+    "sd448": 0.1,
+    "delta_448_224": 0.2,
+    "sd_diff_single_run": 0.141,
+    "z_rerun": 1.4,
+    "sensitive": false
+   },
+   {
+    "task": "RSVQA-hr (test2)",
+    "zero_shot": false,
+    "v224": 90.6,
+    "sd224": 0.1,
+    "v448": 90.5,
+    "sd448": 0.2,
+    "delta_448_224": -0.1,
+    "sd_diff_single_run": 0.224,
+    "z_rerun": -0.4,
+    "sensitive": false
+   },
+   {
+    "task": "ChartQA (human)",
+    "zero_shot": false,
+    "v224": 40.0,
+    "sd224": 0.7,
+    "v448": 54.2,
+    "sd448": 1.1,
+    "delta_448_224": 14.2,
+    "sd_diff_single_run": 1.304,
+    "z_rerun": 10.9,
+    "sensitive": true
+   },
+   {
+    "task": "ChartQA (aug)",
+    "zero_shot": false,
+    "v224": 74.2,
+    "sd224": 0.2,
+    "v448": 88.5,
+    "sd448": 0.3,
+    "delta_448_224": 14.3,
+    "sd_diff_single_run": 0.361,
+    "z_rerun": 39.7,
+    "sensitive": true
+   },
+   {
+    "task": "VizWizVQA",
+    "zero_shot": false,
+    "v224": 73.7,
+    "sd224": 0.2,
+    "v448": 75.5,
+    "sd448": 0.5,
+    "delta_448_224": 1.8,
+    "sd_diff_single_run": 0.539,
+    "z_rerun": 3.3,
+    "sensitive": false
+   },
+   {
+    "task": "TallyQA (simple)",
+    "zero_shot": false,
+    "v224": 81.7,
+    "sd224": 0.2,
+    "v448": 84.9,
+    "sd448": 0.1,
+    "delta_448_224": 3.2,
+    "sd_diff_single_run": 0.224,
+    "z_rerun": 14.3,
+    "sensitive": false
+   },
+   {
+    "task": "TallyQA (complex)",
+    "zero_shot": false,
+    "v224": 69.6,
+    "sd224": 0.1,
+    "v448": 72.3,
+    "sd448": 0.2,
+    "delta_448_224": 2.7,
+    "sd_diff_single_run": 0.224,
+    "z_rerun": 12.1,
+    "sensitive": false
+   },
+   {
+    "task": "CountBenchQA",
+    "zero_shot": false,
+    "v224": 81.9,
+    "sd224": 1.6,
+    "v448": 83.1,
+    "sd448": 2.1,
+    "delta_448_224": 1.2,
+    "sd_diff_single_run": 2.64,
+    "z_rerun": 0.5,
+    "sensitive": false
+   },
+   {
+    "task": "OCR-VQA",
+    "zero_shot": false,
+    "v224": 72.3,
+    "sd224": 0.4,
+    "v448": 74.6,
+    "sd448": 0.4,
+    "delta_448_224": 2.3,
+    "sd_diff_single_run": 0.566,
+    "z_rerun": 4.1,
+    "sensitive": true
+   },
+   {
+    "task": "TextVQA",
+    "zero_shot": false,
+    "v224": 55.5,
+    "sd224": 0.2,
+    "v448": 73.2,
+    "sd448": 0.2,
+    "delta_448_224": 17.7,
+    "sd_diff_single_run": 0.283,
+    "z_rerun": 62.6,
+    "sensitive": true
+   },
+   {
+    "task": "DocVQA",
+    "zero_shot": false,
+    "v224": 43.7,
+    "sd224": 0.5,
+    "v448": 78.0,
+    "sd448": 0.3,
+    "delta_448_224": 34.3,
+    "sd_diff_single_run": 0.583,
+    "z_rerun": 58.8,
+    "sensitive": true
+   },
+   {
+    "task": "InfoVQA",
+    "zero_shot": false,
+    "v224": 28.5,
+    "sd224": 0.4,
+    "v448": 40.5,
+    "sd448": 0.3,
+    "delta_448_224": 12.0,
+    "sd_diff_single_run": 0.5,
+    "z_rerun": 24.0,
+    "sensitive": true
+   },
+   {
+    "task": "ST-VQA",
+    "zero_shot": false,
+    "v224": 63.3,
+    "sd224": 0.5,
+    "v448": 81.8,
+    "sd448": 0.3,
+    "delta_448_224": 18.5,
+    "sd_diff_single_run": 0.583,
+    "z_rerun": 31.7,
+    "sensitive": true
+   },
+   {
+    "task": "RefCOCO (testA)",
+    "zero_shot": false,
+    "v224": 75.7,
+    "sd224": 0.1,
+    "v448": 77.9,
+    "sd448": 0.1,
+    "delta_448_224": 2.2,
+    "sd_diff_single_run": 0.141,
+    "z_rerun": 15.6,
+    "sensitive": false
+   },
+   {
+    "task": "RefCOCO (testB)",
+    "zero_shot": false,
+    "v224": 70.7,
+    "sd224": 0.2,
+    "v448": 72.4,
+    "sd448": 0.2,
+    "delta_448_224": 1.7,
+    "sd_diff_single_run": 0.283,
+    "z_rerun": 6.0,
+    "sensitive": false
+   },
+   {
+    "task": "RefCOCO+ (testA)",
+    "zero_shot": false,
+    "v224": 71.9,
+    "sd224": 0.1,
+    "v448": 74.2,
+    "sd448": 0.2,
+    "delta_448_224": 2.3,
+    "sd_diff_single_run": 0.224,
+    "z_rerun": 10.3,
+    "sensitive": false
+   },
+   {
+    "task": "RefCOCO+ (testB)",
+    "zero_shot": false,
+    "v224": 64.5,
+    "sd224": 0.6,
+    "v448": 64.5,
+    "sd448": 0.2,
+    "delta_448_224": 0.0,
+    "sd_diff_single_run": 0.632,
+    "z_rerun": 0.0,
+    "sensitive": false
+   },
+   {
+    "task": "RefCOCOg (test)",
+    "zero_shot": false,
+    "v224": 68.2,
+    "sd224": 0.1,
+    "v448": 71.0,
+    "sd448": 0.1,
+    "delta_448_224": 2.8,
+    "sd_diff_single_run": 0.141,
+    "z_rerun": 19.8,
+    "sensitive": false
+   }
+  ],
+  "n_tasks_with_both_resolutions": 42,
+  "n_with_sd": 39,
+  "n_cells_with_sd_224": 45,
+  "n_cells_with_sd_448": 39,
+  "n_gain_gt3sd": 21,
+  "n_loss_gt3sd": 2,
+  "n_within_2sd": 12,
+  "tasks_within_2sd": [
+   "Screen2Words",
+   "OKVQA",
+   "AOKVQA-MC",
+   "AOKVQA-DA",
+   "xGQA (avg7)",
+   "AI2D",
+   "ScienceQA",
+   "RSVQA-lr",
+   "RSVQA-hr (test)",
+   "RSVQA-hr (test2)",
+   "CountBenchQA",
+   "RefCOCO+ (testB)"
+  ],
+  "tasks_loss_gt3sd": [
+   [
+    "NLVR2",
+    -1.1
+   ],
+   [
+    "MARVL (avg5)",
+    -3.8
+   ]
+  ],
+  "mean_gain_sensitive9": 17.66,
+  "mean_gain_other": 1.56,
+  "sd_quantiles_all_cells": [
+   0.3,
+   0.5,
+   0.7,
+   2.1
+  ],
+  "note": "z_rerun = Δ/√(sd224²+sd448²), 표준편차는 '단일 실행'의 변동. 시험 세트 표본 오차는 포함하지 않음(S2)."
+ },
+ "S1_table1_448_to_896": {
+  "deltas": [
+   [
+    "OCR-VQA",
+    0.30000000000001137
+   ],
+   [
+    "TextVQA",
+    3.299999999999997
+   ],
+   [
+    "DocVQA",
+    6.799999999999997
+   ],
+   [
+    "InfoVQA",
+    7.299999999999997
+   ],
+   [
+    "ST-VQA",
+    2.6000000000000085
+   ],
+   [
+    "RefCOCO (testA)",
+    0.7999999999999972
+   ],
+   [
+    "RefCOCO (testB)",
+    1.5
+   ],
+   [
+    "RefCOCO+ (testA)",
+    1.8999999999999915
+   ],
+   [
+    "RefCOCO+ (testB)",
+    2.4000000000000057
+   ],
+   [
+    "RefCOCOg (test)",
+    1.7000000000000028
+   ]
+  ],
+  "min": 0.3,
+  "max": 7.3,
+  "note": "896px 칸은 표준편차가 없다(재실행 1번도 보고 안 함). 차이를 448 열의 재실행 SD(0.1–0.5)와만 견줄 수 있다."
+ },
+ "S2_sampling_error": {
+  "rows": [
+   {
+    "task": "CountBenchQA",
+    "n": 540,
+    "n_source": "논문/확인",
+    "p224": 0.8190000000000001,
+    "p448": 0.831,
+    "wilson224": [
+     78.4,
+     84.9
+    ],
+    "wilson448": [
+     79.8,
+     86.1
+    ],
+    "delta_pts": 1.2,
+    "z_paired_range": [
+     0.5,
+     2.5
+    ],
+    "mde_pts_at_discord_0.1": 3.81,
+    "mde_pts_at_discord_0.2": 5.39,
+    "mde_pts_at_discord_0.3": 6.6,
+    "rerun_sd_pts_224_448": [
+     1.6,
+     2.1
+    ]
+   },
+   {
+    "task": "ChartQA (human)",
+    "n": 1250,
+    "n_source": "외부 지식(미확인)",
+    "p224": 0.4,
+    "p448": 0.542,
+    "wilson224": [
+     37.3,
+     42.7
+    ],
+    "wilson448": [
+     51.5,
+     57.0
+    ],
+    "delta_pts": 14.2,
+    "z_paired_range": [
+     7.0,
+     13.3
+    ],
+    "mde_pts_at_discord_0.1": 2.5,
+    "mde_pts_at_discord_0.2": 3.54,
+    "mde_pts_at_discord_0.3": 4.34,
+    "rerun_sd_pts_224_448": [
+     0.7,
+     1.1
+    ]
+   },
+   {
+    "task": "ChartQA (aug)",
+    "n": 1250,
+    "n_source": "외부 지식(미확인)",
+    "p224": 0.742,
+    "p448": 0.885,
+    "wilson224": [
+     71.7,
+     76.6
+    ],
+    "wilson448": [
+     86.6,
+     90.1
+    ],
+    "delta_pts": 14.3,
+    "z_paired_range": [
+     9.0,
+     13.4
+    ],
+    "mde_pts_at_discord_0.1": 2.5,
+    "mde_pts_at_discord_0.2": 3.54,
+    "mde_pts_at_discord_0.3": 4.34,
+    "rerun_sd_pts_224_448": [
+     0.2,
+     0.3
+    ]
+   },
+   {
+    "task": "DocVQA",
+    "n": 5188,
+    "n_source": "외부 지식(미확인)",
+    "p224": 0.43700000000000006,
+    "p448": 0.78,
+    "wilson224": [
+     42.4,
+     45.1
+    ],
+    "wilson448": [
+     76.9,
+     79.1
+    ],
+    "delta_pts": 34.3,
+    "z_paired_range": [
+     33.8,
+     42.2
+    ],
+    "mde_pts_at_discord_0.1": 1.23,
+    "mde_pts_at_discord_0.2": 1.74,
+    "mde_pts_at_discord_0.3": 2.13,
+    "rerun_sd_pts_224_448": [
+     0.5,
+     0.3
+    ]
+   },
+   {
+    "task": "InfoVQA",
+    "n": 3288,
+    "n_source": "외부 지식(미확인)",
+    "p224": 0.285,
+    "p448": 0.405,
+    "wilson224": [
+     27.0,
+     30.1
+    ],
+    "wilson448": [
+     38.8,
+     42.2
+    ],
+    "delta_pts": 12.0,
+    "z_paired_range": [
+     10.2,
+     19.9
+    ],
+    "mde_pts_at_discord_0.1": 1.54,
+    "mde_pts_at_discord_0.2": 2.18,
+    "mde_pts_at_discord_0.3": 2.67,
+    "rerun_sd_pts_224_448": [
+     0.4,
+     0.3
+    ]
+   },
+   {
+    "task": "TextVQA",
+    "n": 5734,
+    "n_source": "외부 지식(미확인)",
+    "p224": 0.555,
+    "p448": 0.732,
+    "wilson224": [
+     54.2,
+     56.8
+    ],
+    "wilson448": [
+     72.0,
+     74.3
+    ],
+    "delta_pts": 17.7,
+    "z_paired_range": [
+     19.5,
+     31.9
+    ],
+    "mde_pts_at_discord_0.1": 1.17,
+    "mde_pts_at_discord_0.2": 1.65,
+    "mde_pts_at_discord_0.3": 2.03,
+    "rerun_sd_pts_224_448": [
+     0.2,
+     0.2
+    ]
+   },
+   {
+    "task": "AI2D",
+    "n": 3088,
+    "n_source": "외부 지식(미확인)",
+    "p224": 0.721,
+    "p448": 0.733,
+    "wilson224": [
+     70.5,
+     73.6
+    ],
+    "wilson448": [
+     71.7,
+     74.8
+    ],
+    "delta_pts": 1.2,
+    "z_paired_range": [
+     1.1,
+     6.1
+    ],
+    "mde_pts_at_discord_0.1": 1.59,
+    "mde_pts_at_discord_0.2": 2.25,
+    "mde_pts_at_discord_0.3": 2.76,
+    "rerun_sd_pts_224_448": [
+     0.7,
+     0.7
+    ]
+   },
+   {
+    "task": "ScienceQA",
+    "n": 2017,
+    "n_source": "외부 지식(미확인)",
+    "p224": 0.9540000000000001,
+    "p448": 0.9590000000000001,
+    "wilson224": [
+     94.4,
+     96.2
+    ],
+    "wilson448": [
+     94.9,
+     96.7
+    ],
+    "delta_pts": 0.5,
+    "z_paired_range": [
+     0.8,
+     3.2
+    ],
+    "mde_pts_at_discord_0.1": 1.97,
+    "mde_pts_at_discord_0.2": 2.79,
+    "mde_pts_at_discord_0.3": 3.41,
+    "rerun_sd_pts_224_448": [
+     0.3,
+     0.2
+    ]
+   },
+   {
+    "task": "POPE",
+    "n": 9000,
+    "n_source": "외부 지식(미확인)",
+    "p224": 0.86,
+    "p448": 0.87,
+    "wilson224": [
+     85.3,
+     86.7
+    ],
+    "wilson448": [
+     86.3,
+     87.7
+    ],
+    "delta_pts": 1.0,
+    "z_paired_range": [
+     2.0,
+     9.5
+    ],
+    "mde_pts_at_discord_0.1": 0.93,
+    "mde_pts_at_discord_0.2": 1.32,
+    "mde_pts_at_discord_0.3": 1.62,
+    "rerun_sd_pts_224_448": [
+     null,
+     null
+    ]
+   }
+  ],
+  "note": "ANLS·VQA 소프트 정확도는 문항 점수가 [0,1] 연속값이라 이항 분산이 상한이다. 크기 열의 '외부 지식(미확인)'은 공식 페이지로 확인하지 않은 근사값."
+ },
+ "S2_countbench_grid": {
+  "n=490": {
+   "81.9": [],
+   "83.1": [
+    407
+   ]
+  },
+  "n=540": {
+   "81.9": [
+    442
+   ],
+   "83.1": [
+    449
+   ]
+  }
+ },
+ "S3_mmvp": {
+  "pairs": 150,
+  "chance_pct": 25.0,
+  "grid_pairs": {
+   "PaliGemma224": [
+    71
+   ],
+   "PaliGemma448": [
+    68
+   ],
+   "GPT-4V": [
+    58
+   ],
+   "Gemini": [
+    61
+   ]
+  },
+  "paligemma_vs_chance_binom_p": 2.840220107513569e-09,
+  "wilson_paligemma224": [
+   39.5,
+   55.3
+  ],
+  "wilson_paligemma448": [
+   37.6,
+   53.3
+  ],
+  "fisher_vs_gemini_p_two_sided": 0.2951840980324003,
+  "fisher_vs_gpt4v_p_two_sided": 0.1615683664230904,
+  "delta_224_448_pairs": 3,
+  "mde_pts_discord_0.3": 12.5,
+  "note": "Fisher는 쌍 단위 비짝지은 검정이라 같은 문항 짝을 쓰는 McNemar보다 보수적(문항별 결과가 없어 못 함). 모델마다 전이 방식이 달라 비교 조건도 같지 않다(PaliGemma는 VQAv2 미세조정 후 제로샷)."
+ },
+ "S4_table4": {
+  "mean_columns_recomputed": [
+   84.6,
+   80.2,
+   78.9,
+   77.6
+  ],
+  "mean_columns_paper": [
+   84.6,
+   80.2,
+   78.9,
+   77.6
+  ],
+  "relative_of_means_single_to_prefix_pct": -1.67,
+  "relative_of_means_prefix_to_noprefix_pct": -1.64,
+  "mean_of_rowwise_regret_prefix_vs_single_pct": -2.02,
+  "mean_of_rowwise_regret_noprefix_vs_prefix_pct": -1.46,
+  "mean_of_rowwise_regret_noprefix_vs_single_pct": -3.48,
+  "paper_printed_regrets_pct": [
+   -2.0,
+   -3.5
+  ],
+  "table1_vs_single_simple_regret_pct": {
+   "RefCOCO (val)": 4.8,
+   "RefCOCO+ (val)": 10.7,
+   "RefCOCOg (val)": 5.9,
+   "SciCap": 60.6
+  },
+  "table2_printed_regret_pct": {
+   "ChartQA (human)": 3.2,
+   "RefCOCO (val)": 4.8,
+   "RefCOCOg (val)": 5.8,
+   "ScienceQA": 6.7,
+   "RefCOCO+ (val)": 10.7,
+   "SciCap": 60.5
+  },
+  "avg_without_scicap_columns": [
+   81.5,
+   80.9,
+   79.1,
+   77.7
+  ],
+  "n_rows": 26
+ },
+ "S4_table2": {
+  "counts": {
+   "[None,2.5%)": 37,
+   "[2.5%,5%)": 2,
+   "[5%,10%)": 2,
+   "[10%,100%]": 2
+  },
+  "total_tasks": 43,
+  "n_tasks_over_2.5pct": 6,
+  "note": "합 43. 그림 5는 36개, 그림 7은 38개, 그림 8은 37개 과제 평균, 표 1은 48행이다. 그림마다 과제 집합이 다르다."
+ },
+ "S5_fig17": {
+  "n_tasks": 36,
+  "mean_per_variant_recomputed": [
+   78.01,
+   77.18,
+   76.09,
+   77.27,
+   76.21
+  ],
+  "fig5_paper_bars": [
+   78.05,
+   77.23,
+   76.13,
+   77.31,
+   76.25
+  ],
+  "diff_recomputed_minus_fig5": [
+   -0.04,
+   -0.05,
+   -0.04,
+   -0.04,
+   -0.04
+  ],
+  "bootstrap_over_tasks": {
+   "AR_pref_loss_suf": {
+    "mean_delta": -0.83,
+    "boot95": [
+     -1.23,
+     -0.46
+    ],
+    "n_tasks_worse_gt1": 12,
+    "n_tasks_better_gt1": 2,
+    "n_tasks_within_1": 22,
+    "sign_test_p": 3.8558151572942734e-05,
+    "mean_delta_caption_tasks": -0.54,
+    "mean_delta_noncaption_tasks": -0.92,
+    "mean_delta_without_caption_excl": -0.92,
+    "relative_mean_delta_pct": -1.22,
+    "worst5": [
+     [
+      "CountBenchQA",
+      -4.7
+     ],
+     [
+      "RefCOCOg (val)",
+      -3.4
+     ],
+     [
+      "AI2D",
+      -2.7
+     ],
+     [
+      "RefCOCO+ (val)",
+      -2.0
+     ],
+     [
+      "AOKVQA-MC (val)",
+      -2.0
+     ]
+    ]
+   },
+   "AR_pref_loss_pref": {
+    "mean_delta": -1.92,
+    "boot95": [
+     -3.07,
+     -0.96
+    ],
+    "n_tasks_worse_gt1": 17,
+    "n_tasks_better_gt1": 2,
+    "n_tasks_within_1": 17,
+    "sign_test_p": 0.0029350556433200836,
+    "mean_delta_caption_tasks": 0.31,
+    "mean_delta_noncaption_tasks": -2.67,
+    "mean_delta_without_caption_excl": -2.67,
+    "relative_mean_delta_pct": -2.95,
+    "worst5": [
+     [
+      "MARVL (avg5)",
+      -14.6
+     ],
+     [
+      "AI2D",
+      -10.0
+     ],
+     [
+      "NLVR2",
+      -6.7
+     ],
+     [
+      "AOKVQA-MC (val)",
+      -6.6
+     ],
+     [
+      "ScienceQA",
+      -5.9
+     ]
+    ]
+   },
+   "AR_all_loss_suf": {
+    "mean_delta": -0.74,
+    "boot95": [
+     -1.07,
+     -0.42
+    ],
+    "n_tasks_worse_gt1": 12,
+    "n_tasks_better_gt1": 1,
+    "n_tasks_within_1": 23,
+    "sign_test_p": 0.00019512558355927467,
+    "mean_delta_caption_tasks": -0.66,
+    "mean_delta_noncaption_tasks": -0.77,
+    "mean_delta_without_caption_excl": -0.77,
+    "relative_mean_delta_pct": -1.21,
+    "worst5": [
+     [
+      "RefCOCOg (val)",
+      -3.3
+     ],
+     [
+      "RefCOCO+ (val)",
+      -2.7
+     ],
+     [
+      "TextCaps",
+      -2.3
+     ],
+     [
+      "RefCOCO (val)",
+      -2.3
+     ],
+     [
+      "InfoVQA (val)",
+      -1.7
+     ]
+    ]
+   },
+   "AR_all_loss_pref": {
+    "mean_delta": -1.8,
+    "boot95": [
+     -3.07,
+     -0.74
+    ],
+    "n_tasks_worse_gt1": 18,
+    "n_tasks_better_gt1": 4,
+    "n_tasks_within_1": 14,
+    "sign_test_p": 0.016673847800120715,
+    "mean_delta_caption_tasks": 0.63,
+    "mean_delta_noncaption_tasks": -2.61,
+    "mean_delta_without_caption_excl": -2.61,
+    "relative_mean_delta_pct": -2.7,
+    "worst5": [
+     [
+      "MARVL (avg5)",
+      -13.2
+     ],
+     [
+      "AI2D",
+      -12.4
+     ],
+     [
+      "AOKVQA-MC (val)",
+      -7.0
+     ],
+     [
+      "ScienceQA",
+      -6.7
+     ],
+     [
+      "NLVR2",
+      -6.6
+     ]
+    ]
+   }
+  },
+  "n_caption_tasks": 9,
+  "note": "과제는 서로 다른 지표(CIDEr 0–180, 정확도 0–100)를 섞어 평균한다. 캡션 과제 기여를 따로 적었다."
+ },
+ "S6_fig11": {
+  "stage1_3reruns_100M": {
+   "n_entries": 51,
+   "share_sd_le_0.5": 0.73,
+   "median_sd_mid": 0.29,
+   "rms_sd_mid": 0.55,
+   "sd_of_mean36_independent_upper": 0.097,
+   "sd_of_mean36_independent_mid": 0.092
+  },
+  "transfer_5reruns": {
+   "n_entries": 52,
+   "share_sd_le_0.5": 0.77,
+   "median_sd_mid": 0.29,
+   "rms_sd_mid": 0.48,
+   "sd_of_mean36_independent_upper": 0.085,
+   "sd_of_mean36_independent_mid": 0.08
+  },
+  "note": "그림 11 막대 합이 표 1의 SD 있는 과제 수(45)와 다르다. 집계 단위 불명. 평균의 SD는 과제 간 독립 가정이고 사전학습 반복 3번의 SD이므로, 절제 한 칸(사전학습 1번)의 잡음에 대한 근사일 뿐이다."
+ },
+ "S7_fig9": {
+  "sensitive9": {
+   "224px": 80.8,
+   "448px_resized_to_224_first": 91.7,
+   "448px": 99.5
+  },
+  "insensitive11": {
+   "224px": 88.8,
+   "448px_resized_to_224_first": 90.7,
+   "448px": 91.0
+  },
+  "total_gain": 18.7,
+  "sequence_length_part": 10.9,
+  "information_part": 7.8,
+  "sequence_length_share": 0.58,
+  "table1_mean_224_sensitive9": 74.1,
+  "table1_mean_448_sensitive9": 91.8,
+  "note": "민감 9과제는 표 1의 224→448 이득이 큰 과제에서 고른 것이라 총 이득은 선택 효과를 받는다. 분해(길이 대 정보)는 별도 실행이라 선택 영향이 작다."
+ },
+ "S7_fig10": {
+  "pre448_tr224": -6.6,
+  "pre224_tr448": 11.9,
+  "pre224_tr448_windows": 14.7,
+  "pre448w224_tr448w224_windows": 17.5,
+  "pre448_tr448": 18.8,
+  "pre224_tr224(0)": 0.0
+ },
+ "S7_fig7": {
+  "TT": 0.0,
+  "FT": 0.0,
+  "FF": -6.3,
+  "TF": -6.6,
+  "FR": -12.2,
+  "TR": -13.8,
+  "RT": -25.6,
+  "RR": -39.2,
+  "RF": -44.1
+ },
+ "S7_fig8": {
+  "siglip_encoder": {
+   "100M": 77.7,
+   "300M": 78.5,
+   "1B": 79.3
+  },
+  "fuyu_raw_patches": {
+   "100M": 55.5,
+   "300M": 63.5,
+   "1B": 68.5
+  }
+ },
+ "S7_fig4": {
+  "1M": -21.04,
+  "3M": -7.8,
+  "10M": -5.07,
+  "30M": -3.32,
+  "100M": -1.86,
+  "300M": -0.69,
+  "1B": 0.38
+ },
+ "S7_fig5": {
+  "AR_suffix_only(prefix-LM)__loss_suffix": 78.05,
+  "AR_on_prefix__loss_suffix": 77.23,
+  "AR_on_prefix__loss_suffix+prefix": 76.13,
+  "AR_on_image+prefix__loss_suffix": 77.31,
+  "AR_on_image+prefix__loss_suffix+prefix": 76.25,
+  "task_prefix_yes": 78.05,
+  "task_prefix_no": 77.97
+ }
+}

@@ -1,0 +1,1436 @@
+{
+ "config_dir": "repo/big_vision/configs/proj/paligemma/transfers",
+ "n_fields_compared": 432,
+ "n_fields_equal": 432,
+ "n_fields_unparsed": 2,
+ "n_rows_missing_in_sweep_best": 0,
+ "mismatches": [],
+ "rows": [
+  {
+   "task": "COCOcap",
+   "res": 224,
+   "paper": {
+    "epochs": 5,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 5,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "COCOcap",
+   "res": 448,
+   "paper": {
+    "epochs": 5,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 5,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "COCO-35L",
+   "res": 224,
+   "paper": {
+    "epochs": 25,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": null,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "COCO-35L",
+   "res": 448,
+   "paper": {
+    "epochs": 25,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": null,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "Screen2Words",
+   "res": 224,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.3,
+    "label_smoothing": 0.2,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.3,
+    "label_smoothing": 0.2,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "Screen2Words",
+   "res": 448,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.3,
+    "label_smoothing": 0.2,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.3,
+    "label_smoothing": 0.2,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "TextCaps",
+   "res": 224,
+   "paper": {
+    "epochs": 5,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 5,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "TextCaps",
+   "res": 448,
+   "paper": {
+    "epochs": 5,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 5,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "SciCap",
+   "res": 224,
+   "paper": {
+    "epochs": 80,
+    "bs": 256,
+    "lr": 3e-05,
+    "wd": 0.0,
+    "dropout": 0.1,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 80,
+    "bs": 256,
+    "lr": 3e-05,
+    "wd": 0.0,
+    "dropout": 0.1,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "SciCap",
+   "res": 448,
+   "paper": {
+    "epochs": 80,
+    "bs": 256,
+    "lr": 3e-05,
+    "wd": 0.0,
+    "dropout": 0.1,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 80,
+    "bs": 256,
+    "lr": 3e-05,
+    "wd": 0.0,
+    "dropout": 0.1,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "WidgetCap",
+   "res": 224,
+   "paper": {
+    "epochs": 4,
+    "bs": 64,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.1,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 4,
+    "bs": 64,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.1,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "WidgetCap",
+   "res": 448,
+   "paper": {
+    "epochs": 4,
+    "bs": 64,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.1,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 4,
+    "bs": 64,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.1,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "VQAv2",
+   "res": 224,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "VQAv2",
+   "res": 448,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "OKVQA",
+   "res": 224,
+   "paper": {
+    "epochs": 10,
+    "bs": 128,
+    "lr": 5e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 128,
+    "lr": 5e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "OKVQA",
+   "res": 448,
+   "paper": {
+    "epochs": 10,
+    "bs": 128,
+    "lr": 5e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 128,
+    "lr": 5e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "AOKVQA-MC",
+   "res": 224,
+   "paper": {
+    "epochs": 15,
+    "bs": 128,
+    "lr": 5e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 15,
+    "bs": 128,
+    "lr": 5e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "AOKVQA-MC",
+   "res": 448,
+   "paper": {
+    "epochs": 15,
+    "bs": 128,
+    "lr": 5e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 15,
+    "bs": 128,
+    "lr": 5e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "AOKVQA-DA",
+   "res": 224,
+   "paper": {
+    "epochs": 10,
+    "bs": 128,
+    "lr": 5e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 128,
+    "lr": 5e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "AOKVQA-DA",
+   "res": 448,
+   "paper": {
+    "epochs": 10,
+    "bs": 128,
+    "lr": 5e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 128,
+    "lr": 5e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "GQA",
+   "res": 224,
+   "paper": {
+    "epochs": 1,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 1,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "GQA",
+   "res": 448,
+   "paper": {
+    "epochs": 1,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": true
+   },
+   "code": {
+    "epochs": 1,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": true
+   },
+   "diffs": []
+  },
+  {
+   "task": "NLVR2",
+   "res": 224,
+   "paper": {
+    "epochs": 3,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 3,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "NLVR2",
+   "res": 448,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "AI2D",
+   "res": 224,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "AI2D",
+   "res": 448,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "ScienceQA",
+   "res": 224,
+   "paper": {
+    "epochs": 20,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": true
+   },
+   "code": {
+    "epochs": 20,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": true
+   },
+   "diffs": []
+  },
+  {
+   "task": "ScienceQA",
+   "res": 448,
+   "paper": {
+    "epochs": 20,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": true
+   },
+   "code": {
+    "epochs": 20,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": true
+   },
+   "diffs": []
+  },
+  {
+   "task": "RSVQA-lr",
+   "res": 224,
+   "paper": {
+    "epochs": 3,
+    "bs": 256,
+    "lr": 3e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.2,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 3,
+    "bs": 256,
+    "lr": 3e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.2,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "RSVQA-lr",
+   "res": 448,
+   "paper": {
+    "epochs": 3,
+    "bs": 256,
+    "lr": 3e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.2,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 3,
+    "bs": 256,
+    "lr": 3e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.2,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "RSVQA-hr",
+   "res": 224,
+   "paper": {
+    "epochs": 1,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 1,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "RSVQA-hr",
+   "res": 448,
+   "paper": {
+    "epochs": 1,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 1,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "ChartQA",
+   "res": 224,
+   "paper": {
+    "epochs": 30,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.1,
+    "label_smoothing": 0.2,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 30,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.1,
+    "label_smoothing": 0.2,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "ChartQA",
+   "res": 448,
+   "paper": {
+    "epochs": 30,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.1,
+    "label_smoothing": 0.2,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 30,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.1,
+    "label_smoothing": 0.2,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "VizWizVQA",
+   "res": 224,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "VizWizVQA",
+   "res": 448,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "TallyQA",
+   "res": 224,
+   "paper": {
+    "epochs": 2,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 2,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "TallyQA",
+   "res": 448,
+   "paper": {
+    "epochs": 2,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 2,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "OCR-VQA",
+   "res": 224,
+   "paper": {
+    "epochs": 3,
+    "bs": 128,
+    "lr": 3e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 3,
+    "bs": 128,
+    "lr": 3e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "OCR-VQA",
+   "res": 448,
+   "paper": {
+    "epochs": 3,
+    "bs": 128,
+    "lr": 3e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 3,
+    "bs": 128,
+    "lr": 3e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "OCR-VQA",
+   "res": 896,
+   "paper": {
+    "epochs": 3,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 3,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "TextVQA",
+   "res": 224,
+   "paper": {
+    "epochs": 5,
+    "bs": 256,
+    "lr": 3e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 5,
+    "bs": 256,
+    "lr": 3e-06,
+    "wd": 0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "TextVQA",
+   "res": 448,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "TextVQA",
+   "res": 896,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 3e-06,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 3e-06,
+    "wd": 0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "DocVQA",
+   "res": 224,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "DocVQA",
+   "res": 448,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "DocVQA",
+   "res": 896,
+   "paper": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "InfoVQA",
+   "res": 224,
+   "paper": {
+    "epochs": 3,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.4,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 3,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.4,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "InfoVQA",
+   "res": 448,
+   "paper": {
+    "epochs": 3,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.4,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 3,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.4,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "InfoVQA",
+   "res": 896,
+   "paper": {
+    "epochs": 3,
+    "bs": 32,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.0,
+    "label_smoothing": 0.4,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 3,
+    "bs": 32,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.0,
+    "label_smoothing": 0.4,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "ST-VQA",
+   "res": 224,
+   "paper": {
+    "epochs": 3,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 3,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "ST-VQA",
+   "res": 448,
+   "paper": {
+    "epochs": 3,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 3,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "ST-VQA",
+   "res": 896,
+   "paper": {
+    "epochs": 3,
+    "bs": 32,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.0,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 3,
+    "bs": 32,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.0,
+    "label_smoothing": 0.1,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "RefCOCO",
+   "res": 224,
+   "paper": {
+    "epochs": 100,
+    "bs": 256,
+    "lr": 3e-05,
+    "wd": 0.0,
+    "dropout": 0.1,
+    "label_smoothing": 0.3,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 100,
+    "bs": 256,
+    "lr": 3e-05,
+    "wd": 0.0,
+    "dropout": 0.1,
+    "label_smoothing": 0.3,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "RefCOCO",
+   "res": 448,
+   "paper": {
+    "epochs": 100,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.3,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 100,
+    "bs": 256,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.3,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "RefCOCO",
+   "res": 896,
+   "paper": {
+    "epochs": 100,
+    "bs": 64,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.3,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 100,
+    "bs": 64,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.3,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "ActivityNet-QA",
+   "res": 224,
+   "paper": {
+    "epochs": 1,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 1,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "ActivityNet-CAP",
+   "res": 224,
+   "paper": {
+    "epochs": 1,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": true
+   },
+   "code": {
+    "epochs": 1,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 1e-06,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": true
+   },
+   "diffs": []
+  },
+  {
+   "task": "MSRVTT-QA",
+   "res": 224,
+   "paper": {
+    "epochs": 1,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": true
+   },
+   "code": {
+    "epochs": 1,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": true
+   },
+   "diffs": []
+  },
+  {
+   "task": "MSRVTT-CAP",
+   "res": 224,
+   "paper": {
+    "epochs": 20,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": true
+   },
+   "code": {
+    "epochs": 20,
+    "bs": 128,
+    "lr": 1e-05,
+    "wd": 0.0,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": true
+   },
+   "diffs": []
+  },
+  {
+   "task": "MSVD-QA",
+   "res": 224,
+   "paper": {
+    "epochs": 1,
+    "bs": 128,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 1,
+    "bs": 128,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  },
+  {
+   "task": "VATEX",
+   "res": 224,
+   "paper": {
+    "epochs": 10,
+    "bs": 128,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "code": {
+    "epochs": 10,
+    "bs": 128,
+    "lr": 3e-06,
+    "wd": 3e-07,
+    "dropout": 0.0,
+    "label_smoothing": 0.0,
+    "freeze_vit": false
+   },
+   "diffs": []
+  }
+ ]
+}

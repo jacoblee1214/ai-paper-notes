@@ -1,0 +1,169 @@
+{
+ "visual_tokens": {
+  "224": 256,
+  "448": 1024,
+  "896": 4096
+ },
+ "visual_tokens_paper": {
+  "224": 256,
+  "448": 1024,
+  "896": 4096
+ },
+ "video_16_frames_224": 4096,
+ "params": {
+  "gemma2b": {
+   "embedding": 526647296,
+   "per_layer": 110104576,
+   "layers": 1981882368,
+   "final_norm": 2048,
+   "total": 2508531712,
+   "non_embedding": 1981884416
+  },
+  "siglip_so400m_by_res": {
+   "224": 412442352,
+   "448": 413327088,
+   "896": 416866032
+  },
+  "linear_projection": 2361344,
+  "total_by_res": {
+   "224": 2923335408,
+   "448": 2924220144,
+   "896": 2927759088
+  },
+  "paper_claims": "SigLIP-So400m ~400M + Gemma-2B + 선형 투영, 3B 미만(§1, 제목 3B)",
+  "total_224_B": 2.923,
+  "float32_GiB": 10.89,
+  "float32_GB": 11.69,
+  "code_readme_float32_checkpoint": "11GB (configs/proj/paligemma/README.md)",
+  "gemma_2b_published_B": 2.509,
+  "gemma2b_vocab256000_B": 2.506
+ },
+ "flops_per_example": {
+  "stage1_224": {
+   "n_img": 256,
+   "seq": 384,
+   "fwd_linear": 1869137436672,
+   "fwd_attn_gemma": 21743271936,
+   "fwd_attn_vit": 8153726976,
+   "train_6x": 5697103306752,
+   "train_8x_with_remat": 7596137742336,
+   "attn_share_of_fwd": 0.016
+  },
+  "stage2_448": {
+   "n_img": 1024,
+   "seq": 1536,
+   "fwd_linear": 7476549746688,
+   "fwd_attn_gemma": 347892350976,
+   "fwd_attn_vit": 130459631616,
+   "train_6x": 23864705187840,
+   "train_8x_with_remat": 31819606917120,
+   "attn_share_of_fwd": 0.06
+  },
+  "stage2_896": {
+   "n_img": 4096,
+   "seq": 4608,
+   "fwd_linear": 22199989567488,
+   "fwd_attn_gemma": 3131031158784,
+   "fwd_attn_vit": 2087354105856,
+   "train_6x": 82255124496384,
+   "train_8x_with_remat": 109673499328512,
+   "attn_share_of_fwd": 0.19
+  }
+ },
+ "tokens": {
+  "stage1_padded_tokens": 384000000000,
+  "stage1_reported": 350000000000.0,
+  "stage1_reported_over_padded": 0.911,
+  "stage1_implied_avg_text_tokens_if_img_always_counted": 94.0,
+  "stage2_image_tokens_only": 92160000000,
+  "stage2_padded_tokens": 122880000000,
+  "stage2_reported": 90000000000.0,
+  "stage2_reported_below_image_tokens_alone": true,
+  "stage2_per_stage_padded": {
+   "448": 76800000000,
+   "896": 46080000000
+  },
+  "stage2_per_stage_image_only": {
+   "448": 51200000000,
+   "896": 40960000000
+  }
+ },
+ "throughput": {
+  "tokens_per_s_total": 1328384,
+  "days_for_reported_350B": 3.05,
+  "days_for_padded_384B": 3.346,
+  "stage2_hours_each_if_5189_tps": {
+   "448": 16.1,
+   "896": 9.6
+  },
+  "stage2_reported_hours_each": 15,
+  "stage2_tokens_per_s_per_dev_implied_padded": {
+   "448": 5556,
+   "896": 3333
+  },
+  "stage2_tokens_per_s_per_dev_implied_reported90B": 3255,
+  "examples_per_hour_millions": {
+   "stage1": 13.89,
+   "stage2_448": 3.33,
+   "stage2_896": 0.67
+  },
+  "throughput_ratio_stage1_over_448": 4.17,
+  "throughput_ratio_stage1_over_896": 20.83,
+  "flops_ratio_448_over_stage1": 4.19,
+  "flops_ratio_896_over_stage1": 14.44,
+  "note": "예제 처리량 비가 FLOPs 비와 맞으면 보고된 시간(3일, 15시간)이 같은 활용률로 설명된다. Stage1은 '3일 미만'을 72시간으로 놓은 상한 근사."
+ },
+ "mfu": {
+  "6N_padded384": {
+   "flop_per_token": 14.84,
+   "tflops_per_dev": 77.0,
+   "mfu": 0.391
+  },
+  "6N_if_tokens_are_nonpad350": {
+   "flop_per_token": 16.28,
+   "tflops_per_dev": 84.5,
+   "mfu": 0.429
+  },
+  "8N_remat_padded384": {
+   "flop_per_token": 19.78,
+   "tflops_per_dev": 102.6,
+   "mfu": 0.521
+  },
+  "paper_reported": 0.55,
+  "note": "보고된 5189 tokens/s/device와 MFU 55%를 같이 만족하려면 토큰당 약 20.9 GFLOPs가 필요하다. 6N 모델 FLOPs로는 패딩 포함 토큰 기준 약 38%, 비패딩 350 기준 약 42%이고, 재계산(remat) 포함 8N이면 약 51%에 가깝다. 어떤 정의인지 논문은 쓰지 않는다. 첨두값은 외부 지식(미확인)."
+ },
+ "total_training": {
+  "flops_6N": 7712889811107840000000,
+  "flops_6N_e21": 7.71,
+  "chip_hours_v5e": 26112,
+  "implied_utilisation_6N": 0.416,
+  "note": "Stage1을 72시간으로 놓은 상한 근사. 전이(20분–10시간, TPUv3-32)는 제외."
+ },
+ "mask_density": {
+  "224_prefix20_suffix12_pad_ignored": {
+   "n": 288,
+   "prefixlm_allowed": 79566,
+   "causal_allowed": 41616,
+   "extra_pairs": 37950,
+   "density_prefixlm": 0.959,
+   "density_causal": 0.502
+  },
+  "448_prefix20_suffix12": {
+   "n": 1056,
+   "prefixlm_allowed": 1102542,
+   "causal_allowed": 558096,
+   "extra_pairs": 544446,
+   "density_prefixlm": 0.989,
+   "density_causal": 0.5
+  },
+  "896_prefix20_suffix12": {
+   "n": 4128,
+   "prefixlm_allowed": 16990926,
+   "causal_allowed": 8522256,
+   "extra_pairs": 8468670,
+   "density_prefixlm": 0.997,
+   "density_causal": 0.5
+  },
+  "note": "접두·접미 길이는 예시(실제 과제마다 다름). 이미지·접두 블록이 시퀀스를 거의 채워 차이는 블록 안 위쪽 삼각형이다."
+ }
+}

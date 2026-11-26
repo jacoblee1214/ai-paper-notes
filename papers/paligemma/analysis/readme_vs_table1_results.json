@@ -1,0 +1,710 @@
+{
+ "n_compared": 79,
+ "n_within_0.06": 71,
+ "mismatches": [
+  [
+   "COCO-35L (avg34)",
+   224,
+   113.7,
+   115.8,
+   -2.1
+  ],
+  [
+   "COCO-35L (avg34)",
+   448,
+   115.8,
+   118.0,
+   -2.2
+  ],
+  [
+   "XM3600 (en)",
+   224,
+   78.0,
+   78.1,
+   -0.1
+  ],
+  [
+   "XM3600 (avg35)",
+   224,
+   41.9,
+   41.3,
+   0.6
+  ],
+  [
+   "XM3600 (avg35)",
+   448,
+   42.4,
+   41.9,
+   0.5
+  ],
+  [
+   "OCR-VQA",
+   224,
+   72.3,
+   73.24,
+   -0.94
+  ],
+  [
+   "OCR-VQA",
+   448,
+   74.6,
+   75.6,
+   -1.0
+  ],
+  [
+   "OCR-VQA",
+   896,
+   74.9,
+   75.9,
+   -1.0
+  ]
+ ],
+ "rows": [
+  {
+   "task": "COCOcap",
+   "res": 224,
+   "paper": 141.9,
+   "readme": 141.92,
+   "diff": -0.02,
+   "ok": true
+  },
+  {
+   "task": "COCOcap",
+   "res": 448,
+   "paper": 144.6,
+   "readme": 144.6,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "task": "NoCaps",
+   "res": 224,
+   "paper": 121.7,
+   "readme": 121.72,
+   "diff": -0.02,
+   "ok": true
+  },
+  {
+   "task": "NoCaps",
+   "res": 448,
+   "paper": 123.6,
+   "readme": 123.58,
+   "diff": 0.02,
+   "ok": true
+  },
+  {
+   "task": "COCO-35L (en)",
+   "res": 224,
+   "paper": 139.2,
+   "readme": 139.2,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "task": "COCO-35L (en)",
+   "res": 448,
+   "paper": 141.2,
+   "readme": 141.2,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "task": "COCO-35L (avg34)",
+   "res": 224,
+   "paper": 113.7,
+   "readme": 115.8,
+   "diff": -2.1,
+   "ok": false
+  },
+  {
+   "task": "COCO-35L (avg34)",
+   "res": 448,
+   "paper": 115.8,
+   "readme": 118.0,
+   "diff": -2.2,
+   "ok": false
+  },
+  {
+   "task": "XM3600 (en)",
+   "res": 224,
+   "paper": 78.0,
+   "readme": 78.1,
+   "diff": -0.1,
+   "ok": false
+  },
+  {
+   "task": "XM3600 (en)",
+   "res": 448,
+   "paper": 80.0,
+   "readme": 80.0,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "task": "XM3600 (avg35)",
+   "res": 224,
+   "paper": 41.9,
+   "readme": 41.3,
+   "diff": 0.6,
+   "ok": false
+  },
+  {
+   "task": "XM3600 (avg35)",
+   "res": 448,
+   "paper": 42.4,
+   "readme": 41.9,
+   "diff": 0.5,
+   "ok": false
+  },
+  {
+   "task": "TextCaps",
+   "res": 224,
+   "paper": 127.5,
+   "readme": 127.48,
+   "diff": 0.02,
+   "ok": true
+  },
+  {
+   "task": "TextCaps",
+   "res": 448,
+   "paper": 153.9,
+   "readme": 153.94,
+   "diff": -0.04,
+   "ok": true
+  },
+  {
+   "task": "SciCap",
+   "res": 224,
+   "paper": 162.3,
+   "readme": 162.25,
+   "diff": 0.05,
+   "ok": true
+  },
+  {
+   "task": "SciCap",
+   "res": 448,
+   "paper": 181.5,
+   "readme": 181.49,
+   "diff": 0.01,
+   "ok": true
+  },
+  {
+   "task": "Screen2Words",
+   "res": 224,
+   "paper": 117.6,
+   "readme": 117.57,
+   "diff": 0.03,
+   "ok": true
+  },
+  {
+   "task": "Screen2Words",
+   "res": 448,
+   "paper": 119.6,
+   "readme": 119.59,
+   "diff": 0.01,
+   "ok": true
+  },
+  {
+   "task": "WidgetCap",
+   "res": 224,
+   "paper": 136.1,
+   "readme": 136.07,
+   "diff": 0.03,
+   "ok": true
+  },
+  {
+   "task": "WidgetCap",
+   "res": 448,
+   "paper": 148.4,
+   "readme": 148.36,
+   "diff": 0.04,
+   "ok": true
+  },
+  {
+   "task": "VQAv2",
+   "res": 224,
+   "paper": 83.2,
+   "readme": 83.19,
+   "diff": 0.01,
+   "ok": true
+  },
+  {
+   "task": "VQAv2",
+   "res": 448,
+   "paper": 85.6,
+   "readme": 85.64,
+   "diff": -0.04,
+   "ok": true
+  },
+  {
+   "task": "MMVP",
+   "res": 224,
+   "paper": 47.3,
+   "readme": 47.33,
+   "diff": -0.03,
+   "ok": true
+  },
+  {
+   "task": "MMVP",
+   "res": 448,
+   "paper": 45.3,
+   "readme": 45.33,
+   "diff": -0.03,
+   "ok": true
+  },
+  {
+   "task": "POPE",
+   "res": 224,
+   "paper": 86.0,
+   "readme": 85.98,
+   "diff": 0.02,
+   "ok": true
+  },
+  {
+   "task": "POPE",
+   "res": 448,
+   "paper": 87.0,
+   "readme": 86.97,
+   "diff": 0.03,
+   "ok": true
+  },
+  {
+   "task": "Objaverse Multiview",
+   "res": 224,
+   "paper": 62.7,
+   "readme": 62.7,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "task": "Objaverse Multiview",
+   "res": 448,
+   "paper": 62.8,
+   "readme": 62.8,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "task": "OKVQA",
+   "res": 224,
+   "paper": 63.5,
+   "readme": 63.54,
+   "diff": -0.04,
+   "ok": true
+  },
+  {
+   "task": "OKVQA",
+   "res": 448,
+   "paper": 63.2,
+   "readme": 63.15,
+   "diff": 0.05,
+   "ok": true
+  },
+  {
+   "task": "AOKVQA-MC",
+   "res": 224,
+   "paper": 76.4,
+   "readme": 76.37,
+   "diff": 0.03,
+   "ok": true
+  },
+  {
+   "task": "AOKVQA-MC",
+   "res": 448,
+   "paper": 76.9,
+   "readme": 76.9,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "task": "AOKVQA-DA",
+   "res": 224,
+   "paper": 61.9,
+   "readme": 61.85,
+   "diff": 0.05,
+   "ok": true
+  },
+  {
+   "task": "AOKVQA-DA",
+   "res": 448,
+   "paper": 63.2,
+   "readme": 63.22,
+   "diff": -0.02,
+   "ok": true
+  },
+  {
+   "task": "GQA",
+   "res": 224,
+   "paper": 65.6,
+   "readme": 65.61,
+   "diff": -0.01,
+   "ok": true
+  },
+  {
+   "task": "GQA",
+   "res": 448,
+   "paper": 67.0,
+   "readme": 67.03,
+   "diff": -0.03,
+   "ok": true
+  },
+  {
+   "task": "NLVR2",
+   "res": 224,
+   "paper": 90.0,
+   "readme": 90.02,
+   "diff": -0.02,
+   "ok": true
+  },
+  {
+   "task": "NLVR2",
+   "res": 448,
+   "paper": 88.9,
+   "readme": 88.93,
+   "diff": -0.03,
+   "ok": true
+  },
+  {
+   "task": "MARVL (avg5)",
+   "res": 224,
+   "paper": 80.6,
+   "readme": 80.57,
+   "diff": 0.03,
+   "ok": true
+  },
+  {
+   "task": "MARVL (avg5)",
+   "res": 448,
+   "paper": 76.8,
+   "readme": 76.78,
+   "diff": 0.02,
+   "ok": true
+  },
+  {
+   "task": "AI2D",
+   "res": 224,
+   "paper": 72.1,
+   "readme": 72.12,
+   "diff": -0.02,
+   "ok": true
+  },
+  {
+   "task": "AI2D",
+   "res": 448,
+   "paper": 73.3,
+   "readme": 73.28,
+   "diff": 0.02,
+   "ok": true
+  },
+  {
+   "task": "ScienceQA",
+   "res": 224,
+   "paper": 95.4,
+   "readme": 95.39,
+   "diff": 0.01,
+   "ok": true
+  },
+  {
+   "task": "ScienceQA",
+   "res": 448,
+   "paper": 95.9,
+   "readme": 95.93,
+   "diff": -0.03,
+   "ok": true
+  },
+  {
+   "task": "RSVQA-lr",
+   "res": 224,
+   "paper": 92.6,
+   "readme": 92.65,
+   "diff": -0.05,
+   "ok": true
+  },
+  {
+   "task": "RSVQA-lr",
+   "res": 448,
+   "paper": 93.1,
+   "readme": 93.11,
+   "diff": -0.01,
+   "ok": true
+  },
+  {
+   "task": "RSVQA-hr (test)",
+   "res": 224,
+   "paper": 92.6,
+   "readme": 92.61,
+   "diff": -0.01,
+   "ok": true
+  },
+  {
+   "task": "RSVQA-hr (test)",
+   "res": 448,
+   "paper": 92.8,
+   "readme": 92.79,
+   "diff": 0.01,
+   "ok": true
+  },
+  {
+   "task": "RSVQA-hr (test2)",
+   "res": 224,
+   "paper": 90.6,
+   "readme": 90.58,
+   "diff": 0.02,
+   "ok": true
+  },
+  {
+   "task": "RSVQA-hr (test2)",
+   "res": 448,
+   "paper": 90.5,
+   "readme": 90.54,
+   "diff": -0.04,
+   "ok": true
+  },
+  {
+   "task": "VizWizVQA",
+   "res": 224,
+   "paper": 73.7,
+   "readme": 73.7,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "task": "VizWizVQA",
+   "res": 448,
+   "paper": 75.5,
+   "readme": 75.52,
+   "diff": -0.02,
+   "ok": true
+  },
+  {
+   "task": "TallyQA (simple)",
+   "res": 224,
+   "paper": 81.7,
+   "readme": 81.72,
+   "diff": -0.02,
+   "ok": true
+  },
+  {
+   "task": "TallyQA (simple)",
+   "res": 448,
+   "paper": 84.9,
+   "readme": 84.86,
+   "diff": 0.04,
+   "ok": true
+  },
+  {
+   "task": "TallyQA (complex)",
+   "res": 224,
+   "paper": 69.6,
+   "readme": 69.56,
+   "diff": 0.04,
+   "ok": true
+  },
+  {
+   "task": "TallyQA (complex)",
+   "res": 448,
+   "paper": 72.3,
+   "readme": 72.27,
+   "diff": 0.03,
+   "ok": true
+  },
+  {
+   "task": "OCR-VQA",
+   "res": 224,
+   "paper": 72.3,
+   "readme": 73.24,
+   "diff": -0.94,
+   "ok": false
+  },
+  {
+   "task": "OCR-VQA",
+   "res": 448,
+   "paper": 74.6,
+   "readme": 75.6,
+   "diff": -1.0,
+   "ok": false
+  },
+  {
+   "task": "OCR-VQA",
+   "res": 896,
+   "paper": 74.9,
+   "readme": 75.9,
+   "diff": -1.0,
+   "ok": false
+  },
+  {
+   "task": "TextVQA",
+   "res": 224,
+   "paper": 55.5,
+   "readme": 55.47,
+   "diff": 0.03,
+   "ok": true
+  },
+  {
+   "task": "TextVQA",
+   "res": 448,
+   "paper": 73.2,
+   "readme": 73.15,
+   "diff": 0.05,
+   "ok": true
+  },
+  {
+   "task": "TextVQA",
+   "res": 896,
+   "paper": 76.5,
+   "readme": 76.48,
+   "diff": 0.02,
+   "ok": true
+  },
+  {
+   "task": "DocVQA",
+   "res": 224,
+   "paper": 43.7,
+   "readme": 43.74,
+   "diff": -0.04,
+   "ok": true
+  },
+  {
+   "task": "DocVQA",
+   "res": 448,
+   "paper": 78.0,
+   "readme": 78.02,
+   "diff": -0.02,
+   "ok": true
+  },
+  {
+   "task": "DocVQA",
+   "res": 896,
+   "paper": 84.8,
+   "readme": 84.77,
+   "diff": 0.03,
+   "ok": true
+  },
+  {
+   "task": "InfoVQA",
+   "res": 224,
+   "paper": 28.5,
+   "readme": 28.46,
+   "diff": 0.04,
+   "ok": true
+  },
+  {
+   "task": "InfoVQA",
+   "res": 448,
+   "paper": 40.5,
+   "readme": 40.47,
+   "diff": 0.03,
+   "ok": true
+  },
+  {
+   "task": "InfoVQA",
+   "res": 896,
+   "paper": 47.8,
+   "readme": 47.75,
+   "diff": 0.05,
+   "ok": true
+  },
+  {
+   "task": "ST-VQA",
+   "res": 224,
+   "paper": 63.3,
+   "readme": 63.29,
+   "diff": 0.01,
+   "ok": true
+  },
+  {
+   "task": "ST-VQA",
+   "res": 448,
+   "paper": 81.8,
+   "readme": 81.82,
+   "diff": -0.02,
+   "ok": true
+  },
+  {
+   "task": "ST-VQA",
+   "res": 896,
+   "paper": 84.4,
+   "readme": 84.4,
+   "diff": 0.0,
+   "ok": true
+  },
+  {
+   "task": "ActivityNet-QA",
+   "res": 224,
+   "paper": 50.8,
+   "readme": 50.78,
+   "diff": 0.02,
+   "ok": true
+  },
+  {
+   "task": "ActivityNet-CAP",
+   "res": 224,
+   "paper": 34.6,
+   "readme": 34.62,
+   "diff": -0.02,
+   "ok": true
+  },
+  {
+   "task": "MSRVTT-QA",
+   "res": 224,
+   "paper": 50.1,
+   "readme": 50.09,
+   "diff": 0.01,
+   "ok": true
+  },
+  {
+   "task": "MSRVTT-CAP",
+   "res": 224,
+   "paper": 70.5,
+   "readme": 70.54,
+   "diff": -0.04,
+   "ok": true
+  },
+  {
+   "task": "MSVD-QA",
+   "res": 224,
+   "paper": 60.2,
+   "readme": 60.22,
+   "diff": -0.02,
+   "ok": true
+  },
+  {
+   "task": "VATEX",
+   "res": 224,
+   "paper": 79.7,
+   "readme": 79.73,
+   "diff": -0.03,
+   "ok": true
+  },
+  {
+   "task": "ChartQA mean(human,aug)",
+   "res": 224,
+   "paper": 57.1,
+   "readme": 57.08,
+   "diff": 0.02,
+   "ok": true
+  },
+  {
+   "task": "ChartQA mean(human,aug)",
+   "res": 448,
+   "paper": 71.35,
+   "readme": 71.36,
+   "diff": -0.01,
+   "ok": true
+  }
+ ],
+ "notes": [
+  "xGQA(avg7)는 README가 8개 언어(en 포함) 평균(58.37/59.07)이라 직접 비교하지 않았다(논문 avg7은 en 제외로 보이며 영어 점수를 약 66으로 두면 맞는다, 추정).",
+  "RefCOCO는 README가 검증 분할(73.40/68.32/67.65 등), 표 1이 시험 분할(testA/testB)이라 비교하지 않았다. 표 4의 RefCOCO(val) 73.4/68.3/67.7은 README와 맞는다.",
+  "README 요약: XM3600·COCO-35L 열의 정의(avg-35, avg-34, avg)는 README 표머리에 (en / avg-35 / avg)로만 적혀 있다."
+ ],
+ "internal_consistency": {
+  "XM3600_224_readme_avg36_expected": 42.32,
+  "XM3600_224_readme_avg36": 42.4,
+  "XM3600_224_if_paper_avg35_41.9": 42.9,
+  "XM3600_448_readme_avg36_expected": 42.96,
+  "XM3600_448_readme_avg36": 42.9,
+  "COCO35L_224_readme_avg35_expected": 116.47,
+  "COCO35L_224_readme_all": 116.4
+ }
+}
