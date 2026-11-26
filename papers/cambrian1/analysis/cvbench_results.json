@@ -1,0 +1,257 @@
+{
+ "n_total": 2638,
+ "by_source_task": {
+  "ADE20K|Count": 342,
+  "ADE20K|Relation": 291,
+  "COCO|Count": 446,
+  "COCO|Relation": 359,
+  "Omni3D|Depth": 600,
+  "Omni3D|Distance": 600
+ },
+ "by_type": {
+  "2D": 1438,
+  "3D": 1200
+ },
+ "by_source_dataset": {
+  "ADE20K Validation Set": 633,
+  "COCO 2017 Validation Set": 805,
+  "Omni3D_Hypersim": 400,
+  "Omni3D_SUNRGBD": 400,
+  "Omni3D_nuScenes": 400
+ },
+ "n_choices_by_task": {
+  "Count": {
+   "4": 493,
+   "6": 139,
+   "5": 156
+  },
+  "Relation": {
+   "2": 650
+  },
+  "Depth": {
+   "2": 600
+  },
+  "Distance": {
+   "2": 600
+  }
+ },
+ "distinct_source_images": {
+  "ADE20K|ADE20K Validation Set": {
+   "questions": 633,
+   "images": 633,
+   "q_per_image": 1.0
+  },
+  "COCO|COCO 2017 Validation Set": {
+   "questions": 805,
+   "images": 805,
+   "q_per_image": 1.0
+  },
+  "Omni3D|Omni3D_Hypersim": {
+   "questions": 400,
+   "images": 242,
+   "q_per_image": 1.65
+  },
+  "Omni3D|Omni3D_SUNRGBD": {
+   "questions": 400,
+   "images": 149,
+   "q_per_image": 2.68
+  },
+  "Omni3D|Omni3D_nuScenes": {
+   "questions": 400,
+   "images": 283,
+   "q_per_image": 1.41
+  }
+ },
+ "distinct_source_images_total": 2112,
+ "chance": {
+  "by_source": {
+   "ADE20K": 35.19,
+   "COCO": 34.77,
+   "Omni3D": 50.0
+  },
+  "combined_metric": 42.49,
+  "pooled_all_items": 41.8,
+  "2D_pooled": 34.95,
+  "3D_pooled": 50.0
+ },
+ "count_task": {
+  "n": 788,
+  "medoid_heuristic_acc": 57.1,
+  "modal_rank_rule": {
+   "4": {
+    "n": 493,
+    "modal_rank": 1,
+    "hits": 463,
+    "acc": 0.939
+   },
+   "5": {
+    "n": 156,
+    "modal_rank": 2,
+    "hits": 146,
+    "acc": 0.936
+   },
+   "6": {
+    "n": 139,
+    "modal_rank": 3,
+    "hits": 119,
+    "acc": 0.856
+   }
+  },
+  "modal_rank_rule_overall": 92.4,
+  "answer_value_1_share": 59.1,
+  "top_decoy_offset_patterns": [
+   [
+    [
+     -1,
+     0,
+     1,
+     2
+    ],
+    463
+   ],
+   [
+    [
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ],
+    146
+   ],
+   [
+    [
+     -3,
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ],
+    48
+   ],
+   [
+    [
+     -4,
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ],
+    31
+   ],
+   [
+    [
+     -2,
+     -1,
+     0,
+     1
+    ],
+    19
+   ],
+   [
+    [
+     -6,
+     -2,
+     -1,
+     0,
+     1,
+     2
+    ],
+    11
+   ]
+  ],
+  "share_of_items_with_offsets_(-1,0,1,2)|(-2..2)|(-3,-2,-1,0,1,2)|(-4,-2,-1,0,1,2)": 87.3
+ },
+ "no_image_rule": {
+  "by_source": {
+   "ADE20K": 53.4,
+   "COCO": 54.3,
+   "Omni3D": 50.0
+  },
+  "combined_metric": 51.9,
+  "2D_pooled": 53.9,
+  "3D": 50.0,
+  "note": "Count는 선택지 값의 medoid를 고르는 규칙(동점 시 무작위), 나머지 과제는 50% 우연 수준으로 둠(이미지 없이는 더 알 수 없다고 가정)"
+ },
+ "no_image_rule_rank": {
+  "by_source": {
+   "ADE20K": 70.2,
+   "COCO": 75.6,
+   "Omni3D": 50.0
+  },
+  "2D_by_formula(ADE+COCO)/2": 72.9,
+  "combined_metric": 61.5,
+  "note": "표본 내 규칙(선택지 4/5/6개일 때 정렬 순위 1/2/3번째를 고름). Count 외 과제는 50%"
+ },
+ "answer_letter_by_task": {
+  "Count": {
+   "(C)": 169,
+   "(E)": 63,
+   "(D)": 167,
+   "(B)": 184,
+   "(A)": 182,
+   "(F)": 23
+  },
+  "Relation": {
+   "(A)": 327,
+   "(B)": 323
+  },
+  "Depth": {
+   "(A)": 300,
+   "(B)": 300
+  },
+  "Distance": {
+   "(A)": 303,
+   "(B)": 297
+  }
+ },
+ "relation_answer_text": {
+  "above": 144,
+  "right": 200,
+  "below": 123,
+  "left": 183
+ },
+ "relation_majority_baseline": {
+  "left_right": 52.2,
+  "above_below": 53.9
+ },
+ "Depth_answer_is_first_listed": 50.0,
+ "Distance_answer_is_first_listed": 50.5,
+ "n_by_source": {
+  "ADE20K": 633,
+  "COCO": 805,
+  "Omni3D": 1200
+ },
+ "combined_metric_se": {
+  "p=0.5": {
+   "combined_se_pts": 0.98,
+   "ci95_half_pts": 1.92,
+   "total_n_wilson_half": 1.91
+  },
+  "p=0.6": {
+   "combined_se_pts": 0.96,
+   "ci95_half_pts": 1.88,
+   "total_n_wilson_half": 1.87
+  },
+  "p=0.7": {
+   "combined_se_pts": 0.9,
+   "ci95_half_pts": 1.76,
+   "total_n_wilson_half": 1.75
+  },
+  "p=0.8": {
+   "combined_se_pts": 0.78,
+   "ci95_half_pts": 1.54,
+   "total_n_wilson_half": 1.53
+  }
+ },
+ "combined_metric_mde_q0.1": 1.74,
+ "combined_metric_mde_q0.2": 2.46,
+ "combined_metric_mde_q0.3": 3.01,
+ "relative_size": {
+  "vs_RealWorldQA_765": 3.45,
+  "vs_MMVP_300_questions": 8.79,
+  "vs_MMVP_150_pairs": 17.59
+ }
+}

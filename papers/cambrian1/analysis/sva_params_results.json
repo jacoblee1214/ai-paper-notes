@@ -1,0 +1,126 @@
+{
+ "local_vs_masked_attention_max_abs_diff": 8.940696716308594e-08,
+ "param_formula_vs_module_small_checks": [
+  {
+   "q": 48,
+   "C": 32,
+   "N": 4,
+   "sizes": [
+    1,
+    1,
+    1,
+    4
+   ],
+   "module": 17536,
+   "formula": 17536
+  },
+  {
+   "q": 64,
+   "C": 32,
+   "N": 2,
+   "sizes": [
+    1,
+    2
+   ],
+   "module": 13824,
+   "formula": 13824
+  },
+  {
+   "q": 32,
+   "C": 32,
+   "N": 3,
+   "sizes": [
+    1,
+    1,
+    1
+   ],
+   "module": 13824,
+   "formula": 13824
+  }
+ ],
+ "per_layer_params": {
+  "connector_layer_C1024": 15765504,
+  "in_LLM_layer_H4096_C1024": 22056960,
+  "eq1_minimal_(1+2N)C^2": 9437184,
+  "connector_layer_over_eq1_minimal": 1.67
+ },
+ "totals": {
+  "8B (Llama-3-8B, H=4096, 32 layers)": {
+   "connector_D3": 47296512,
+   "in_LLM_layers": 220569600,
+   "per_encoder_aux_mlp": 13910016,
+   "final_mlp": 20979712,
+   "misc": 5120,
+   "total": 302760960,
+   "in_llm_layer_indices": [
+    0,
+    3,
+    6,
+    9,
+    12,
+    15,
+    18,
+    21,
+    24,
+    27
+   ],
+   "indices_within_llm": true,
+   "fraction_of_llm_params_pct": 3.77
+  },
+  "13B (Vicuna-1.5-13B, H=5120, 40 layers)": {
+   "connector_D3": 47296512,
+   "in_LLM_layers": 241541120,
+   "per_encoder_aux_mlp": 13910016,
+   "final_mlp": 31467520,
+   "misc": 6144,
+   "total": 334221312,
+   "in_llm_layer_indices": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36
+   ],
+   "indices_within_llm": true,
+   "fraction_of_llm_params_pct": 2.57
+  },
+  "34B (Hermes-2-Yi-34B, H=7168, 60 layers)": {
+   "connector_D3": 47296512,
+   "in_LLM_layers": 255135744,
+   "per_encoder_aux_mlp": 13910016,
+   "final_mlp": 58734592,
+   "misc": 8192,
+   "total": 375085056,
+   "in_llm_layer_indices": [
+    0,
+    7,
+    14,
+    21,
+    28,
+    35,
+    42,
+    49,
+    56
+   ],
+   "indices_within_llm": true,
+   "fraction_of_llm_params_pct": 1.09
+  }
+ },
+ "tokens": {
+  "query_grid": 576,
+  "llm_positions_with_newline": 600,
+  "keys_per_query_spatial": 19,
+  "keys_per_query_dense": 10944,
+  "dense_over_spatial": 576.0,
+  "qk_pairs_spatial": 10944,
+  "qk_pairs_dense": 6303744,
+  "llava_next_tokens": 2880,
+  "reduction_vs_llava_next": 5.0
+ },
+ "assumptions": "vision_hidden_size C=1024 (스크립트), 인코더 hidden 1152/1024/1536/5760은 코드와 HF 설정에서 읽은 값 (DINOv2는 스크립트가 giant: 1536), 헤드 16, D=3, G=1. 공식 코드는 실행하지 않았고 정적 대조만 함."
+}
