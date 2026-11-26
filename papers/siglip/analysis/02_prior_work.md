@@ -1,7 +1,7 @@
 # 02. 계보와 관련 자료: SigLIP (arXiv:2303.15343)
 
 - **근거 수준.** 이후 문헌은 arXiv 초록·메타데이터(arXiv API, 2026-11-26)와 이 저장소의 다른 분석, 공식 코드(`google-research/big_vision`)·OpenCLIP 소스의 정적 읽기에서 가져왔습니다. 본문을 읽지 않은 곳은 "초록 수준"이라고 표시했습니다. 웹 검색은 1회 썼습니다(독립 비교 찾기).
-- 이 저장소의 다른 분석은 폴더명으로만 가리킵니다: `clip/`, `paligemma/`, `prismatic_vlms/`, `eyes_wide_shut/`, `cambrian1/`, `qwen2_vl/`. 아직 없는 `dinov2/`, `blip2/`, `llava/`, `vit/`는 같은 묶음에서 작성 중이거나 예정입니다.
+- 이 저장소의 다른 분석은 폴더명으로만 가리킵니다: `clip/`, `paligemma/`, `prismatic_vlms/`, `eyes_wide_shut/`, `cambrian1/`, `qwen2_vl/`. `dinov2/`, `blip2/`, `llava/`, `vit/`도 같은 묶음에서 분석을 마쳤습니다.
 
 ## 1. 계보: SigLIP이 기대는 것
 
