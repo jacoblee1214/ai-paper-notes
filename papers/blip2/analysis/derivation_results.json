@@ -1,0 +1,534 @@
+{
+ "masks_K3_T4": {
+  "itc": {
+   "labels": [
+    "Q0",
+    "Q1",
+    "Q2",
+    "T0",
+    "T1",
+    "T2",
+    "T3"
+   ],
+   "rows_see_cols": [
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "ascii": "Q0  x x x . . . .\nQ1  x x x . . . .\nQ2  x x x . . . .\nT0  . . . x x x x\nT1  . . . x x x x\nT2  . . . x x x x\nT3  . . . x x x x"
+  },
+  "itg": {
+   "labels": [
+    "Q0",
+    "Q1",
+    "Q2",
+    "T0",
+    "T1",
+    "T2",
+    "T3"
+   ],
+   "rows_see_cols": [
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "ascii": "Q0  x x x . . . .\nQ1  x x x . . . .\nQ2  x x x . . . .\nT0  x x x x . . .\nT1  x x x x x . .\nT2  x x x x x x .\nT3  x x x x x x x"
+  },
+  "itm": {
+   "labels": [
+    "Q0",
+    "Q1",
+    "Q2",
+    "T0",
+    "T1",
+    "T2",
+    "T3"
+   ],
+   "rows_see_cols": [
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "ascii": "Q0  x x x x x x x\nQ1  x x x x x x x\nQ2  x x x x x x x\nT0  x x x x x x x\nT1  x x x x x x x\nT2  x x x x x x x\nT3  x x x x x x x"
+  }
+ },
+ "image_reach_12_layers": {
+  "cross_layers": [
+   0,
+   2,
+   4,
+   6,
+   8,
+   10
+  ],
+  "itc": {
+   "first_layer_text_depends_on_image": null,
+   "first_layer_query_depends_on_image": 0,
+   "text_layers_with_image_info": 0
+  },
+  "itg": {
+   "first_layer_text_depends_on_image": 1,
+   "first_layer_query_depends_on_image": 0,
+   "text_layers_with_image_info": 11
+  },
+  "itm": {
+   "first_layer_text_depends_on_image": 1,
+   "first_layer_query_depends_on_image": 0,
+   "text_layers_with_image_info": 11
+  }
+ },
+ "params_stage1_bertbase_vitg_K32": {
+  "with_query_ffn_M": 186.7,
+  "without_query_ffn_M": 130.02,
+  "paper_M": 188,
+  "relative_gap": -0.0069,
+  "parts_M": {
+   "embeddings": 23.84,
+   "bert_layers_with_query_ffn": 141.74
+  }
+ },
+ "params_stage2_trainable_M": {
+  "ours": {
+   "ViT-L OPT-2.7B": 103.6,
+   "ViT-L OPT-6.7B": 104.8,
+   "ViT-L FlanT5-XL": 103.2,
+   "ViT-L FlanT5-XXL": 104.8,
+   "ViT-g OPT-2.7B": 107.1,
+   "ViT-g OPT-6.7B": 108.3,
+   "ViT-g FlanT5-XL": 106.7,
+   "ViT-g FlanT5-XXL": 108.3
+  },
+  "paper_table2_M": {
+   "ViT-L OPT2.7B": 104,
+   "ViT-g OPT2.7B": 107,
+   "ViT-g OPT6.7B": 108,
+   "ViT-L FlanT5XL": 103,
+   "ViT-g FlanT5XL": 107,
+   "ViT-g FlanT5XXL": 108
+  }
+ },
+ "flamingo_ratio_54x": {
+  "10.2B/188M": 54.26,
+  "10.2B/108M(Table 2 BLIP-2 ViT-g FlanT5XXL)": 94.4,
+  "vqav2_gain_65.0-56.3": 8.7
+ },
+ "token_counts": {
+  "qformer_output": [
+   32,
+   768,
+   24576
+  ],
+  "vit_l14_224_features": [
+   257,
+   1024,
+   263168
+  ],
+  "vit_g14_224_features": [
+   257,
+   1408,
+   361856
+  ],
+  "number_ratio_vitL": 10.71,
+  "number_ratio_vitg": 14.72,
+  "llava15_visual_tokens_336px": 576,
+  "token_ratio_vs_llava15": 18.0,
+  "note": "257 = (224/14)^2 + 1(CLS). 이미지 해상도가 바뀌면 특징 수는 바뀌지만 Q-Former 출력은 32개로 같음(3.1절)"
+ },
+ "itc_label_smoothing_floor": {
+  "2": {
+   "closed_form": 0.19852,
+   "torch": 0.19852,
+   "log_B": 0.6931
+  },
+  "16": {
+   "closed_form": 0.56501,
+   "torch": 0.56501,
+   "log_B": 2.7726
+  },
+  "64": {
+   "closed_form": 0.72948,
+   "torch": 0.72948,
+   "log_B": 4.1589
+  },
+  "1680": {
+   "closed_form": 1.06711,
+   "torch": 1.06711,
+   "log_B": 7.4265
+  },
+  "2320": {
+   "closed_form": 1.09954,
+   "torch": 1.09954,
+   "log_B": 7.7493
+  }
+ },
+ "hard_negative_effective_candidates_tau0.07": {
+  "B=64, sd=0.05": {
+   "effective_candidates": 49.3,
+   "max_prob_mean": 0.0691
+  },
+  "B=64, sd=0.1": {
+   "effective_candidates": 26.6,
+   "max_prob_mean": 0.184
+  },
+  "B=64, sd=0.2": {
+   "effective_candidates": 6.3,
+   "max_prob_mean": 0.4705
+  },
+  "B=2320, sd=0.05": {
+   "effective_candidates": 1797.2,
+   "max_prob_mean": 0.0042
+  },
+  "B=2320, sd=0.1": {
+   "effective_candidates": 841.7,
+   "max_prob_mean": 0.0246
+  },
+  "B=2320, sd=0.2": {
+   "effective_candidates": 68.7,
+   "max_prob_mean": 0.2046
+  }
+ },
+ "toy_scene_bits": {
+  "per_object_count": {
+   "1": 8.58,
+   "2": 15.88,
+   "3": 22.25,
+   "4": 27.77
+  },
+  "all_scenes_uniform_over_n_bits": 27.8,
+  "log2_64_cells": 6.0,
+  "log2_6_colors": 2.58
+ },
+ "table_recompute": {
+  "table1_vs_table2_vs_table3_vs_table5_consistency": {
+   "T1_VQAv2_65.0_equals_T2_ViT-g_FlanT5XXL_testdev": true,
+   "T1_NoCaps_CIDEr_121.6_equals_T3_FlanT5XL_overall": true,
+   "T1_Flickr_TR1_97.6_IR1_89.7_equals_T5_ViT-g": true,
+   "T6_ITG_row_equals_T5_COCO_ViT-g_R1_R5": {
+    "i2t": [
+     85.4,
+     97.0
+    ],
+    "t2i": [
+     68.3,
+     87.7
+    ]
+   }
+  },
+  "vqav2_testdev_diffs_table2": {
+   "ViT-g - ViT-L (OPT2.7B)": {
+    "a": 52.3,
+    "b": 49.7,
+    "diff": 2.6,
+    "se_unpaired": 0.22,
+    "z": 12.06
+   },
+   "ViT-g - ViT-L (FlanT5-XL)": {
+    "a": 63.0,
+    "b": 62.3,
+    "diff": 0.7,
+    "se_unpaired": 0.21,
+    "z": 3.35
+   },
+   "OPT6.7B - OPT2.7B (ViT-g)": {
+    "a": 52.6,
+    "b": 52.3,
+    "diff": 0.3,
+    "se_unpaired": 0.22,
+    "z": 1.39
+   },
+   "FlanT5-XXL - FlanT5-XL (ViT-g)": {
+    "a": 65.0,
+    "b": 63.0,
+    "diff": 2.0,
+    "se_unpaired": 0.21,
+    "z": 9.66
+   },
+   "FlanT5-XL - OPT2.7B (ViT-g)": {
+    "a": 63.0,
+    "b": 52.3,
+    "diff": 10.7,
+    "se_unpaired": 0.21,
+    "z": 50.48
+   },
+   "BLIP-2 XXL - Flamingo80B (zero-shot)": {
+    "a": 65.0,
+    "b": 56.3,
+    "diff": 8.7,
+    "se_unpaired": 0.21,
+    "z": 41.43
+   }
+  },
+  "gqa_testdev_diffs_table2": {
+   "ViT-g - ViT-L (FlanT5-XL)": {
+    "a": 44.2,
+    "b": 44.4,
+    "diff": -0.2,
+    "se_unpaired": 0.63,
+    "z": -0.32
+   },
+   "FlanT5-XL - OPT2.7B (ViT-g)": {
+    "a": 44.2,
+    "b": 34.6,
+    "diff": 9.6,
+    "se_unpaired": 0.61,
+    "z": 15.66
+   }
+  },
+  "okvqa_test_diffs_table2": {
+   "ViT-g - ViT-L (FlanT5-XL)": {
+    "a": 40.7,
+    "b": 39.4,
+    "diff": 1.3,
+    "se_unpaired": 0.98,
+    "z": 1.33
+   },
+   "BLIP-2 XXL - Flamingo80B": {
+    "a": 45.9,
+    "b": 50.6,
+    "diff": -4.7,
+    "se_unpaired": 0.99,
+    "z": -4.73
+   }
+  },
+  "vqav2_finetuned_table4_testdev": {
+   "OPT6.7B - OFA": {
+    "a": 82.19,
+    "b": 82.0,
+    "diff": 0.19,
+    "se_unpaired": 0.17,
+    "z": 1.15
+   },
+   "OPT6.7B - Flamingo80B": {
+    "a": 82.19,
+    "b": 82.0,
+    "diff": 0.19,
+    "se_unpaired": 0.17,
+    "z": 1.15
+   },
+   "OPT6.7B(test-std) - Flamingo80B(test-std)": {
+    "a": 82.3,
+    "b": 82.1,
+    "diff": 0.2,
+    "se_unpaired": 0.17,
+    "z": 1.21
+   },
+   "OPT6.7B(test-std) - OFA(test-std)": {
+    "a": 82.3,
+    "b": 82.0,
+    "diff": 0.3,
+    "se_unpaired": 0.17,
+    "z": 1.82
+   }
+  },
+  "table6_itg_effect_coco5k": {
+   "i2t_R1": {
+    "a": 85.4,
+    "b": 84.5,
+    "diff": 0.9,
+    "se_unpaired": 0.72,
+    "z": 1.26
+   },
+   "i2t_R5": {
+    "a": 97.0,
+    "b": 96.2,
+    "diff": 0.8,
+    "se_unpaired": 0.36,
+    "z": 2.21
+   },
+   "t2i_R1": {
+    "a": 68.3,
+    "b": 67.2,
+    "diff": 1.1,
+    "se_unpaired": 0.42,
+    "z": 2.63
+   },
+   "t2i_R5": {
+    "a": 87.7,
+    "b": 87.1,
+    "diff": 0.6,
+    "se_unpaired": 0.3,
+    "z": 2.02
+   }
+  }
+ }
+}
