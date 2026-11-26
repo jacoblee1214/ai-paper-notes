@@ -19,7 +19,7 @@ Prismatic은 "패치를 토큰으로 투영해 LM에 넣는" 단순 구조(LLaVA
 |---|---|---|
 | MM1 (arXiv:2403.09611) | 사전학습 단계에서 해상도, 인코더, 연결기, 데이터 비율을 절제 | 목록 기재: 연결기 종류보다 해상도와 시각 토큰 수가 중요. Prismatic은 연결기를 MLP로 고정했고 해상도 효과는 같은 방향입니다(`03` §3). 학회 미확인 |
 | Idefics2 (arXiv:2405.02246) | 완전 자기회귀 결합과 교차 어텐션 결합을 같은 조건으로 비교 | Prismatic이 §6에서 제외한 축(Perceiver/교차 어텐션)입니다 |
-| Cambrian-1 (arXiv:2406.16860, NeurIPS 2024 구두) | 비전 인코더 20여 종 비교(초록), 비전 중심 평가 | 초록은 자기지도·강한 지도·결합을 비교했다고만 합니다. 동결·정렬 단계 결론이 Prismatic과 같은지는 이 분석에서 확인하지 못했습니다(초록만 읽음). `cambrian1/` |
+| Cambrian-1 (arXiv:2406.16860, NeurIPS 2024 구두) | 비전 인코더 20여 종 비교(초록), 비전 중심 평가 | `cambrian1/` 03 §8에서 두 논문을 대조했습니다. 정렬 단계는 겹치는 설정(CLIP-336, LLaVA 558K)에서 +0.66으로 이 논문과 같은 방향입니다. 시각 인코더 동결 해제는 반대입니다(이 논문 평균 z −1.15, Cambrian-1 13모델 평균 +1.20점). 두 논문은 시각 lr, weight decay, 정렬 데이터, 배치가 달라 차이의 원인은 분리되지 않았습니다. `cambrian1/` |
 | Eyes Wide Shut? (arXiv:2401.06209) | CLIP이 구별 못 하는 이미지 쌍, DINOv2 특징 섞기 | DINOv2를 보조로 섞는 같은 발상입니다(Prismatic이 이를 설계 축으로 통제 비교). `eyes_wide_shut/` |
 | LLaVA, BLIP-2 | 투영기(MLP) 대 Q-Former | 연결기 대안. `llava/`, `blip2/` |
 | PaliGemma, Qwen2-VL | 해상도(가변 해상도), 위치 인코딩, 백본 | Prismatic이 다루지 않은 축입니다. `paligemma/`, `qwen2_vl/` |

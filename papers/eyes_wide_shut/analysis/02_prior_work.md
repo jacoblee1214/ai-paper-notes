@@ -20,7 +20,7 @@
 |---|---|---|---|
 | **Eyes Wide Shut** I-MoF | 토큰 **교대 배치**(어댑터 뒤, 시퀀스 길이 2배) | 224²에서 MMVP +3.3(LLaVA-1.5), 표본 오차 안(`03` §6) | 이 논문 §4.3 |
 | **Prismatic VLMs** | 패치 특징을 **채널 방향으로 이어 붙임**(패치 수 그대로, 투영기 입력만 2배) | DINOv2+SigLIP은 유의하게 좋아지고 DINOv2+CLIP은 아님(p=0.37) | `prismatic_vlms/` 그림 7 |
-| **Cambrian-1** SVA | 학습 가능한 질의가 여러 인코더 특징에 교차 주의 | CV-Bench 등 시각 중심 벤치마크 | `cambrian1/` (작성 중, 링크만) |
+| **Cambrian-1** SVA | 학습 가능한 질의가 여러 인코더 특징에 교차 주의 | CV-Bench 등 시각 중심 벤치마크 | `cambrian1/` |
 | Eagle(2408.15998), SPHINX(2311.07575), DeepSeek-VL(2403.05525) | 인코더 혼합 | 이 문서에서 읽지 않음 | 링크 대상 아님 |
 
 핵심 대조: **Prismatic은 DINOv2+CLIP 융합이 이득 없다고 보고**(`prismatic_vlms/` 03의 검정에서 p=0.37)한 반면 이 논문은 같은 두 인코더(CLIP ViT-L + DINOv2 ViT-L)로 MMVP에서 이득을 봅니다. 두 연구는 벤치마크가 다르므로 모순이 아닙니다. Prismatic의 벤치마크는 VQA류 평균이고 이 논문은 CLIP-blind 쌍으로 만든 시험입니다. **DINOv2는 선별 때 이미 쓰였으므로 이 논문의 이득은 DINOv2에 유리한 시험에서의 이득**이기도 합니다(`03` §3). 두 논문을 함께 읽을 때 이 구분이 중요합니다.
@@ -30,7 +30,7 @@
 | 연구 | MMVP 사용 | 출처 |
 |---|---|---|
 | PaliGemma(2407.07726) | MMVP 47.3(448px), 45.3(224px)이 GPT-4V 38.7·Gemini 40.7보다 높다고 "SOTA by a large margin" | `paligemma/` 03 §3.4: Gemini 대비 Fisher p=0.30. 이 문서 `03` §2에서 150쌍 구간으로 다시 확인 |
-| Cambrian-1(2406.16860) | MMVP를 "시각 중심" 평가 범주에 포함. 본문에 "MMVP는 시각을 끈 성능이 무작위보다 눈에 띄게 낮다"는 서술이 있고 CV-Bench를 새로 만들며 MMVP(300문항)보다 8.8배 크다고 함 | `cambrian1/paper/paper.pdf`를 읽음. 분석은 작성 중 |
+| Cambrian-1(2406.16860) | MMVP를 "시각 중심" 평가 범주에 포함. 본문에 "MMVP는 시각을 끈 성능이 무작위보다 눈에 띄게 낮다"는 서술이 있고 CV-Bench를 새로 만들며 MMVP(300문항)보다 8.8배 크다고 함 | `cambrian1/` 03 §1.3도 MMVP의 이미지 없음 0점을 쌍 지표의 필연으로 봅니다(이 분석 03 §1과 같은 결론) |
 | Qwen2-VL, Prismatic, Transfusion | 원문에 MMVP·Eyes Wide Shut 언급 없음 | 각 폴더 `paper.txt` 검색 |
 
 "시각을 끈 성능이 무작위보다 낮다"는 Cambrian-1의 관찰은 `03` §1의 구조 분석(이미지를 보지 않는 응답은 쌍 단위에서 0점, 상한 25%)과 같은 현상입니다.

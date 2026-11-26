@@ -60,7 +60,7 @@ ViT의 기여는 새 부품이 아니라 **"패치 + 표준 Transformer + 큰 �
 | `../spike_sparse_sink/` | pre-norm Transformer의 massive activation(spike)과 sink의 구조적 연결. ViT는 pre-norm이라 같은 메커니즘 후보(`04` §C7) |
 | `../prismatic_vlms/`, `../paligemma/`, `../qwen2_vl/` | 비전 인코더로 ViT 계열(SigLIP, DINOv2, 원 해상도 ViT)을 쓰는 VLM. ViT 패치 크기와 해상도가 토큰 수와 지연을 정함 |
 | `../transfusion/` | 이미지를 패치 토큰으로 바꿔 한 Transformer에서 텍스트와 함께 처리. 패치 임베딩 아이디어의 생성 쪽 확장 |
-| `../cambrian1/`, `../eyes_wide_shut/` | 비전 인코더 선택과 CLIP 인코더의 한계(작성 중이거나 다른 세션이 작업 중) |
+| `../cambrian1/`, `../eyes_wide_shut/` | 비전 인코더 선택과 CLIP 인코더의 한계 |
 | `../clip/` | 같은 묶음의 ViT 백본 사용 논문 |
 
 ## 7. 자료 표 (2026-11-26 `gh api`)
