@@ -1,0 +1,625 @@
+{
+ "table2_multipliers": {
+  "MATH-500": {
+   "build_x_recomputed": 30.46,
+   "build_x_reported": 30.5,
+   "savings_x_from_rounded_cache_cost": 97.0,
+   "savings_x_reported": 88.7,
+   "implied_cache_cost": 0.000437,
+   "savings_x_range_if_cache_cost_in_[c-0.00005,c+0.00005]": [
+    86.2,
+    110.9
+   ]
+  },
+  "AIME24": {
+   "build_x_recomputed": 12.9,
+   "build_x_reported": 12.9,
+   "savings_x_from_rounded_cache_cost": 275.2,
+   "savings_x_reported": 262.4,
+   "implied_cache_cost": 0.00042,
+   "savings_x_range_if_cache_cost_in_[c-0.00005,c+0.00005]": [
+    244.7,
+    314.6
+   ]
+  },
+  "AIME25": {
+   "build_x_recomputed": 12.07,
+   "build_x_reported": 12.1,
+   "savings_x_from_rounded_cache_cost": 300.8,
+   "savings_x_reported": 291.1,
+   "implied_cache_cost": 0.000413,
+   "savings_x_range_if_cache_cost_in_[c-0.00005,c+0.00005]": [
+    267.3,
+    343.7
+   ]
+  },
+  "AIME26": {
+   "build_x_recomputed": 12.93,
+   "build_x_reported": 12.9,
+   "savings_x_from_rounded_cache_cost": 299.2,
+   "savings_x_reported": 281.4,
+   "implied_cache_cost": 0.000425,
+   "savings_x_range_if_cache_cost_in_[c-0.00005,c+0.00005]": [
+    266.0,
+    342.0
+   ]
+  },
+  "GPQA-Diamond": {
+   "build_x_recomputed": 25.11,
+   "build_x_reported": 25.1,
+   "savings_x_from_rounded_cache_cost": 37.3,
+   "savings_x_reported": 38.1,
+   "implied_cache_cost": 0.001858,
+   "savings_x_range_if_cache_cost_in_[c-0.00005,c+0.00005]": [
+    36.3,
+    38.3
+   ]
+  },
+  "GSM8K": {
+   "build_x_recomputed": 83.97,
+   "build_x_reported": 83.7,
+   "savings_x_from_rounded_cache_cost": 16.8,
+   "savings_x_reported": 16.3,
+   "implied_cache_cost": 0.00062,
+   "savings_x_range_if_cache_cost_in_[c-0.00005,c+0.00005]": [
+    15.5,
+    18.4
+   ]
+  },
+  "MMLU-Pro": {
+   "build_x_recomputed": 40.82,
+   "build_x_reported": 40.8,
+   "savings_x_from_rounded_cache_cost": 23.0,
+   "savings_x_reported": 22.9,
+   "implied_cache_cost": 0.001507,
+   "savings_x_range_if_cache_cost_in_[c-0.00005,c+0.00005]": [
+    22.3,
+    23.8
+   ]
+  },
+  "SciBench": {
+   "build_x_recomputed": 28.97,
+   "build_x_reported": 29.0,
+   "savings_x_from_rounded_cache_cost": 86.8,
+   "savings_x_reported": 83.0,
+   "implied_cache_cost": 0.000523,
+   "savings_x_range_if_cache_cost_in_[c-0.00005,c+0.00005]": [
+    78.9,
+    96.4
+   ]
+  }
+ },
+ "appendix_c": {
+  "MATH-500": {
+   "source_recomputed": 0.0388,
+   "source_reported": 0.0388,
+   "builder_reported": 1.1818,
+   "builder_reported_over_variantB": 0.9332,
+   "builder_variants": {
+    "A": 2.8875,
+    "B": 1.2665,
+    "C": 1.0585,
+    "D": 2.4655
+   },
+   "cache_parts": {
+    "target": {
+     "recomputed": 8.9e-05,
+     "reported": 0.0001
+    },
+    "extractor": {
+     "recomputed": 0.000193,
+     "reported": 0.0002
+    },
+    "converter": {
+     "recomputed": 0.000155,
+     "reported": 0.0002
+    }
+   },
+   "cache_recomputed": 0.000437,
+   "cache_reported_table2": 0.0004,
+   "savings_x_from_tokens": 88.8,
+   "savings_x_reported": 88.7,
+   "total_sum_of_role_costs": 1.2211,
+   "total_reported": 1.221
+  },
+  "AIME24": {
+   "source_recomputed": 0.1101,
+   "source_reported": 0.1101,
+   "builder_reported": 1.4198,
+   "builder_reported_over_variantB": 0.9334,
+   "builder_variants": {
+    "A": 3.5921,
+    "B": 1.5211,
+    "C": 1.274,
+    "D": 3.076
+   },
+   "cache_parts": {
+    "target": {
+     "recomputed": 2e-05,
+     "reported": 0.0
+    },
+    "extractor": {
+     "recomputed": 0.000209,
+     "reported": 0.0002
+    },
+    "converter": {
+     "recomputed": 0.000191,
+     "reported": 0.0002
+    }
+   },
+   "cache_recomputed": 0.00042,
+   "cache_reported_table2": 0.0004,
+   "savings_x_from_tokens": 262.3,
+   "savings_x_reported": 262.4,
+   "total_sum_of_role_costs": 1.5303,
+   "total_reported": 1.5303
+  },
+  "AIME25": {
+   "source_recomputed": 0.1203,
+   "source_reported": 0.1203,
+   "builder_reported": 1.4517,
+   "builder_reported_over_variantB": 0.9325,
+   "builder_variants": {
+    "A": 3.5594,
+    "B": 1.5568,
+    "C": 1.3002,
+    "D": 3.0384
+   },
+   "cache_parts": {
+    "target": {
+     "recomputed": 5.1e-05,
+     "reported": 0.0001
+    },
+    "extractor": {
+     "recomputed": 0.000282,
+     "reported": 0.0003
+    },
+    "converter": {
+     "recomputed": 8e-05,
+     "reported": 0.0001
+    }
+   },
+   "cache_recomputed": 0.000413,
+   "cache_reported_table2": 0.0004,
+   "savings_x_from_tokens": 291.0,
+   "savings_x_reported": 291.1,
+   "total_sum_of_role_costs": 1.5725,
+   "total_reported": 1.5724
+  },
+  "AIME26": {
+   "source_recomputed": 0.1197,
+   "source_reported": 0.1197,
+   "builder_reported": 1.5477,
+   "builder_reported_over_variantB": 0.9348,
+   "builder_variants": {
+    "A": 3.779,
+    "B": 1.6556,
+    "C": 1.3889,
+    "D": 3.2333
+   },
+   "cache_parts": {
+    "target": {
+     "recomputed": 2.9e-05,
+     "reported": 0.0
+    },
+    "extractor": {
+     "recomputed": 0.000243,
+     "reported": 0.0002
+    },
+    "converter": {
+     "recomputed": 0.000154,
+     "reported": 0.0002
+    }
+   },
+   "cache_recomputed": 0.000425,
+   "cache_reported_table2": 0.0004,
+   "savings_x_from_tokens": 281.4,
+   "savings_x_reported": 281.4,
+   "total_sum_of_role_costs": 1.6678,
+   "total_reported": 1.6678
+  },
+  "GPQA-Diamond": {
+   "source_recomputed": 0.0708,
+   "source_reported": 0.0708,
+   "builder_reported": 1.7781,
+   "builder_reported_over_variantB": 0.9346,
+   "builder_variants": {
+    "A": 4.6718,
+    "B": 1.9025,
+    "C": 1.6015,
+    "D": 4.0187
+   },
+   "cache_parts": {
+    "target": {
+     "recomputed": 0.000987,
+     "reported": 0.001
+    },
+    "extractor": {
+     "recomputed": 0.00069,
+     "reported": 0.0007
+    },
+    "converter": {
+     "recomputed": 0.000181,
+     "reported": 0.0002
+    }
+   },
+   "cache_recomputed": 0.001858,
+   "cache_reported_table2": 0.0019,
+   "savings_x_from_tokens": 38.1,
+   "savings_x_reported": 38.1,
+   "total_sum_of_role_costs": 1.8508,
+   "total_reported": 1.8508
+  },
+  "GSM8K": {
+   "source_recomputed": 0.0101,
+   "source_reported": 0.0101,
+   "builder_reported": 0.8481,
+   "builder_reported_over_variantB": 0.9277,
+   "builder_variants": {
+    "A": 1.6187,
+    "B": 0.9142,
+    "C": 0.7562,
+    "D": 1.3507
+   },
+   "cache_parts": {
+    "target": {
+     "recomputed": 2.6e-05,
+     "reported": 0.0
+    },
+    "extractor": {
+     "recomputed": 0.000229,
+     "reported": 0.0002
+    },
+    "converter": {
+     "recomputed": 0.000368,
+     "reported": 0.0004
+    }
+   },
+   "cache_recomputed": 0.000623,
+   "cache_reported_table2": 0.0006,
+   "savings_x_from_tokens": 16.3,
+   "savings_x_reported": 16.3,
+   "total_sum_of_role_costs": 0.8588,
+   "total_reported": 0.8589
+  },
+  "MMLU-Pro": {
+   "source_recomputed": 0.0345,
+   "source_reported": 0.0345,
+   "builder_reported": 1.4084,
+   "builder_reported_over_variantB": 0.93,
+   "builder_variants": {
+    "A": 3.7112,
+    "B": 1.5145,
+    "C": 1.271,
+    "D": 3.1872
+   },
+   "cache_parts": {
+    "target": {
+     "recomputed": 0.000674,
+     "reported": 0.0007
+    },
+    "extractor": {
+     "recomputed": 0.000621,
+     "reported": 0.0006
+    },
+    "converter": {
+     "recomputed": 0.000215,
+     "reported": 0.0002
+    }
+   },
+   "cache_recomputed": 0.00151,
+   "cache_reported_table2": 0.0015,
+   "savings_x_from_tokens": 22.9,
+   "savings_x_reported": 22.9,
+   "total_sum_of_role_costs": 1.4444,
+   "total_reported": 1.4445
+  },
+  "SciBench": {
+   "source_recomputed": 0.0434,
+   "source_reported": 0.0434,
+   "builder_reported": 1.2572,
+   "builder_reported_over_variantB": 0.9344,
+   "builder_variants": {
+    "A": 2.652,
+    "B": 1.3455,
+    "C": 1.12,
+    "D": 2.2395
+   },
+   "cache_parts": {
+    "target": {
+     "recomputed": 9.4e-05,
+     "reported": 0.0001
+    },
+    "extractor": {
+     "recomputed": 0.000277,
+     "reported": 0.0003
+    },
+    "converter": {
+     "recomputed": 0.000153,
+     "reported": 0.0002
+    }
+   },
+   "cache_recomputed": 0.000523,
+   "cache_reported_table2": 0.0005,
+   "savings_x_from_tokens": 82.9,
+   "savings_x_reported": 83.0,
+   "total_sum_of_role_costs": 1.3012,
+   "total_reported": 1.3011
+  }
+ },
+ "breakeven": {
+  "MATH-500": {
+   "B": 1.1818,
+   "S": 0.0388,
+   "paper_formula_ceil": 31,
+   "with_token_cache_cost": 31,
+   "per_correct_answer_combined_pass": 31,
+   "note": "B/(S-C), 정답당 비용 보정은 S/s_acc 대 C/comb"
+  },
+  "AIME24": {
+   "B": 1.4198,
+   "S": 0.1101,
+   "paper_formula_ceil": 13,
+   "with_token_cache_cost": 13,
+   "per_correct_answer_combined_pass": 13,
+   "note": "B/(S-C), 정답당 비용 보정은 S/s_acc 대 C/comb"
+  },
+  "AIME25": {
+   "B": 1.4517,
+   "S": 0.1203,
+   "paper_formula_ceil": 13,
+   "with_token_cache_cost": 13,
+   "per_correct_answer_combined_pass": 11,
+   "note": "B/(S-C), 정답당 비용 보정은 S/s_acc 대 C/comb"
+  },
+  "AIME26": {
+   "B": 1.5477,
+   "S": 0.1197,
+   "paper_formula_ceil": 13,
+   "with_token_cache_cost": 13,
+   "per_correct_answer_combined_pass": 12,
+   "note": "B/(S-C), 정답당 비용 보정은 S/s_acc 대 C/comb"
+  },
+  "GPQA-Diamond": {
+   "B": 1.7781,
+   "S": 0.0708,
+   "paper_formula_ceil": 26,
+   "with_token_cache_cost": 26,
+   "per_correct_answer_combined_pass": 22,
+   "note": "B/(S-C), 정답당 비용 보정은 S/s_acc 대 C/comb"
+  },
+  "GSM8K": {
+   "B": 0.8481,
+   "S": 0.0101,
+   "paper_formula_ceil": 90,
+   "with_token_cache_cost": 90,
+   "per_correct_answer_combined_pass": 89,
+   "note": "B/(S-C), 정답당 비용 보정은 S/s_acc 대 C/comb"
+  },
+  "MMLU-Pro": {
+   "B": 1.4084,
+   "S": 0.0345,
+   "paper_formula_ceil": 43,
+   "with_token_cache_cost": 43,
+   "per_correct_answer_combined_pass": 38,
+   "note": "B/(S-C), 정답당 비용 보정은 S/s_acc 대 C/comb"
+  },
+  "SciBench": {
+   "B": 1.2572,
+   "S": 0.0434,
+   "paper_formula_ceil": 30,
+   "with_token_cache_cost": 30,
+   "per_correct_answer_combined_pass": 25,
+   "note": "B/(S-C), 정답당 비용 보정은 S/s_acc 대 C/comb"
+  }
+ },
+ "sensitivity": {
+  "MATH-500": {
+   "cache_cost_x1": 88.8,
+   "cache_cost_x2": 44.4,
+   "cache_cost_x5": 17.8,
+   "cache_cost_x10": 8.9,
+   "cache_cost_x30": 3.0,
+   "source_price_x0.2": 17.8,
+   "source_price_x0.33": 29.3,
+   "source_price_x0.5": 44.4,
+   "source_output_tokens_half": 45.0,
+   "effective_with_build_N1": 0.03,
+   "effective_with_build_N10": 0.33,
+   "effective_with_build_N100": 3.17,
+   "effective_with_build_N1000": 23.97,
+   "effective_with_build_N10000": 69.89
+  },
+  "AIME24": {
+   "cache_cost_x1": 262.1,
+   "cache_cost_x2": 131.1,
+   "cache_cost_x5": 52.4,
+   "cache_cost_x10": 26.2,
+   "cache_cost_x30": 8.7,
+   "source_price_x0.2": 52.4,
+   "source_price_x0.33": 86.5,
+   "source_price_x0.5": 131.1,
+   "source_output_tokens_half": 132.0,
+   "effective_with_build_N1": 0.08,
+   "effective_with_build_N10": 0.77,
+   "effective_with_build_N100": 7.53,
+   "effective_with_build_N1000": 59.84,
+   "effective_with_build_N10000": 195.91
+  },
+  "AIME25": {
+   "cache_cost_x1": 291.3,
+   "cache_cost_x2": 145.6,
+   "cache_cost_x5": 58.3,
+   "cache_cost_x10": 29.1,
+   "cache_cost_x30": 9.7,
+   "source_price_x0.2": 58.3,
+   "source_price_x0.33": 96.1,
+   "source_price_x0.5": 145.6,
+   "source_output_tokens_half": 147.0,
+   "effective_with_build_N1": 0.08,
+   "effective_with_build_N10": 0.83,
+   "effective_with_build_N100": 8.06,
+   "effective_with_build_N1000": 64.51,
+   "effective_with_build_N10000": 215.53
+  },
+  "AIME26": {
+   "cache_cost_x1": 281.6,
+   "cache_cost_x2": 140.8,
+   "cache_cost_x5": 56.3,
+   "cache_cost_x10": 28.2,
+   "cache_cost_x30": 9.4,
+   "source_price_x0.2": 56.3,
+   "source_price_x0.33": 92.9,
+   "source_price_x0.5": 140.8,
+   "source_output_tokens_half": 141.8,
+   "effective_with_build_N1": 0.08,
+   "effective_with_build_N10": 0.77,
+   "effective_with_build_N100": 7.53,
+   "effective_with_build_N1000": 60.68,
+   "effective_with_build_N10000": 206.46
+  },
+  "GPQA-Diamond": {
+   "cache_cost_x1": 38.1,
+   "cache_cost_x2": 19.1,
+   "cache_cost_x5": 7.6,
+   "cache_cost_x10": 3.8,
+   "cache_cost_x30": 1.3,
+   "source_price_x0.2": 7.6,
+   "source_price_x0.33": 12.6,
+   "source_price_x0.5": 19.1,
+   "source_output_tokens_half": 19.4,
+   "effective_with_build_N1": 0.04,
+   "effective_with_build_N10": 0.39,
+   "effective_with_build_N100": 3.61,
+   "effective_with_build_N1000": 19.47,
+   "effective_with_build_N10000": 34.78
+  },
+  "GSM8K": {
+   "cache_cost_x1": 16.2,
+   "cache_cost_x2": 8.1,
+   "cache_cost_x5": 3.2,
+   "cache_cost_x10": 1.6,
+   "cache_cost_x30": 0.5,
+   "source_price_x0.2": 3.2,
+   "source_price_x0.33": 5.3,
+   "source_price_x0.5": 8.1,
+   "source_output_tokens_half": 8.5,
+   "effective_with_build_N1": 0.01,
+   "effective_with_build_N10": 0.12,
+   "effective_with_build_N100": 1.11,
+   "effective_with_build_N1000": 6.87,
+   "effective_with_build_N10000": 14.27
+  },
+  "MMLU-Pro": {
+   "cache_cost_x1": 22.8,
+   "cache_cost_x2": 11.4,
+   "cache_cost_x5": 4.6,
+   "cache_cost_x10": 2.3,
+   "cache_cost_x30": 0.8,
+   "source_price_x0.2": 4.6,
+   "source_price_x0.33": 7.5,
+   "source_price_x0.5": 11.4,
+   "source_output_tokens_half": 11.8,
+   "effective_with_build_N1": 0.02,
+   "effective_with_build_N10": 0.24,
+   "effective_with_build_N100": 2.21,
+   "effective_with_build_N1000": 11.82,
+   "effective_with_build_N10000": 20.9
+  },
+  "SciBench": {
+   "cache_cost_x1": 83.0,
+   "cache_cost_x2": 41.5,
+   "cache_cost_x5": 16.6,
+   "cache_cost_x10": 8.3,
+   "cache_cost_x30": 2.8,
+   "source_price_x0.2": 16.6,
+   "source_price_x0.33": 27.4,
+   "source_price_x0.5": 41.5,
+   "source_output_tokens_half": 42.1,
+   "effective_with_build_N1": 0.03,
+   "effective_with_build_N10": 0.34,
+   "effective_with_build_N100": 3.31,
+   "effective_with_build_N1000": 24.38,
+   "effective_with_build_N10000": 66.9
+  }
+ },
+ "headline": {
+  "reported_min": 16.3,
+  "reported_max": 291.1,
+  "recomputed_from_tokens_min": 16.3,
+  "recomputed_from_tokens_max": 291.0,
+  "build_x_min": 12.1,
+  "build_x_max": 83.7
+ },
+ "token_ratio": {
+  "MATH-500": {
+   "source_tokens": 1643,
+   "cache_tokens": 8907,
+   "cache_over_source_tokens": 5.4,
+   "price_per_token_ratio_source_over_cache": 481.0
+  },
+  "AIME24": {
+   "source_tokens": 4524,
+   "cache_tokens": 9652,
+   "cache_over_source_tokens": 2.1,
+   "price_per_token_ratio_source_over_cache": 559.0
+  },
+  "AIME25": {
+   "source_tokens": 4991,
+   "cache_tokens": 11028,
+   "cache_over_source_tokens": 2.2,
+   "price_per_token_ratio_source_over_cache": 644.0
+  },
+  "AIME26": {
+   "source_tokens": 4922,
+   "cache_tokens": 10581,
+   "cache_over_source_tokens": 2.1,
+   "price_per_token_ratio_source_over_cache": 605.0
+  },
+  "GPQA-Diamond": {
+   "source_tokens": 3047,
+   "cache_tokens": 31348,
+   "cache_over_source_tokens": 10.3,
+   "price_per_token_ratio_source_over_cache": 392.0
+  },
+  "GSM8K": {
+   "source_tokens": 486,
+   "cache_tokens": 12864,
+   "cache_over_source_tokens": 26.5,
+   "price_per_token_ratio_source_over_cache": 429.0
+  },
+  "MMLU-Pro": {
+   "source_tokens": 1578,
+   "cache_tokens": 25914,
+   "cache_over_source_tokens": 16.4,
+   "price_per_token_ratio_source_over_cache": 375.0
+  },
+  "SciBench": {
+   "source_tokens": 1839,
+   "cache_tokens": 11426,
+   "cache_over_source_tokens": 6.2,
+   "price_per_token_ratio_source_over_cache": 516.0
+  }
+ },
+ "cpu_latency_assumption": {
+  "assumption": "1B 모델 CPU: prefill 200-1000 tok/s, decode 10-30 tok/s (논문 값 아님)",
+  "AIME25": {
+   "in_tokens": 10094,
+   "out_tokens": 934,
+   "seconds_best": 41.2,
+   "seconds_worst": 143.9
+  },
+  "GSM8K": {
+   "in_tokens": 10949,
+   "out_tokens": 1915,
+   "seconds_best": 74.8,
+   "seconds_worst": 246.2
+  },
+  "GPQA-Diamond": {
+   "in_tokens": 24700,
+   "out_tokens": 6648,
+   "seconds_best": 246.3,
+   "seconds_worst": 788.3
+  }
+ }
+}
