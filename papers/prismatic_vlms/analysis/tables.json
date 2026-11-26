@@ -1,0 +1,1831 @@
+{
+ "T2": {
+  "cols": [
+   "VQAv2",
+   "GQA",
+   "VizWiz",
+   "TextVQA+OCR",
+   "TextVQA"
+  ],
+  "rows": [
+   {
+    "section": "Official Models",
+    "model": "LLaVa v1.5 7B",
+    "scores": {
+     "VQAv2": 76.54,
+     "GQA": 61.58,
+     "VizWiz": 54.24,
+     "TextVQA+OCR": 58.25,
+     "TextVQA": 46.13
+    }
+   },
+   {
+    "section": "Official Models",
+    "model": "LLaVa v1.5 13B",
+    "scores": {
+     "VQAv2": 78.13,
+     "GQA": 63.17,
+     "VizWiz": 56.66,
+     "TextVQA+OCR": 61.47,
+     "TextVQA": 48.99
+    }
+   },
+   {
+    "section": "Official Models",
+    "model": "InstructBLIP 7B",
+    "scores": {
+     "VQAv2": 76.12,
+     "GQA": 48.41,
+     "VizWiz": 32.02,
+     "TextVQA+OCR": 28.01,
+     "TextVQA": 33.54
+    }
+   },
+   {
+    "section": "Official Models",
+    "model": "InstructBLIP 13B",
+    "scores": {
+     "VQAv2": 59.46,
+     "GQA": 42.92,
+     "VizWiz": 30.65,
+     "TextVQA+OCR": 33.24,
+     "TextVQA": 27.9
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "LLaVa v1.5 7B (Reproduction)",
+    "scores": {
+     "VQAv2": 76.8,
+     "GQA": 62.28,
+     "VizWiz": 51.26,
+     "TextVQA+OCR": 57.91,
+     "TextVQA": 46.44
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "LLaVa v1.5 13B (Reproduction)",
+    "scores": {
+     "VQAv2": 77.78,
+     "GQA": 62.91,
+     "VizWiz": 54.83,
+     "TextVQA+OCR": 59.6,
+     "TextVQA": 48.74
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Single-Stage 7B",
+    "scores": {
+     "VQAv2": 77.09,
+     "GQA": 62.57,
+     "VizWiz": 54.33,
+     "TextVQA+OCR": 56.87,
+     "TextVQA": 44.45
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Single-Stage 13B",
+    "scores": {
+     "VQAv2": 77.96,
+     "GQA": 63.17,
+     "VizWiz": 56.37,
+     "TextVQA+OCR": 59.3,
+     "TextVQA": 48.03
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Frozen ViT (Single-Stage)",
+    "scores": {
+     "VQAv2": 77.09,
+     "GQA": 62.57,
+     "VizWiz": 54.33,
+     "TextVQA+OCR": 56.87,
+     "TextVQA": 44.45
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Finetune ViT (Multi-Stage)",
+    "scores": {
+     "VQAv2": 74.36,
+     "GQA": 60.08,
+     "VizWiz": 57.27,
+     "TextVQA+OCR": 56.56,
+     "TextVQA": 44.4
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Finetune ViT (Single-Stage)",
+    "scores": {
+     "VQAv2": 73.53,
+     "GQA": 59.65,
+     "VizWiz": 55.26,
+     "TextVQA+OCR": 53.81,
+     "TextVQA": 38.33
+    }
+   },
+   {
+    "section": "Visual Representation",
+    "model": "IN1K ViT-L 224px",
+    "scores": {
+     "VQAv2": 68.26,
+     "GQA": 56.82,
+     "VizWiz": 49.61,
+     "TextVQA+OCR": 44.54,
+     "TextVQA": 12.31
+    }
+   },
+   {
+    "section": "Visual Representation",
+    "model": "DINOv2 ViT-L 224px",
+    "scores": {
+     "VQAv2": 66.29,
+     "GQA": 55.64,
+     "VizWiz": 48.37,
+     "TextVQA+OCR": 44.7,
+     "TextVQA": 12.62
+    }
+   },
+   {
+    "section": "Visual Representation",
+    "model": "CLIP ViT-L 224px",
+    "scores": {
+     "VQAv2": 75.32,
+     "GQA": 61.58,
+     "VizWiz": 54.52,
+     "TextVQA+OCR": 53.89,
+     "TextVQA": 36.61
+    }
+   },
+   {
+    "section": "Visual Representation",
+    "model": "SigLIP ViT-SO 224px",
+    "scores": {
+     "VQAv2": 76.32,
+     "GQA": 62.15,
+     "VizWiz": 58.82,
+     "TextVQA+OCR": 55.75,
+     "TextVQA": 40.5
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "CLIP ViT-L 336px (Letterbox)",
+    "scores": {
+     "VQAv2": 77.09,
+     "GQA": 62.57,
+     "VizWiz": 54.33,
+     "TextVQA+OCR": 56.87,
+     "TextVQA": 44.45
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "CLIP ViT-L 336px (Resize Crop)",
+    "scores": {
+     "VQAv2": 77.07,
+     "GQA": 62.29,
+     "VizWiz": 58.15,
+     "TextVQA+OCR": 58.06,
+     "TextVQA": 48.83
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "CLIP ViT-L 336px (Naive Resize)",
+    "scores": {
+     "VQAv2": 77.86,
+     "GQA": 63.48,
+     "VizWiz": 56.03,
+     "TextVQA+OCR": 59.09,
+     "TextVQA": 49.66
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "SigLIP ViT-SO 384px (Letterbox)",
+    "scores": {
+     "VQAv2": 78.61,
+     "GQA": 63.39,
+     "VizWiz": 56.88,
+     "TextVQA+OCR": 60.33,
+     "TextVQA": 52.71
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "SigLIP ViT-SO 384px (Resize Crop)",
+    "scores": {
+     "VQAv2": 77.57,
+     "GQA": 62.23,
+     "VizWiz": 58.1,
+     "TextVQA+OCR": 58.4,
+     "TextVQA": 50.41
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "SigLIP ViT-SO 384px (Naive Resize)",
+    "scores": {
+     "VQAv2": 78.81,
+     "GQA": 63.6,
+     "VizWiz": 57.47,
+     "TextVQA+OCR": 61.06,
+     "TextVQA": 54.87
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "CLIP 336px (Naive Resize)",
+    "scores": {
+     "VQAv2": 77.86,
+     "GQA": 63.48,
+     "VizWiz": 56.03,
+     "TextVQA+OCR": 59.09,
+     "TextVQA": 49.66
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "DINOv2 + CLIP 336px (Letterbox)",
+    "scores": {
+     "VQAv2": 75.66,
+     "GQA": 62.89,
+     "VizWiz": 53.88,
+     "TextVQA+OCR": 46.28,
+     "TextVQA": 15.16
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "DINOv2 + CLIP 336px (Naive Resize)",
+    "scores": {
+     "VQAv2": 75.9,
+     "GQA": 63.57,
+     "VizWiz": 55.31,
+     "TextVQA+OCR": 46.2,
+     "TextVQA": 15.67
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "SigLIP 384px (Naive Resize)",
+    "scores": {
+     "VQAv2": 78.81,
+     "GQA": 63.6,
+     "VizWiz": 57.47,
+     "TextVQA+OCR": 61.06,
+     "TextVQA": 54.87
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "DINOv2 + SigLIP 384px (Letterbox)",
+    "scores": {
+     "VQAv2": 78.66,
+     "GQA": 63.81,
+     "VizWiz": 59.0,
+     "TextVQA+OCR": 58.77,
+     "TextVQA": 50.11
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "DINOv2 + SigLIP 384px (Naive Resize)",
+    "scores": {
+     "VQAv2": 79.18,
+     "GQA": 64.33,
+     "VizWiz": 61.06,
+     "TextVQA+OCR": 60.31,
+     "TextVQA": 52.18
+    }
+   },
+   {
+    "section": "Base vs. Instruct Tuned LMs",
+    "model": "Vicuña v1.5 7B",
+    "scores": {
+     "VQAv2": 77.09,
+     "GQA": 62.57,
+     "VizWiz": 54.33,
+     "TextVQA+OCR": 56.87,
+     "TextVQA": 44.45
+    }
+   },
+   {
+    "section": "Base vs. Instruct Tuned LMs",
+    "model": "Vicuña v1.5 13B",
+    "scores": {
+     "VQAv2": 77.96,
+     "GQA": 63.17,
+     "VizWiz": 56.37,
+     "TextVQA+OCR": 59.3,
+     "TextVQA": 48.03
+    }
+   },
+   {
+    "section": "Base vs. Instruct Tuned LMs",
+    "model": "Llama-2 7B",
+    "scores": {
+     "VQAv2": 77.08,
+     "GQA": 62.44,
+     "VizWiz": 55.98,
+     "TextVQA+OCR": 55.24,
+     "TextVQA": 44.92
+    }
+   },
+   {
+    "section": "Base vs. Instruct Tuned LMs",
+    "model": "Llama-2 13B",
+    "scores": {
+     "VQAv2": 78.07,
+     "GQA": 63.12,
+     "VizWiz": 57.55,
+     "TextVQA+OCR": 58.42,
+     "TextVQA": 47.6
+    }
+   },
+   {
+    "section": "Better LMs",
+    "model": "Mistral v1 7B",
+    "scores": {
+     "VQAv2": 77.3,
+     "GQA": 63.3,
+     "VizWiz": 55.32,
+     "TextVQA+OCR": 49.3,
+     "TextVQA": 44.4
+    }
+   },
+   {
+    "section": "Better LMs",
+    "model": "Mistral Instruct v1 7B",
+    "scores": {
+     "VQAv2": 77.13,
+     "GQA": 62.71,
+     "VizWiz": 54.35,
+     "TextVQA+OCR": 50.5,
+     "TextVQA": 44.1
+    }
+   },
+   {
+    "section": "Co-training on Language Safety Data",
+    "model": "Vicuña v1.5 7B",
+    "scores": {
+     "VQAv2": 77.09,
+     "GQA": 62.57,
+     "VizWiz": 54.33,
+     "TextVQA+OCR": 56.87,
+     "TextVQA": 44.45
+    }
+   },
+   {
+    "section": "Co-training on Language Safety Data",
+    "model": "Vicuña v1.5 7B (No Co-training)",
+    "scores": {
+     "VQAv2": 77.08,
+     "GQA": 62.9,
+     "VizWiz": 44.81,
+     "TextVQA+OCR": 57.59,
+     "TextVQA": 44.55
+    }
+   },
+   {
+    "section": "Co-training on Language Safety Data",
+    "model": "Llama-2 7B",
+    "scores": {
+     "VQAv2": 77.08,
+     "GQA": 62.44,
+     "VizWiz": 55.98,
+     "TextVQA+OCR": 55.24,
+     "TextVQA": 44.92
+    }
+   },
+   {
+    "section": "Co-training on Language Safety Data",
+    "model": "Llama-2 7B (No Co-training)",
+    "scores": {
+     "VQAv2": 77.1,
+     "GQA": 62.94,
+     "VizWiz": 43.6,
+     "TextVQA+OCR": 56.04,
+     "TextVQA": 45.45
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "1 Epoch",
+    "scores": {
+     "VQAv2": 77.09,
+     "GQA": 62.57,
+     "VizWiz": 54.33,
+     "TextVQA+OCR": 56.87,
+     "TextVQA": 44.45
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "1.25 Epochs",
+    "scores": {
+     "VQAv2": 77.3,
+     "GQA": 62.7,
+     "VizWiz": 57.28,
+     "TextVQA+OCR": 57.22,
+     "TextVQA": 45.44
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "1.5 Epochs",
+    "scores": {
+     "VQAv2": 77.54,
+     "GQA": 62.75,
+     "VizWiz": 56.37,
+     "TextVQA+OCR": 56.42,
+     "TextVQA": 45.63
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "2 Epochs",
+    "scores": {
+     "VQAv2": 77.79,
+     "GQA": 63.5,
+     "VizWiz": 55.2,
+     "TextVQA+OCR": 56.12,
+     "TextVQA": 46.08
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "3 Epochs",
+    "scores": {
+     "VQAv2": 77.17,
+     "GQA": 62.96,
+     "VizWiz": 56.2,
+     "TextVQA+OCR": 54.01,
+     "TextVQA": 45.69
+    }
+   },
+   {
+    "section": "Scaling Data",
+    "model": "Base",
+    "scores": {
+     "VQAv2": 77.09,
+     "GQA": 62.57,
+     "VizWiz": 54.33,
+     "TextVQA+OCR": 56.87,
+     "TextVQA": 44.45
+    }
+   },
+   {
+    "section": "Scaling Data",
+    "model": "Base + LRV",
+    "scores": {
+     "VQAv2": 77.58,
+     "GQA": 63.13,
+     "VizWiz": 55.76,
+     "TextVQA+OCR": 57.23,
+     "TextVQA": 45.67
+    }
+   },
+   {
+    "section": "Scaling Data",
+    "model": "Base + LVIS-4V",
+    "scores": {
+     "VQAv2": 77.96,
+     "GQA": 62.43,
+     "VizWiz": 55.91,
+     "TextVQA+OCR": 57.55,
+     "TextVQA": 45.99
+    }
+   },
+   {
+    "section": "Scaling Data",
+    "model": "Base + LVIS-4V + LRV",
+    "scores": {
+     "VQAv2": 78.33,
+     "GQA": 63.6,
+     "VizWiz": 56.01,
+     "TextVQA+OCR": 59.06,
+     "TextVQA": 46.86
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-CLIP 7B (Controlled)",
+    "scores": {
+     "VQAv2": 77.87,
+     "GQA": 63.65,
+     "VizWiz": 56.1,
+     "TextVQA+OCR": 58.4,
+     "TextVQA": 50.31
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-CLIP 7B",
+    "scores": {
+     "VQAv2": 79.67,
+     "GQA": 64.56,
+     "VizWiz": 53.34,
+     "TextVQA+OCR": 57.72,
+     "TextVQA": 51.12
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-SigLIP 7B (Controlled)",
+    "scores": {
+     "VQAv2": 79.12,
+     "GQA": 63.98,
+     "VizWiz": 58.99,
+     "TextVQA+OCR": 60.11,
+     "TextVQA": 55.79
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-SigLIP 7B",
+    "scores": {
+     "VQAv2": 80.67,
+     "GQA": 64.32,
+     "VizWiz": 53.7,
+     "TextVQA+OCR": 62.14,
+     "TextVQA": 58.01
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-DINOSigLIP 7B (Controlled)",
+    "scores": {
+     "VQAv2": 79.05,
+     "GQA": 64.16,
+     "VizWiz": 59.82,
+     "TextVQA+OCR": 58.69,
+     "TextVQA": 51.78
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-DINOSigLIP 7B",
+    "scores": {
+     "VQAv2": 80.97,
+     "GQA": 65.27,
+     "VizWiz": 52.82,
+     "TextVQA+OCR": 59.71,
+     "TextVQA": 55.64
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-CLIP 13B (Controlled)",
+    "scores": {
+     "VQAv2": 78.83,
+     "GQA": 64.1,
+     "VizWiz": 57.09,
+     "TextVQA+OCR": 61.1,
+     "TextVQA": 52.22
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-CLIP 13B",
+    "scores": {
+     "VQAv2": 80.38,
+     "GQA": 65.07,
+     "VizWiz": 56.47,
+     "TextVQA+OCR": 61.56,
+     "TextVQA": 53.4
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-SigLIP 13B (Controlled)",
+    "scores": {
+     "VQAv2": 78.52,
+     "GQA": 63.24,
+     "VizWiz": 57.29,
+     "TextVQA+OCR": 58.5,
+     "TextVQA": 50.61
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-SigLIP 13B",
+    "scores": {
+     "VQAv2": 80.68,
+     "GQA": 64.56,
+     "VizWiz": 57.63,
+     "TextVQA+OCR": 60.09,
+     "TextVQA": 54.28
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-DINOSigLIP 13B (Controlled)",
+    "scores": {
+     "VQAv2": 80.07,
+     "GQA": 65.14,
+     "VizWiz": 56.61,
+     "TextVQA+OCR": 61.2,
+     "TextVQA": 54.1
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-DINOSigLIP 13B",
+    "scores": {
+     "VQAv2": 81.66,
+     "GQA": 66.13,
+     "VizWiz": 58.01,
+     "TextVQA+OCR": 62.89,
+     "TextVQA": 57.08
+    }
+   }
+  ]
+ },
+ "T3": {
+  "cols": [
+   "RefCOCO",
+   "RefCOCO+",
+   "RefCOCOg",
+   "OCIDRef"
+  ],
+  "rows": [
+   {
+    "section": "Official Models",
+    "model": "LLaVa v1.5 7B",
+    "scores": {
+     "RefCOCO": 55.12,
+     "RefCOCO+": 49.47,
+     "RefCOCOg": 50.92,
+     "OCIDRef": 35.07
+    }
+   },
+   {
+    "section": "Official Models",
+    "model": "LLaVa v1.5 13B",
+    "scores": {
+     "RefCOCO": 66.75,
+     "RefCOCO+": 61.36,
+     "RefCOCOg": 60.85,
+     "OCIDRef": 45.56
+    }
+   },
+   {
+    "section": "Official Models",
+    "model": "InstructBLIP 7B",
+    "scores": {
+     "RefCOCO": null,
+     "RefCOCO+": null,
+     "RefCOCOg": null,
+     "OCIDRef": null
+    }
+   },
+   {
+    "section": "Official Models",
+    "model": "InstructBLIP 13B",
+    "scores": {
+     "RefCOCO": null,
+     "RefCOCO+": null,
+     "RefCOCOg": null,
+     "OCIDRef": null
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "LLaVa v1.5 7B (Reproduction)",
+    "scores": {
+     "RefCOCO": 60.54,
+     "RefCOCO+": 54.34,
+     "RefCOCOg": 56.31,
+     "OCIDRef": 41.75
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "LLaVa v1.5 13B (Reproduction)",
+    "scores": {
+     "RefCOCO": 64.79,
+     "RefCOCO+": 59.32,
+     "RefCOCOg": 59.33,
+     "OCIDRef": 44.48
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Single-Stage 7B",
+    "scores": {
+     "RefCOCO": 64.08,
+     "RefCOCO+": 58.19,
+     "RefCOCOg": 58.03,
+     "OCIDRef": 44.58
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Single-Stage 13B",
+    "scores": {
+     "RefCOCO": 68.98,
+     "RefCOCO+": 63.59,
+     "RefCOCOg": 61.64,
+     "OCIDRef": 44.89
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Frozen ViT (Single-Stage)",
+    "scores": {
+     "RefCOCO": 64.08,
+     "RefCOCO+": 58.19,
+     "RefCOCOg": 58.03,
+     "OCIDRef": 44.58
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Finetune ViT (Multi-Stage)",
+    "scores": {
+     "RefCOCO": 19.24,
+     "RefCOCO+": 17.48,
+     "RefCOCOg": 23.12,
+     "OCIDRef": 16.35
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Finetune ViT (Single-Stage)",
+    "scores": {
+     "RefCOCO": 42.56,
+     "RefCOCO+": 37.89,
+     "RefCOCOg": 41.05,
+     "OCIDRef": 33.42
+    }
+   },
+   {
+    "section": "Visual Representation",
+    "model": "IN1K ViT-L 224px",
+    "scores": {
+     "RefCOCO": 43.24,
+     "RefCOCO+": 35.4,
+     "RefCOCOg": 36.05,
+     "OCIDRef": 19.58
+    }
+   },
+   {
+    "section": "Visual Representation",
+    "model": "DINOv2 ViT-L 224px",
+    "scores": {
+     "RefCOCO": 28.65,
+     "RefCOCO+": 20.72,
+     "RefCOCOg": 24.75,
+     "OCIDRef": 8.33
+    }
+   },
+   {
+    "section": "Visual Representation",
+    "model": "CLIP ViT-L 224px",
+    "scores": {
+     "RefCOCO": 59.88,
+     "RefCOCO+": 53.69,
+     "RefCOCOg": 53.37,
+     "OCIDRef": 37.16
+    }
+   },
+   {
+    "section": "Visual Representation",
+    "model": "SigLIP ViT-SO 224px",
+    "scores": {
+     "RefCOCO": 57.94,
+     "RefCOCO+": 51.9,
+     "RefCOCOg": 53.31,
+     "OCIDRef": 37.42
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "CLIP ViT-L 336px (Letterbox)",
+    "scores": {
+     "RefCOCO": 64.08,
+     "RefCOCO+": 58.19,
+     "RefCOCOg": 58.03,
+     "OCIDRef": 44.58
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "CLIP ViT-L 336px (Resize Crop)",
+    "scores": {
+     "RefCOCO": 54.31,
+     "RefCOCO+": 49.14,
+     "RefCOCOg": 49.43,
+     "OCIDRef": 40.82
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "CLIP ViT-L 336px (Naive Resize)",
+    "scores": {
+     "RefCOCO": 65.28,
+     "RefCOCO+": 58.79,
+     "RefCOCOg": 59.93,
+     "OCIDRef": 44.2
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "SigLIP ViT-SO 384px (Letterbox)",
+    "scores": {
+     "RefCOCO": 63.09,
+     "RefCOCO+": 56.24,
+     "RefCOCOg": 58.17,
+     "OCIDRef": 45.5
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "SigLIP ViT-SO 384px (Resize Crop)",
+    "scores": {
+     "RefCOCO": 53.29,
+     "RefCOCO+": 47.63,
+     "RefCOCOg": 50.18,
+     "OCIDRef": 39.27
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "SigLIP ViT-SO 384px (Naive Resize)",
+    "scores": {
+     "RefCOCO": 61.38,
+     "RefCOCO+": 55.76,
+     "RefCOCOg": 56.84,
+     "OCIDRef": 41.49
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "CLIP ViT-L 336px (Naive Resize)",
+    "scores": {
+     "RefCOCO": 65.28,
+     "RefCOCO+": 58.79,
+     "RefCOCOg": 59.93,
+     "OCIDRef": 44.2
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "DINOv2 + CLIP 336px (Letterbox)",
+    "scores": {
+     "RefCOCO": 72.44,
+     "RefCOCO+": 65.84,
+     "RefCOCOg": 64.32,
+     "OCIDRef": 47.41
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "DINOv2 + CLIP 336px (Naive Resize)",
+    "scores": {
+     "RefCOCO": 71.07,
+     "RefCOCO+": 64.77,
+     "RefCOCOg": 65.26,
+     "OCIDRef": 47.66
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "SigLIP ViT-SO 384px (Naive Resize)",
+    "scores": {
+     "RefCOCO": 61.38,
+     "RefCOCO+": 55.76,
+     "RefCOCOg": 56.84,
+     "OCIDRef": 41.49
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "DINOv2 + SigLIP 384px (Letterbox)",
+    "scores": {
+     "RefCOCO": 72.1,
+     "RefCOCO+": 65.42,
+     "RefCOCOg": 64.69,
+     "OCIDRef": 50.37
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "DINOv2 + SigLIP 384px (Naive Resize)",
+    "scores": {
+     "RefCOCO": 73.86,
+     "RefCOCO+": 67.29,
+     "RefCOCOg": 67.85,
+     "OCIDRef": 52.82
+    }
+   },
+   {
+    "section": "Base vs. Instruct Tuned LMs",
+    "model": "Vicuña v1.5 7B",
+    "scores": {
+     "RefCOCO": 64.08,
+     "RefCOCO+": 58.19,
+     "RefCOCOg": 58.03,
+     "OCIDRef": 44.58
+    }
+   },
+   {
+    "section": "Base vs. Instruct Tuned LMs",
+    "model": "Vicuña v1.5 13B",
+    "scores": {
+     "RefCOCO": 68.98,
+     "RefCOCO+": 63.59,
+     "RefCOCOg": 61.64,
+     "OCIDRef": 44.89
+    }
+   },
+   {
+    "section": "Base vs. Instruct Tuned LMs",
+    "model": "Llama-2 7B",
+    "scores": {
+     "RefCOCO": 65.24,
+     "RefCOCO+": 59.47,
+     "RefCOCOg": 58.78,
+     "OCIDRef": 43.89
+    }
+   },
+   {
+    "section": "Base vs. Instruct Tuned LMs",
+    "model": "Llama-2 13B",
+    "scores": {
+     "RefCOCO": 68.53,
+     "RefCOCO+": 62.97,
+     "RefCOCOg": 61.7,
+     "OCIDRef": 45.75
+    }
+   },
+   {
+    "section": "Better LMs",
+    "model": "Mistral v1 7B",
+    "scores": {
+     "RefCOCO": 71.1,
+     "RefCOCO+": 65.06,
+     "RefCOCOg": 63.52,
+     "OCIDRef": 48.8
+    }
+   },
+   {
+    "section": "Better LMs",
+    "model": "Mistral Instruct v1 7B",
+    "scores": {
+     "RefCOCO": 70.59,
+     "RefCOCO+": 64.9,
+     "RefCOCOg": 62.03,
+     "OCIDRef": 48.0
+    }
+   },
+   {
+    "section": "Co-training on Language Safety Data",
+    "model": "Vicuña v1.5 7B",
+    "scores": {
+     "RefCOCO": 64.08,
+     "RefCOCO+": 58.19,
+     "RefCOCOg": 58.03,
+     "OCIDRef": 44.58
+    }
+   },
+   {
+    "section": "Co-training on Language Safety Data",
+    "model": "Vicuña v1.5 7B (No Co-training)",
+    "scores": {
+     "RefCOCO": 63.94,
+     "RefCOCO+": 57.51,
+     "RefCOCOg": 57.88,
+     "OCIDRef": 44.11
+    }
+   },
+   {
+    "section": "Co-training on Language Safety Data",
+    "model": "Llama-2 7B",
+    "scores": {
+     "RefCOCO": 65.24,
+     "RefCOCO+": 59.47,
+     "RefCOCOg": 58.78,
+     "OCIDRef": 43.89
+    }
+   },
+   {
+    "section": "Co-training on Language Safety Data",
+    "model": "Llama-2 7B (No Co-training)",
+    "scores": {
+     "RefCOCO": 64.26,
+     "RefCOCO+": 59.3,
+     "RefCOCOg": 57.99,
+     "OCIDRef": 42.17
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "1 Epoch",
+    "scores": {
+     "RefCOCO": 64.08,
+     "RefCOCO+": 58.19,
+     "RefCOCOg": 58.03,
+     "OCIDRef": 44.58
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "1.25 Epochs",
+    "scores": {
+     "RefCOCO": 67.02,
+     "RefCOCO+": 61.37,
+     "RefCOCOg": 60.01,
+     "OCIDRef": 46.45
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "1.5 Epochs",
+    "scores": {
+     "RefCOCO": 68.62,
+     "RefCOCO+": 62.81,
+     "RefCOCOg": 61.21,
+     "OCIDRef": 47.23
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "2 Epochs",
+    "scores": {
+     "RefCOCO": 71.23,
+     "RefCOCO+": 65.4,
+     "RefCOCOg": 63.32,
+     "OCIDRef": 46.32
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "3 Epochs",
+    "scores": {
+     "RefCOCO": 71.79,
+     "RefCOCO+": 66.94,
+     "RefCOCOg": 63.87,
+     "OCIDRef": 46.25
+    }
+   },
+   {
+    "section": "Scaling Data",
+    "model": "Base",
+    "scores": {
+     "RefCOCO": 64.08,
+     "RefCOCO+": 58.19,
+     "RefCOCOg": 58.03,
+     "OCIDRef": 44.58
+    }
+   },
+   {
+    "section": "Scaling Data",
+    "model": "Base + LRV",
+    "scores": {
+     "RefCOCO": 65.62,
+     "RefCOCO+": 59.77,
+     "RefCOCOg": 59.82,
+     "OCIDRef": 46.21
+    }
+   },
+   {
+    "section": "Scaling Data",
+    "model": "Base + LVIS-4V",
+    "scores": {
+     "RefCOCO": 63.91,
+     "RefCOCO+": 58.82,
+     "RefCOCOg": 58.91,
+     "OCIDRef": 43.83
+    }
+   },
+   {
+    "section": "Scaling Data",
+    "model": "Base + LVIS-4V + LRV",
+    "scores": {
+     "RefCOCO": 64.94,
+     "RefCOCO+": 58.91,
+     "RefCOCOg": 58.19,
+     "OCIDRef": 43.73
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-CLIP 7B (Controlled)",
+    "scores": {
+     "RefCOCO": 66.42,
+     "RefCOCO+": 60.14,
+     "RefCOCOg": 60.56,
+     "OCIDRef": 44.12
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-CLIP 7B",
+    "scores": {
+     "RefCOCO": 71.98,
+     "RefCOCO+": 66.96,
+     "RefCOCOg": 66.18,
+     "OCIDRef": 44.65
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-SigLIP 7B (Controlled)",
+    "scores": {
+     "RefCOCO": 64.74,
+     "RefCOCO+": 58.58,
+     "RefCOCOg": 60.56,
+     "OCIDRef": 43.63
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-SigLIP 7B",
+    "scores": {
+     "RefCOCO": 70.92,
+     "RefCOCO+": 65.73,
+     "RefCOCOg": 65.46,
+     "OCIDRef": 48.08
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-DINOSigLIP 7B (Controlled)",
+    "scores": {
+     "RefCOCO": 73.62,
+     "RefCOCO+": 67.85,
+     "RefCOCOg": 66.34,
+     "OCIDRef": 50.56
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-DINOSigLIP 7B",
+    "scores": {
+     "RefCOCO": 77.78,
+     "RefCOCO+": 73.08,
+     "RefCOCOg": 71.04,
+     "OCIDRef": 54.12
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-CLIP 13B (Controlled)",
+    "scores": {
+     "RefCOCO": 70.92,
+     "RefCOCO+": 65.95,
+     "RefCOCOg": 65.03,
+     "OCIDRef": 47.32
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-CLIP 13B",
+    "scores": {
+     "RefCOCO": 73.37,
+     "RefCOCO+": 68.71,
+     "RefCOCOg": 69.06,
+     "OCIDRef": 48.98
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-SigLIP 13B (Controlled)",
+    "scores": {
+     "RefCOCO": 59.21,
+     "RefCOCO+": 53.33,
+     "RefCOCOg": 54.66,
+     "OCIDRef": 40.44
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-SigLIP 13B",
+    "scores": {
+     "RefCOCO": 69.69,
+     "RefCOCO+": 64.99,
+     "RefCOCOg": 64.81,
+     "OCIDRef": 44.31
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-DINOSigLIP 13B (Controlled)",
+    "scores": {
+     "RefCOCO": 76.64,
+     "RefCOCO+": 71.41,
+     "RefCOCOg": 70.87,
+     "OCIDRef": 53.6
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-DINOSigLIP 13B",
+    "scores": {
+     "RefCOCO": 79.39,
+     "RefCOCO+": 75.55,
+     "RefCOCOg": 72.73,
+     "OCIDRef": 54.62
+    }
+   }
+  ]
+ },
+ "T4": {
+  "cols": [
+   "VSR",
+   "POPE",
+   "TallyQA",
+   "AI2D"
+  ],
+  "rows": [
+   {
+    "section": "Official Models",
+    "model": "LLaVa v1.5 7B",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 86.57,
+     "TallyQA": 62.06,
+     "AI2D": 54.1
+    }
+   },
+   {
+    "section": "Official Models",
+    "model": "LLaVa v1.5 13B",
+    "scores": {
+     "VSR": 69.07,
+     "POPE": 87.1,
+     "TallyQA": 64.83,
+     "AI2D": 57.13
+    }
+   },
+   {
+    "section": "Official Models",
+    "model": "InstructBLIP 7B",
+    "scores": {
+     "VSR": 58.92,
+     "POPE": 84.3,
+     "TallyQA": 15.51,
+     "AI2D": 32.9
+    }
+   },
+   {
+    "section": "Official Models",
+    "model": "InstructBLIP 13B",
+    "scores": {
+     "VSR": 63.91,
+     "POPE": 84.49,
+     "TallyQA": 49.73,
+     "AI2D": 35.6
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "LLaVa v1.5 7B (Reproduction)",
+    "scores": {
+     "VSR": 52.95,
+     "POPE": 86.57,
+     "TallyQA": 60.87,
+     "AI2D": 54.43
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "LLaVa v1.5 13B (Reproduction)",
+    "scores": {
+     "VSR": 65.38,
+     "POPE": 86.94,
+     "TallyQA": 64.13,
+     "AI2D": 56.81
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Single-Stage 7B",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 86.57,
+     "TallyQA": 61.63,
+     "AI2D": 54.85
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Single-Stage 13B",
+    "scores": {
+     "VSR": 70.05,
+     "POPE": 87.0,
+     "TallyQA": 63.26,
+     "AI2D": 57.25
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Frozen ViT (Single-Stage)",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 86.57,
+     "TallyQA": 61.63,
+     "AI2D": 54.85
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Finetune ViT (Multi-Stage)",
+    "scores": {
+     "VSR": 57.2,
+     "POPE": 82.7,
+     "TallyQA": 59.15,
+     "AI2D": 52.26
+    }
+   },
+   {
+    "section": "Reproduction & Optimization Procedure",
+    "model": "Finetune ViT (Single-Stage)",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 83.82,
+     "TallyQA": 59.53,
+     "AI2D": 53.52
+    }
+   },
+   {
+    "section": "Visual Representation",
+    "model": "IN1K ViT-L 224px",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 82.08,
+     "TallyQA": 52.95,
+     "AI2D": 50.01
+    }
+   },
+   {
+    "section": "Visual Representation",
+    "model": "DINOv2 ViT-L 224px",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 84.84,
+     "TallyQA": 57.12,
+     "AI2D": 51.39
+    }
+   },
+   {
+    "section": "Visual Representation",
+    "model": "CLIP ViT-L 224px",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 85.8,
+     "TallyQA": 59.09,
+     "AI2D": 53.9
+    }
+   },
+   {
+    "section": "Visual Representation",
+    "model": "SigLIP ViT-SO 224px",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 85.07,
+     "TallyQA": 63.02,
+     "AI2D": 55.35
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "CLIP ViT-L 336px (Letterbox)",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 86.57,
+     "TallyQA": 61.63,
+     "AI2D": 54.85
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "CLIP ViT-L 336px (Resize Crop)",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 85.42,
+     "TallyQA": 61.24,
+     "AI2D": 53.52
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "CLIP ViT-L 336px (Naive Resize)",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 87.01,
+     "TallyQA": 62.9,
+     "AI2D": 54.43
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "SigLIP ViT-SO 384px (Letterbox)",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 86.78,
+     "TallyQA": 64.83,
+     "AI2D": 54.84
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "SigLIP ViT-SO 384px (Resize Crop)",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 84.62,
+     "TallyQA": 62.94,
+     "AI2D": 54.51
+    }
+   },
+   {
+    "section": "Image Preprocessing",
+    "model": "SigLIP ViT-SO 384px (Naive Resize)",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 86.52,
+     "TallyQA": 65.47,
+     "AI2D": 54.89
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "CLIP 336px (Naive Resize)",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 87.01,
+     "TallyQA": 62.9,
+     "AI2D": 54.43
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "DINOv2 + CLIP 336px (Letterbox)",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 87.7,
+     "TallyQA": 63.99,
+     "AI2D": 52.07
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "DINOv2 + CLIP 336px (Naive Resize)",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 87.29,
+     "TallyQA": 65.02,
+     "AI2D": 52.52
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "SigLIP 384px (Naive Resize)",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 86.52,
+     "TallyQA": 65.47,
+     "AI2D": 54.89
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "DINOv2 + SigLIP 384px (Letterbox)",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 87.89,
+     "TallyQA": 67.19,
+     "AI2D": 55.43
+    }
+   },
+   {
+    "section": "Ensembling Visual Features",
+    "model": "DINOv2 + SigLIP 384px (Naive Resize)",
+    "scores": {
+     "VSR": 51.55,
+     "POPE": 88.3,
+     "TallyQA": 67.63,
+     "AI2D": 54.82
+    }
+   },
+   {
+    "section": "Base vs. Instruct Tuned LMs",
+    "model": "Vicuña v1.5 7B",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 86.57,
+     "TallyQA": 61.63,
+     "AI2D": 54.85
+    }
+   },
+   {
+    "section": "Base vs. Instruct Tuned LMs",
+    "model": "Vicuña v1.5 13B",
+    "scores": {
+     "VSR": 70.05,
+     "POPE": 87.0,
+     "TallyQA": 63.26,
+     "AI2D": 57.25
+    }
+   },
+   {
+    "section": "Base vs. Instruct Tuned LMs",
+    "model": "Llama-2 7B",
+    "scores": {
+     "VSR": 63.67,
+     "POPE": 86.74,
+     "TallyQA": 59.22,
+     "AI2D": 55.31
+    }
+   },
+   {
+    "section": "Base vs. Instruct Tuned LMs",
+    "model": "Llama-2 13B",
+    "scores": {
+     "VSR": 65.71,
+     "POPE": 86.91,
+     "TallyQA": 62.54,
+     "AI2D": 56.51
+    }
+   },
+   {
+    "section": "Better LMs",
+    "model": "Mistral v1 7B",
+    "scores": {
+     "VSR": 58.5,
+     "POPE": 87.1,
+     "TallyQA": 61.7,
+     "AI2D": 50.54
+    }
+   },
+   {
+    "section": "Better LMs",
+    "model": "Mistral Instruct v1 7B",
+    "scores": {
+     "VSR": 57.8,
+     "POPE": 87.5,
+     "TallyQA": 64.53,
+     "AI2D": 51.48
+    }
+   },
+   {
+    "section": "Co-training on Language Safety Data",
+    "model": "Vicuña v1.5 7B",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 86.57,
+     "TallyQA": 61.63,
+     "AI2D": 54.85
+    }
+   },
+   {
+    "section": "Co-training on Language Safety Data",
+    "model": "Vicuña v1.5 7B (No Co-training)",
+    "scores": {
+     "VSR": 53.68,
+     "POPE": 87.27,
+     "TallyQA": 62.31,
+     "AI2D": 52.74
+    }
+   },
+   {
+    "section": "Co-training on Language Safety Data",
+    "model": "Llama-2 7B",
+    "scores": {
+     "VSR": 63.67,
+     "POPE": 86.74,
+     "TallyQA": 59.22,
+     "AI2D": 55.31
+    }
+   },
+   {
+    "section": "Co-training on Language Safety Data",
+    "model": "Llama-2 7B (No Co-training)",
+    "scores": {
+     "VSR": 67.18,
+     "POPE": 86.88,
+     "TallyQA": 57.17,
+     "AI2D": 53.87
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "1 Epoch",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 86.57,
+     "TallyQA": 61.63,
+     "AI2D": 54.85
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "1.25 Epochs",
+    "scores": {
+     "VSR": 51.8,
+     "POPE": 86.8,
+     "TallyQA": 61.69,
+     "AI2D": 54.02
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "1.5 Epochs",
+    "scores": {
+     "VSR": 51.55,
+     "POPE": 87.78,
+     "TallyQA": 61.67,
+     "AI2D": 53.74
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "2 Epochs",
+    "scores": {
+     "VSR": 53.93,
+     "POPE": 87.03,
+     "TallyQA": 62.52,
+     "AI2D": 54.91
+    }
+   },
+   {
+    "section": "Scaling Train Time",
+    "model": "3 Epochs",
+    "scores": {
+     "VSR": 54.99,
+     "POPE": 86.86,
+     "TallyQA": 62.3,
+     "AI2D": 52.52
+    }
+   },
+   {
+    "section": "Scaling Data",
+    "model": "Base",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 86.57,
+     "TallyQA": 61.63,
+     "AI2D": 54.85
+    }
+   },
+   {
+    "section": "Scaling Data",
+    "model": "Base + LRV",
+    "scores": {
+     "VSR": 64.08,
+     "POPE": 86.84,
+     "TallyQA": 65.54,
+     "AI2D": 53.82
+    }
+   },
+   {
+    "section": "Scaling Data",
+    "model": "Base + LVIS-4V",
+    "scores": {
+     "VSR": 51.47,
+     "POPE": 86.98,
+     "TallyQA": 62.6,
+     "AI2D": 53.4
+    }
+   },
+   {
+    "section": "Scaling Data",
+    "model": "Base + LVIS-4V + LRV",
+    "scores": {
+     "VSR": 54.91,
+     "POPE": 87.27,
+     "TallyQA": 63.74,
+     "AI2D": 54.87
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-CLIP 7B (Controlled)",
+    "scores": {
+     "VSR": 66.61,
+     "POPE": 86.83,
+     "TallyQA": 60.86,
+     "AI2D": 55.46
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-CLIP 7B",
+    "scores": {
+     "VSR": 57.77,
+     "POPE": 87.3,
+     "TallyQA": 66.0,
+     "AI2D": 52.89
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-SigLIP 7B (Controlled)",
+    "scores": {
+     "VSR": 65.14,
+     "POPE": 87.07,
+     "TallyQA": 64.54,
+     "AI2D": 55.48
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-SigLIP 7B",
+    "scores": {
+     "VSR": 56.79,
+     "POPE": 87.3,
+     "TallyQA": 66.46,
+     "AI2D": 54.38
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-DINOSigLIP 7B (Controlled)",
+    "scores": {
+     "VSR": 66.28,
+     "POPE": 88.28,
+     "TallyQA": 65.07,
+     "AI2D": 55.51
+    }
+   },
+   {
+    "section": "Prism 7B",
+    "model": "Prism-DINOSigLIP 7B",
+    "scores": {
+     "VSR": 59.57,
+     "POPE": 88.12,
+     "TallyQA": 66.7,
+     "AI2D": 55.65
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-CLIP 13B (Controlled)",
+    "scores": {
+     "VSR": 65.96,
+     "POPE": 86.96,
+     "TallyQA": 65.71,
+     "AI2D": 56.64
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-CLIP 13B",
+    "scores": {
+     "VSR": 71.85,
+     "POPE": 87.23,
+     "TallyQA": 69.37,
+     "AI2D": 55.82
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-SigLIP 13B (Controlled)",
+    "scores": {
+     "VSR": 62.85,
+     "POPE": 86.82,
+     "TallyQA": 62.9,
+     "AI2D": 55.48
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-SigLIP 13B",
+    "scores": {
+     "VSR": 64.57,
+     "POPE": 87.5,
+     "TallyQA": 68.95,
+     "AI2D": 55.95
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-DINOSigLIP 13B (Controlled)",
+    "scores": {
+     "VSR": 71.85,
+     "POPE": 88.5,
+     "TallyQA": 66.09,
+     "AI2D": 57.72
+    }
+   },
+   {
+    "section": "Prism 13B",
+    "model": "Prism-DINOSigLIP 13B",
+    "scores": {
+     "VSR": 72.18,
+     "POPE": 88.07,
+     "TallyQA": 70.41,
+     "AI2D": 57.96
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,1601 @@
+{
+ "identity_rows": {
+  "7B 기본(CLIP 336 letterbox, Vicuna, 1 epoch)": {
+   "rows": 7,
+   "all_equal": true
+  },
+  "13B 기본": {
+   "rows": 2,
+   "all_equal": true
+  },
+  "Llama-2 7B": {
+   "rows": 2,
+   "all_equal": true
+  },
+  "CLIP 336 naive": {
+   "rows": 2,
+   "all_equal": true
+  },
+  "SigLIP 384 naive": {
+   "rows": 2,
+   "all_equal": true
+  }
+ },
+ "vsr": {
+  "always_true_acc_629_of_1222": 51.47,
+  "unique_models": 48,
+  "models_exactly_51.47": 16,
+  "models_below_55": 24,
+  "wilson95_of_baseline": [
+   48.67,
+   54.26
+  ]
+ },
+ "benchmarks": {
+  "VQAv2": {
+   "n": 214354,
+   "base_acc": 77.09,
+   "wilson95_halfwidth_pts": 0.18,
+   "mde_pts": {
+    "q=0.1": 0.19,
+    "q=0.2": 0.27,
+    "q=0.3": 0.33
+   }
+  },
+  "GQA": {
+   "n": 12578,
+   "base_acc": 62.57,
+   "wilson95_halfwidth_pts": 0.85,
+   "mde_pts": {
+    "q=0.1": 0.79,
+    "q=0.2": 1.12,
+    "q=0.3": 1.37
+   }
+  },
+  "VizWiz": {
+   "n": 4319,
+   "base_acc": 54.33,
+   "wilson95_halfwidth_pts": 1.48,
+   "mde_pts": {
+    "q=0.1": 1.35,
+    "q=0.2": 1.91,
+    "q=0.3": 2.33
+   }
+  },
+  "TextVQA": {
+   "n": 5000,
+   "base_acc": 44.45,
+   "wilson95_halfwidth_pts": 1.38,
+   "mde_pts": {
+    "q=0.1": 1.25,
+    "q=0.2": 1.77,
+    "q=0.3": 2.17
+   }
+  },
+  "RefCOCO": {
+   "n": 10834,
+   "base_acc": 64.08,
+   "wilson95_halfwidth_pts": 0.9,
+   "mde_pts": {
+    "q=0.1": 0.85,
+    "q=0.2": 1.2,
+    "q=0.3": 1.47
+   }
+  },
+  "RefCOCO+": {
+   "n": 10758,
+   "base_acc": 58.19,
+   "wilson95_halfwidth_pts": 0.93,
+   "mde_pts": {
+    "q=0.1": 0.85,
+    "q=0.2": 1.21,
+    "q=0.3": 1.48
+   }
+  },
+  "RefCOCOg": {
+   "n": 4896,
+   "base_acc": 58.03,
+   "wilson95_halfwidth_pts": 1.38,
+   "mde_pts": {
+    "q=0.1": 1.27,
+    "q=0.2": 1.79,
+    "q=0.3": 2.19
+   }
+  },
+  "OCIDRef": {
+   "n": 18342,
+   "base_acc": 44.58,
+   "wilson95_halfwidth_pts": 0.72,
+   "mde_pts": {
+    "q=0.1": 0.65,
+    "q=0.2": 0.92,
+    "q=0.3": 1.13
+   }
+  },
+  "VSR": {
+   "n": 1222,
+   "base_acc": 51.47,
+   "wilson95_halfwidth_pts": 2.8,
+   "mde_pts": {
+    "q=0.1": 2.53,
+    "q=0.2": 3.58,
+    "q=0.3": 4.39
+   }
+  },
+  "POPE": {
+   "n": 9000,
+   "base_acc": 86.57,
+   "wilson95_halfwidth_pts": 0.7,
+   "mde_pts": {
+    "q=0.1": 0.93,
+    "q=0.2": 1.32,
+    "q=0.3": 1.62
+   }
+  },
+  "TallyQA": {
+   "n": 38589,
+   "base_acc": 61.63,
+   "wilson95_halfwidth_pts": 0.49,
+   "mde_pts": {
+    "q=0.1": 0.45,
+    "q=0.2": 0.64,
+    "q=0.3": 0.78
+   }
+  },
+  "AI2D": {
+   "n": 15501,
+   "base_acc": 54.85,
+   "wilson95_halfwidth_pts": 0.78,
+   "mde_pts": {
+    "q=0.1": 0.71,
+    "q=0.2": 1.01,
+    "q=0.3": 1.23
+   }
+  }
+ },
+ "refcoco_sum_check": {
+  "sum": 26488,
+  "code_expected_examples": 26488
+ },
+ "z_pool": {
+  "unique_rows": 48,
+  "all_rows": 58,
+  "bench_sd_pts": {
+   "VQAv2": 3.69,
+   "GQA": 3.93,
+   "VizWiz": 5.84,
+   "TextVQA": 10.96,
+   "RefCOCO": 11.49,
+   "RefCOCO+": 11.49,
+   "RefCOCOg": 10.11,
+   "OCIDRef": 8.81,
+   "VSR": 7.02,
+   "POPE": 1.36,
+   "TallyQA": 7.75,
+   "AI2D": 4.41
+  }
+ },
+ "axes": {
+  "단일 단계 (그림 4)": {
+   "desc": "다단계 -> 단일 단계",
+   "n_pairs": 2,
+   "paper_p": 0.00558,
+   "mean_z_diff": 0.151,
+   "pos": 19,
+   "neg": 4,
+   "sign_p_two_sided_flat": 0.0026,
+   "loo_mean_z_sign_stable": true,
+   "mean_z_diff_without_VSR": 0.145,
+   "p_alt_gt_flat_t": 0.00101,
+   "p_alt_lt_flat_t": 0.999,
+   "p_alt_gt_welch": 0.102,
+   "p_alt_gt_flat_t_duplicates_in_pool": 0.000812,
+   "per_pair": [
+    {
+     "pair": "7B",
+     "delta_pts": {
+      "VQAv2": 0.29,
+      "GQA": 0.29,
+      "VizWiz": 3.07,
+      "TextVQA": -1.99,
+      "RefCOCO": 3.54,
+      "RefCOCO+": 3.85,
+      "RefCOCOg": 1.72,
+      "OCIDRef": 2.83,
+      "VSR": -1.48,
+      "POPE": 0.0,
+      "TallyQA": 0.76,
+      "AI2D": 0.42
+     },
+     "pos": 9,
+     "neg": 2,
+     "sign_p_two_sided": 0.0654,
+     "mean_z_diff": 0.134,
+     "n_exceed_mde_q0.2": 7
+    },
+    {
+     "pair": "13B",
+     "delta_pts": {
+      "VQAv2": 0.18,
+      "GQA": 0.26,
+      "VizWiz": 1.54,
+      "TextVQA": -0.71,
+      "RefCOCO": 4.19,
+      "RefCOCO+": 4.27,
+      "RefCOCOg": 2.31,
+      "OCIDRef": 0.41,
+      "VSR": 4.67,
+      "POPE": 0.06,
+      "TallyQA": -0.87,
+      "AI2D": 0.44
+     },
+     "pos": 10,
+     "neg": 2,
+     "sign_p_two_sided": 0.0386,
+     "mean_z_diff": 0.168,
+     "n_exceed_mde_q0.2": 5
+    }
+   ],
+   "p_alt_gt_wilcoxon": 0.00175,
+   "pair_level_mean_z": [
+    0.134,
+    0.168
+   ]
+  },
+  "시각 인코더 미동결 (그림 5)": {
+   "desc": "동결 -> 미세조정 (낮을 것)",
+   "n_pairs": 2,
+   "paper_p": 0.00381,
+   "mean_z_diff": -1.149,
+   "pos": 3,
+   "neg": 20,
+   "sign_p_two_sided_flat": 0.000488,
+   "loo_mean_z_sign_stable": true,
+   "mean_z_diff_without_VSR": -1.281,
+   "p_alt_gt_flat_t": 1.0,
+   "p_alt_lt_flat_t": 0.000114,
+   "p_alt_gt_welch": 1.0,
+   "p_alt_gt_flat_t_duplicates_in_pool": 1.0,
+   "per_pair": [
+    {
+     "pair": "단일 단계",
+     "delta_pts": {
+      "VQAv2": -3.56,
+      "GQA": -2.92,
+      "VizWiz": 0.93,
+      "TextVQA": -6.12,
+      "RefCOCO": -21.52,
+      "RefCOCO+": -20.3,
+      "RefCOCOg": -16.98,
+      "OCIDRef": -11.16,
+      "VSR": 0.0,
+      "POPE": -2.75,
+      "TallyQA": -2.1,
+      "AI2D": -1.33
+     },
+     "pos": 1,
+     "neg": 10,
+     "sign_p_two_sided": 0.0117,
+     "mean_z_diff": -0.94,
+     "n_exceed_mde_q0.2": 10
+    },
+    {
+     "pair": "다단계",
+     "delta_pts": {
+      "VQAv2": -2.44,
+      "GQA": -2.2,
+      "VizWiz": 6.01,
+      "TextVQA": -2.04,
+      "RefCOCO": -41.3,
+      "RefCOCO+": -36.86,
+      "RefCOCOg": -33.19,
+      "OCIDRef": -25.4,
+      "VSR": 4.25,
+      "POPE": -3.87,
+      "TallyQA": -1.72,
+      "AI2D": -2.17
+     },
+     "pos": 2,
+     "neg": 10,
+     "sign_p_two_sided": 0.0386,
+     "mean_z_diff": -1.358,
+     "n_exceed_mde_q0.2": 12
+    }
+   ],
+   "p_alt_gt_wilcoxon": 1.0,
+   "pair_level_mean_z": [
+    -0.94,
+    -1.358
+   ]
+  },
+  "인코더 (그림 6 왼쪽)": {
+   "desc": "IN1K/DINOv2 -> CLIP/SigLIP (224px)",
+   "n_pairs": 4,
+   "paper_p": 7.11e-08,
+   "mean_z_diff": 1.636,
+   "pos": 44,
+   "neg": 0,
+   "sign_p_two_sided_flat": 1.14e-13,
+   "loo_mean_z_sign_stable": true,
+   "mean_z_diff_without_VSR": 1.784,
+   "p_alt_gt_flat_t": 1.72e-16,
+   "p_alt_lt_flat_t": 1.0,
+   "p_alt_gt_welch": 4.64e-15,
+   "p_alt_gt_flat_t_duplicates_in_pool": 1.86e-16,
+   "per_pair": [
+    {
+     "pair": "IN1K->CLIP",
+     "delta_pts": {
+      "VQAv2": 7.06,
+      "GQA": 4.76,
+      "VizWiz": 4.91,
+      "TextVQA": 24.3,
+      "RefCOCO": 16.64,
+      "RefCOCO+": 18.29,
+      "RefCOCOg": 17.32,
+      "OCIDRef": 17.58,
+      "VSR": 0.0,
+      "POPE": 3.72,
+      "TallyQA": 6.14,
+      "AI2D": 3.89
+     },
+     "pos": 11,
+     "neg": 0,
+     "sign_p_two_sided": 0.000977,
+     "mean_z_diff": 1.444,
+     "n_exceed_mde_q0.2": 11
+    },
+    {
+     "pair": "IN1K->SigLIP",
+     "delta_pts": {
+      "VQAv2": 8.06,
+      "GQA": 5.33,
+      "VizWiz": 9.21,
+      "TextVQA": 28.19,
+      "RefCOCO": 14.7,
+      "RefCOCO+": 16.5,
+      "RefCOCOg": 17.26,
+      "OCIDRef": 17.84,
+      "VSR": 0.0,
+      "POPE": 2.99,
+      "TallyQA": 10.07,
+      "AI2D": 5.34
+     },
+     "pos": 11,
+     "neg": 0,
+     "sign_p_two_sided": 0.000977,
+     "mean_z_diff": 1.57,
+     "n_exceed_mde_q0.2": 11
+    },
+    {
+     "pair": "DINOv2->CLIP",
+     "delta_pts": {
+      "VQAv2": 9.03,
+      "GQA": 5.94,
+      "VizWiz": 6.15,
+      "TextVQA": 23.99,
+      "RefCOCO": 31.23,
+      "RefCOCO+": 32.97,
+      "RefCOCOg": 28.62,
+      "OCIDRef": 28.83,
+      "VSR": 0.0,
+      "POPE": 0.96,
+      "TallyQA": 1.97,
+      "AI2D": 2.51
+     },
+     "pos": 11,
+     "neg": 0,
+     "sign_p_two_sided": 0.000977,
+     "mean_z_diff": 1.701,
+     "n_exceed_mde_q0.2": 10
+    },
+    {
+     "pair": "DINOv2->SigLIP",
+     "delta_pts": {
+      "VQAv2": 10.03,
+      "GQA": 6.51,
+      "VizWiz": 10.45,
+      "TextVQA": 27.88,
+      "RefCOCO": 29.29,
+      "RefCOCO+": 31.18,
+      "RefCOCOg": 28.56,
+      "OCIDRef": 29.09,
+      "VSR": 0.0,
+      "POPE": 0.23,
+      "TallyQA": 5.9,
+      "AI2D": 3.96
+     },
+     "pos": 11,
+     "neg": 0,
+     "sign_p_two_sided": 0.000977,
+     "mean_z_diff": 1.827,
+     "n_exceed_mde_q0.2": 10
+    }
+   ],
+   "p_alt_gt_wilcoxon": 3.81e-09,
+   "pair_level_mean_z": [
+    1.444,
+    1.57,
+    1.701,
+    1.827
+   ],
+   "p_alt_gt_pair_level_t": 0.00014
+  },
+  "전처리 letterbox->naive (그림 6 가운데)": {
+   "desc": "letterbox -> naive resize",
+   "n_pairs": 2,
+   "paper_p": 0.0176,
+   "mean_z_diff": 0.06,
+   "pos": 15,
+   "neg": 7,
+   "sign_p_two_sided_flat": 0.134,
+   "loo_mean_z_sign_stable": true,
+   "mean_z_diff_without_VSR": 0.065,
+   "p_alt_gt_flat_t": 0.0723,
+   "p_alt_lt_flat_t": 0.928,
+   "p_alt_gt_welch": 0.303,
+   "p_alt_gt_flat_t_duplicates_in_pool": 0.0732,
+   "per_pair": [
+    {
+     "pair": "CLIP 336",
+     "delta_pts": {
+      "VQAv2": 0.77,
+      "GQA": 0.91,
+      "VizWiz": 1.7,
+      "TextVQA": 5.21,
+      "RefCOCO": 1.2,
+      "RefCOCO+": 0.6,
+      "RefCOCOg": 1.9,
+      "OCIDRef": -0.38,
+      "VSR": 0.0,
+      "POPE": 0.44,
+      "TallyQA": 1.27,
+      "AI2D": -0.42
+     },
+     "pos": 9,
+     "neg": 2,
+     "sign_p_two_sided": 0.0654,
+     "mean_z_diff": 0.158,
+     "n_exceed_mde_q0.2": 4
+    },
+    {
+     "pair": "SigLIP 384",
+     "delta_pts": {
+      "VQAv2": 0.2,
+      "GQA": 0.21,
+      "VizWiz": 0.59,
+      "TextVQA": 2.16,
+      "RefCOCO": -1.71,
+      "RefCOCO+": -0.48,
+      "RefCOCOg": -1.33,
+      "OCIDRef": -4.01,
+      "VSR": 0.0,
+      "POPE": -0.26,
+      "TallyQA": 0.64,
+      "AI2D": 0.05
+     },
+     "pos": 6,
+     "neg": 5,
+     "sign_p_two_sided": 1.0,
+     "mean_z_diff": -0.039,
+     "n_exceed_mde_q0.2": 4
+    }
+   ],
+   "p_alt_gt_wilcoxon": 0.0384,
+   "pair_level_mean_z": [
+    0.158,
+    -0.039
+   ]
+  },
+  "전처리 letterbox->naive (융합 포함, 4쌍)": {
+   "desc": "논문은 CLIP, SigLIP만 검정",
+   "n_pairs": 4,
+   "paper_p": null,
+   "mean_z_diff": 0.078,
+   "pos": 34,
+   "neg": 11,
+   "sign_p_two_sided_flat": 0.000824,
+   "loo_mean_z_sign_stable": true,
+   "mean_z_diff_without_VSR": 0.085,
+   "p_alt_gt_flat_t": 0.00162,
+   "p_alt_lt_flat_t": 0.998,
+   "p_alt_gt_welch": 0.279,
+   "p_alt_gt_flat_t_duplicates_in_pool": 0.00165,
+   "per_pair": [
+    {
+     "pair": "CLIP 336",
+     "delta_pts": {
+      "VQAv2": 0.77,
+      "GQA": 0.91,
+      "VizWiz": 1.7,
+      "TextVQA": 5.21,
+      "RefCOCO": 1.2,
+      "RefCOCO+": 0.6,
+      "RefCOCOg": 1.9,
+      "OCIDRef": -0.38,
+      "VSR": 0.0,
+      "POPE": 0.44,
+      "TallyQA": 1.27,
+      "AI2D": -0.42
+     },
+     "pos": 9,
+     "neg": 2,
+     "sign_p_two_sided": 0.0654,
+     "mean_z_diff": 0.158,
+     "n_exceed_mde_q0.2": 4
+    },
+    {
+     "pair": "SigLIP 384",
+     "delta_pts": {
+      "VQAv2": 0.2,
+      "GQA": 0.21,
+      "VizWiz": 0.59,
+      "TextVQA": 2.16,
+      "RefCOCO": -1.71,
+      "RefCOCO+": -0.48,
+      "RefCOCOg": -1.33,
+      "OCIDRef": -4.01,
+      "VSR": 0.0,
+      "POPE": -0.26,
+      "TallyQA": 0.64,
+      "AI2D": 0.05
+     },
+     "pos": 6,
+     "neg": 5,
+     "sign_p_two_sided": 1.0,
+     "mean_z_diff": -0.039,
+     "n_exceed_mde_q0.2": 4
+    },
+    {
+     "pair": "DINO+CLIP 336",
+     "delta_pts": {
+      "VQAv2": 0.24,
+      "GQA": 0.68,
+      "VizWiz": 1.43,
+      "TextVQA": 0.51,
+      "RefCOCO": -1.37,
+      "RefCOCO+": -1.07,
+      "RefCOCOg": 0.94,
+      "OCIDRef": 0.25,
+      "VSR": 0.0,
+      "POPE": -0.41,
+      "TallyQA": 1.03,
+      "AI2D": 0.45
+     },
+     "pos": 8,
+     "neg": 3,
+     "sign_p_two_sided": 0.227,
+     "mean_z_diff": 0.031,
+     "n_exceed_mde_q0.2": 2
+    },
+    {
+     "pair": "DINO+SigLIP 384",
+     "delta_pts": {
+      "VQAv2": 0.52,
+      "GQA": 0.52,
+      "VizWiz": 2.06,
+      "TextVQA": 2.07,
+      "RefCOCO": 1.76,
+      "RefCOCO+": 1.87,
+      "RefCOCOg": 3.16,
+      "OCIDRef": 2.45,
+      "VSR": 0.08,
+      "POPE": 0.41,
+      "TallyQA": 0.44,
+      "AI2D": -0.61
+     },
+     "pos": 11,
+     "neg": 1,
+     "sign_p_two_sided": 0.00635,
+     "mean_z_diff": 0.163,
+     "n_exceed_mde_q0.2": 7
+    }
+   ],
+   "p_alt_gt_wilcoxon": 0.000884,
+   "pair_level_mean_z": [
+    0.158,
+    -0.039,
+    0.031,
+    0.163
+   ],
+   "p_alt_gt_pair_level_t": 0.106
+  },
+  "전처리 letterbox->resize&crop": {
+   "desc": "크롭이 나쁘다는 논문 서술",
+   "n_pairs": 2,
+   "paper_p": null,
+   "mean_z_diff": -0.363,
+   "pos": 3,
+   "neg": 19,
+   "sign_p_two_sided_flat": 0.000855,
+   "loo_mean_z_sign_stable": true,
+   "mean_z_diff_without_VSR": -0.396,
+   "p_alt_gt_flat_t": 0.999,
+   "p_alt_lt_flat_t": 0.000825,
+   "p_alt_gt_welch": 0.992,
+   "p_alt_gt_flat_t_duplicates_in_pool": 0.999,
+   "per_pair": [
+    {
+     "pair": "CLIP 336",
+     "delta_pts": {
+      "VQAv2": -0.02,
+      "GQA": -0.28,
+      "VizWiz": 3.82,
+      "TextVQA": 4.38,
+      "RefCOCO": -9.77,
+      "RefCOCO+": -9.05,
+      "RefCOCOg": -8.6,
+      "OCIDRef": -3.76,
+      "VSR": 0.0,
+      "POPE": -1.15,
+      "TallyQA": -0.39,
+      "AI2D": -1.33
+     },
+     "pos": 2,
+     "neg": 9,
+     "sign_p_two_sided": 0.0654,
+     "mean_z_diff": -0.261,
+     "n_exceed_mde_q0.2": 7
+    },
+    {
+     "pair": "SigLIP 384",
+     "delta_pts": {
+      "VQAv2": -1.04,
+      "GQA": -1.16,
+      "VizWiz": 1.22,
+      "TextVQA": -2.3,
+      "RefCOCO": -9.8,
+      "RefCOCO+": -8.61,
+      "RefCOCOg": -7.99,
+      "OCIDRef": -6.23,
+      "VSR": 0.0,
+      "POPE": -2.16,
+      "TallyQA": -1.89,
+      "AI2D": -0.33
+     },
+     "pos": 1,
+     "neg": 10,
+     "sign_p_two_sided": 0.0117,
+     "mean_z_diff": -0.465,
+     "n_exceed_mde_q0.2": 9
+    }
+   ],
+   "p_alt_gt_wilcoxon": 0.999,
+   "pair_level_mean_z": [
+    -0.261,
+    -0.465
+   ]
+  },
+  "해상도 (그림 6 오른쪽)": {
+   "desc": "224px -> 336/384px (letterbox)",
+   "n_pairs": 2,
+   "paper_p": 0.000605,
+   "mean_z_diff": 0.412,
+   "pos": 19,
+   "neg": 3,
+   "sign_p_two_sided_flat": 0.000855,
+   "loo_mean_z_sign_stable": true,
+   "mean_z_diff_without_VSR": 0.45,
+   "p_alt_gt_flat_t": 1.03e-05,
+   "p_alt_lt_flat_t": 1.0,
+   "p_alt_gt_welch": 0.000511,
+   "p_alt_gt_flat_t_duplicates_in_pool": 1.01e-05,
+   "per_pair": [
+    {
+     "pair": "CLIP",
+     "delta_pts": {
+      "VQAv2": 1.77,
+      "GQA": 0.99,
+      "VizWiz": -0.19,
+      "TextVQA": 7.84,
+      "RefCOCO": 4.2,
+      "RefCOCO+": 4.5,
+      "RefCOCOg": 4.66,
+      "OCIDRef": 7.42,
+      "VSR": 0.0,
+      "POPE": 0.77,
+      "TallyQA": 2.54,
+      "AI2D": 0.95
+     },
+     "pos": 10,
+     "neg": 1,
+     "sign_p_two_sided": 0.0117,
+     "mean_z_diff": 0.382,
+     "n_exceed_mde_q0.2": 7
+    },
+    {
+     "pair": "SigLIP",
+     "delta_pts": {
+      "VQAv2": 2.29,
+      "GQA": 1.24,
+      "VizWiz": -1.94,
+      "TextVQA": 12.21,
+      "RefCOCO": 5.15,
+      "RefCOCO+": 4.34,
+      "RefCOCOg": 4.86,
+      "OCIDRef": 8.08,
+      "VSR": 0.0,
+      "POPE": 1.71,
+      "TallyQA": 1.81,
+      "AI2D": -0.51
+     },
+     "pos": 9,
+     "neg": 2,
+     "sign_p_two_sided": 0.0654,
+     "mean_z_diff": 0.443,
+     "n_exceed_mde_q0.2": 10
+    }
+   ],
+   "p_alt_gt_wilcoxon": 8.85e-05,
+   "pair_level_mean_z": [
+    0.382,
+    0.443
+   ]
+  },
+  "융합 DINOv2+SigLIP (그림 7 왼쪽)": {
+   "desc": "SigLIP -> DINOv2+SigLIP",
+   "n_pairs": 2,
+   "paper_p": 0.00164,
+   "mean_z_diff": 0.458,
+   "pos": 20,
+   "neg": 3,
+   "sign_p_two_sided_flat": 0.000488,
+   "loo_mean_z_sign_stable": true,
+   "mean_z_diff_without_VSR": 0.499,
+   "p_alt_gt_flat_t": 4.85e-05,
+   "p_alt_lt_flat_t": 1.0,
+   "p_alt_gt_welch": 0.00116,
+   "p_alt_gt_flat_t_duplicates_in_pool": 4.86e-05,
+   "per_pair": [
+    {
+     "pair": "naive",
+     "delta_pts": {
+      "VQAv2": 0.37,
+      "GQA": 0.73,
+      "VizWiz": 3.59,
+      "TextVQA": -2.69,
+      "RefCOCO": 12.48,
+      "RefCOCO+": 11.53,
+      "RefCOCOg": 11.01,
+      "OCIDRef": 11.33,
+      "VSR": 0.08,
+      "POPE": 1.78,
+      "TallyQA": 2.16,
+      "AI2D": -0.07
+     },
+     "pos": 10,
+     "neg": 2,
+     "sign_p_two_sided": 0.0386,
+     "mean_z_diff": 0.558,
+     "n_exceed_mde_q0.2": 9
+    },
+    {
+     "pair": "letterbox",
+     "delta_pts": {
+      "VQAv2": 0.05,
+      "GQA": 0.42,
+      "VizWiz": 2.12,
+      "TextVQA": -2.6,
+      "RefCOCO": 9.01,
+      "RefCOCO+": 9.18,
+      "RefCOCOg": 6.52,
+      "OCIDRef": 4.87,
+      "VSR": 0.0,
+      "POPE": 1.11,
+      "TallyQA": 2.36,
+      "AI2D": 0.59
+     },
+     "pos": 10,
+     "neg": 1,
+     "sign_p_two_sided": 0.0117,
+     "mean_z_diff": 0.357,
+     "n_exceed_mde_q0.2": 7
+    }
+   ],
+   "p_alt_gt_wilcoxon": 0.000166,
+   "pair_level_mean_z": [
+    0.558,
+    0.357
+   ]
+  },
+  "융합 DINOv2+CLIP (그림 7 왼쪽)": {
+   "desc": "CLIP -> DINOv2+CLIP",
+   "n_pairs": 2,
+   "paper_p": 0.37313,
+   "mean_z_diff": -0.082,
+   "pos": 14,
+   "neg": 8,
+   "sign_p_two_sided_flat": 0.286,
+   "loo_mean_z_sign_stable": false,
+   "mean_z_diff_without_VSR": -0.089,
+   "p_alt_gt_flat_t": 0.66,
+   "p_alt_lt_flat_t": 0.34,
+   "p_alt_gt_welch": 0.653,
+   "p_alt_gt_flat_t_duplicates_in_pool": 0.655,
+   "per_pair": [
+    {
+     "pair": "naive",
+     "delta_pts": {
+      "VQAv2": -1.96,
+      "GQA": 0.09,
+      "VizWiz": -0.72,
+      "TextVQA": -33.99,
+      "RefCOCO": 5.79,
+      "RefCOCO+": 5.98,
+      "RefCOCOg": 5.33,
+      "OCIDRef": 3.46,
+      "VSR": 0.0,
+      "POPE": 0.28,
+      "TallyQA": 2.12,
+      "AI2D": -1.91
+     },
+     "pos": 7,
+     "neg": 4,
+     "sign_p_two_sided": 0.549,
+     "mean_z_diff": -0.145,
+     "n_exceed_mde_q0.2": 8
+    },
+    {
+     "pair": "letterbox",
+     "delta_pts": {
+      "VQAv2": -1.43,
+      "GQA": 0.32,
+      "VizWiz": -0.45,
+      "TextVQA": -29.29,
+      "RefCOCO": 8.36,
+      "RefCOCO+": 7.65,
+      "RefCOCOg": 6.29,
+      "OCIDRef": 2.83,
+      "VSR": 0.0,
+      "POPE": 1.13,
+      "TallyQA": 2.36,
+      "AI2D": -2.78
+     },
+     "pos": 7,
+     "neg": 4,
+     "sign_p_two_sided": 0.549,
+     "mean_z_diff": -0.018,
+     "n_exceed_mde_q0.2": 8
+    }
+   ],
+   "p_alt_gt_wilcoxon": 0.204,
+   "pair_level_mean_z": [
+    -0.145,
+    -0.018
+   ]
+  },
+  "LM 지시 튜닝 -> base (그림 7 오른쪽)": {
+   "desc": "Vicuna(instruct) -> Llama-2(base)",
+   "n_pairs": 2,
+   "paper_p": 0.34854,
+   "mean_z_diff": 0.058,
+   "pos": 12,
+   "neg": 12,
+   "sign_p_two_sided_flat": 1.0,
+   "loo_mean_z_sign_stable": true,
+   "mean_z_diff_without_VSR": 0.013,
+   "p_alt_gt_flat_t": 0.241,
+   "p_alt_lt_flat_t": 0.759,
+   "p_alt_gt_welch": 0.297,
+   "p_alt_gt_flat_t_duplicates_in_pool": 0.238,
+   "per_pair": [
+    {
+     "pair": "7B",
+     "delta_pts": {
+      "VQAv2": -0.01,
+      "GQA": -0.13,
+      "VizWiz": 1.65,
+      "TextVQA": 0.47,
+      "RefCOCO": 1.16,
+      "RefCOCO+": 1.28,
+      "RefCOCOg": 0.75,
+      "OCIDRef": -0.69,
+      "VSR": 12.2,
+      "POPE": 0.17,
+      "TallyQA": -2.41,
+      "AI2D": 0.46
+     },
+     "pos": 8,
+     "neg": 4,
+     "sign_p_two_sided": 0.388,
+     "mean_z_diff": 0.18,
+     "n_exceed_mde_q0.2": 3
+    },
+    {
+     "pair": "13B",
+     "delta_pts": {
+      "VQAv2": 0.11,
+      "GQA": -0.05,
+      "VizWiz": 1.18,
+      "TextVQA": -0.43,
+      "RefCOCO": -0.45,
+      "RefCOCO+": -0.62,
+      "RefCOCOg": 0.06,
+      "OCIDRef": 0.86,
+      "VSR": -4.34,
+      "POPE": -0.09,
+      "TallyQA": -0.72,
+      "AI2D": -0.74
+     },
+     "pos": 4,
+     "neg": 8,
+     "sign_p_two_sided": 0.388,
+     "mean_z_diff": -0.063,
+     "n_exceed_mde_q0.2": 2
+    }
+   ],
+   "p_alt_gt_wilcoxon": 0.292,
+   "pair_level_mean_z": [
+    0.18,
+    -0.063
+   ]
+  },
+  "더 좋은 LM (그림 12)": {
+   "desc": "Llama-2/Vicuna -> Mistral",
+   "n_pairs": 2,
+   "paper_p": 0.03097,
+   "mean_z_diff": 0.169,
+   "pos": 18,
+   "neg": 6,
+   "sign_p_two_sided_flat": 0.0227,
+   "loo_mean_z_sign_stable": true,
+   "mean_z_diff_without_VSR": 0.177,
+   "p_alt_gt_flat_t": 0.0487,
+   "p_alt_lt_flat_t": 0.951,
+   "p_alt_gt_welch": 0.0397,
+   "p_alt_gt_flat_t_duplicates_in_pool": 0.0441,
+   "per_pair": [
+    {
+     "pair": "base",
+     "delta_pts": {
+      "VQAv2": 0.22,
+      "GQA": 0.86,
+      "VizWiz": -0.66,
+      "TextVQA": -0.52,
+      "RefCOCO": 5.86,
+      "RefCOCO+": 5.59,
+      "RefCOCOg": 4.74,
+      "OCIDRef": 4.91,
+      "VSR": -5.17,
+      "POPE": 0.36,
+      "TallyQA": 2.48,
+      "AI2D": -4.77
+     },
+     "pos": 8,
+     "neg": 4,
+     "sign_p_two_sided": 0.388,
+     "mean_z_diff": 0.076,
+     "n_exceed_mde_q0.2": 7
+    },
+    {
+     "pair": "instruct",
+     "delta_pts": {
+      "VQAv2": 0.04,
+      "GQA": 0.14,
+      "VizWiz": 0.02,
+      "TextVQA": -0.35,
+      "RefCOCO": 6.51,
+      "RefCOCO+": 6.71,
+      "RefCOCOg": 4.0,
+      "OCIDRef": 3.42,
+      "VSR": 6.33,
+      "POPE": 0.93,
+      "TallyQA": 2.9,
+      "AI2D": -3.37
+     },
+     "pos": 10,
+     "neg": 2,
+     "sign_p_two_sided": 0.0386,
+     "mean_z_diff": 0.262,
+     "n_exceed_mde_q0.2": 7
+    }
+   ],
+   "p_alt_gt_wilcoxon": 0.0263,
+   "pair_level_mean_z": [
+    0.076,
+    0.262
+   ]
+  },
+  "언어 전용 공동 학습 제거 (그림 8)": {
+   "desc": "공동 학습 -> 제거",
+   "n_pairs": 2,
+   "paper_p": 0.13655,
+   "mean_z_diff": -0.148,
+   "pos": 10,
+   "neg": 14,
+   "sign_p_two_sided_flat": 0.541,
+   "loo_mean_z_sign_stable": false,
+   "mean_z_diff_without_VSR": -0.198,
+   "p_alt_gt_flat_t": 0.887,
+   "p_alt_lt_flat_t": 0.113,
+   "p_alt_gt_welch": 0.851,
+   "p_alt_gt_flat_t_duplicates_in_pool": 0.893,
+   "per_pair": [
+    {
+     "pair": "Vicuna",
+     "delta_pts": {
+      "VQAv2": -0.01,
+      "GQA": 0.33,
+      "VizWiz": -9.52,
+      "TextVQA": 0.1,
+      "RefCOCO": -0.14,
+      "RefCOCO+": -0.68,
+      "RefCOCOg": -0.15,
+      "OCIDRef": -0.47,
+      "VSR": 2.21,
+      "POPE": 0.7,
+      "TallyQA": 0.68,
+      "AI2D": -2.11
+     },
+     "pos": 5,
+     "neg": 7,
+     "sign_p_two_sided": 0.774,
+     "mean_z_diff": -0.104,
+     "n_exceed_mde_q0.2": 3
+    },
+    {
+     "pair": "Llama-2",
+     "delta_pts": {
+      "VQAv2": 0.02,
+      "GQA": 0.5,
+      "VizWiz": -12.38,
+      "TextVQA": 0.53,
+      "RefCOCO": -0.98,
+      "RefCOCO+": -0.17,
+      "RefCOCOg": -0.79,
+      "OCIDRef": -1.72,
+      "VSR": 3.51,
+      "POPE": 0.14,
+      "TallyQA": -2.05,
+      "AI2D": -1.44
+     },
+     "pos": 5,
+     "neg": 7,
+     "sign_p_two_sided": 0.774,
+     "mean_z_diff": -0.192,
+     "n_exceed_mde_q0.2": 4
+    }
+   ],
+   "p_alt_gt_wilcoxon": 0.755,
+   "pair_level_mean_z": [
+    -0.104,
+    -0.192
+   ]
+  },
+  "학습 시간 1->2 epoch (그림 10)": {
+   "desc": "1 epoch -> 2 epochs",
+   "n_pairs": 1,
+   "paper_p": 0.00496,
+   "mean_z_diff": 0.293,
+   "pos": 12,
+   "neg": 0,
+   "sign_p_two_sided_flat": 0.000488,
+   "loo_mean_z_sign_stable": true,
+   "mean_z_diff_without_VSR": 0.287,
+   "p_alt_gt_flat_t": 0.000203,
+   "p_alt_lt_flat_t": 1.0,
+   "p_alt_gt_welch": 0.0156,
+   "p_alt_gt_flat_t_duplicates_in_pool": 0.000219,
+   "per_pair": [
+    {
+     "pair": "7B",
+     "delta_pts": {
+      "VQAv2": 0.7,
+      "GQA": 0.93,
+      "VizWiz": 0.87,
+      "TextVQA": 1.63,
+      "RefCOCO": 7.15,
+      "RefCOCO+": 7.21,
+      "RefCOCOg": 5.29,
+      "OCIDRef": 1.74,
+      "VSR": 2.46,
+      "POPE": 0.46,
+      "TallyQA": 0.89,
+      "AI2D": 0.06
+     },
+     "pos": 12,
+     "neg": 0,
+     "sign_p_two_sided": 0.000488,
+     "mean_z_diff": 0.293,
+     "n_exceed_mde_q0.2": 6
+    }
+   ],
+   "p_alt_gt_wilcoxon": 0.000244,
+   "pair_level_mean_z": [
+    0.293
+   ]
+  },
+  "학습 시간 2->3 epoch": {
+   "desc": "논문은 2 epoch에서 포화라고 씀",
+   "n_pairs": 1,
+   "paper_p": null,
+   "mean_z_diff": -0.04,
+   "pos": 5,
+   "neg": 7,
+   "sign_p_two_sided_flat": 0.774,
+   "loo_mean_z_sign_stable": false,
+   "mean_z_diff_without_VSR": -0.058,
+   "p_alt_gt_flat_t": 0.757,
+   "p_alt_lt_flat_t": 0.243,
+   "p_alt_gt_welch": 0.615,
+   "p_alt_gt_flat_t_duplicates_in_pool": 0.763,
+   "per_pair": [
+    {
+     "pair": "7B",
+     "delta_pts": {
+      "VQAv2": -0.62,
+      "GQA": -0.54,
+      "VizWiz": 1.0,
+      "TextVQA": -0.39,
+      "RefCOCO": 0.56,
+      "RefCOCO+": 1.54,
+      "RefCOCOg": 0.55,
+      "OCIDRef": -0.07,
+      "VSR": 1.06,
+      "POPE": -0.17,
+      "TallyQA": -0.22,
+      "AI2D": -2.39
+     },
+     "pos": 5,
+     "neg": 7,
+     "sign_p_two_sided": 0.774,
+     "mean_z_diff": -0.04,
+     "n_exceed_mde_q0.2": 3
+    }
+   ],
+   "p_alt_gt_wilcoxon": 0.604,
+   "pair_level_mean_z": [
+    -0.04
+   ]
+  },
+  "데이터 추가 (그림 10)": {
+   "desc": "기본 -> +LVIS-4V+LRV",
+   "n_pairs": 1,
+   "paper_p": 0.01459,
+   "mean_z_diff": 0.204,
+   "pos": 11,
+   "neg": 1,
+   "sign_p_two_sided_flat": 0.00635,
+   "loo_mean_z_sign_stable": true,
+   "mean_z_diff_without_VSR": 0.178,
+   "p_alt_gt_flat_t": 0.00194,
+   "p_alt_lt_flat_t": 0.998,
+   "p_alt_gt_welch": 0.0422,
+   "p_alt_gt_flat_t_duplicates_in_pool": 0.00182,
+   "per_pair": [
+    {
+     "pair": "7B",
+     "delta_pts": {
+      "VQAv2": 1.24,
+      "GQA": 1.03,
+      "VizWiz": 1.68,
+      "TextVQA": 2.41,
+      "RefCOCO": 0.86,
+      "RefCOCO+": 0.72,
+      "RefCOCOg": 0.16,
+      "OCIDRef": -0.85,
+      "VSR": 3.44,
+      "POPE": 0.7,
+      "TallyQA": 2.11,
+      "AI2D": 0.02
+     },
+     "pos": 11,
+     "neg": 1,
+     "sign_p_two_sided": 0.00635,
+     "mean_z_diff": 0.204,
+     "n_exceed_mde_q0.2": 3
+    }
+   ],
+   "p_alt_gt_wilcoxon": 0.00244,
+   "pair_level_mean_z": [
+    0.204
+   ]
+  }
+ },
+ "noise_floor_official_vs_repro": {
+  "7B": {
+   "delta_pts": {
+    "VQAv2": 0.26,
+    "GQA": 0.7,
+    "VizWiz": -2.98,
+    "TextVQA": 0.31,
+    "RefCOCO": 5.42,
+    "RefCOCO+": 4.87,
+    "RefCOCOg": 5.39,
+    "OCIDRef": 6.68,
+    "VSR": 1.48,
+    "POPE": 0.0,
+    "TallyQA": -1.19,
+    "AI2D": 0.33
+   },
+   "delta_in_se_q0.2": {
+    "VQAv2": 2.7,
+    "GQA": 1.8,
+    "VizWiz": -4.4,
+    "TextVQA": 0.5,
+    "RefCOCO": 12.6,
+    "RefCOCO+": 11.3,
+    "RefCOCOg": 8.4,
+    "OCIDRef": 20.2,
+    "VSR": 1.2,
+    "POPE": 0.0,
+    "TallyQA": -5.2,
+    "AI2D": 0.9
+   },
+   "rms_pts": 3.42,
+   "n_beyond_mde_q0.2": 6,
+   "mean_z_diff": 0.174,
+   "sd_z_diff": 0.34,
+   "abs_mean_z_diff_by_bench": {
+    "VQAv2": 0.07,
+    "GQA": 0.18,
+    "VizWiz": 0.51,
+    "TextVQA": 0.03,
+    "RefCOCO": 0.47,
+    "RefCOCO+": 0.42,
+    "RefCOCOg": 0.53,
+    "OCIDRef": 0.76,
+    "VSR": 0.21,
+    "POPE": 0.0,
+    "TallyQA": 0.15,
+    "AI2D": 0.07
+   }
+  },
+  "13B": {
+   "delta_pts": {
+    "VQAv2": -0.35,
+    "GQA": -0.26,
+    "VizWiz": -1.83,
+    "TextVQA": -0.25,
+    "RefCOCO": -1.96,
+    "RefCOCO+": -2.04,
+    "RefCOCOg": -1.52,
+    "OCIDRef": -1.08,
+    "VSR": -3.69,
+    "POPE": -0.16,
+    "TallyQA": -0.7,
+    "AI2D": -0.32
+   },
+   "delta_in_se_q0.2": {
+    "VQAv2": -3.6,
+    "GQA": -0.7,
+    "VizWiz": -2.7,
+    "TextVQA": -0.4,
+    "RefCOCO": -4.6,
+    "RefCOCO+": -4.7,
+    "RefCOCOg": -2.4,
+    "OCIDRef": -3.3,
+    "VSR": -2.9,
+    "POPE": -0.3,
+    "TallyQA": -3.1,
+    "AI2D": -0.9
+   },
+   "rms_pts": 1.56,
+   "n_beyond_mde_q0.2": 6,
+   "mean_z_diff": -0.16,
+   "sd_z_diff": 0.137,
+   "abs_mean_z_diff_by_bench": {
+    "VQAv2": 0.09,
+    "GQA": 0.07,
+    "VizWiz": 0.31,
+    "TextVQA": 0.02,
+    "RefCOCO": 0.17,
+    "RefCOCO+": 0.18,
+    "RefCOCOg": 0.15,
+    "OCIDRef": 0.12,
+    "VSR": 0.53,
+    "POPE": 0.12,
+    "TallyQA": 0.09,
+    "AI2D": 0.07
+   }
+  }
+ },
+ "mc_false_positive_rate_alpha0.01": {
+  "k=1,tau=0.0": 0.0033,
+  "k=1,tau=0.05": 0.0881,
+  "k=1,tau=0.1": 0.2061,
+  "k=1,tau=0.2": 0.3332,
+  "k=1,tau=0.3": 0.3765,
+  "k=2,tau=0.0": 0.006,
+  "k=2,tau=0.05": 0.08,
+  "k=2,tau=0.1": 0.186,
+  "k=2,tau=0.2": 0.2654,
+  "k=2,tau=0.3": 0.304,
+  "k=4,tau=0.0": 0.0067,
+  "k=4,tau=0.05": 0.0737,
+  "k=4,tau=0.1": 0.1659,
+  "k=4,tau=0.2": 0.2379,
+  "k=4,tau=0.3": 0.2614
+ },
+ "mc_sig_ind_z": {
+  "VQAv2": 0.0261,
+  "GQA": 0.1014,
+  "VizWiz": 0.1166,
+  "TextVQA": 0.0577,
+  "RefCOCO": 0.0374,
+  "RefCOCO+": 0.0375,
+  "RefCOCOg": 0.0632,
+  "OCIDRef": 0.0375,
+  "VSR": 0.1822,
+  "POPE": 0.3461,
+  "TallyQA": 0.0294,
+  "AI2D": 0.0815
+ },
+ "tokens": {
+  "CLIP-L/14 224": 256,
+  "CLIP-L/14 336": 576,
+  "SigLIP-SO/14 224": 256,
+  "SigLIP-SO/14 384": 729,
+  "IN1K ViT-L/16 224": 196,
+  "fused 224": 256,
+  "fused 384": 729
+ },
+ "projector_params": {
+  "Llama-2 7B": {
+   "CLIP-L (1024) 2층 MLP": 20979712,
+   "SigLIP-SO (1152) 2층 MLP": 21504000,
+   "DINOv2+SigLIP (2176) 논문 서술대로 2층 MLP": 25698304,
+   "DINOv2+SigLIP (2176) 코드의 FusedMLPProjector 3층": 71385600,
+   "DINOv2+CLIP (2048) 코드 3층": 67125248
+  },
+  "Llama-2 13B": {
+   "CLIP-L (1024) 2층 MLP": 31467520,
+   "SigLIP-SO (1152) 2층 MLP": 32122880,
+   "DINOv2+SigLIP (2176) 논문 서술대로 2층 MLP": 37365760,
+   "DINOv2+SigLIP (2176) 코드의 FusedMLPProjector 3층": 89737728,
+   "DINOv2+CLIP (2048) 코드 3층": 84953088
+  }
+ },
+ "vit_params_analytic": {
+  "ViT-L/14": 302912512,
+  "ViT-SO400M/14": 412145136
+ },
+ "llm_flops_ratio_when_patches_x4_7B": {
+  "T=100,V0=256": 3.25,
+  "T=100,V0=576": 3.79,
+  "T=100,V0=729": 3.94,
+  "T=300,V0=256": 2.45,
+  "T=300,V0=576": 3.17,
+  "T=300,V0=729": 3.38,
+  "T=600,V0=256": 1.95,
+  "T=600,V0=576": 2.63,
+  "T=600,V0=729": 2.86
+ },
+ "attention_only_ratio_when_tokens_x4": 16,
+ "train_hours_8xA100_665k_1epoch": {
+  "CLIP 336 (576),T=150,MFU=0.3": {
+   "no_ckpt_h": 7.3,
+   "with_ckpt_h": 9.7
+  },
+  "CLIP 336 (576),T=150,MFU=0.4": {
+   "no_ckpt_h": 5.5,
+   "with_ckpt_h": 7.3
+  },
+  "CLIP 336 (576),T=150,MFU=0.5": {
+   "no_ckpt_h": 4.4,
+   "with_ckpt_h": 5.8
+  },
+  "CLIP 336 (576),T=300,MFU=0.3": {
+   "no_ckpt_h": 8.8,
+   "with_ckpt_h": 11.7
+  },
+  "CLIP 336 (576),T=300,MFU=0.4": {
+   "no_ckpt_h": 6.6,
+   "with_ckpt_h": 8.8
+  },
+  "CLIP 336 (576),T=300,MFU=0.5": {
+   "no_ckpt_h": 5.3,
+   "with_ckpt_h": 7.0
+  },
+  "CLIP 336 (576),T=450,MFU=0.3": {
+   "no_ckpt_h": 10.3,
+   "with_ckpt_h": 13.7
+  },
+  "CLIP 336 (576),T=450,MFU=0.4": {
+   "no_ckpt_h": 7.7,
+   "with_ckpt_h": 10.3
+  },
+  "CLIP 336 (576),T=450,MFU=0.5": {
+   "no_ckpt_h": 6.2,
+   "with_ckpt_h": 8.2
+  },
+  "DINOSigLIP 384 (729),T=150,MFU=0.3": {
+   "no_ckpt_h": 9.0,
+   "with_ckpt_h": 11.9
+  },
+  "DINOSigLIP 384 (729),T=150,MFU=0.4": {
+   "no_ckpt_h": 6.8,
+   "with_ckpt_h": 9.0
+  },
+  "DINOSigLIP 384 (729),T=150,MFU=0.5": {
+   "no_ckpt_h": 5.4,
+   "with_ckpt_h": 7.2
+  },
+  "DINOSigLIP 384 (729),T=300,MFU=0.3": {
+   "no_ckpt_h": 10.5,
+   "with_ckpt_h": 13.9
+  },
+  "DINOSigLIP 384 (729),T=300,MFU=0.4": {
+   "no_ckpt_h": 7.9,
+   "with_ckpt_h": 10.5
+  },
+  "DINOSigLIP 384 (729),T=300,MFU=0.5": {
+   "no_ckpt_h": 6.3,
+   "with_ckpt_h": 8.4
+  },
+  "DINOSigLIP 384 (729),T=450,MFU=0.3": {
+   "no_ckpt_h": 12.0,
+   "with_ckpt_h": 15.9
+  },
+  "DINOSigLIP 384 (729),T=450,MFU=0.4": {
+   "no_ckpt_h": 9.0,
+   "with_ckpt_h": 12.0
+  },
+  "DINOSigLIP 384 (729),T=450,MFU=0.5": {
+   "no_ckpt_h": 7.2,
+   "with_ckpt_h": 9.6
+  }
+ },
+ "single_stage_saving_check": {
+  "saving=0.2": {
+   "implied_cost_ratio_c1_over_c2": 0.298,
+   "implied_stage2_seq_len_if_V=576,T1=20": 1334.0
+  },
+  "saving=0.25": {
+   "implied_cost_ratio_c1_over_c2": 0.397,
+   "implied_stage2_seq_len_if_V=576,T1=20": 1000.0
+  },
+  "equal_cost_saving": 0.456
+ },
+ "steps_check": {
+  "665_298_samples_over_128": 5197.6,
+  "1.25_epochs": 6497.0,
+  "1.5_epochs": 7796.0,
+  "code_max_steps": [
+   6500,
+   7800
+  ]
+ },
+ "openvla_224_vs_384": {
+  "visual_tokens_224": 256,
+  "visual_tokens_384": 729,
+  "llm_gflops_per_forward_7B_prompt20": {
+   "256": 3760.0,
+   "729": 10391.0
+  },
+  "ratio_384_over_224": 2.76
+ },
+ "siglip_minus_clip_prism": {
+  "7B controlled": {
+   "TextVQA": 5.48,
+   "RefCOCO": -1.68,
+   "OCIDRef": -0.49,
+   "VizWiz": 2.89
+  },
+  "7B": {
+   "TextVQA": 6.89,
+   "RefCOCO": -1.06,
+   "OCIDRef": 3.43,
+   "VizWiz": 0.36
+  },
+  "13B controlled": {
+   "TextVQA": -1.61,
+   "RefCOCO": -11.71,
+   "OCIDRef": -6.88,
+   "VizWiz": 0.2
+  },
+  "13B": {
+   "TextVQA": 0.88,
+   "RefCOCO": -3.68,
+   "OCIDRef": -4.67,
+   "VizWiz": 1.16
+  }
+ },
+ "fusion_gain_by_group_pts": {
+  "SigLIP384 naive -> DINO+SigLIP naive": {
+   "VQA(4)": 0.5,
+   "위치 지정(4)": 11.59,
+   "도전 집합(4)": 0.99,
+   "TextVQA": -2.69
+  },
+  "SigLIP384 letterbox -> DINO+SigLIP letterbox": {
+   "VQA(4)": -0.0,
+   "위치 지정(4)": 7.39,
+   "도전 집합(4)": 1.01,
+   "TextVQA": -2.6
+  },
+  "CLIP336 naive -> DINO+CLIP naive": {
+   "VQA(4)": -9.14,
+   "위치 지정(4)": 5.14,
+   "도전 집합(4)": 0.12,
+   "TextVQA": -33.99
+  }
+ },
+ "prism_vs_official_losses": {
+  "Prism-CLIP 7B (Controlled)": {
+   "loses_to_official_LLaVA": [
+    "TallyQA"
+   ],
+   "loses_to_InstructBLIP": []
+  },
+  "Prism-CLIP 7B": {
+   "loses_to_official_LLaVA": [
+    "VizWiz",
+    "AI2D"
+   ],
+   "loses_to_InstructBLIP": [
+    "VSR"
+   ]
+  },
+  "Prism-SigLIP 7B (Controlled)": {
+   "loses_to_official_LLaVA": [],
+   "loses_to_InstructBLIP": []
+  },
+  "Prism-SigLIP 7B": {
+   "loses_to_official_LLaVA": [
+    "VizWiz"
+   ],
+   "loses_to_InstructBLIP": [
+    "VSR"
+   ]
+  },
+  "Prism-DINOSigLIP 7B (Controlled)": {
+   "loses_to_official_LLaVA": [],
+   "loses_to_InstructBLIP": []
+  },
+  "Prism-DINOSigLIP 7B": {
+   "loses_to_official_LLaVA": [
+    "VizWiz"
+   ],
+   "loses_to_InstructBLIP": []
+  },
+  "Prism-CLIP 13B (Controlled)": {
+   "loses_to_official_LLaVA": [
+    "VSR",
+    "POPE",
+    "AI2D"
+   ],
+   "loses_to_InstructBLIP": []
+  },
+  "Prism-CLIP 13B": {
+   "loses_to_official_LLaVA": [
+    "VizWiz",
+    "AI2D"
+   ],
+   "loses_to_InstructBLIP": []
+  },
+  "Prism-SigLIP 13B (Controlled)": {
+   "loses_to_official_LLaVA": [
+    "RefCOCO",
+    "RefCOCO+",
+    "RefCOCOg",
+    "OCIDRef",
+    "VSR",
+    "POPE",
+    "TallyQA",
+    "AI2D"
+   ],
+   "loses_to_InstructBLIP": [
+    "VSR"
+   ]
+  },
+  "Prism-SigLIP 13B": {
+   "loses_to_official_LLaVA": [
+    "OCIDRef",
+    "VSR",
+    "AI2D"
+   ],
+   "loses_to_InstructBLIP": []
+  },
+  "Prism-DINOSigLIP 13B (Controlled)": {
+   "loses_to_official_LLaVA": [
+    "VizWiz"
+   ],
+   "loses_to_InstructBLIP": []
+  },
+  "Prism-DINOSigLIP 13B": {
+   "loses_to_official_LLaVA": [],
+   "loses_to_InstructBLIP": []
+  }
+ }
+}

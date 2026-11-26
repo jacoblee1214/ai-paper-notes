@@ -2,9 +2,9 @@
 
 AI·ML 논문(모델 구조, 학습, 추론 효율, 멀티모달, 비전, 생성 모델, 에이전트, 평가, 해석 가능성)을 깊게 읽고, 공개된 수치를 재계산하거나 코드와 대조하며 정리한 노트입니다. 로봇 학습 논문은 [paper-notes](https://github.com/jacoblee1214/paper-notes)에 있습니다.
 
-학회별로 묶었습니다(37편). 학회는 arXiv Comments·Journal ref, 원문, 프로젝트 페이지의 표기를 따랐고 각 글 머리말의 `venue`(묶음)와 `venue_note`(근거)에 적었습니다. 묶음 안에서는 날짜 역순입니다.
+학회별로 묶었습니다(38편). 학회는 arXiv Comments·Journal ref, 원문, 프로젝트 페이지의 표기를 따랐고 각 글 머리말의 `venue`(묶음)와 `venue_note`(근거)에 적었습니다. 묶음 안에서는 날짜 역순입니다.
 
-ICLR 2026 (3) · ICLR 2026 워크숍 (1) · ICML 2026 (1) · ICML 2026 워크숍 (1) · ICSE 2026 (1) · NeurIPS 2025 (3) · ICLR 2025 (1) · ICML 2025 (1) · TMLR 2025 (1) · IJCNLP-AACL 2025 워크숍 (1) · ICLR 2024 (7) · ACL 2024 Findings (1) · NeurIPS 2024 (1) · TACL 2024 (1) · NeurIPS 2023 (2) · NeurIPS 2022 (1) · NeurIPS 2021 (1) · EMNLP 2020 (1) · 학회 표기 없음 (arXiv) (5) · 기술 보고서·블로그 (3)
+ICLR 2026 (3) · ICLR 2026 워크숍 (1) · ICML 2026 (1) · ICML 2026 워크숍 (1) · ICSE 2026 (1) · NeurIPS 2025 (3) · ICLR 2025 (1) · ICML 2025 (1) · TMLR 2025 (1) · IJCNLP-AACL 2025 워크숍 (1) · ICLR 2024 (7) · ACL 2024 Findings (1) · ICML 2024 (1) · NeurIPS 2024 (1) · TACL 2024 (1) · NeurIPS 2023 (2) · NeurIPS 2022 (1) · NeurIPS 2021 (1) · EMNLP 2020 (1) · 학회 표기 없음 (arXiv) (5) · 기술 보고서·블로그 (3)
 
 ## ICLR 2026 (3)
 
@@ -87,6 +87,12 @@ ICLR 2026 (3) · ICLR 2026 워크숍 (1) · ICML 2026 (1) · ICML 2026 워크숍
 | 날짜 | 글 | 요약 |
 |---|---|---|
 | 2026-11-22 | [LLM은 오류 위치를 못 찾지만, 위치를 주면 고친다](papers/error_location_correction/) | 추론 추적에서 첫 논리 오류를 찾는 능력은 낮지만, 위치를 알려 주면 수정 정답률이 오른다는 결과를 공개 원자료로 재계산해 확인했습니다. 몇 가지 표의 불일치도 적었습니다. |
+
+## ICML 2024 (1)
+
+| 날짜 | 글 | 요약 |
+|---|---|---|
+| 2026-11-26 | [Prismatic VLMs 분석: VLM 설계 결론은 얼마나 믿을 수 있나](papers/prismatic_vlms/) | 인코더, 해상도, 전처리, 학습 단계, LM을 통제해 비교한 VLM 설계 논문의 부록 표 58행을 다시 계산했습니다. 큰 효과는 믿을 만하지만 작은 효과는 단일 실행의 변동과 구분되지 않고, 본문 문장 두 개와 공식 코드 일부가 표와 다릅니다. |
 
 ## NeurIPS 2024 (1)
 
