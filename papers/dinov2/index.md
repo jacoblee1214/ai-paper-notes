@@ -47,6 +47,23 @@ DINOv2(Oquab 외, TMLR 2024)는 새 부품보다 **조합**이 기여입니다. 
 
 한계: 이 결과는 작은 코사인 머리, 짧은 학습, 합성 과제의 것입니다. "중심화 + 날카롭게 하기만으로는 특징 차원 붕괴를 못 막는다"를 ImageNet 규모의 DINO 결과에 대한 반박으로 읽을 수 없습니다. iBOT 손실의 소거는 하지 않았습니다.
 
+## 공개 가중치로 잰 고노름 토큰
+
+Registers 논문(Darcet 외)이 보고한 "큰 ViT의 배경 패치에 노름이 큰 토큰이 생긴다"를 공개 가중치에서 직접 쟀습니다. MMVP-VLM 이미지 270장(224×224, 패치 256개/장), 마지막 층 출력(최종 정규화 앞)의 패치 토큰 노름, 임계값은 로그 히스토그램의 골에 맞춘 중앙값의 3배입니다.
+
+| 모델 | 최대/중앙값 | 3배 초과 비율 |
+|---|---|---|
+| DINOv2 ViT-S/14 | 1.42 | 0 |
+| DINOv2 ViT-S/14 + register 4 | 1.52 | 0 |
+| CLIP ViT-L/14 (OpenAI) | 9.95 | 1.09% |
+
+![고노름 토큰 측정](images/own_high_norm_tokens.png)
+
+- CLIP ViT-L/14에는 뚜렷한 고노름 토큰이 있습니다. 층 12(24층 중)에서 갑자기 생기고, 픽셀 분산이 낮은 패치에 몰리며(이미지 내 백분위 0.22), CLS attention 질량의 40.6%를 받습니다(1.09% 토큰). 비율은 Darcet의 약 2%보다 작지만 모델과 정의가 달라 직접 비교하지 않습니다.
+- DINOv2 ViT-S/14는 원본과 register 변형 모두 없습니다. "ViT-L 이상에서만"과 일치하지만, **S 규모에서는 register가 artifact를 없애는지 시험할 수 없습니다.** DINOv2 L/14 쌍이 필요합니다(미측정). register 변형의 register 4개 중 하나의 노름이 패치 중앙값의 2.7배였습니다.
+- 최종 정규화를 거친 뒤에 재면 CLIP의 차이도 사라집니다(최대/중앙값 1.06): 고노름은 정규화 앞의 잔차 흐름 현상입니다.
+- 한계: 이미지 270장, 해상도 224 한 가지, 모델당 가중치 한 벌입니다. SigLIP은 재지 않았습니다.
+
 ## 논문 표 재계산과 주장 검증
 
 - **OpenCLIP-G 대비 승수.** DINOv2 ViT-g는 인스턴스·밀집 23/23, 이미지 수준 18/26이고, 증류 ViT-L은 23/23과 14/26입니다. ImageNet 선형 86.5 대 86.2의 +0.3%p는 5만 장 표본 오차의 경계입니다.
@@ -59,7 +76,7 @@ DINOv2(Oquab 외, TMLR 2024)는 새 부품보다 **조합**이 기여입니다. 
 
 ## 파일
 
-`minimal_impl.py`(최소 구현), `test_minimal_impl.py`(29개 테스트), `formula_checks.py`(재계산), `toy_experiment.py`(토이), `04_claim_verification.md`(주장 C1–C12와 코드 대조 D1–D14)가 함께 있습니다.
+`minimal_impl.py`(최소 구현), `test_minimal_impl.py`(29개 테스트), `formula_checks.py`(재계산), `toy_experiment.py`(토이), `high_norm_tokens.py`(고노름 토큰 측정), `04_claim_verification.md`(주장 C1–C12와 코드 대조 D1–D14)가 함께 있습니다.
 
 ## 자료
 

@@ -7,6 +7,7 @@
 - **표 재계산**: OpenCLIP-G 대비 DINOv2 ViT-g는 인스턴스·밀집 23/23, 이미지 수준 18/26에서 앞서고, 증류 ViT-L은 이미지 수준 14/26입니다. 표 1의 SK 행은 k-NN, 선형 모두 변화가 없습니다. 표 14 탄소 산술은 일치하고 "10배"는 OpenCLIP-G(12.3배)에만 맞습니다.
 - **식 검산**: 교차 엔트로피 = 교사 엔트로피 + KL, 중심화·날카롭게 하기가 서로 반대 방향의 붕괴를 막는 원리와 교사 엔트로피 근사(log K − s²/2τ²), Sinkhorn-Knopp 반복 수와 열 합 오차, KoLeo = Kozachenko-Leonenko 엔트로피 추정량의 아핀 변환, EMA 닫힌 꼴.
 - **토이**(합성 도형 6종, 시드 5개, 논문 재현 아님): 결과는 `analysis/03_analysis.md` §5와 블로그 글에 있습니다.
+- **고노름 토큰**(MMVP-VLM 270장, 마지막 층 출력 노름): CLIP ViT-L/14는 중앙값 3배 초과 토큰 1.09%, 최대/중앙값 9.95로 뚜렷하고, DINOv2 ViT-S/14는 원본과 register 변형 모두 0개라 S 규모에서는 register 효과를 시험할 수 없습니다(`analysis/03_analysis.md` §7).
 - **코드 대조**: 논문 공백(교사 온도, 마스크, 머리 구조)을 코드로 보충했고, KoLeo가 두 전역 크롭에 합산되는 차이와 표 17의 ViT-B 블록 수 오기, 증류·데이터 정제 코드 비공개를 확인했습니다.
 
 | 경로 | 내용 |
@@ -19,7 +20,8 @@
 | `analysis/test_minimal_impl.py` | pytest 29개 (약 3초, CPU) |
 | `analysis/formula_checks.py`, `formula_results.json` | 표 재계산, 식 유도의 수치 검산 |
 | `analysis/toy_experiment.py`, `toy_results.json` | 합성 도형 토이: 7개 조건 x 시드 5개 (MPS) |
-| `analysis/plot_figures.py`, `figures/` | 우리가 그린 그래프 세 장 |
+| `analysis/high_norm_tokens.py`, `high_norm_tokens_results.json` | 고노름 토큰 측정: DINOv2 ViT-S/14(원본, register 4개), CLIP ViT-L/14 (CPU 약 6분) |
+| `analysis/plot_figures.py`, `figures/` | 우리가 그린 그래프 네 장 |
 
 ## 재실행
 
@@ -30,10 +32,13 @@ cd analysis
 python3 formula_checks.py       # 수 초
 python3 toy_experiment.py       # 7개 조건 x 시드 5개 (MPS, 수십 분. CPU면 훨씬 오래 걸림)
 python3 plot_figures.py
+# 고노름 토큰: HF 캐시에 가중치(facebook/dinov2-small, facebook/dinov2-with-registers-small, openai/clip-vit-large-patch14)와
+# MMVP/MMVP_VLM 데이터셋 images/ 를 받아 둔 뒤
+HF_HUB_OFFLINE=1 python3 high_norm_tokens.py --images <MMVP_VLM 폴더>
 ```
 
 ## 출처와 라이선스
 
 - 논문은 arXiv 비독점 배포 라이선스(CC가 아님)이므로 논문 그림은 넣지 않았고, 그래프는 모두 직접 그렸습니다.
 - 공식 코드 `github.com/facebookresearch/dinov2`는 Apache-2.0이며 이 저장소에 넣지 않았고 실행하지 않았습니다.
-- 가중치와 데이터셋은 받지 않았습니다. 토이 데이터는 코드가 직접 만든 합성 이미지입니다.
+- 토이 데이터는 코드가 직접 만든 합성 이미지입니다. 고노름 토큰 측정은 공개 가중치(DINOv2, OpenAI CLIP)와 MMVP-VLM 이미지를 읽기만 했고 이 저장소에 넣지 않았습니다(MMVP-VLM 라이선스는 확인하지 않아 이미지를 재배포하지 않음).
