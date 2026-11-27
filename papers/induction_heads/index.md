@@ -11,7 +11,7 @@ summary: "Olsson et al.의 induction head 논문을 정의 검산과 PyTorch 토
 
 # induction head는 정말 ICL의 원인인가
 
-Olsson et al.의 *In-context Learning and Induction Heads*(Anthropic, 2022)는 두 가지를 주장합니다. 하나는 "`[A][B] … [A]`에서 `[B]`를 완성하는 attention head(induction head)"가 학습 초기의 좁은 구간에서 형성되고, 그때 in-context learning(문맥이 길수록 손실이 줄어드는 정도)이 함께 급증한다는 관찰입니다. 다른 하나는 거기서 나아가 "induction head가 ICL의 상당 부분을 담당한다"는 여섯 가지 간접 논거입니다. 이 글은 정의를 식으로 검산하고, 직접 짠 작은 PyTorch 모델(`minimal_impl.py`, pytest 10개)로 어디까지 확인되는지 본 기록입니다. 논문의 모델과 수치를 재현한 것이 아니라 **메커니즘이 작은 규모에서 성립하는지** 본 것입니다. 공식 코드와 가중치는 없고, 사전학습 가중치는 받지 않았습니다.
+Olsson et al.의 *In-context Learning and Induction Heads*(Anthropic, 2022)는 두 가지를 주장합니다. 하나는 "`[A][B] … [A]`에서 `[B]`를 완성하는 attention head(induction head)"가 학습 초기의 좁은 구간에서 형성되고, 그때 in-context learning(문맥이 길수록 손실이 줄어드는 정도)이 함께 급증한다는 관찰입니다. 다른 하나는 거기서 나아가 "induction head가 ICL의 상당 부분을 담당한다"는 여섯 가지 간접 논거입니다. 이 글은 정의를 식으로 검산하고, 직접 짠 작은 PyTorch 모델(`minimal_impl.py`, pytest 10개)로 어디까지 확인되는지 본 기록입니다. 논문의 모델과 수치를 재현한 것이 아니라 **메커니즘이 작은 규모에서 성립하는지** 본 것입니다. 공식 코드와 가중치는 없습니다(Anthropic 내부 모델). 대신 마지막 절에서 공개 사전학습 모델(GPT-2 small)에 같은 정의를 적용해 봤습니다.
 
 ## 정의를 먼저 검산했습니다
 
@@ -49,6 +49,21 @@ Olsson et al.의 *In-context Learning and Induction Heads*(Anthropic, 2022)는 �
 - **그런데 자연 텍스트의 ICL 점수는 오르지 않았습니다**(증강 모델 0.06, 0.03, 0.00, 자연 텍스트만 0.07, 0.06, 0.08). 반복 구절로 만든 회로가 자연 텍스트의 ICL 점수로 옮겨가지 않았고, 논문이 보인 "자연 텍스트에서 ICL 점수 급증과 head 형성의 동시 출현"은 이 토이로 재현하지 못했습니다.
 - 그 head를 끄면 둘째 사본 손실이 시드 0에서 +2.31 오르지만 시드 1에서는 +0.41, 시드 2에서는 거의 무영향이고 층 0의 다른 head가 크게 작용했습니다. **head 하나의 ablation 크기를 일반화하면 안 됩니다.**
 
+## 공개 모델에서: GPT-2 small
+
+직접 짠 토이가 아니라 공개 사전학습 모델 GPT-2 small(추론만, API 호출 없음)에 위 정의를 그대로 적용했습니다. TransformerLens 없이 transformers와 PyTorch 훅(attention 패턴, head별 출력, 평균·0 ablation)으로 구현했고(`gpt2_induction.py`), 반복 무작위 열(25토큰 × 4)로 head를 채점했습니다.
+
+![GPT-2 small head 점수](images/own_gpt2_head_scores.png)
+
+- **prefix 점수 상위 5개가 5.5(0.95), 7.10(0.93), 5.1(0.91), 6.9(0.91), 7.2(0.82)**로, 문헌에서 흔히 인용되는 GPT-2의 induction head와 같은 head입니다(우연 0.031). 이전 토큰 점수가 큰 head는 4.11(0.99)입니다. copying 점수는 정의에 따라 갈립니다: logit 경로 점수는 0.12–0.31로 낮고, OV 고유값 점수는 7.2에서 −0.36으로 음수인데 같은 head의 logit 경로 점수는 +0.31입니다. 고유값 점수를 "복사하지 않음"으로 읽으면 안 됩니다.
+- **ICL 점수**는 pile-10k 문서 120개의 위치 50과 500 손실로 쟀습니다. 논문 정의 문장(500 − 50)은 음수가 되므로 이 글은 (위치 50 손실 − 위치 500 손실)로 써서 ±5토큰 창 평균 0.53(95% CI 0.28–0.78)입니다. 논문이 보고한 약 0.4와 같은 자릿수라는 말까지만 할 수 있습니다.
+
+![GPT-2 small ablation 효과](images/own_gpt2_ablation.png)
+
+- **복사는 induction head 묶음이 담당합니다.** 평균 ablation으로 상위 5개를 함께 끄면 반복 열의 둘째 사본 손실이 0.24에서 5.3으로 오르고(복사 이득 12.9 nats의 39%), 상위 12개는 9.1(69%)입니다. 같은 수의 무작위 head는 +0.03–0.05입니다. head 하나씩 끄면 5.1만 +0.4–0.7이고 나머지는 ±0.06 이내라서 중복이 효과를 가립니다.
+- **하지만 ICL 점수는 일부만 줄었습니다.** 같은 평균 ablation에서 5개는 −0.14(−0.21–−0.07), 12개는 −0.20(−0.31–−0.09), 곧 점수의 약 1/4–1/3입니다. 무작위 head는 −0.01, −0.04입니다. "ICL의 대부분이 induction head"는 GPT-2 small에서 지지되지 않았습니다.
+- 0 ablation은 모델을 망가뜨립니다(12개를 끄면 통제 지표인 첫 사본 손실도 +3.4). 그래서 평균 ablation만 해석했습니다. 한계: 모델 하나, 문서 120개, head 집합 크기(5, 12)는 점수 분포를 보고 골랐고 K-composition 경로와 패턴 유지 ablation은 시험하지 않았습니다. Pythia-14m·70m도 같은 방향이지만 집합이 2–4개라 참고용입니다.
+
 ## 이후 문헌이 바꾼 것
 
 초록 수준으로만 읽었습니다. function vector head가 few-shot ICL 성능의 다수를 설명한다는 보고(Yin & Steinhardt, ICML 2025)와, induction head가 "답이 문맥에 있는 경우"만 설명한다는 지적(Minegishi et al., ICML 2025)은 "대형 모델 ICL의 대부분이 induction head"라는 논문의 외삽을 수정합니다. 반대로 Llama-3-8B에서 induction head를 ablation하면 추상 패턴 과제의 ICL 성능이 최대 약 32% 떨어진다는 보고(Crosbie & Shutova)는 큰 모델에서의 기여를 지지합니다. 데이터의 반복 구조가 출현을 좌우한다는 연구(Chan et al., NeurIPS 2022)는 우리 토이의 "자연 텍스트만으로는 안 생기고 반복을 넣으면 생긴다"와 같은 방향입니다. 자세한 판정은 `04_claim_verification.md`에 있습니다.
@@ -57,6 +72,7 @@ Olsson et al.의 *In-context Learning and Induction Heads*(Anthropic, 2022)는 �
 
 - 소형 attention-only 모델의 거시 ICL에 대한 주장으로는 근거가 강하고(ablation), 대형 모델의 "대부분"은 근거가 상관과 유추뿐이며 이후 연구가 수정했습니다.
 - 논문의 ICL 점수 정의와 지표 정규화는 문장만으로 재현하기 어렵습니다(부호, 합과 평균, copying 정규화).
+- 공개 모델(GPT-2 small)에서 induction head를 끄면 복사 이득은 크게(39–69%) 사라지지만 거시 ICL 점수는 약 1/4–1/3만 줄었습니다. 이는 우리 측정이고 논문의 주장이 아닙니다.
 - 같은 층에 비슷한 head가 여럿이면 하나씩 끄는 ablation은 효과가 0에 가까울 수 있고, 패턴 유지 ablation은 K 경로를 가립니다.
 
 ## 자료
