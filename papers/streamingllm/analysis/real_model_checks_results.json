@@ -1,0 +1,47 @@
+{
+ "p70|rolling_vs_parallel|orig": {
+  "max_abs_logit_diff": 0.07745361328125,
+  "max_abs_logit": 1086.7872314453125,
+  "spec": [
+   4,
+   124
+  ],
+  "T": 512
+ },
+ "p70|mini_vs_hf": {
+  "max_abs_logit_diff": 0.40765380859375,
+  "max_abs_logit": 1086.707763671875,
+  "mean_abs_nll_diff": 0.00039283427759073675,
+  "ppl_hf": 13.357375144958496,
+  "ppl_mini": 13.357171058654785,
+  "n_streams": 4,
+  "T": 512
+ },
+ "gpt2|rolling_vs_parallel|orig": {
+  "max_abs_logit_diff": 0.01822662353515625,
+  "max_abs_logit": 340.23858642578125,
+  "spec": [
+   4,
+   124
+  ],
+  "T": 512
+ },
+ "gpt2|rolling_vs_parallel|slot": {
+  "max_abs_logit_diff": 0.0076141357421875,
+  "max_abs_logit": 336.4513854980469,
+  "spec": [
+   4,
+   124
+  ],
+  "T": 512
+ },
+ "gpt2|mini_vs_hf": {
+  "max_abs_logit_diff": 0.011058807373046875,
+  "max_abs_logit": 339.0920104980469,
+  "mean_abs_nll_diff": 6.8717081376235e-06,
+  "ppl_hf": 13.579444885253906,
+  "ppl_mini": 13.579444885253906,
+  "n_streams": 4,
+  "T": 512
+ }
+}

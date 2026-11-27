@@ -1,0 +1,165 @@
+{
+ "fig10": {
+  "Llama-2-7B": {
+   "speedup": [
+    2.03,
+    3.32,
+    6.37,
+    11.62,
+    21.71
+   ],
+   "max_speedup": 21.71,
+   "recompute_fit_aL_bL2_c": [
+    0.15286013598988515,
+    4.574741312855647e-05,
+    17.50980392156852
+   ],
+   "recompute_fit_max_abs_err_ms": 4.8,
+   "recompute_quadratic_share_at_4096": 0.544,
+   "streaming_slope_ms_per_cache_token": 0.009177587365591404,
+   "streaming_intercept_ms": 26.83333333333334,
+   "streaming_linear_r2": 0.9929545974501363
+  },
+  "Llama-2-13B": {
+   "speedup": [
+    2.06,
+    3.25,
+    6.02,
+    11.47,
+    22.22
+   ],
+   "max_speedup": 22.22,
+   "recompute_fit_aL_bL2_c": [
+    0.2434834064674341,
+    7.926173635406561e-05,
+    28.07843137254899
+   ],
+   "recompute_fit_max_abs_err_ms": 4.5,
+   "recompute_quadratic_share_at_4096": 0.565,
+   "streaming_slope_ms_per_cache_token": 0.015063214045698934,
+   "streaming_intercept_ms": 44.2916666666667,
+   "streaming_linear_r2": 0.9999447253127454
+  }
+ },
+ "table2_vs_table6": {
+  "Falcon-7B": {
+   "4+2044": {
+    "table2": 12.12,
+    "table6": 12.84,
+    "same": false
+   }
+  },
+  "MPT-7B": {
+   "4+2044": {
+    "table2": 14.99,
+    "table6": 14.99,
+    "same": true
+   }
+  },
+  "Pythia-12B": {
+   "4+2044": {
+    "table2": 12.09,
+    "table6": 12.09,
+    "same": true
+   }
+  },
+  "Llama-2-7B": {
+   "4+4092": {
+    "table2": 9.59,
+    "table6": 9.59,
+    "same": true
+   }
+  }
+ },
+ "table6_falcon_note": "표 6 Falcon-7B 행은 4+508과 4+2044가 모두 12.84이고, 굵게 표시된 최솟값 12.34(4+1020)는 표 2의 12.12(4+2044)보다 크다",
+ "table2_blowup_ratio_window_over_4sinks": {
+  "Falcon-7B": 1.48,
+  "MPT-7B": 30.71,
+  "Pythia-12B": 1.79,
+  "Llama-2-7B": 350.36
+ },
+ "table1_llama13b_window_over_4sinks": 955.2,
+ "table3_vanilla_ratios": {
+  "window_only_over_1sink": 1.507,
+  "1sink_over_2sinks": 1.024,
+  "note": "평가는 PG19 테스트 첫 표본 하나라 신뢰구간을 만들 수 없다"
+ },
+ "table4": {
+  "rows": {
+   "ARC-c": {
+    "diff_pt": 1.0,
+    "n_assumed": 1172,
+    "se_pt": 1.62,
+    "z": 0.62,
+    "p": 0.538,
+    "p_holm": 1.0
+   },
+   "ARC-e": {
+    "diff_pt": 0.4,
+    "n_assumed": 2376,
+    "se_pt": 1.44,
+    "z": 0.28,
+    "p": 0.782,
+    "p_holm": 1.0
+   },
+   "HellaSwag": {
+    "diff_pt": 0.4,
+    "n_assumed": 10042,
+    "se_pt": 0.64,
+    "z": 0.62,
+    "p": 0.535,
+    "p_holm": 1.0
+   },
+   "LAMBADA": {
+    "diff_pt": 0.3,
+    "n_assumed": 5153,
+    "se_pt": 0.96,
+    "z": 0.31,
+    "p": 0.756,
+    "p_holm": 1.0
+   },
+   "OBQA": {
+    "diff_pt": 0.6,
+    "n_assumed": 500,
+    "se_pt": 2.34,
+    "z": 0.26,
+    "p": 0.797,
+    "p_holm": 1.0
+   },
+   "PIQA": {
+    "diff_pt": 0.4,
+    "n_assumed": 1838,
+    "se_pt": 1.6,
+    "z": 0.25,
+    "p": 0.802,
+    "p_holm": 1.0
+   },
+   "Winogrande": {
+    "diff_pt": 0.7,
+    "n_assumed": 1267,
+    "se_pt": 1.99,
+    "z": 0.35,
+    "p": 0.725,
+    "p_holm": 1.0
+   }
+  },
+  "n_positive_of_7": 7,
+  "sign_test_p": 0.0156,
+  "note": "7개 모두 +0.3~+1.0pt이고 부호검정은 p=0.016이지만 벤치마크가 같은 모델 쌍의 점수라 독립이 아니다. 개별로는 표본 오차 안(Holm 후 전부 p>0.5)"
+ },
+ "table7": {
+  "2048": {
+   "zero_iff_distance_exceeds_cache": true
+  },
+  "4096": {
+   "zero_iff_distance_exceeds_cache": true
+  },
+  "8192": {
+   "zero_iff_distance_exceeds_cache": true
+  },
+  "16384": {
+   "zero_iff_distance_exceeds_cache": true
+  }
+ },
+ "table7_note": "정확도 0이 되는 경계는 4개 캐시 모두 23*줄 수 > 캐시 크기와 일치. 경계 안에서 거리에 대해 단조롭지 않다(4+4092: 100줄 61.6 < 150줄 68.2, 4+16380: 100줄 40.5, 200줄 46.9). 표본은 100개라 정확도 SE는 5pt 안팎"
+}

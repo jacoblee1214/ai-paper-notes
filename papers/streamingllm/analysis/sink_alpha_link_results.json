@@ -1,0 +1,31 @@
+{
+ "rows": {
+  "p14": {
+   "alpha1_head_mean_T1024": 0.01729,
+   "C": 512,
+   "ppl_ratio_window_over_4sinks": 1.3324347618757866,
+   "log_ratio_nll": 0.28700791666666664
+  },
+  "p70": {
+   "alpha1_head_mean_T1024": 0.02861,
+   "C": 512,
+   "ppl_ratio_window_over_4sinks": 1.091294929682572,
+   "log_ratio_nll": 0.08736499999999998
+  },
+  "p160": {
+   "alpha1_head_mean_T1024": 0.07291,
+   "C": 512,
+   "ppl_ratio_window_over_4sinks": 1.3357805909989786,
+   "log_ratio_nll": 0.28951583333333336
+  },
+  "gpt2": {
+   "alpha1_head_mean_T1024": 0.3548,
+   "C": 512,
+   "ppl_ratio_window_over_4sinks": 5.109449490780673,
+   "log_ratio_nll": 1.6310916666666666
+  }
+ },
+ "spearman_rho": 0.7999999999999999,
+ "n_models": 4,
+ "note": "모델 4개, 순서만 본다. GPT-2는 학습된 절대 위치 모델이고 Pythia는 RoPE라 모델군이 섞여 있다."
+}
