@@ -1,0 +1,5357 @@
+{
+ "files": {
+  "installed": {
+   "version": "5.24.1",
+   "sha256_16": "4dcdd088077d5960"
+  },
+  "main": {
+   "sha256_16": "4dcdd088077d5960",
+   "same_file_as_installed": true,
+   "methods_extracted": [
+    "get_rope_index",
+    "get_vision_position_ids"
+   ]
+  },
+  "v445": {
+   "sha256_16": "3f44b251f7aea564",
+   "methods_extracted": [
+    "get_rope_index"
+   ]
+  },
+  "official": {
+   "sha256_16": "97c9f8f49a3a1f78",
+   "function": "get_rope_index_2"
+  }
+ },
+ "calls": {
+  "installed": "transformers 5.24.1: Qwen2VLModel(작은 설정, 가중치 무작위).get_rope_index(input_ids, mm_token_type_ids, image_grid_thw, video_grid_thw, attention_mask)",
+  "main": "ast로 메서드 소스를 뽑아 exec, self=stub(config.vision_config.spatial_merge_size=2, 토큰 id 세 개, get_vision_position_ids 바인딩), 인자는 installed와 같음",
+  "v445": "ast로 get_rope_index 소스를 뽑아 exec, self=stub(config), 인자: input_ids, image_grid_thw, video_grid_thw, attention_mask",
+  "official": "rope2d.py를 importlib로 불러 get_rope_index_2(spatial_merge_size=2, input_ids, image_grid_thw, video_grid_thw, None, attention_mask) 호출"
+ },
+ "cases": {
+  "a_text_only": {
+   "segments": [
+    [
+     "text",
+     5
+    ]
+   ],
+   "length": 5,
+   "errors": {},
+   "compare_to_official": {
+    "installed": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      0
+     ],
+     "max_abs_diff": 0
+    },
+    "main": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      0
+     ],
+     "max_abs_diff": 0
+    },
+    "v445": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      0
+     ],
+     "max_abs_diff": 0
+    },
+    "official": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      0
+     ],
+     "max_abs_diff": 0
+    }
+   },
+   "overlap_after_video": {
+    "installed": [],
+    "main": [],
+    "v445": [],
+    "official": []
+   },
+   "positions_summary": {
+    "installed": {
+     "t_max": 4,
+     "h_max": 4,
+     "w_max": 4
+    },
+    "main": {
+     "t_max": 4,
+     "h_max": 4,
+     "w_max": 4
+    },
+    "v445": {
+     "t_max": 4,
+     "h_max": 4,
+     "w_max": 4
+    },
+    "official": {
+     "t_max": 4,
+     "h_max": 4,
+     "w_max": 4
+    }
+   },
+   "positions": {
+    "installed": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    "main": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    "v445": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    "official": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    }
+   }
+  },
+  "b_text_image_text": {
+   "segments": [
+    [
+     "text",
+     3
+    ],
+    [
+     "image",
+     [
+      1,
+      4,
+      6
+     ]
+    ],
+    [
+     "text",
+     5
+    ]
+   ],
+   "length": 16,
+   "errors": {},
+   "compare_to_official": {
+    "installed": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -3
+     ],
+     "max_abs_diff": 0
+    },
+    "main": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -3
+     ],
+     "max_abs_diff": 0
+    },
+    "v445": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -3
+     ],
+     "max_abs_diff": 0
+    },
+    "official": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -3
+     ],
+     "max_abs_diff": 0
+    }
+   },
+   "overlap_after_video": {
+    "installed": [],
+    "main": [],
+    "v445": [],
+    "official": []
+   },
+   "toy_rule_matches_measured": {
+    "v445_rule==official": true,
+    "v445_rule==v445": true,
+    "main_rule==main": true,
+    "main_rule==installed": true
+   },
+   "positions_summary": {
+    "installed": {
+     "t_max": 12,
+     "h_max": 12,
+     "w_max": 12
+    },
+    "main": {
+     "t_max": 12,
+     "h_max": 12,
+     "w_max": 12
+    },
+    "v445": {
+     "t_max": 12,
+     "h_max": 12,
+     "w_max": 12
+    },
+    "official": {
+     "t_max": 12,
+     "h_max": 12,
+     "w_max": 12
+    }
+   },
+   "positions": {
+    "installed": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "main": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "v445": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "official": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   }
+  },
+  "c_video_small_t3": {
+   "segments": [
+    [
+     "text",
+     2
+    ],
+    [
+     "video",
+     [
+      3,
+      4,
+      4
+     ]
+    ],
+    [
+     "text",
+     3
+    ]
+   ],
+   "length": 19,
+   "errors": {},
+   "compare_to_official": {
+    "installed": {
+     "equal_to_official": false,
+     "n_diff_tokens": 4,
+     "diff_axes": {
+      "t": 4,
+      "h": 4,
+      "w": 4
+     },
+     "first_diff_index": 15,
+     "last_diff_index": 18,
+     "deltas": [
+      -10
+     ],
+     "max_abs_diff": 1
+    },
+    "main": {
+     "equal_to_official": false,
+     "n_diff_tokens": 4,
+     "diff_axes": {
+      "t": 4,
+      "h": 4,
+      "w": 4
+     },
+     "first_diff_index": 15,
+     "last_diff_index": 18,
+     "deltas": [
+      -10
+     ],
+     "max_abs_diff": 1
+    },
+    "v445": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -9
+     ],
+     "max_abs_diff": 0
+    },
+    "official": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -9
+     ],
+     "max_abs_diff": 0
+    }
+   },
+   "overlap_after_video": {
+    "installed": [
+     {
+      "video_token_range": [
+       3,
+       14
+      ],
+      "video_temporal_id_max": 5,
+      "next_text_start": 5,
+      "overlap": true,
+      "gap_next_minus_tmax": 0
+     }
+    ],
+    "main": [
+     {
+      "video_token_range": [
+       3,
+       14
+      ],
+      "video_temporal_id_max": 5,
+      "next_text_start": 5,
+      "overlap": true,
+      "gap_next_minus_tmax": 0
+     }
+    ],
+    "v445": [
+     {
+      "video_token_range": [
+       3,
+       14
+      ],
+      "video_temporal_id_max": 5,
+      "next_text_start": 6,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ],
+    "official": [
+     {
+      "video_token_range": [
+       3,
+       14
+      ],
+      "video_temporal_id_max": 5,
+      "next_text_start": 6,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ]
+   },
+   "toy_rule_matches_measured": {
+    "v445_rule==official": true,
+    "v445_rule==v445": true,
+    "main_rule==main": true,
+    "main_rule==installed": true
+   },
+   "positions_summary": {
+    "installed": {
+     "t_max": 8,
+     "h_max": 8,
+     "w_max": 8
+    },
+    "main": {
+     "t_max": 8,
+     "h_max": 8,
+     "w_max": 8
+    },
+    "v445": {
+     "t_max": 9,
+     "h_max": 9,
+     "w_max": 9
+    },
+    "official": {
+     "t_max": 9,
+     "h_max": 9,
+     "w_max": 9
+    }
+   },
+   "positions": {
+    "installed": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      7,
+      8
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ]
+    },
+    "main": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      7,
+      8
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ]
+    },
+    "v445": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      6,
+      7,
+      8,
+      9
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    "official": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      6,
+      7,
+      8,
+      9
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9
+     ]
+    }
+   }
+  },
+  "c2_video_t_eq_max": {
+   "segments": [
+    [
+     "text",
+     2
+    ],
+    [
+     "video",
+     [
+      2,
+      4,
+      4
+     ]
+    ],
+    [
+     "text",
+     3
+    ]
+   ],
+   "length": 15,
+   "errors": {},
+   "compare_to_official": {
+    "installed": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -6
+     ],
+     "max_abs_diff": 0
+    },
+    "main": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -6
+     ],
+     "max_abs_diff": 0
+    },
+    "v445": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -6
+     ],
+     "max_abs_diff": 0
+    },
+    "official": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -6
+     ],
+     "max_abs_diff": 0
+    }
+   },
+   "overlap_after_video": {
+    "installed": [
+     {
+      "video_token_range": [
+       3,
+       10
+      ],
+      "video_temporal_id_max": 4,
+      "next_text_start": 5,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ],
+    "main": [
+     {
+      "video_token_range": [
+       3,
+       10
+      ],
+      "video_temporal_id_max": 4,
+      "next_text_start": 5,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ],
+    "v445": [
+     {
+      "video_token_range": [
+       3,
+       10
+      ],
+      "video_temporal_id_max": 4,
+      "next_text_start": 5,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ],
+    "official": [
+     {
+      "video_token_range": [
+       3,
+       10
+      ],
+      "video_temporal_id_max": 4,
+      "next_text_start": 5,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ]
+   },
+   "toy_rule_matches_measured": {
+    "v445_rule==official": true,
+    "v445_rule==v445": true,
+    "main_rule==main": true,
+    "main_rule==installed": true
+   },
+   "positions_summary": {
+    "installed": {
+     "t_max": 8,
+     "h_max": 8,
+     "w_max": 8
+    },
+    "main": {
+     "t_max": 8,
+     "h_max": 8,
+     "w_max": 8
+    },
+    "v445": {
+     "t_max": 8,
+     "h_max": 8,
+     "w_max": 8
+    },
+    "official": {
+     "t_max": 8,
+     "h_max": 8,
+     "w_max": 8
+    }
+   },
+   "positions": {
+    "installed": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ]
+    },
+    "main": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ]
+    },
+    "v445": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ]
+    },
+    "official": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ]
+    }
+   }
+  },
+  "c3_video_t_lt_max": {
+   "segments": [
+    [
+     "text",
+     2
+    ],
+    [
+     "video",
+     [
+      2,
+      8,
+      8
+     ]
+    ],
+    [
+     "text",
+     3
+    ]
+   ],
+   "length": 39,
+   "errors": {},
+   "compare_to_official": {
+    "installed": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -28
+     ],
+     "max_abs_diff": 0
+    },
+    "main": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -28
+     ],
+     "max_abs_diff": 0
+    },
+    "v445": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -28
+     ],
+     "max_abs_diff": 0
+    },
+    "official": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -28
+     ],
+     "max_abs_diff": 0
+    }
+   },
+   "overlap_after_video": {
+    "installed": [
+     {
+      "video_token_range": [
+       3,
+       34
+      ],
+      "video_temporal_id_max": 4,
+      "next_text_start": 7,
+      "overlap": false,
+      "gap_next_minus_tmax": 3
+     }
+    ],
+    "main": [
+     {
+      "video_token_range": [
+       3,
+       34
+      ],
+      "video_temporal_id_max": 4,
+      "next_text_start": 7,
+      "overlap": false,
+      "gap_next_minus_tmax": 3
+     }
+    ],
+    "v445": [
+     {
+      "video_token_range": [
+       3,
+       34
+      ],
+      "video_temporal_id_max": 4,
+      "next_text_start": 7,
+      "overlap": false,
+      "gap_next_minus_tmax": 3
+     }
+    ],
+    "official": [
+     {
+      "video_token_range": [
+       3,
+       34
+      ],
+      "video_temporal_id_max": 4,
+      "next_text_start": 7,
+      "overlap": false,
+      "gap_next_minus_tmax": 3
+     }
+    ]
+   },
+   "toy_rule_matches_measured": {
+    "v445_rule==official": true,
+    "v445_rule==v445": true,
+    "main_rule==main": true,
+    "main_rule==installed": true
+   },
+   "positions_summary": {
+    "installed": {
+     "t_max": 10,
+     "h_max": 10,
+     "w_max": 10
+    },
+    "main": {
+     "t_max": 10,
+     "h_max": 10,
+     "w_max": 10
+    },
+    "v445": {
+     "t_max": 10,
+     "h_max": 10,
+     "w_max": 10
+    },
+    "official": {
+     "t_max": 10,
+     "h_max": 10,
+     "w_max": 10
+    }
+   },
+   "positions": {
+    "installed": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      7,
+      8,
+      9,
+      10
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    "main": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      7,
+      8,
+      9,
+      10
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    "v445": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      7,
+      8,
+      9,
+      10
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    "official": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      7,
+      8,
+      9,
+      10
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    }
+   }
+  },
+  "d_video_long_t60": {
+   "segments": [
+    [
+     "text",
+     4
+    ],
+    [
+     "video",
+     [
+      60,
+      32,
+      32
+     ]
+    ],
+    [
+     "text",
+     4
+    ]
+   ],
+   "length": 15370,
+   "errors": {},
+   "compare_to_official": {
+    "installed": {
+     "equal_to_official": false,
+     "n_diff_tokens": 5,
+     "diff_axes": {
+      "t": 5,
+      "h": 5,
+      "w": 5
+     },
+     "first_diff_index": 15365,
+     "last_diff_index": 15369,
+     "deltas": [
+      -15305
+     ],
+     "max_abs_diff": 44
+    },
+    "main": {
+     "equal_to_official": false,
+     "n_diff_tokens": 5,
+     "diff_axes": {
+      "t": 5,
+      "h": 5,
+      "w": 5
+     },
+     "first_diff_index": 15365,
+     "last_diff_index": 15369,
+     "deltas": [
+      -15305
+     ],
+     "max_abs_diff": 44
+    },
+    "v445": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -15300
+     ],
+     "max_abs_diff": 0
+    },
+    "official": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -15300
+     ],
+     "max_abs_diff": 0
+    }
+   },
+   "overlap_after_video": {
+    "installed": [
+     {
+      "video_token_range": [
+       5,
+       15364
+      ],
+      "video_temporal_id_max": 64,
+      "next_text_start": 21,
+      "overlap": true,
+      "gap_next_minus_tmax": -43
+     }
+    ],
+    "main": [
+     {
+      "video_token_range": [
+       5,
+       15364
+      ],
+      "video_temporal_id_max": 64,
+      "next_text_start": 21,
+      "overlap": true,
+      "gap_next_minus_tmax": -43
+     }
+    ],
+    "v445": [
+     {
+      "video_token_range": [
+       5,
+       15364
+      ],
+      "video_temporal_id_max": 64,
+      "next_text_start": 65,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ],
+    "official": [
+     {
+      "video_token_range": [
+       5,
+       15364
+      ],
+      "video_temporal_id_max": 64,
+      "next_text_start": 65,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ]
+   },
+   "toy_rule_matches_measured": {
+    "v445_rule==official": true,
+    "v445_rule==v445": true,
+    "main_rule==main": true,
+    "main_rule==installed": true
+   },
+   "positions_summary": {
+    "installed": {
+     "t_max": 64,
+     "h_max": 25,
+     "w_max": 25
+    },
+    "main": {
+     "t_max": 64,
+     "h_max": 25,
+     "w_max": 25
+    },
+    "v445": {
+     "t_max": 69,
+     "h_max": 69,
+     "w_max": 69
+    },
+    "official": {
+     "t_max": 69,
+     "h_max": 69,
+     "w_max": 69
+    }
+   }
+  },
+  "f_image_video_mix": {
+   "segments": [
+    [
+     "text",
+     3
+    ],
+    [
+     "image",
+     [
+      1,
+      8,
+      8
+     ]
+    ],
+    [
+     "text",
+     2
+    ],
+    [
+     "video",
+     [
+      6,
+      4,
+      4
+     ]
+    ],
+    [
+     "text",
+     4
+    ]
+   ],
+   "length": 53,
+   "errors": {},
+   "compare_to_official": {
+    "installed": {
+     "equal_to_official": false,
+     "n_diff_tokens": 5,
+     "diff_axes": {
+      "t": 5,
+      "h": 5,
+      "w": 5
+     },
+     "first_diff_index": 48,
+     "last_diff_index": 52,
+     "deltas": [
+      -34
+     ],
+     "max_abs_diff": 4
+    },
+    "main": {
+     "equal_to_official": false,
+     "n_diff_tokens": 5,
+     "diff_axes": {
+      "t": 5,
+      "h": 5,
+      "w": 5
+     },
+     "first_diff_index": 48,
+     "last_diff_index": 52,
+     "deltas": [
+      -34
+     ],
+     "max_abs_diff": 4
+    },
+    "v445": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -30
+     ],
+     "max_abs_diff": 0
+    },
+    "official": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -30
+     ],
+     "max_abs_diff": 0
+    }
+   },
+   "overlap_after_video": {
+    "installed": [
+     {
+      "video_token_range": [
+       24,
+       47
+      ],
+      "video_temporal_id_max": 17,
+      "next_text_start": 14,
+      "overlap": true,
+      "gap_next_minus_tmax": -3
+     }
+    ],
+    "main": [
+     {
+      "video_token_range": [
+       24,
+       47
+      ],
+      "video_temporal_id_max": 17,
+      "next_text_start": 14,
+      "overlap": true,
+      "gap_next_minus_tmax": -3
+     }
+    ],
+    "v445": [
+     {
+      "video_token_range": [
+       24,
+       47
+      ],
+      "video_temporal_id_max": 17,
+      "next_text_start": 18,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ],
+    "official": [
+     {
+      "video_token_range": [
+       24,
+       47
+      ],
+      "video_temporal_id_max": 17,
+      "next_text_start": 18,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ]
+   },
+   "toy_rule_matches_measured": {
+    "v445_rule==official": true,
+    "v445_rule==v445": true,
+    "main_rule==main": true,
+    "main_rule==installed": true
+   },
+   "positions_summary": {
+    "installed": {
+     "t_max": 18,
+     "h_max": 18,
+     "w_max": 18
+    },
+    "main": {
+     "t_max": 18,
+     "h_max": 18,
+     "w_max": 18
+    },
+    "v445": {
+     "t_max": 22,
+     "h_max": 22,
+     "w_max": 22
+    },
+    "official": {
+     "t_max": 22,
+     "h_max": 22,
+     "w_max": 22
+    }
+   },
+   "positions": {
+    "installed": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12,
+      12,
+      12,
+      12,
+      13,
+      13,
+      13,
+      13,
+      14,
+      14,
+      14,
+      14,
+      15,
+      15,
+      15,
+      15,
+      16,
+      16,
+      16,
+      16,
+      17,
+      17,
+      17,
+      17,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      4,
+      5,
+      6,
+      7,
+      4,
+      5,
+      6,
+      7,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ]
+    },
+    "main": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12,
+      12,
+      12,
+      12,
+      13,
+      13,
+      13,
+      13,
+      14,
+      14,
+      14,
+      14,
+      15,
+      15,
+      15,
+      15,
+      16,
+      16,
+      16,
+      16,
+      17,
+      17,
+      17,
+      17,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      4,
+      5,
+      6,
+      7,
+      4,
+      5,
+      6,
+      7,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ]
+    },
+    "v445": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12,
+      12,
+      12,
+      12,
+      13,
+      13,
+      13,
+      13,
+      14,
+      14,
+      14,
+      14,
+      15,
+      15,
+      15,
+      15,
+      16,
+      16,
+      16,
+      16,
+      17,
+      17,
+      17,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      18,
+      19,
+      20,
+      21,
+      22
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      4,
+      5,
+      6,
+      7,
+      4,
+      5,
+      6,
+      7,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      18,
+      19,
+      20,
+      21,
+      22
+     ]
+    },
+    "official": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12,
+      12,
+      12,
+      12,
+      13,
+      13,
+      13,
+      13,
+      14,
+      14,
+      14,
+      14,
+      15,
+      15,
+      15,
+      15,
+      16,
+      16,
+      16,
+      16,
+      17,
+      17,
+      17,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      18,
+      19,
+      20,
+      21,
+      22
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      4,
+      5,
+      6,
+      7,
+      4,
+      5,
+      6,
+      7,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      18,
+      19,
+      20,
+      21,
+      22
+     ]
+    }
+   }
+  },
+  "g_two_videos": {
+   "segments": [
+    [
+     "text",
+     2
+    ],
+    [
+     "video",
+     [
+      5,
+      4,
+      4
+     ]
+    ],
+    [
+     "text",
+     2
+    ],
+    [
+     "video",
+     [
+      5,
+      4,
+      4
+     ]
+    ],
+    [
+     "text",
+     3
+    ]
+   ],
+   "length": 51,
+   "errors": {},
+   "compare_to_official": {
+    "installed": {
+     "equal_to_official": false,
+     "n_diff_tokens": 28,
+     "diff_axes": {
+      "t": 28,
+      "h": 28,
+      "w": 28
+     },
+     "first_diff_index": 23,
+     "last_diff_index": 50,
+     "deltas": [
+      -36
+     ],
+     "max_abs_diff": 6
+    },
+    "main": {
+     "equal_to_official": false,
+     "n_diff_tokens": 28,
+     "diff_axes": {
+      "t": 28,
+      "h": 28,
+      "w": 28
+     },
+     "first_diff_index": 23,
+     "last_diff_index": 50,
+     "deltas": [
+      -36
+     ],
+     "max_abs_diff": 6
+    },
+    "v445": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -30
+     ],
+     "max_abs_diff": 0
+    },
+    "official": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -30
+     ],
+     "max_abs_diff": 0
+    }
+   },
+   "overlap_after_video": {
+    "installed": [
+     {
+      "video_token_range": [
+       3,
+       22
+      ],
+      "video_temporal_id_max": 7,
+      "next_text_start": 5,
+      "overlap": true,
+      "gap_next_minus_tmax": -2
+     },
+     {
+      "video_token_range": [
+       27,
+       46
+      ],
+      "video_temporal_id_max": 13,
+      "next_text_start": 11,
+      "overlap": true,
+      "gap_next_minus_tmax": -2
+     }
+    ],
+    "main": [
+     {
+      "video_token_range": [
+       3,
+       22
+      ],
+      "video_temporal_id_max": 7,
+      "next_text_start": 5,
+      "overlap": true,
+      "gap_next_minus_tmax": -2
+     },
+     {
+      "video_token_range": [
+       27,
+       46
+      ],
+      "video_temporal_id_max": 13,
+      "next_text_start": 11,
+      "overlap": true,
+      "gap_next_minus_tmax": -2
+     }
+    ],
+    "v445": [
+     {
+      "video_token_range": [
+       3,
+       22
+      ],
+      "video_temporal_id_max": 7,
+      "next_text_start": 8,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     },
+     {
+      "video_token_range": [
+       27,
+       46
+      ],
+      "video_temporal_id_max": 16,
+      "next_text_start": 17,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ],
+    "official": [
+     {
+      "video_token_range": [
+       3,
+       22
+      ],
+      "video_temporal_id_max": 7,
+      "next_text_start": 8,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     },
+     {
+      "video_token_range": [
+       27,
+       46
+      ],
+      "video_temporal_id_max": 16,
+      "next_text_start": 17,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ]
+   },
+   "toy_rule_matches_measured": {
+    "v445_rule==official": true,
+    "v445_rule==v445": true,
+    "main_rule==main": true,
+    "main_rule==installed": true
+   },
+   "positions_summary": {
+    "installed": {
+     "t_max": 14,
+     "h_max": 14,
+     "w_max": 14
+    },
+    "main": {
+     "t_max": 14,
+     "h_max": 14,
+     "w_max": 14
+    },
+    "v445": {
+     "t_max": 20,
+     "h_max": 20,
+     "w_max": 20
+    },
+    "official": {
+     "t_max": 20,
+     "h_max": 20,
+     "w_max": 20
+    }
+   },
+   "positions": {
+    "installed": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      5,
+      6,
+      7,
+      8,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11,
+      11,
+      12,
+      12,
+      12,
+      12,
+      13,
+      13,
+      13,
+      13,
+      11,
+      12,
+      13,
+      14
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      9,
+      10,
+      10,
+      9,
+      9,
+      10,
+      10,
+      9,
+      9,
+      10,
+      10,
+      9,
+      9,
+      10,
+      10,
+      9,
+      9,
+      10,
+      10,
+      11,
+      12,
+      13,
+      14
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    },
+    "main": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      5,
+      6,
+      7,
+      8,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11,
+      11,
+      12,
+      12,
+      12,
+      12,
+      13,
+      13,
+      13,
+      13,
+      11,
+      12,
+      13,
+      14
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      9,
+      10,
+      10,
+      9,
+      9,
+      10,
+      10,
+      9,
+      9,
+      10,
+      10,
+      9,
+      9,
+      10,
+      10,
+      9,
+      9,
+      10,
+      10,
+      11,
+      12,
+      13,
+      14
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    },
+    "v445": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      12,
+      12,
+      12,
+      13,
+      13,
+      13,
+      13,
+      14,
+      14,
+      14,
+      14,
+      15,
+      15,
+      15,
+      15,
+      16,
+      16,
+      16,
+      16,
+      17,
+      18,
+      19,
+      20
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      17,
+      18,
+      19,
+      20
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      17,
+      18,
+      19,
+      20
+     ]
+    },
+    "official": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      12,
+      12,
+      12,
+      13,
+      13,
+      13,
+      13,
+      14,
+      14,
+      14,
+      14,
+      15,
+      15,
+      15,
+      15,
+      16,
+      16,
+      16,
+      16,
+      17,
+      18,
+      19,
+      20
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      17,
+      18,
+      19,
+      20
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      12,
+      13,
+      17,
+      18,
+      19,
+      20
+     ]
+    }
+   }
+  },
+  "h_video_then_image": {
+   "segments": [
+    [
+     "text",
+     2
+    ],
+    [
+     "video",
+     [
+      6,
+      4,
+      4
+     ]
+    ],
+    [
+     "text",
+     2
+    ],
+    [
+     "image",
+     [
+      1,
+      4,
+      4
+     ]
+    ],
+    [
+     "text",
+     3
+    ]
+   ],
+   "length": 39,
+   "errors": {},
+   "compare_to_official": {
+    "installed": {
+     "equal_to_official": false,
+     "n_diff_tokens": 12,
+     "diff_axes": {
+      "t": 12,
+      "h": 12,
+      "w": 12
+     },
+     "first_diff_index": 27,
+     "last_diff_index": 38,
+     "deltas": [
+      -24
+     ],
+     "max_abs_diff": 4
+    },
+    "main": {
+     "equal_to_official": false,
+     "n_diff_tokens": 12,
+     "diff_axes": {
+      "t": 12,
+      "h": 12,
+      "w": 12
+     },
+     "first_diff_index": 27,
+     "last_diff_index": 38,
+     "deltas": [
+      -24
+     ],
+     "max_abs_diff": 4
+    },
+    "v445": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -20
+     ],
+     "max_abs_diff": 0
+    },
+    "official": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -20
+     ],
+     "max_abs_diff": 0
+    }
+   },
+   "overlap_after_video": {
+    "installed": [
+     {
+      "video_token_range": [
+       3,
+       26
+      ],
+      "video_temporal_id_max": 8,
+      "next_text_start": 5,
+      "overlap": true,
+      "gap_next_minus_tmax": -3
+     }
+    ],
+    "main": [
+     {
+      "video_token_range": [
+       3,
+       26
+      ],
+      "video_temporal_id_max": 8,
+      "next_text_start": 5,
+      "overlap": true,
+      "gap_next_minus_tmax": -3
+     }
+    ],
+    "v445": [
+     {
+      "video_token_range": [
+       3,
+       26
+      ],
+      "video_temporal_id_max": 8,
+      "next_text_start": 9,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ],
+    "official": [
+     {
+      "video_token_range": [
+       3,
+       26
+      ],
+      "video_temporal_id_max": 8,
+      "next_text_start": 9,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ]
+   },
+   "toy_rule_matches_measured": {
+    "v445_rule==official": true,
+    "v445_rule==v445": true,
+    "main_rule==main": true,
+    "main_rule==installed": true
+   },
+   "positions_summary": {
+    "installed": {
+     "t_max": 14,
+     "h_max": 14,
+     "w_max": 14
+    },
+    "main": {
+     "t_max": 14,
+     "h_max": 14,
+     "w_max": 14
+    },
+    "v445": {
+     "t_max": 18,
+     "h_max": 18,
+     "w_max": 18
+    },
+    "official": {
+     "t_max": 18,
+     "h_max": 18,
+     "w_max": 18
+    }
+   },
+   "positions": {
+    "installed": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      8,
+      8,
+      8,
+      5,
+      6,
+      7,
+      8,
+      9,
+      9,
+      9,
+      9,
+      11,
+      12,
+      13,
+      14
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      9,
+      10,
+      10,
+      11,
+      12,
+      13,
+      14
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    },
+    "main": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      8,
+      8,
+      8,
+      5,
+      6,
+      7,
+      8,
+      9,
+      9,
+      9,
+      9,
+      11,
+      12,
+      13,
+      14
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      9,
+      10,
+      10,
+      11,
+      12,
+      13,
+      14
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    },
+    "v445": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      8,
+      8,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      13,
+      13,
+      13,
+      15,
+      16,
+      17,
+      18
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      9,
+      10,
+      11,
+      12,
+      13,
+      13,
+      14,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ]
+    },
+    "official": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      8,
+      8,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      13,
+      13,
+      13,
+      15,
+      16,
+      17,
+      18
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      9,
+      10,
+      11,
+      12,
+      13,
+      13,
+      14,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ]
+    }
+   }
+  },
+  "i_video_no_trailing_text": {
+   "segments": [
+    [
+     "text",
+     2
+    ],
+    [
+     "video",
+     [
+      6,
+      4,
+      4
+     ]
+    ]
+   ],
+   "length": 28,
+   "errors": {},
+   "compare_to_official": {
+    "installed": {
+     "equal_to_official": false,
+     "n_diff_tokens": 1,
+     "diff_axes": {
+      "t": 1,
+      "h": 1,
+      "w": 1
+     },
+     "first_diff_index": 27,
+     "last_diff_index": 27,
+     "deltas": [
+      -19
+     ],
+     "max_abs_diff": 4
+    },
+    "main": {
+     "equal_to_official": false,
+     "n_diff_tokens": 1,
+     "diff_axes": {
+      "t": 1,
+      "h": 1,
+      "w": 1
+     },
+     "first_diff_index": 27,
+     "last_diff_index": 27,
+     "deltas": [
+      -19
+     ],
+     "max_abs_diff": 4
+    },
+    "v445": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -18
+     ],
+     "max_abs_diff": 0
+    },
+    "official": {
+     "equal_to_official": true,
+     "n_diff_tokens": 0,
+     "diff_axes": {
+      "t": 0,
+      "h": 0,
+      "w": 0
+     },
+     "first_diff_index": null,
+     "last_diff_index": null,
+     "deltas": [
+      -18
+     ],
+     "max_abs_diff": 0
+    }
+   },
+   "overlap_after_video": {
+    "installed": [
+     {
+      "video_token_range": [
+       3,
+       26
+      ],
+      "video_temporal_id_max": 8,
+      "next_text_start": 5,
+      "overlap": true,
+      "gap_next_minus_tmax": -3
+     }
+    ],
+    "main": [
+     {
+      "video_token_range": [
+       3,
+       26
+      ],
+      "video_temporal_id_max": 8,
+      "next_text_start": 5,
+      "overlap": true,
+      "gap_next_minus_tmax": -3
+     }
+    ],
+    "v445": [
+     {
+      "video_token_range": [
+       3,
+       26
+      ],
+      "video_temporal_id_max": 8,
+      "next_text_start": 9,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ],
+    "official": [
+     {
+      "video_token_range": [
+       3,
+       26
+      ],
+      "video_temporal_id_max": 8,
+      "next_text_start": 9,
+      "overlap": false,
+      "gap_next_minus_tmax": 1
+     }
+    ]
+   },
+   "toy_rule_matches_measured": {
+    "v445_rule==official": true,
+    "v445_rule==v445": true,
+    "main_rule==main": true,
+    "main_rule==installed": true
+   },
+   "positions_summary": {
+    "installed": {
+     "t_max": 8,
+     "h_max": 5,
+     "w_max": 5
+    },
+    "main": {
+     "t_max": 8,
+     "h_max": 5,
+     "w_max": 5
+    },
+    "v445": {
+     "t_max": 9,
+     "h_max": 9,
+     "w_max": 9
+    },
+    "official": {
+     "t_max": 9,
+     "h_max": 9,
+     "w_max": 9
+    }
+   },
+   "positions": {
+    "installed": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      8,
+      8,
+      8,
+      5
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      5
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      5
+     ]
+    },
+    "main": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      8,
+      8,
+      8,
+      5
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      5
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      5
+     ]
+    },
+    "v445": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      8,
+      8,
+      8,
+      9
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      9
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      9
+     ]
+    },
+    "official": {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      8,
+      8,
+      8,
+      9
+     ],
+     "h": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      9
+     ],
+     "w": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      9
+     ]
+    }
+   }
+  },
+  "j_left_padding_batch": {
+   "note": "행0=영상 t3 케이스(왼쪽 패딩), 행1=이미지 케이스. 유효 토큰만 비교",
+   "length": 19,
+   "per_impl": {
+    "installed": {
+     "n_diff_valid_tokens": 4,
+     "deltas": [
+      -10,
+      -3
+     ],
+     "values_at_padded_positions": [
+      0
+     ],
+     "row0_valid_t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      7,
+      8
+     ],
+     "row1_valid_t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "main": {
+     "n_diff_valid_tokens": 4,
+     "deltas": [
+      -10,
+      -3
+     ],
+     "values_at_padded_positions": [
+      0
+     ],
+     "row0_valid_t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      7,
+      8
+     ],
+     "row1_valid_t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "v445": {
+     "n_diff_valid_tokens": 0,
+     "deltas": [
+      -9,
+      -6
+     ],
+     "values_at_padded_positions": [
+      1
+     ],
+     "row0_valid_t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "row1_valid_t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "official": {
+     "n_diff_valid_tokens": 0,
+     "deltas": [
+      -9,
+      -6
+     ],
+     "values_at_padded_positions": [
+      1
+     ],
+     "row0_valid_t": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "row1_valid_t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    }
+   }
+  }
+ },
+ "summary": {
+  "installed": {
+   "equal_to_official": [
+    "a_text_only",
+    "b_text_image_text",
+    "c2_video_t_eq_max",
+    "c3_video_t_lt_max"
+   ],
+   "differs_from_official": [
+    "c_video_small_t3",
+    "d_video_long_t60",
+    "f_image_video_mix",
+    "g_two_videos",
+    "h_video_then_image",
+    "i_video_no_trailing_text"
+   ]
+  },
+  "main": {
+   "equal_to_official": [
+    "a_text_only",
+    "b_text_image_text",
+    "c2_video_t_eq_max",
+    "c3_video_t_lt_max"
+   ],
+   "differs_from_official": [
+    "c_video_small_t3",
+    "d_video_long_t60",
+    "f_image_video_mix",
+    "g_two_videos",
+    "h_video_then_image",
+    "i_video_no_trailing_text"
+   ]
+  },
+  "v445": {
+   "equal_to_official": [
+    "a_text_only",
+    "b_text_image_text",
+    "c_video_small_t3",
+    "c2_video_t_eq_max",
+    "c3_video_t_lt_max",
+    "d_video_long_t60",
+    "f_image_video_mix",
+    "g_two_videos",
+    "h_video_then_image",
+    "i_video_no_trailing_text"
+   ],
+   "differs_from_official": []
+  }
+ }
+}
