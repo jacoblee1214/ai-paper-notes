@@ -6,10 +6,10 @@ venue_note: "proceedings.iclr.cc(2025, Abstract-Conference)와 iclr.cc/virtual/2
 tags: [attention sink, 사전학습, softmax, sigmoid attention, 검증]
 paper: "When Attention Sink Emerges in Language Models: An Empirical View (arXiv:2410.10781)"
 code: "https://github.com/sail-sg/Attention-Sink"
-summary: "attention sink의 출현 조건을 60M 모델 사전학습으로 정리한 논문의 표를 다시 계산했습니다. softmax 정규화를 없앤 sigmoid에서 sink가 사라진다는 핵심 대조는 6개 설정과 1B에서 일관되지만, 모든 표가 실행 1회이고 weight decay 0 대 0.1 같은 작은 차이는 구분되지 않습니다. 지표의 임계값은 눈금이 아니라 T에 의존하는 기준선 위의 값이며, 공개 설정은 논문의 cosine 스케줄과 다릅니다. 직접 짠 소형 토이는 softmax에서도 sink가 생기지 않았습니다."
+summary: "attention sink의 출현 조건을 60M 모델 사전학습으로 정리한 논문의 표를 다시 계산했습니다. softmax 정규화를 없앤 sigmoid에서 sink가 사라진다는 핵심 대조는 6개 설정과 1B에서 일관되지만, 모든 표가 실행 1회이고 weight decay 0 대 0.1 같은 작은 차이는 구분되지 않습니다. 지표의 임계값은 눈금이 아니라 T에 의존하는 기준선 위의 값이며, 공개 설정은 논문의 cosine 스케줄과 다릅니다. 직접 짠 소형 토이는 softmax에서도 sink가 생기지 않았습니다. 공개 가중치(Pythia, GPT-2)로 다시 재 보니 Sink 값은 BOS 처리, 임계값, 입력 길이에 크게 달라졌습니다."
 ---
 
-> **논문:** Gu et al. *When Attention Sink Emerges in Language Models: An Empirical View.* ICLR 2025, arXiv:2410.10781 (v2). 논문은 arXiv 비독점 배포 라이선스라 논문 그림은 싣지 않았고 그림은 모두 직접 그린 것입니다. 논문 표에 인쇄된 값으로 계산했고 공식 코드는 읽기만 했으며 실행하지 않았습니다.
+> **논문:** Gu et al. *When Attention Sink Emerges in Language Models: An Empirical View.* ICLR 2025, arXiv:2410.10781 (v2). 논문은 arXiv 비독점 배포 라이선스라 논문 그림은 싣지 않았고 그림은 모두 직접 그린 것입니다. 논문 표에 인쇄된 값으로 계산했고 공식 코드는 읽기만 했으며 실행하지 않았습니다. 마지막 절의 공개 가중치 측정은 같은 지표 정의를 직접 구현해 썼습니다.
 
 ## 논문이 묻는 것
 
@@ -59,6 +59,21 @@ sigmoid 정규화 없음은 학습률 3종과 weight decay 4종 조합 6개에�
 4층, 폭 128, RoPE의 직접 짠 모델을 파이썬 표준 라이브러리 소스(바이트 코퍼스)로 2,000스텝 학습해 softmax, sigmoid(정규화 없음), sigmoid(정규화 있음)를 시드 3개씩 돌렸습니다. **softmax에서도 Sink(ε=0.3)가 0%였습니다.** 모든 헤드의 α₁이 균일 기준선 0.074 아래였고, 세 변형의 차이는 ε=0.1에서 0.8–4.6%일 뿐입니다. 논문의 방향(18% 대 0.4%)을 확인하지도 반박하지도 못합니다. 문맥 64, 0.7M 파라미터, 2k 스텝으로는 첫 토큰을 "아무것도 안 하는 자리"로 쓸 압력이 약했을 수 있습니다(가설).
 
 ![토이 곡선](images/own_toy_curves.png)
+
+## 7. 공개 가중치로 다시 재 보면: BOS, ε, T
+
+Pythia-14M/70M/160M과 GPT-2(최종 체크포인트, fp32, CPU)에 Pile 문서 200개(시드 0)를 넣어 같은 지표를 BOS 유무, ε, T를 바꿔 쟀습니다. 신뢰구간은 문서 부트스트랩이고 학습 시드 변동은 없습니다. 두 모델군의 토크나이저는 기본으로 BOS(`<|endoftext|>`)를 붙이지 않으므로 공식 측정 코드를 그대로 쓰면 "BOS 없음"입니다.
+
+- **Pythia-14M에도 sink가 있으나 약합니다.** T=64, ε=0.3에서 7.8% [6.5, 8.9], BOS를 붙이면 23.1%입니다. 70M 13.4%, 160M 28.7%, GPT-2 71.4%로 규모에 따라 늘어납니다. 크기가 비슷한 내 토이(0.7M)의 0%는 모델 크기만의 문제가 아니었습니다.
+- **BOS의 효과는 모델에 달렸습니다.** Pythia에서는 +15–34 pp이고 GPT-2에서는 +0.6 pp입니다. 한 모델군에서 BOS를 무시해도 된다고 일반화할 수 없습니다.
+- **문서 첫 토큰부터 재는 방식**(논문 코드)은 문서 중간에서 시작하는 입력보다 Pythia-70M/160M에서 3–7 pp 낮고 다른 두 모델에서는 구분되지 않습니다.
+- **ε와 T가 순위를 바꿉니다.** T가 커지면 모든 모델에서 Sink가 줄고 기준선 H_T/T를 빼고도 줄어듭니다. BOS를 붙이면 70M과 160M의 순서가 ε=0.3과 0.4 사이, 그리고 T=1024에서 뒤바뀝니다.
+
+![공개 가중치 재측정](images/own_real_models.png)
+
+*색은 모델, 선 모양은 입력 조건(실선 BOS 없음, 파선 BOS, 점선 문서 중간)입니다.*
+
+한계: 모델 4개, 최종 체크포인트만, 논문의 60M LLaMA형 모델과 구조가 다르고 bf16 측정은 재현하지 않았습니다. LLaMA·Mistral의 기본 BOS 동작은 확인하지 못했습니다.
 
 ## 인용할 때
 

@@ -51,7 +51,7 @@ ICLR 2026 (3) · ICLR 2026 워크숍 (1) · ICML 2026 (1) · ICML 2026 워크숍
 | 날짜 | 글 | 요약 |
 |---|---|---|
 | 2026-11-26 | [Transfusion의 동등 FLOP 비교와 절제를 다시 계산했습니다: 방향은 맞고 배수와 일부 절제는 약합니다](papers/transfusion/) | Transfusion은 한 Transformer를 텍스트에는 다음 토큰 손실, 이미지에는 diffusion 손실로 함께 학습합니다. 마스크와 두 손실은 작은 PyTorch 토이에서 그대로 동작하고, 그림 5의 점을 PDF 벡터에서 읽어 다시 맞춘 동등 FLOP 비율은 표 3과 ±0.03 이내로 일치합니다. 그러나 같은 FLOPs에서 Transfusion이 약 4배 많은 이미지를 보고, 25점이 사실은 모델 5개라서 FID '34배'는 자릿수만 믿을 수 있습니다. 모든 표가 학습 1회라서 7B에서 U-Net의 FID 이득, 노이즈 제한 효과는 평가 설정 변화 크기 안에 있습니다. |
-| 2026-11-24 | [attention sink는 언제 생기나: 논문 표를 다시 계산하고 소형 토이를 돌려 보니](papers/attention_sink_emerges/) | attention sink의 출현 조건을 60M 모델 사전학습으로 정리한 논문의 표를 다시 계산했습니다. softmax 정규화를 없앤 sigmoid에서 sink가 사라진다는 핵심 대조는 6개 설정과 1B에서 일관되지만, 모든 표가 실행 1회이고 weight decay 0 대 0.1 같은 작은 차이는 구분되지 않습니다. 지표의 임계값은 눈금이 아니라 T에 의존하는 기준선 위의 값이며, 공개 설정은 논문의 cosine 스케줄과 다릅니다. 직접 짠 소형 토이는 softmax에서도 sink가 생기지 않았습니다. |
+| 2026-11-24 | [attention sink는 언제 생기나: 논문 표를 다시 계산하고 소형 토이를 돌려 보니](papers/attention_sink_emerges/) | attention sink의 출현 조건을 60M 모델 사전학습으로 정리한 논문의 표를 다시 계산했습니다. softmax 정규화를 없앤 sigmoid에서 sink가 사라진다는 핵심 대조는 6개 설정과 1B에서 일관되지만, 모든 표가 실행 1회이고 weight decay 0 대 0.1 같은 작은 차이는 구분되지 않습니다. 지표의 임계값은 눈금이 아니라 T에 의존하는 기준선 위의 값이며, 공개 설정은 논문의 cosine 스케줄과 다릅니다. 직접 짠 소형 토이는 softmax에서도 sink가 생기지 않았습니다. 공개 가중치(Pythia, GPT-2)로 다시 재 보니 Sink 값은 BOS 처리, 임계값, 입력 길이에 크게 달라졌습니다. |
 
 ## ICML 2025 (1)
 

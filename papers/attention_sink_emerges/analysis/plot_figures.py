@@ -1,6 +1,6 @@
 """직접 그리는 그림 4장 (report/figures/own_*.png). 논문 그림은 쓰지 않는다.
 
-입력: metric_check_results.json, tables_recompute_results.json, sink_toy_results.json
+입력: metric_check_results.json, tables_recompute_results.json, sink_toy_results.json, sink_real_models_results.json
 실행: python3 -I analysis/plot_figures.py
 """
 import json
@@ -136,5 +136,55 @@ if p.exists():
     fig.suptitle("토이(4층, 폭 128, 바이트 코퍼스, 시드 3개; 선 평균, 음영 최소-최대)", fontsize=9.5)
     fig.tight_layout()
     fig.savefig(FIG / "own_toy_curves.png", dpi=170)
+    plt.close(fig)
+# 5. 공개 가중치 재측정(R1)
+p = ROOT / "analysis" / "sink_real_models_results.json"
+if p.exists():
+    rm = json.loads(p.read_text())
+    mcol = ["#9bb7d8", "#1f5fae", "#0c2f58", RED]
+    ls = {"start": "-", "bos": "--", "mid": ":"}
+    cname = {"start": "문서 첫 토큰부터(BOS 없음)", "bos": "BOS 붙임", "mid": "문서 중간에서 시작"}
+    Tl = rm["meta"]["T"]
+    fig, ax = plt.subplots(1, 3, figsize=(12.6, 3.9))
+    for (m, mr), col in zip(rm["models"].items(), mcol):
+        nm = m.split("/")[-1]
+        for c in ["start", "bos", "mid"]:
+            y = [mr["cond"][c][str(T)]["sink1"]["0.3"]["mean"] for T in Tl]
+            lo = [mr["cond"][c][str(T)]["sink1"]["0.3"]["ci95"][0] for T in Tl]
+            hi = [mr["cond"][c][str(T)]["sink1"]["0.3"]["ci95"][1] for T in Tl]
+            ax[0].errorbar(Tl, y, yerr=[np.array(y) - lo, np.array(hi) - y], color=col, ls=ls[c], marker="o", ms=3,
+                           lw=1.2, capsize=2, label=nm if c == "start" else None)
+        epsl = rm["meta"]["eps"]
+        for c in ["start", "bos"]:
+            y = [mr["cond"][c]["64"]["sink1"][str(e)]["mean"] for e in epsl]
+            ax[1].plot(epsl, y, color=col, ls=ls[c], marker="o", ms=3, lw=1.2)
+        for c in ["start", "bos"]:
+            y = [mr["cond"][c][str(T)]["alpha1_headmean"]["mean"] for T in Tl]
+            ax[2].plot(Tl, y, color=col, ls=ls[c], marker="o", ms=3, lw=1.2)
+    ax[0].set_xscale("log", base=2)
+    ax[0].set_xticks(Tl)
+    ax[0].set_xticklabels(Tl)
+    ax[0].set_xlabel("T   (실선 BOS 없음 / 파선 BOS 붙임 / 점선 문서 중간)", fontsize=8)
+    ax[0].set_ylabel("Sink1 (%, ε=0.3)")
+    ax[0].set_title("T에 따른 Sink1 (막대: 95% 부트스트랩)", fontsize=9.5)
+    ax[0].legend(fontsize=7.5, frameon=False)
+    ax[1].set_xlabel("ε")
+    ax[1].set_title("ε에 따른 Sink1 (T=64, %)", fontsize=9.5)
+    Tg = np.array(Tl)
+    ax[2].plot(Tg, [sum(1 / i for i in range(1, T + 1)) / T for T in Tl], color=INK, ls="-.", lw=1, label="균일 기준선 H_T/T")
+    ax[2].set_xscale("log", base=2)
+    ax[2].set_xticks(Tl)
+    ax[2].set_xticklabels(Tl)
+    ax[2].set_xlabel("T")
+    ax[2].set_title("헤드 평균 α1", fontsize=9.5)
+    ax[2].legend(fontsize=7.5, frameon=False)
+    from matplotlib.lines import Line2D
+    ax[1].legend([Line2D([], [], color=GREY, ls=ls[c]) for c in ["start", "bos", "mid"][:2]], [cname[c] for c in ["start", "bos"]],
+                 fontsize=7.5, frameon=False)
+    for a in ax:
+        a.spines[["top", "right"]].set_visible(False)
+    fig.suptitle(f"공개 가중치 재측정 (Pile 문서 {rm['meta']['n_docs']}개, 문서 중심 부트스트랩)", fontsize=9.5)
+    fig.tight_layout()
+    fig.savefig(FIG / "own_real_models.png", dpi=170)
     plt.close(fig)
 print("figures:", sorted(p.name for p in FIG.glob("own_*.png")))
