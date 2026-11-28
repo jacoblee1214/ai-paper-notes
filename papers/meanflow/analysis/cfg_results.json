@@ -1,0 +1,110 @@
+{
+ "footnote3_omega=1.5": {
+  "max|E_{c~p(c|z)} v_cfg - v|": 1.3322676295501878e-15,
+  "max|E_{c~prior} v_cfg - v| (\ub17c\ubb38 \uc2dd 14\uc758 \ud45c\uae30\ub97c \uc0ac\uc804\ud655\ub960\ub85c \uc77d\uc744 \ub54c)": 3.3088100987152753
+ },
+ "footnote3_omega=3.0": {
+  "max|E_{c~p(c|z)} v_cfg - v|": 2.6645352591003757e-15,
+  "max|E_{c~prior} v_cfg - v| (\ub17c\ubb38 \uc2dd 14\uc758 \ud45c\uae30\ub97c \uc0ac\uc804\ud655\ub960\ub85c \uc77d\uc744 \ub54c)": 6.617620197430551
+ },
+ "eq19_target_expectation_omega=1.5": {
+  "max|E[\u1e7d|z,c]-v_cfg|": 0.021593840089373817,
+  "mc_std_of_mean_approx": 0.00666401037103125,
+  "M": 20000,
+  "seed": 5
+ },
+ "eq19_target_expectation_omega=3.0": {
+  "max|E[\u1e7d|z,c]-v_cfg|": 0.043187680178747634,
+  "mc_std_of_mean_approx": 0.00666401037103125,
+  "M": 20000,
+  "seed": 5
+ },
+ "eq15_identity_omega=1.0": {
+  "max_resid": 3.085531830038235e-12
+ },
+ "eq15_identity_omega=2.0": {
+  "max_resid": 7.2917898386037905e-09
+ },
+ "eq15_identity_omega=4.0": {
+  "max_resid": 4.271600317906632e-08
+ },
+ "eq20_21_effective_scale": {
+  "w'=2.0,kappa=0.0": {
+   "omega": 2.0,
+   "max|v^cfg - CFG(w')|": 0.0
+  },
+  "w'=2.0,kappa=0.5": {
+   "omega": 1.0,
+   "max|v^cfg - CFG(w')|": 0.0
+  },
+  "w'=2.0,kappa=0.9": {
+   "omega": 0.19999999999999996,
+   "max|v^cfg - CFG(w')|": 1.7763568394002505e-15
+  },
+  "w'=2.5,kappa=0.0": {
+   "omega": 2.5,
+   "max|v^cfg - CFG(w')|": 0.0
+  },
+  "w'=2.5,kappa=0.5": {
+   "omega": 1.25,
+   "max|v^cfg - CFG(w')|": 0.0
+  },
+  "w'=2.5,kappa=0.9": {
+   "omega": 0.24999999999999994,
+   "max|v^cfg - CFG(w')|": 1.7763568394002505e-15
+  }
+ },
+ "guided_samples_class0": {
+  "omega=1.0": {
+   "frac_nearest_is_class0": 0.9712499976158142,
+   "mean_dist_to_class0_mean": 0.7519524431333032,
+   "per_axis_std": 0.5997296854856082
+  },
+  "omega=1.5": {
+   "frac_nearest_is_class0": 0.999750018119812,
+   "mean_dist_to_class0_mean": 0.6778747954853458,
+   "per_axis_std": 0.505663839253102
+  },
+  "omega=1.5, guided only t<=0.75": {
+   "frac_nearest_is_class0": 0.9994999766349792,
+   "mean_dist_to_class0_mean": 0.6526416855762209,
+   "per_axis_std": 0.508800007321945
+  },
+  "omega=2.0": {
+   "frac_nearest_is_class0": 1.0,
+   "mean_dist_to_class0_mean": 0.7224803262039784,
+   "per_axis_std": 0.4640590905736717
+  },
+  "omega=2.0, guided only t<=0.75": {
+   "frac_nearest_is_class0": 1.0,
+   "mean_dist_to_class0_mean": 0.6253692188079623,
+   "per_axis_std": 0.4622724631499714
+  },
+  "omega=3.0": {
+   "frac_nearest_is_class0": 1.0,
+   "mean_dist_to_class0_mean": 0.9171414892586499,
+   "per_axis_std": 0.4216448715204726
+  },
+  "omega=3.0, guided only t<=0.75": {
+   "frac_nearest_is_class0": 1.0,
+   "mean_dist_to_class0_mean": 0.6556955098983515,
+   "per_axis_std": 0.4082094154613799
+  },
+  "omega=5.0": {
+   "frac_nearest_is_class0": 1.0,
+   "mean_dist_to_class0_mean": 1.3038198644824666,
+   "per_axis_std": 0.38425056181655404
+  },
+  "omega=5.0, guided only t<=0.75": {
+   "frac_nearest_is_class0": 1.0,
+   "mean_dist_to_class0_mean": 0.808078006935455,
+   "per_axis_std": 0.3508358228725839
+  },
+  "_data_class0": {
+   "frac_nearest_is_class0": 0.9725000262260437,
+   "mean_dist_to_class0_mean": 0.7545562554240799,
+   "per_axis_std": 0.6019554036291839
+  },
+  "_n": 4000
+ }
+}
