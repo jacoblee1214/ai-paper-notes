@@ -2,9 +2,9 @@
 
 AI·ML 논문(모델 구조, 학습, 추론 효율, 멀티모달, 비전, 생성 모델, 에이전트, 평가, 해석 가능성)을 깊게 읽고, 공개된 수치를 재계산하거나 코드와 대조하며 정리한 노트입니다. 로봇 학습 논문은 [paper-notes](https://github.com/jacoblee1214/paper-notes)에 있습니다.
 
-학회별로 묶었습니다(53편). 학회는 arXiv Comments·Journal ref, 원문, 프로젝트 페이지의 표기를 따랐고 각 글 머리말의 `venue`(묶음)와 `venue_note`(근거)에 적었습니다. 묶음 안에서는 날짜 역순입니다.
+학회별로 묶었습니다(54편). 학회는 arXiv Comments·Journal ref, 원문, 프로젝트 페이지의 표기를 따랐고 각 글 머리말의 `venue`(묶음)와 `venue_note`(근거)에 적었습니다. 묶음 안에서는 날짜 역순입니다.
 
-ICLR 2026 (3) · ICLR 2026 워크숍 (1) · ICML 2026 (1) · ICML 2026 워크숍 (1) · ICSE 2026 (1) · NeurIPS 2025 (3) · ICLR 2025 (2) · ICML 2025 (1) · TMLR 2025 (1) · IJCNLP-AACL 2025 워크숍 (1) · ICLR 2024 (8) · NeurIPS 2024 (2) · ACL 2024 Findings (1) · CVPR 2024 (1) · ICML 2024 (1) · TACL 2024 (1) · TMLR 2024 (1) · NeurIPS 2023 (3) · ICML 2023 (2) · ICCV 2023 (1) · SOSP 2023 (1) · NeurIPS 2022 (2) · ICLR 2021 (1) · ICML 2021 (1) · NeurIPS 2021 (1) · EMNLP 2020 (1) · 학회 표기 없음 (arXiv) (5) · 기술 보고서·블로그 (5)
+ICLR 2026 (3) · ICLR 2026 워크숍 (1) · ICML 2026 (1) · ICML 2026 워크숍 (1) · ICSE 2026 (1) · NeurIPS 2025 (3) · ICLR 2025 (2) · ICML 2025 (1) · TMLR 2025 (1) · IJCNLP-AACL 2025 워크숍 (1) · ICLR 2024 (8) · NeurIPS 2024 (2) · ACL 2024 Findings (1) · CVPR 2024 (1) · ICML 2024 (1) · TACL 2024 (1) · TMLR 2024 (1) · NeurIPS 2023 (3) · ICML 2023 (2) · ICCV 2023 (1) · ICLR 2023 (1) · SOSP 2023 (1) · NeurIPS 2022 (2) · ICLR 2021 (1) · ICML 2021 (1) · NeurIPS 2021 (1) · EMNLP 2020 (1) · 학회 표기 없음 (arXiv) (5) · 기술 보고서·블로그 (5)
 
 ## ICLR 2026 (3)
 
@@ -141,6 +141,12 @@ ICLR 2026 (3) · ICLR 2026 워크숍 (1) · ICML 2026 (1) · ICML 2026 워크숍
 | 날짜 | 글 | 요약 |
 |---|---|---|
 | 2026-11-26 | [SigLIP의 sigmoid 손실을 직접 짜 보면: 편향 초기화 유도, 식과 코드의 부호 불일치, 작은 토이](papers/siglip/) | Zhai et al.의 SigLIP을 식 검산, 직접 짠 PyTorch 최소 구현(pytest 18개), 논문 표 재계산, 합성 도형 토이(6시드), 공식 코드와 OpenCLIP 정적 대조로 분석했습니다. 편향 b = -10은 양성 사전확률 1/B에 가까운 초기화이고, 논문 식의 b 부호는 알고리즘과 코드와 반대이며, 공식 저장소에는 청크 구현이 없습니다. 토이에서 작은 배치 우위는 본 예제 수를 맞춘 배치 16에서만 +2.5점으로 재현됐고 스텝이 적으면 오히려 뒤집었습니다. |
+
+## ICLR 2023 (1)
+
+| 날짜 | 글 | 요약 |
+|---|---|---|
+| 2026-11-28 | [GPTQ를 선형층 하나부터 직접 짜서 확인한 것: OBQ와 정확히 같은 계산인가, 4비트는 정말 무손실인가](papers/gptq/) | Frantar et al.의 GPTQ(고정 열 순서, 128열 지연 갱신, Cholesky)를 PyTorch로 짜서(pytest 31개) 같은 열 순서의 순차 OBQ와 1e-8 이내로 일치함을 확인하고, GPT-2 small과 Pythia-160M에 RTN과 비교했습니다(pile-10k held-out 문서 150개). GPTQ는 8개 설정 중 7개에서 RTN보다 분명히 낮았지만(3비트 행별 GPT-2 37 대 260) 4비트도 FP32보다 유의하게 나빴습니다(GPT-2 +4–7%, Pythia-160M +26–44%). 논문 4절의 탐욕 순서 주장은 작은 합성 층에서 반대로 나왔고, 후속 act-order는 3비트에서 6–36% 개선했습니다. OPT-175B 메모리·시간 산술은 대부분 일치했습니다. GPU 속도와 공식 코드 실행은 하지 않았습니다. |
 
 ## SOSP 2023 (1)
 
