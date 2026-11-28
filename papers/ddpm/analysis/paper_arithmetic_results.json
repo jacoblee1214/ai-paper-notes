@@ -1,0 +1,105 @@
+{
+ "T1_nll_gap": {
+  "L (fixed isotropic Sigma)": {
+   "test": 3.7,
+   "train": 3.69,
+   "gap": 0.01,
+   "within_0.03": true
+  },
+  "L_simple": {
+   "test": 3.75,
+   "train": 3.72,
+   "gap": 0.03,
+   "within_0.03": true
+  }
+ },
+ "S43_T4": {
+  "rate_plus_distortion": 3.75,
+  "table1_L_simple_nll": 3.75,
+  "frac_of_codelength_in_distortion": 0.5253333333333333,
+  "table4_rate_1000_vs_text_1.78": 1.77581,
+  "table4_dist_1000_vs_text_0.95": 0.95136,
+  "rate_monotone_nonincreasing_with_fewer_steps": true,
+  "dist_monotone": true,
+  "rate_fraction_in_first_step_row_1000_to_900": 0.9324589905451597,
+  "discretized_decoder_nll_bits_given_rmse_0.95": {
+   "sigma1^2=beta_1 (논문 §3.3의 sigma_t^2=beta_t)": {
+    "sigma_255scale": 1.2750000000000001,
+    "gauss_err": 2.094457860040802,
+    "laplace_err": 2.094616250446864
+   },
+   "sigma1^2=beta~_2 (공식 코드 fixedlarge의 t=1 로그 분산)": {
+    "sigma_255scale": 0.9415326968249366,
+    "gauss_err": 1.9768500114965681,
+    "laplace_err": 1.9801419859835019
+   }
+  },
+  "nll_min_over_sigma_bits": 1.9751654249550978,
+  "sigma_at_min_255scale": 0.905,
+  "sigma_255scale_roots_for_1.97_gauss_err": [],
+  "sigma_roots_as_variance_in_[-1,1]_scale": [],
+  "beta_1": 0.0001,
+  "beta_tilde_2": 5.4531876613021935e-05,
+  "const_predictor_rmse_255": 63.959742664820034,
+  "table4_rmse_100_steps": 67.60125,
+  "abar_at_T-t+1=100": 0.0002702445195582643,
+  "amplification_1/sqrt(abar)": 60.83052326619035,
+  "excess_mse_x_[-1,1]^2": 0.029470531014994174,
+  "implied_excess_eps_mse_per_dim": 7.966402371855618e-06,
+  "eps_mse_floor_if_Ex2=0.256": 6.920129827852176e-05
+ },
+ "T2_ablation": {
+  "IS_pairs": {
+   "eps L_simple vs eps L": {
+    "diff_IS": 1.790000000000001,
+    "se_if_pm_is_split_std_10": 0.05385164807134504,
+    "z": 33.2394655336923
+   },
+   "mu~ L vs eps L (fixed Sigma)": {
+    "diff_IS": 0.39000000000000057,
+    "se_if_pm_is_split_std_10": 0.049999999999999996,
+    "z": 7.800000000000012
+   }
+  },
+  "FID_gaps": {
+   "eps L vs mu~ L (FID, fixed Sigma)": 0.28999999999999915,
+   "eps L_simple vs eps L": 10.34,
+   "learned Sigma vs fixed (mu~, L)": 10.47
+  },
+  "note": "FID에는 +-가 없다. 최종 실험은 한 번 학습했고(부록 B) 학습 중 평가한 최소 FID를 보고했다."
+ },
+ "T3_T1_fid": {
+  "ours_Lsimple_vs_StyleGAN2+ADA_v1_uncond(3.26)": 0.08999999999999986,
+  "ours_vs_StyleGAN2+ADA_v1_cond(2.67)": 0.5,
+  "lsun_bedroom_ours_6.36_vs_ProgressiveGAN_8.34": 1.9799999999999995,
+  "lsun_church_ours_7.89_vs_ProgressiveGAN_6.42": 1.4699999999999998,
+  "lsun_cat_ours_19.75_vs_ProgressiveGAN_37.52": 17.770000000000003,
+  "lsun_bedroom_large_4.90_vs_StyleGAN_2.65": 2.2500000000000004,
+  "cifar_test_set_FID_5.24_minus_train_FID_3.17": 2.0700000000000003
+ },
+ "B_params": {
+  "cifar10_unet2d16b2": 35746307,
+  "paper_cifar_35.7M_ratio": 1.0012971148459384,
+  "lsun_celebahq_ch128_mult112244": 113673219,
+  "paper_114M_ratio": 0.9971335,
+  "hypothetical_ch192": 255677955,
+  "paper_256M_ratio": 0.99874201171875,
+  "note": "ch=192는 추정이다(공식 코드에는 256M 설정이 없다). 논문은 '필터 수를 늘렸다'고만 쓴다."
+ },
+ "B_time": {
+  "cifar_800k_steps_hours": 10.58201058201058,
+  "paper_10.6h": 10.6,
+  "cifar_sample_256_17s_per_step_ms": 17.0,
+  "cifar_FID_50k_samples_minutes": 55.338541666666664,
+  "cifar_img_per_s_sampling": 15.058823529411764,
+  "lsun_bedroom_2.4M_steps_days": 12.626262626262625,
+  "lsun_cat_1.8M_days": 9.469696969696969,
+  "lsun_church_1.2M_days": 6.313131313131312,
+  "celebahq_0.5M_days": 2.63047138047138,
+  "lsun_sampling_128_per_300s_s_per_image": 2.34375,
+  "lsun_FID_50k_hours": 32.552083333333336,
+  "cifar_train_images_seen_M": 102.4,
+  "cifar_epochs_of_50k": 2048.0,
+  "cifar_nfe_per_image_sampling": 1000
+ }
+}
