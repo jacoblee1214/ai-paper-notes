@@ -1,0 +1,398 @@
+{
+ "table1": {
+  "0.1": {
+   "best_w": 0.1,
+   "best_fid": 1.55,
+   "fid_at_w0": 1.8,
+   "fid_monotone_decreasing": false,
+   "fid_monotone_increasing_from_best": true,
+   "is_monotone_increasing": true,
+   "fid_at_w4": 26.22,
+   "is_at_w4": 260.2
+  },
+  "0.2": {
+   "best_w": 0.1,
+   "best_fid": 1.62,
+   "fid_at_w0": 1.8,
+   "fid_monotone_decreasing": false,
+   "fid_monotone_increasing_from_best": true,
+   "is_monotone_increasing": true,
+   "fid_at_w4": 23.84,
+   "is_at_w4": 248.97
+  },
+  "0.5": {
+   "best_w": 0.1,
+   "best_fid": 1.91,
+   "fid_at_w0": 2.21,
+   "fid_monotone_decreasing": false,
+   "fid_monotone_increasing_from_best": true,
+   "is_monotone_increasing": true,
+   "fid_at_w4": 21.48,
+   "is_at_w4": 225.1
+  }
+ },
+ "table2": {
+  "128": {
+   "best_w": 0.4,
+   "best_fid": 3.02,
+   "fid_at_w0": 8.11,
+   "fid_monotone_increasing_from_best": true,
+   "is_monotone_increasing": true,
+   "fid_at_w4": 21.55,
+   "is_at_w4": 422.29,
+   "w_with_fid_within_0.05_of_best": [
+    0.3,
+    0.4
+   ]
+  },
+  "256": {
+   "best_w": 0.3,
+   "best_fid": 2.43,
+   "fid_at_w0": 7.27,
+   "fid_monotone_increasing_from_best": true,
+   "is_monotone_increasing": true,
+   "fid_at_w4": 21.53,
+   "is_at_w4": 421.03,
+   "w_with_fid_within_0.05_of_best": [
+    0.3
+   ]
+  },
+  "1024": {
+   "best_w": 0.3,
+   "best_fid": 2.43,
+   "fid_at_w0": 7.22,
+   "fid_monotone_increasing_from_best": true,
+   "is_monotone_increasing": true,
+   "fid_at_w4": 21.45,
+   "is_at_w4": 419.06,
+   "w_with_fid_within_0.05_of_best": [
+    0.3,
+    0.4
+   ]
+  }
+ },
+ "p_uncond": {
+  "fid_diff_0.2_minus_0.1": [
+   0.0,
+   0.07,
+   0.06,
+   -0.1,
+   -0.3,
+   -0.55,
+   -0.71,
+   -0.89,
+   -1.18,
+   -1.32,
+   -1.39,
+   -2.24,
+   -2.47,
+   -2.38
+  ],
+  "median_abs_diff_0.1_vs_0.2": 0.7999999999999994,
+  "n_w_where_0.1_better_fid": 2,
+  "n_w_where_0.2_better_fid": 11,
+  "n_w_tied": 1,
+  "n_w_where_0.1_better_is": 14,
+  "sign_test_p_fid_two_sided": 0.0224609375,
+  "note": "w\ub4e4\uc740 \uac19\uc740 \ub450 \ud559\uc2b5 \uc2e4\ud589\uc5d0\uc11c \ub098\uc628 \uc0c1\uad00\ub41c \uc810\uc774\ub77c \ubd80\ud638 \uac80\uc815 p\uac12\uc740 \uae30\uc220 \ud1b5\uacc4\uc77c \ubfd0 \ub3c5\ub9bd \uac80\uc815\uc774 \uc544\ub2d8"
+ },
+ "frontier_p05_vs_p01": [
+  {
+   "w": 0.1,
+   "is": 56.1,
+   "fid_p05": 1.91,
+   "fid_p01_at_same_is": 1.7518145161290324,
+   "fid_p02_at_same_is": 1.7506849315068493
+  },
+  {
+   "w": 0.2,
+   "is": 65.6,
+   "fid_p05": 2.08,
+   "fid_p01_at_same_is": 1.5602822580645164,
+   "fid_p02_at_same_is": 1.6594520547945204
+  },
+  {
+   "w": 0.3,
+   "is": 74.92,
+   "fid_p05": 2.65,
+   "fid_p01_at_same_is": 1.8872578125000001,
+   "fid_p02_at_same_is": 2.0199355358581794
+  },
+  {
+   "w": 0.4,
+   "is": 84.27,
+   "fid_p05": 3.44,
+   "fid_p01_at_same_is": 2.4220302375809935,
+   "fid_p02_at_same_is": 2.6186609442060087
+  },
+  {
+   "w": 0.5,
+   "is": 92.95,
+   "fid_p05": 4.34,
+   "fid_p01_at_same_is": 3.044216417910448,
+   "fid_p02_at_same_is": 3.2998235765838015
+  },
+  {
+   "w": 0.6,
+   "is": 102.0,
+   "fid_p05": 5.27,
+   "fid_p01_at_same_is": 3.9019402985074625,
+   "fid_p02_at_same_is": 4.095932971014493
+  },
+  {
+   "w": 0.7,
+   "is": 109.8,
+   "fid_p05": 6.23,
+   "fid_p01_at_same_is": 4.695725190839694,
+   "fid_p02_at_same_is": 4.93669384057971
+  },
+  {
+   "w": 0.8,
+   "is": 116.9,
+   "fid_p05": 7.25,
+   "fid_p01_at_same_is": 5.476183206106871,
+   "fid_p02_at_same_is": 5.803977955911825
+  },
+  {
+   "w": 0.9,
+   "is": 124.6,
+   "fid_p05": 8.21,
+   "fid_p01_at_same_is": 6.391271186440678,
+   "fid_p02_at_same_is": 6.806029567053854
+  },
+  {
+   "w": 1.0,
+   "is": 131.1,
+   "fid_p05": 9.13,
+   "fid_p01_at_same_is": 7.19,
+   "fid_p02_at_same_is": 7.664002111932419
+  },
+  {
+   "w": 2.0,
+   "is": 183.0,
+   "fid_p05": 16.16,
+   "fid_p01_at_same_is": 14.562942238267148,
+   "fid_p02_at_same_is": 14.634790638142258
+  },
+  {
+   "w": 3.0,
+   "is": 208.9,
+   "fid_p05": 19.75,
+   "fid_p01_at_same_is": 18.50404332129964,
+   "fid_p02_at_same_is": 18.224514536478335
+  },
+  {
+   "w": 4.0,
+   "is": 225.1,
+   "fid_p05": 21.48,
+   "fid_p01_at_same_is": 20.96913357400722,
+   "fid_p02_at_same_is": 20.54388731252533
+  }
+ ],
+ "frontier_summary": {
+  "n_points": 13,
+  "mean_fid_gap_p05_minus_p01": 1.1956276724881767,
+  "max_gap": 1.9400000000000004,
+  "min_gap": 0.15818548387096754,
+  "n_p05_worse": 13,
+  "gap_at_highest_is": 0.5108664259927806,
+  "note": "\uc120\ud615 \ubcf4\uac04(\uc804\uc120\uc740 \uace1\uc120\uc774\ubbc0\ub85c \uadfc\uc0ac). \uace0IS \ub05d(w>=2)\uc5d0\uc11c \ucc28\uc774\uac00 0.5 \uc774\ud558\ub85c \uc904\uc5b4\ub4e6"
+ },
+ "frontier_p02_vs_p01": [
+  {
+   "w": 0.1,
+   "is": 64.58,
+   "fid_p02": 1.62,
+   "fid_p01_at_same_is": 1.5808467741935484
+  },
+  {
+   "w": 0.2,
+   "is": 76.99,
+   "fid_p02": 2.1,
+   "fid_p01_at_same_is": 1.9665
+  },
+  {
+   "w": 0.3,
+   "is": 88.64,
+   "fid_p02": 2.93,
+   "fid_p01_at_same_is": 2.7334989200863933
+  },
+  {
+   "w": 0.4,
+   "is": 101.11,
+   "fid_p02": 4.0,
+   "fid_p01_at_same_is": 3.8175895522388057
+  },
+  {
+   "w": 0.5,
+   "is": 112.15,
+   "fid_p02": 5.19,
+   "fid_p01_at_same_is": 4.954045801526719
+  },
+  {
+   "w": 0.6,
+   "is": 122.13,
+   "fid_p02": 6.48,
+   "fid_p01_at_same_is": 6.087754237288136
+  },
+  {
+   "w": 0.7,
+   "is": 131.6,
+   "fid_p02": 7.73,
+   "fid_p01_at_same_is": 7.256822429906542
+  },
+  {
+   "w": 0.8,
+   "is": 140.82,
+   "fid_p02": 8.9,
+   "fid_p01_at_same_is": 8.489028037383175
+  },
+  {
+   "w": 0.9,
+   "is": 150.26,
+   "fid_p02": 10.09,
+   "fid_p01_at_same_is": 9.880367346938774
+  },
+  {
+   "w": 1.0,
+   "is": 158.29,
+   "fid_p02": 11.21,
+   "fid_p01_at_same_is": 11.026563829787234
+  },
+  {
+   "w": 2.0,
+   "is": 212.98,
+   "fid_p02": 18.79,
+   "fid_p01_at_same_is": 19.124880866425993
+  },
+  {
+   "w": 3.0,
+   "is": 237.65,
+   "fid_p02": 22.36,
+   "fid_p01_at_same_is": 22.88421686746988
+  },
+  {
+   "w": 4.0,
+   "is": 248.97,
+   "fid_p02": 23.84,
+   "fid_p01_at_same_is": 24.61176706827309
+  }
+ ],
+ "frontier_p02_vs_p01_summary": {
+  "n_points": 13,
+  "mean_gap_p02_minus_p01": 0.06354755911397775,
+  "n_p02_worse": 10,
+  "max_abs_gap": 0.771767068273089,
+  "gaps": [
+   0.039,
+   0.134,
+   0.197,
+   0.182,
+   0.236,
+   0.392,
+   0.473,
+   0.411,
+   0.21,
+   0.183,
+   -0.335,
+   -0.524,
+   -0.772
+  ]
+ },
+ "table2_T": {
+  "fid_256_minus_1024": [
+   0.05,
+   0.03,
+   0.03,
+   0.0,
+   0.01,
+   0.02,
+   0.03,
+   -0.02,
+   0.03,
+   -0.01,
+   0.06,
+   0.18,
+   0.21,
+   0.08
+  ],
+  "median_abs": 0.030000000000000027,
+  "max_abs": 0.21000000000000085,
+  "fid_128_minus_256": [
+   0.84,
+   0.78,
+   0.67,
+   0.61,
+   0.53,
+   0.45,
+   0.33,
+   0.29,
+   0.19,
+   0.09,
+   0.02,
+   -0.03,
+   0.0,
+   0.02
+  ],
+  "median_abs_128_vs_256": 0.31000000000000005,
+  "w_range_where_128_gap_exceeds_0.3": [
+   0.0,
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0.5,
+   0.6
+  ],
+  "best_w_all_T_equal_within_noise": true,
+  "fig5_legend_says_T512_but_table_and_text_say_1024": true,
+  "best_fid_T256_w0.3_vs_w0.4": [
+   2.43,
+   2.49
+  ]
+ },
+ "claims_vs_baselines": {
+  "64_best_vs_ADM": [
+   1.55,
+   2.07
+  ],
+  "64_best_vs_CDM": [
+   1.55,
+   1.48
+  ],
+  "128_w0.3_T256_vs_ADM_G": [
+   2.43,
+   2.97
+  ],
+  "128_w4_vs_BigGAN_deep_maxIS": {
+   "fid": [
+    21.53,
+    25
+   ],
+   "is": [
+    421.03,
+    253
+   ]
+  },
+  "128_best_vs_CDM": [
+   2.43,
+   3.52
+  ],
+  "128_best_vs_LOGAN": [
+   2.43,
+   3.36
+  ],
+  "128_T128_best_fid_vs_ADM_G_equal_cost": [
+   3.02,
+   2.97
+  ],
+  "note": "T=128\uc740 ADM-G(250 \ub2e8\uacc4, \uc21c\uc804\ud30c 1\ud68c)\uc640 \uac19\uc740 \uc21c\uc804\ud30c \uc218(2x128=256 \ub300 250)\ub2e4. \uc774\ub54c \ucd5c\uc120 FID 3.02\ub294 ADM-G 2.97\ubcf4\ub2e4 \uc57d\uac04 \ub098\uc068"
+ },
+ "nfe": {
+  "cfg_T128": 256,
+  "cfg_T256": 512,
+  "cfg_T1024": 2048,
+  "adm_g": 250,
+  "note": "ADM-G\ub294 \ubd84\ub958\uae30 \uc21c\uc804\ud30c/\uc5ed\uc804\ud30c\ub97c \ud3ec\ud568\ud558\uc9c0 \uc54a\uc740 \ud655\uc0b0 \ubaa8\ub378 \ud638\ucd9c \uc218. \ubd84\ub958\uae30 \ube44\uc6a9\uc740 \ubcc4\ub3c4"
+ }
+}
