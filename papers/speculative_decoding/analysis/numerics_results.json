@@ -1,0 +1,38 @@
+{
+ "float32": {
+  "nocache_32_vs_40": {
+   "n": 100,
+   "tv_mean": 0.0,
+   "tv_max": 0.0,
+   "pmax_rel_diff_mean": 0.0,
+   "pmax_rel_diff_max": 0.0,
+   "argmax_flips": 0
+  },
+  "cache_k1_vs_k9": {
+   "n": 100,
+   "tv_mean": 0.0001222859718836844,
+   "tv_max": 0.0004104763502255082,
+   "pmax_rel_diff_mean": 0.00019760261056944728,
+   "pmax_rel_diff_max": 0.0011237995931878686,
+   "argmax_flips": 0
+  }
+ },
+ "bfloat16": {
+  "nocache_32_vs_40": {
+   "n": 100,
+   "tv_mean": 0.0,
+   "tv_max": 0.0,
+   "pmax_rel_diff_mean": 0.0,
+   "pmax_rel_diff_max": 0.0,
+   "argmax_flips": 0
+  },
+  "cache_k1_vs_k9": {
+   "n": 100,
+   "tv_mean": 0.0,
+   "tv_max": 0.0,
+   "pmax_rel_diff_mean": 0.0,
+   "pmax_rel_diff_max": 0.0,
+   "argmax_flips": 0
+  }
+ }
+}
