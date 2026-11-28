@@ -129,9 +129,35 @@ def fig_interp():
     plt.close(fig)
 
 
+def fig_pythia():
+    r = load("pythia_sae_results.json")
+    fig, ax = plt.subplots(1, 3, figsize=(14, 4.2))
+    layers = sorted({x["layer"] for x in r["main"]})
+    for k, l in enumerate(layers):
+        d = sorted([x for x in r["main"] if x["layer"] == l], key=lambda x: x["alpha"])
+        ax[0].plot([x["l0"] for x in d], [x["ppl_rec"] for x in d], "o-", color=C[k], label=f"층 {l}")
+        ax[1].plot([x["fvu"] for x in d], [x["loss_recovered_strict"] for x in d], "o-", color=C[k], label=f"층 {l}")
+        ax[2].plot([x["alpha"] for x in d], [x["dead_frac"] for x in d], "o-", color=C[k], label=f"층 {l}")
+        ax[0].axhline(d[0]["ppl_clean"], color=C[k], lw=0.6, ls=":")
+    ax[0].axhspan(25, 40, color="0.9", zorder=0)
+    ax[0].text(0.98, 0.9, "회색 띠 = 논문 25 → 40\n(점선 = 우리 정상 perplexity)", transform=ax[0].transAxes, ha="right", va="top", fontsize=8)
+    ax[0].set_yscale("log"); ax[0].set_xscale("log")
+    ax[0].set_xlabel("평균 L0 (표본당 켜진 특징 수, 사전 2048)"); ax[0].set_ylabel("재구성을 끼운 perplexity")
+    ax[0].set_title("L0가 클수록 perplexity가 정상에 가까움", fontsize=10)
+    ax[1].set_xlabel("FVU (평가 집합)"); ax[1].set_ylabel("loss recovered (엄격한 기준선)")
+    ax[1].set_title("FVU와 loss recovered", fontsize=10)
+    ax[2].set_xlabel("alpha (정규화한 활성 기준)"); ax[2].set_xscale("log"); ax[2].set_xticks(sorted({x["alpha"] for x in r["main"]})); ax[2].set_xticklabels([str(a) for a in sorted({x["alpha"] for x in r["main"]})]); ax[2].minorticks_off(); ax[2].set_ylabel("죽은 특징 비율")
+    ax[2].set_title("죽은 특징", fontsize=10)
+    ax[0].legend(fontsize=8)
+    fig.suptitle("Pythia-70M 잔차 흐름(resid_post)의 SAE, R = 4, 평가 토큰 약 10만 개 (층 1, 2만: 층 3, 4는 실행이 중단되어 없음)", fontsize=11)
+    fig.tight_layout()
+    fig.savefig(FIG / "own_pythia_sae.png", dpi=140)
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     import sys
     which = sys.argv[1:] or ["recovery", "shrinkage", "lm", "interp"]
     for w in which:
-        {"recovery": fig_recovery, "shrinkage": fig_shrinkage, "lm": fig_lm, "interp": fig_interp}[w]()
+        {"recovery": fig_recovery, "shrinkage": fig_shrinkage, "lm": fig_lm, "interp": fig_interp, "pythia": fig_pythia}[w]()
         print("saved", w)

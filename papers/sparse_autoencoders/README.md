@@ -7,6 +7,7 @@ Cunningham et al. (ICLR 2024 포스터)의 희소 오토인코더(SAE)를 구현
 - **수축**: 직교 정답에서 최적 코드 c = max(a − α/2, 0)를 유도하고, 학습한 SAE의 평균 L0와 회귀 기울기가 이론과 0.05 이내로 일치(시드 3개).
 - **정답 시험대**(정답 64개, 시드 3개): 정답/차원 = 2에서 α 0.1–0.3이면 복원율(최대 코사인 > 0.9) 0.98–1.00. α ≤ 0.03에서는 FVU 0.002–0.02인데도 복원율 0.02–0.39. 정답/차원 = 4에서는 어떤 (α, R)에서도 최대 0.46.
 - **2층 모델 활성**(학습 97,920 벡터): FVU 0.17–0.23(L0 35–40/512)일 때 다음 토큰 손실 +0.37–0.45 nats, loss recovered 0.88–0.89. 시드 간 사전 일치는 원소의 34–36%만 최대 코사인 0.9 이상.
+- **Pythia-70M 층 1, 2**(R = 4, 시드 1개): 정상 perplexity 25.4가 재구성을 끼우면 α 0.03에서 34와 46, α 0.1에서 60과 100(논문 §6.2의 25 → 40과 같은 크기, α·층 규약을 몰라 정확 재현은 아님). 층 3, 4와 랜덤 모델 대조는 없음.
 - **해석 대용 지표**(상위 20개 활성의 최빈 토큰 비율, 자동 해석 점수가 아님): SAE 0.46–0.56, 기저·무작위·PCA 0.26–0.36. 그러나 랜덤 초기화 모델의 SAE도 0.48.
 - **induction 연결**: 반복 구간 선택 특징 34개가 층 1 head 직접 출력을 빼면 평균 55% 줄지만, 디코더 방향과 head 출력 방향의 코사인은 무작위 수준.
 - **이후 문헌**: 시드 불안정, 랜덤 모델에서도 비슷한 해석 점수, 하류 과제에서 단순 기준선 열세 등으로 "SAE 특징 = 참 특징"이라는 읽기는 수정됨.
@@ -20,7 +21,8 @@ Cunningham et al. (ICLR 2024 포스터)의 희소 오토인코더(SAE)를 구현
 | `analysis/minimal_impl.py` | SAE, 학습, 지표, 합성 시험대, 모델 복사본과 훅, 대용 지표 (PyTorch) |
 | `analysis/test_minimal_impl.py` | pytest 13개 |
 | `analysis/experiments.py`, `results_{a,a2,b,c,d}.json` | 실험 스크립트와 결과(학습 설정 포함) |
-| `analysis/plot_figures.py`, `figures/` | 우리가 그린 그래프 네 장 |
+| `analysis/pythia_sae.py`, `pythia_sae_results.json` | Pythia-70M 층 1, 2의 SAE와 재구성을 끼운 perplexity (`03` §10; 학습은 메모리 약 25 GB라 `--train` 필요) |
+| `analysis/plot_figures.py`, `figures/` | 우리가 그린 그래프 다섯 장 |
 
 ## 재실행
 
@@ -35,6 +37,7 @@ python3 experiments.py a2       # 직교 정답 수축 검산 (약 1분)
 python3 experiments.py b        # 2층 모델 SAE (약 13분)
 python3 experiments.py c        # 해석 대용 지표, 랜덤 모델 대조 (약 6분)
 python3 experiments.py d        # head 출력과 SAE 특징 (약 3분)
+# python3 pythia_sae.py --train # Pythia-70M SAE: 메모리를 매우 많이 씀(관측 약 25 GB). --train 없이는 학습하지 않음
 python3 plot_figures.py
 ```
 
