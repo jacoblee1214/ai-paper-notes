@@ -2,9 +2,9 @@
 
 AI·ML 논문(모델 구조, 학습, 추론 효율, 멀티모달, 비전, 생성 모델, 에이전트, 평가, 해석 가능성)을 깊게 읽고, 공개된 수치를 재계산하거나 코드와 대조하며 정리한 노트입니다. 로봇 학습 논문은 [paper-notes](https://github.com/jacoblee1214/paper-notes)에 있습니다.
 
-학회별로 묶었습니다(54편). 학회는 arXiv Comments·Journal ref, 원문, 프로젝트 페이지의 표기를 따랐고 각 글 머리말의 `venue`(묶음)와 `venue_note`(근거)에 적었습니다. 묶음 안에서는 날짜 역순입니다.
+학회별로 묶었습니다(55편). 학회는 arXiv Comments·Journal ref, 원문, 프로젝트 페이지의 표기를 따랐고 각 글 머리말의 `venue`(묶음)와 `venue_note`(근거)에 적었습니다. 묶음 안에서는 날짜 역순입니다.
 
-ICLR 2026 (3) · ICLR 2026 워크숍 (1) · ICML 2026 (1) · ICML 2026 워크숍 (1) · ICSE 2026 (1) · NeurIPS 2025 (3) · ICLR 2025 (2) · ICML 2025 (1) · TMLR 2025 (1) · IJCNLP-AACL 2025 워크숍 (1) · ICLR 2024 (8) · NeurIPS 2024 (2) · ACL 2024 Findings (1) · CVPR 2024 (1) · ICML 2024 (1) · TACL 2024 (1) · TMLR 2024 (1) · NeurIPS 2023 (3) · ICML 2023 (2) · ICCV 2023 (1) · ICLR 2023 (1) · SOSP 2023 (1) · NeurIPS 2022 (2) · ICLR 2021 (1) · ICML 2021 (1) · NeurIPS 2021 (1) · EMNLP 2020 (1) · 학회 표기 없음 (arXiv) (5) · 기술 보고서·블로그 (5)
+ICLR 2026 (3) · ICLR 2026 워크숍 (1) · ICML 2026 (1) · ICML 2026 워크숍 (1) · ICSE 2026 (1) · NeurIPS 2025 (3) · ICLR 2025 (2) · ICML 2025 (1) · TMLR 2025 (1) · IJCNLP-AACL 2025 워크숍 (1) · ICLR 2024 (8) · NeurIPS 2024 (2) · ACL 2024 Findings (1) · CVPR 2024 (1) · ICML 2024 (1) · MLSys 2024 (1) · TACL 2024 (1) · TMLR 2024 (1) · NeurIPS 2023 (3) · ICML 2023 (2) · ICCV 2023 (1) · ICLR 2023 (1) · SOSP 2023 (1) · NeurIPS 2022 (2) · ICLR 2021 (1) · ICML 2021 (1) · NeurIPS 2021 (1) · EMNLP 2020 (1) · 학회 표기 없음 (arXiv) (5) · 기술 보고서·블로그 (5)
 
 ## ICLR 2026 (3)
 
@@ -108,6 +108,12 @@ ICLR 2026 (3) · ICLR 2026 워크숍 (1) · ICML 2026 (1) · ICML 2026 워크숍
 | 날짜 | 글 | 요약 |
 |---|---|---|
 | 2026-11-26 | [Prismatic VLMs 분석: VLM 설계 결론은 얼마나 믿을 수 있나](papers/prismatic_vlms/) | 인코더, 해상도, 전처리, 학습 단계, LM을 통제해 비교한 VLM 설계 논문의 부록 표 58행을 다시 계산했습니다. 큰 효과는 믿을 만하지만 작은 효과는 단일 실행의 변동과 구분되지 않고, 본문 문장 두 개와 공식 코드 일부가 표와 다릅니다. |
+
+## MLSys 2024 (1)
+
+| 날짜 | 글 | 요약 |
+|---|---|---|
+| 2026-11-28 | [AWQ의 "활성 크기로 고른 1% 채널을 스케일로 보호한다"를 직접 구현해 확인한 기록: 식 2의 가정이 깨지는 지점, 그리고 scale과 clipping 중 무엇이 일했나](papers/awq/) | Lin et al.의 AWQ를 PyTorch로 짜서(α 격자 탐색, 가중치 clipping, 그룹 INT4/INT3, pytest 20개) 확인했습니다. 식 2의 오차비 1/s는 s가 1.5 이하일 때 맞고 s = 2에서 그룹의 17-20%가 Delta 불변 가정을 깨며, 출력 오차는 s가 2-3일 때 최소입니다. GPT-2 small과 Pythia-160M(W4, W3, 그룹 128, pile-10k 보류 문서 64개)에서 채널 보호 기준은 활성이 가중치 노름과 무작위보다 낫고(Holm p 0.003 이하), AWQ scale은 W3에서 RTN 대비 perplexity를 12%, 37% 낮추지만 W4의 GPT-2에서는 RTN과 구분되지 않았습니다. clipping을 더하면 W3 개선이 크게 늘어 scale의 몫은 절반 이하였습니다. Llama-2-7B W4 g128 가중치는 3.97 GB(압축비 3.4배)로 24 GB 맥에 들어갑니다. 속도는 재지 않았고 공식 코드는 읽기만 했습니다. |
 
 ## TACL 2024 (1)
 
