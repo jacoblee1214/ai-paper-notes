@@ -1,0 +1,453 @@
+{
+ "table1": [
+  {
+   "sde": "VE",
+   "cmp": "PC1000(ancestral) vs P2000(ancestral) [같은 NFE 2000]",
+   "a": [
+    3.62,
+    0.03
+   ],
+   "b": [
+    4.88,
+    0.06
+   ],
+   "diff": -1.26,
+   "t_ddof1": -41.99999999999999,
+   "p_ddof1": 1.6215870552457562e-08,
+   "p_ddof0": 3.119200755519632e-08,
+   "p_holm_ddof1": 2.7566979939177856e-07,
+   "p_holm_ddof0": 5.302641284383375e-07
+  },
+  {
+   "sde": "VE",
+   "cmp": "PC1000(reverse_diffusion) vs P2000(reverse_diffusion) [같은 NFE 2000]",
+   "a": [
+    3.6,
+    0.02
+   ],
+   "b": [
+    4.74,
+    0.08
+   ],
+   "diff": -1.14,
+   "t_ddof1": -30.912590239158508,
+   "p_ddof1": 2.0585297338301012e-06,
+   "p_ddof0": 3.3926793908203223e-06,
+   "p_holm_ddof1": 2.8819416273621418e-05,
+   "p_holm_ddof0": 4.749751147148451e-05
+  },
+  {
+   "sde": "VE",
+   "cmp": "PC1000(probability_flow) vs P2000(probability_flow) [같은 NFE 2000]",
+   "a": [
+    3.51,
+    0.04
+   ],
+   "b": [
+    10.54,
+    0.08
+   ],
+   "diff": -7.03,
+   "t_ddof1": -175.74999999999997,
+   "p_ddof1": 3.603292701494159e-12,
+   "p_ddof0": 6.945058432844741e-12,
+   "p_holm_ddof1": 7.206585402988318e-11,
+   "p_holm_ddof0": 1.3890116865689482e-10
+  },
+  {
+   "sde": "VE",
+   "cmp": "PC1000(ancestral) vs P1000(ancestral) [교정기 추가, 연산 2배]",
+   "a": [
+    3.62,
+    0.03
+   ],
+   "b": [
+    4.98,
+    0.06
+   ],
+   "diff": -1.36,
+   "t_ddof1": -45.33333333333334,
+   "p_ddof1": 1.035994582442076e-08,
+   "p_ddof0": 1.993385789673055e-08,
+   "p_holm_ddof1": 1.8647902483957368e-07,
+   "p_holm_ddof0": 3.588094421411499e-07
+  },
+  {
+   "sde": "VE",
+   "cmp": "PC1000(reverse_diffusion) vs P1000(reverse_diffusion) [교정기 추가, 연산 2배]",
+   "a": [
+    3.6,
+    0.02
+   ],
+   "b": [
+    4.79,
+    0.07
+   ],
+   "diff": -1.19,
+   "t_ddof1": -36.55055945162009,
+   "p_ddof1": 6.726000810231474e-07,
+   "p_ddof0": 1.1278939655204448e-06,
+   "p_holm_ddof1": 1.008900121534721e-05,
+   "p_holm_ddof0": 1.6918409482806674e-05
+  },
+  {
+   "sde": "VE",
+   "cmp": "PC1000(probability_flow) vs P1000(probability_flow) [교정기 추가, 연산 2배]",
+   "a": [
+    3.51,
+    0.04
+   ],
+   "b": [
+    15.41,
+    0.15
+   ],
+   "diff": -11.9,
+   "t_ddof1": -171.40498256991407,
+   "p_ddof1": 7.13783690840576e-10,
+   "p_ddof0": 1.1879025618400356e-09,
+   "p_holm_ddof1": 1.3561890125970944e-08,
+   "p_holm_ddof0": 2.2570148674960676e-08
+  },
+  {
+   "sde": "VE",
+   "cmp": "reverse_diffusion vs ancestral at P1000",
+   "a": [
+    4.79,
+    0.07
+   ],
+   "b": [
+    4.98,
+    0.06
+   ],
+   "diff": -0.19,
+   "t_ddof1": -4.608176875690336,
+   "p_ddof1": 0.0018450701662719655,
+   "p_ddof0": 0.0035068431960564757,
+   "p_holm_ddof1": 0.022140841995263585,
+   "p_holm_ddof0": 0.04208211835267771
+  },
+  {
+   "sde": "VE",
+   "cmp": "reverse_diffusion vs ancestral at P2000",
+   "a": [
+    4.74,
+    0.08
+   ],
+   "b": [
+    4.88,
+    0.06
+   ],
+   "diff": -0.14,
+   "t_ddof1": -3.1304951684996984,
+   "p_ddof1": 0.015406633001409164,
+   "p_ddof0": 0.02500598826208621,
+   "p_holm_ddof1": 0.15406633001409165,
+   "p_holm_ddof0": 0.2500598826208621
+  },
+  {
+   "sde": "VE",
+   "cmp": "reverse_diffusion vs ancestral at PC1000",
+   "a": [
+    3.6,
+    0.02
+   ],
+   "b": [
+    3.62,
+    0.03
+   ],
+   "diff": -0.02,
+   "t_ddof1": -1.2403473458920857,
+   "p_ddof1": 0.2549765567809787,
+   "p_ddof0": 0.30406645380451003,
+   "p_holm_ddof1": 0.764929670342936,
+   "p_holm_ddof0": 0.9121993614135301
+  },
+  {
+   "sde": "VE",
+   "cmp": "P2000 vs P1000 (reverse_diffusion) [연산 2배]",
+   "a": [
+    4.74,
+    0.08
+   ],
+   "b": [
+    4.79,
+    0.07
+   ],
+   "diff": -0.05,
+   "t_ddof1": -1.0517579047791743,
+   "p_ddof1": 0.3241622583296548,
+   "p_ddof0": 0.3748503309413503,
+   "p_holm_ddof1": 0.764929670342936,
+   "p_holm_ddof0": 0.9121993614135301
+  },
+  {
+   "sde": "VP",
+   "cmp": "PC1000(ancestral) vs P2000(ancestral) [같은 NFE 2000]",
+   "a": [
+    3.21,
+    0.02
+   ],
+   "b": [
+    3.24,
+    0.02
+   ],
+   "diff": -0.03,
+   "t_ddof1": -2.371708245126304,
+   "p_ddof1": 0.045125935446805855,
+   "p_ddof0": 0.0666879999999981,
+   "p_holm_ddof1": 0.31588154812764097,
+   "p_holm_ddof0": 0.4668159999999867
+  },
+  {
+   "sde": "VP",
+   "cmp": "PC1000(reverse_diffusion) vs P2000(reverse_diffusion) [같은 NFE 2000]",
+   "a": [
+    3.18,
+    0.01
+   ],
+   "b": [
+    3.19,
+    0.02
+   ],
+   "diff": -0.01,
+   "t_ddof1": -0.9999999999999787,
+   "p_ddof1": 0.35665405264380834,
+   "p_ddof0": 0.4061996467048603,
+   "p_holm_ddof1": 0.764929670342936,
+   "p_holm_ddof0": 0.9121993614135301
+  },
+  {
+   "sde": "VP",
+   "cmp": "PC1000(probability_flow) vs P2000(probability_flow) [같은 NFE 2000]",
+   "a": [
+    3.06,
+    0.03
+   ],
+   "b": [
+    3.23,
+    0.03
+   ],
+   "diff": -0.17,
+   "t_ddof1": -8.959786703810405,
+   "p_ddof1": 1.9151201860647833e-05,
+   "p_ddof0": 4.312676551214289e-05,
+   "p_holm_ddof1": 0.00024896562418842184,
+   "p_holm_ddof0": 0.0005606479516578576
+  },
+  {
+   "sde": "VP",
+   "cmp": "PC1000(ancestral) vs P1000(ancestral) [교정기 추가, 연산 2배]",
+   "a": [
+    3.21,
+    0.02
+   ],
+   "b": [
+    3.24,
+    0.02
+   ],
+   "diff": -0.03,
+   "t_ddof1": -2.371708245126304,
+   "p_ddof1": 0.045125935446805855,
+   "p_ddof0": 0.0666879999999981,
+   "p_holm_ddof1": 0.31588154812764097,
+   "p_holm_ddof0": 0.4668159999999867
+  },
+  {
+   "sde": "VP",
+   "cmp": "PC1000(reverse_diffusion) vs P1000(reverse_diffusion) [교정기 추가, 연산 2배]",
+   "a": [
+    3.18,
+    0.01
+   ],
+   "b": [
+    3.21,
+    0.02
+   ],
+   "diff": -0.03,
+   "t_ddof1": -2.9999999999999805,
+   "p_ddof1": 0.024597469378235554,
+   "p_ddof0": 0.037089682723058855,
+   "p_holm_ddof1": 0.22137722440412,
+   "p_holm_ddof0": 0.3338071445075297
+  },
+  {
+   "sde": "VP",
+   "cmp": "PC1000(probability_flow) vs P1000(probability_flow) [교정기 추가, 연산 2배]",
+   "a": [
+    3.06,
+    0.03
+   ],
+   "b": [
+    3.59,
+    0.04
+   ],
+   "diff": -0.53,
+   "t_ddof1": -23.70232056149776,
+   "p_ddof1": 2.9020839208601805e-08,
+   "p_ddof0": 6.568762603869189e-08,
+   "p_holm_ddof1": 4.643334273376289e-07,
+   "p_holm_ddof0": 1.0510020166190702e-06
+  },
+  {
+   "sde": "VP",
+   "cmp": "reverse_diffusion vs ancestral at P1000",
+   "a": [
+    3.21,
+    0.02
+   ],
+   "b": [
+    3.24,
+    0.02
+   ],
+   "diff": -0.03,
+   "t_ddof1": -2.371708245126304,
+   "p_ddof1": 0.045125935446805855,
+   "p_ddof0": 0.0666879999999981,
+   "p_holm_ddof1": 0.31588154812764097,
+   "p_holm_ddof0": 0.4668159999999867
+  },
+  {
+   "sde": "VP",
+   "cmp": "reverse_diffusion vs ancestral at P2000",
+   "a": [
+    3.19,
+    0.02
+   ],
+   "b": [
+    3.24,
+    0.02
+   ],
+   "diff": -0.05,
+   "t_ddof1": -3.952847075210495,
+   "p_ddof1": 0.004219134391155178,
+   "p_ddof0": 0.0076697280209540395,
+   "p_holm_ddof1": 0.046410478302706955,
+   "p_holm_ddof0": 0.08436700823049444
+  },
+  {
+   "sde": "VP",
+   "cmp": "reverse_diffusion vs ancestral at PC1000",
+   "a": [
+    3.18,
+    0.01
+   ],
+   "b": [
+    3.21,
+    0.02
+   ],
+   "diff": -0.03,
+   "t_ddof1": -2.9999999999999805,
+   "p_ddof1": 0.024597469378235554,
+   "p_ddof0": 0.037089682723058855,
+   "p_holm_ddof1": 0.22137722440412,
+   "p_holm_ddof0": 0.3338071445075297
+  },
+  {
+   "sde": "VP",
+   "cmp": "P2000 vs P1000 (reverse_diffusion) [연산 2배]",
+   "a": [
+    3.19,
+    0.02
+   ],
+   "b": [
+    3.21,
+    0.02
+   ],
+   "diff": -0.02,
+   "t_ddof1": -1.581138830084191,
+   "p_ddof1": 0.1525022852080142,
+   "p_ddof0": 0.1950155281000753,
+   "p_holm_ddof1": 0.6100091408320568,
+   "p_holm_ddof0": 0.7800621124003012
+  }
+ ],
+ "table2": {
+  "pairs_sub_vp_vs_vp": [
+   {
+    "model": "DDPM cont.",
+    "nll_sub_minus_vp": -0.16,
+    "fid_sub_minus_vp": -0.13
+   },
+   {
+    "model": "DDPM++ cont.",
+    "nll_sub_minus_vp": -0.14,
+    "fid_sub_minus_vp": -0.77
+   },
+   {
+    "model": "DDPM++ cont. deep",
+    "nll_sub_minus_vp": -0.14,
+    "fid_sub_minus_vp": -0.16
+   }
+  ],
+  "sign_test_nll_p_two_sided": 0.25,
+  "fid_signs_sub_minus_vp": [
+   -0.13,
+   -0.77,
+   -0.16
+  ],
+  "same_model_fid_table2_vs_table3": [
+   {
+    "model": "DDPM++ cont. (VP)",
+    "t2_ode_last": 3.93,
+    "t3_pc_best": 2.55
+   },
+   {
+    "model": "DDPM++ cont. (sub-VP)",
+    "t2_ode_last": 3.16,
+    "t3_pc_best": 2.61
+   },
+   {
+    "model": "DDPM++ cont. deep (VP)",
+    "t2_ode_last": 3.08,
+    "t3_pc_best": 2.41
+   },
+   {
+    "model": "DDPM++ cont. deep (sub-VP)",
+    "t2_ode_last": 2.92,
+    "t3_pc_best": 2.41
+   }
+  ],
+  "abstract_numbers": {
+   "IS_9.89_FID_2.20": "NCSN++ cont. (deep, VE), 표 3 (PC 표집, 최소 FID 체크포인트)",
+   "NLL_2.99": "DDPM++ cont. (deep, sub-VP), 표 2 (ODE, 마지막 체크포인트), 같은 모델의 표 2 FID는 2.92, 표 3 FID는 2.41",
+   "same_model": false
+  },
+  "ve_has_nll": false
+ },
+ "table3": {
+  "pairs_within_0p07_fid": [
+   [
+    "DDPM++ cont. (VP)",
+    "DDPM++ cont. (sub-VP)",
+    0.06
+   ],
+   [
+    "DDPM++ cont. (deep, VP)",
+    "DDPM++ cont. (deep, sub-VP)",
+    0.0
+   ],
+   [
+    "DDPM++ cont. (deep, VP)",
+    "NCSN++",
+    0.04
+   ],
+   [
+    "DDPM++ cont. (deep, VP)",
+    "NCSN++ cont. (VE)",
+    0.03
+   ],
+   [
+    "DDPM++ cont. (deep, sub-VP)",
+    "NCSN++",
+    0.04
+   ],
+   [
+    "DDPM++ cont. (deep, sub-VP)",
+    "NCSN++ cont. (VE)",
+    0.03
+   ]
+  ],
+  "best_fid": 2.2,
+  "note": "표 3은 학습 중 FID가 가장 낮은 체크포인트를 고른 값이라 선택 편향이 있고, 학습 시드 반복은 없다"
+ }
+}
