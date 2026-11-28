@@ -23,8 +23,8 @@
 
 ## 3. 이 저장소와 이웃 저장소의 관련 분석
 
-- `../sd3_rectified_flow/` (같은 묶음에서 작성 중): 로짓 정규 시간 표집과 rectified flow. MeanFlow의 $(r,t)$ 표집이 이 표집기를 빌려 쓰며(`03` §4), 이 분석에서 $r=t$ 표본의 $t$ 분포가 "두 번 뽑은 값의 최대"가 되는 효과를 계산했습니다.
-- `../ddpm/`, `../score_sde/`, `../ddim/`, `../classifier_free_guidance/` (같은 묶음에서 작성 중): 속도장·확률 흐름 ODE·CFG의 출처.
+- `../sd3_rectified_flow/`: 로짓 정규 시간 표집과 rectified flow. MeanFlow의 $(r,t)$ 표집이 이 표집기를 빌려 쓰며(`03` §4), 이 분석에서 $r=t$ 표본의 $t$ 분포가 "두 번 뽑은 값의 최대"가 되는 효과를 계산했습니다.
+- `../ddpm/`, `../score_sde/`, `../ddim/`, `../classifier_free_guidance/`: 속도장·확률 흐름 ODE·CFG의 출처.
 - `../transfusion/`: 같은 축(생성)의 이웃. Transfusion은 diffusion 손실로 이미지를 생성하므로, 샘플링 스텝 수가 병목일 때 MeanFlow가 대안이 되는지는 비교한 적이 없습니다.
 
 ## 4. GitHub와 자료 표 (`gh api`, 2026-11-28 조회)

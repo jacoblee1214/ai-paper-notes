@@ -38,18 +38,18 @@ Song & Ermon 2019/2020 (NCSN, 어닐링 Langevin) ─┤
 | 논문 | arXiv | 바꾼 것 | 이 폴더와의 연결 |
 |---|---|---|---|
 | Improved DDPM (Nichol & Dhariwal) | 2102.09672 | σ² 보간 학습, 코사인 스케줄, L_hybrid, 중요도 표본으로 NLL 2.94 | `04` C1–C3, C5 |
-| DDIM (Song 외) | 2010.02502 | 같은 학습으로 결정적·적은 단계 표본(η = 0) | `04` C1 (η = 1.0이 DDPM, σ̂ = √β) (같은 묶음에서 작성 중) |
+| DDIM (Song 외) | 2010.02502 | 같은 학습으로 결정적·적은 단계 표본(η = 0) | `04` C1 (η = 1.0이 DDPM, σ̂ = √β), `../ddim/` |
 | Score SDE (Song 외) | 2011.13456 | 연속시간 SDE, DDPM은 VP SDE의 이산화, 확률 흐름 ODE | `04` C2, C4. `../score_sde/` |
 | VDM (Kingma 외) | 2107.00630 | SNR 형태의 연속시간 하한, 스케줄 학습 | `04` C6, `03` §2.3 |
-| Classifier-Free Guidance (Ho & Salimans) | 2207.12598 | 조건부와 비조건부의 ε 외삽 | (같은 묶음에서 작성 중) |
+| Classifier-Free Guidance (Ho & Salimans) | 2207.12598 | 조건부와 비조건부의 ε 외삽 | `../classifier_free_guidance/` |
 | EDM (Karras 외) | 2206.00364 | 전처리·가중·표본기의 설계 공간 정리 | `reading_list.md` 진행 순서 60 |
 | SD3 | 2403.03206 | ε-예측 가중 등을 한 식으로 통합하고 시간 분포 비교 | `../sd3_rectified_flow/` (`03` §1의 통합 손실 식에서 ε-예측은 c(t) = 1) |
-| MeanFlow | 2505.13447 | 평균 속도로 1단계 생성 | (같은 묶음에서 작성 중) |
+| MeanFlow | 2505.13447 | 평균 속도로 1단계 생성 | `../meanflow/` |
 
 ## 4. 이 저장소의 다른 분석, 이웃 저장소와의 관계
 
 - `../sd3_rectified_flow/`: 가중 w_t, 시간 표본 분포, 정확한 속도장 토이. 이 분석의 정확한 denoiser 토이(ε*)와 같은 기법(혼합 데이터의 닫힌 식)을 서로 다른 목적(속도장 대 ε)에 쓴 것입니다. ε-예측의 가중 표현(`03` §1.2)은 거기서 인용하고 여기서는 되풀이하지 않았습니다.
-- `../score_sde/`, `../ddim/`, `../classifier_free_guidance/`, `../meanflow/`: 같은 묶음에서 작성 중입니다.
+- `../score_sde/`, `../ddim/`, `../classifier_free_guidance/`, `../meanflow/`: 같은 묶음에서 분석했습니다. VP SDE와 확률 흐름 ODE(score_sde), η 족과 결정적 표집(ddim), 가이던스(classifier_free_guidance), 평균 속도(meanflow)를 다룹니다.
 
 ## 5. 자료 표
 

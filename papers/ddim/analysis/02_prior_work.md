@@ -58,7 +58,7 @@ Mohamed & Lakshminarayanan 2016 ─────┘                │
 | `../score_sde/` | 확률 흐름 ODE의 유도, VP 이산화의 $1/N$ 수렴, 속도-점수 변환. 명제 1의 유도를 거기서 인용 |
 | `../sd3_rectified_flow/` | 직선 경로의 ODE 표집. DDIM은 분산 보존 경로 위의 결정적 표집이고 스텝 수 절감의 기준선 |
 | `../meanflow/` | 평균 속도로 한 스텝 표집. DDIM의 "스텝 줄이기"를 학습으로 해결한 쪽 |
-| `../classifier_free_guidance/` | (같은 묶음에서 작성 중) 가이던스 설정과 표집기(DDIM)가 함께 쓰이는 방식 |
+| `../classifier_free_guidance/` | 가이던스 설정과 표집기(DDIM)가 함께 쓰이는 방식 |
 
 
 ## 5. 자료 표

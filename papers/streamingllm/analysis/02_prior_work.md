@@ -44,9 +44,9 @@
 - **`../attention_sink_emerges/`**: 같은 현상의 출현 조건 논문. 우리는 그쪽의 공개 가중치 측정(`analysis/sink_real_models_results.json`: 처음 위치가 받는 head 평균 attention α₁, T=1024, 문서 200개)을 그대로 읽어 왔습니다. Pythia-14M 0.017, 70M 0.029, 160M 0.073, GPT-2 0.355(균일 기준선 0.0073). 이 값과 `03`에서 잰 "윈도만 쓸 때 perplexity가 얼마나 터지는가"의 순서가 같은지 봅니다(`03` §3.5: GPT-2에서는 맞고 Pythia 세 모델 사이에서는 맞지 않음).
 - **`../spike_sparse_sink/`**: sink와 massive activation의 관계. StreamingLLM의 "초기 토큰이 sink"가 어떤 은닉 상태 구조에서 오는지의 설명 쪽입니다. 여기서는 중복해서 측정하지 않았습니다.
 - **`../flashattention/`**: 정확한 attention의 메모리 이동을 줄이는 방법(훈련·prefill에 적용). StreamingLLM은 어떤 K, V를 남길지 바꾸는 근사(디코딩 KV 캐시)라 직교하며, 축 6(효율·시스템)에서 "정확한 계산의 I/O"와 "남기는 토큰 선택"의 두 갈래를 이룹니다.
-- **`../pagedattention/`**: (같은 묶음에서 작성 중). KV 캐시의 메모리 배치를 다루는 논문이라 StreamingLLM의 "무엇을 남기나"와 짝입니다.
-- **`../speculative_decoding/`**: (같은 묶음에서 작성 중). 디코딩 지연을 줄이는 다른 갈래.
-- **`../gptq/`, `../awq/`**: (같은 묶음에서 작성 중). 가중치 양자화로, KV 캐시를 건드리는 StreamingLLM과 겹치지 않고 함께 쓸 수 있는 갈래입니다.
+- **`../pagedattention/`**: KV 캐시의 메모리 배치를 다루는 논문이라 StreamingLLM의 "무엇을 남기나"와 짝입니다.
+- **`../speculative_decoding/`**: 디코딩 지연을 줄이는 다른 갈래.
+- **`../gptq/`, `../awq/`**: 가중치 양자화로, KV 캐시를 건드리는 StreamingLLM과 겹치지 않고 함께 쓸 수 있는 갈래입니다.
 
 ## 5. GitHub·자료 표 (2026-11-28, `gh api`)
 

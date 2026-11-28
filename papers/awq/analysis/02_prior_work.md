@@ -51,7 +51,7 @@
 | `../streamingllm/` | 어텐션 싱크. 활성 이상치 채널과 싱크 토큰의 관계는 우리 위치 0 진단(`03` §4.5)에서 AWQ 탐색에 영향이 거의 없다고 확인 | 있음 |
 | `../speculative_decoding/` | 디코딩에서 가중치 읽기 횟수를 줄이는 다른 방법. 4비트 모델을 초안 모델로 쓰는 조합이 자연스러우나 이 분석에서 다루지 않음 | 있음 |
 | `../sd3_rectified_flow/` | 다른 축(생성). 양자화와 직접 연결 없음 | 있음 |
-| meanflow, ddpm, score_sde, ddim, classifier_free_guidance | 다른 축(생성). 직접 연결 없음 | (같은 묶음에서 작성 중) |
+| meanflow, ddpm, score_sde, ddim, classifier_free_guidance | 다른 축(생성). 직접 연결 없음 | 같은 묶음에서 분석 |
 | `../attention_sink_emerges/`, `../edgewise/` | 어텐션 싱크의 출현, 에지 에이전트. AWQ의 "온디바이스" 동기와 연결 | 있음(읽지 않음) |
 
 ## 5. GitHub·자료 표 (2026-11-28 확인)

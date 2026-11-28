@@ -24,8 +24,8 @@
 | **FlashAttention-2** (arXiv:2307.08691, 2023-07) | v1이 이론 최대 FLOPs/s의 25–40%에 그친다고 진단. 작업 분할 개선(Q 블록을 바깥 루프로, 스레드 블록 병렬화) | 초록 확인. 공식 코드 구조는 `04` D1 |
 | **FlashAttention-3** (arXiv:2407.08608, 2024-07) | Hopper 비동기(TMA, warp specialization), FP8. H100에서 FA2가 35% 활용에 그친다고 진단, 1.5–2.0×, FP16 최대 740 TFLOPs/s(75%) | 초록 확인 |
 | **I/O 하한** Saha & Ye (arXiv:2402.07443) | M ≥ d²에서 Flash와 상수 배 안에서 맞는 하한 증명, M < d²에서는 더 나은 알고리즘 제시 | 초록 확인 (`04` C2) |
-| **PagedAttention / vLLM** (arXiv:2309.06180) | 추론 시 KV 캐시 메모리 관리(페이지 단위). Flash가 계산을 다룬다면 이쪽은 캐시 배치를 다룬다 | 같은 묶음에서 작성 중: `../pagedattention/` |
-| **StreamingLLM** | attention sink로 KV 캐시 유지 | 같은 묶음에서 작성 중: `../streamingllm/` |
+| **PagedAttention / vLLM** (arXiv:2309.06180) | 추론 시 KV 캐시 메모리 관리(페이지 단위). Flash가 계산을 다룬다면 이쪽은 캐시 배치를 다룬다 | `../pagedattention/` (그림 2의 낭비 구성을 요청 길이 평균만으로 재현) |
+| **StreamingLLM** | attention sink로 KV 캐시 유지 | `../streamingllm/` (Pythia·GPT-2 스트리밍 perplexity 측정) |
 | **Is Flash Attention Stable?** Golden et al. (arXiv:2405.02803) | BF16 순전파에서 Flash가 baseline보다 약 한 자릿수 큰 수치 편차(초록) | 초록 확인 (`04` C7) |
 
 (Flash-Decoding, ring attention 등 다른 후속은 이 폴더에서 확인하지 않아 표에 넣지 않았다.)
